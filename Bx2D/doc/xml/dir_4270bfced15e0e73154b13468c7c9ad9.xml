@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="dir_4270bfced15e0e73154b13468c7c9ad9" kind="dir">
+    <compoundname>core</compoundname>
+    <innerfile refid="_bx_core_8hpp">BxCore.hpp</innerfile>
+    <innerfile refid="_bx_core_for_q_t5_8cpp">BxCoreForQT5.cpp</innerfile>
+    <innerfile refid="_bx_core_for_q_t5_8hpp">BxCoreForQT5.hpp</innerfile>
+    <innerfile refid="_bx_core_impl_8cpp">BxCoreImpl.cpp</innerfile>
+    <innerfile refid="_bx_core_impl_8hpp">BxCoreImpl.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/core/"/>
+  </compounddef>
+</doxygen>

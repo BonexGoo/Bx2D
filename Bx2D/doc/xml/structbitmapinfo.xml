@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="structbitmapinfo" kind="struct" language="C++" prot="public">
+    <compoundname>bitmapinfo</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbitmapinfo_1a45937835a1001088390395e4db7d0f6f" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint bitmapinfo::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="254" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapinfo_1acfeb7172b8c00d7678bc0179b5206c0c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bitmapinfo::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="254" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapinfo_1a0c100181c63e9607bae8dfd98f94e7cf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bitmapinfo::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="254" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapinfo_1a85827af3da5e1d9c497bccd37314a501" prot="public" static="no" mutable="no">
+        <type>ushort</type>
+        <definition>ushort bitmapinfo::planes</definition>
+        <argsstring></argsstring>
+        <name>planes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="254" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapinfo_1a463b2f3ca2757b046bb4a615a94cef89" prot="public" static="no" mutable="no">
+        <type>ushort</type>
+        <definition>ushort bitmapinfo::bitcount</definition>
+        <argsstring></argsstring>
+        <name>bitcount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="254" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapinfo_1a6abb9dda09e126d7a372c277441421bc" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint bitmapinfo::compression</definition>
+        <argsstring></argsstring>
+        <name>compression</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="254" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapinfo_1a8d18d7877d1be98f363c6a0566787d89" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint bitmapinfo::size_image</definition>
+        <argsstring></argsstring>
+        <name>size_image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="255" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapinfo_1a9b350908b189fc76941fd5e342937e5f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bitmapinfo::xpels_meter</definition>
+        <argsstring></argsstring>
+        <name>xpels_meter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="255" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapinfo_1a241f0277928c686bd2b381d823fcf43e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bitmapinfo::ypels_meter</definition>
+        <argsstring></argsstring>
+        <name>ypels_meter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="255" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapinfo_1a42defea98f7f48d53b212efef23cb84e" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint bitmapinfo::color_used</definition>
+        <argsstring></argsstring>
+        <name>color_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="255" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapinfo_1aebdb40d87c52d55e234617f298467f49" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint bitmapinfo::color_important</definition>
+        <argsstring></argsstring>
+        <name>color_important</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="255" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>bitmapinfo구조체 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="254" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="254" bodyend="255"/>
+    <listofallmembers>
+      <member refid="structbitmapinfo_1a463b2f3ca2757b046bb4a615a94cef89" prot="public" virt="non-virtual"><scope>bitmapinfo</scope><name>bitcount</name></member>
+      <member refid="structbitmapinfo_1aebdb40d87c52d55e234617f298467f49" prot="public" virt="non-virtual"><scope>bitmapinfo</scope><name>color_important</name></member>
+      <member refid="structbitmapinfo_1a42defea98f7f48d53b212efef23cb84e" prot="public" virt="non-virtual"><scope>bitmapinfo</scope><name>color_used</name></member>
+      <member refid="structbitmapinfo_1a6abb9dda09e126d7a372c277441421bc" prot="public" virt="non-virtual"><scope>bitmapinfo</scope><name>compression</name></member>
+      <member refid="structbitmapinfo_1a0c100181c63e9607bae8dfd98f94e7cf" prot="public" virt="non-virtual"><scope>bitmapinfo</scope><name>height</name></member>
+      <member refid="structbitmapinfo_1a85827af3da5e1d9c497bccd37314a501" prot="public" virt="non-virtual"><scope>bitmapinfo</scope><name>planes</name></member>
+      <member refid="structbitmapinfo_1a45937835a1001088390395e4db7d0f6f" prot="public" virt="non-virtual"><scope>bitmapinfo</scope><name>size</name></member>
+      <member refid="structbitmapinfo_1a8d18d7877d1be98f363c6a0566787d89" prot="public" virt="non-virtual"><scope>bitmapinfo</scope><name>size_image</name></member>
+      <member refid="structbitmapinfo_1acfeb7172b8c00d7678bc0179b5206c0c" prot="public" virt="non-virtual"><scope>bitmapinfo</scope><name>width</name></member>
+      <member refid="structbitmapinfo_1a9b350908b189fc76941fd5e342937e5f" prot="public" virt="non-virtual"><scope>bitmapinfo</scope><name>xpels_meter</name></member>
+      <member refid="structbitmapinfo_1a241f0277928c686bd2b381d823fcf43e" prot="public" virt="non-virtual"><scope>bitmapinfo</scope><name>ypels_meter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

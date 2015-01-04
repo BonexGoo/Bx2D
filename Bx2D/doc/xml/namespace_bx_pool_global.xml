@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="namespace_bx_pool_global" kind="namespace" language="C++">
+    <compoundname>BxPoolGlobal</compoundname>
+    <innerclass refid="class_bx_pool_global_1_1_unit" prot="public">BxPoolGlobal::Unit</innerclass>
+    <innerclass refid="class_bx_pool_global_1_1_unit_link" prot="public">BxPoolGlobal::UnitLink</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_pool_global_1a33abdbe3e999f603f8c8c99bf7dfdfca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxPoolGlobal::Bind</definition>
+        <argsstring>(Unit *_ref_ Head)</argsstring>
+        <name>Bind</name>
+        <param>
+          <type><ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref> *_ref_</type>
+          <declname>Head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" line="73" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" bodystart="73" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_pool_global_1a0260f45ad8dfb48e879631f54cb83cdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref> *</type>
+        <definition>global_func Unit* BxPoolGlobal::FindUnit</definition>
+        <argsstring>(void *Ptr)</argsstring>
+        <name>FindUnit</name>
+        <param>
+          <type>void *</type>
+          <declname>Ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" line="80" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" bodystart="80" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_pool_global_1a6046b5dbe11ccb4e6a23f270e076d7a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxPoolGlobal::UnbindAll</definition>
+        <argsstring>()</argsstring>
+        <name>UnbindAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" line="97" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BxPool관련 글로벌함수 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" line="16" column="1"/>
+  </compounddef>
+</doxygen>

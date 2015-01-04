@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_panel_1_1_variable_s_1_1_font" kind="class" language="C++" prot="public">
+    <compoundname>BxPanel::VariableS::Font</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1_1_font_1ae76be3ed69262dc0cb4f8a1fef9141a4" prot="private" static="no" mutable="no">
+        <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+        <definition>id_font BxPanel::VariableS::Font::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="407" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_panel_1_1_variable_s_1_1_font_1acfa104abfbd5e8e7049489092226201b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPanel::VariableS::Font::Font</definition>
+        <argsstring>()</argsstring>
+        <name>Font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="408" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="408" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1_1_variable_s_1_1_font_1a0e23055ff4bbb5b69b3fccb4d8658da1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPanel::VariableS::Font::~Font</definition>
+        <argsstring>()</argsstring>
+        <name>~Font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="409" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="409" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1_1_variable_s_1_1_font_1ab742e2edac179d75716d948ab130b4df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxPanel::VariableS::Font::IsLoaded</definition>
+        <argsstring>()</argsstring>
+        <name>IsLoaded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="410" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="410" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1_1_variable_s_1_1_font_1a0ec446b734a34a53d757df49a2cebcd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxPanel::VariableS::Font::Load</definition>
+        <argsstring>(string filename, const int pointsize)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pointsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="411" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="411" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1_1_variable_s_1_1_font_1aa7fb1246a4da8b09e130dc4e90d19c65" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPanel::VariableS::Font::operator id_font</definition>
+        <argsstring>() const </argsstring>
+        <name>operator id_font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="418" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="418" bodyend="421"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="406" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="405" bodyend="422"/>
+    <listofallmembers>
+      <member refid="class_bx_panel_1_1_variable_s_1_1_font_1acfa104abfbd5e8e7049489092226201b" prot="public" virt="non-virtual"><scope>BxPanel::VariableS::Font</scope><name>Font</name></member>
+      <member refid="class_bx_panel_1_1_variable_s_1_1_font_1ae76be3ed69262dc0cb4f8a1fef9141a4" prot="private" virt="non-virtual"><scope>BxPanel::VariableS::Font</scope><name>id</name></member>
+      <member refid="class_bx_panel_1_1_variable_s_1_1_font_1ab742e2edac179d75716d948ab130b4df" prot="public" virt="non-virtual"><scope>BxPanel::VariableS::Font</scope><name>IsLoaded</name></member>
+      <member refid="class_bx_panel_1_1_variable_s_1_1_font_1a0ec446b734a34a53d757df49a2cebcd3" prot="public" virt="non-virtual"><scope>BxPanel::VariableS::Font</scope><name>Load</name></member>
+      <member refid="class_bx_panel_1_1_variable_s_1_1_font_1aa7fb1246a4da8b09e130dc4e90d19c65" prot="public" virt="non-virtual"><scope>BxPanel::VariableS::Font</scope><name>operator id_font</name></member>
+      <member refid="class_bx_panel_1_1_variable_s_1_1_font_1a0e23055ff4bbb5b69b3fccb4d8658da1" prot="public" virt="non-virtual"><scope>BxPanel::VariableS::Font</scope><name>~Font</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_scene" kind="class" language="C++" prot="public">
+    <compoundname>BxScene</compoundname>
+    <includes refid="_bx_scene_8hpp" local="no">BxScene.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="class_bx_scene_1aff5f27426080552c1e502a3ed30e687a" prot="public" static="no">
+        <type>syseventresult(*</type>
+        <definition>typedef syseventresult(* BxScene::EventCB) (void *Data, const sysevent &amp;Event)</definition>
+        <argsstring>)(void *Data, const sysevent &amp;Event)</argsstring>
+        <name>EventCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="89" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_scene_1a7a535a569b8764f64f0952135917479c" prot="public" static="no">
+        <type>sysupdateresult(*</type>
+        <definition>typedef sysupdateresult(* BxScene::UpdateCB) (void *Data)</definition>
+        <argsstring>)(void *Data)</argsstring>
+        <name>UpdateCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="90" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_scene_1ae58d98bc2807a7e7a09c4a95e7b7dda1" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* BxScene::RenderCB) (void *Data, BxDraw &amp;Draw)</definition>
+        <argsstring>)(void *Data, BxDraw &amp;Draw)</argsstring>
+        <name>RenderCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="91" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_scene_1a370a9829a0072b8f6ee92d3b3f4d1a14" prot="public" static="no">
+        <type>void *(*</type>
+        <definition>typedef void*(* BxScene::GetDataCB) (sysmethod Mode)</definition>
+        <argsstring>)(sysmethod Mode)</argsstring>
+        <name>GetDataCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="92" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_scene_1a44dfa1ba7068ab5c03bd26cf12c8488f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxScene::AddRequest</definition>
+        <argsstring>(string Name, sceneside Side=sceneside_center, scenelayer Layer=scenelayer_top, string Message=&quot;&quot;)</argsstring>
+        <name>AddRequest</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>sceneside</type>
+          <declname>Side</declname>
+          <defval>sceneside_center</defval>
+        </param>
+        <param>
+          <type>scenelayer</type>
+          <declname>Layer</declname>
+          <defval>scenelayer_top</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Message</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>씬활성화 요청 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Side</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 등장할 방향 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 삽입할 레이어 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 초기화 메시지 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_scene_1ab6c6a8c3b13a45292af9a45a25a2736e" kindref="member">SubRequest</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="26" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="26" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1ab6c6a8c3b13a45292af9a45a25a2736e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxScene::SubRequest</definition>
+        <argsstring>(string Name, sceneside Side=sceneside_current)</argsstring>
+        <name>SubRequest</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>sceneside</type>
+          <declname>Side</declname>
+          <defval>sceneside_current</defval>
+        </param>
+        <briefdescription>
+<para>활성씬 제거 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Side</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 퇴장할 방향 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_scene_1a44dfa1ba7068ab5c03bd26cf12c8488f" kindref="member">AddRequest</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="46" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="46" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1ab8479d0db227b1f8ebbffead9dde72ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxScene::SetRequest</definition>
+        <argsstring>(string Name, sceneside Side=sceneside_current, scenelayer Layer=scenelayer_current)</argsstring>
+        <name>SetRequest</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <param>
+          <type>sceneside</type>
+          <declname>Side</declname>
+          <defval>sceneside_current</defval>
+        </param>
+        <param>
+          <type>scenelayer</type>
+          <declname>Layer</declname>
+          <defval>scenelayer_current</defval>
+        </param>
+        <briefdescription>
+<para>활성씬 이동설정 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Side</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 이동할 방향 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변경할 레이어 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="69" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="69" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1afbf5e8c6d7ad5527ff431ce270a2648e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxScene::GetCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetCount</name>
+        <briefdescription>
+<para>활성씬 수량얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>수량 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="261" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="261" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1a00e6b18b08bd3a26e2bd9516d29a1b9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func string</type>
+        <definition>global_func string BxScene::GetName</definition>
+        <argsstring>(sceneside Side)</argsstring>
+        <name>GetName</name>
+        <param>
+          <type>sceneside</type>
+          <declname>Side</declname>
+        </param>
+        <briefdescription>
+<para>해당방향의 최상위 활성씬 이름얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Side</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 방향 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>씬이름 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="271" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="271" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1a499f7156ad1b13ad4ce061b770746065" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func string</type>
+        <definition>global_func string BxScene::GetName</definition>
+        <argsstring>(scenelayer Layer)</argsstring>
+        <name>GetName</name>
+        <param>
+          <type>scenelayer</type>
+          <declname>Layer</declname>
+        </param>
+        <briefdescription>
+<para>해당레이어의 활성씬 이름얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Layer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 레이어 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>씬이름 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="287" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="287" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1aa67af3e1d0f18f5dceef68b6a4bed932" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func sceneside</type>
+        <definition>global_func sceneside BxScene::GetSide</definition>
+        <argsstring>(string Name)</argsstring>
+        <name>GetSide</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+<para>활성씬 방향얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>방향 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="307" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="307" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1adbe843083462f957252c25a73d5cdca4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func scenelayer</type>
+        <definition>global_func scenelayer BxScene::GetLayer</definition>
+        <argsstring>(string Name)</argsstring>
+        <name>GetLayer</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+<para>활성씬 레이어얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>레이어 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="322" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="322" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1a9cabfbf63027948ca118bf54646290d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxScene::SetFlow</definition>
+        <argsstring>(sceneflow Flow)</argsstring>
+        <name>SetFlow</name>
+        <param>
+          <type>sceneflow</type>
+          <declname>Flow</declname>
+        </param>
+        <briefdescription>
+<para>씬이동의 방식설정 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Flow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 이동방식 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="340" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="340" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1ac485f70214143d939311e6b403d6ed6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxScene::IsActivity</definition>
+        <argsstring>(string Name)</argsstring>
+        <name>IsActivity</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+<para>해당 씬의 활성화 상태얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>활성화여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="350" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="350" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1a31f3363df33df2fe373ed5e96679c95d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void *</type>
+        <definition>global_func void* BxScene::GetData</definition>
+        <argsstring>(string Name)</argsstring>
+        <name>GetData</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+<para>활성씬의 데이터얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>데이터 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="362" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="362" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_scene_1a7fb9cff7a95d574a6ee5bbfe646297ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>global_func point BxScene::GetPosition</definition>
+        <argsstring>(string Name)</argsstring>
+        <name>GetPosition</name>
+        <param>
+          <type>string</type>
+          <declname>Name</declname>
+        </param>
+        <briefdescription>
+<para>활성씬의 위치얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 씬이름 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>좌상좌표 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="375" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="375" bodyend="387"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>씬관리 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" line="16" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxScene.hpp" bodystart="15" bodyend="787"/>
+    <listofallmembers>
+      <member refid="class_bx_scene_1a44dfa1ba7068ab5c03bd26cf12c8488f" prot="public" virt="non-virtual"><scope>BxScene</scope><name>AddRequest</name></member>
+      <member refid="class_bx_scene_1aff5f27426080552c1e502a3ed30e687a" prot="public" virt="non-virtual"><scope>BxScene</scope><name>EventCB</name></member>
+      <member refid="class_bx_scene_1afbf5e8c6d7ad5527ff431ce270a2648e" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetCount</name></member>
+      <member refid="class_bx_scene_1a31f3363df33df2fe373ed5e96679c95d" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetData</name></member>
+      <member refid="class_bx_scene_1a370a9829a0072b8f6ee92d3b3f4d1a14" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetDataCB</name></member>
+      <member refid="class_bx_scene_1adbe843083462f957252c25a73d5cdca4" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetLayer</name></member>
+      <member refid="class_bx_scene_1a00e6b18b08bd3a26e2bd9516d29a1b9a" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetName</name></member>
+      <member refid="class_bx_scene_1a499f7156ad1b13ad4ce061b770746065" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetName</name></member>
+      <member refid="class_bx_scene_1a7fb9cff7a95d574a6ee5bbfe646297ba" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetPosition</name></member>
+      <member refid="class_bx_scene_1aa67af3e1d0f18f5dceef68b6a4bed932" prot="public" virt="non-virtual"><scope>BxScene</scope><name>GetSide</name></member>
+      <member refid="class_bx_scene_1ac485f70214143d939311e6b403d6ed6d" prot="public" virt="non-virtual"><scope>BxScene</scope><name>IsActivity</name></member>
+      <member refid="class_bx_scene_1ae58d98bc2807a7e7a09c4a95e7b7dda1" prot="public" virt="non-virtual"><scope>BxScene</scope><name>RenderCB</name></member>
+      <member refid="class_bx_scene_1a9cabfbf63027948ca118bf54646290d8" prot="public" virt="non-virtual"><scope>BxScene</scope><name>SetFlow</name></member>
+      <member refid="class_bx_scene_1ab8479d0db227b1f8ebbffead9dde72ac" prot="public" virt="non-virtual"><scope>BxScene</scope><name>SetRequest</name></member>
+      <member refid="class_bx_scene_1ab6c6a8c3b13a45292af9a45a25a2736e" prot="public" virt="non-virtual"><scope>BxScene</scope><name>SubRequest</name></member>
+      <member refid="class_bx_scene_1a7a535a569b8764f64f0952135917479c" prot="public" virt="non-virtual"><scope>BxScene</scope><name>UpdateCB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

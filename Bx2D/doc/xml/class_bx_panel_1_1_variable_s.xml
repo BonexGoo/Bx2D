@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_panel_1_1_variable_s" kind="class" language="C++" prot="public">
+    <compoundname>BxPanel::VariableS</compoundname>
+    <innerclass refid="class_bx_panel_1_1_variable_s_1_1_font" prot="public">BxPanel::VariableS::Font</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1a069bf35796e8dc3d0bf1a165269b880d" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; <ref refid="class_bx_image" kindref="compound">BxImage</ref> &gt;</type>
+        <definition>BxVarMap&lt;BxImage&gt; BxPanel::VariableS::img</definition>
+        <argsstring></argsstring>
+        <name>img</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="423" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1a1102e07659e1e185c61ce24dd68cc835" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; <ref refid="class_bx_panel_1_1_variable_s_1_1_font" kindref="compound">Font</ref> &gt;</type>
+        <definition>BxVarMap&lt;Font&gt; BxPanel::VariableS::fnt</definition>
+        <argsstring></argsstring>
+        <name>fnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="424" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1abe9ca40d465b38278b60526970ab3552" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; void * &gt;</type>
+        <definition>BxVarMap&lt;void*&gt; BxPanel::VariableS::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="425" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1a5fe214a3cf310704a78e652859977e70" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; int &gt;</type>
+        <definition>BxVarMap&lt;int&gt; BxPanel::VariableS::flag</definition>
+        <argsstring></argsstring>
+        <name>flag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="426" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1ae464669455718f39fd81e7d3fd170f5b" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; int &gt;</type>
+        <definition>BxVarMap&lt;int&gt; BxPanel::VariableS::int4</definition>
+        <argsstring></argsstring>
+        <name>int4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="427" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1a30f1fdb71c7c04377fde523210407ce2" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; huge &gt;</type>
+        <definition>BxVarMap&lt;huge&gt; BxPanel::VariableS::int8</definition>
+        <argsstring></argsstring>
+        <name>int8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="428" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="376">
+        <label>BxImage</label>
+        <link refid="class_bx_image"/>
+        <childnode refid="377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>BxVarMap&lt; huge &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="374" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+      </node>
+      <node id="372">
+        <label>BxPanel::VariableS</label>
+        <link refid="class_bx_panel_1_1_variable_s"/>
+        <childnode refid="373" relation="usage">
+          <edgelabel>int4</edgelabel>
+          <edgelabel>flag</edgelabel>
+        </childnode>
+        <childnode refid="375" relation="usage">
+          <edgelabel>img</edgelabel>
+        </childnode>
+        <childnode refid="381" relation="usage">
+          <edgelabel>int8</edgelabel>
+        </childnode>
+        <childnode refid="382" relation="usage">
+          <edgelabel>fnt</edgelabel>
+        </childnode>
+        <childnode refid="384" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="380">
+        <label>area</label>
+        <link refid="structarea"/>
+      </node>
+      <node id="379">
+        <label>BxExpress::_Integer</label>
+        <link refid="class_bx_express_1_1___integer"/>
+      </node>
+      <node id="377">
+        <label>BxDrawForm</label>
+        <link refid="class_bx_draw_form"/>
+        <childnode refid="378" relation="usage">
+          <edgelabel>ExpressAreaW</edgelabel>
+          <edgelabel>ExpressAreaH</edgelabel>
+        </childnode>
+        <childnode refid="380" relation="usage">
+          <edgelabel>Area</edgelabel>
+        </childnode>
+      </node>
+      <node id="375">
+        <label>BxVarMap&lt; BxImage &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="374" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+        <childnode refid="376" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="374">
+        <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
+      </node>
+      <node id="378">
+        <label>BxExpress::IntegerX</label>
+        <link refid="class_bx_express_1_1_integer_x"/>
+        <childnode refid="379" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>BxVarMap&lt; BxPanel::VariableS::Font &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="374" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+        <childnode refid="383" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="384">
+        <label>BxVarMap&lt; void * &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="374" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+      </node>
+      <node id="373">
+        <label>BxVarMap&lt; int &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="374" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+      </node>
+      <node id="383">
+        <label>BxPanel::VariableS::Font</label>
+        <link refid="class_bx_panel_1_1_variable_s_1_1_font"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="404" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="403" bodyend="429"/>
+    <listofallmembers>
+      <member refid="class_bx_panel_1_1_variable_s_1a5fe214a3cf310704a78e652859977e70" prot="public" virt="non-virtual"><scope>BxPanel::VariableS</scope><name>flag</name></member>
+      <member refid="class_bx_panel_1_1_variable_s_1a1102e07659e1e185c61ce24dd68cc835" prot="public" virt="non-virtual"><scope>BxPanel::VariableS</scope><name>fnt</name></member>
+      <member refid="class_bx_panel_1_1_variable_s_1a069bf35796e8dc3d0bf1a165269b880d" prot="public" virt="non-virtual"><scope>BxPanel::VariableS</scope><name>img</name></member>
+      <member refid="class_bx_panel_1_1_variable_s_1ae464669455718f39fd81e7d3fd170f5b" prot="public" virt="non-virtual"><scope>BxPanel::VariableS</scope><name>int4</name></member>
+      <member refid="class_bx_panel_1_1_variable_s_1a30f1fdb71c7c04377fde523210407ce2" prot="public" virt="non-virtual"><scope>BxPanel::VariableS</scope><name>int8</name></member>
+      <member refid="class_bx_panel_1_1_variable_s_1abe9ca40d465b38278b60526970ab3552" prot="public" virt="non-virtual"><scope>BxPanel::VariableS</scope><name>ptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_web_content_1_1_contact_pool" kind="class" language="C++" prot="private">
+    <compoundname>BxWebContent::ContactPool</compoundname>
+    <innerclass refid="class_bx_web_content_1_1_contact_pool_1_1_cookie" prot="public">BxWebContent::ContactPool::Cookie</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_bx_web_content_1_1_contact_pool_1aef133379a5624beacb09f37f9cccb161" prot="private" static="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; ContactPool &gt;</type>
+        <definition>typedef BxVarMap&lt;ContactPool&gt; BxWebContent::ContactPool::ContactMap</definition>
+        <argsstring></argsstring>
+        <name>ContactMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="35" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_web_content_1_1_contact_pool_1aa177c4da66f89700c4a3a55b5f5d23e2" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; <ref refid="class_bx_web_content_1_1_contact_pool_1_1_cookie" kindref="compound">Cookie</ref> * &gt;</type>
+        <definition>BxVarMap&lt;Cookie*&gt; BxWebContent::ContactPool::CookieMap</definition>
+        <argsstring></argsstring>
+        <name>CookieMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="30" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_web_content_1_1_contact_pool_1ad73b6363fbb7449cc80cb149551f9b69" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; <ref refid="class_bx_web_content_1_1_contact_pool_1_1_cookie" kindref="compound">Cookie</ref>, 4 &gt;</type>
+        <definition>BxVarVector&lt;Cookie, 4&gt; BxWebContent::ContactPool::CookieList</definition>
+        <argsstring></argsstring>
+        <name>CookieList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="31" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_web_content_1_1_contact_pool_1a03c7c56ba3f171cc0df7b59abe2bbe85" prot="public" static="no" mutable="no">
+        <type><ref refid="structid__struct__04" kindref="compound">id_socket</ref></type>
+        <definition>id_socket BxWebContent::ContactPool::Socket</definition>
+        <argsstring></argsstring>
+        <name>Socket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="32" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_web_content_1_1_contact_pool_1a9daac93611f52711ad99f738c2a53b27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::ContactPool::ContactPool</definition>
+        <argsstring>()</argsstring>
+        <name>ContactPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="33" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_contact_pool_1a6c465998404c5bf1a67ce5a59226501f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::ContactPool::~ContactPool</definition>
+        <argsstring>()</argsstring>
+        <name>~ContactPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="34" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_contact_pool_1a8a0bbe918c0416d57a3bab3f13515729" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func ContactPool *</type>
+        <definition>global_func ContactPool* BxWebContent::ContactPool::Access</definition>
+        <argsstring>(string Domain, ushort Port)</argsstring>
+        <name>Access</name>
+        <param>
+          <type>string</type>
+          <declname>Domain</declname>
+        </param>
+        <param>
+          <type>ushort</type>
+          <declname>Port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="38" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_contact_pool_1a75de9495cd8e5bf7dbdb8fd9b8c375fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxWebContent::ContactPool::Remove</definition>
+        <argsstring>(string Domain, ushort Port)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>string</type>
+          <declname>Domain</declname>
+        </param>
+        <param>
+          <type>ushort</type>
+          <declname>Port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="39" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="39" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_web_content_1_1_contact_pool_1aeb8719626babe0e62a003216f4475fd3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; <ref refid="class_bx_var_map" kindref="compound">ContactMap</ref> &gt; &amp;</type>
+        <definition>global_func BxVarMap&lt;ContactMap&gt;&amp; BxWebContent::ContactPool::Pool</definition>
+        <argsstring>()</argsstring>
+        <name>Pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="36" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="36" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="119">
+        <label>BxWebContent::ContactPool::Cookie</label>
+        <link refid="class_bx_web_content_1_1_contact_pool_1_1_cookie"/>
+      </node>
+      <node id="121">
+        <label>id_struct_04</label>
+        <link refid="structid__struct__04"/>
+      </node>
+      <node id="117">
+        <label>BxVarVector&lt; BxWebContent::ContactPool::Cookie, 4 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+      <node id="118">
+        <label>BxVarMap&lt; BxWebContent::ContactPool::Cookie * &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="119" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+        <childnode refid="120" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+      </node>
+      <node id="116">
+        <label>BxWebContent::ContactPool</label>
+        <childnode refid="117" relation="usage">
+          <edgelabel>CookieList</edgelabel>
+        </childnode>
+        <childnode refid="118" relation="usage">
+          <edgelabel>CookieMap</edgelabel>
+        </childnode>
+        <childnode refid="121" relation="usage">
+          <edgelabel>Socket</edgelabel>
+        </childnode>
+      </node>
+      <node id="120">
+        <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="10" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="9" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_bx_web_content_1_1_contact_pool_1a8a0bbe918c0416d57a3bab3f13515729" prot="public" virt="non-virtual"><scope>BxWebContent::ContactPool</scope><name>Access</name></member>
+      <member refid="class_bx_web_content_1_1_contact_pool_1aef133379a5624beacb09f37f9cccb161" prot="private" virt="non-virtual"><scope>BxWebContent::ContactPool</scope><name>ContactMap</name></member>
+      <member refid="class_bx_web_content_1_1_contact_pool_1a9daac93611f52711ad99f738c2a53b27" prot="public" virt="non-virtual"><scope>BxWebContent::ContactPool</scope><name>ContactPool</name></member>
+      <member refid="class_bx_web_content_1_1_contact_pool_1ad73b6363fbb7449cc80cb149551f9b69" prot="public" virt="non-virtual"><scope>BxWebContent::ContactPool</scope><name>CookieList</name></member>
+      <member refid="class_bx_web_content_1_1_contact_pool_1aa177c4da66f89700c4a3a55b5f5d23e2" prot="public" virt="non-virtual"><scope>BxWebContent::ContactPool</scope><name>CookieMap</name></member>
+      <member refid="class_bx_web_content_1_1_contact_pool_1aeb8719626babe0e62a003216f4475fd3" prot="private" virt="non-virtual"><scope>BxWebContent::ContactPool</scope><name>Pool</name></member>
+      <member refid="class_bx_web_content_1_1_contact_pool_1a75de9495cd8e5bf7dbdb8fd9b8c375fb" prot="public" virt="non-virtual"><scope>BxWebContent::ContactPool</scope><name>Remove</name></member>
+      <member refid="class_bx_web_content_1_1_contact_pool_1a03c7c56ba3f171cc0df7b59abe2bbe85" prot="public" virt="non-virtual"><scope>BxWebContent::ContactPool</scope><name>Socket</name></member>
+      <member refid="class_bx_web_content_1_1_contact_pool_1a6c465998404c5bf1a67ce5a59226501f" prot="public" virt="non-virtual"><scope>BxWebContent::ContactPool</scope><name>~ContactPool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

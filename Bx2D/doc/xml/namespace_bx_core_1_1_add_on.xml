@@ -1,0 +1,940 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="namespace_bx_core_1_1_add_on" kind="namespace" language="C++">
+    <compoundname>BxCore::AddOn</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a4315a261d16a4efcbccfc6cb5deb54f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte * BxCore::AddOn::JPGToBMP</definition>
+        <argsstring>(const byte *jpg)</argsstring>
+        <name>JPGToBMP</name>
+        <param>
+          <type>const byte *</type>
+          <declname>jpg</declname>
+        </param>
+        <briefdescription>
+<para>JPG이미지로 BMP를 제작 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jpg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: JPG리소스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BMP리소스(Release로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="546" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="859" bodyend="862"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1af17ee227494d6911f4d5394d28c4f85b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte * BxCore::AddOn::GIFToBMP</definition>
+        <argsstring>(const byte *gif, const int length, int _out_ numpage)</argsstring>
+        <name>GIFToBMP</name>
+        <param>
+          <type>const byte *</type>
+          <declname>gif</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int _out_</type>
+          <declname>numpage</declname>
+        </param>
+        <briefdescription>
+<para>GIF이미지로 BMP를 제작 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gif</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GIF리소스 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: GIF리소스의 길이(byte) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numpage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 장면수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>모든 장면이 세로로 연결된 BMP리소스(Release로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="556" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="864" bodyend="867"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a0e5c95dfe4c4b4f70864dfea29068c7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte * BxCore::AddOn::HQXToBMP</definition>
+        <argsstring>(const byte *bmp, int scale)</argsstring>
+        <name>HQXToBMP</name>
+        <param>
+          <type>const byte *</type>
+          <declname>bmp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+<para>HQX방식으로 재가공된 BMP를 제작 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BMP리소스 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: HQX옵션(2, 3, 4중 선택) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>재가공된 BMP리소스(Release로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="565" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="869" bodyend="872"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a7e5afd2b177cb0dfa7ad9cdc7a00ad7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::AddOn::BUFToMD5</definition>
+        <argsstring>(const byte *buffer, const int length)</argsstring>
+        <name>BUFToMD5</name>
+        <param>
+          <type>const byte *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>데이터버퍼를 통해 MD5해시스트링을 제작 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 데이터버퍼 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 데이터버퍼의 길이(byte) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>MD5해시스트링(무조건 32바이트) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="573" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="874" bodyend="877"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a6b8db6137aa9337195bbaca1007f6cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte * BxCore::AddOn::BUFToBASE64</definition>
+        <argsstring>(const byte *buffer, const int length, int *get_base64_length=nullptr)</argsstring>
+        <name>BUFToBASE64</name>
+        <param>
+          <type>const byte *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>get_base64_length</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>데이터버퍼를 통해 BASE64버퍼를 제작 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 데이터버퍼 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 데이터버퍼의 길이(byte) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>get_base64_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nullptr이 아닌 경우 BASE64버퍼의 길이(byte)를 받음 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BASE64버퍼 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="583" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="879" bodyend="903"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a400d7d51f62351ffc1bea46d3b07d56d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte * BxCore::AddOn::BASE64ToBUF</definition>
+        <argsstring>(const byte *base64, const int length, int *get_buffer_length=nullptr)</argsstring>
+        <name>BASE64ToBUF</name>
+        <param>
+          <type>const byte *</type>
+          <declname>base64</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>get_buffer_length</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>BASE64버퍼를 통해 데이터버퍼를 제작 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>base64</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BASE64버퍼 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BASE64버퍼의 길이(byte) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>get_buffer_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nullptr이 아닌 경우 데이터버퍼의 길이(byte)를 받음 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>데이터버퍼 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="593" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="905" bodyend="947"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a4f0a1d827096b16626f6b0a89ace07f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__10" kindref="compound">id_zip</ref></type>
+        <definition>id_zip BxCore::AddOn::CreateZIP</definition>
+        <argsstring>(const byte *zip, const int length, int _out_ numfile, string password=nullptr)</argsstring>
+        <name>CreateZIP</name>
+        <param>
+          <type>const byte *</type>
+          <declname>zip</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int _out_</type>
+          <declname>numfile</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>ZIP파일의 디코딩을 위한 객체 생성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ZIP리소스 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ZIP리소스의 길이(byte) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numfile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일수 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비밀번호 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ZIP객체 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1ad8940c44357430f8d5aa09fb22478630" kindref="member">ReleaseZIP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="604" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="949" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1ad8940c44357430f8d5aa09fb22478630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::AddOn::ReleaseZIP</definition>
+        <argsstring>(id_zip zip)</argsstring>
+        <name>ReleaseZIP</name>
+        <param>
+          <type><ref refid="structid__struct__10" kindref="compound">id_zip</ref></type>
+          <declname>zip</declname>
+        </param>
+        <briefdescription>
+<para>ZIP객체 제거 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ZIP객체 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a4f0a1d827096b16626f6b0a89ace07f9" kindref="member">CreateZIP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="611" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="954" bodyend="957"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a46ac0ae27223a96b93d1eaee33e98e6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte * BxCore::AddOn::ZIPToFILE</definition>
+        <argsstring>(id_zip zip, const int fileindex, int _out_ filesize)</argsstring>
+        <name>ZIPToFILE</name>
+        <param>
+          <type><ref refid="structid__struct__10" kindref="compound">id_zip</ref></type>
+          <declname>zip</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>fileindex</declname>
+        </param>
+        <param>
+          <type>int _out_</type>
+          <declname>filesize</declname>
+        </param>
+        <briefdescription>
+<para>ZIP객체에서 요청 순번의 파일을 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ZIP객체 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileindex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 요청 순번 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filesize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일사이즈 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>요청 순번의 파일리소스(Release로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="621" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="959" bodyend="962"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a7b9e110e245439608c9af694714ff3fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::AddOn::ZIPToINFO</definition>
+        <argsstring>(id_zip zip, const int fileindex, bool *isdir=nullptr, uhuge *ctime=nullptr, uhuge *mtime=nullptr, uhuge *atime=nullptr, bool *archive=nullptr, bool *hidden=nullptr, bool *readonly=nullptr, bool *system=nullptr)</argsstring>
+        <name>ZIPToINFO</name>
+        <param>
+          <type><ref refid="structid__struct__10" kindref="compound">id_zip</ref></type>
+          <declname>zip</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>fileindex</declname>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>isdir</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>uhuge *</type>
+          <declname>ctime</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>uhuge *</type>
+          <declname>mtime</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>uhuge *</type>
+          <declname>atime</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>archive</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>hidden</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>readonly</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool *</type>
+          <declname>system</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>ZIP객체에서 요청 순번의 파일정보를 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ZIP객체 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileindex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 요청 순번 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isdir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폴더인지의 여부 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 생성시간(UTC기준) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mtime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 수정시간(UTC기준) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>atime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 접근시간(UTC기준) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>archive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 저장속성 여부 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hidden</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 숨김속성 여부 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>readonly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽기전용속성 여부 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>system</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 시스템속성 여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>요청 순번의 파일명 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="637" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="964" bodyend="969"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1ac79df3b34b02bcb690f0d9fae8aace9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__11" kindref="compound">id_ttf</ref></type>
+        <definition>id_ttf BxCore::AddOn::CreateTTF</definition>
+        <argsstring>(const byte *ttf, const int length)</argsstring>
+        <name>CreateTTF</name>
+        <param>
+          <type>const byte *</type>
+          <declname>ttf</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>TTF파일의 랜더링을 위한 객체 생성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ttf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: TTF리소스 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: TTF리소스의 길이(byte) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TTF객체 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a72280d443112f06f3fdd05a5aab34fcf" kindref="member">ReleaseTTF</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="648" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="971" bodyend="974"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a72280d443112f06f3fdd05a5aab34fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::AddOn::ReleaseTTF</definition>
+        <argsstring>(id_ttf ttf)</argsstring>
+        <name>ReleaseTTF</name>
+        <param>
+          <type><ref refid="structid__struct__11" kindref="compound">id_ttf</ref></type>
+          <declname>ttf</declname>
+        </param>
+        <briefdescription>
+<para>TTF객체 제거 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ttf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: TTF객체 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1ac79df3b34b02bcb690f0d9fae8aace9a" kindref="member">CreateTTF</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="655" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="976" bodyend="979"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a140dbe83fcb6cb5236a520e47fc51f9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte * BxCore::AddOn::TTFToBMP</definition>
+        <argsstring>(id_ttf ttf, int height, uint code)</argsstring>
+        <name>TTFToBMP</name>
+        <param>
+          <type><ref refid="structid__struct__11" kindref="compound">id_ttf</ref></type>
+          <declname>ttf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>TTF객체에서 해당 문자를 BMP로 제작 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ttf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: TTF객체 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 세로길이(pixel) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 문자코드(UTF16) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BMP리소스(Release로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="665" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="981" bodyend="984"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a9c19971aa1971820c0232a4393f3503c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::AddOn::TTFToINFO</definition>
+        <argsstring>(id_ttf ttf, int height, uint code, int *width=nullptr, int *ascent=nullptr)</argsstring>
+        <name>TTFToINFO</name>
+        <param>
+          <type><ref refid="structid__struct__11" kindref="compound">id_ttf</ref></type>
+          <declname>ttf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>width</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>ascent</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>TTF객체에서 해당 문자정보를 로드 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ttf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: TTF객체 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 세로길이(pixel) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 문자코드(UTF16) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 가로길이(pixel) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ascent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 기준라인위치(pixel) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>성공여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="676" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="986" bodyend="989"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a54a0230697a6b8d81a01d05f03c2b46c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte * BxCore::AddOn::CreateBMP</definition>
+        <argsstring>(int width, int height, short param1=0, short param2=0)</argsstring>
+        <name>CreateBMP</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>param1</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>param2</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>크기정보로 BMP를 생성(픽셀정보는 초기화되지 않음) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 가로길이(pixel) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 세로길이(pixel) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>param1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 추가정보1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>param2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 추가정보2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BMP리소스(Release로 해제) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="687" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="991" bodyend="1018"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1ae6549afa1708eb6ef8a6a3722d83de1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::AddOn::GetBMPWidth</definition>
+        <argsstring>(const byte *bmp)</argsstring>
+        <name>GetBMPWidth</name>
+        <param>
+          <type>const byte *</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+<para>BMP의 가로길이(pixel) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BMP리소스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>가로길이(pixel) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a54a0230697a6b8d81a01d05f03c2b46c" kindref="member">CreateBMP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="695" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="1020" bodyend="1024"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1ac49b490a3b41c60a90e6b54a6ba3f2d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::AddOn::GetBMPHeight</definition>
+        <argsstring>(const byte *bmp)</argsstring>
+        <name>GetBMPHeight</name>
+        <param>
+          <type>const byte *</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+<para>BMP의 세로길이(pixel) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BMP리소스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>세로길이(pixel) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a54a0230697a6b8d81a01d05f03c2b46c" kindref="member">CreateBMP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="703" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="1026" bodyend="1030"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1ac09568251ed262b7925c64b354015a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>short</type>
+        <definition>short BxCore::AddOn::GetBMPParam1</definition>
+        <argsstring>(const byte *bmp)</argsstring>
+        <name>GetBMPParam1</name>
+        <param>
+          <type>const byte *</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+<para>BMP의 추가정보1(short) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BMP리소스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>추가정보1(short) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a54a0230697a6b8d81a01d05f03c2b46c" kindref="member">CreateBMP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="711" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="1032" bodyend="1036"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1abc1ff743eeb7f89040e31f3713136dec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>short</type>
+        <definition>short BxCore::AddOn::GetBMPParam2</definition>
+        <argsstring>(const byte *bmp)</argsstring>
+        <name>GetBMPParam2</name>
+        <param>
+          <type>const byte *</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+<para>BMP의 추가정보2(short) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BMP리소스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>추가정보2(short) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a54a0230697a6b8d81a01d05f03c2b46c" kindref="member">CreateBMP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="719" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="1038" bodyend="1042"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a07921c4fd6c8780240782afc4e34bae4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="unionbitmappixel" kindref="compound">bitmappixel</ref> *</type>
+        <definition>bitmappixel * BxCore::AddOn::GetBMPBits</definition>
+        <argsstring>(const byte *bmp)</argsstring>
+        <name>GetBMPBits</name>
+        <param>
+          <type>const byte *</type>
+          <declname>bmp</declname>
+        </param>
+        <briefdescription>
+<para>BMP의 픽셀정보(bitmappixel) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bmp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: BMP리소스 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>픽셀정보(bitmappixel) 시작포인터 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_add_on_1a54a0230697a6b8d81a01d05f03c2b46c" kindref="member">CreateBMP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="727" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="1044" bodyend="1047"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_add_on_1a6d31d4d96a38632a5372d1de8bd7cdf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::AddOn::Release</definition>
+        <argsstring>(const byte *buf)</argsstring>
+        <name>Release</name>
+        <param>
+          <type>const byte *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+<para>AddOn리소스 해제 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: AddOn함수로 생성한 메모리 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="733" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="1049" bodyend="1052"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>AddOn파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="539" column="1"/>
+  </compounddef>
+</doxygen>

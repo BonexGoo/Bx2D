@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_string_1_1_parse" kind="class" language="C++" prot="public">
+    <compoundname>BxString::Parse</compoundname>
+    <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_bx_string_1_1_parse_1ad1ae50e417ad19bc696eb1c1cf9d644c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxString::Parse::ValidCount</definition>
+        <argsstring></argsstring>
+        <name>ValidCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="288" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_string_1_1_parse_1a15ee95cfab2bbb7d4538be2189c8e30a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxString::Parse::StringLength</definition>
+        <argsstring></argsstring>
+        <name>StringLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="289" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_string_1_1_parse_1a828bad089a64f287faef9e033050665d" prot="protected" static="no" mutable="no">
+        <type>string_rw</type>
+        <definition>string_rw BxString::Parse::String</definition>
+        <argsstring></argsstring>
+        <name>String</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="290" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_string_1_1_parse_1a6110d2f7e4bf5d05cf7fd032160839ec" prot="protected" static="no" mutable="yes">
+        <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+        <definition>id_text BxString::Parse::Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="291" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a4b450ff95cb02d0dc27f1afb5b3cfe9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::Parse::Parse</definition>
+        <argsstring>()</argsstring>
+        <name>Parse</name>
+        <briefdescription>
+<para>기본생성자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="17" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a67105b5647f1e31bcfb94de979a03c8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::Parse::Parse</definition>
+        <argsstring>(const Parse &amp;RHS)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>const <ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>복사생성자(Parse) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="28" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="28" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a0472574efd03e5e7881a2039c23f4da3" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::Parse::Parse</definition>
+        <argsstring>(string RHS, int Length=-1)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>string</type>
+          <declname>RHS</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Length</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>복사생성자(string, int) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="39" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="39" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1af800c7e1bb8dca01fa259d614897ba84" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::Parse::Parse</definition>
+        <argsstring>(const Parse *RHS1, string RHS2)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>const <ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref> *</type>
+          <declname>RHS1</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>RHS2</declname>
+        </param>
+        <briefdescription>
+<para>복사생성자(Parse*, string) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="50" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="50" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a80bdc7751cea364fedd99186eec547a5" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::Parse::Parse</definition>
+        <argsstring>(string RHS, const BxArgument &amp;Args)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>string</type>
+          <declname>RHS</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_argument" kindref="compound">BxArgument</ref> &amp;</type>
+          <declname>Args</declname>
+        </param>
+        <briefdescription>
+<para>복사생성자(string, BxArgument) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="65" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="65" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a66a98aa39b029070417c6420918a9386" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::Parse::~Parse</definition>
+        <argsstring>()</argsstring>
+        <name>~Parse</name>
+        <briefdescription>
+<para>소멸자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="77" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a02360a5435eb248e962065b37b2e8d1b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxString::Parse::GetLength</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLength</name>
+        <briefdescription>
+<para>길이(byte) 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>스트링의 글자길이(byte) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="87" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a04c207dfe571c09f1c83efca65cc989a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char BxString::Parse::GetLast</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLast</name>
+        <briefdescription>
+<para>마지막 글자 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>마지막 글자 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="96" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a53e874e70b65c59b05b6cb2cf3bbfdc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxString::Parse::DeleteLast</definition>
+        <argsstring>()</argsstring>
+        <name>DeleteLast</name>
+        <briefdescription>
+<para>마지막 글자 지우기 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="104" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="104" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a4b3d625a38c9263ec88d139b2fb0392b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref></type>
+        <definition>Parse BxString::Parse::operator+</definition>
+        <argsstring>(string RHS) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>string</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수+(string) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>새로운 인스턴스 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="116" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a354770597a5da6b41837223b0cab586c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref> &amp;</type>
+        <definition>Parse&amp; BxString::Parse::operator=</definition>
+        <argsstring>(string RHS)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>string</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수=(string) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="126" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="126" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a60eb1e05b7c0913618f714b06ab46c49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref> &amp;</type>
+        <definition>Parse&amp; BxString::Parse::operator=</definition>
+        <argsstring>(const Parse &amp;RHS)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref> &amp;</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수=(<ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref>) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="141" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a5db01feb4515750b37566145091f2377" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref> &amp;</type>
+        <definition>Parse&amp; BxString::Parse::operator+=</definition>
+        <argsstring>(char RHS)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>char</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수+=(char) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="151" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="151" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1adbdcec24abd464a3ee914a5802053e60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref> &amp;</type>
+        <definition>Parse&amp; BxString::Parse::operator+=</definition>
+        <argsstring>(string RHS)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>string</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+<para>연산자 중복함수+=(string) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>RHS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 우측 피연산자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>자신을 리턴 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="174" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="174" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1aae8758a16fc500fe8ce629748bdfd138" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::Parse::operator string</definition>
+        <argsstring>() const </argsstring>
+        <name>operator string</name>
+        <briefdescription>
+<para>형변환 중복함수(string) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>string형 전체스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="196" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="196" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a09c291cdc4c3d8ce1a39c469e2a0b9cf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxString::Parse::operator id_text</definition>
+        <argsstring>() const </argsstring>
+        <name>operator id_text</name>
+        <briefdescription>
+<para>형변환 중복함수(id_text) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>id_text형 전체스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="205" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="205" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a8a3db8693b604250c1e72f089652b7ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char</type>
+        <definition>const char BxString::Parse::operator[]</definition>
+        <argsstring>(int Index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>Index</declname>
+        </param>
+        <briefdescription>
+<para>배열접근 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 배열번호 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char형 해당 데이터 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="217" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="217" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1aa77903d68a117f96c7514bd1c9b50c35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxString::Parse::Division</definition>
+        <argsstring>(BxVar&lt; Parse &gt; &amp;Result, string Src, int Length=-1)</argsstring>
+        <name>Division</name>
+        <param>
+          <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; <ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref> &gt; &amp;</type>
+          <declname>Result</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Length</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>파티션스트링 나누기(|A|B|C|, /A/B/C/, <emphasis>A*B*C</emphasis>...) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 나눔기호(첫바이트 자동인식)로 분리된 결과(강제 Reset은 안함) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작업할 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작업할 스트링의 사이즈(byte, Other의 길이로 자동셋팅 : -1) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="230" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="230" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1a3ec32ba0a6e656d34b313ca6b28676e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref></type>
+        <definition>global_func Parse BxString::Parse::UnitName</definition>
+        <argsstring>(string Unit)</argsstring>
+        <name>UnitName</name>
+        <param>
+          <type>string</type>
+          <declname>Unit</declname>
+        </param>
+        <briefdescription>
+<para>유니트스트링 이름 가져오기(A&lt;B:C:D&gt;에서 A부분) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작업할 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>이름 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="249" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="249" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1abcaf42e665a9a274dc1192de26c9e1be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_string_1_1_parse" kindref="compound">Parse</ref></type>
+        <definition>global_func Parse BxString::Parse::UnitParam</definition>
+        <argsstring>(string Unit, int Order)</argsstring>
+        <name>UnitParam</name>
+        <param>
+          <type>string</type>
+          <declname>Unit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Order</declname>
+        </param>
+        <briefdescription>
+<para>유니트스트링 인수 가져오기(A&lt;B:C:D&gt;에서 B, C, D부분) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작업할 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 인수중 가져올 순번 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>인수 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="262" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="262" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_string_1_1_parse_1ace762831e8c79f125e960fdf726d9399" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func int</type>
+        <definition>global_func int BxString::Parse::UnitParamLength</definition>
+        <argsstring>(string Unit)</argsstring>
+        <name>UnitParamLength</name>
+        <param>
+          <type>string</type>
+          <declname>Unit</declname>
+        </param>
+        <briefdescription>
+<para>유니트스트링 인수수량 가져오기(A&lt;B:C:D&gt;의 경우, 3을 리턴) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Unit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작업할 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>인수수량 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="278" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="278" bodyend="285"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>파싱 관리 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="247">
+        <label>id_struct_01</label>
+        <link refid="structid__struct__01"/>
+      </node>
+      <node id="246">
+        <label>BxString::Parse</label>
+        <link refid="class_bx_string_1_1_parse"/>
+        <childnode refid="247" relation="usage">
+          <edgelabel>Text</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" line="12" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxString.hpp" bodystart="11" bodyend="292"/>
+    <listofallmembers>
+      <member refid="class_bx_string_1_1_parse_1a53e874e70b65c59b05b6cb2cf3bbfdc0" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>DeleteLast</name></member>
+      <member refid="class_bx_string_1_1_parse_1aa77903d68a117f96c7514bd1c9b50c35" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>Division</name></member>
+      <member refid="class_bx_string_1_1_parse_1a04c207dfe571c09f1c83efca65cc989a" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>GetLast</name></member>
+      <member refid="class_bx_string_1_1_parse_1a02360a5435eb248e962065b37b2e8d1b" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>GetLength</name></member>
+      <member refid="class_bx_string_1_1_parse_1a09c291cdc4c3d8ce1a39c469e2a0b9cf" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>operator id_text</name></member>
+      <member refid="class_bx_string_1_1_parse_1aae8758a16fc500fe8ce629748bdfd138" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>operator string</name></member>
+      <member refid="class_bx_string_1_1_parse_1a4b3d625a38c9263ec88d139b2fb0392b" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>operator+</name></member>
+      <member refid="class_bx_string_1_1_parse_1a5db01feb4515750b37566145091f2377" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>operator+=</name></member>
+      <member refid="class_bx_string_1_1_parse_1adbdcec24abd464a3ee914a5802053e60" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>operator+=</name></member>
+      <member refid="class_bx_string_1_1_parse_1a354770597a5da6b41837223b0cab586c" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>operator=</name></member>
+      <member refid="class_bx_string_1_1_parse_1a60eb1e05b7c0913618f714b06ab46c49" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>operator=</name></member>
+      <member refid="class_bx_string_1_1_parse_1a8a3db8693b604250c1e72f089652b7ed" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>operator[]</name></member>
+      <member refid="class_bx_string_1_1_parse_1a4b450ff95cb02d0dc27f1afb5b3cfe9f" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>Parse</name></member>
+      <member refid="class_bx_string_1_1_parse_1a67105b5647f1e31bcfb94de979a03c8e" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>Parse</name></member>
+      <member refid="class_bx_string_1_1_parse_1a0472574efd03e5e7881a2039c23f4da3" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>Parse</name></member>
+      <member refid="class_bx_string_1_1_parse_1af800c7e1bb8dca01fa259d614897ba84" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>Parse</name></member>
+      <member refid="class_bx_string_1_1_parse_1a80bdc7751cea364fedd99186eec547a5" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>Parse</name></member>
+      <member refid="class_bx_string_1_1_parse_1a828bad089a64f287faef9e033050665d" prot="protected" virt="non-virtual"><scope>BxString::Parse</scope><name>String</name></member>
+      <member refid="class_bx_string_1_1_parse_1a15ee95cfab2bbb7d4538be2189c8e30a" prot="protected" virt="non-virtual"><scope>BxString::Parse</scope><name>StringLength</name></member>
+      <member refid="class_bx_string_1_1_parse_1a6110d2f7e4bf5d05cf7fd032160839ec" prot="protected" virt="non-virtual"><scope>BxString::Parse</scope><name>Text</name></member>
+      <member refid="class_bx_string_1_1_parse_1a3ec32ba0a6e656d34b313ca6b28676e1" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>UnitName</name></member>
+      <member refid="class_bx_string_1_1_parse_1abcaf42e665a9a274dc1192de26c9e1be" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>UnitParam</name></member>
+      <member refid="class_bx_string_1_1_parse_1ace762831e8c79f125e960fdf726d9399" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>UnitParamLength</name></member>
+      <member refid="class_bx_string_1_1_parse_1ad1ae50e417ad19bc696eb1c1cf9d644c" prot="protected" virt="non-virtual"><scope>BxString::Parse</scope><name>ValidCount</name></member>
+      <member refid="class_bx_string_1_1_parse_1a66a98aa39b029070417c6420918a9386" prot="public" virt="non-virtual"><scope>BxString::Parse</scope><name>~Parse</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

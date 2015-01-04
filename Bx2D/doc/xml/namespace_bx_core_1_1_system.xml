@@ -1,0 +1,1171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="namespace_bx_core_1_1_system" kind="namespace" language="C++">
+    <compoundname>BxCore::System</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ab2e59628389afb803d3f45060383d1b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsQuit</definition>
+        <argsstring>()</argsstring>
+        <name>IsQuit</name>
+        <briefdescription>
+<para>어플종료 요청여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true-종료가 요청됨, false-종료요청 없음 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_system_1a76e419e00d7b54a666a81fbcf125ac0b" kindref="member">DoQuit</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="36" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a76e419e00d7b54a666a81fbcf125ac0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::DoQuit</definition>
+        <argsstring>()</argsstring>
+        <name>DoQuit</name>
+        <briefdescription>
+<para>어플종료 요청 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_system_1ab2e59628389afb803d3f45060383d1b6" kindref="member">IsQuit</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="42" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ac19388a6c092a2770a38a155e7f1cc6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::Sleep</definition>
+        <argsstring>(int ms)</argsstring>
+        <name>Sleep</name>
+        <param>
+          <type>int</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+<para>프로세스 슬립(밀린 소켓/키이벤트등 처리) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 쉴 시간(1/1000초) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="48" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="71" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ab14eb3855f4090d1224d7fee625c119f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uhuge</type>
+        <definition>uhuge BxCore::System::GetTimeMilliSecond</definition>
+        <argsstring>()</argsstring>
+        <name>GetTimeMilliSecond</name>
+        <briefdescription>
+<para>현재시간을 밀리초로 구하기(천분의 1초) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1/1,000초 단위로 계산된 현재시간(UTC기준) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="54" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ad2a6c71226e0449a64c37b80b5cdbe99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uhuge</type>
+        <definition>uhuge BxCore::System::GetTimeNanoSecond</definition>
+        <argsstring>()</argsstring>
+        <name>GetTimeNanoSecond</name>
+        <briefdescription>
+<para>현재시간을 나노초로 구하기(10억분의 1초) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1/1,000,000,000초 단위로 계산된 현재시간 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="60" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a34998eba0b8d104f30f3f51f7f7bf9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uhuge</type>
+        <definition>uhuge BxCore::System::GetTimeSimilarMicroSecond</definition>
+        <argsstring>()</argsstring>
+        <name>GetTimeSimilarMicroSecond</name>
+        <briefdescription>
+<para>현재시간을 유사 마이크로초(나노초&gt;&gt;10)로 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1/976,562초 단위로 계산된 현재시간 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="66" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ae89a8d48541b11a69ed90cf5076e2d06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsMultiTouchAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>IsMultiTouchAvailable</name>
+        <briefdescription>
+<para>멀티터치 가능여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true-가능, false-불가능 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="72" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="95" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a86fbb372ea32b5ef24e6da6ed3bcfd3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsTouchDown</definition>
+        <argsstring>()</argsstring>
+        <name>IsTouchDown</name>
+        <briefdescription>
+<para>터치의 현재 누름여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true-눌러짐, false-안눌러짐 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="78" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a230fc6a703a2c6e4aa9c9f220c3de98c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsKeyDown</definition>
+        <argsstring>(keykind key)</argsstring>
+        <name>IsKeyDown</name>
+        <param>
+          <type>keykind</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>특정 키의 현재 누름여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 확인할 키값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true-눌러짐, false-안눌러짐 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="85" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ac714d932b1b27b88793c01f528752691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsExistConfig</definition>
+        <argsstring>(keyword type, string name)</argsstring>
+        <name>IsExistConfig</name>
+        <param>
+          <type>keyword</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>환경설정값 존재여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수타입 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true-있음, false-없음 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="93" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="211" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a233de8b9a6ff5a590555f6ef58033bef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::GetConfigCheck</definition>
+        <argsstring>(string name, bool defaultCheck)</argsstring>
+        <name>GetConfigCheck</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>defaultCheck</declname>
+        </param>
+        <briefdescription>
+<para>Check형 환경설정값 불러오기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultCheck</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 디폴트값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 설정값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="101" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="217" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1acdf43bdd47ce78f2d24404bd6d782d4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::System::GetConfigNumber</definition>
+        <argsstring>(string name, int defaultNumber)</argsstring>
+        <name>GetConfigNumber</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>defaultNumber</declname>
+        </param>
+        <briefdescription>
+<para>Number형 환경설정값 불러오기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 디폴트값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 설정값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="109" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="225" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1aaaf026f3d1f3df3ac0794f8adcf1c4f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::System::GetConfigString</definition>
+        <argsstring>(string name, string defaultString)</argsstring>
+        <name>GetConfigString</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>defaultString</declname>
+        </param>
+        <briefdescription>
+<para>String형 환경설정값 불러오기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaultString</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 디폴트값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 설정값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="117" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="233" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a7e6b5e614e1e3ed23733fb1f21f4d7dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::System::GetPlatformConfigNumber</definition>
+        <argsstring>(string name)</argsstring>
+        <name>GetPlatformConfigNumber</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>마멀레이드의 Number형 환경설정값(icf/s3e) 불러오기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 설정값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="124" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="112" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a03bc3ee39c5c98605f0b1ae623722eff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::System::GetPlatformConfigString</definition>
+        <argsstring>(string name)</argsstring>
+        <name>GetPlatformConfigString</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>마멀레이드의 String형 환경설정값(icf/s3e) 불러오기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변수명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 설정값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="131" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a981f57e5eb704d7f13cb40aff09395c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::SetSimulatorWindowPos</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>SetSimulatorWindowPos</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>시뮬레이터 윈도우위치설정(데스크탑 빌드전용) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값Y </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="138" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a71ae7ed62da3df2c6fb54473529acfb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>point BxCore::System::GetSimulatorWindowPos</definition>
+        <argsstring>()</argsstring>
+        <name>GetSimulatorWindowPos</name>
+        <briefdescription>
+<para>시뮬레이터 윈도우위치얻기(데스크탑 빌드전용) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>위치값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="144" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="134" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1aad77049e11f6b4520d2b233631228871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::SetSimulatorCursorPos</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>SetSimulatorCursorPos</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>시뮬레이터 커서위치설정(데스크탑 빌드전용) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값Y </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="151" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="143" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a7fb73d2ee4780e2463f3bd4d93cba8b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>point BxCore::System::GetSimulatorCursorPos</definition>
+        <argsstring>()</argsstring>
+        <name>GetSimulatorCursorPos</name>
+        <briefdescription>
+<para>시뮬레이터 커서위치얻기(데스크탑 빌드전용) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>위치값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="157" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="151" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1aa3061377ddfe3bbfbd8d81198d958b4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::DoSimulatorMinimize</definition>
+        <argsstring>()</argsstring>
+        <name>DoSimulatorMinimize</name>
+        <briefdescription>
+<para>시뮬레이터 최소화하기(데스크탑 빌드전용) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="162" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a9c02a7032f944631b8e40a10d92d0611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsEnablePanelDebug</definition>
+        <argsstring>()</argsstring>
+        <name>IsEnablePanelDebug</name>
+        <briefdescription>
+<para>패널디버그기능 활성화여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>활성화여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="168" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="241" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a205224e0b9c11290043936005f07b07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsEnableFontDebug</definition>
+        <argsstring>()</argsstring>
+        <name>IsEnableFontDebug</name>
+        <briefdescription>
+<para>폰트디버그기능 활성화여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>활성화여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="174" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="246" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a2720511c7c99b2d22757eccffaafbbd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>assertresult</type>
+        <definition>assertresult BxCore::System::Break</definition>
+        <argsstring>(string name, string query __DEBUG_PRM__)</argsstring>
+        <name>Break</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string query</type>
+          <declname>__DEBUG_PRM__</declname>
+        </param>
+        <briefdescription>
+<para>실행중지(Macro함수인 BxASSERT로 사용권장) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 에러내용 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>query</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 질의내용 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>사용자의 선택(yes-디버깅, no-1회무시, ignore-계속무시) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="182" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="165" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1add31af8264dd786fcc5cf2e045877289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::Trace</definition>
+        <argsstring>(string map, const BxArgument &amp;args=BxArgument::zero())</argsstring>
+        <name>Trace</name>
+        <param>
+          <type>string</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_argument" kindref="compound">BxArgument</ref> &amp;</type>
+          <declname>args</declname>
+          <defval><ref refid="class_bx_argument_1ab9054620e6687cb4e0dfff9c4c54c5c1" kindref="member">BxArgument::zero</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>출력창에 스트링기록(Macro함수인 BxTRACE로 사용권장) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링맵 스크립트(식별문자는 &quot;&lt;&gt;:&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: map에 쓰일 가변인자 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="189" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="196" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1accf8c5fcd138e845fd50c7e144ef5305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string const</type>
+        <definition>string const BxCore::System::GetUTF8ByCP949</definition>
+        <argsstring>(string const cp949)</argsstring>
+        <name>GetUTF8ByCP949</name>
+        <param>
+          <type>string const</type>
+          <declname>cp949</declname>
+        </param>
+        <briefdescription>
+<para>CP949 스트링으로부터 UTF8 스트링얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cp949</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: CP949 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>UTF8 스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="196" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="251" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a83e5f78f4d3a1045e3b0c47ac2f86f61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string const</type>
+        <definition>string const BxCore::System::GetCP949ByUTF8</definition>
+        <argsstring>(string const utf8)</argsstring>
+        <name>GetCP949ByUTF8</name>
+        <param>
+          <type>string const</type>
+          <declname>utf8</declname>
+        </param>
+        <briefdescription>
+<para>UTF8 스트링으로부터 CP949 스트링얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utf8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: UTF8 스트링 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CP949 스트링 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="203" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="263" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a68e95a6afa87cea29d75098fedf3103d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string const</type>
+        <definition>string const BxCore::System::GetUTF8LiteralByCP949</definition>
+        <argsstring>(string const cp949)</argsstring>
+        <name>GetUTF8LiteralByCP949</name>
+        <param>
+          <type>string const</type>
+          <declname>cp949</declname>
+        </param>
+        <briefdescription>
+<para>CP949 스트링상수로부터 UTF8 스트링상수얻기 (Macro함수인 W1을 사용권장) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cp949</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: CP949 스트링상수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>UTF8 스트링상수 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="210" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="275" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a15ac9a31f47be8502f77a6bc9749ef95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string const</type>
+        <definition>string const BxCore::System::GetCP949LiteralByUTF8</definition>
+        <argsstring>(string const utf8)</argsstring>
+        <name>GetCP949LiteralByUTF8</name>
+        <param>
+          <type>string const</type>
+          <declname>utf8</declname>
+        </param>
+        <briefdescription>
+<para>UTF8 스트링상수로부터 CP949 스트링상수얻기 (Macro함수인 MB를 사용권장) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utf8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: UTF8 스트링상수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>CP949 스트링상수 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="217" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="296" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a33066078113affd381b6fe4d2024dacc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::System::GetOSName</definition>
+        <argsstring>()</argsstring>
+        <name>GetOSName</name>
+        <briefdescription>
+<para>OS이름 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>자기 플랫폼의 OS이름(예: SYMBIAN, WINDOWS, OSX, WINMOBILE, LINUX, WIPI, IPHONE, ANDROID) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="223" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="207" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a6cd582a9429126f4aa5fd79632f22a28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::System::GetArchName</definition>
+        <argsstring>()</argsstring>
+        <name>GetArchName</name>
+        <briefdescription>
+<para>아키텍쳐이름 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>컴파일된 아키텍쳐이름(예: ARM4T, ARM4, ARM5T, ARM5TE, ARM5TEJ, ARM6, ARM6K, ARM6T2, ARM6Z, ARM7, X86, PPC, AMD64, MIPS) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="229" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="222" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1aa0aec579b20508c545e741183592e89c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::System::GetDeviceID</definition>
+        <argsstring>(int *integerid=nullptr)</argsstring>
+        <name>GetDeviceID</name>
+        <param>
+          <type>int *</type>
+          <declname>integerid</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>장치ID 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>integerid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 정수타입 장치ID 받기 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>스트링타입 장치ID </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="236" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="235" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a11a29c154a97f2ba8b70e577a1949668" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::System::GetPhoneNumber</definition>
+        <argsstring>()</argsstring>
+        <name>GetPhoneNumber</name>
+        <briefdescription>
+<para>휴대폰번호 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>자신의 휴대폰번호(예: 01022223333) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="242" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="243" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ab9cddc7423b39cd731c23a82694e6620" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::System::GetAppPackage</definition>
+        <argsstring>()</argsstring>
+        <name>GetAppPackage</name>
+        <briefdescription>
+<para>어플패키지 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>자신의 어플패키지(예: com.tgr.game) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="248" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="249" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a5bbe817c55c6022c67fb3ab532c3c903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::System::GetAppPackageExt</definition>
+        <argsstring>()</argsstring>
+        <name>GetAppPackageExt</name>
+        <briefdescription>
+<para>어플패키지 파일확장자 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>파일확장자(예: .apk) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="254" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="254" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a2fb357dd75ed24a9a9c9fc3c58fbe1cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::System::GetAppVersion</definition>
+        <argsstring>()</argsstring>
+        <name>GetAppVersion</name>
+        <briefdescription>
+<para>어플버전 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>자신의 어플버전(예: 1.0.0) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="260" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="260" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1abcbe983d966638f8a82aad358d022203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsExistApp</definition>
+        <argsstring>(string packagename)</argsstring>
+        <name>IsExistApp</name>
+        <param>
+          <type>string</type>
+          <declname>packagename</declname>
+        </param>
+        <briefdescription>
+<para>어플의 존재여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>packagename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 패키지명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>존재시 true, 없을시 false </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_system_1ab9cddc7423b39cd731c23a82694e6620" kindref="member">GetAppPackage</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="268" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="266" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a0b095dd1b0208cbb637868fab91e5cfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::PopupOSExecute</definition>
+        <argsstring>(string url, bool exitme)</argsstring>
+        <name>PopupOSExecute</name>
+        <param>
+          <type>string</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exitme</declname>
+        </param>
+        <briefdescription>
+<para>웹페이지연결 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 연결할 웹주소(예: market://search?q=pname:com.popcap.pvz, tstore://PRODUCT_VIEW/0000252470/1) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exitme</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 현재 프로그램의 종료여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="275" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1af8690955284b9503907f308014453b93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::PopupOSKeyboard</definition>
+        <argsstring>(string_rw result_str256, string default_str=&quot;&quot;, string keyboard_name=&quot;&quot;, oskeyboardtype type=oskeyboardtype_base)</argsstring>
+        <name>PopupOSKeyboard</name>
+        <param>
+          <type>string_rw</type>
+          <declname>result_str256</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>default_str</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>keyboard_name</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>oskeyboardtype</type>
+          <declname>type</declname>
+          <defval>oskeyboardtype_base</defval>
+        </param>
+        <briefdescription>
+<para>가상키보드로 스트링얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>result_str256</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 얻을 스트링(256짜리 배열권장) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>default_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 처음 에디터에 보일 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>keyboard_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 가상키보드의 이름 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 키보드종류(기본, 이메일, 숫자, 비번, 웹주소) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>성공여부(미지원 OS를 고려) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="285" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="277" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ac2473ebfc86c3766155c7193893b0ce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::System::AddCallback</definition>
+        <argsstring>(callback_frame method, int value, void *data, int datasize=-1)</argsstring>
+        <name>AddCallback</name>
+        <param>
+          <type>callback_frame</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>datasize</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>프레임단위 정기적 콜백등록(참조식) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜백함수(호출된 콜백함수에서 false리턴시 해제) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 데이터원본 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>datasize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: -1은 참조식, 0보다 같거나 크면 복사식(false리턴시 함께 해제) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="293" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="317" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1aaed9632d5a8e7c639d4da18fafdf8e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::BeginChildProcess</definition>
+        <argsstring>(callback_process process)</argsstring>
+        <name>BeginChildProcess</name>
+        <param>
+          <type>callback_process</type>
+          <declname>process</declname>
+        </param>
+        <briefdescription>
+<para>자식프로세스의 실행 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>process</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로세스를 진행시킬 콜백함수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>실행여부(여러개의 자식프로세스가 실행될 순 없으므로 false이면 실행거절) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="300" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="324" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a6052ebce9c1a6205aea2245dec1bdcad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::System::IsExistClassJNI</definition>
+        <argsstring>(string classpath)</argsstring>
+        <name>IsExistClassJNI</name>
+        <param>
+          <type>string</type>
+          <declname>classpath</declname>
+        </param>
+        <briefdescription>
+<para>JAVA클래스 존재확인 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>classpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 클래스주소(예: com/abc/ABC) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>존재시 true, 없을시 false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="307" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="283" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a80802612df8ad8e204870b2e9ce444d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::System::CallStaticMethodJNI</definition>
+        <argsstring>(string classpath, string methodname, string param1_str1024, int param2)</argsstring>
+        <name>CallStaticMethodJNI</name>
+        <param>
+          <type>string</type>
+          <declname>classpath</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>methodname</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>param1_str1024</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>param2</declname>
+        </param>
+        <briefdescription>
+<para>C→JAVA 정적함수호출 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>classpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 클래스주소(예: com/abc/ABC) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>methodname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 함수이름 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>param1_str1024</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 전달할 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>param2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 전달할 상수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>JAVA함수리턴값, -90001에서 -90002는 JNI연결실패, -90003은 classpath없음 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="317" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="289" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1aa721d486c3bd5d827a78b5ffb49dc2df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::System::AddCallbackJNI</definition>
+        <argsstring>(string classpath, string methodname, callback_jni methodCB)</argsstring>
+        <name>AddCallbackJNI</name>
+        <param>
+          <type>string</type>
+          <declname>classpath</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>methodname</declname>
+        </param>
+        <param>
+          <type>callback_jni</type>
+          <declname>methodCB</declname>
+        </param>
+        <briefdescription>
+<para>JAVA→C 콜백등록(최대 8개까지 등록) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>classpath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 클래스주소(예: com/abc/ABC) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>methodname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 함수이름 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>methodCB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜백함수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0-성공, -90001에서 -90002는 JNI연결실패, -90003은 classpath없음, -90004는 methodname없음, -90005는 콜백등록수량초과 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="326" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="295" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1ab1e1b596a676fcce2dfd0d73cc568265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>callback_edk</type>
+        <definition>callback_edk BxCore::System::SetCallbackEDK</definition>
+        <argsstring>(callback_edk methodCB)</argsstring>
+        <name>SetCallbackEDK</name>
+        <param>
+          <type>callback_edk</type>
+          <declname>methodCB</declname>
+        </param>
+        <briefdescription>
+<para>EDK수신용 콜백등록(어떤 스레드에서 호출당하던지 엔진스레드로 비동기수신) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>methodCB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜백함수 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>EDK수신용 내부함수 전달 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="333" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="331" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_system_1a1e4876a7dd4f73cdff4dd4fb2a9999ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>local_data QSemaphore</type>
+        <definition>local_data QSemaphore BxCore::System::QuitFlag</definition>
+        <argsstring>(1)</argsstring>
+        <name>QuitFlag</name>
+        <param>
+          <type>1</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>System파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="30" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_tween" kind="class" language="C++" prot="public">
+    <compoundname>BxTween</compoundname>
+    <includes refid="_bx_tween_8hpp" local="no">BxTween.hpp</includes>
+    <innerclass refid="class_bx_tween_1_1___part_animation" prot="private">BxTween::_PartAnimation</innerclass>
+    <innerclass refid="class_bx_tween_1_1___part_begin" prot="private">BxTween::_PartBegin</innerclass>
+    <innerclass refid="class_bx_tween_1_1___part_target" prot="private">BxTween::_PartTarget</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_bx_tween_1a655976badbd176ce0a81faa990ef78cf" prot="private" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* BxTween::OnPart) (const int ID, const int X, const int Y, const int Opacity, const int Motion, string Message, void *Data)</definition>
+        <argsstring>)(const int ID, const int X, const int Y, const int Opacity, const int Motion, string Message, void *Data)</argsstring>
+        <name>OnPart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="8" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_tween_1ac3117ee6bf3711db81bbb58705e57cea" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BxTween::_IsAnimationPlay</definition>
+        <argsstring></argsstring>
+        <name>_IsAnimationPlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="662" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1a66724dc84b3aeefccf347638cc59d73f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BxTween::_IsAnimationFinished</definition>
+        <argsstring></argsstring>
+        <name>_IsAnimationFinished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="663" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1ab52829c17f846e00c337217cd2eed284" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_MsPerFrame</definition>
+        <argsstring></argsstring>
+        <name>_MsPerFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="664" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="664" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1a0834ec4e91e45b3bdd79d3c117c7062e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_AnimationRandKey</definition>
+        <argsstring></argsstring>
+        <name>_AnimationRandKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="665" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1a315bc492dfa8ad28a6c93fc5ca34a377" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxTween::_PartLength</definition>
+        <argsstring></argsstring>
+        <name>_PartLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="666" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1acc47e9c52422102239fdbca37c21215d" prot="private" static="no" mutable="no">
+        <type>_PartBegin</type>
+        <definition>_PartBegin BxTween::_Begin</definition>
+        <argsstring></argsstring>
+        <name>_Begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="667" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_tween_1ab4eb66bec8251284e73f5cb0a5ab3787" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_var" kindref="compound">BxVar</ref>&lt; _PartTarget &gt;</type>
+        <definition>BxVar&lt;_PartTarget&gt; BxTween::_Target</definition>
+        <argsstring></argsstring>
+        <name>_Target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="668" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="668" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_tween_1a61f3f86ddc18dee78804496c4edc0b7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxTween::BxTween</definition>
+        <argsstring>()</argsstring>
+        <name>BxTween</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="11" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1a2ee7397c0e4ae4290c8661c8b01a1ca2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxTween::~BxTween</definition>
+        <argsstring>()</argsstring>
+        <name>~BxTween</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="12" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1acef4cfea61e3ea2bb212f7e26e353b19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxTween::Open</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="14" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="14" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1a37d5b97ddd1a8fb7c7647e64fed43f07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxTween::Open</definition>
+        <argsstring>(byte *resource)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>byte *</type>
+          <declname>resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="26" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="26" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1a17646755b3e2d80c8ab99d73d87d828a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::Close</definition>
+        <argsstring>()</argsstring>
+        <name>Close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="96" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="96" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1a13f4b4d4a2534d996b22d9bde2786c59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::NextAnimate</definition>
+        <argsstring>()</argsstring>
+        <name>NextAnimate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="107" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="107" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1adab9b40a2891e714c1a3a2665d9f4c48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::DrawAnimate</definition>
+        <argsstring>(OnPart PartCB, void *Data=nullptr)</argsstring>
+        <name>DrawAnimate</name>
+        <param>
+          <type>OnPart</type>
+          <declname>PartCB</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>Data</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="132" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="132" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1a9b5ec26325b8b69d679d6a2f46412662" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxTween::ResetAnimate</definition>
+        <argsstring>(int MsPerFrame=50, int AnimationRandKey=1234)</argsstring>
+        <name>ResetAnimate</name>
+        <param>
+          <type>int</type>
+          <declname>MsPerFrame</declname>
+          <defval>50</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>AnimationRandKey</declname>
+          <defval>1234</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="158" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="158" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_tween_1a5454e7a1906ade53a68d0d53fac9bd46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxTween::IsAnimateFinished</definition>
+        <argsstring>()</argsstring>
+        <name>IsAnimateFinished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="165" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>티폰툴 파티클 운영 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" line="6" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxTween.hpp" bodystart="5" bodyend="669"/>
+    <listofallmembers>
+      <member refid="class_bx_tween_1a0834ec4e91e45b3bdd79d3c117c7062e" prot="private" virt="non-virtual"><scope>BxTween</scope><name>_AnimationRandKey</name></member>
+      <member refid="class_bx_tween_1acc47e9c52422102239fdbca37c21215d" prot="private" virt="non-virtual"><scope>BxTween</scope><name>_Begin</name></member>
+      <member refid="class_bx_tween_1a66724dc84b3aeefccf347638cc59d73f" prot="private" virt="non-virtual"><scope>BxTween</scope><name>_IsAnimationFinished</name></member>
+      <member refid="class_bx_tween_1ac3117ee6bf3711db81bbb58705e57cea" prot="private" virt="non-virtual"><scope>BxTween</scope><name>_IsAnimationPlay</name></member>
+      <member refid="class_bx_tween_1ab52829c17f846e00c337217cd2eed284" prot="private" virt="non-virtual"><scope>BxTween</scope><name>_MsPerFrame</name></member>
+      <member refid="class_bx_tween_1a315bc492dfa8ad28a6c93fc5ca34a377" prot="private" virt="non-virtual"><scope>BxTween</scope><name>_PartLength</name></member>
+      <member refid="class_bx_tween_1ab4eb66bec8251284e73f5cb0a5ab3787" prot="private" virt="non-virtual"><scope>BxTween</scope><name>_Target</name></member>
+      <member refid="class_bx_tween_1a61f3f86ddc18dee78804496c4edc0b7f" prot="public" virt="non-virtual"><scope>BxTween</scope><name>BxTween</name></member>
+      <member refid="class_bx_tween_1a17646755b3e2d80c8ab99d73d87d828a" prot="public" virt="non-virtual"><scope>BxTween</scope><name>Close</name></member>
+      <member refid="class_bx_tween_1adab9b40a2891e714c1a3a2665d9f4c48" prot="public" virt="non-virtual"><scope>BxTween</scope><name>DrawAnimate</name></member>
+      <member refid="class_bx_tween_1a5454e7a1906ade53a68d0d53fac9bd46" prot="public" virt="non-virtual"><scope>BxTween</scope><name>IsAnimateFinished</name></member>
+      <member refid="class_bx_tween_1a13f4b4d4a2534d996b22d9bde2786c59" prot="public" virt="non-virtual"><scope>BxTween</scope><name>NextAnimate</name></member>
+      <member refid="class_bx_tween_1a655976badbd176ce0a81faa990ef78cf" prot="private" virt="non-virtual"><scope>BxTween</scope><name>OnPart</name></member>
+      <member refid="class_bx_tween_1acef4cfea61e3ea2bb212f7e26e353b19" prot="public" virt="non-virtual"><scope>BxTween</scope><name>Open</name></member>
+      <member refid="class_bx_tween_1a37d5b97ddd1a8fb7c7647e64fed43f07" prot="public" virt="non-virtual"><scope>BxTween</scope><name>Open</name></member>
+      <member refid="class_bx_tween_1a9b5ec26325b8b69d679d6a2f46412662" prot="public" virt="non-virtual"><scope>BxTween</scope><name>ResetAnimate</name></member>
+      <member refid="class_bx_tween_1a2ee7397c0e4ae4290c8661c8b01a1ca2" prot="public" virt="non-virtual"><scope>BxTween</scope><name>~BxTween</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

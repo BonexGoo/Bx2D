@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_panel_1_1_user_data" kind="class" language="C++" prot="private">
+    <compoundname>BxPanel::UserData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_panel_1_1_user_data_1a6f650b7bb0ee2a47356e0a76ecd48fa8" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* BxPanel::UserData::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="293" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_user_data_1a82ccf6276de11e230607434a8ca09afc" prot="public" static="no" mutable="no">
+        <type>callback_delete</type>
+        <definition>callback_delete BxPanel::UserData::cb</definition>
+        <argsstring></argsstring>
+        <name>cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="294" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_panel_1_1_user_data_1aa6cdf1a3f7a139ef1b7b499b57cb9125" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPanel::UserData::UserData</definition>
+        <argsstring>()</argsstring>
+        <name>UserData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="295" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="295" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1_1_user_data_1a6fce5552703e4874cd486cd01a935a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPanel::UserData::~UserData</definition>
+        <argsstring>()</argsstring>
+        <name>~UserData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="296" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="296" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1_1_user_data_1a57ccbae468822742f2282106e0200731" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxPanel::UserData::Set</definition>
+        <argsstring>(void *buffer, callback_delete callback)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>callback_delete</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="297" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="297" bodyend="302"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="292" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="291" bodyend="303"/>
+    <listofallmembers>
+      <member refid="class_bx_panel_1_1_user_data_1a6f650b7bb0ee2a47356e0a76ecd48fa8" prot="public" virt="non-virtual"><scope>BxPanel::UserData</scope><name>buf</name></member>
+      <member refid="class_bx_panel_1_1_user_data_1a82ccf6276de11e230607434a8ca09afc" prot="public" virt="non-virtual"><scope>BxPanel::UserData</scope><name>cb</name></member>
+      <member refid="class_bx_panel_1_1_user_data_1a57ccbae468822742f2282106e0200731" prot="public" virt="non-virtual"><scope>BxPanel::UserData</scope><name>Set</name></member>
+      <member refid="class_bx_panel_1_1_user_data_1aa6cdf1a3f7a139ef1b7b499b57cb9125" prot="public" virt="non-virtual"><scope>BxPanel::UserData</scope><name>UserData</name></member>
+      <member refid="class_bx_panel_1_1_user_data_1a6fce5552703e4874cd486cd01a935a8a" prot="public" virt="non-virtual"><scope>BxPanel::UserData</scope><name>~UserData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_singleton_1_1_value" kind="class" language="C++" prot="private">
+    <compoundname>BxSingleton::Value</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BxSingleton::Element</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename TYPE</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_singleton_1_1_value_1a4354c718e7bc227908e396ae859aa96a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxSingleton::Value&lt; TYPE &gt;::Value</definition>
+        <argsstring>(TYPE **value, int *count __DEBUG_PRM__)</argsstring>
+        <name>Value</name>
+        <param>
+          <type>TYPE **</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int *count</type>
+          <declname>__DEBUG_PRM__</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="82" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1_1_value_1a1516209bbb18d7e6616eb0fa08a051e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE *</type>
+        <definition>TYPE* BxSingleton::Value&lt; TYPE &gt;::Rebind</definition>
+        <argsstring>(TYPE *newvalue, const int newcount)</argsstring>
+        <name>Rebind</name>
+        <param>
+          <type>TYPE *</type>
+          <declname>newvalue</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>newcount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="85" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="85" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="337">
+        <label>BxSingleton::Element</label>
+      </node>
+      <node id="336">
+        <label>BxSingleton::Value&lt; TYPE &gt;</label>
+        <childnode refid="337" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="339">
+        <label>BxSingleton::Element</label>
+      </node>
+      <node id="338">
+        <label>BxSingleton::Value&lt; TYPE &gt;</label>
+        <childnode refid="339" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="80" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="79" bodyend="87"/>
+    <listofallmembers>
+      <member refid="class_bx_singleton_1_1_element_1abc60a323d34d493fcc4a3a0df574ff96" prot="protected" virt="non-virtual"><scope>BxSingleton::Value</scope><name>CountPtr</name></member>
+      <member refid="class_bx_singleton_1_1_element_1aa7a8699afcb26df13f4136ede82a8bdd" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Element</name></member>
+      <member refid="class_bx_singleton_1_1_element_1a2957b754db139114977b73fbaba57a76" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>IsSame</name></member>
+      <member refid="class_bx_singleton_1_1_value_1a1516209bbb18d7e6616eb0fa08a051e2" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Rebind</name></member>
+      <member refid="class_bx_singleton_1_1_value_1a4354c718e7bc227908e396ae859aa96a" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Value</name></member>
+      <member refid="class_bx_singleton_1_1_element_1af7a86af516a40b55b8e3601fc82b5c1a" prot="protected" virt="non-virtual"><scope>BxSingleton::Value</scope><name>ValuePtr</name></member>
+      <member refid="class_bx_singleton_1_1_element_1a47d7b034a1f0be2401ae03763d247b69" prot="public" virt="virtual"><scope>BxSingleton::Value</scope><name>~Element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

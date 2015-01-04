@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_console" kind="class" language="C++" prot="public">
+    <compoundname>BxConsole</compoundname>
+    <includes refid="_bx_console_8hpp" local="no">BxConsole.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_console_1a4786d2cc0f467230f3ced74182e88b83" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; <ref refid="class_bx_image" kindref="compound">BxImage</ref>, 256 &gt;</type>
+        <definition>BxVarVector&lt;BxImage, 256&gt; BxConsole::Back</definition>
+        <argsstring></argsstring>
+        <name>Back</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="67" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_console_1a823dadb4bd7cb39432bb431fb5143537" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; <ref refid="class_bx_image" kindref="compound">BxImage</ref> &gt;</type>
+        <definition>BxVarMap&lt;BxImage&gt; BxConsole::Front</definition>
+        <argsstring></argsstring>
+        <name>Front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="68" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_console_1a9c8e7e20c0e5bb1e678a7449847a78be" prot="private" static="no" mutable="no">
+        <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+        <definition>id_font BxConsole::Font</definition>
+        <argsstring></argsstring>
+        <name>Font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="69" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_console_1a14b44beb7cfc07d5aed3ea9aadeee4e1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxConsole::MapColorF[20][30]</definition>
+        <argsstring>[20][30]</argsstring>
+        <name>MapColorF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="70" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_console_1a3f5f597b4febd9d731ded23a8168bec6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxConsole::MapColorB[20][30]</definition>
+        <argsstring>[20][30]</argsstring>
+        <name>MapColorB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="71" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_console_1a8b6c561b9be96a48cb62b6125b4b38de" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char BxConsole::MapText[20][30][2]</definition>
+        <argsstring>[20][30][2]</argsstring>
+        <name>MapText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="72" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_console_1a6f979c287ed10ac733ed80a76475b516" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxConsole::LastPosX</definition>
+        <argsstring></argsstring>
+        <name>LastPosX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="73" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_console_1aa5c7460c547b3f522a95af39931f2616" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxConsole::LastPosY</definition>
+        <argsstring></argsstring>
+        <name>LastPosY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="73" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_console_1aee7e42ae006f51b9ad08bdc7595713e2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxConsole::LastColorF</definition>
+        <argsstring></argsstring>
+        <name>LastColorF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="74" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_console_1aa6142d3e6d459d44952b6653af958f00" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxConsole::LastColorB</definition>
+        <argsstring></argsstring>
+        <name>LastColorB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="74" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_console_1ab324a1d395974aadb458849afd822367" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxConsole::setcolor</definition>
+        <argsstring>(int front16, int back16)</argsstring>
+        <name>setcolor</name>
+        <param>
+          <type>int</type>
+          <declname>front16</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>back16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="10" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_console_1a8f83df3ae55ec7e5f1d0a5fd61263e20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxConsole::gotoxy</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>gotoxy</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="16" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_console_1af3b71e9a5b73ba0cd1633b9bfcf43b66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxConsole::printf</definition>
+        <argsstring>(string map, const BxArgument &amp;args=BxArgument::zero())</argsstring>
+        <name>printf</name>
+        <param>
+          <type>string</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_argument" kindref="compound">BxArgument</ref> &amp;</type>
+          <declname>args</declname>
+          <defval><ref refid="class_bx_argument_1ab9054620e6687cb4e0dfff9c4c54c5c1" kindref="member">BxArgument::zero</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="22" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="22" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_console_1ae0318c69c6821ba86cf11b85443b2c13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxConsole::flush</definition>
+        <argsstring>(BxDraw &amp;draw)</argsstring>
+        <name>flush</name>
+        <param>
+          <type><ref refid="class_bx_draw" kindref="compound">BxDraw</ref> &amp;</type>
+          <declname>draw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="40" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="40" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_console_1a93ea39fe50f14a135e350a7d06567299" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxConsole::BxConsole</definition>
+        <argsstring>(string font, int pt)</argsstring>
+        <name>BxConsole</name>
+        <param>
+          <type>string</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>기본생성자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="80" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="80" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_console_1a06bd3f87f7da9483b833ad5d98f4275e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxConsole::~BxConsole</definition>
+        <argsstring>()</argsstring>
+        <name>~BxConsole</name>
+        <briefdescription>
+<para>소멸자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="107" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_console_1acc7750ec38fbdc9c99ac7c2df93dec06" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxConsole::SearchedBack</definition>
+        <argsstring>(bool isdirname, string _tmp_ name, void *data1, void *data2)</argsstring>
+        <name>SearchedBack</name>
+        <param>
+          <type>bool</type>
+          <declname>isdirname</declname>
+        </param>
+        <param>
+          <type>string _tmp_</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data1</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="113" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="113" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_console_1a3eec2bdfcb043343c87b0e5f9be55d6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxConsole::SearchedFront</definition>
+        <argsstring>(bool isdirname, string _tmp_ name, void *data1, void *data2)</argsstring>
+        <name>SearchedFront</name>
+        <param>
+          <type>bool</type>
+          <declname>isdirname</declname>
+        </param>
+        <param>
+          <type>string _tmp_</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data1</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="121" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="121" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>콘솔 관리 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" line="8" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxConsole.hpp" bodystart="7" bodyend="131"/>
+    <listofallmembers>
+      <member refid="class_bx_console_1a4786d2cc0f467230f3ced74182e88b83" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>Back</name></member>
+      <member refid="class_bx_console_1a93ea39fe50f14a135e350a7d06567299" prot="public" virt="non-virtual"><scope>BxConsole</scope><name>BxConsole</name></member>
+      <member refid="class_bx_console_1ae0318c69c6821ba86cf11b85443b2c13" prot="public" virt="non-virtual"><scope>BxConsole</scope><name>flush</name></member>
+      <member refid="class_bx_console_1a9c8e7e20c0e5bb1e678a7449847a78be" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>Font</name></member>
+      <member refid="class_bx_console_1a823dadb4bd7cb39432bb431fb5143537" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>Front</name></member>
+      <member refid="class_bx_console_1a8f83df3ae55ec7e5f1d0a5fd61263e20" prot="public" virt="non-virtual"><scope>BxConsole</scope><name>gotoxy</name></member>
+      <member refid="class_bx_console_1aa6142d3e6d459d44952b6653af958f00" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>LastColorB</name></member>
+      <member refid="class_bx_console_1aee7e42ae006f51b9ad08bdc7595713e2" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>LastColorF</name></member>
+      <member refid="class_bx_console_1a6f979c287ed10ac733ed80a76475b516" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>LastPosX</name></member>
+      <member refid="class_bx_console_1aa5c7460c547b3f522a95af39931f2616" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>LastPosY</name></member>
+      <member refid="class_bx_console_1a3f5f597b4febd9d731ded23a8168bec6" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>MapColorB</name></member>
+      <member refid="class_bx_console_1a14b44beb7cfc07d5aed3ea9aadeee4e1" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>MapColorF</name></member>
+      <member refid="class_bx_console_1a8b6c561b9be96a48cb62b6125b4b38de" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>MapText</name></member>
+      <member refid="class_bx_console_1af3b71e9a5b73ba0cd1633b9bfcf43b66" prot="public" virt="non-virtual"><scope>BxConsole</scope><name>printf</name></member>
+      <member refid="class_bx_console_1acc7750ec38fbdc9c99ac7c2df93dec06" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>SearchedBack</name></member>
+      <member refid="class_bx_console_1a3eec2bdfcb043343c87b0e5f9be55d6e" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>SearchedFront</name></member>
+      <member refid="class_bx_console_1ab324a1d395974aadb458849afd822367" prot="public" virt="non-virtual"><scope>BxConsole</scope><name>setcolor</name></member>
+      <member refid="class_bx_console_1a06bd3f87f7da9483b833ad5d98f4275e" prot="public" virt="non-virtual"><scope>BxConsole</scope><name>~BxConsole</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

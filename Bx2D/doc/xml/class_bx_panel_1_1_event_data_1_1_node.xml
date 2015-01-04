@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_panel_1_1_event_data_1_1_node" kind="class" language="C++" prot="public">
+    <compoundname>BxPanel::EventData::Node</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_panel_1_1_event_data_1_1_node_1a381a46e2e2fc3d79b57c6abcdc82be71" prot="public" static="no" mutable="no">
+        <type>EventCB</type>
+        <definition>EventCB BxPanel::EventData::Node::CB</definition>
+        <argsstring></argsstring>
+        <name>CB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="251" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_event_data_1_1_node_1ae99f3ff3ee1d2b6a3840a3b4617a2f42" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* BxPanel::EventData::Node::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="252" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_panel_1_1_event_data_1_1_node_1a1a27fd2fefb424089347fb6133827bf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPanel::EventData::Node::Node</definition>
+        <argsstring>()</argsstring>
+        <name>Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="253" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="253" bodyend="253"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="234">
+        <label>BxVarVector&lt; UserData, 4 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+      <node id="233">
+        <label>rect</label>
+        <link refid="structrect"/>
+      </node>
+      <node id="232">
+        <label>BxVarVector&lt; BxPanel::EventData::Node, 1 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+      <node id="225">
+        <label>BxPanel::EventData::Node</label>
+        <link refid="class_bx_panel_1_1_event_data_1_1_node"/>
+        <childnode refid="226" relation="usage">
+          <edgelabel>CB</edgelabel>
+        </childnode>
+      </node>
+      <node id="231">
+        <label>BxPanel::EventData</label>
+        <childnode refid="232" relation="usage">
+          <edgelabel>Callbacks</edgelabel>
+        </childnode>
+      </node>
+      <node id="228">
+        <label>BxPanel::VariableL</label>
+        <childnode refid="229" relation="usage">
+          <edgelabel>Child</edgelabel>
+        </childnode>
+        <childnode refid="231" relation="usage">
+          <edgelabel>ClickedData</edgelabel>
+          <edgelabel>BumpedData</edgelabel>
+        </childnode>
+        <childnode refid="233" relation="usage">
+          <edgelabel>LastRect</edgelabel>
+        </childnode>
+        <childnode refid="234" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+        <childnode refid="235" relation="usage">
+          <edgelabel>RefFunc</edgelabel>
+        </childnode>
+        <childnode refid="238" relation="usage">
+          <edgelabel>LastScrollPhy</edgelabel>
+        </childnode>
+        <childnode refid="226" relation="usage">
+          <edgelabel>VarM</edgelabel>
+        </childnode>
+        <childnode refid="239" relation="usage">
+          <edgelabel>LastScroll</edgelabel>
+        </childnode>
+      </node>
+      <node id="227">
+        <label>BxPanel::Event</label>
+      </node>
+      <node id="239">
+        <label>area</label>
+        <link refid="structarea"/>
+      </node>
+      <node id="226">
+        <label>BxPanel</label>
+        <link refid="class_bx_panel"/>
+        <childnode refid="227" relation="usage">
+          <edgelabel>Bumped</edgelabel>
+          <edgelabel>Clicked</edgelabel>
+        </childnode>
+        <childnode refid="228" relation="usage">
+          <edgelabel>VarL</edgelabel>
+        </childnode>
+      </node>
+      <node id="229">
+        <label>BxVarMap&lt; BxPanel &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="230" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+        <childnode refid="226" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="236">
+        <label>id_struct_01</label>
+        <link refid="structid__struct__01"/>
+      </node>
+      <node id="235">
+        <label>BxPanel::Function</label>
+        <childnode refid="226" relation="usage">
+          <edgelabel>Alloc</edgelabel>
+          <edgelabel>Free</edgelabel>
+        </childnode>
+        <childnode refid="236" relation="usage">
+          <edgelabel>TypeText</edgelabel>
+        </childnode>
+        <childnode refid="237" relation="usage">
+          <edgelabel>Paint</edgelabel>
+        </childnode>
+      </node>
+      <node id="238">
+        <label>point</label>
+        <link refid="structpoint"/>
+      </node>
+      <node id="237">
+        <label>BxArgument</label>
+        <link refid="class_bx_argument"/>
+      </node>
+      <node id="230">
+        <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="250" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="249" bodyend="254"/>
+    <listofallmembers>
+      <member refid="class_bx_panel_1_1_event_data_1_1_node_1a381a46e2e2fc3d79b57c6abcdc82be71" prot="public" virt="non-virtual"><scope>BxPanel::EventData::Node</scope><name>CB</name></member>
+      <member refid="class_bx_panel_1_1_event_data_1_1_node_1ae99f3ff3ee1d2b6a3840a3b4617a2f42" prot="public" virt="non-virtual"><scope>BxPanel::EventData::Node</scope><name>Data</name></member>
+      <member refid="class_bx_panel_1_1_event_data_1_1_node_1a1a27fd2fefb424089347fb6133827bf0" prot="public" virt="non-virtual"><scope>BxPanel::EventData::Node</scope><name>Node</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

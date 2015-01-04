@@ -1,0 +1,760 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="namespace_bx_core_1_1_file" kind="namespace" language="C++">
+    <compoundname>BxCore::File</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::File::IsExist</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>IsExist</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>파일의 존재여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>존재시 true, 없을시 false </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="745" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="433" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__03" kindref="compound">id_file</ref></type>
+        <definition>id_file BxCore::File::Open</definition>
+        <argsstring>(string filename, string mode)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>파일열기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 열기옵션(전:&quot;r&quot;/&quot;w&quot;/&quot;a&quot;/&quot;r+&quot;/&quot;w+&quot;/&quot;a+&quot;, 후:&quot;t&quot;/&quot;b&quot;/&quot;U&quot;) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>열려진 파일ID, 실패시 0 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kindref="member">IsExist</ref>, <ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member">Close</ref>, <ref refid="namespace_bx_core_1_1_file_1ad69290c0472f0cf46158f982046f654f" kindref="member">Attach</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="754" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="438" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::File::Close</definition>
+        <argsstring>(id_file file)</argsstring>
+        <name>Close</name>
+        <param>
+          <type><ref refid="structid__struct__03" kindref="compound">id_file</ref></type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>파일닫기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 열린 파일ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="761" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="447" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a0b223eda0b9a76c839171ba70fe300d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::File::Read</definition>
+        <argsstring>(id_file file, void *buffer, uint length, callback_progress progress=nullptr)</argsstring>
+        <name>Read</name>
+        <param>
+          <type><ref refid="structid__struct__03" kindref="compound">id_file</ref></type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>progress</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>파일에서 읽기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽은 내용을 저장할 메모리 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 읽기요청할 길이(byte) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>읽은 길이(byte) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="771" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="453" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a74accb21bf2f405effb1968424bc7127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::File::ReadVariable</definition>
+        <argsstring>(id_file file, uhuge *variable, const byte additionkey=0x00, callback_progress progress=nullptr)</argsstring>
+        <name>ReadVariable</name>
+        <param>
+          <type><ref refid="structid__struct__03" kindref="compound">id_file</ref></type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>uhuge *</type>
+          <declname>variable</declname>
+        </param>
+        <param>
+          <type>const byte</type>
+          <declname>additionkey</declname>
+          <defval>0x00</defval>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>progress</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>파일에서 가변정수읽기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>variable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 가변정수를 읽을 메모리 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>additionkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 입력보정을 위한 덧셈키 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>읽은 길이(byte) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="781" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="468" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a9b54d9ced68fec6305ae1292bebd27f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::File::ReadLine</definition>
+        <argsstring>(id_file file, string tab=&quot;\t&quot;)</argsstring>
+        <name>ReadLine</name>
+        <param>
+          <type><ref refid="structid__struct__03" kindref="compound">id_file</ref></type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>tab</declname>
+          <defval>&quot;\t&quot;</defval>
+        </param>
+        <briefdescription>
+<para>파일에서 한줄의 스트링읽기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tab</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 탭용 문자열 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>읽은 스트링(최대 4096자, 못 읽었을 경우 nullptr리턴) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="789" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="481" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::File::Write</definition>
+        <argsstring>(id_file file, const void *buffer, uint length, callback_progress progress=nullptr)</argsstring>
+        <name>Write</name>
+        <param>
+          <type><ref refid="structid__struct__03" kindref="compound">id_file</ref></type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>progress</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>파일로 쓰기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 쓸 내용을 담고 있는 메모리 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 쓰기요청할 길이(byte) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>쓴 길이(byte) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="799" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="510" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a324b09bd397a44d8031fc989178f232e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::File::WriteVariable</definition>
+        <argsstring>(id_file file, const uhuge variable, const byte additionkey=0x00, callback_progress progress=nullptr)</argsstring>
+        <name>WriteVariable</name>
+        <param>
+          <type><ref refid="structid__struct__03" kindref="compound">id_file</ref></type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const uhuge</type>
+          <declname>variable</declname>
+        </param>
+        <param>
+          <type>const byte</type>
+          <declname>additionkey</declname>
+          <defval>0x00</defval>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>progress</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>파일로 가변정수쓰기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>variable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일에 쓸 가변정수 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>additionkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력보정을 위한 덧셈키 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>쓴 길이(byte) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="809" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="525" bodyend="539"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a41dce6f617e445367761b3216b98ef44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::File::WriteString</definition>
+        <argsstring>(id_file file, string buffer, callback_progress progress=nullptr)</argsstring>
+        <name>WriteString</name>
+        <param>
+          <type><ref refid="structid__struct__03" kindref="compound">id_file</ref></type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>progress</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>파일로 스트링쓰기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 쓸 내용을 담고 있는 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>쓴 길이(byte) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="818" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="541" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a2cc196750f85a59a0a6b346b3fd2ffe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::File::Skip</definition>
+        <argsstring>(id_file file, uint length)</argsstring>
+        <name>Skip</name>
+        <param>
+          <type><ref refid="structid__struct__03" kindref="compound">id_file</ref></type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>uint</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>파일위치 스킵하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스킵요청할 길이(byte) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>결과 파일위치 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="826" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="546" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::File::GetSize</definition>
+        <argsstring>(id_file file)</argsstring>
+        <name>GetSize</name>
+        <param>
+          <type><ref refid="structid__struct__03" kindref="compound">id_file</ref></type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>파일의 전체길이(byte) 얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>전체길이(byte) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="833" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="553" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a749f72fef7e4a7d446c288b64596c2b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::File::GetSize</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>GetSize</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>파일의 전체길이(byte) 얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>전체 길이(byte, 파일이 없으면 -1) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="840" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="559" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1af7e2fe5c26ea1304e3b4be10b914da34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uhuge</type>
+        <definition>uhuge BxCore::File::GetDate</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>GetDate</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>파일의 마지막 수정날짜 얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>마지막 수정날짜(1970년1월1일기준 밀리초환산값) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="847" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="564" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1ad69290c0472f0cf46158f982046f654f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::File::Attach</definition>
+        <argsstring>(string archivename)</argsstring>
+        <name>Attach</name>
+        <param>
+          <type>string</type>
+          <declname>archivename</declname>
+        </param>
+        <briefdescription>
+<para>DZ압축파일의 연동(여러번 Attach하면 마지막 Attach가 최우선순위) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>archivename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 압축파일명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>연동의 성공여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_file_1af6dd324329f44bef7ae8fe7fd3805b1a" kindref="member">Detach</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="855" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="569" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1af6dd324329f44bef7ae8fe7fd3805b1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::File::Detach</definition>
+        <argsstring>()</argsstring>
+        <name>Detach</name>
+        <briefdescription>
+<para>DZ압축파일의 연동해제(Attach에 성공한 횟수만큼 해제) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_file_1ad69290c0472f0cf46158f982046f654f" kindref="member">Attach</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="861" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="574" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1acbf9996018af3765259e886a85199251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::File::MakeDirectory</definition>
+        <argsstring>(string dirname, bool isFile=false)</argsstring>
+        <name>MakeDirectory</name>
+        <param>
+          <type>string</type>
+          <declname>dirname</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isFile</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>폴더만들기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폴더명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>isFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: dirname이 파일인지의 여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="868" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="578" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1ae5f9334c76be6620f62e255f4415bbb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint BxCore::File::SearchFiles</definition>
+        <argsstring>(string dirname, callback_filesearch resultCB, void *data1, void *data2)</argsstring>
+        <name>SearchFiles</name>
+        <param>
+          <type>string</type>
+          <declname>dirname</declname>
+        </param>
+        <param>
+          <type>callback_filesearch</type>
+          <declname>resultCB</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data1</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data2</declname>
+        </param>
+        <briefdescription>
+<para>파일검색 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폴더명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resultCB</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 결과받을 콜백함수 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜백함수에 전달할 데이터1 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜백함수에 전달할 데이터2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>검색된 수량 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="878" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="596" bodyend="619"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1a6e174bc48590d33a8389aa627ead540a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::File::RemoveFile</definition>
+        <argsstring>(string filename, bool doRemoveBlankedDirectory=false)</argsstring>
+        <name>RemoveFile</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>doRemoveBlankedDirectory</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>파일삭제 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파일명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>doRemoveBlankedDirectory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 빈 폴더가 생기는 경우 폴더까지 삭제할지 여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>성공여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="886" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="621" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_file_1aa619ac618c718c7497eb786a68dd7aba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::File::RenameFile</definition>
+        <argsstring>(string srcname, string dstname)</argsstring>
+        <name>RenameFile</name>
+        <param>
+          <type>string</type>
+          <declname>srcname</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>dstname</declname>
+        </param>
+        <briefdescription>
+<para>파일의 이름변경 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>srcname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 대상 파일명 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dstname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 변경하고자 하는 파일명 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>성공여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="894" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="639" bodyend="642"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>File파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="738" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_singleton_1_1_element" kind="class" language="C++" prot="private">
+    <compoundname>BxSingleton::Element</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_bx_singleton_1_1_element_1af7a86af516a40b55b8e3601fc82b5c1a" prot="protected" static="no" mutable="no">
+        <type>void **</type>
+        <definition>void** BxSingleton::Element::ValuePtr</definition>
+        <argsstring></argsstring>
+        <name>ValuePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="71" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_singleton_1_1_element_1abc60a323d34d493fcc4a3a0df574ff96" prot="protected" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* BxSingleton::Element::CountPtr</definition>
+        <argsstring></argsstring>
+        <name>CountPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="72" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_singleton_1_1_element_1aa7a8699afcb26df13f4136ede82a8bdd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxSingleton::Element::Element</definition>
+        <argsstring>(void **value_ptr, int *count_ptr)</argsstring>
+        <name>Element</name>
+        <param>
+          <type>void **</type>
+          <declname>value_ptr</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>count_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="73" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1_1_element_1a47d7b034a1f0be2401ae03763d247b69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxSingleton::Element::~Element</definition>
+        <argsstring>()</argsstring>
+        <name>~Element</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="74" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1_1_element_1a2957b754db139114977b73fbaba57a76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxSingleton::Element::IsSame</definition>
+        <argsstring>(const void *RHS)</argsstring>
+        <name>IsSame</name>
+        <param>
+          <type>const void *</type>
+          <declname>RHS</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="75" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="75" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="70" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="69" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_bx_singleton_1_1_element_1abc60a323d34d493fcc4a3a0df574ff96" prot="protected" virt="non-virtual"><scope>BxSingleton::Element</scope><name>CountPtr</name></member>
+      <member refid="class_bx_singleton_1_1_element_1aa7a8699afcb26df13f4136ede82a8bdd" prot="public" virt="non-virtual"><scope>BxSingleton::Element</scope><name>Element</name></member>
+      <member refid="class_bx_singleton_1_1_element_1a2957b754db139114977b73fbaba57a76" prot="public" virt="non-virtual"><scope>BxSingleton::Element</scope><name>IsSame</name></member>
+      <member refid="class_bx_singleton_1_1_element_1af7a86af516a40b55b8e3601fc82b5c1a" prot="protected" virt="non-virtual"><scope>BxSingleton::Element</scope><name>ValuePtr</name></member>
+      <member refid="class_bx_singleton_1_1_element_1a47d7b034a1f0be2401ae03763d247b69" prot="public" virt="virtual"><scope>BxSingleton::Element</scope><name>~Element</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

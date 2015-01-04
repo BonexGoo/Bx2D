@@ -1,0 +1,808 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="namespace_bx_core_1_1_font" kind="namespace" language="C++">
+    <compoundname>BxCore::Font</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+        <definition>id_font BxCore::Font::Open</definition>
+        <argsstring>(string nick, int height)</argsstring>
+        <name>Open</name>
+        <param>
+          <type>string</type>
+          <declname>nick</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>폰트열기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nick</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트별칭(미생성 폰트별칭도 사용가능) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 세로길이(pixel) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>폰트ID </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a1ff1d4ae902591e6cd8ff3c11dd0218e" kindref="member">Close</ref>, DefineByFile, DefineByBuffer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="991" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="730" bodyend="733"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a1ff1d4ae902591e6cd8ff3c11dd0218e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__00" kindref="compound">id_font_zero</ref></type>
+        <definition>id_font_zero BxCore::Font::Close</definition>
+        <argsstring>(id_font font)</argsstring>
+        <name>Close</name>
+        <param>
+          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+<para>폰트닫기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>간편한 nullptr리턴 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="999" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="735" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a3eec7800226444ec3c5429d3694adc53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+        <definition>id_font BxCore::Font::Default</definition>
+        <argsstring>()</argsstring>
+        <name>Default</name>
+        <briefdescription>
+<para>간편한 기본폰트 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>기본폰트 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1005" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="1086" bodyend="1091"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a7957798859cbadf9c6f09286c9ff33b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::Font::NickOpen</definition>
+        <argsstring>(string nick, string filename)</argsstring>
+        <name>NickOpen</name>
+        <param>
+          <type>string</type>
+          <declname>nick</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>폰트별칭의 생성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nick</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 생성할 폰트별칭 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: TTF파일의 경로 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>성공여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a05a4f40903754c3da911c65a636b8cab" kindref="member">NickClose</ref>, <ref refid="namespace_bx_core_1_1_font_1adc235af149b20f3b2b444af6afe65013" kindref="member">IsExistNick</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1014" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="741" bodyend="751"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a9eafc9510f244a1fc3f07a218f6e6e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::Font::NickOpenByBuffer</definition>
+        <argsstring>(string nick, const byte *buffer, int buffersize)</argsstring>
+        <name>NickOpenByBuffer</name>
+        <param>
+          <type>string</type>
+          <declname>nick</declname>
+        </param>
+        <param>
+          <type>const byte *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buffersize</declname>
+        </param>
+        <briefdescription>
+<para>폰트별칭의 생성(버퍼) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nick</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 생성할 폰트별칭 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: TTF버퍼 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffersize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: TTF버퍼사이즈 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>성공여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a05a4f40903754c3da911c65a636b8cab" kindref="member">NickClose</ref>, <ref refid="namespace_bx_core_1_1_font_1adc235af149b20f3b2b444af6afe65013" kindref="member">IsExistNick</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1024" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="753" bodyend="756"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a05a4f40903754c3da911c65a636b8cab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Font::NickClose</definition>
+        <argsstring>(string nick)</argsstring>
+        <name>NickClose</name>
+        <param>
+          <type>string</type>
+          <declname>nick</declname>
+        </param>
+        <briefdescription>
+<para>폰트별칭의 해제 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nick</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 해제할 폰트별칭 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a7957798859cbadf9c6f09286c9ff33b3" kindref="member">NickOpen</ref>, <ref refid="namespace_bx_core_1_1_font_1a9eafc9510f244a1fc3f07a218f6e6e20" kindref="member">NickOpenByBuffer</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1031" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="758" bodyend="761"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1adc235af149b20f3b2b444af6afe65013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::Font::IsExistNick</definition>
+        <argsstring>(string nick)</argsstring>
+        <name>IsExistNick</name>
+        <param>
+          <type>string</type>
+          <declname>nick</declname>
+        </param>
+        <briefdescription>
+<para>폰트별칭의 존재여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nick</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 확인할 폰트별칭 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>존재여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a7957798859cbadf9c6f09286c9ff33b3" kindref="member">NickOpen</ref>, <ref refid="namespace_bx_core_1_1_font_1a9eafc9510f244a1fc3f07a218f6e6e20" kindref="member">NickOpenByBuffer</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1039" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="763" bodyend="766"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a585ced3b642de2a8b287167da413553b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+        <definition>id_text BxCore::Font::TextOpen</definition>
+        <argsstring>(string str, textencoding encoding=textencoding_cp949)</argsstring>
+        <name>TextOpen</name>
+        <param>
+          <type>string</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>textencoding</type>
+          <declname>encoding</declname>
+          <defval>textencoding_cp949</defval>
+        </param>
+        <briefdescription>
+<para>텍스트의 생성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>encoding</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링의 인코딩 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>텍스트ID </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1ad27688ebfa61f58b4d2c8655d77177dc" kindref="member">TextClose</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1048" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="768" bodyend="771"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a0f2cdec76d6b6275e5ac848784e4aa29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+        <definition>id_text BxCore::Font::TextOpenByUTF16</definition>
+        <argsstring>(wstring wstr, bool referonly=false)</argsstring>
+        <name>TextOpenByUTF16</name>
+        <param>
+          <type>wstring</type>
+          <declname>wstr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>referonly</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>텍스트의 생성(UTF16) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wstr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링(UTF16) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>referonly</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 참조방식여부(복사과정이 생략) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>텍스트ID </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1ad27688ebfa61f58b4d2c8655d77177dc" kindref="member">TextClose</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1057" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="773" bodyend="776"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1ad27688ebfa61f58b4d2c8655d77177dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__01" kindref="compound">id_text_zero</ref></type>
+        <definition>id_text_zero BxCore::Font::TextClose</definition>
+        <argsstring>(id_text text)</argsstring>
+        <name>TextClose</name>
+        <param>
+          <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>텍스트의 해제 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 텍스트ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>간편한 nullptr리턴 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a585ced3b642de2a8b287167da413553b" kindref="member">TextOpen</ref>, <ref refid="namespace_bx_core_1_1_font_1a0f2cdec76d6b6275e5ac848784e4aa29" kindref="member">TextOpenByUTF16</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1065" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="778" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a8cb6ffc7818a38863f2f0a165d268610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Font::SetOption</definition>
+        <argsstring>(id_font font, color_x888 color, byte opacity=0xFF, textalign align=textalign_left_top)</argsstring>
+        <name>SetOption</name>
+        <param>
+          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>color_x888</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>opacity</declname>
+          <defval>0xFF</defval>
+        </param>
+        <param>
+          <type>textalign</type>
+          <declname>align</declname>
+          <defval>textalign_left_top</defval>
+        </param>
+        <briefdescription>
+<para>폰트의 옵션 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 색상 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 불투명도 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>align</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 정렬방식 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1075" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="784" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a496db2ab00cf3bb0a776f3dede596532" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Font::SetRotate</definition>
+        <argsstring>(id_font font, int angle1024=0)</argsstring>
+        <name>SetRotate</name>
+        <param>
+          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>angle1024</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>폰트의 회전상태(문자단위 중점기준) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle1024</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 1024도기준 회전값 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1083" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="791" bodyend="796"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a4eb0c91806ec25028e4e39ca5871229c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Font::SetJustify</definition>
+        <argsstring>(id_font font, int column=0)</argsstring>
+        <name>SetJustify</name>
+        <param>
+          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>폰트의 양쪽정렬 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 컬럼의 길이(pixel, 0은 양쪽정렬 해제) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1091" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="798" bodyend="803"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a4c516642ce31018e5f5e5bc93b458bee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Font::GetWidth</definition>
+        <argsstring>(id_font font, id_text text, int offset=0, int length=-1)</argsstring>
+        <name>GetWidth</name>
+        <param>
+          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>텍스트기준 폰트의 출력될 너비길이(pixel) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 텍스트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 시작위치(letter) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 사용구간(letter, -1은 자동측정) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>너비길이(pixel) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref>, <ref refid="namespace_bx_core_1_1_font_1a585ced3b642de2a8b287167da413553b" kindref="member">TextOpen</ref>, <ref refid="namespace_bx_core_1_1_font_1a0f2cdec76d6b6275e5ac848784e4aa29" kindref="member">TextOpenByUTF16</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1102" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="805" bodyend="813"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a5cd10190369910d42145f470d944287d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Font::GetHeight</definition>
+        <argsstring>(id_font font)</argsstring>
+        <name>GetHeight</name>
+        <param>
+          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+<para>폰트의 출력될 높이길이(pixel) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>높이길이(pixel) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1110" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="815" bodyend="820"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a3a0d1fd2041a2a2682dea5897b37a6bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Font::GetLength</definition>
+        <argsstring>(id_font font, int column, id_text text, int offset=0, int *width=nullptr)</argsstring>
+        <name>GetLength</name>
+        <param>
+          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>width</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>단어기준 컬럼내 텍스트의 유효길이(letter) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 컬럼의 길이(pixel) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 텍스트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 시작위치(letter) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: [out] 유효한 너비길이(pixel) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>유효길이(letter) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref>, <ref refid="namespace_bx_core_1_1_font_1a585ced3b642de2a8b287167da413553b" kindref="member">TextOpen</ref>, <ref refid="namespace_bx_core_1_1_font_1a0f2cdec76d6b6275e5ac848784e4aa29" kindref="member">TextOpenByUTF16</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1122" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="822" bodyend="829"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1ae6cb1f1eaa2bdc2171820f49a8b95aa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Font::GetLengthByLetter</definition>
+        <argsstring>(id_font font, int column, id_text text, int offset=0, int *width=nullptr)</argsstring>
+        <name>GetLengthByLetter</name>
+        <param>
+          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>column</declname>
+        </param>
+        <param>
+          <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>width</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>문자기준 컬럼내 텍스트의 유효길이(letter) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>column</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 컬럼의 길이(pixel) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 텍스트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 시작위치(letter) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: [out] 유효한 너비길이(pixel) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>유효길이(letter) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref>, <ref refid="namespace_bx_core_1_1_font_1a585ced3b642de2a8b287167da413553b" kindref="member">TextOpen</ref>, <ref refid="namespace_bx_core_1_1_font_1a0f2cdec76d6b6275e5ac848784e4aa29" kindref="member">TextOpenByUTF16</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1134" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="831" bodyend="838"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1aceefbd7b0dc2522d2026010c532cea4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>point BxCore::Font::DrawRequest</definition>
+        <argsstring>(id_font font, point pos, id_text text, int offset=0, int length=-1)</argsstring>
+        <name>DrawRequest</name>
+        <param>
+          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type><ref refid="structpoint" kindref="compound">point</ref></type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>텍스트 출력요청(RequestFlush로 일괄출력) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 출력위치(pixel) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 텍스트ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 시작위치(letter) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 사용구간(letter, -1은 자동측정) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>출력된 텍스트의 우측하단위치(pixel) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1a9a581fddb1fc4e67b149cefbcc4b24dd" kindref="member">RequestFlush</ref>, <ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref>, <ref refid="namespace_bx_core_1_1_font_1a585ced3b642de2a8b287167da413553b" kindref="member">TextOpen</ref>, <ref refid="namespace_bx_core_1_1_font_1a0f2cdec76d6b6275e5ac848784e4aa29" kindref="member">TextOpenByUTF16</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1146" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="840" bodyend="848"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_font_1a9a581fddb1fc4e67b149cefbcc4b24dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Font::RequestFlush</definition>
+        <argsstring>(id_font font)</argsstring>
+        <name>RequestFlush</name>
+        <param>
+          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+<para>폰트기준 출력요청된 텍스트들을 텍스쳐소팅하여 일괄출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 폰트ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_font_1aceefbd7b0dc2522d2026010c532cea4d" kindref="member">DrawRequest</ref>, <ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1153" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="850" bodyend="857"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Font파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="983" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="structpointf" kind="struct" language="C++" prot="public">
+    <compoundname>pointf</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpointf_1a85778a54b1c145b923caa6ac2ce8135d" prot="public" static="no" mutable="no">
+        <type>fint</type>
+        <definition>fint pointf::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="201" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpointf_1a07424937d6ca5e955588f30569d98b1e" prot="public" static="no" mutable="no">
+        <type>fint</type>
+        <definition>fint pointf::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="201" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpointf_1a4261c070563fa4b04089740928799424" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const <ref refid="structpointf" kindref="compound">pointf</ref> &amp;</type>
+        <definition>global_func const pointf&amp; pointf::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="202" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="202" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="structpointf_1ac6b8eeb74c7a77a0990d7b14fa5b5400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structpointf" kindref="compound">pointf</ref> &amp;</type>
+        <definition>pointf&amp; pointf::operator=</definition>
+        <argsstring>(const pointf &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structpointf" kindref="compound">pointf</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="203" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="203" bodyend="203"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>pointf구조체 : x, y </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="200" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="199" bodyend="204"/>
+    <listofallmembers>
+      <member refid="structpointf_1ac6b8eeb74c7a77a0990d7b14fa5b5400" prot="public" virt="non-virtual"><scope>pointf</scope><name>operator=</name></member>
+      <member refid="structpointf_1a85778a54b1c145b923caa6ac2ce8135d" prot="public" virt="non-virtual"><scope>pointf</scope><name>x</name></member>
+      <member refid="structpointf_1a07424937d6ca5e955588f30569d98b1e" prot="public" virt="non-virtual"><scope>pointf</scope><name>y</name></member>
+      <member refid="structpointf_1a4261c070563fa4b04089740928799424" prot="public" virt="non-virtual"><scope>pointf</scope><name>zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,580 @@
+﻿#pragma once
+#include <BxCore.hpp>
+
+#ifndef __BX_MEMORY
+	#define BxNew(TYPE)                        new TYPE
+	#define BxNew_Param(TYPE, ...)             new TYPE(__VA_ARGS__)
+	#define BxNew_Array(TYPE, COUNT)           new TYPE[COUNT]
+	#define BxNew_ArrayParam(TYPE, COUNT, ...) new TYPE[COUNT]
+	#define BxDelete(PTR)                      do{delete PTR; PTR = nullptr;} while(false)
+	#define BxDelete_ByType(TYPE, PTR)         do{delete (TYPE*) (PTR); PTR = nullptr;} while(false)
+	#define BxDelete_Array(PTR)                do{delete[] PTR; PTR = nullptr;} while(false)
+	#define BxDelete_ArrayByType(TYPE, PTR)    do{delete[] (TYPE*) (PTR); PTR = nullptr;} while(false)
+	#define BxAlloc(LENGTH)                    new byte[LENGTH]
+	#define BxFree(PTR)                        do{delete[] (byte*) (PTR); PTR = nullptr;} while(false)
+	class BxMemory
+	{
+	public:
+		global_func inline bool DoMemLogger() {return false;}
+	};
+#else
+	/*!
+	\defgroup BxNew
+	\brief #define BxNew(TYPE)
+	\brief 메모리 기본할당
+	\param TYPE : 클래스타입
+	\return 클래스타입 포인터
+	*/
+	#define BxNew(TYPE)                        new((mint) BxMemory::_Alloc(sizeof(TYPE), 1 __DEBUG_MCR__)) TYPE
+
+	/*!
+	\defgroup BxNew_Param
+	\brief #define BxNew_Param(TYPE, ...)
+	\brief 메모리 인수할당
+	\param TYPE : 클래스타입
+	\param ... : 전달할 인수
+	\return 클래스타입 포인터
+	*/
+	#define BxNew_Param(TYPE, ...)             new((mint) BxMemory::_Alloc(sizeof(TYPE), 1 __DEBUG_MCR__)) TYPE(__VA_ARGS__)
+
+	/*!
+	\defgroup BxNew_Array
+	\brief #define BxNew_Array(TYPE, COUNT)
+	\brief 메모리 배열할당
+	\param TYPE : 클래스타입
+	\param COUNT : 수량
+	\return 클래스타입 배열포인터
+	*/
+	#define BxNew_Array(TYPE, COUNT)           BxMemory::_NewArray<TYPE>(COUNT, 2 __DEBUG_MCR__)
+
+	/*!
+	\defgroup BxNew_ArrayParam
+	\brief #define BxNew_ArrayParam(TYPE, COUNT, ...)
+	\brief 메모리 배열인수할당
+	\param TYPE : 클래스타입
+	\param COUNT : 수량
+	\param ... : 전달할 인수
+	\return 클래스타입 배열포인터
+	*/
+	#define BxNew_ArrayParam(TYPE, COUNT, ...) BxMemory::_NewArrayParam<TYPE>(COUNT, 2 __DEBUG_MCR__, __VA_ARGS__)
+
+	/*!
+	\defgroup BxDelete
+	\brief #define BxDelete(PTR)
+	\brief 메모리 기본소멸
+	\param PTR : 해당 클래스타입 포인터
+	*/
+	#define BxDelete(PTR)                      do{BxMemory::_Delete(PTR, 1 __DEBUG_MCR__); PTR = nullptr;} while(false)
+
+	/*!
+	\defgroup BxDelete_ByType
+	\brief #define BxDelete_ByType(TYPE, PTR)
+	\brief 메모리 형변환식 소멸
+	\param TYPE : 형변환시킬 클래스타입
+	\param PTR : 해당 포인터
+	*/
+	#define BxDelete_ByType(TYPE, PTR)         do{BxMemory::_Delete((TYPE*) PTR, 1 __DEBUG_MCR__); PTR = nullptr;} while(false)
+
+	/*!
+	\defgroup BxDelete_Array
+	\brief #define BxDelete_Array(PTR)
+	\brief 메모리 배열소멸
+	\param PTR : 해당 클래스타입 배열포인터
+	*/
+	#define BxDelete_Array(PTR)                do{BxMemory::_DeleteArray(PTR, 2 __DEBUG_MCR__); PTR = nullptr;} while(false)
+
+	/*!
+	\defgroup BxDelete_ArrayByType
+	\brief #define BxDelete_ArrayByType(TYPE, PTR)
+	\brief 메모리 형변환식 배열소멸
+	\param TYPE : 형변환시킬 클래스타입
+	\param PTR : 해당 배열포인터
+	*/
+	#define BxDelete_ArrayByType(TYPE, PTR)    do{BxMemory::_DeleteArray((TYPE*) PTR, 2 __DEBUG_MCR__); PTR = nullptr;} while(false)
+
+	/*!
+	\defgroup BxAlloc
+	\brief #define BxAlloc(LENGTH)
+	\brief 메모리덤프 할당
+	\param LENGTH : 길이(byte)
+	\return 메모리덤프 포인터
+	*/
+	#define BxAlloc(LENGTH)                    BxMemory::_Alloc(LENGTH, 0 __DEBUG_MCR__)
+
+	/*!
+	\defgroup BxFree
+	\brief #define BxFree(PTR)
+	\brief 메모리덤프 소명
+	\param PTR : 메모리덤프 포인터
+	*/
+	#define BxFree(PTR)                        do{BxMemory::_Free(PTR, 0 __DEBUG_MCR__); PTR = nullptr;} while(false)
+
+	/// @cond SECTION_NAME
+	class BxMemory
+	{
+	public:
+		template<typename TYPE>
+		global_func TYPE* _NewArray(const uint count, int type __DEBUG_PRM__)
+		{
+			mint* DataArray = (mint*) _Alloc(sizeof(mint) + Max(sizeof(mint), sizeof(TYPE) * count), type __DEBUG_ARG__);
+			DataArray[0] = count;
+			TYPE* ClassArray = (TYPE*) &DataArray[1];
+			for(uint i = 0; i < count; ++i)
+				new((mint) &ClassArray[i]) TYPE;
+			return ClassArray;
+		}
+
+		template<typename TYPE>
+		global_func void _Delete(const TYPE* ptr, int type __DEBUG_PRM__)
+		{
+			if(ptr == nullptr) return;
+			ptr->~TYPE();
+			_Free(ptr, type __DEBUG_ARG__);
+		}
+
+		template<typename TYPE>
+		global_func void _DeleteArray(const TYPE* ptr, int type __DEBUG_PRM__)
+		{
+			if(ptr == nullptr) return;
+			const mint* DataArray = &((const mint*) ptr)[-1];
+			for(uint i = 0, count = DataArray[0]; i < count; ++i)
+				ptr[i].~TYPE();
+			_Free(DataArray, type __DEBUG_ARG__);
+		}
+
+		global_func inline void* _Alloc(const uint length, int type __DEBUG_PRM__)
+		{
+			void* Ptr = MakeMethod()(length, type);
+			LogMethod()(0, __DEBUG_FILE__, __DEBUG_LINE__, __DEBUG_FUNC__);
+			return Ptr;
+		}
+
+		global_func inline void _Free(const void* ptr, int type __DEBUG_PRM__)
+		{
+			if(ptr == nullptr) return;
+			LogMethod()(1, __DEBUG_FILE__, __DEBUG_LINE__, __DEBUG_FUNC__);
+			FreeMethod()(ptr, type);
+		}
+
+		#define BXMEMORY_ARRAY_CORE(...) \
+			uint* DataArray = (uint*) _Alloc(sizeof(int) + Max(sizeof(uint), sizeof(TYPE) * count), type __DEBUG_ARG__); \
+			DataArray[0] = count; \
+			TYPE* ClassArray = (TYPE*) &DataArray[1]; \
+			for(uint i = 0; i < count; ++i) \
+				new(&ClassArray[i]) TYPE(__VA_ARGS__); \
+			return ClassArray
+		template<typename TYPE, typename P1>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, P1 v1)
+		{BXMEMORY_ARRAY_CORE(v1);}
+		template<typename TYPE, typename P1, typename P2>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, P1 v1, P2 v2)
+		{BXMEMORY_ARRAY_CORE(v1, v2);}
+		template<typename TYPE, typename P1, typename P2, typename P3>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, P1 v1, P2 v2, P3 v3)
+		{BXMEMORY_ARRAY_CORE(v1, v2, v3);}
+		template<typename TYPE, typename P1, typename P2, typename P3, typename P4>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, P1 v1, P2 v2, P3 v3, P4 v4)
+		{BXMEMORY_ARRAY_CORE(v1, v2, v3, v4);}
+		template<typename TYPE, typename P1, typename P2, typename P3, typename P4, typename P5>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, P1 v1, P2 v2, P3 v3, P4 v4, P5 v5)
+		{BXMEMORY_ARRAY_CORE(v1, v2, v3, v4, v5);}
+		template<typename TYPE, typename P1, typename P2, typename P3, typename P4, typename P5, typename P6>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, P1 v1, P2 v2, P3 v3, P4 v4, P5 v5, P6 v6)
+		{BXMEMORY_ARRAY_CORE(v1, v2, v3, v4, v5, v6);}
+		template<typename TYPE, typename P1, typename P2, typename P3, typename P4, typename P5, typename P6, typename P7>
+		global_func TYPE* _NewArrayParam(const uint count, int type __DEBUG_PRM__, P1 v1, P2 v2, P3 v3, P4 v4, P5 v5, P6 v6, P7 v7)
+		{BXMEMORY_ARRAY_CORE(v1, v2, v3, v4, v5, v6, v7);}
+		global_func inline bool DoMemLogger() {return (DLLHandle() != nullptr);}
+
+	private:
+		global_func inline id_library& DLLHandle() {global_data id_library Handle = nullptr; return Handle;}
+		typedef int (*LogType)(int type, string file, const int line, string func);
+		typedef void* (*MakeType)(uint size, int type);
+		typedef void (*FreeType)(const void* ptr, int type);
+		global_func inline LogType& LogMethod() {global_data LogType Log = BeginLog; return Log;}
+		global_func inline MakeType& MakeMethod() {global_data MakeType Make = BeginMake; return Make;}
+		global_func inline FreeType& FreeMethod() {global_data FreeType Free = BeginFree; return Free;}
+		global_func int BeginLog(int type, string file, const int line, string func)
+		{
+			InitMemory();
+			return LogMethod()(type, file, line, func);
+		}
+		global_func int NullLog(int type, string file, const int line, string func)
+		{
+			return 0;
+		}
+		global_func void* BeginMake(uint size, int type)
+		{
+			InitMemory();
+			return MakeMethod()(size, type);
+		}
+		global_func void BeginFree(const void* ptr, int type)
+		{
+			BxASSERT("BxMemory", false);
+		}
+		global_func void InitMemory()
+		{
+			global_data bool IsInit = false;
+			if(IsInit) return;
+			IsInit = true;
+			#if defined(WIN32) && defined(__BX_DEBUG)
+				DLLHandle() = BxCore::Library::Open("../../Tiger2D/tool/CodeLogger2.dll");
+				if(DLLHandle())
+				{
+					const int MemSize = BxCore::System::GetPlatformConfigNumber("MemSizeBx");
+					//void* Pool = BxCore::Util::Alloc(MemSize); // 동일한 조건
+					typedef bool (*LoggerOnType)(string sysname, uint memorysizebykb, string projname, string filename);
+					LoggerOnType LoggerOnMethod = (LoggerOnType) BxCore::Library::Link(DLLHandle(), "BxMemLoggerOn");
+					if(LoggerOnMethod("BxMemoryFast", MemSize / 1024, "BxMemory", __FILE__))
+					{
+						LogMethod() = (LogType) BxCore::Library::Link(DLLHandle(), "BxLog");
+						MakeMethod() = (MakeType) BxCore::Library::Link(DLLHandle(), "BxMake");
+						FreeMethod() = (FreeType) BxCore::Library::Link(DLLHandle(), "BxFree");
+						return;
+					}
+					//else Pool = BxCore::Util::Free(Pool);
+				}
+			#endif
+			if(DLLHandle() != nullptr)
+			{
+				BxCore::Library::Close(DLLHandle());
+				DLLHandle() = nullptr;
+			}
+			LogMethod() = NullLog;
+			MakeMethod() = MakePack;
+			FreeMethod() = FreePack;
+		}
+
+	// BxMemoryPack
+	private:
+		// BxMemoryPack
+		#define BXMEMORY_MEMSET_ON						(0)
+		// FLAG
+		// 소용량청크(1024이하) : [청크헤더:4][팩정보:4][팩포커스:4][유니트들]
+		// 대용량청크 : [청크헤더:4][데이터]
+		#define BXMEMORY_CHUNK_HEADER_USEDFLAG			(0x80000000) // 사용여부
+		#define BXMEMORY_CHUNK_HEADER_PACKFLAG			(0x40000000) // 팩타입여부
+		#define BXMEMORY_CHUNK_HEADER_SIZEAREA			(0x3FFFFFFF) // 청크사이즈(1이 4바이트를 의미)
+		#define BXMEMORY_PACK_HEADER_IDAREA				(0xFF000000) // 팩ID(0~255, 4바이트~1024바이트)
+		#define BXMEMORY_PACK_HEADER_COUNTAREA			(0x00FFF000) // 팩내 전체 유니트수량
+		#define BXMEMORY_PACK_HEADER_FREEAREA			(0x00000FFF) // 팩내 남은 유니트수량
+		#define BXMEMORY_UNITSIZE						(sizeof(mint))
+		// CHUNK HEADER
+		#define BXMEMORY_IS_USED(CHUNK_PTR)				(*(CHUNK_PTR) & BXMEMORY_CHUNK_HEADER_USEDFLAG) // 사용되고 있는 청크인지
+		#define BXMEMORY_IS_PACK(CHUNK_PTR)				(*(CHUNK_PTR) & BXMEMORY_CHUNK_HEADER_PACKFLAG) // 팩타입의 청크인지
+		#define BXMEMORY_GET_SIZE(CHUNK_PTR)			(*(CHUNK_PTR) & BXMEMORY_CHUNK_HEADER_SIZEAREA) // 청크의 사이즈(4바이트기준)
+		#define BXMEMORY_SET_USED(CHUNK_PTR)			(*(CHUNK_PTR) |= BXMEMORY_CHUNK_HEADER_USEDFLAG) // 사용함 표기
+		#define BXMEMORY_SET_FREE(CHUNK_PTR)			(*(CHUNK_PTR) &= ~BXMEMORY_CHUNK_HEADER_USEDFLAG) // 사용안함 표기
+		#define BXMEMORY_SET_PACK(CHUNK_PTR)			(*(CHUNK_PTR) |= BXMEMORY_CHUNK_HEADER_PACKFLAG) // 팩타입임을 표기
+		// PACK HEADER
+		#define BXMEMORY_GET_PACK_ID(PACK_PTR)			((*(PACK_PTR) & BXMEMORY_PACK_HEADER_IDAREA) >> 24) // 팩ID(0~255)
+		#define BXMEMORY_GET_PACK_COUNT(PACK_PTR)		((*(PACK_PTR) & BXMEMORY_PACK_HEADER_COUNTAREA) >> 12) // 전체 유니트수량
+		#define BXMEMORY_GET_PACK_FREE(PACK_PTR)		(*(PACK_PTR) & BXMEMORY_PACK_HEADER_FREEAREA) // 남은 유니트수량
+		#define BXMEMORY_SET_PACK_FREE(PACK_PTR, NUM)	((*(PACK_PTR) & (BXMEMORY_PACK_HEADER_IDAREA | BXMEMORY_PACK_HEADER_COUNTAREA)) | ((NUM) & BXMEMORY_PACK_HEADER_FREEAREA)) // 남은 유니트수량 변경
+		// ETC
+		#define BXMEMORY_NEXT_CHUNK(CHUNK_PTR)			((CHUNK_PTR) + BXMEMORY_GET_SIZE(CHUNK_PTR)) // 다음청크의 주소
+		#define BXMEMORY_PACK_INFO(CHUNK_PTR)			(*((CHUNK_PTR) + BXMEMORY_CHUNK_HEADER_SIZE)) // 팩정보값
+		#define BXMEMORY_PACK_FOCUS(PACK_PTR)			(*((PACK_PTR) + BXMEMORY_PACK_HEADER_INFO_SIZE)) // 팩포커스값
+		#define BXMEMORY_PACK_UNIT_PTR(PACK_PTR)		((PACK_PTR) + BXMEMORY_PACK_HEADER_INFO_SIZE + BXMEMORY_PACK_HEADER_FOCUS_SIZE) // 유니트의 시작주소
+		#define BXMEMORY_CHUNK_HEADER_SIZE				(1)
+		#define BXMEMORY_PACK_HEADER_INFO_SIZE			(1)
+		#define BXMEMORY_PACK_HEADER_FOCUS_SIZE			(1)
+		#define BXMEMORY_RECENT_COUNT					(4)
+
+		/// @cond SECTION_NAME
+		typedef struct
+		{
+			mint* Recent[BXMEMORY_RECENT_COUNT];
+			unsigned NumPack;
+			unsigned TotalCountUnit;
+			unsigned TotalFreeUnit;
+		} PackState;
+		/// @endcond
+		enum {PackMaximum = 256};
+		enum {UnitSizeMinimum = 32};
+		enum {UnitCountMaximum = 4095};
+		// PACK
+		global_func inline PackState& Pack(const int index) {global_data PackState _[PackMaximum]; return _[index];}
+		global_func inline unsigned& NumChunk() {global_data unsigned _ = 0; return _;}
+		// POOL
+		global_func inline mint*& Pool() {global_data mint* _ = nullptr; return _;}
+		global_func inline unsigned& PoolLength() {global_data unsigned _ = 0; return _;}
+		// MUTEX
+		global_func inline id_mutex& Mutex() {global_data id_mutex _ = BxCore::Thread::OpenMutex(); return _;}
+		// MIN/MAX
+		template <class TYPE> global_func inline const TYPE& Min(const TYPE& A, const TYPE& B) {return (A < B)? A : B;}
+		template <class TYPE> global_func inline const TYPE& Max(const TYPE& A, const TYPE& B) {return (A > B)? A : B;}
+
+		// Ptr을 포함하는 청크 검색
+		global_func mint* FindChunk(mint* Ptr)
+		{
+			if(Ptr < Pool() || Pool() + PoolLength() <= Ptr)
+				return nullptr;
+			mint* ChunkFocus = Pool();
+			while(BXMEMORY_NEXT_CHUNK(ChunkFocus) <= Ptr)
+				ChunkFocus = BXMEMORY_NEXT_CHUNK(ChunkFocus);
+			return ChunkFocus;
+		}
+
+		// 신규청크 확보
+		global_func mint* LockChunk(unsigned Size, unsigned AddCount)
+		{
+			const unsigned PackID = Size - 1; // Size가 256까지라서 1바이트에 기록될 수 있게 함
+			const unsigned PackCount = Max((unsigned) 1, AddCount); // 팩의 최소수량
+			const bool IsPack = (Size <= PackMaximum);
+			unsigned NeedSize = BXMEMORY_CHUNK_HEADER_SIZE + ((!IsPack)? Size
+				: BXMEMORY_PACK_HEADER_INFO_SIZE + BXMEMORY_PACK_HEADER_FOCUS_SIZE + Size * PackCount);
+			// 공간검색
+			mint* ChunkFocus = Pool();
+			const mint* PoolEnd = Pool() + PoolLength();
+			unsigned SumFreeChunkSize = 0;
+			unsigned SumFreeChunkCount = 0;
+			while(BXMEMORY_IS_USED(ChunkFocus) || BXMEMORY_GET_SIZE(ChunkFocus) < NeedSize)
+			{
+				if(!BXMEMORY_IS_USED(ChunkFocus))
+				{
+					if(!SumFreeChunkSize || SumFreeChunkSize + BXMEMORY_GET_SIZE(ChunkFocus) < NeedSize)
+					{
+						SumFreeChunkSize += BXMEMORY_GET_SIZE(ChunkFocus);
+						++SumFreeChunkCount;
+					}
+					// 공간할당을 위한 청크병합
+					else
+					{
+						*(ChunkFocus - SumFreeChunkSize) = SumFreeChunkSize + BXMEMORY_GET_SIZE(ChunkFocus);
+						ChunkFocus -= SumFreeChunkSize;
+						break;
+					}
+				}
+				else
+				{
+					// 검색속도를 위한 청크병합
+					if(1 < SumFreeChunkCount)
+						*(ChunkFocus - SumFreeChunkSize) = SumFreeChunkSize;
+					SumFreeChunkSize = 0;
+					SumFreeChunkCount = 0;
+				}
+				ChunkFocus = BXMEMORY_NEXT_CHUNK(ChunkFocus);
+				if(ChunkFocus == PoolEnd)
+				{
+					BxASSERT("BxMemory<메모리가 부족합니다>", false); // 메모리부족
+					return nullptr;
+				}
+			}
+			// 공간분할
+			if(BXMEMORY_CHUNK_HEADER_SIZE < BXMEMORY_GET_SIZE(ChunkFocus) - NeedSize)
+				*(ChunkFocus + NeedSize) = BXMEMORY_GET_SIZE(ChunkFocus) - NeedSize;
+			else NeedSize = BXMEMORY_GET_SIZE(ChunkFocus);
+			*(ChunkFocus) = NeedSize;
+			BXMEMORY_SET_USED(ChunkFocus);
+			#if(BXMEMORY_MEMSET_ON == 1)
+				BxCore::Util::MemSet(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE, 0, BXMEMORY_BXMEMORY_UNITSIZE * (NeedSize - BXMEMORY_CHUNK_HEADER_SIZE));
+			#endif
+			// 팩구성
+			if(IsPack)
+			{
+				// 청크헤더에 팩여부기입 및 팩헤더구성
+				BXMEMORY_SET_PACK(ChunkFocus);
+				BXMEMORY_PACK_INFO(ChunkFocus) =
+					((PackID << 24) & BXMEMORY_PACK_HEADER_IDAREA) |
+					((PackCount << 12) & BXMEMORY_PACK_HEADER_COUNTAREA) |
+					(PackCount & BXMEMORY_PACK_HEADER_FREEAREA);
+				BXMEMORY_PACK_FOCUS(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE) = (mint) BXMEMORY_PACK_UNIT_PTR(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE);
+				// 유니트셋팅
+				mint* DataPtr = BXMEMORY_PACK_UNIT_PTR(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE);
+				for(unsigned Focus = 0; Focus < PackCount; ++Focus)
+				{
+					if(Focus < PackCount - 1)
+						*(DataPtr) = (mint) (DataPtr + Size);
+					else *(DataPtr) = (mint) nullptr;
+					DataPtr = (mint*) *(DataPtr);
+				}
+			}
+			// 청크정보 처리
+			++NumChunk();
+			return ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE;
+		}
+
+		// 해당청크 반환
+		global_func void UnlockChunk(mint* ChunkPtr)
+		{
+			// 존재여부
+			if(BXMEMORY_IS_USED(ChunkPtr))
+			{
+				BXMEMORY_SET_FREE(ChunkPtr);
+				// 청크정보 처리
+				--NumChunk();
+			}
+		}
+
+		// 해당팩 검색
+		global_func mint* FindPack(unsigned PackID)
+		{
+			mint* ChunkFocus = Pool();
+			const mint* PoolEnd = Pool() + PoolLength();
+			while(ChunkFocus != PoolEnd)
+			{
+				if(BXMEMORY_IS_USED(ChunkFocus) && BXMEMORY_IS_PACK(ChunkFocus)
+					&& BXMEMORY_GET_PACK_ID(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE) == PackID
+					&& 0 < BXMEMORY_GET_PACK_FREE(ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE))
+					return ChunkFocus + BXMEMORY_CHUNK_HEADER_SIZE;
+				ChunkFocus = BXMEMORY_NEXT_CHUNK(ChunkFocus);
+			}
+			return nullptr;
+		}
+
+		// 팩내 신규유니트 확보
+		global_func mint* LockUnit(mint* PackPtr)
+		{
+			const unsigned PackID = BXMEMORY_GET_PACK_ID(PackPtr);
+			const unsigned PackCount = BXMEMORY_GET_PACK_COUNT(PackPtr);
+			const unsigned PackFree = BXMEMORY_GET_PACK_FREE(PackPtr);
+			mint* PackFocus = (mint*) BXMEMORY_PACK_FOCUS(PackPtr);
+			BxASSERT("BxMemory<Pack정보오류>", 0 < PackCount && 0 < PackFree && PackFree <= PackCount && PackFocus);
+			BxASSERT("BxMemory<PackFocus가 해당 팩의 범위내에 없습니다>", BXMEMORY_PACK_UNIT_PTR(PackPtr) <= PackFocus && PackFocus < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount);
+
+			// 팩정보 처리
+			*(PackPtr) = BXMEMORY_SET_PACK_FREE(PackPtr, PackFree - 1);
+			// 팩현황 처리
+			--Pack(PackID).TotalFreeUnit;
+			// 포커스 이동
+			BXMEMORY_PACK_FOCUS(PackPtr) = *(PackFocus);
+			return PackFocus;
+		}
+
+		// 팩내 해당유니트 반환
+		global_func bool UnlockUnit(mint* PackPtr, mint* Ptr)
+		{
+			const unsigned PackID = BXMEMORY_GET_PACK_ID(PackPtr);
+			const unsigned PackCount = BXMEMORY_GET_PACK_COUNT(PackPtr);
+			const unsigned PackFree = BXMEMORY_GET_PACK_FREE(PackPtr);
+			mint* PackFocus = (mint*) BXMEMORY_PACK_FOCUS(PackPtr);
+			BxASSERT("BxMemory<Pack정보오류>", 0 < PackCount && PackFree < PackCount);
+			BxASSERT("BxMemory<PackFocus가 해당 팩의 범위내에 없습니다>", PackFocus == nullptr || (BXMEMORY_PACK_UNIT_PTR(PackPtr) <= PackFocus && PackFocus < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount));
+			BxASSERT("BxMemory<Ptr이 해당 팩의 범위내에 없습니다>", BXMEMORY_PACK_UNIT_PTR(PackPtr) <= Ptr && Ptr < BXMEMORY_PACK_UNIT_PTR(PackPtr) + (PackID + 1) * PackCount);
+			BxASSERT("BxMemory<Ptr이 해당 유니트의 시작주소가 아닙니다>", (Ptr - BXMEMORY_PACK_UNIT_PTR(PackPtr)) % (PackID + 1) == 0);
+
+			// 팩정보 처리
+			*(PackPtr) = BXMEMORY_SET_PACK_FREE(PackPtr, PackFree + 1);
+			// 팩현황 처리
+			++Pack(PackID).TotalFreeUnit;
+			// 포커스 이동
+			*(Ptr) = (mint) PackFocus;
+			BXMEMORY_PACK_FOCUS(PackPtr) = (mint) Ptr;
+			return (PackFree + 1 == PackCount); // 모든 유니트 반환여부
+		}
+
+		global_func void* MakePack(unsigned size, int)
+		{
+			BxCore::Thread::Lock(Mutex());
+			void* Result = nullptr;
+			// 초기화
+			global_data bool IsInitial = false;
+			if(!IsInitial)
+			{
+				IsInitial = true;
+				const int MemSize = BxCore::System::GetPlatformConfigNumber("MemSizeBx");
+				PoolLength() = MemSize / BXMEMORY_UNITSIZE;
+				Pool() = (mint*) BxCore::Util::Alloc(BXMEMORY_UNITSIZE * PoolLength());
+				BxCore::Util::MemSet(&Pack(0), 0, sizeof(PackState) * PackMaximum);
+				BxCore::Util::MemSet(Pool(), 0, BXMEMORY_UNITSIZE * PoolLength());
+				Pool()[0] = PoolLength();
+			}
+			const unsigned Size = (size + BXMEMORY_UNITSIZE - 1) / BXMEMORY_UNITSIZE;
+			// 대용량데이터 처리(non packed)
+			if(PackMaximum < Size)
+				Result = LockChunk(Size, 0);
+			// 소용량데이터 처리(packed)
+			else if(0 < Size)
+			{
+				mint* NewPack = nullptr;
+				const unsigned PackID = Size - 1; // Size가 256까지라서 1바이트에 기록될 수 있게 함
+				PackState* PackInfo = &Pack(PackID);
+				int RecentFocus = BXMEMORY_RECENT_COUNT;
+				// 신규청크 확보
+				if(PackInfo->TotalFreeUnit == 0)
+				{
+					unsigned AddCount = Min(Max((unsigned)(UnitSizeMinimum * 2 / Size),
+						(unsigned)(PackInfo->TotalCountUnit - PackInfo->TotalFreeUnit)), (unsigned)(UnitCountMaximum * 2));
+					while(!(NewPack = LockChunk(Size, AddCount /= 2)))
+						if(AddCount == 0)
+						{
+							BxASSERT("BxMemory<메모리가 부족합니다>", false); // 메모리부족
+							BxCore::Thread::Unlock(Mutex());
+							return nullptr;
+						}
+					// 팩정보 처리
+					++PackInfo->NumPack;
+					// 팩현황 처리
+					PackInfo->TotalCountUnit += BXMEMORY_GET_PACK_COUNT(NewPack);
+					PackInfo->TotalFreeUnit += BXMEMORY_GET_PACK_FREE(NewPack);
+				}
+				// 기존청크 접근
+				else
+				{
+					// 대상팩 선정
+					for(RecentFocus = 0; RecentFocus < BXMEMORY_RECENT_COUNT && !NewPack; ++RecentFocus)
+						if(PackInfo->Recent[RecentFocus] && BXMEMORY_GET_PACK_FREE(PackInfo->Recent[RecentFocus]))
+							NewPack = PackInfo->Recent[RecentFocus];
+					// 대상팩 검색
+					if(!NewPack) NewPack = FindPack(PackID);
+					BxASSERT("BxMemory<TotalFreeUnit정보 불일치>", NewPack != nullptr);
+				}
+				// 우선순위 처리
+				for(int i = RecentFocus - 1; 0 < i; --i)
+					PackInfo->Recent[i] = PackInfo->Recent[i - 1];
+				PackInfo->Recent[0] = NewPack;
+				// 결과값 반환
+				Result = LockUnit(NewPack);
+			}
+			BxCore::Thread::Unlock(Mutex());
+			return Result;
+		}
+
+		global_func void FreePack(const void* ptr, int)
+		{
+			BxCore::Thread::Lock(Mutex());
+			// 청크 검색
+			mint* DelChunk = FindChunk((mint*) ptr);
+			if(DelChunk && BXMEMORY_IS_USED(DelChunk))
+			{
+				// 해당유니트 반환
+				if(BXMEMORY_IS_PACK(DelChunk))
+				{
+					mint* DelPack = DelChunk + BXMEMORY_CHUNK_HEADER_SIZE;
+					const unsigned PackID = BXMEMORY_GET_PACK_ID(DelPack);
+					PackState* PackInfo = &Pack(PackID);
+					if(UnlockUnit(DelPack, (mint*) ptr))
+					{
+						// 팩리센트 삭제
+						int RecentFocus = -1;
+						while(++RecentFocus < BXMEMORY_RECENT_COUNT)
+							if(PackInfo->Recent[RecentFocus] == DelPack)
+							{
+								PackInfo->Recent[RecentFocus] = nullptr;
+								// 우선순위 재정렬
+								for(int i = RecentFocus; i < BXMEMORY_RECENT_COUNT - 1; ++i)
+									PackInfo->Recent[i] = PackInfo->Recent[i + 1];
+								break;
+							}
+						// 팩정보 처리
+						--PackInfo->NumPack;
+						// 팩현황 처리
+						PackInfo->TotalCountUnit -= BXMEMORY_GET_PACK_COUNT(DelPack);
+						PackInfo->TotalFreeUnit -= BXMEMORY_GET_PACK_FREE(DelPack);
+					}
+					// 아직 사용중인 유니트가 존재
+					else
+					{
+						BxCore::Thread::Unlock(Mutex());
+						return;
+					}
+				}
+				// 청크 반환
+				UnlockChunk(DelChunk);
+			}
+			BxCore::Thread::Unlock(Mutex());
+		}
+	};
+#endif
+/// @endcond

@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="namespace_bx_core_1_1_open_g_l2_d" kind="namespace" language="C++">
+    <compoundname>BxCore::OpenGL2D</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a2d0fbdde5d725cc27be11f501402994e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1250" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="957" bodyend="960"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a81c7dd7ff9209977d559ad65c7b85355" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Quit</definition>
+        <argsstring>()</argsstring>
+        <name>Quit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1251" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="962" bodyend="965"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a3a01ef19ca788fb3a8886f382a6887fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1252" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="967" bodyend="970"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a5bbfc4a018be50c5a4f8539b4e24cccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::SetPerspective</definition>
+        <argsstring>(const int mul, const int far, const int near)</argsstring>
+        <name>SetPerspective</name>
+        <param>
+          <type>const int</type>
+          <declname>mul</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>far</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>near</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1254" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="972" bodyend="975"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1adaa2bbe7c4e4b494a8e655073af8f795" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::SetOrthogonal</definition>
+        <argsstring>(const int width, const int height, const int far, const int near)</argsstring>
+        <name>SetOrthogonal</name>
+        <param>
+          <type>const int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>far</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>near</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1255" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="977" bodyend="980"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a0476b4aa00b5ca61ec767ada7b806fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::AddViewTrans</definition>
+        <argsstring>(int x, int y, int z)</argsstring>
+        <name>AddViewTrans</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1256" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="982" bodyend="985"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1afc2038db9dcf7eea8700e707bfb8900a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::AddViewRotX</definition>
+        <argsstring>(fint angle)</argsstring>
+        <name>AddViewRotX</name>
+        <param>
+          <type>fint</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1257" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="987" bodyend="990"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1aa781fb4c7d44c4e598d1532f2034fe5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::AddViewRotY</definition>
+        <argsstring>(fint angle)</argsstring>
+        <name>AddViewRotY</name>
+        <param>
+          <type>fint</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1258" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="992" bodyend="995"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a5aab06845a507269e5238610d64ee70e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::AddViewRotZ</definition>
+        <argsstring>(fint angle)</argsstring>
+        <name>AddViewRotZ</name>
+        <param>
+          <type>fint</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1259" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="997" bodyend="1000"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a096ea22f096ece0b7d391646ea916e3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__07" kindref="compound">id_opengl_form</ref></type>
+        <definition>id_opengl_form BxCore::OpenGL2D::MakeForm_TextureMaterial</definition>
+        <argsstring>(string filename)</argsstring>
+        <name>MakeForm_TextureMaterial</name>
+        <param>
+          <type>string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1261" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1002" bodyend="1015"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a9a4f589335975ff2a951cdf51b4733b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__07" kindref="compound">id_opengl_form</ref></type>
+        <definition>id_opengl_form BxCore::OpenGL2D::MakeForm_TextureMaterial</definition>
+        <argsstring>(color_a888 *image, const int width, const int height, const int pitch)</argsstring>
+        <name>MakeForm_TextureMaterial</name>
+        <param>
+          <type>color_a888 *</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pitch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1262" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1017" bodyend="1028"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1af73508f353c0650205c6b4881025b68c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__07" kindref="compound">id_opengl_form</ref></type>
+        <definition>id_opengl_form BxCore::OpenGL2D::MakeForm_ColorAmbient</definition>
+        <argsstring>(const color_x888 color)</argsstring>
+        <name>MakeForm_ColorAmbient</name>
+        <param>
+          <type>const color_x888</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1263" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1030" bodyend="1036"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a08ecf1f8745b09161a013cb9dff68b05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::FreeForm</definition>
+        <argsstring>(id_opengl_form form)</argsstring>
+        <name>FreeForm</name>
+        <param>
+          <type><ref refid="structid__struct__07" kindref="compound">id_opengl_form</ref></type>
+          <declname>form</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1264" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1038" bodyend="1043"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1ae943eb5d38c17c9279fc7cc78f2900db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__08" kindref="compound">id_opengl_outline</ref></type>
+        <definition>id_opengl_outline BxCore::OpenGL2D::MakeOutline_VertexUV</definition>
+        <argsstring>(const rect &amp;r, const rect &amp;uvclip)</argsstring>
+        <name>MakeOutline_VertexUV</name>
+        <param>
+          <type>const <ref refid="structrect" kindref="compound">rect</ref> &amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structrect" kindref="compound">rect</ref> &amp;</type>
+          <declname>uvclip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1265" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1045" bodyend="1064"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a7c581dcf9bceb70e7cf90e562cf996be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__08" kindref="compound">id_opengl_outline</ref></type>
+        <definition>id_opengl_outline BxCore::OpenGL2D::MakeOutline_PolyVertexUV</definition>
+        <argsstring>(const points &amp;p, const rect &amp;uvclip)</argsstring>
+        <name>MakeOutline_PolyVertexUV</name>
+        <param>
+          <type>const <ref refid="structpoints" kindref="compound">points</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structrect" kindref="compound">rect</ref> &amp;</type>
+          <declname>uvclip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1266" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1066" bodyend="1096"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a41b268d59f03b177cc8f8c94f578cd50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__08" kindref="compound">id_opengl_outline</ref></type>
+        <definition>id_opengl_outline BxCore::OpenGL2D::MakeOutline_PolyVertexUV3D</definition>
+        <argsstring>(const vertexs &amp;v, const points &amp;uv)</argsstring>
+        <name>MakeOutline_PolyVertexUV3D</name>
+        <param>
+          <type>const <ref refid="structvertexs" kindref="compound">vertexs</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structpoints" kindref="compound">points</ref> &amp;</type>
+          <declname>uv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1267" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1098" bodyend="1102"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1ad9f03ed3d8d09c3e182f44a634620639" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__08" kindref="compound">id_opengl_outline</ref></type>
+        <definition>id_opengl_outline BxCore::OpenGL2D::MakeOutline_SplineVertex</definition>
+        <argsstring>(const spline &amp;s)</argsstring>
+        <name>MakeOutline_SplineVertex</name>
+        <param>
+          <type>const <ref refid="structspline" kindref="compound">spline</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1268" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1104" bodyend="1116"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1abe86daad5e7b366115160147ab94843d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::FreeOutline</definition>
+        <argsstring>(id_opengl_outline outline)</argsstring>
+        <name>FreeOutline</name>
+        <param>
+          <type><ref refid="structid__struct__08" kindref="compound">id_opengl_outline</ref></type>
+          <declname>outline</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1269" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1118" bodyend="1123"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a71a2291ca8339fe2d9eb0e8f39d1b63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>color_x888</type>
+        <definition>color_x888 BxCore::OpenGL2D::Form_ColorAmbient_GetColor</definition>
+        <argsstring>(id_opengl_form form)</argsstring>
+        <name>Form_ColorAmbient_GetColor</name>
+        <param>
+          <type><ref refid="structid__struct__07" kindref="compound">id_opengl_form</ref></type>
+          <declname>form</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1271" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1125" bodyend="1130"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a88a4d89f469795a44c171928b0fc8b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Outline_VertexUV_SetScale</definition>
+        <argsstring>(id_opengl_outline outline, fint hoz, fint ver)</argsstring>
+        <name>Outline_VertexUV_SetScale</name>
+        <param>
+          <type><ref refid="structid__struct__08" kindref="compound">id_opengl_outline</ref></type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>fint</type>
+          <declname>hoz</declname>
+        </param>
+        <param>
+          <type>fint</type>
+          <declname>ver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1272" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1132" bodyend="1143"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1aef2b26c9fdce55eaa60c830b32949b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Outline_VertexUV_SetRotate</definition>
+        <argsstring>(id_opengl_outline outline, int angle1024, bool doFlip)</argsstring>
+        <name>Outline_VertexUV_SetRotate</name>
+        <param>
+          <type><ref refid="structid__struct__08" kindref="compound">id_opengl_outline</ref></type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>angle1024</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>doFlip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1273" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1145" bodyend="1166"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1ae7490b1c339ff3c480899b4427868be9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Outline_PolyVertexUV_SetScale</definition>
+        <argsstring>(id_opengl_outline outline, fint hoz, fint ver)</argsstring>
+        <name>Outline_PolyVertexUV_SetScale</name>
+        <param>
+          <type><ref refid="structid__struct__08" kindref="compound">id_opengl_outline</ref></type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>fint</type>
+          <declname>hoz</declname>
+        </param>
+        <param>
+          <type>fint</type>
+          <declname>ver</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1274" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1168" bodyend="1191"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a7814d24c44b6d72823f6d2cd0c7f06c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Outline_PolyVertexUV_SetRotate</definition>
+        <argsstring>(id_opengl_outline outline, int angle1024, bool doFlip)</argsstring>
+        <name>Outline_PolyVertexUV_SetRotate</name>
+        <param>
+          <type><ref refid="structid__struct__08" kindref="compound">id_opengl_outline</ref></type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>angle1024</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>doFlip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1275" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1193" bodyend="1234"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a4ba87315049dff4c0d9107d5f3d5daef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Render</definition>
+        <argsstring>(id_opengl_form form, id_opengl_outline outline, int x, int y, const byte opacity, const color_x888 color)</argsstring>
+        <name>Render</name>
+        <param>
+          <type><ref refid="structid__struct__07" kindref="compound">id_opengl_form</ref></type>
+          <declname>form</declname>
+        </param>
+        <param>
+          <type><ref refid="structid__struct__08" kindref="compound">id_opengl_outline</ref></type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>const byte</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>const color_x888</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1277" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1236" bodyend="1241"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a996f444283f9cbcd441d3a2cb7dd8dc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Render3D</definition>
+        <argsstring>(id_opengl_form form, id_opengl_outline outline, int x, int y, int z, const byte opacity, const color_x888 color)</argsstring>
+        <name>Render3D</name>
+        <param>
+          <type><ref refid="structid__struct__07" kindref="compound">id_opengl_form</ref></type>
+          <declname>form</declname>
+        </param>
+        <param>
+          <type><ref refid="structid__struct__08" kindref="compound">id_opengl_outline</ref></type>
+          <declname>outline</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z</declname>
+        </param>
+        <param>
+          <type>const byte</type>
+          <declname>opacity</declname>
+        </param>
+        <param>
+          <type>const color_x888</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1278" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1243" bodyend="1246"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1ac4e47adab45dcc3fd549fded7440b29d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::OpenGL2D::Clip</definition>
+        <argsstring>(rect r)</argsstring>
+        <name>Clip</name>
+        <param>
+          <type><ref refid="structrect" kindref="compound">rect</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1280" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1248" bodyend="1252"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a0d01bdfb74bfc4ce9c968ff9677c29eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int BxCore::OpenGL2D::GetTextureMargin</definition>
+        <argsstring>()</argsstring>
+        <name>GetTextureMargin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1282" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="1097" bodyend="1103"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_open_g_l2_d_1a58f576b8a1326ff364da4be247dbebf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const bool</type>
+        <definition>const bool BxCore::OpenGL2D::DoTextureInterpolation</definition>
+        <argsstring>()</argsstring>
+        <name>DoTextureInterpolation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1283" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="1105" bodyend="1111"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>OpenGL2D파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="1249" column="1"/>
+  </compounddef>
+</doxygen>

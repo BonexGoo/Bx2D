@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_var_map_1_1_var_table" kind="class" language="C++" prot="private">
+    <compoundname>BxVarMap::VarTable</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_var_map_1_1_var_table_1ac29764df150f8803dfa20677365227e8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarTable::Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="230" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_var_map_1_1_var_table_1aaf59cba7d53e987c864a7e4208be51ff" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref> *</type>
+        <definition>BxVarMap* BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarTable::Ch[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>Ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="231" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_var_map_1_1_var_table_1a15e3edfdf651126e139788c6b1f275ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarTable::VarTable</definition>
+        <argsstring>()</argsstring>
+        <name>VarTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="232" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="232" bodyend="233"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="398">
+        <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarTable</label>
+        <childnode refid="399" relation="usage">
+          <edgelabel>Ch</edgelabel>
+        </childnode>
+      </node>
+      <node id="399">
+        <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="400" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+        <childnode refid="401" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="400">
+        <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
+      </node>
+      <node id="401">
+        <label>TYPE</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="229" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="228" bodyend="234"/>
+    <listofallmembers>
+      <member refid="class_bx_var_map_1_1_var_table_1aaf59cba7d53e987c864a7e4208be51ff" prot="public" virt="non-virtual"><scope>BxVarMap::VarTable</scope><name>Ch</name></member>
+      <member refid="class_bx_var_map_1_1_var_table_1ac29764df150f8803dfa20677365227e8" prot="public" virt="non-virtual"><scope>BxVarMap::VarTable</scope><name>Count</name></member>
+      <member refid="class_bx_var_map_1_1_var_table_1a15e3edfdf651126e139788c6b1f275ea" prot="public" virt="non-virtual"><scope>BxVarMap::VarTable</scope><name>VarTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="structbitmapfile" kind="struct" language="C++" prot="public">
+    <compoundname>bitmapfile</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbitmapfile_1ae29c7f25c249b44ab6fd624e8ba3db54" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint bitmapfile::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="252" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapfile_1a53fb11f68855f60609619a44837a603a" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short bitmapfile::param1</definition>
+        <argsstring></argsstring>
+        <name>param1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="252" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapfile_1a050b383427139184533cba1a05a0b6f4" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short bitmapfile::param2</definition>
+        <argsstring></argsstring>
+        <name>param2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="252" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbitmapfile_1a8fea396e72193ceec287e7aef93b5151" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint bitmapfile::offbits</definition>
+        <argsstring></argsstring>
+        <name>offbits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="252" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>bitmapfile구조체 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="252" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="252" bodyend="252"/>
+    <listofallmembers>
+      <member refid="structbitmapfile_1a8fea396e72193ceec287e7aef93b5151" prot="public" virt="non-virtual"><scope>bitmapfile</scope><name>offbits</name></member>
+      <member refid="structbitmapfile_1a53fb11f68855f60609619a44837a603a" prot="public" virt="non-virtual"><scope>bitmapfile</scope><name>param1</name></member>
+      <member refid="structbitmapfile_1a050b383427139184533cba1a05a0b6f4" prot="public" virt="non-virtual"><scope>bitmapfile</scope><name>param2</name></member>
+      <member refid="structbitmapfile_1ae29c7f25c249b44ab6fd624e8ba3db54" prot="public" virt="non-virtual"><scope>bitmapfile</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

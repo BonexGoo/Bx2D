@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_panel_1_1_variable_l" kind="class" language="C++" prot="private">
+    <compoundname>BxPanel::VariableL</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1a274b7924bbd9e4acebba6c389772fdea" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BxPanel::VariableL::Enable</definition>
+        <argsstring></argsstring>
+        <name>Enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="306" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1ad2bc3bae6140f3ae6c04d0453c221f00" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BxPanel::VariableL::Visible</definition>
+        <argsstring></argsstring>
+        <name>Visible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="307" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1ae0d7277a38e1da2585005eba44096740" prot="public" static="no" mutable="no">
+        <type>View</type>
+        <definition>View BxPanel::VariableL::LastType</definition>
+        <argsstring></argsstring>
+        <name>LastType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="308" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1ad633abbd1a9514637a1d1349e14ac29b" prot="public" static="no" mutable="no">
+        <type><ref refid="structrect" kindref="compound">rect</ref></type>
+        <definition>rect BxPanel::VariableL::LastRect</definition>
+        <argsstring></argsstring>
+        <name>LastRect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="309" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1aa4bde70109aa30bb8c497822134f0a6d" prot="public" static="no" mutable="no">
+        <type><ref refid="structarea" kindref="compound">area</ref></type>
+        <definition>area BxPanel::VariableL::LastScroll</definition>
+        <argsstring></argsstring>
+        <name>LastScroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="310" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1a5ae2430db54792078ba5b1419303e3d0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxPanel::VariableL::LastScrollPower</definition>
+        <argsstring></argsstring>
+        <name>LastScrollPower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="311" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1add392eaa088032c513096eeb233aca67" prot="public" static="no" mutable="no">
+        <type><ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>point BxPanel::VariableL::LastScrollPhy</definition>
+        <argsstring></argsstring>
+        <name>LastScrollPhy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="312" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1a4096438609abf78faf3e60c49798d22f" prot="public" static="no" mutable="no">
+        <type>Function *</type>
+        <definition>Function* BxPanel::VariableL::RefFunc</definition>
+        <argsstring></argsstring>
+        <name>RefFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="313" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1ab4918152d2727e063b6f5f5daa432b74" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_panel" kindref="compound">BxPanel</ref> *</type>
+        <definition>BxPanel* BxPanel::VariableL::VarM</definition>
+        <argsstring></argsstring>
+        <name>VarM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="314" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1a731b7b149cf0b7c29a09f3a6534dc193" prot="public" static="no" mutable="no">
+        <type>EventData</type>
+        <definition>EventData BxPanel::VariableL::ClickedData</definition>
+        <argsstring></argsstring>
+        <name>ClickedData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="315" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1af420203a6db72ac36c3a6d0088881345" prot="public" static="no" mutable="no">
+        <type>EventData</type>
+        <definition>EventData BxPanel::VariableL::BumpedData</definition>
+        <argsstring></argsstring>
+        <name>BumpedData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="316" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1a04872e0c9c7a7d524ecc5d8054996456" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; <ref refid="class_bx_panel" kindref="compound">BxPanel</ref> &gt;</type>
+        <definition>BxVarMap&lt;BxPanel&gt; BxPanel::VariableL::Child</definition>
+        <argsstring></argsstring>
+        <name>Child</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="317" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1ae552f697fcfa79c4ded3664684f8a669" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; UserData, 4 &gt;</type>
+        <definition>BxVarVector&lt;UserData, 4&gt; BxPanel::VariableL::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="318" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_variable_l_1ae9cc62682e0d084bca7b8d0201f70b9c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxPanel::VariableL::DebugLineHit</definition>
+        <argsstring></argsstring>
+        <name>DebugLineHit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="319" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_panel_1_1_variable_l_1aad0ed4e5216655b48b85b4a515494faf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPanel::VariableL::VariableL</definition>
+        <argsstring>()</argsstring>
+        <name>VariableL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="320" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="320" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1_1_variable_l_1ae61c904a196acdba6b0d16f2e81f5b6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPanel::VariableL::~VariableL</definition>
+        <argsstring>()</argsstring>
+        <name>~VariableL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="336" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="336" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1_1_variable_l_1a1b0c637bb9876b6e922eefd93726b38a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxPanel::VariableL::ForceScroll</definition>
+        <argsstring>(BxPanel *panel, int fx, int fy)</argsstring>
+        <name>ForceScroll</name>
+        <param>
+          <type><ref refid="class_bx_panel" kindref="compound">BxPanel</ref> *</type>
+          <declname>panel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="340" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="340" bodyend="401"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="349">
+        <label>BxVarVector&lt; UserData, 4 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+      <node id="348">
+        <label>rect</label>
+        <link refid="structrect"/>
+      </node>
+      <node id="347">
+        <label>BxVarVector&lt; BxPanel::EventData::Node, 1 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+      <node id="346">
+        <label>BxPanel::EventData</label>
+        <childnode refid="347" relation="usage">
+          <edgelabel>Callbacks</edgelabel>
+        </childnode>
+      </node>
+      <node id="341">
+        <label>BxPanel::VariableL</label>
+        <childnode refid="342" relation="usage">
+          <edgelabel>Child</edgelabel>
+        </childnode>
+        <childnode refid="346" relation="usage">
+          <edgelabel>ClickedData</edgelabel>
+          <edgelabel>BumpedData</edgelabel>
+        </childnode>
+        <childnode refid="348" relation="usage">
+          <edgelabel>LastRect</edgelabel>
+        </childnode>
+        <childnode refid="349" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+        <childnode refid="350" relation="usage">
+          <edgelabel>RefFunc</edgelabel>
+        </childnode>
+        <childnode refid="353" relation="usage">
+          <edgelabel>LastScrollPhy</edgelabel>
+        </childnode>
+        <childnode refid="344" relation="usage">
+          <edgelabel>VarM</edgelabel>
+        </childnode>
+        <childnode refid="354" relation="usage">
+          <edgelabel>LastScroll</edgelabel>
+        </childnode>
+      </node>
+      <node id="345">
+        <label>BxPanel::Event</label>
+      </node>
+      <node id="354">
+        <label>area</label>
+        <link refid="structarea"/>
+      </node>
+      <node id="344">
+        <label>BxPanel</label>
+        <link refid="class_bx_panel"/>
+        <childnode refid="345" relation="usage">
+          <edgelabel>Bumped</edgelabel>
+          <edgelabel>Clicked</edgelabel>
+        </childnode>
+        <childnode refid="341" relation="usage">
+          <edgelabel>VarL</edgelabel>
+        </childnode>
+      </node>
+      <node id="342">
+        <label>BxVarMap&lt; BxPanel &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="343" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+        <childnode refid="344" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="351">
+        <label>id_struct_01</label>
+        <link refid="structid__struct__01"/>
+      </node>
+      <node id="350">
+        <label>BxPanel::Function</label>
+        <childnode refid="344" relation="usage">
+          <edgelabel>Alloc</edgelabel>
+          <edgelabel>Free</edgelabel>
+        </childnode>
+        <childnode refid="351" relation="usage">
+          <edgelabel>TypeText</edgelabel>
+        </childnode>
+        <childnode refid="352" relation="usage">
+          <edgelabel>Paint</edgelabel>
+        </childnode>
+      </node>
+      <node id="353">
+        <label>point</label>
+        <link refid="structpoint"/>
+      </node>
+      <node id="352">
+        <label>BxArgument</label>
+        <link refid="class_bx_argument"/>
+      </node>
+      <node id="343">
+        <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="305" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="304" bodyend="402"/>
+    <listofallmembers>
+      <member refid="class_bx_panel_1_1_variable_l_1af420203a6db72ac36c3a6d0088881345" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>BumpedData</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1a04872e0c9c7a7d524ecc5d8054996456" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>Child</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1a731b7b149cf0b7c29a09f3a6534dc193" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>ClickedData</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1ae552f697fcfa79c4ded3664684f8a669" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>Data</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1ae9cc62682e0d084bca7b8d0201f70b9c" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>DebugLineHit</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1a274b7924bbd9e4acebba6c389772fdea" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>Enable</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1a1b0c637bb9876b6e922eefd93726b38a" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>ForceScroll</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1ad633abbd1a9514637a1d1349e14ac29b" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>LastRect</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1aa4bde70109aa30bb8c497822134f0a6d" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>LastScroll</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1add392eaa088032c513096eeb233aca67" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>LastScrollPhy</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1a5ae2430db54792078ba5b1419303e3d0" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>LastScrollPower</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1ae0d7277a38e1da2585005eba44096740" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>LastType</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1a4096438609abf78faf3e60c49798d22f" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>RefFunc</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1aad0ed4e5216655b48b85b4a515494faf" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>VariableL</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1ab4918152d2727e063b6f5f5daa432b74" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>VarM</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1ad2bc3bae6140f3ae6c04d0453c221f00" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>Visible</name></member>
+      <member refid="class_bx_panel_1_1_variable_l_1ae61c904a196acdba6b0d16f2e81f5b6b" prot="public" virt="non-virtual"><scope>BxPanel::VariableL</scope><name>~VariableL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

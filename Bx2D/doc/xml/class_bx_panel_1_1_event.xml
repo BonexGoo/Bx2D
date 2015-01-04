@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_panel_1_1_event" kind="class" language="C++" prot="private">
+    <compoundname>BxPanel::Event</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_panel_1_1_event_1a79f5cccb5e0330a1778b8b1f910f058a" prot="private" static="no" mutable="no">
+        <type>EventData &amp;</type>
+        <definition>EventData&amp; BxPanel::Event::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="268" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_panel_1_1_event_1aac583170bf58e5ffdbf8a1db9c14c63c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPanel::Event::Event</definition>
+        <argsstring>(EventData &amp;data)</argsstring>
+        <name>Event</name>
+        <param>
+          <type>EventData &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="269" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="269" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1_1_event_1ab1ab61404af484a4e565cf7b69d0c1c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Event &amp;</type>
+        <definition>Event&amp; BxPanel::Event::operator+=</definition>
+        <argsstring>(EventCB cb)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>EventCB</type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="270" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="270" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1_1_event_1a1c98e4bad4264cf5c5a641b05b1a3a3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Event &amp;</type>
+        <definition>Event&amp; BxPanel::Event::operator-=</definition>
+        <argsstring>(EventCB cb)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>EventCB</type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="275" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="275" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1_1_event_1a7b0206a50c1b95e915792682e3caf0c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Event &amp;</type>
+        <definition>Event&amp; BxPanel::Event::operator,</definition>
+        <argsstring>(void *data)</argsstring>
+        <name>operator,</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="285" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="285" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="267" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="266" bodyend="290"/>
+    <listofallmembers>
+      <member refid="class_bx_panel_1_1_event_1a79f5cccb5e0330a1778b8b1f910f058a" prot="private" virt="non-virtual"><scope>BxPanel::Event</scope><name>Data</name></member>
+      <member refid="class_bx_panel_1_1_event_1aac583170bf58e5ffdbf8a1db9c14c63c" prot="public" virt="non-virtual"><scope>BxPanel::Event</scope><name>Event</name></member>
+      <member refid="class_bx_panel_1_1_event_1ab1ab61404af484a4e565cf7b69d0c1c9" prot="public" virt="non-virtual"><scope>BxPanel::Event</scope><name>operator+=</name></member>
+      <member refid="class_bx_panel_1_1_event_1a7b0206a50c1b95e915792682e3caf0c1" prot="public" virt="non-virtual"><scope>BxPanel::Event</scope><name>operator,</name></member>
+      <member refid="class_bx_panel_1_1_event_1a1c98e4bad4264cf5c5a641b05b1a3a3c" prot="public" virt="non-virtual"><scope>BxPanel::Event</scope><name>operator-=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_panel_1_1_function" kind="class" language="C++" prot="private">
+    <compoundname>BxPanel::Function</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_panel_1_1_function_1af143db4542fe818523180f3c9c7b5512" prot="public" static="no" mutable="no">
+        <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+        <definition>id_text BxPanel::Function::TypeText</definition>
+        <argsstring></argsstring>
+        <name>TypeText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="233" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_function_1a252bb9b6e36d23570a6597d7e2cfcea5" prot="public" static="no" mutable="no">
+        <type>CreateCB</type>
+        <definition>CreateCB BxPanel::Function::Create</definition>
+        <argsstring></argsstring>
+        <name>Create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="234" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_function_1a71e5bbd8103f868ee4a825b674b5595b" prot="public" static="no" mutable="no">
+        <type>NotifyCB</type>
+        <definition>NotifyCB BxPanel::Function::Notify</definition>
+        <argsstring></argsstring>
+        <name>Notify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="235" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_function_1a0755c7bbb173819f31f5b43ad8725f4f" prot="public" static="no" mutable="no">
+        <type>TouchCB</type>
+        <definition>TouchCB BxPanel::Function::Touch</definition>
+        <argsstring></argsstring>
+        <name>Touch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="236" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_function_1ae10b30a506598933e9137f454945c420" prot="public" static="no" mutable="no">
+        <type>PaintCB</type>
+        <definition>PaintCB BxPanel::Function::Paint</definition>
+        <argsstring></argsstring>
+        <name>Paint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="237" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_function_1ac43901b98aa0f8dad60e8de02bc356d4" prot="public" static="no" mutable="no">
+        <type>AllocCB</type>
+        <definition>AllocCB BxPanel::Function::Alloc</definition>
+        <argsstring></argsstring>
+        <name>Alloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="238" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_function_1a58875828e2f8fd34c9ab8d61707d8db2" prot="public" static="no" mutable="no">
+        <type>FreeCB</type>
+        <definition>FreeCB BxPanel::Function::Free</definition>
+        <argsstring></argsstring>
+        <name>Free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="239" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_function_1aca6fbe96bb9824f828684d7d487bf84a" prot="public" static="no" mutable="no">
+        <type>ServiceCB</type>
+        <definition>ServiceCB BxPanel::Function::Service</definition>
+        <argsstring></argsstring>
+        <name>Service</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="240" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_panel_1_1_function_1a7cef3101f79ce0091d381a45db3e2047" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func Function *</type>
+        <definition>global_func Function* BxPanel::Function::Get</definition>
+        <argsstring>(string type, bool docreate)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>string</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>docreate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="241" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="241" bodyend="245"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="156">
+        <label>BxVarVector&lt; UserData, 4 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+      <node id="155">
+        <label>rect</label>
+        <link refid="structrect"/>
+      </node>
+      <node id="154">
+        <label>BxVarVector&lt; BxPanel::EventData::Node, 1 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+      <node id="153">
+        <label>BxPanel::EventData</label>
+        <childnode refid="154" relation="usage">
+          <edgelabel>Callbacks</edgelabel>
+        </childnode>
+      </node>
+      <node id="150">
+        <label>BxPanel::VariableL</label>
+        <childnode refid="151" relation="usage">
+          <edgelabel>Child</edgelabel>
+        </childnode>
+        <childnode refid="153" relation="usage">
+          <edgelabel>ClickedData</edgelabel>
+          <edgelabel>BumpedData</edgelabel>
+        </childnode>
+        <childnode refid="155" relation="usage">
+          <edgelabel>LastRect</edgelabel>
+        </childnode>
+        <childnode refid="156" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+        <childnode refid="147" relation="usage">
+          <edgelabel>RefFunc</edgelabel>
+        </childnode>
+        <childnode refid="157" relation="usage">
+          <edgelabel>LastScrollPhy</edgelabel>
+        </childnode>
+        <childnode refid="148" relation="usage">
+          <edgelabel>VarM</edgelabel>
+        </childnode>
+        <childnode refid="158" relation="usage">
+          <edgelabel>LastScroll</edgelabel>
+        </childnode>
+      </node>
+      <node id="149">
+        <label>BxPanel::Event</label>
+      </node>
+      <node id="158">
+        <label>area</label>
+        <link refid="structarea"/>
+      </node>
+      <node id="148">
+        <label>BxPanel</label>
+        <link refid="class_bx_panel"/>
+        <childnode refid="149" relation="usage">
+          <edgelabel>Bumped</edgelabel>
+          <edgelabel>Clicked</edgelabel>
+        </childnode>
+        <childnode refid="150" relation="usage">
+          <edgelabel>VarL</edgelabel>
+        </childnode>
+      </node>
+      <node id="151">
+        <label>BxVarMap&lt; BxPanel &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="152" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+        <childnode refid="148" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="159">
+        <label>id_struct_01</label>
+        <link refid="structid__struct__01"/>
+      </node>
+      <node id="147">
+        <label>BxPanel::Function</label>
+        <childnode refid="148" relation="usage">
+          <edgelabel>Alloc</edgelabel>
+          <edgelabel>Free</edgelabel>
+        </childnode>
+        <childnode refid="159" relation="usage">
+          <edgelabel>TypeText</edgelabel>
+        </childnode>
+        <childnode refid="160" relation="usage">
+          <edgelabel>Paint</edgelabel>
+        </childnode>
+      </node>
+      <node id="157">
+        <label>point</label>
+        <link refid="structpoint"/>
+      </node>
+      <node id="160">
+        <label>BxArgument</label>
+        <link refid="class_bx_argument"/>
+      </node>
+      <node id="152">
+        <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="232" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="231" bodyend="246"/>
+    <listofallmembers>
+      <member refid="class_bx_panel_1_1_function_1ac43901b98aa0f8dad60e8de02bc356d4" prot="public" virt="non-virtual"><scope>BxPanel::Function</scope><name>Alloc</name></member>
+      <member refid="class_bx_panel_1_1_function_1a252bb9b6e36d23570a6597d7e2cfcea5" prot="public" virt="non-virtual"><scope>BxPanel::Function</scope><name>Create</name></member>
+      <member refid="class_bx_panel_1_1_function_1a58875828e2f8fd34c9ab8d61707d8db2" prot="public" virt="non-virtual"><scope>BxPanel::Function</scope><name>Free</name></member>
+      <member refid="class_bx_panel_1_1_function_1a7cef3101f79ce0091d381a45db3e2047" prot="public" virt="non-virtual"><scope>BxPanel::Function</scope><name>Get</name></member>
+      <member refid="class_bx_panel_1_1_function_1a71e5bbd8103f868ee4a825b674b5595b" prot="public" virt="non-virtual"><scope>BxPanel::Function</scope><name>Notify</name></member>
+      <member refid="class_bx_panel_1_1_function_1ae10b30a506598933e9137f454945c420" prot="public" virt="non-virtual"><scope>BxPanel::Function</scope><name>Paint</name></member>
+      <member refid="class_bx_panel_1_1_function_1aca6fbe96bb9824f828684d7d487bf84a" prot="public" virt="non-virtual"><scope>BxPanel::Function</scope><name>Service</name></member>
+      <member refid="class_bx_panel_1_1_function_1a0755c7bbb173819f31f5b43ad8725f4f" prot="public" virt="non-virtual"><scope>BxPanel::Function</scope><name>Touch</name></member>
+      <member refid="class_bx_panel_1_1_function_1af143db4542fe818523180f3c9c7b5512" prot="public" virt="non-virtual"><scope>BxPanel::Function</scope><name>TypeText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

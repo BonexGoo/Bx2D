@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_web_content_1_1_cache_pool" kind="class" language="C++" prot="private">
+    <compoundname>BxWebContent::CachePool</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_web_content_1_1_cache_pool_1a4f9f71821441e99b710b63c9ba5aefd2" prot="public" static="no" mutable="no">
+        <type>string_rw</type>
+        <definition>string_rw BxWebContent::CachePool::Path</definition>
+        <argsstring></argsstring>
+        <name>Path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="55" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_web_content_1_1_cache_pool_1ae354d239358686092357285716d4ef84" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint BxWebContent::CachePool::Size</definition>
+        <argsstring></argsstring>
+        <name>Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="56" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_web_content_1_1_cache_pool_1af3461d260572f665800ea6aa8370b850" prot="public" static="no" mutable="no">
+        <type>uhuge</type>
+        <definition>uhuge BxWebContent::CachePool::Date</definition>
+        <argsstring></argsstring>
+        <name>Date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="57" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_web_content_1_1_cache_pool_1a5612ef6d6cbc110a92113be475856bf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::CachePool::CachePool</definition>
+        <argsstring>()</argsstring>
+        <name>CachePool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="58" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_cache_pool_1a62edb218b065c30efdac76a81a7ba90a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::CachePool::~CachePool</definition>
+        <argsstring>()</argsstring>
+        <name>~CachePool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="59" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="54" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="53" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_bx_web_content_1_1_cache_pool_1a5612ef6d6cbc110a92113be475856bf5" prot="public" virt="non-virtual"><scope>BxWebContent::CachePool</scope><name>CachePool</name></member>
+      <member refid="class_bx_web_content_1_1_cache_pool_1af3461d260572f665800ea6aa8370b850" prot="public" virt="non-virtual"><scope>BxWebContent::CachePool</scope><name>Date</name></member>
+      <member refid="class_bx_web_content_1_1_cache_pool_1a4f9f71821441e99b710b63c9ba5aefd2" prot="public" virt="non-virtual"><scope>BxWebContent::CachePool</scope><name>Path</name></member>
+      <member refid="class_bx_web_content_1_1_cache_pool_1ae354d239358686092357285716d4ef84" prot="public" virt="non-virtual"><scope>BxWebContent::CachePool</scope><name>Size</name></member>
+      <member refid="class_bx_web_content_1_1_cache_pool_1a62edb218b065c30efdac76a81a7ba90a" prot="public" virt="non-virtual"><scope>BxWebContent::CachePool</scope><name>~CachePool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

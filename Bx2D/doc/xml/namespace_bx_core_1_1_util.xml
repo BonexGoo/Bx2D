@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="namespace_bx_core_1_1_util" kind="namespace" language="C++">
+    <compoundname>BxCore::Util</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1aacaf23bed9737504410d309578cdc7a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * BxCore::Util::Alloc</definition>
+        <argsstring>(int size)</argsstring>
+        <name>Alloc</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>메모리할당 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 요청할 길이(byte) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>할당된 메모리, 실패시 nullptr </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_util_1a592c1dc0989b09fbaad862428b8d4d23" kindref="member">Free</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="476" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="403" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a592c1dc0989b09fbaad862428b8d4d23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * BxCore::Util::Free</definition>
+        <argsstring>(const void *buf)</argsstring>
+        <name>Free</name>
+        <param>
+          <type>const void *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+<para>메모리반환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>item</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 반환할 메모리 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>간편한 사용을 위한 nullptr값 리턴 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_util_1aacaf23bed9737504410d309578cdc7a8" kindref="member">Alloc</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="484" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="408" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a86d9f355240f547de643ac1dcbb2ed08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Util::MemSet</definition>
+        <argsstring>(void *dst, byte value, int length)</argsstring>
+        <name>MemSet</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>메모리 초기화 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 초기화할 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 초기화시킬 값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 초기화할 길이(byte) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="492" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="414" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1aa1d8a11236853f4cbb3207c80cf5b4fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Util::MemCpy</definition>
+        <argsstring>(void *dst, const void *src, int length)</argsstring>
+        <name>MemCpy</name>
+        <param>
+          <type>void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>메모리 복사 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 붙여넣을 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 원본의 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 복사할 길이(byte) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="500" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="419" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1ad732eb2a2948cdab353d9291533cbe14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Util::MemCmp</definition>
+        <argsstring>(const void *dst, const void *src, int length)</argsstring>
+        <name>MemCmp</name>
+        <param>
+          <type>const void *</type>
+          <declname>dst</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>메모리 비교 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비교대상 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비교주체 시작 메모리번지 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 비교할 길이(byte) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>동일하면 0, 다르면 0이 아님 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="509" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="424" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1acc00b7e6b5a850983733ca189777d3a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string _tmp_</type>
+        <definition>string _tmp_ BxCore::Util::Print</definition>
+        <argsstring>(string map, const BxArgument &amp;args=BxArgument::zero(), int *length=nullptr)</argsstring>
+        <name>Print</name>
+        <param>
+          <type>string</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_argument" kindref="compound">BxArgument</ref> &amp;</type>
+          <declname>args</declname>
+          <defval><ref refid="class_bx_argument_1ab9054620e6687cb4e0dfff9c4c54c5c1" kindref="member">BxArgument::zero</ref>()</defval>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>length</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>스트링구성 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 스트링맵 스크립트(식별문자는 &quot;&lt;&gt;:&quot;)  : 가변인수참조 &lt;X...&gt; : 16진수입력 <bold> : 공백문자 &lt;T&gt; : 탭문자 &lt;N&gt; : 뉴라인문자 &lt;R&gt; : 리턴문자 &lt;Z&gt; : 널문자 &lt;FS&gt; : 슬래시 &lt;RS&gt; : 역슬래시 &lt;DQ&gt; : 쌍따옴표 &lt;SQ&gt; : 작은따옴표 </bold></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><bold>: map에 쓰일 가변인자 </bold></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><bold>: 구성된 스트링의 길이(byte) </bold></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><bold> 구성된 스트링 </bold></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="529" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="381" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a64ec381ceb5fbce7d4074c674a9b763d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int *</type>
+        <definition>const int * BxCore::Util::Cos1024Table</definition>
+        <argsstring>()</argsstring>
+        <name>Cos1024Table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="531" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="602" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1ae6c876f32bae515d93b7c1fe9388ec5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const int *</type>
+        <definition>const int * BxCore::Util::Tan1024Table</definition>
+        <argsstring>()</argsstring>
+        <name>Tan1024Table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="532" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="625" bodyend="645"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1abf0ab76dfa6db0a92832c1671b69a590" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wstring</type>
+        <definition>wstring BxCore::Util::UTF16Table</definition>
+        <argsstring>()</argsstring>
+        <name>UTF16Table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="533" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="647" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_util_1a6170dbf2be53fcdfb6670dbb022cb154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>wstring</type>
+        <definition>wstring BxCore::Util::CP949Table</definition>
+        <argsstring>()</argsstring>
+        <name>CP949Table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="534" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="751" bodyend="853"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Util파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="469" column="1"/>
+  </compounddef>
+</doxygen>

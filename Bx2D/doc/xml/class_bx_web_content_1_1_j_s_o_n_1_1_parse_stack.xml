@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_web_content_1_1_j_s_o_n_1_1_parse_stack" kind="class" language="C++" prot="private">
+    <compoundname>BxWebContent::JSON::ParseStack</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_web_content_1_1_j_s_o_n_1_1_parse_stack_1ad1242a294a19ece8e6ce9495e007c08e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxWebContent::JSON::ParseStack::Index</definition>
+        <argsstring></argsstring>
+        <name>Index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="164" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_web_content_1_1_j_s_o_n_1_1_parse_stack_1a40976d8a6981cc5dbc1f4e78efa3572a" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_web_content_1_1_j_s_o_n" kindref="compound">JSON</ref> *</type>
+        <definition>JSON* BxWebContent::JSON::ParseStack::Object</definition>
+        <argsstring></argsstring>
+        <name>Object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="165" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_web_content_1_1_j_s_o_n_1_1_parse_stack_1a41544beec9235e3c05aa355c168b862e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::JSON::ParseStack::ParseStack</definition>
+        <argsstring>()</argsstring>
+        <name>ParseStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="166" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_j_s_o_n_1_1_parse_stack_1a6b58d1ff4cd8ed37fbccf46fa53772d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::JSON::ParseStack::~ParseStack</definition>
+        <argsstring>()</argsstring>
+        <name>~ParseStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="167" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="167" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="250">
+        <label>BxWebContent::JSON</label>
+        <link refid="class_bx_web_content_1_1_j_s_o_n"/>
+      </node>
+      <node id="249">
+        <label>BxWebContent::JSON::ParseStack</label>
+        <childnode refid="250" relation="usage">
+          <edgelabel>Object</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="163" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="162" bodyend="168"/>
+    <listofallmembers>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1_1_parse_stack_1ad1242a294a19ece8e6ce9495e007c08e" prot="public" virt="non-virtual"><scope>BxWebContent::JSON::ParseStack</scope><name>Index</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1_1_parse_stack_1a40976d8a6981cc5dbc1f4e78efa3572a" prot="public" virt="non-virtual"><scope>BxWebContent::JSON::ParseStack</scope><name>Object</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1_1_parse_stack_1a41544beec9235e3c05aa355c168b862e" prot="public" virt="non-virtual"><scope>BxWebContent::JSON::ParseStack</scope><name>ParseStack</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1_1_parse_stack_1a6b58d1ff4cd8ed37fbccf46fa53772d7" prot="public" virt="non-virtual"><scope>BxWebContent::JSON::ParseStack</scope><name>~ParseStack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

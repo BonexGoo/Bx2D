@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="namespace_bx_core_1_1_surface" kind="namespace" language="C++">
+    <compoundname>BxCore::Surface</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1aaef270c828cd57bb99c8d11128bfbbe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Surface::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <briefdescription>
+<para>화면생성 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="342" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="305" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1abfe9836c517ee028a1e4a858b26b82ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Surface::Flush</definition>
+        <argsstring>(void *ptr, const int row, const int height, const int pitch)</argsstring>
+        <name>Flush</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>pitch</declname>
+        </param>
+        <briefdescription>
+<para>업데이트 및 백버퍼를 화면에 출력 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 화면에 출력할 이미지의 포인터 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 이미지의 너비(byte) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 이미지의 높이(pixel) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pitch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 더미를 포함한 이미지의 너비(byte) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="351" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="310" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1a4b6f7f764f3e2abadf444292bf7a149f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Surface::MiddleFlush</definition>
+        <argsstring>()</argsstring>
+        <name>MiddleFlush</name>
+        <briefdescription>
+<para>중간 업데이트 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="356" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="316" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1afb97280c477abd9db89abe0d2451943c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Surface::GetWidth</definition>
+        <argsstring>(bool *isfixedvalue=nullptr, bool usemargin=true)</argsstring>
+        <name>GetWidth</name>
+        <param>
+          <type>bool *</type>
+          <declname>isfixedvalue</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>usemargin</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>화면너비 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isfixedvalue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: icf의 SurfaceWidthBx를 적용한 고정사이즈 여부조사(nullptr이면 생략) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usemargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Margin값 적용여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>너비길이(pixel) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="364" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="341" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1ac12a46758c8b9837608938cbbed95365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Surface::GetHeight</definition>
+        <argsstring>(bool *isfixedvalue=nullptr, bool usemargin=true)</argsstring>
+        <name>GetHeight</name>
+        <param>
+          <type>bool *</type>
+          <declname>isfixedvalue</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>usemargin</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>화면높이 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isfixedvalue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: icf의 SurfaceHeightBx를 적용한 고정사이즈 여부조사(nullptr이면 생략) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>usemargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Margin값 적용여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>높이길이(pixel) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="372" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreImpl.cpp" bodystart="359" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1add1206ac58b30b117600c186daca0973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Surface::GetWidthHW</definition>
+        <argsstring>(bool usemargin=true)</argsstring>
+        <name>GetWidthHW</name>
+        <param>
+          <type>bool</type>
+          <declname>usemargin</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>하드웨어적 화면너비 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usemargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Margin값 적용여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>너비길이(pixel) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="379" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="321" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1aa396df855a2d8c80089340c5542e0a52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Surface::GetHeightHW</definition>
+        <argsstring>(bool usemargin=true)</argsstring>
+        <name>GetHeightHW</name>
+        <param>
+          <type>bool</type>
+          <declname>usemargin</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>하드웨어적 화면높이 구하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>usemargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Margin값 적용여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>높이길이(pixel) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="386" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="329" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_surface_1ab700ddbf4f1db9a5e790f6558e8a4c3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const bool</type>
+        <definition>const bool BxCore::Surface::SetMarginMode</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetMarginMode</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>마진고려한 Width/Height값의 작동여부 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 작동여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>이전 마진모드 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="393" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="337" bodyend="342"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Surface파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/core/BxCore.hpp" line="338" column="1"/>
+  </compounddef>
+</doxygen>

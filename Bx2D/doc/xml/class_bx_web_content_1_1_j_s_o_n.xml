@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_web_content_1_1_j_s_o_n" kind="class" language="C++" prot="public">
+    <compoundname>BxWebContent::JSON</compoundname>
+    <includes refid="_bx_web_content_8hpp" local="no">BxWebContent.hpp</includes>
+    <innerclass refid="class_bx_web_content_1_1_j_s_o_n_1_1_parse_stack" prot="private">BxWebContent::JSON::ParseStack</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_web_content_1_1_j_s_o_n_1a6926d170e7d9ac814a213db7ebb9ce89" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; <ref refid="class_bx_web_content_1_1_j_s_o_n" kindref="compound">JSON</ref> &gt;</type>
+        <definition>BxVarMap&lt;JSON&gt; BxWebContent::JSON::Child</definition>
+        <argsstring></argsstring>
+        <name>Child</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="272" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_web_content_1_1_j_s_o_n_1a32c1a0998bcf26af913080db231bd520" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_string_1_1_parse" kindref="compound">BxString::Parse</ref></type>
+        <definition>BxString::Parse BxWebContent::JSON::String</definition>
+        <argsstring></argsstring>
+        <name>String</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="273" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_web_content_1_1_j_s_o_n_1ae6e324d416450ffe77d4811991b1028a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_web_content_1_1_j_s_o_n" kindref="compound">JSON</ref> &amp;</type>
+        <definition>JSON&amp; BxWebContent::JSON::operator()</definition>
+        <argsstring>(string ChildName) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>string</type>
+          <declname>ChildName</declname>
+        </param>
+        <briefdescription>
+<para>자식접근 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ChildName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 자식의 이름 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 자식의 인스턴스 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="127" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="127" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_j_s_o_n_1ab4dbfb845b579c9587130bf09d3cd65a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_web_content_1_1_j_s_o_n" kindref="compound">JSON</ref> &amp;</type>
+        <definition>JSON&amp; BxWebContent::JSON::operator[]</definition>
+        <argsstring>(int ChildIndex) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>int</type>
+          <declname>ChildIndex</declname>
+        </param>
+        <briefdescription>
+<para>배열식 자식접근 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ChildIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 자식의 번호 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 자식의 인스턴스 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="138" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_j_s_o_n_1aa36a5dbf13cd429302b8b5e4934a206d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxWebContent::JSON::Length</definition>
+        <argsstring>() const </argsstring>
+        <name>Length</name>
+        <briefdescription>
+<para>수량정보 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>자식의 수량 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="148" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_j_s_o_n_1a503fa4320ef7128508fc5bb1915aa2c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxWebContent::JSON::ToInt</definition>
+        <argsstring>() const </argsstring>
+        <name>ToInt</name>
+        <briefdescription>
+<para>정수식 값정보 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>자신의 정수값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="154" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_j_s_o_n_1abe0168c166a0bd46eaa659729586516d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxWebContent::JSON::ToStr</definition>
+        <argsstring>() const </argsstring>
+        <name>ToStr</name>
+        <briefdescription>
+<para>스트링식 값정보 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>자신의 스트링값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="160" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="160" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_j_s_o_n_1a26c3b00d38b31e6a567a7231494af1a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxWebContent::JSON::Parse</definition>
+        <argsstring>(string Script)</argsstring>
+        <name>Parse</name>
+        <param>
+          <type>string</type>
+          <declname>Script</declname>
+        </param>
+        <briefdescription>
+<para>스크립트 파싱 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Script</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 파싱할 스크립트 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="174" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="174" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_j_s_o_n_1a436294b9702c188dca4e51c20f9c7862" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::JSON::JSON</definition>
+        <argsstring>()</argsstring>
+        <name>JSON</name>
+        <briefdescription>
+<para>생성자, 소멸자 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="270" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="270" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1_1_j_s_o_n_1a453f82947062945761f62755e08d1ef9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::JSON::~JSON</definition>
+        <argsstring>()</argsstring>
+        <name>~JSON</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="271" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="271" bodyend="271"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_web_content_1_1_j_s_o_n_1ab1b2d034ec642d5b99de3285a064aaaa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_web_content_1_1_j_s_o_n" kindref="compound">JSON</ref> &amp;</type>
+        <definition>global_func JSON&amp; BxWebContent::JSON::NullValue</definition>
+        <argsstring>()</argsstring>
+        <name>NullValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="274" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="274" bodyend="274"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>JSON파서 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="121" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="120" bodyend="275"/>
+    <listofallmembers>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1a6926d170e7d9ac814a213db7ebb9ce89" prot="private" virt="non-virtual"><scope>BxWebContent::JSON</scope><name>Child</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1a436294b9702c188dca4e51c20f9c7862" prot="public" virt="non-virtual"><scope>BxWebContent::JSON</scope><name>JSON</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1aa36a5dbf13cd429302b8b5e4934a206d" prot="public" virt="non-virtual"><scope>BxWebContent::JSON</scope><name>Length</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1ab1b2d034ec642d5b99de3285a064aaaa" prot="private" virt="non-virtual"><scope>BxWebContent::JSON</scope><name>NullValue</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1ae6e324d416450ffe77d4811991b1028a" prot="public" virt="non-virtual"><scope>BxWebContent::JSON</scope><name>operator()</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1ab4dbfb845b579c9587130bf09d3cd65a" prot="public" virt="non-virtual"><scope>BxWebContent::JSON</scope><name>operator[]</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1a26c3b00d38b31e6a567a7231494af1a4" prot="public" virt="non-virtual"><scope>BxWebContent::JSON</scope><name>Parse</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1a32c1a0998bcf26af913080db231bd520" prot="private" virt="non-virtual"><scope>BxWebContent::JSON</scope><name>String</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1a503fa4320ef7128508fc5bb1915aa2c7" prot="public" virt="non-virtual"><scope>BxWebContent::JSON</scope><name>ToInt</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1abe0168c166a0bd46eaa659729586516d" prot="public" virt="non-virtual"><scope>BxWebContent::JSON</scope><name>ToStr</name></member>
+      <member refid="class_bx_web_content_1_1_j_s_o_n_1a453f82947062945761f62755e08d1ef9" prot="public" virt="non-virtual"><scope>BxWebContent::JSON</scope><name>~JSON</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

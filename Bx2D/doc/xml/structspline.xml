@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="structspline" kind="struct" language="C++" prot="public">
+    <compoundname>spline</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structspline_1aab85771dd1448d3eea87b780d33bc5d4" prot="public" static="no" mutable="no">
+        <type>fint</type>
+        <definition>fint spline::lx[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>lx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="242" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspline_1aa7df33bf38002ac0bef5d40647083993" prot="public" static="no" mutable="no">
+        <type>fint</type>
+        <definition>fint spline::ly[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>ly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="242" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspline_1a75c4149ba7e5f4c064259d75bb200d0d" prot="public" static="no" mutable="no">
+        <type>fint</type>
+        <definition>fint spline::rx[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>rx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="242" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspline_1ac1d06db4bd9eaa0e9d85cdb20fc2e814" prot="public" static="no" mutable="no">
+        <type>fint</type>
+        <definition>fint spline::ry[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>ry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="242" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>spline구조체 : lx[4], ly[4], rx[4], ry[4] </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="242" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="242" bodyend="242"/>
+    <listofallmembers>
+      <member refid="structspline_1aab85771dd1448d3eea87b780d33bc5d4" prot="public" virt="non-virtual"><scope>spline</scope><name>lx</name></member>
+      <member refid="structspline_1aa7df33bf38002ac0bef5d40647083993" prot="public" virt="non-virtual"><scope>spline</scope><name>ly</name></member>
+      <member refid="structspline_1a75c4149ba7e5f4c064259d75bb200d0d" prot="public" virt="non-virtual"><scope>spline</scope><name>rx</name></member>
+      <member refid="structspline_1ac1d06db4bd9eaa0e9d85cdb20fc2e814" prot="public" virt="non-virtual"><scope>spline</scope><name>ry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

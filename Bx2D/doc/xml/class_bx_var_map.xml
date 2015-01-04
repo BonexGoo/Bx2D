@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_var_map" kind="class" language="C++" prot="public">
+    <compoundname>BxVarMap</compoundname>
+    <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
+    <innerclass refid="class_bx_var_map_1_1_var_info" prot="private">BxVarMap::VarInfo</innerclass>
+    <innerclass refid="class_bx_var_map_1_1_var_map" prot="private">BxVarMap::VarMap</innerclass>
+    <innerclass refid="class_bx_var_map_1_1_var_table" prot="private">BxVarMap::VarTable</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TYPE</declname>
+        <defname>TYPE</defname>
+      </param>
+      <param>
+        <type>uint</type>
+        <declname>ENDMARK</declname>
+        <defname>ENDMARK</defname>
+        <defval>0</defval>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>USE_NEW</declname>
+        <defname>USE_NEW</defname>
+        <defval>false</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_bx_var_map_1afab408ba342f66c8f13c67f8db9f8e2c" prot="private" static="no">
+        <type><ref refid="class_bx_pool" kindref="compound">BxPool</ref>&lt; VarTable &gt;</type>
+        <definition>typedef BxPool&lt;VarTable&gt; BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::TablePool</definition>
+        <argsstring></argsstring>
+        <name>TablePool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="13" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_var_map_1a14b913a323521b9d9cf1480a36c68247" prot="private" static="no">
+        <type><ref refid="class_bx_pool" kindref="compound">BxPool</ref>&lt; VarMap &gt;</type>
+        <definition>typedef BxPool&lt;VarMap&gt; BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::MapPool</definition>
+        <argsstring></argsstring>
+        <name>MapPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="14" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_var_map_1ac28c7621dc60e197c0316d731e9b1b91" prot="private" static="no">
+        <type><ref refid="class_bx_pool" kindref="compound">BxPool</ref>&lt; VarInfo &gt;</type>
+        <definition>typedef BxPool&lt;VarInfo&gt; BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::InfoPool</definition>
+        <argsstring></argsstring>
+        <name>InfoPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="15" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_var_map_1a42f116b8c1f0d6204753bf688b565f0d" prot="private" static="no">
+        <type><ref refid="class_bx_pool" kindref="compound">BxPool</ref>&lt; TYPE &gt;</type>
+        <definition>typedef BxPool&lt;TYPE&gt; BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::TypePool</definition>
+        <argsstring></argsstring>
+        <name>TypePool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="16" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_var_map_1a9ee9bb1780634bcffdccbcef9d0b6dd4" prot="private" static="no" mutable="no">
+        <type>VarTable *</type>
+        <definition>VarTable* BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::Table</definition>
+        <argsstring></argsstring>
+        <name>Table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="248" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_var_map_1afc3203ced12c29d3757f2dc32404a56b" prot="private" static="no" mutable="no">
+        <type>union BxVarMap::@18</type>
+        <definition>union BxVarMap::@18 BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::@19</definition>
+        <argsstring></argsstring>
+        <name>@19</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="253" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_var_map_1a0f63ca5c141a5e48a45378a6ec3bd207" prot="public" static="no" mutable="no">
+        <type>VarInfo *</type>
+        <definition>VarInfo* BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::Info</definition>
+        <argsstring></argsstring>
+        <name>Info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="251" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_var_map_1a6c85e9d55750adc317d65a76928084b4" prot="public" static="no" mutable="no">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="252" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_var_map_1adc7d39ccd232b5d647f557c7bdceeed0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE &amp;</type>
+        <definition>TYPE&amp; BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::operator[]</definition>
+        <argsstring>(uint key)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>uint</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="21" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="21" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a0b705d1927e03b2335eca07c7ba73381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE &amp;</type>
+        <definition>TYPE&amp; BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::operator()</definition>
+        <argsstring>(string key)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="42" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="42" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a3562232edc43c2ef8d9ebf23f36bcf6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE &amp;</type>
+        <definition>TYPE&amp; BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::operator()</definition>
+        <argsstring>(wstring key)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>wstring</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="65" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="65" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1ad6ba0372b4f37820e578c09b6c6d9719" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::Access</definition>
+        <argsstring>(uint key) const </argsstring>
+        <name>Access</name>
+        <param>
+          <type>uint</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="91" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="91" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1ae32667cc60a1a5602e64325d0c78ba72" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::Access</definition>
+        <argsstring>(string key) const </argsstring>
+        <name>Access</name>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="104" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="104" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1afd82efae6af202331d71861068135566" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::Access</definition>
+        <argsstring>(wstring key) const </argsstring>
+        <name>Access</name>
+        <param>
+          <type>wstring</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="119" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="119" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a99e4af3011fc81482ac6fa3a5ad42f02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::Remove</definition>
+        <argsstring>(uint key)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>uint</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="137" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="137" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a6cce3b47dab5ca4973e16e5c2ed18a75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::Remove</definition>
+        <argsstring>(string key)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="148" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="148" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1afac3b8a67996f7f453a9faa009ef3bf6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::Remove</definition>
+        <argsstring>(wstring key)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>wstring</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="159" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="159" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a9a8c33fa5b035357808d6d5e76ae2879" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="171" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="171" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a620a1b1b480a997c9f7c8a57f1ff194d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const int</type>
+        <definition>const int BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::Count</definition>
+        <argsstring>() const </argsstring>
+        <name>Count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="197" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1aa8c21787ff2e1295a1b3366a46a4033c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const void *</type>
+        <definition>const void* BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::GetLastTip</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastTip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="201" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1ad22b3b33939bbbe3db161d83e1a4893b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::BxVarMap</definition>
+        <argsstring>()</argsstring>
+        <name>BxVarMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="205" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="205" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a2fe935faa3ac75e6a395ec325e157fda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::~BxVarMap</definition>
+        <argsstring>()</argsstring>
+        <name>~BxVarMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="213" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="213" bodyend="222"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_bx_var_map_1a477676fd85a05cb44c6f473541473b5d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::BxVarMap</definition>
+        <argsstring>(int)</argsstring>
+        <name>BxVarMap</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="225" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="225" bodyend="225"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_var_map_1aef0811f9d2cd7193239b4f82cdd28655" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref> *</type>
+        <definition>BxVarMap* BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::ValidChild</definition>
+        <argsstring>(const int i)</argsstring>
+        <name>ValidChild</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="255" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="255" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1a2ab51d0705f5c638abad0ea5f450e204" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::InvalideChild</definition>
+        <argsstring>(const int i)</argsstring>
+        <name>InvalideChild</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="271" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="271" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1afe6d906455ab06498eaecc67e8639e10" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::RemoveCore</definition>
+        <argsstring>(uint key)</argsstring>
+        <name>RemoveCore</name>
+        <param>
+          <type>uint</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="285" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="285" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1ac5afe9713c9b693e627b786187f1d223" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::RemoveCore</definition>
+        <argsstring>(string key)</argsstring>
+        <name>RemoveCore</name>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="304" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="304" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_map_1ac8a9fe2efc21322fa98a3ed4b3467114" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::RemoveCore</definition>
+        <argsstring>(wstring key)</argsstring>
+        <name>RemoveCore</name>
+        <param>
+          <type>wstring</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="325" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="325" bodyend="349"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>map식 가변배열 제공 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="97">
+        <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="98" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="98">
+        <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
+      </node>
+      <node id="99">
+        <label>TYPE</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" line="9" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp" bodystart="8" bodyend="350"/>
+    <listofallmembers>
+      <member refid="class_bx_var_map_1ad6ba0372b4f37820e578c09b6c6d9719" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Access</name></member>
+      <member refid="class_bx_var_map_1ae32667cc60a1a5602e64325d0c78ba72" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Access</name></member>
+      <member refid="class_bx_var_map_1afd82efae6af202331d71861068135566" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Access</name></member>
+      <member refid="class_bx_var_map_1ad22b3b33939bbbe3db161d83e1a4893b" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>BxVarMap</name></member>
+      <member refid="class_bx_var_map_1a477676fd85a05cb44c6f473541473b5d" prot="protected" virt="non-virtual"><scope>BxVarMap</scope><name>BxVarMap</name></member>
+      <member refid="class_bx_var_map_1a620a1b1b480a997c9f7c8a57f1ff194d" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Count</name></member>
+      <member refid="class_bx_var_map_1a6c85e9d55750adc317d65a76928084b4" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Data</name></member>
+      <member refid="class_bx_var_map_1aa8c21787ff2e1295a1b3366a46a4033c" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>GetLastTip</name></member>
+      <member refid="class_bx_var_map_1a0f63ca5c141a5e48a45378a6ec3bd207" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Info</name></member>
+      <member refid="class_bx_var_map_1ac28c7621dc60e197c0316d731e9b1b91" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>InfoPool</name></member>
+      <member refid="class_bx_var_map_1a2ab51d0705f5c638abad0ea5f450e204" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>InvalideChild</name></member>
+      <member refid="class_bx_var_map_1a14b913a323521b9d9cf1480a36c68247" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>MapPool</name></member>
+      <member refid="class_bx_var_map_1a0b705d1927e03b2335eca07c7ba73381" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>operator()</name></member>
+      <member refid="class_bx_var_map_1a3562232edc43c2ef8d9ebf23f36bcf6b" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>operator()</name></member>
+      <member refid="class_bx_var_map_1adc7d39ccd232b5d647f557c7bdceeed0" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>operator[]</name></member>
+      <member refid="class_bx_var_map_1a99e4af3011fc81482ac6fa3a5ad42f02" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Remove</name></member>
+      <member refid="class_bx_var_map_1a6cce3b47dab5ca4973e16e5c2ed18a75" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Remove</name></member>
+      <member refid="class_bx_var_map_1afac3b8a67996f7f453a9faa009ef3bf6" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Remove</name></member>
+      <member refid="class_bx_var_map_1afe6d906455ab06498eaecc67e8639e10" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>RemoveCore</name></member>
+      <member refid="class_bx_var_map_1ac5afe9713c9b693e627b786187f1d223" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>RemoveCore</name></member>
+      <member refid="class_bx_var_map_1ac8a9fe2efc21322fa98a3ed4b3467114" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>RemoveCore</name></member>
+      <member refid="class_bx_var_map_1a9a8c33fa5b035357808d6d5e76ae2879" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Reset</name></member>
+      <member refid="class_bx_var_map_1a9ee9bb1780634bcffdccbcef9d0b6dd4" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>Table</name></member>
+      <member refid="class_bx_var_map_1afab408ba342f66c8f13c67f8db9f8e2c" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>TablePool</name></member>
+      <member refid="class_bx_var_map_1a42f116b8c1f0d6204753bf688b565f0d" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>TypePool</name></member>
+      <member refid="class_bx_var_map_1aef0811f9d2cd7193239b4f82cdd28655" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>ValidChild</name></member>
+      <member refid="class_bx_var_map_1a2fe935faa3ac75e6a395ec325e157fda" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>~BxVarMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="structsize" kind="struct" language="C++" prot="public">
+    <compoundname>size</compoundname>
+    <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structsize_1aa7287a80b36f8a5259b00569b741df6f" prot="public" static="no">
+        <name>@4</name>
+        <enumvalue id="structsize_1aa7287a80b36f8a5259b00569b741df6fa9d86a08d08399dd1e0bf6c9527e2a116" prot="public">
+          <name>half</name>
+          <initializer>= 4096</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structsize_1aa7287a80b36f8a5259b00569b741df6fa11ea0e2b5c1096b05b840ae2ef2342c5" prot="public">
+          <name>max</name>
+          <initializer>= half * 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="209" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="209" bodyend="209"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsize_1a46e54bacda3c5ed4d07cacd62665d80d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="208" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsize_1a6c969fe8f7eba85ca0235ab86fe49cff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int size::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="208" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsize_1a42b244181f88c5a9e28d62df3d5a4cbe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const bool</type>
+        <definition>const bool size::inside</definition>
+        <argsstring>(const point &amp;rhs) const </argsstring>
+        <name>inside</name>
+        <param>
+          <type>const <ref refid="structpoint" kindref="compound">point</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="210" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="210" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="structsize_1ac8d1657b6cc546b9713eb14bbd93f49e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const bool</type>
+        <definition>const bool size::inside</definition>
+        <argsstring>(const int x, const int y) const </argsstring>
+        <name>inside</name>
+        <param>
+          <type>const int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="212" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="212" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="structsize_1a73f20cf2b279769b2bb665b05509bcfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const <ref refid="structsize" kindref="compound">size</ref> &amp;</type>
+        <definition>global_func const size&amp; size::zero</definition>
+        <argsstring>()</argsstring>
+        <name>zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="214" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="214" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="structsize_1a722fd3476384568ed279a6001bd88b16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func const <ref refid="structsize" kindref="compound">size</ref> &amp;</type>
+        <definition>global_func const size&amp; size::full</definition>
+        <argsstring>()</argsstring>
+        <name>full</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="215" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="215" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="structsize_1a414048a953d865d2c55f1226093a2c67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structsize" kindref="compound">size</ref> &amp;</type>
+        <definition>size&amp; size::operator=</definition>
+        <argsstring>(const size &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structsize" kindref="compound">size</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="216" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="216" bodyend="216"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>size구조체 : w, h </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="207" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="206" bodyend="217"/>
+    <listofallmembers>
+      <member refid="structsize_1a722fd3476384568ed279a6001bd88b16" prot="public" virt="non-virtual"><scope>size</scope><name>full</name></member>
+      <member refid="structsize_1a6c969fe8f7eba85ca0235ab86fe49cff" prot="public" virt="non-virtual"><scope>size</scope><name>h</name></member>
+      <member refid="structsize_1aa7287a80b36f8a5259b00569b741df6fa9d86a08d08399dd1e0bf6c9527e2a116" prot="public" virt="non-virtual"><scope>size</scope><name>half</name></member>
+      <member refid="structsize_1a42b244181f88c5a9e28d62df3d5a4cbe" prot="public" virt="non-virtual"><scope>size</scope><name>inside</name></member>
+      <member refid="structsize_1ac8d1657b6cc546b9713eb14bbd93f49e" prot="public" virt="non-virtual"><scope>size</scope><name>inside</name></member>
+      <member refid="structsize_1aa7287a80b36f8a5259b00569b741df6fa11ea0e2b5c1096b05b840ae2ef2342c5" prot="public" virt="non-virtual"><scope>size</scope><name>max</name></member>
+      <member refid="structsize_1a414048a953d865d2c55f1226093a2c67" prot="public" virt="non-virtual"><scope>size</scope><name>operator=</name></member>
+      <member refid="structsize_1a46e54bacda3c5ed4d07cacd62665d80d" prot="public" virt="non-virtual"><scope>size</scope><name>w</name></member>
+      <member refid="structsize_1a73f20cf2b279769b2bb665b05509bcfc" prot="public" virt="non-virtual"><scope>size</scope><name>zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

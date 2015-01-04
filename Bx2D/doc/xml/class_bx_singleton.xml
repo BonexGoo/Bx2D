@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_singleton" kind="class" language="C++" prot="public">
+    <compoundname>BxSingleton</compoundname>
+    <includes refid="_bx_singleton_8hpp" local="no">BxSingleton.hpp</includes>
+    <innerclass refid="class_bx_singleton_1_1_element" prot="private">BxSingleton::Element</innerclass>
+    <innerclass refid="class_bx_singleton_1_1_list" prot="private">BxSingleton::List</innerclass>
+    <innerclass refid="class_bx_singleton_1_1_value" prot="private">BxSingleton::Value</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_singleton_1a9908f2cd91b1304edddc5520a20e220d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>global_func int</type>
+        <definition>global_func int BxSingleton::Link</definition>
+        <argsstring>(TYPE **value, int *count __DEBUG_PRM__)</argsstring>
+        <name>Link</name>
+        <param>
+          <type>TYPE **</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int *count</type>
+          <declname>__DEBUG_PRM__</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="29" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1ade24df0a7a72811d112bd7b1cdce3959" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>global_func TYPE *</type>
+        <definition>global_func TYPE* BxSingleton::Bind</definition>
+        <argsstring>(TYPE **value, int *count, const int newcount)</argsstring>
+        <name>Bind</name>
+        <param>
+          <type>TYPE **</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>newcount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="35" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="35" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1a584afce577fc6543f1451ce31b2ad72b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>global_func TYPE *</type>
+        <definition>global_func TYPE* BxSingleton::Rebind</definition>
+        <argsstring>(const TYPE *value, const int newcount)</argsstring>
+        <name>Rebind</name>
+        <param>
+          <type>const TYPE *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>newcount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="43" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1a06a4e09e52dfd1cd9c13759d3448a6be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxSingleton::Unbind</definition>
+        <argsstring>(const void *value)</argsstring>
+        <name>Unbind</name>
+        <param>
+          <type>const void *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="48" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_singleton_1a9f0d7f7ea33d9dee12d745553c3be9bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxSingleton::UnbindAll</definition>
+        <argsstring>(bool dokill)</argsstring>
+        <name>UnbindAll</name>
+        <param>
+          <type>bool</type>
+          <declname>dokill</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="53" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_singleton_1ab714d286e1b67720bdf0716f1acf2228" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>global_func TYPE *</type>
+        <definition>global_func TYPE* BxSingleton::Transfer</definition>
+        <argsstring>(TYPE **value, int *count, TYPE *newvalue, const int newcount)</argsstring>
+        <name>Transfer</name>
+        <param>
+          <type>TYPE **</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>TYPE *</type>
+          <declname>newvalue</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>newcount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="59" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="59" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>싱글톤인스턴스들의 일괄소멸을 위한 도구 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" line="27" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxSingleton.hpp" bodystart="26" bodyend="155"/>
+    <listofallmembers>
+      <member refid="class_bx_singleton_1ade24df0a7a72811d112bd7b1cdce3959" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Bind</name></member>
+      <member refid="class_bx_singleton_1a9908f2cd91b1304edddc5520a20e220d" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Link</name></member>
+      <member refid="class_bx_singleton_1a584afce577fc6543f1451ce31b2ad72b" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Rebind</name></member>
+      <member refid="class_bx_singleton_1ab714d286e1b67720bdf0716f1acf2228" prot="private" virt="non-virtual"><scope>BxSingleton</scope><name>Transfer</name></member>
+      <member refid="class_bx_singleton_1a06a4e09e52dfd1cd9c13759d3448a6be" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Unbind</name></member>
+      <member refid="class_bx_singleton_1a9f0d7f7ea33d9dee12d745553c3be9bf" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>UnbindAll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

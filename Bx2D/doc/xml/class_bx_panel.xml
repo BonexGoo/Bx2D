@@ -1,0 +1,1117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_panel" kind="class" language="C++" prot="public">
+    <compoundname>BxPanel</compoundname>
+    <innerclass refid="class_bx_panel_1_1_event" prot="private">BxPanel::Event</innerclass>
+    <innerclass refid="class_bx_panel_1_1_event_data" prot="private">BxPanel::EventData</innerclass>
+    <innerclass refid="class_bx_panel_1_1_function" prot="private">BxPanel::Function</innerclass>
+    <innerclass refid="class_bx_panel_1_1_service_m" prot="public">BxPanel::ServiceM</innerclass>
+    <innerclass refid="class_bx_panel_1_1_service_s" prot="public">BxPanel::ServiceS</innerclass>
+    <innerclass refid="class_bx_panel_1_1_singleton" prot="private">BxPanel::Singleton</innerclass>
+    <innerclass refid="class_bx_panel_1_1_user_data" prot="private">BxPanel::UserData</innerclass>
+    <innerclass refid="class_bx_panel_1_1_variable_l" prot="private">BxPanel::VariableL</innerclass>
+    <innerclass refid="class_bx_panel_1_1_variable_m" prot="public">BxPanel::VariableM</innerclass>
+    <innerclass refid="class_bx_panel_1_1_variable_s" prot="public">BxPanel::VariableS</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_bx_panel_1a9aed2c070523c59342d763140e2c63fb" prot="public" static="no">
+        <name>@1</name>
+        <enumvalue id="class_bx_panel_1a9aed2c070523c59342d763140e2c63fba81ad3ce79af5fdd0a36192658dd4566f" prot="public">
+          <name>CellSize</name>
+          <initializer>= 128</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="17" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_bx_panel_1a464e68686e706b6aaae92496604a0d37" prot="public" static="no">
+        <name>@2</name>
+        <enumvalue id="class_bx_panel_1a464e68686e706b6aaae92496604a0d37a0c02deed3767309d252617b9226f1308" prot="public">
+          <name>ScrollSensitive</name>
+          <initializer>= 256</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="18" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_bx_panel_1af642f9a074a385d8e1d07c707890116a" prot="public" static="no">
+        <name>Param</name>
+        <enumvalue id="class_bx_panel_1af642f9a074a385d8e1d07c707890116aa27378cdf97c0b7f392ed651cd5164f12" prot="public">
+          <name>prmXY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1af642f9a074a385d8e1d07c707890116aabac98adb22eca81352b7daafd0e9ad9c" prot="public">
+          <name>prmXYW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1af642f9a074a385d8e1d07c707890116aad21b62d8af4c700c2ae600511f826476" prot="public">
+          <name>prmXYXY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1af642f9a074a385d8e1d07c707890116aaeab994af8c630aef1f6d87bd79f42d65" prot="public">
+          <name>prmXYWH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="19" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57c" prot="public" static="no">
+        <name>Touch</name>
+        <enumvalue id="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57cada93039823b57ae628edf7309dac0e39" prot="public">
+          <name>tchDown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57ca7918f5e915dbee4cb77177de99c2f7cd" prot="public">
+          <name>tchMoveIn</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57ca7c26b5d77605289219e454047449a804" prot="public">
+          <name>tchMoveOut</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57ca7f445c5f08c0516a8266558f7b7d2c72" prot="public">
+          <name>tchUpIn</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57ca687d5e319c3829aa07ab730d42455058" prot="public">
+          <name>tchUpOut</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57ca90a51d2ba5533eadc339a0739c3fbc8c" prot="public">
+          <name>tchUpAuto</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57caa145cf375a41710b0c74529873ec4a80" prot="public">
+          <name>tchDrag</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57cac167ac33e4f13b5a9d4ba866a83b8250" prot="public">
+          <name>tchDrop</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="20" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="enum" id="class_bx_panel_1aa0d4e3a2b1dcdfb560ce80031af029fa" prot="public" static="no">
+        <name>View</name>
+        <enumvalue id="class_bx_panel_1aa0d4e3a2b1dcdfb560ce80031af029faa793eb093ec99a0c3d91cad2ff200cbf2" prot="public">
+          <name>viewUnknown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1aa0d4e3a2b1dcdfb560ce80031af029faaaadb5ca900ac057cde88697901ddc03a" prot="public">
+          <name>viewNormal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1aa0d4e3a2b1dcdfb560ce80031af029faa046c4fd74d7131d4709415528d513b57" prot="public">
+          <name>viewScroll</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_bx_panel_1aa0d4e3a2b1dcdfb560ce80031af029faa1a135e44a8210df16383b7d46c4ccc98" prot="public">
+          <name>viewMax</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="21" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_panel_1aaf4663c0eea8e01f2ce260643889c847" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* BxPanel::EventCB) (BxPanel *, string, void *)</definition>
+        <argsstring>)(BxPanel *, string, void *)</argsstring>
+        <name>EventCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="22" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_bx_panel_1a1b24e388a6e5c9aa706868051022b684" prot="private" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* BxPanel::CreateCB) (string, unknown)</definition>
+        <argsstring>)(string, unknown)</argsstring>
+        <name>CreateCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="23" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_panel_1a513cb7aeae93448563db0183f9440beb" prot="private" static="no">
+        <type>unknown(*</type>
+        <definition>typedef unknown(* BxPanel::NotifyCB) (string, unknown)</definition>
+        <argsstring>)(string, unknown)</argsstring>
+        <name>NotifyCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="24" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_panel_1ab14ba8ceb6c36ff61b758f20a838afab" prot="private" static="no">
+        <type>string(*</type>
+        <definition>typedef string(* BxPanel::TouchCB) (Touch)</definition>
+        <argsstring>)(Touch)</argsstring>
+        <name>TouchCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="25" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_panel_1aa6f2dee7619ef6df8b301b18666c1787" prot="private" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* BxPanel::PaintCB) (Param, const BxArgument &amp;, rect &amp;)</definition>
+        <argsstring>)(Param, const BxArgument &amp;, rect &amp;)</argsstring>
+        <name>PaintCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="26" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_panel_1ae9d2927d3a1f337a5d81c5c0d0d9bbb9" prot="private" static="no">
+        <type><ref refid="class_bx_panel" kindref="compound">BxPanel</ref> *(*</type>
+        <definition>typedef BxPanel*(* BxPanel::AllocCB) (BxPanel *)</definition>
+        <argsstring>)(BxPanel *)</argsstring>
+        <name>AllocCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="27" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_panel_1aa64577950cb5e028e96575f5fd366dee" prot="private" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* BxPanel::FreeCB) (BxPanel **)</definition>
+        <argsstring>)(BxPanel **)</argsstring>
+        <name>FreeCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="28" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_panel_1a034c15e765744c1752a3f9a18d998cd3" prot="private" static="no">
+        <type>void **(*</type>
+        <definition>typedef void**(* BxPanel::ServiceCB) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>ServiceCB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="29" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_bx_panel_1aea7f4362fcb7f62d57cbeb8529fedf67" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class BxScene</definition>
+        <argsstring></argsstring>
+        <name>BxScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="12" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_panel_1a358f783dab1db20f8ce60db63936f512" prot="private" static="no" mutable="no">
+        <type>Singleton *</type>
+        <definition>Singleton* BxPanel::Single</definition>
+        <argsstring></argsstring>
+        <name>Single</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="635" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="635" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1a3d65e9e85fb7dcad7e99b96e481935b1" prot="private" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool BxPanel::IsRef</definition>
+        <argsstring></argsstring>
+        <name>IsRef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="636" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="636" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_panel_1a4df277fd3d51e46c7746a879ba4bb529" prot="public" static="no" mutable="no">
+        <type>VariableL *const</type>
+        <definition>VariableL* const BxPanel::VarL</definition>
+        <argsstring></argsstring>
+        <name>VarL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="637" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1ac7787d5e48a372176cf05773ab94d655" prot="public" static="no" mutable="no">
+        <type>Event</type>
+        <definition>Event BxPanel::Clicked</definition>
+        <argsstring></argsstring>
+        <name>Clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="638" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1a2ed9dd215251f4a5c3b3718fce71b9ec" prot="public" static="no" mutable="no">
+        <type>Event</type>
+        <definition>Event BxPanel::Bumped</definition>
+        <argsstring></argsstring>
+        <name>Bumped</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="639" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="639" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_panel_1a03543ce235d0e442e6226c9ca69ed6f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+            <defval>unknown</defval>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void BxPanel::Bind</definition>
+        <argsstring>(string type, string option=&quot;&quot;, TYPE param=nullptr)</argsstring>
+        <name>Bind</name>
+        <param>
+          <type>string</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>option</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>TYPE</type>
+          <declname>param</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="35" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="35" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1ab02cb7f7569cca3797026f55b12eeb7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE1</type>
+            <defval>unknown</defval>
+          </param>
+          <param>
+            <type>typename TYPE2</type>
+            <defval>unknown</defval>
+          </param>
+        </templateparamlist>
+        <type>TYPE1</type>
+        <definition>TYPE1 BxPanel::Notify</definition>
+        <argsstring>(string message, TYPE2 param=nullptr)</argsstring>
+        <name>Notify</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>TYPE2</type>
+          <declname>param</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="47" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1ad8685ce4420add90a6827d0e648784d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>const point BxPanel::Paint</definition>
+        <argsstring>(Param type, const BxArgument &amp;args)</argsstring>
+        <name>Paint</name>
+        <param>
+          <type>Param</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_bx_argument" kindref="compound">BxArgument</ref> &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="52" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="52" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a1ede1a5000987006b7ef9b6b923fa290" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxPanel::IsBinded</definition>
+        <argsstring>()</argsstring>
+        <name>IsBinded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="113" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="113" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a8b7658564cade963f2cdaa284c7253bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+        <definition>id_text BxPanel::GetTypeText</definition>
+        <argsstring>()</argsstring>
+        <name>GetTypeText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="114" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="114" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a91bc04d1b9f1f27028282c35ddf8602c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxPanel::GetEnable</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="115" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="115" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a6c6de3b775bbd305aa7f982cc020ea78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxPanel::SetEnable</definition>
+        <argsstring>(bool enable)</argsstring>
+        <name>SetEnable</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="116" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1aab8ec0272e5cb9356b3185bfa54fa154" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxPanel::GetVisible</definition>
+        <argsstring>()</argsstring>
+        <name>GetVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="117" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1af921c3716c16cef821bc5ae2083b4532" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxPanel::SetVisible</definition>
+        <argsstring>(bool visible)</argsstring>
+        <name>SetVisible</name>
+        <param>
+          <type>bool</type>
+          <declname>visible</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="118" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a89d9d08bee9b83dd6197a8972f559a7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* BxPanel::GetUserData</definition>
+        <argsstring>(int index)</argsstring>
+        <name>GetUserData</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="119" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a8ed053cbb7f94090a61bd1c132da1975" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void BxPanel::SetUserData</definition>
+        <argsstring>(int index, TYPE *buffer, callback_delete cb=DeleteCB&lt; TYPE &gt;)</argsstring>
+        <name>SetUserData</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>TYPE *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>callback_delete</type>
+          <declname>cb</declname>
+          <defval>DeleteCB&lt; TYPE &gt;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="121" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="121" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1ac861275b7809c0c701c72c077d36de56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxPanel::GetChildCount</definition>
+        <argsstring>()</argsstring>
+        <name>GetChildCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="123" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a819acc78d1f56dc430589d3fde21622e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_panel" kindref="compound">BxPanel</ref> &amp;</type>
+        <definition>BxPanel&amp; BxPanel::operator[]</definition>
+        <argsstring>(uint key)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>uint</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="128" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="128" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a530878c86ec7a6a9a22993def123de3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_panel" kindref="compound">BxPanel</ref> &amp;</type>
+        <definition>BxPanel&amp; BxPanel::operator()</definition>
+        <argsstring>(string key)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>string</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="129" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a3be94258d099f2f2170ca243584c40c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_panel" kindref="compound">BxPanel</ref> &amp;</type>
+        <definition>BxPanel&amp; BxPanel::operator()</definition>
+        <argsstring>(wstring key)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>wstring</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="130" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a505601640a4c41a07a5d4bdc7512a740" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxPanel::DoTouch</definition>
+        <argsstring>(systouchtype type)</argsstring>
+        <name>DoTouch</name>
+        <param>
+          <type>systouchtype</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="140" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="140" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1acc7ad4b86d1ffc8898cbeb40a5d4be5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_bx_draw" kindref="compound">BxDraw</ref> &amp;</type>
+        <definition>BxDraw&amp; BxPanel::GetDraw</definition>
+        <argsstring>()</argsstring>
+        <name>GetDraw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="148" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="148" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a77f5dd27161bbd995dc65b70a7b962b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxPanel::UpdateRect</definition>
+        <argsstring>(View type=viewNormal)</argsstring>
+        <name>UpdateRect</name>
+        <param>
+          <type>View</type>
+          <declname>type</declname>
+          <defval>viewNormal</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="153" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="153" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a7ad65666e7ed4b190265c3e973b3895a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxPanel::UpdateScroll</definition>
+        <argsstring>(int width, int height, bool force)</argsstring>
+        <name>UpdateScroll</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="181" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="181" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a822a3e9a05ed13f34ce280c60904a01d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>point BxPanel::GetScrollPos</definition>
+        <argsstring>()</argsstring>
+        <name>GetScrollPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="197" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1aab4faad69eea82de69d9ea1667450c15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxPanel::AddPanel</definition>
+        <argsstring>(string type, CreateCB c, NotifyCB n, TouchCB t, PaintCB p, AllocCB a, FreeCB f, ServiceCB s)</argsstring>
+        <name>AddPanel</name>
+        <param>
+          <type>string</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>CreateCB</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>NotifyCB</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>TouchCB</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>PaintCB</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>AllocCB</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>FreeCB</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>ServiceCB</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="463" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="463" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1afcda335045ca8675158e15d3d6050320" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxPanel::HitupDebugLine</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>HitupDebugLine</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="595" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="595" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1a903c9cba94f144621deffa7919a36632" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPanel::BxPanel</definition>
+        <argsstring>(bool isRef=false, void *varL=new VariableL())</argsstring>
+        <name>BxPanel</name>
+        <param>
+          <type>bool</type>
+          <declname>isRef</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>varL</declname>
+          <defval>new VariableL()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="621" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="621" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1ae89a861f52ac8c16b62495a03feeb7bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BxPanel::~BxPanel</definition>
+        <argsstring>()</argsstring>
+        <name>~BxPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="627" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="627" bodyend="630"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_panel_1adc97a987b07c92e94c7d14d70fe73007" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxPanel::OnTouch</definition>
+        <argsstring>(Touch type)</argsstring>
+        <name>OnTouch</name>
+        <param>
+          <type>Touch</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="135" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="135" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1ab2c8419a47b37fc412b56431870b6146" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxPanel::PaintReady</definition>
+        <argsstring>(BxDraw &amp;draw)</argsstring>
+        <name>PaintReady</name>
+        <param>
+          <type><ref refid="class_bx_draw" kindref="compound">BxDraw</ref> &amp;</type>
+          <declname>draw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="477" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="477" bodyend="482"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1ad9f12db448d61420f8c9af9a81452476" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func bool</type>
+        <definition>global_func bool BxPanel::CalcTouch</definition>
+        <argsstring>(systouchtype type, int x, int y)</argsstring>
+        <name>CalcTouch</name>
+        <param>
+          <type>systouchtype</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="483" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="483" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_panel_1acb1c8d273be8f51c2441d0a8a8bec40d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TYPE</type>
+          </param>
+        </templateparamlist>
+        <type>global_func void</type>
+        <definition>global_func void BxPanel::DeleteCB</definition>
+        <argsstring>(void *data)</argsstring>
+        <name>DeleteCB</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="616" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="616" bodyend="616"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="76">
+        <label>BxVarVector&lt; UserData, 4 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+      <node id="75">
+        <label>rect</label>
+        <link refid="structrect"/>
+      </node>
+      <node id="74">
+        <label>BxVarVector&lt; BxPanel::EventData::Node, 1 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+      <node id="73">
+        <label>BxPanel::EventData</label>
+        <childnode refid="74" relation="usage">
+          <edgelabel>Callbacks</edgelabel>
+        </childnode>
+      </node>
+      <node id="70">
+        <label>BxPanel::VariableL</label>
+        <childnode refid="71" relation="usage">
+          <edgelabel>Child</edgelabel>
+        </childnode>
+        <childnode refid="73" relation="usage">
+          <edgelabel>ClickedData</edgelabel>
+          <edgelabel>BumpedData</edgelabel>
+        </childnode>
+        <childnode refid="75" relation="usage">
+          <edgelabel>LastRect</edgelabel>
+        </childnode>
+        <childnode refid="76" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+        <childnode refid="77" relation="usage">
+          <edgelabel>RefFunc</edgelabel>
+        </childnode>
+        <childnode refid="80" relation="usage">
+          <edgelabel>LastScrollPhy</edgelabel>
+        </childnode>
+        <childnode refid="68" relation="usage">
+          <edgelabel>VarM</edgelabel>
+        </childnode>
+        <childnode refid="81" relation="usage">
+          <edgelabel>LastScroll</edgelabel>
+        </childnode>
+      </node>
+      <node id="69">
+        <label>BxPanel::Event</label>
+      </node>
+      <node id="81">
+        <label>area</label>
+        <link refid="structarea"/>
+      </node>
+      <node id="68">
+        <label>BxPanel</label>
+        <link refid="class_bx_panel"/>
+        <childnode refid="69" relation="usage">
+          <edgelabel>Bumped</edgelabel>
+          <edgelabel>Clicked</edgelabel>
+        </childnode>
+        <childnode refid="70" relation="usage">
+          <edgelabel>VarL</edgelabel>
+        </childnode>
+      </node>
+      <node id="71">
+        <label>BxVarMap&lt; BxPanel &gt;</label>
+        <link refid="class_bx_var_map"/>
+        <childnode refid="72" relation="usage">
+          <edgelabel>Info</edgelabel>
+        </childnode>
+        <childnode refid="68" relation="usage">
+          <edgelabel>Data</edgelabel>
+        </childnode>
+      </node>
+      <node id="78">
+        <label>id_struct_01</label>
+        <link refid="structid__struct__01"/>
+      </node>
+      <node id="77">
+        <label>BxPanel::Function</label>
+        <childnode refid="68" relation="usage">
+          <edgelabel>Alloc</edgelabel>
+          <edgelabel>Free</edgelabel>
+        </childnode>
+        <childnode refid="78" relation="usage">
+          <edgelabel>TypeText</edgelabel>
+        </childnode>
+        <childnode refid="79" relation="usage">
+          <edgelabel>Paint</edgelabel>
+        </childnode>
+      </node>
+      <node id="80">
+        <label>point</label>
+        <link refid="structpoint"/>
+      </node>
+      <node id="79">
+        <label>BxArgument</label>
+        <link refid="class_bx_argument"/>
+      </node>
+      <node id="72">
+        <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="11" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="10" bodyend="640"/>
+    <listofallmembers>
+      <member refid="class_bx_panel_1aab4faad69eea82de69d9ea1667450c15" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>AddPanel</name></member>
+      <member refid="class_bx_panel_1ae9d2927d3a1f337a5d81c5c0d0d9bbb9" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>AllocCB</name></member>
+      <member refid="class_bx_panel_1a03543ce235d0e442e6226c9ca69ed6f7" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>Bind</name></member>
+      <member refid="class_bx_panel_1a2ed9dd215251f4a5c3b3718fce71b9ec" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>Bumped</name></member>
+      <member refid="class_bx_panel_1a903c9cba94f144621deffa7919a36632" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>BxPanel</name></member>
+      <member refid="class_bx_panel_1aea7f4362fcb7f62d57cbeb8529fedf67" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>BxScene</name></member>
+      <member refid="class_bx_panel_1ad9f12db448d61420f8c9af9a81452476" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>CalcTouch</name></member>
+      <member refid="class_bx_panel_1a9aed2c070523c59342d763140e2c63fba81ad3ce79af5fdd0a36192658dd4566f" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>CellSize</name></member>
+      <member refid="class_bx_panel_1ac7787d5e48a372176cf05773ab94d655" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>Clicked</name></member>
+      <member refid="class_bx_panel_1a1b24e388a6e5c9aa706868051022b684" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>CreateCB</name></member>
+      <member refid="class_bx_panel_1acb1c8d273be8f51c2441d0a8a8bec40d" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>DeleteCB</name></member>
+      <member refid="class_bx_panel_1a505601640a4c41a07a5d4bdc7512a740" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>DoTouch</name></member>
+      <member refid="class_bx_panel_1aaf4663c0eea8e01f2ce260643889c847" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>EventCB</name></member>
+      <member refid="class_bx_panel_1aa64577950cb5e028e96575f5fd366dee" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>FreeCB</name></member>
+      <member refid="class_bx_panel_1ac861275b7809c0c701c72c077d36de56" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>GetChildCount</name></member>
+      <member refid="class_bx_panel_1acc7ad4b86d1ffc8898cbeb40a5d4be5f" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>GetDraw</name></member>
+      <member refid="class_bx_panel_1a91bc04d1b9f1f27028282c35ddf8602c" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>GetEnable</name></member>
+      <member refid="class_bx_panel_1a822a3e9a05ed13f34ce280c60904a01d" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>GetScrollPos</name></member>
+      <member refid="class_bx_panel_1a8b7658564cade963f2cdaa284c7253bf" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>GetTypeText</name></member>
+      <member refid="class_bx_panel_1a89d9d08bee9b83dd6197a8972f559a7b" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>GetUserData</name></member>
+      <member refid="class_bx_panel_1aab8ec0272e5cb9356b3185bfa54fa154" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>GetVisible</name></member>
+      <member refid="class_bx_panel_1afcda335045ca8675158e15d3d6050320" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>HitupDebugLine</name></member>
+      <member refid="class_bx_panel_1a1ede1a5000987006b7ef9b6b923fa290" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>IsBinded</name></member>
+      <member refid="class_bx_panel_1a3d65e9e85fb7dcad7e99b96e481935b1" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>IsRef</name></member>
+      <member refid="class_bx_panel_1ab02cb7f7569cca3797026f55b12eeb7e" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>Notify</name></member>
+      <member refid="class_bx_panel_1a513cb7aeae93448563db0183f9440beb" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>NotifyCB</name></member>
+      <member refid="class_bx_panel_1adc97a987b07c92e94c7d14d70fe73007" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>OnTouch</name></member>
+      <member refid="class_bx_panel_1a530878c86ec7a6a9a22993def123de3d" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>operator()</name></member>
+      <member refid="class_bx_panel_1a3be94258d099f2f2170ca243584c40c4" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>operator()</name></member>
+      <member refid="class_bx_panel_1a819acc78d1f56dc430589d3fde21622e" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>operator[]</name></member>
+      <member refid="class_bx_panel_1ad8685ce4420add90a6827d0e648784d8" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>Paint</name></member>
+      <member refid="class_bx_panel_1aa6f2dee7619ef6df8b301b18666c1787" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>PaintCB</name></member>
+      <member refid="class_bx_panel_1ab2c8419a47b37fc412b56431870b6146" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>PaintReady</name></member>
+      <member refid="class_bx_panel_1af642f9a074a385d8e1d07c707890116a" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>Param</name></member>
+      <member refid="class_bx_panel_1af642f9a074a385d8e1d07c707890116aa27378cdf97c0b7f392ed651cd5164f12" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>prmXY</name></member>
+      <member refid="class_bx_panel_1af642f9a074a385d8e1d07c707890116aabac98adb22eca81352b7daafd0e9ad9c" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>prmXYW</name></member>
+      <member refid="class_bx_panel_1af642f9a074a385d8e1d07c707890116aaeab994af8c630aef1f6d87bd79f42d65" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>prmXYWH</name></member>
+      <member refid="class_bx_panel_1af642f9a074a385d8e1d07c707890116aad21b62d8af4c700c2ae600511f826476" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>prmXYXY</name></member>
+      <member refid="class_bx_panel_1a464e68686e706b6aaae92496604a0d37a0c02deed3767309d252617b9226f1308" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>ScrollSensitive</name></member>
+      <member refid="class_bx_panel_1a034c15e765744c1752a3f9a18d998cd3" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>ServiceCB</name></member>
+      <member refid="class_bx_panel_1a6c6de3b775bbd305aa7f982cc020ea78" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>SetEnable</name></member>
+      <member refid="class_bx_panel_1a8ed053cbb7f94090a61bd1c132da1975" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>SetUserData</name></member>
+      <member refid="class_bx_panel_1af921c3716c16cef821bc5ae2083b4532" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>SetVisible</name></member>
+      <member refid="class_bx_panel_1a358f783dab1db20f8ce60db63936f512" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>Single</name></member>
+      <member refid="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57cada93039823b57ae628edf7309dac0e39" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>tchDown</name></member>
+      <member refid="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57caa145cf375a41710b0c74529873ec4a80" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>tchDrag</name></member>
+      <member refid="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57cac167ac33e4f13b5a9d4ba866a83b8250" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>tchDrop</name></member>
+      <member refid="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57ca7918f5e915dbee4cb77177de99c2f7cd" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>tchMoveIn</name></member>
+      <member refid="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57ca7c26b5d77605289219e454047449a804" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>tchMoveOut</name></member>
+      <member refid="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57ca90a51d2ba5533eadc339a0739c3fbc8c" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>tchUpAuto</name></member>
+      <member refid="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57ca7f445c5f08c0516a8266558f7b7d2c72" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>tchUpIn</name></member>
+      <member refid="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57ca687d5e319c3829aa07ab730d42455058" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>tchUpOut</name></member>
+      <member refid="class_bx_panel_1a86da89566cad57e48ca83f9f8adca57c" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>Touch</name></member>
+      <member refid="class_bx_panel_1ab14ba8ceb6c36ff61b758f20a838afab" prot="private" virt="non-virtual"><scope>BxPanel</scope><name>TouchCB</name></member>
+      <member refid="class_bx_panel_1a77f5dd27161bbd995dc65b70a7b962b0" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>UpdateRect</name></member>
+      <member refid="class_bx_panel_1a7ad65666e7ed4b190265c3e973b3895a" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>UpdateScroll</name></member>
+      <member refid="class_bx_panel_1a4df277fd3d51e46c7746a879ba4bb529" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>VarL</name></member>
+      <member refid="class_bx_panel_1aa0d4e3a2b1dcdfb560ce80031af029fa" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>View</name></member>
+      <member refid="class_bx_panel_1aa0d4e3a2b1dcdfb560ce80031af029faa1a135e44a8210df16383b7d46c4ccc98" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>viewMax</name></member>
+      <member refid="class_bx_panel_1aa0d4e3a2b1dcdfb560ce80031af029faaaadb5ca900ac057cde88697901ddc03a" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>viewNormal</name></member>
+      <member refid="class_bx_panel_1aa0d4e3a2b1dcdfb560ce80031af029faa046c4fd74d7131d4709415528d513b57" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>viewScroll</name></member>
+      <member refid="class_bx_panel_1aa0d4e3a2b1dcdfb560ce80031af029faa793eb093ec99a0c3d91cad2ff200cbf2" prot="public" virt="non-virtual"><scope>BxPanel</scope><name>viewUnknown</name></member>
+      <member refid="class_bx_panel_1ae89a861f52ac8c16b62495a03feeb7bb" prot="public" virt="virtual"><scope>BxPanel</scope><name>~BxPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

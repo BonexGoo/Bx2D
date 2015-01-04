@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_panel_1_1_singleton_1_1_panel_cell" kind="class" language="C++" prot="public">
+    <compoundname>BxPanel::Singleton::PanelCell</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1_1_panel_cell_1aa8d3b3da8d409069ff5a6350485ad11b" prot="public" static="no" mutable="no">
+        <type>uint</type>
+        <definition>uint BxPanel::Singleton::PanelCell::WriteID</definition>
+        <argsstring></argsstring>
+        <name>WriteID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="209" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1_1_panel_cell_1a231039eb68122f3d3a152647152e8e64" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxPanel::Singleton::PanelCell::Length</definition>
+        <argsstring></argsstring>
+        <name>Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="210" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1_1_panel_cell_1a52b5049e93bcf45d8dd9638997f53a05" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; <ref refid="class_bx_panel" kindref="compound">BxPanel</ref> *, 8 &gt;</type>
+        <definition>BxVarVector&lt;BxPanel*, 8&gt; BxPanel::Singleton::PanelCell::Stack</definition>
+        <argsstring></argsstring>
+        <name>Stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="211" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_panel_1_1_singleton_1_1_panel_cell_1a2b3a6353da3e37e28544b7146683bfdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPanel::Singleton::PanelCell::PanelCell</definition>
+        <argsstring>()</argsstring>
+        <name>PanelCell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="212" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="212" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="243">
+        <label>BxPanel::Singleton::PanelCell</label>
+        <link refid="class_bx_panel_1_1_singleton_1_1_panel_cell"/>
+        <childnode refid="244" relation="usage">
+          <edgelabel>Stack</edgelabel>
+        </childnode>
+      </node>
+      <node id="244">
+        <label>BxVarVector&lt; BxPanel *, 8 &gt;</label>
+        <link refid="class_bx_var_vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="208" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="207" bodyend="213"/>
+    <listofallmembers>
+      <member refid="class_bx_panel_1_1_singleton_1_1_panel_cell_1a231039eb68122f3d3a152647152e8e64" prot="public" virt="non-virtual"><scope>BxPanel::Singleton::PanelCell</scope><name>Length</name></member>
+      <member refid="class_bx_panel_1_1_singleton_1_1_panel_cell_1a2b3a6353da3e37e28544b7146683bfdc" prot="public" virt="non-virtual"><scope>BxPanel::Singleton::PanelCell</scope><name>PanelCell</name></member>
+      <member refid="class_bx_panel_1_1_singleton_1_1_panel_cell_1a52b5049e93bcf45d8dd9638997f53a05" prot="public" virt="non-virtual"><scope>BxPanel::Singleton::PanelCell</scope><name>Stack</name></member>
+      <member refid="class_bx_panel_1_1_singleton_1_1_panel_cell_1aa8d3b3da8d409069ff5a6350485ad11b" prot="public" virt="non-virtual"><scope>BxPanel::Singleton::PanelCell</scope><name>WriteID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

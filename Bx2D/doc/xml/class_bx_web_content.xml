@@ -1,0 +1,554 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_web_content" kind="class" language="C++" prot="public">
+    <compoundname>BxWebContent</compoundname>
+    <includes refid="_bx_web_content_8hpp" local="no">BxWebContent.hpp</includes>
+    <innerclass refid="class_bx_web_content_1_1_cache_pool" prot="private">BxWebContent::CachePool</innerclass>
+    <innerclass refid="class_bx_web_content_1_1_contact_pool" prot="private">BxWebContent::ContactPool</innerclass>
+    <innerclass refid="class_bx_web_content_1_1_j_s_o_n" prot="public">BxWebContent::JSON</innerclass>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_bx_web_content_1ab5753ed039dd89984372f58059b22c05" prot="private" static="no">
+        <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; CachePool, 64 &gt;</type>
+        <definition>typedef BxVarVector&lt;CachePool, 64&gt; BxWebContent::CachePoolList</definition>
+        <argsstring></argsstring>
+        <name>CachePoolList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="61" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_web_content_1a3bb4d42aee48bb841c7d41c9e3d3d31e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxWebContent::ResponseLength</definition>
+        <argsstring></argsstring>
+        <name>ResponseLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="48" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_web_content_1ab104adbb7e5be3eacd0730515a39e820" prot="private" static="no" mutable="no">
+        <type>byte *</type>
+        <definition>byte* BxWebContent::ResponseBytes</definition>
+        <argsstring></argsstring>
+        <name>ResponseBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="49" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_web_content_1a9f01389359ee60f8904d79de1d7c0c66" prot="private" static="no" mutable="no">
+        <type>ContactPool *_ref_</type>
+        <definition>ContactPool* _ref_ BxWebContent::LastContact</definition>
+        <argsstring></argsstring>
+        <name>LastContact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="50" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_web_content_1a1903bad717170e022e3987abd826ede3" prot="private" static="no" mutable="no">
+        <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
+        <definition>BxString BxWebContent::LastError</definition>
+        <argsstring></argsstring>
+        <name>LastError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="51" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_web_content_1a5df8504a773ac39ae8fcf34876377a83" prot="public" static="no" mutable="no">
+        <type>class <ref refid="class_bx_web_content_1_1_j_s_o_n" kindref="compound">BxWebContent::JSON</ref> *</type>
+        <definition>class BxWebContent::JSON * BxWebContent::ResponseJSON</definition>
+        <argsstring></argsstring>
+        <name>ResponseJSON</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="275" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bx_web_content_1a57ec38cbc13efde21e4e0f690a4e6012" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func macro bool &amp;</type>
+        <definition>global_func macro bool&amp; BxWebContent::IsInitPool</definition>
+        <argsstring>()</argsstring>
+        <name>IsInitPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="63" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a89bde7351441571b34db345ac0f372ff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func macro <ref refid="class_bx_var_vector" kindref="compound">CachePoolList</ref> &amp;</type>
+        <definition>global_func macro CachePoolList&amp; BxWebContent::Pool</definition>
+        <argsstring>()</argsstring>
+        <name>Pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="64" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1ac2e657b59601fa4859fb61cdb16078ce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func macro int &amp;</type>
+        <definition>global_func macro int&amp; BxWebContent::PoolSumSize</definition>
+        <argsstring>()</argsstring>
+        <name>PoolSumSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="65" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1ab2c9a9aed3f20d494713d898e8551662" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxWebContent::OnFileSearch</definition>
+        <argsstring>(bool isdirname, string _tmp_ name, void *data1, void *data2)</argsstring>
+        <name>OnFileSearch</name>
+        <param>
+          <type>bool</type>
+          <declname>isdirname</declname>
+        </param>
+        <param>
+          <type>string _tmp_</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data1</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="66" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="66" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1abd8193108c8e86a2680239bf020b01c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxWebContent::SetLastError</definition>
+        <argsstring>(string ErrorMessage)</argsstring>
+        <name>SetLastError</name>
+        <param>
+          <type>string</type>
+          <declname>ErrorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="297" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="297" bodyend="310"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_web_content_1a69fbb0cf356d34117765359616f8428f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::BxWebContent</definition>
+        <argsstring>()</argsstring>
+        <name>BxWebContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="81" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="81" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a3ef24ada879d5b2cb40ebf4a73be8432" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxWebContent::~BxWebContent</definition>
+        <argsstring>()</argsstring>
+        <name>~BxWebContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="89" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func string</type>
+        <definition>global_func string BxWebContent::GetCachePath</definition>
+        <argsstring>()</argsstring>
+        <name>GetCachePath</name>
+        <briefdescription>
+<para>캐시폴더이름 받기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>캐시폴더이름 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="99" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a4a605274453e93b85aae5e1c7e6fb47f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxWebContent::GetDataLength</definition>
+        <argsstring>()</argsstring>
+        <name>GetDataLength</name>
+        <briefdescription>
+<para>쿼리결과의 사이즈얻기(데이터) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>길이(byte) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="105" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a2c1ae12564be5f2b1880ad56966fd38c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxWebContent::GetTextLength</definition>
+        <argsstring>()</argsstring>
+        <name>GetTextLength</name>
+        <briefdescription>
+<para>쿼리결과의 사이즈얻기(스트링) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>길이(byte) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="111" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a378dffe3154698e8b9f6fd67e2631050" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const byte *_tmp_</type>
+        <definition>const byte* _tmp_ BxWebContent::GetBytes</definition>
+        <argsstring>()</argsstring>
+        <name>GetBytes</name>
+        <briefdescription>
+<para>쿼리결과 받기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>쿼리결과 바이트배열 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="117" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a4071b5cbab785c33b313a8f3578bc1f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_bx_web_content_1_1_j_s_o_n" kindref="compound">JSON</ref> &amp;</type>
+        <definition>const JSON&amp; BxWebContent::GetJSON</definition>
+        <argsstring>(string ChildName)</argsstring>
+        <name>GetJSON</name>
+        <param>
+          <type>string</type>
+          <declname>ChildName</declname>
+        </param>
+        <briefdescription>
+<para>쿼리결과 JSON으로 받기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ChildName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 첫번째 자식의 이름 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>해당 자식의 JSON객체 인스턴스 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="282" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="282" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1ae4b6b68d6d427549e2d2a62efea67cc1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxWebContent::GetLastError</definition>
+        <argsstring>()</argsstring>
+        <name>GetLastError</name>
+        <briefdescription>
+<para>마지막 에러내용 받기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>에러내용 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="296" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="296" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a24c3fb456a68014a4212215ab4c6c1d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func void</type>
+        <definition>global_func void BxWebContent::ClearContact</definition>
+        <argsstring>(string Domain, ushort Port)</argsstring>
+        <name>ClearContact</name>
+        <param>
+          <type>string</type>
+          <declname>Domain</declname>
+        </param>
+        <param>
+          <type>ushort</type>
+          <declname>Port</declname>
+        </param>
+        <briefdescription>
+<para>특정 Contact정보(소켓/쿠키)를 지움 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 접속된 서버 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 포트번호 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" kindref="member">Query</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="318" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="318" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxWebContent::Query</definition>
+        <argsstring>(string Domain, ushort Port, string Path, string Arguments=nullptr, int Timeout=-1, callback_progress Progress=nullptr)</argsstring>
+        <name>Query</name>
+        <param>
+          <type>string</type>
+          <declname>Domain</declname>
+        </param>
+        <param>
+          <type>ushort</type>
+          <declname>Port</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Path</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Arguments</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Timeout</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>Progress</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>HTTP쿼리실행 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 접속할 서버(예: &quot;www.naver.com&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 포트번호(HTTP는 보통 80번포트) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 다운받을 파일 또는 실행할 서블릿의 경로(예: &quot;Update/Run.aspx&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Arguments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 서블릿의 경우 전달할 인자들(예: &quot;Data0=aaa&amp;Data1=bbb&amp;Data2=ccc&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 각 단계별 지연허용시간 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>송수신 성공여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_web_content_1a24c3fb456a68014a4212215ab4c6c1d4" kindref="member">ClearContact</ref>, <ref refid="class_bx_web_content_1ae4b6b68d6d427549e2d2a62efea67cc1" kindref="member">GetLastError</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="331" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="331" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_web_content_1a70b3f363564ab1473fd002c3ff0dcaec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxWebContent::Cache</definition>
+        <argsstring>(string Domain, ushort Port, string Path, string Arguments=nullptr, bool DoLoad=true, callback_progress Progress=nullptr)</argsstring>
+        <name>Cache</name>
+        <param>
+          <type>string</type>
+          <declname>Domain</declname>
+        </param>
+        <param>
+          <type>ushort</type>
+          <declname>Port</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Path</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Arguments</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>DoLoad</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>callback_progress</type>
+          <declname>Progress</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>캐시파일 로드(없으면 생성) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 접속할 서버(예: &quot;www.naver.com&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 포트번호(HTTP는 보통 80번포트) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 다운받을 파일 또는 실행할 서블릿의 경로(예: &quot;Update/Abc.bmp&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Arguments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 서블릿의 경우 전달할 인자들(예: &quot;Data0=aaa&amp;Data1=bbb&amp;Data2=ccc&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>DoLoad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 메모리에 로딩할지의 여부, false면 다운로드여부 확인만 하겠다는 의미 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 프로그레스의 전달 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>캐시로드 성공여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_bx_web_content_1ae4b6b68d6d427549e2d2a62efea67cc1" kindref="member">GetLastError</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="525" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="525" bodyend="622"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HTTP기반 쿼리송수신, 파일다운로드 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="104">
+        <label>BxWebContent::JSON</label>
+        <link refid="class_bx_web_content_1_1_j_s_o_n"/>
+      </node>
+      <node id="103">
+        <label>BxWebContent</label>
+        <link refid="class_bx_web_content"/>
+        <childnode refid="104" relation="usage">
+          <edgelabel>ResponseJSON</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" line="8" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxWebContent.hpp" bodystart="7" bodyend="623"/>
+    <listofallmembers>
+      <member refid="class_bx_web_content_1a69fbb0cf356d34117765359616f8428f" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>BxWebContent</name></member>
+      <member refid="class_bx_web_content_1a70b3f363564ab1473fd002c3ff0dcaec" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>Cache</name></member>
+      <member refid="class_bx_web_content_1ab5753ed039dd89984372f58059b22c05" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>CachePoolList</name></member>
+      <member refid="class_bx_web_content_1a24c3fb456a68014a4212215ab4c6c1d4" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>ClearContact</name></member>
+      <member refid="class_bx_web_content_1a378dffe3154698e8b9f6fd67e2631050" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetBytes</name></member>
+      <member refid="class_bx_web_content_1a8ae29f0628682e1cfb7f6f667a895312" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetCachePath</name></member>
+      <member refid="class_bx_web_content_1a4a605274453e93b85aae5e1c7e6fb47f" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetDataLength</name></member>
+      <member refid="class_bx_web_content_1a4071b5cbab785c33b313a8f3578bc1f0" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetJSON</name></member>
+      <member refid="class_bx_web_content_1ae4b6b68d6d427549e2d2a62efea67cc1" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetLastError</name></member>
+      <member refid="class_bx_web_content_1a2c1ae12564be5f2b1880ad56966fd38c" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>GetTextLength</name></member>
+      <member refid="class_bx_web_content_1a57ec38cbc13efde21e4e0f690a4e6012" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>IsInitPool</name></member>
+      <member refid="class_bx_web_content_1a9f01389359ee60f8904d79de1d7c0c66" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>LastContact</name></member>
+      <member refid="class_bx_web_content_1a1903bad717170e022e3987abd826ede3" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>LastError</name></member>
+      <member refid="class_bx_web_content_1ab2c9a9aed3f20d494713d898e8551662" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>OnFileSearch</name></member>
+      <member refid="class_bx_web_content_1a89bde7351441571b34db345ac0f372ff" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>Pool</name></member>
+      <member refid="class_bx_web_content_1ac2e657b59601fa4859fb61cdb16078ce" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>PoolSumSize</name></member>
+      <member refid="class_bx_web_content_1acd8d5ef69739c1368397f38de5889144" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>Query</name></member>
+      <member refid="class_bx_web_content_1ab104adbb7e5be3eacd0730515a39e820" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>ResponseBytes</name></member>
+      <member refid="class_bx_web_content_1a5df8504a773ac39ae8fcf34876377a83" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>ResponseJSON</name></member>
+      <member refid="class_bx_web_content_1a3bb4d42aee48bb841c7d41c9e3d3d31e" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>ResponseLength</name></member>
+      <member refid="class_bx_web_content_1abd8193108c8e86a2680239bf020b01c3" prot="private" virt="non-virtual"><scope>BxWebContent</scope><name>SetLastError</name></member>
+      <member refid="class_bx_web_content_1a3ef24ada879d5b2cb40ebf4a73be8432" prot="public" virt="non-virtual"><scope>BxWebContent</scope><name>~BxWebContent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

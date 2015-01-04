@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+  <compounddef id="class_bx_pool_global_1_1_unit_link" kind="class" language="C++" prot="public">
+    <compoundname>BxPoolGlobal::UnitLink</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bx_pool_global_1_1_unit_link_1a039795c6e0ac983ed8845c5c5e5071f3" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref> *_ref_</type>
+        <definition>Unit* _ref_ BxPoolGlobal::UnitLink::Head</definition>
+        <argsstring></argsstring>
+        <name>Head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" line="45" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_pool_global_1_1_unit_link_1abf3fd5190b5583d86467e2bbb4db44fc" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bx_pool_global_1_1_unit_link" kindref="compound">UnitLink</ref> *</type>
+        <definition>UnitLink* BxPoolGlobal::UnitLink::Next</definition>
+        <argsstring></argsstring>
+        <name>Next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" line="46" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_pool_global_1_1_unit_link_1af445ab37b381b0ee6d8b85af04957645" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPoolGlobal::UnitLink::UnitLink</definition>
+        <argsstring>(Unit *_ref_ head)</argsstring>
+        <name>UnitLink</name>
+        <param>
+          <type><ref refid="class_bx_pool_global_1_1_unit" kindref="compound">Unit</ref> *_ref_</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" line="47" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_pool_global_1_1_unit_link_1aef860846bb92a712467adc3b2003e23f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxPoolGlobal::UnitLink::~UnitLink</definition>
+        <argsstring>()</argsstring>
+        <name>~UnitLink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" line="48" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" bodystart="48" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_pool_global_1_1_unit_link_1ab14a74e963c663289e60d33867785f98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>global_func <ref refid="class_bx_pool_global_1_1_unit_link" kindref="compound">UnitLink</ref> *</type>
+        <definition>global_func UnitLink* BxPoolGlobal::UnitLink::LinkHead</definition>
+        <argsstring>()</argsstring>
+        <name>LinkHead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" line="69" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" bodystart="69" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="330">
+        <label>BxPoolGlobal::UnitLink</label>
+        <link refid="class_bx_pool_global_1_1_unit_link"/>
+        <childnode refid="331" relation="usage">
+          <edgelabel>Head</edgelabel>
+        </childnode>
+        <childnode refid="330" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+      <node id="331">
+        <label>BxPoolGlobal::Unit</label>
+        <link refid="class_bx_pool_global_1_1_unit"/>
+        <childnode refid="331" relation="usage">
+          <edgelabel>Next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" line="43" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPool.hpp" bodystart="42" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_bx_pool_global_1_1_unit_link_1a039795c6e0ac983ed8845c5c5e5071f3" prot="public" virt="non-virtual"><scope>BxPoolGlobal::UnitLink</scope><name>Head</name></member>
+      <member refid="class_bx_pool_global_1_1_unit_link_1ab14a74e963c663289e60d33867785f98" prot="public" virt="non-virtual"><scope>BxPoolGlobal::UnitLink</scope><name>LinkHead</name></member>
+      <member refid="class_bx_pool_global_1_1_unit_link_1abf3fd5190b5583d86467e2bbb4db44fc" prot="public" virt="non-virtual"><scope>BxPoolGlobal::UnitLink</scope><name>Next</name></member>
+      <member refid="class_bx_pool_global_1_1_unit_link_1af445ab37b381b0ee6d8b85af04957645" prot="public" virt="non-virtual"><scope>BxPoolGlobal::UnitLink</scope><name>UnitLink</name></member>
+      <member refid="class_bx_pool_global_1_1_unit_link_1aef860846bb92a712467adc3b2003e23f" prot="public" virt="non-virtual"><scope>BxPoolGlobal::UnitLink</scope><name>~UnitLink</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
