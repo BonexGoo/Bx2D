@@ -1,26 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="_bx_dynamic_8hpp" kind="file" language="C++">
     <compoundname>BxDynamic.hpp</compoundname>
     <includes refid="_bx_core_8hpp" local="no">BxCore.hpp</includes>
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <incdepgraph>
-      <node id="217">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="218" relation="include">
+      <node id="222">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="219" relation="include">
         </childnode>
       </node>
       <node id="219">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="221">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="216" relation="include">
-        </childnode>
       </node>
       <node id="223">
         <label>BxVarMap.hpp</label>
@@ -29,6 +23,24 @@
         </childnode>
         <childnode refid="221" relation="include">
         </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
         <childnode refid="218" relation="include">
         </childnode>
       </node>
@@ -42,30 +54,18 @@
         <childnode refid="223" relation="include">
         </childnode>
       </node>
-      <node id="222">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="219" relation="include">
-        </childnode>
-      </node>
-      <node id="218">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="219" relation="include">
-        </childnode>
-      </node>
-      <node id="216">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="217" relation="include">
-        </childnode>
-      </node>
       <node id="220">
         <label>BxUtil.hpp</label>
         <link refid="_bx_util_8hpp_source"/>
         <childnode refid="221" relation="include">
         </childnode>
         <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="217" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -416,6 +416,6 @@
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="338"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxDynamic.hpp"/>
+    <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDynamic.hpp"/>
   </compounddef>
 </doxygen>

@@ -1,15 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="_bx_xml_8hpp" kind="file" language="C++">
     <compoundname>BxXml.hpp</compoundname>
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <incdepgraph>
-      <node id="526">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="527" relation="include">
-        </childnode>
-      </node>
       <node id="522">
         <label>BxString.hpp</label>
         <link refid="_bx_string_8hpp_source"/>
@@ -20,14 +14,22 @@
         <childnode refid="530" relation="include">
         </childnode>
       </node>
+      <node id="530">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+      </node>
       <node id="528">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="521">
-        <label>BxXml.hpp</label>
-        <link refid="BxXml.hpp"/>
-        <childnode refid="522" relation="include">
+      <node id="523">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
         </childnode>
       </node>
       <node id="524">
@@ -36,10 +38,10 @@
         <childnode refid="525" relation="include">
         </childnode>
       </node>
-      <node id="530">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="528" relation="include">
+      <node id="521">
+        <label>BxXml.hpp</label>
+        <link refid="BxXml.hpp"/>
+        <childnode refid="522" relation="include">
         </childnode>
       </node>
       <node id="527">
@@ -48,10 +50,10 @@
         <childnode refid="528" relation="include">
         </childnode>
       </node>
-      <node id="525">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="526" relation="include">
+      <node id="526">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="527" relation="include">
         </childnode>
       </node>
       <node id="529">
@@ -62,12 +64,10 @@
         <childnode refid="530" relation="include">
         </childnode>
       </node>
-      <node id="523">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="524" relation="include">
-        </childnode>
-        <childnode refid="527" relation="include">
+      <node id="525">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="526" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -497,6 +497,6 @@
 <codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsWriting;</highlight></codeline>
 <codeline lineno="419"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxXml.hpp"/>
+    <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxXml.hpp"/>
   </compounddef>
 </doxygen>

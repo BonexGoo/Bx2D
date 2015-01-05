@@ -94,6 +94,8 @@ namespace BxCore
                 PosY = y;
                 SizeW = w;
                 SizeH = h;
+				resize(w, h);
+				move(x, y);
             }
             const int GetWidth()
             {
@@ -129,16 +131,18 @@ namespace BxCore
             {
                 glViewport(0, 0, width, height);
             }
-            void resizeEvent(QResizeEvent*)
+            void resizeEvent(QResizeEvent* event)
             {
+				QGLWidget::resizeEvent(event);
                 if(FirstSized)
                 {
                     FirstSized = false;
                     resize(SizeW, SizeH);
                 }
             }
-            void moveEvent(QMoveEvent*)
+            void moveEvent(QMoveEvent* event)
             {
+				QGLWidget::moveEvent(event);
                 if(FirstMoved)
                 {
                     FirstMoved = false;

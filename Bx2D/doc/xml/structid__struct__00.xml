@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="structid__struct__00" kind="struct" language="C++" prot="public">
     <compoundname>id_struct_00</compoundname>
       <sectiondef kind="public-attrib">
@@ -14,14 +14,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="259" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="259" bodyend="-1"/>
+        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="259" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="259" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" line="259" column="1" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxType.hpp" bodystart="259" bodyend="259"/>
+    <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="259" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="259" bodyend="259"/>
     <listofallmembers>
       <member refid="structid__struct__00_1ab9dde1bb96ee1902a73365a2f7838134" prot="public" virt="non-virtual"><scope>id_struct_00</scope><name>value</name></member>
     </listofallmembers>

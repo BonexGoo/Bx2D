@@ -24,8 +24,9 @@
 			const int GUIMarginB = BxCore::Main::GetGUIMarginB();
 			const int WindowsWidth = BxCore::System::GetConfigNumber("Bx.Application.Windows.Width", 480);
 			const int WindowsHeight = BxCore::System::GetConfigNumber("Bx.Application.Windows.Height", 320);
-            Widget.SetWindowRect(0, 0,
-                GUIMarginL + WindowsWidth + GUIMarginR, GUIMarginT + WindowsHeight + GUIMarginB);
+			Widget.SetWindowRect(0, 0,
+                GUIMarginL + WindowsWidth + GUIMarginR,
+				GUIMarginT + WindowsHeight + GUIMarginB);
             Widget.showNormal();
 		#else
 			Widget.showFullScreen();

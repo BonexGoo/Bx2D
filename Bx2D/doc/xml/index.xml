@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.9">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.9.1">
   <compound refid="class_bx_express_1_1___float" kind="class"><name>BxExpress::_Float</name>
     <member refid="class_bx_express_1_1___float_1ab69dbd14ab2419ea1bdffb62e0785df2" kind="friend"><name>Float</name></member>
     <member refid="class_bx_express_1_1___float_1a1720798b9b961937704fea28c98bbc43" kind="friend"><name>FloatX</name></member>

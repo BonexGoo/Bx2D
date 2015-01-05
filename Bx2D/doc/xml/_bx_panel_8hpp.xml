@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="_bx_panel_8hpp" kind="file" language="C++">
     <compoundname>BxPanel.hpp</compoundname>
     <includes refid="_bx_draw_8hpp" local="no">BxDraw.hpp</includes>
@@ -9,12 +9,48 @@
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <includedby refid="_bx_scene_8hpp" local="no">BxScene.hpp</includedby>
     <incdepgraph>
-      <node id="291">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
+      <node id="303">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="304" relation="include">
+        </childnode>
         <childnode refid="292" relation="include">
         </childnode>
-        <childnode refid="299" relation="include">
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="297" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="300">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="294" relation="include">
         </childnode>
       </node>
       <node id="301">
@@ -27,20 +63,18 @@
         <childnode refid="292" relation="include">
         </childnode>
       </node>
-      <node id="295">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="296" relation="include">
-        </childnode>
-      </node>
-      <node id="303">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="304" relation="include">
-        </childnode>
+      <node id="291">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
         <childnode refid="292" relation="include">
         </childnode>
-        <childnode refid="298" relation="include">
+        <childnode refid="299" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="297" relation="include">
         </childnode>
       </node>
       <node id="290">
@@ -57,42 +91,16 @@
         <childnode refid="303" relation="include">
         </childnode>
       </node>
-      <node id="297">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="293">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="294" relation="include">
-        </childnode>
-      </node>
-      <node id="300">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="294" relation="include">
-        </childnode>
-        <childnode refid="293" relation="include">
-        </childnode>
+      <node id="295">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
         <childnode refid="296" relation="include">
         </childnode>
       </node>
-      <node id="298">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="297" relation="include">
-        </childnode>
-      </node>
-      <node id="296">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="297" relation="include">
-        </childnode>
-      </node>
-      <node id="294">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="295" relation="include">
+      <node id="302">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="291" relation="include">
         </childnode>
       </node>
       <node id="292">
@@ -103,34 +111,20 @@
         <childnode refid="298" relation="include">
         </childnode>
       </node>
+      <node id="294">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="295" relation="include">
+        </childnode>
+      </node>
       <node id="299">
         <label>BxExpress.hpp</label>
         <link refid="_bx_express_8hpp_source"/>
         <childnode refid="297" relation="include">
         </childnode>
       </node>
-      <node id="302">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="291" relation="include">
-        </childnode>
-      </node>
-      <node id="304">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="293" relation="include">
-        </childnode>
-        <childnode refid="296" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="305">
-        <label>BxPanel.hpp</label>
-        <link refid="BxPanel.hpp"/>
-        <childnode refid="306" relation="include">
-        </childnode>
-      </node>
       <node id="306">
         <label>BxScene.hpp</label>
         <link refid="_bx_scene_8hpp_source"/>
@@ -140,6 +134,12 @@
       <node id="307">
         <label>BxCoreForQT5.hpp</label>
         <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      </node>
+      <node id="305">
+        <label>BxPanel.hpp</label>
+        <link refid="BxPanel.hpp"/>
+        <childnode refid="306" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_panel" prot="public">BxPanel</innerclass>
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="642" column="9" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="642" bodyend="-1"/>
+        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="642" column="9" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="642" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_panel_8hpp_1a97eeb620e2833b6a06079f41fdcd2f8d" prot="public" static="no">
         <name>FRAMEWORK_PANEL_CLASS</name>
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" line="643" column="9" bodyfile="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp" bodystart="643" bodyend="-1"/>
+        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="643" column="9" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="643" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -875,6 +875,6 @@
 <codeline lineno="700"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
 <codeline lineno="701"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>local_data<sp/>bool<sp/>unknown_panel<sp/>=<sp/>BxPanel::AddPanel(&quot;&quot;<sp/>NAME,<sp/>_Create,<sp/>_Notify,<sp/>_Touch,<sp/>_Paint,<sp/>_Alloc,<sp/>_Free,<sp/>_Service);</highlight></codeline>
     </programlisting>
-    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxPanel.hpp"/>
+    <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp"/>
   </compounddef>
 </doxygen>

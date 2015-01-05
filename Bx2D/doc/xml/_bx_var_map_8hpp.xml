@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="_bx_var_map_8hpp" kind="file" language="C++">
     <compoundname>BxVarMap.hpp</compoundname>
     <includes refid="_bx_core_8hpp" local="no">BxCore.hpp</includes>
@@ -12,21 +12,9 @@
     <includedby refid="_bx_panel_8hpp" local="no">BxPanel.hpp</includedby>
     <includedby refid="_bx_web_content_8hpp" local="no">BxWebContent.hpp</includedby>
     <incdepgraph>
-      <node id="481">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="482" relation="include">
-        </childnode>
-      </node>
       <node id="483">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="484">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="480" relation="include">
-        </childnode>
       </node>
       <node id="479">
         <label>BxVarMap.hpp</label>
@@ -38,10 +26,22 @@
         <childnode refid="482" relation="include">
         </childnode>
       </node>
+      <node id="484">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="480" relation="include">
+        </childnode>
+      </node>
       <node id="482">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
         <childnode refid="483" relation="include">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="482" relation="include">
         </childnode>
       </node>
       <node id="480">
@@ -52,16 +52,6 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="489">
-        <label>BxPanel.hpp</label>
-        <link refid="_bx_panel_8hpp_source"/>
-        <childnode refid="490" relation="include">
-        </childnode>
-      </node>
-      <node id="488">
-        <label>BxDynamic.hpp</label>
-        <link refid="_bx_dynamic_8hpp_source"/>
-      </node>
       <node id="485">
         <label>BxVarMap.hpp</label>
         <link refid="BxVarMap.hpp"/>
@@ -82,13 +72,23 @@
         <childnode refid="486" relation="include">
         </childnode>
       </node>
+      <node id="486">
+        <label>BxCoreForQT5.hpp</label>
+        <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      </node>
       <node id="487">
         <label>BxConsole.hpp</label>
         <link refid="_bx_console_8hpp_source"/>
       </node>
-      <node id="486">
-        <label>BxCoreForQT5.hpp</label>
-        <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      <node id="489">
+        <label>BxPanel.hpp</label>
+        <link refid="_bx_panel_8hpp_source"/>
+        <childnode refid="490" relation="include">
+        </childnode>
+      </node>
+      <node id="488">
+        <label>BxDynamic.hpp</label>
+        <link refid="_bx_dynamic_8hpp_source"/>
       </node>
       <node id="491">
         <label>BxWebContent.hpp</label>
@@ -446,6 +446,6 @@
 <codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="350"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="/Users/bonex/Desktop/Project/Bx2D/lib/BxVarMap.hpp"/>
+    <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp"/>
   </compounddef>
 </doxygen>
