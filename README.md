@@ -1,7 +1,7 @@
-Bx2D[4.0] For Qt[5.4]
+Bx2D For Qt5
 ====
 
-<Cross Platform C++ UX Engine For Qt>
+<Cross Platform C++ UX Engine For Qt5>
 
 안녕하세요!
 
