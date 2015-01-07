@@ -1,4 +1,4 @@
-#include <BxScene.hpp>
+Ôªø#include <BxScene.hpp>
 #include <BxPanel.hpp>
 
 class BxProjectHelper
@@ -62,7 +62,7 @@ void OnRender(BxProjectHelper& This, BxDraw& Draw)
 		Draw.Rectangle(FILL, XYXY(3, 3, Draw.Width(), Draw.Height()), COLOR(153, 153, 153));
 	}
 
-	// ≈∏∞Ÿ«¡∑Œ¡ß∆Æ
+	// ÌÉÄÍ≤üÌîÑÎ°úÏ†ùÌä∏
 	const int EndPosX = Draw.Text(This.Font, BxString("Target Project "), XY(20, 40),
 		textalign_left_middle, COLOR(0, 0, 0)).x;
 	BxTRY(Draw, CLIP(XYRR(EndPosX + 100, 40, 100, (BxCore::Font::GetHeight(This.Font) + 14) / 2)))
