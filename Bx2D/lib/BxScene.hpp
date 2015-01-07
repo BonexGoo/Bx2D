@@ -100,11 +100,12 @@ public:
 		const UpdateCB Update;
 		const RenderCB Render;
 		const GetDataCB GetData;
+		const bool Hidden;
 		BxString::Parse BuildDate;
 		AllScene* Next;
 	public:
-		AllScene(string name, EventCB event, UpdateCB update, RenderCB render, GetDataCB getdata, string buildday, string buildtime)
-			: Name(name), Event(event), Update(update), Render(render), GetData(getdata), Next(nullptr)
+		AllScene(string name, EventCB event, UpdateCB update, RenderCB render, GetDataCB getdata, bool hidden, string buildday, string buildtime)
+			: Name(name), Event(event), Update(update), Render(render), GetData(getdata), Hidden(hidden), Next(nullptr)
 		{
 			BuildDate = buildday;
 			BuildDate += " ";
@@ -387,10 +388,10 @@ public:
 	}
 
 	/// @cond SECTION_NAME
-	global_func bool __Create__(string Name, EventCB Event, UpdateCB Update, RenderCB Render, GetDataCB GetData, string BuildDay, string BuildTime)
+	global_func bool __Create__(string Name, EventCB Event, UpdateCB Update, RenderCB Render, GetDataCB GetData, bool Hidden, string BuildDay, string BuildTime)
 	{
 		BxASSERT("BxScene<같은 씬이름을 가진 소스코드가 이미 존재합니다>", __FindAllScene__(Name) == nullptr);
-		AllScene* NewScene = BxNew_Param(AllScene, Name, Event, Update, Render, GetData, BuildDay, BuildTime);
+		AllScene* NewScene = BxNew_Param(AllScene, Name, Event, Update, Render, GetData, Hidden, BuildDay, BuildTime);
 		NewScene->Next = __GetAllScene__().Next;
 		__GetAllScene__().Next = NewScene;
 		++__GetAllSceneCount__();
@@ -774,7 +775,7 @@ public:
 
 	/// @cond SECTION_NAME
 	// Scene
-	global_func inline AllScene& __GetAllScene__() {global_data AllScene Begin("", nullptr, nullptr, nullptr, nullptr, "", ""); return Begin;}
+	global_func inline AllScene& __GetAllScene__() {global_data AllScene Begin("", nullptr, nullptr, nullptr, nullptr, true, "", ""); return Begin;}
 	global_func inline int& __GetAllSceneCount__() {global_data int _ = 0; return _;}
 	global_func inline ActiveScene& __GetActiveScene__() {global_data ActiveScene Begin(nullptr, sceneside_center); return Begin;}
 	global_func inline int& __GetActiveSceneCount__() {global_data int _ = 0; return _;}
@@ -786,7 +787,9 @@ public:
 	/// @endcond
 };
 
-#define FRAMEWORK_SCENE(DATA, STRING) \
+#define FRAMEWORK_SCENE(DATA, STRING) FRAMEWORK_SCENE_OPTIONAL(DATA, STRING, false)
+#define FRAMEWORK_SCENE_HIDDEN(DATA, STRING) FRAMEWORK_SCENE_OPTIONAL(DATA, STRING, true)
+#define FRAMEWORK_SCENE_OPTIONAL(DATA, STRING, HIDDEN) \
 	local_func macro syseventresult OnEvent(DATA& Data, const sysevent& Event); \
 	local_func macro sysupdateresult OnUpdate(DATA& Data); \
 	local_func macro void OnRender(DATA& Data, BxDraw& Draw); \
@@ -805,4 +808,5 @@ public:
 			Data = BxNew(DATA); \
 		return (void*) Data; \
 	} \
-	local_data bool _Unknown = BxScene::__Create__(STRING, __OnEvent__, __OnUpdate__, __OnRender__, __GetData__, __DATE__, __TIME__);
+	local_data string __SCENE__ = STRING; \
+	local_data bool _Unknown = BxScene::__Create__(STRING, __OnEvent__, __OnUpdate__, __OnRender__, __GetData__, HIDDEN, __DATE__, __TIME__);

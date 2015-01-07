@@ -365,7 +365,7 @@ namespace BxCore
 			{
 				if(writable)
 				{
-					ValidFile(fileName);
+					ValidRemFile(fileName);
                     File = new QFile(RootForWrite() + fileName);
                     Success = File->open(QFileDevice::ReadWrite);
 				}
@@ -373,7 +373,11 @@ namespace BxCore
 				{
                     if(QFileInfo(RootForWrite() + fileName).exists())
                         File = new QFile(RootForWrite() + fileName);
-                    else File = new QFile(RootForRead() + fileName);
+					#ifdef WIN32
+						else if(QFileInfo(RootForSystem() + fileName).exists())
+							File = new QFile(RootForSystem() + fileName);
+					#endif
+					else File = new QFile(RootForRead() + fileName);
                     Success = File->open(QFileDevice::ReadOnly);
 				}
 			}
@@ -384,7 +388,7 @@ namespace BxCore
         public:
             static QString& RootForWrite()
             {
-                static QString Root = ValidRoot();
+                static QString Root = ValidRemRoot();
                 return Root;
             }
             static QString& RootForRead()
@@ -402,10 +406,19 @@ namespace BxCore
                 #endif
                 return Root;
             }
+			static QString& RootForSystem()
+            {
+                static QString Root = "../../Bx2D/assets/";
+                return Root;
+            }
             static bool IsFile(const QString& fileName)
             {
                 QFileInfo InfoW(RootForWrite() + fileName);
 				if(InfoW.exists()) return InfoW.isFile();
+				#ifdef WIN32
+					QFileInfo InfoS(RootForSystem() + fileName);
+					if(InfoS.exists()) return InfoS.isFile();
+				#endif
                 return QFileInfo(RootForRead() + fileName).isFile();
             }
             static bool Remove(const QString& fileName)
@@ -414,11 +427,11 @@ namespace BxCore
             }
             static bool Rename(const QString& oldName, const QString& newName)
             {
-				ValidFile(oldName);
+				ValidRemFile(oldName);
                 return QFile::rename(RootForWrite() + oldName, RootForWrite() + newName);
             }
 		private:
-            static QString ValidRoot()
+            static QString ValidRemRoot()
             {
                 #ifdef WIN32
                     QString Root = "../resource";
@@ -434,10 +447,18 @@ namespace BxCore
                 if(!QFileInfo(Root).exists()) QDir().mkdir(Root);
                 return Root + "/";
             }
-			static void ValidFile(const QString& fileName)
+			static void ValidRemFile(const QString& fileName)
 			{
-                if(QFileInfo(RootForRead() + fileName).exists() && !QFileInfo(RootForWrite() + fileName).exists())
-                    QFile::copy(RootForRead() + fileName, RootForWrite() + fileName);
+				if(!QFileInfo(RootForWrite() + fileName).exists())
+				{
+					#ifdef WIN32
+						if(QFileInfo(RootForSystem() + fileName).exists())
+							QFile::copy(RootForSystem() + fileName, RootForWrite() + fileName);
+						else
+					#endif
+					if(QFileInfo(RootForRead() + fileName).exists())
+						QFile::copy(RootForRead() + fileName, RootForWrite() + fileName);
+				}
 			}
         };
         /// @endcond
@@ -451,6 +472,10 @@ namespace BxCore
 			{
                 if(QFileInfo(FileClass::RootForWrite() + fileName).exists())
                     FileInfo = new QFileInfo(FileClass::RootForWrite() + fileName);
+				#ifdef WIN32
+					else if(QFileInfo(FileClass::RootForSystem() + fileName).exists())
+						FileInfo = new QFileInfo(FileClass::RootForSystem() + fileName);
+				#endif
                 else FileInfo = new QFileInfo(FileClass::RootForRead() + fileName);
 			}
             ~FileInfoClass() {delete FileInfo;}
@@ -469,7 +494,12 @@ namespace BxCore
                     (QDir::Files | QDir::Dirs | QDir::NoSymLinks | QDir::NoDotAndDotDot);
 				for(int i = 0, iend = ListW.size(); i < iend; ++i)
                     if(fileNames.indexOf(ListW.at(i)) == -1) fileNames << ListW.at(i);
-
+				#ifdef WIN32
+					QStringList ListS = QDir(FileClass::RootForSystem() + pathName).entryList
+						(QDir::Files | QDir::Dirs | QDir::NoSymLinks | QDir::NoDotAndDotDot);
+					for(int i = 0, iend = ListS.size(); i < iend; ++i)
+						if(fileNames.indexOf(ListS.at(i)) == -1) fileNames << ListS.at(i);
+				#endif
                 QStringList ListR = QDir(FileClass::RootForRead() + pathName).entryList
                     (QDir::Files | QDir::Dirs | QDir::NoSymLinks | QDir::NoDotAndDotDot);
 				for(int i = 0, iend = ListR.size(); i < iend; ++i)

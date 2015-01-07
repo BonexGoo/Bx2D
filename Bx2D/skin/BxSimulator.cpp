@@ -108,7 +108,7 @@ public:
 	}
 };
 
-FRAMEWORK_SCENE(BxSimulator, "BxSimulator")
+FRAMEWORK_SCENE_HIDDEN(BxSimulator, "BxSimulator")
 
 syseventresult OnEvent(BxSimulator& This, const sysevent& Event)
 {
@@ -287,7 +287,7 @@ void OnRender(BxSimulator& This, BxDraw& Draw)
 		Draw.Area(MenuBarWidth / 2, TitleHeight / 2, FORM(&This.TitleImage));
 		// 제목
 		global_data BxString::Parse SubjectName(BxCore::System::GetConfigString("Bx.Currently.Title", "No Title"));
-		Draw.TextByRect(This.GUIFont, SubjectName, XYXY(Gap + MenuBarWidth, 0, Draw.Width(), TitleBottom),
+		Draw.TextByRect(This.GUIFont, SubjectName, XYXY(Gap + MenuBarWidth, 0, Draw.Width(), TitleBottom - 4),
 			textalign_left_bottom, COLOR(255, 255, 255));
 		// 씬리스트
 		global_data BxString::Parse SceneList;

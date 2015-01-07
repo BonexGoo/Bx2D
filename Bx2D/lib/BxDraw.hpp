@@ -1314,7 +1314,7 @@ public:
 	\brief 현재 X축 기준좌표얻기
 	\return X축 기준좌표
 	*/
-	inline int TranslateX()
+	inline const int CurrentX()
 	{
 		return BxDrawGlobal::_DrawOption::CurHotspotX();
 	}
@@ -1323,28 +1323,52 @@ public:
 	\brief 현재 Y축 기준좌표얻기
 	\return Y축 기준좌표
 	*/
-	inline int TranslateY()
+	inline const int CurrentY()
 	{
 		return BxDrawGlobal::_DrawOption::CurHotspotY();
 	}
 
 	/*!
-	\brief 현재 너비얻기
+	\brief 현재 영역얻기
+	\return 영역
+	*/
+	inline const rect CurrentRect()
+	{
+		const rect Result = {0, 0,
+			BxDrawGlobal::_DrawOption::CurAreaWidth(),
+			BxDrawGlobal::_DrawOption::CurAreaHeight()};
+		return Result;
+	}
+
+	/*!
+	\brief 현재 중점얻기
+	\return 중점
+	*/
+	inline const point CurrentCenter()
+	{
+		const point Result = {
+			BxDrawGlobal::_DrawOption::CurAreaWidth() / 2,
+			BxDrawGlobal::_DrawOption::CurAreaHeight() / 2};
+		return Result;
+	}
+
+	/*!
+	\brief 너비얻기
 	\param isScreen : true-스크린, false-현재클리핑
 	\return 너비
 	*/
-	inline int Width(bool isScreen = false)
+	inline const int Width(bool isScreen = false)
 	{
 		if(isScreen) return BxCore::Surface::GetWidthHW();
 		return BxDrawGlobal::_DrawOption::CurAreaWidth();
 	}
 
 	/*!
-	\brief 현재 높이얻기
+	\brief 높이얻기
 	\param isScreen : true-스크린, false-현재클리핑
 	\return 높이
 	*/
-	inline int Height(bool isScreen = false)
+	inline const int Height(bool isScreen = false)
 	{
 		if(isScreen) return BxCore::Surface::GetHeightHW();
 		return BxDrawGlobal::_DrawOption::CurAreaHeight();

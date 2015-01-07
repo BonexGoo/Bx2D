@@ -5,6 +5,7 @@
     <includes refid="_bx_core_8hpp" local="no">BxCore.hpp</includes>
     <includedby refid="_bx_core_for_q_t5_8cpp" local="no">BxCoreForQT5.cpp</includedby>
     <includedby refid="_bx_core_for_q_t5_8hpp" local="no">BxCoreForQT5.hpp</includedby>
+    <includedby refid="_bx_core_for_s3_e_8cpp" local="no">BxCoreForS3E.cpp</includedby>
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <includedby refid="_bx_auto_buffer_8hpp" local="no">BxAutoBuffer.hpp</includedby>
     <includedby refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includedby>
@@ -12,196 +13,206 @@
     <includedby refid="_bx_util_8hpp" local="no">BxUtil.hpp</includedby>
     <includedby refid="_bx_var_8hpp" local="no">BxVar.hpp</includedby>
     <incdepgraph>
-      <node id="268">
+      <node id="342">
+        <label>BxMemory.hpp</label>
+        <link refid="BxMemory.hpp"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+      </node>
+      <node id="344">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="345" relation="include">
+        </childnode>
+      </node>
+      <node id="346">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="264">
-        <label>BxMemory.hpp</label>
-        <link refid="BxMemory.hpp"/>
-        <childnode refid="265" relation="include">
-        </childnode>
-      </node>
-      <node id="267">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="268" relation="include">
-        </childnode>
-      </node>
-      <node id="266">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="267" relation="include">
-        </childnode>
-      </node>
-      <node id="265">
+      <node id="343">
         <label>BxCore.hpp</label>
         <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="266" relation="include">
+        <childnode refid="344" relation="include">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="346" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="284">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="279" relation="include">
+      <node id="357">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="358" relation="include">
         </childnode>
-        <childnode refid="285" relation="include">
+        <childnode refid="352" relation="include">
         </childnode>
-        <childnode refid="275" relation="include">
+        <childnode refid="354" relation="include">
         </childnode>
-        <childnode refid="276" relation="include">
+        <childnode refid="359" relation="include">
         </childnode>
-        <childnode refid="277" relation="include">
-        </childnode>
-        <childnode refid="287" relation="include">
+        <childnode refid="356" relation="include">
         </childnode>
       </node>
-      <node id="286">
-        <label>BxCoreImpl.hpp</label>
-        <link refid="_bx_core_impl_8hpp_source"/>
-      </node>
-      <node id="272">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="270" relation="include">
-        </childnode>
-        <childnode refid="273" relation="include">
-        </childnode>
-        <childnode refid="274" relation="include">
-        </childnode>
-        <childnode refid="275" relation="include">
-        </childnode>
-        <childnode refid="277" relation="include">
-        </childnode>
-      </node>
-      <node id="276">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="270" relation="include">
-        </childnode>
-      </node>
-      <node id="270">
-        <label>BxCoreForQT5.hpp</label>
-        <link refid="_bx_core_for_q_t5_8hpp_source"/>
-      </node>
-      <node id="280">
-        <label>BxPathFind.hpp</label>
-        <link refid="_bx_path_find_8hpp_source"/>
-      </node>
-      <node id="271">
-        <label>BxAutoBuffer.hpp</label>
-        <link refid="_bx_auto_buffer_8hpp_source"/>
-      </node>
-      <node id="289">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="284" relation="include">
-        </childnode>
-      </node>
-      <node id="279">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
-      </node>
-      <node id="269">
-        <label>BxMemory.hpp</label>
-        <link refid="BxMemory.hpp"/>
-        <childnode refid="270" relation="include">
-        </childnode>
-        <childnode refid="271" relation="include">
-        </childnode>
-        <childnode refid="272" relation="include">
-        </childnode>
-        <childnode refid="278" relation="include">
-        </childnode>
-        <childnode refid="281" relation="include">
-        </childnode>
-        <childnode refid="289" relation="include">
-        </childnode>
-      </node>
-      <node id="287">
-        <label>BxXml.hpp</label>
-        <link refid="_bx_xml_8hpp_source"/>
-      </node>
-      <node id="288">
+      <node id="367">
         <label>BxTween.hpp</label>
         <link refid="_bx_tween_8hpp_source"/>
       </node>
-      <node id="278">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="279" relation="include">
-        </childnode>
-        <childnode refid="273" relation="include">
-        </childnode>
-        <childnode refid="275" relation="include">
-        </childnode>
-        <childnode refid="280" relation="include">
-        </childnode>
-        <childnode refid="277" relation="include">
-        </childnode>
+      <node id="359">
+        <label>BxPathFind.hpp</label>
+        <link refid="_bx_path_find_8hpp_source"/>
       </node>
-      <node id="282">
+      <node id="358">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
+      </node>
+      <node id="361">
         <label>BxDraw.hpp</label>
         <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="283" relation="include">
+        <childnode refid="362" relation="include">
         </childnode>
-        <childnode refid="275" relation="include">
+        <childnode refid="354" relation="include">
         </childnode>
-        <childnode refid="280" relation="include">
+        <childnode refid="359" relation="include">
         </childnode>
-        <childnode refid="276" relation="include">
+        <childnode refid="355" relation="include">
         </childnode>
       </node>
-      <node id="273">
+      <node id="360">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+      </node>
+      <node id="347">
+        <label>BxMemory.hpp</label>
+        <link refid="BxMemory.hpp"/>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>BxCoreImpl.hpp</label>
+        <link refid="_bx_core_impl_8hpp_source"/>
+      </node>
+      <node id="368">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+      </node>
+      <node id="354">
+        <label>BxPanel.hpp</label>
+        <link refid="_bx_panel_8hpp_source"/>
+        <childnode refid="355" relation="include">
+        </childnode>
+      </node>
+      <node id="364">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
         <label>BxConsole.hpp</label>
         <link refid="_bx_console_8hpp_source"/>
       </node>
-      <node id="275">
-        <label>BxPanel.hpp</label>
-        <link refid="_bx_panel_8hpp_source"/>
-        <childnode refid="276" relation="include">
+      <node id="362">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
         </childnode>
       </node>
-      <node id="274">
+      <node id="353">
         <label>BxDynamic.hpp</label>
         <link refid="_bx_dynamic_8hpp_source"/>
       </node>
-      <node id="283">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="279" relation="include">
+      <node id="363">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="358" relation="include">
         </childnode>
-        <childnode refid="273" relation="include">
+        <childnode refid="364" relation="include">
         </childnode>
-        <childnode refid="275" relation="include">
+        <childnode refid="354" relation="include">
         </childnode>
-      </node>
-      <node id="281">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="278" relation="include">
+        <childnode refid="355" relation="include">
         </childnode>
-        <childnode refid="282" relation="include">
+        <childnode refid="356" relation="include">
         </childnode>
-        <childnode refid="274" relation="include">
-        </childnode>
-        <childnode refid="280" relation="include">
-        </childnode>
-        <childnode refid="284" relation="include">
-        </childnode>
-        <childnode refid="288" relation="include">
+        <childnode refid="366" relation="include">
         </childnode>
       </node>
-      <node id="277">
+      <node id="356">
         <label>BxWebContent.hpp</label>
         <link refid="_bx_web_content_8hpp_source"/>
       </node>
-      <node id="285">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="286" relation="include">
+      <node id="355">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>BxCoreForS3E.hpp</label>
+        <link refid="_bx_core_for_s3_e_8hpp_source"/>
+      </node>
+      <node id="348">
+        <label>BxCoreForQT5.hpp</label>
+        <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      </node>
+      <node id="366">
+        <label>BxXml.hpp</label>
+        <link refid="_bx_xml_8hpp_source"/>
+      </node>
+      <node id="351">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>BxAutoBuffer.hpp</label>
+        <link refid="_bx_auto_buffer_8hpp_source"/>
+        <childnode refid="350" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -217,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" line="5" column="10" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" bodystart="5" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" line="5" column="10" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" bodystart="5" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_memory_8hpp_1abbd0534b5688eb8c99819850f605d519" prot="public" static="no">
         <name>BxNew_Param</name>
@@ -230,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" line="6" column="10" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" bodystart="6" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" line="6" column="10" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_memory_8hpp_1adb18199a141b7c46c60bc4d5c22377f2" prot="public" static="no">
         <name>BxNew_Array</name>
@@ -243,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" line="7" column="10" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" bodystart="7" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" line="7" column="10" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" bodystart="7" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_memory_8hpp_1ac340cb79babd0e4c0deb6b78780bdc8c" prot="public" static="no">
         <name>BxNew_ArrayParam</name>
@@ -257,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" line="8" column="10" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" bodystart="8" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" line="8" column="10" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" bodystart="8" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_memory_8hpp_1a7c7b7a355d971cb231faa331f26d1ad1" prot="public" static="no">
         <name>BxDelete</name>
@@ -269,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" line="9" column="10" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" bodystart="9" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" line="9" column="10" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_memory_8hpp_1a57e735d6fed157d0abe4a253bb67c33e" prot="public" static="no">
         <name>BxDelete_ByType</name>
@@ -282,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" line="10" column="10" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" bodystart="10" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" line="10" column="10" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_memory_8hpp_1a19d731c9664f9bf84f40bbab9ec82ca4" prot="public" static="no">
         <name>BxDelete_Array</name>
@@ -294,7 +305,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" line="11" column="10" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" bodystart="11" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" line="11" column="10" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_memory_8hpp_1a27c81c991cb9b321140d969fa9c65672" prot="public" static="no">
         <name>BxDelete_ArrayByType</name>
@@ -307,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" line="12" column="10" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" bodystart="12" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" line="12" column="10" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_memory_8hpp_1a5da58cce70fdf48bb451af157d091905" prot="public" static="no">
         <name>BxAlloc</name>
@@ -319,7 +330,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" line="13" column="10" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" bodystart="13" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" line="13" column="10" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_memory_8hpp_1a3c469f0f50a4818372a70825a364ba98" prot="public" static="no">
         <name>BxFree</name>
@@ -331,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" line="14" column="10" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp" bodystart="14" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" line="14" column="10" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp" bodystart="14" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -488,11 +499,11 @@
 <codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(IsInit)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IsInit<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#if<sp/>defined(WIN32)<sp/>&amp;&amp;<sp/>defined(__BX_DEBUG)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DLLHandle()<sp/>=<sp/><ref refid="namespace_bx_core_1_1_library_1a3bf05cb509f5a0648977e48c445cd636" kindref="member">BxCore::Library::Open</ref>(</highlight><highlight class="stringliteral">&quot;../../Tiger2D/tool/CodeLogger2.dll&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DLLHandle()<sp/>=<sp/><ref refid="namespace_bx_core_1_1_library_1a3bf05cb509f5a0648977e48c445cd636" kindref="member">BxCore::Library::Open</ref>(</highlight><highlight class="stringliteral">&quot;../../Bx2D/tool/CodeLogger2.dll&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(DLLHandle())</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MemSize<sp/>=<sp/><ref refid="namespace_bx_core_1_1_system_1a7e6b5e614e1e3ed23733fb1f21f4d7dd" kindref="member">BxCore::System::GetPlatformConfigNumber</ref>(</highlight><highlight class="stringliteral">&quot;MemSizeBx&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void*<sp/>Pool<sp/>=<sp/>BxCore::Util::Alloc(MemSize);<sp/>//<sp/>동일한<sp/>조건</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Pool<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1aacaf23bed9737504410d309578cdc7a8" kindref="member">BxCore::Util::Alloc</ref>(MemSize);<sp/></highlight><highlight class="comment">//<sp/>동일한<sp/>조건</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool<sp/>(*LoggerOnType)(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>sysname,<sp/>uint<sp/>memorysizebykb,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>projname,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LoggerOnType<sp/>LoggerOnMethod<sp/>=<sp/>(LoggerOnType)<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member">BxCore::Library::Link</ref>(DLLHandle(),<sp/></highlight><highlight class="stringliteral">&quot;BxMemLoggerOn&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(LoggerOnMethod(</highlight><highlight class="stringliteral">&quot;BxMemoryFast&quot;</highlight><highlight class="normal">,<sp/>MemSize<sp/>/<sp/>1024,<sp/></highlight><highlight class="stringliteral">&quot;BxMemory&quot;</highlight><highlight class="normal">,<sp/>__FILE__))</highlight></codeline>
@@ -502,7 +513,7 @@
 <codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FreeMethod()<sp/>=<sp/>(FreeType)<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member">BxCore::Library::Link</ref>(DLLHandle(),<sp/></highlight><highlight class="stringliteral">&quot;BxFree&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//else<sp/>Pool<sp/>=<sp/>BxCore::Util::Free(Pool);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Pool<sp/>=<sp/><ref refid="namespace_bx_core_1_1_util_1a592c1dc0989b09fbaad862428b8d4d23" kindref="member">BxCore::Util::Free</ref>(Pool);</highlight></codeline>
 <codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="237"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(DLLHandle()<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
@@ -847,6 +858,6 @@
 <codeline lineno="579"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="580"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxMemory.hpp"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxMemory.hpp"/>
   </compounddef>
 </doxygen>

@@ -5,77 +5,84 @@
     <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
     <includedby refid="_bx_core_for_q_t5_8cpp" local="no">BxCoreForQT5.cpp</includedby>
     <includedby refid="_bx_core_for_q_t5_8hpp" local="no">BxCoreForQT5.hpp</includedby>
+    <includedby refid="_bx_core_for_s3_e_8cpp" local="no">BxCoreForS3E.cpp</includedby>
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <includedby refid="_bx_draw_8hpp" local="no">BxDraw.hpp</includedby>
     <incdepgraph>
-      <node id="226">
+      <node id="302">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="225">
+      <node id="301">
         <label>BxExpress.hpp</label>
         <link refid="BxExpress.hpp"/>
-        <childnode refid="226" relation="include">
+        <childnode refid="302" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="234">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="228" relation="include">
-        </childnode>
-      </node>
-      <node id="228">
-        <label>BxCoreForQT5.hpp</label>
-        <link refid="_bx_core_for_q_t5_8hpp_source"/>
-      </node>
-      <node id="235">
+      <node id="312">
         <label>BxPathFind.hpp</label>
         <link refid="_bx_path_find_8hpp_source"/>
       </node>
-      <node id="231">
+      <node id="307">
         <label>BxAnimate.hpp</label>
         <link refid="_bx_animate_8hpp_source"/>
       </node>
-      <node id="229">
+      <node id="305">
         <label>BxDraw.hpp</label>
         <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="230" relation="include">
+        <childnode refid="306" relation="include">
         </childnode>
-        <childnode refid="233" relation="include">
+        <childnode refid="309" relation="include">
         </childnode>
-        <childnode refid="235" relation="include">
+        <childnode refid="312" relation="include">
         </childnode>
-        <childnode refid="234" relation="include">
+        <childnode refid="310" relation="include">
         </childnode>
       </node>
-      <node id="232">
+      <node id="309">
+        <label>BxPanel.hpp</label>
+        <link refid="_bx_panel_8hpp_source"/>
+        <childnode refid="310" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
         <label>BxConsole.hpp</label>
         <link refid="_bx_console_8hpp_source"/>
       </node>
-      <node id="233">
-        <label>BxPanel.hpp</label>
-        <link refid="_bx_panel_8hpp_source"/>
-        <childnode refid="234" relation="include">
-        </childnode>
-      </node>
-      <node id="230">
+      <node id="306">
         <label>BxImage.hpp</label>
         <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="231" relation="include">
+        <childnode refid="307" relation="include">
         </childnode>
-        <childnode refid="232" relation="include">
+        <childnode refid="308" relation="include">
         </childnode>
-        <childnode refid="233" relation="include">
+        <childnode refid="309" relation="include">
         </childnode>
       </node>
-      <node id="227">
+      <node id="310">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>BxCoreForS3E.hpp</label>
+        <link refid="_bx_core_for_s3_e_8hpp_source"/>
+      </node>
+      <node id="304">
+        <label>BxCoreForQT5.hpp</label>
+        <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      </node>
+      <node id="303">
         <label>BxExpress.hpp</label>
         <link refid="BxExpress.hpp"/>
-        <childnode refid="228" relation="include">
+        <childnode refid="304" relation="include">
         </childnode>
-        <childnode refid="229" relation="include">
+        <childnode refid="305" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -97,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxExpress.hpp" line="4" column="9" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxExpress.hpp" bodystart="4" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxExpress.hpp" line="4" column="9" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxExpress.hpp" bodystart="4" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_express_8hpp_1ae402912f25257c568fe484c088384346" prot="public" static="no">
         <name>BxIntegerX</name>
@@ -109,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxExpress.hpp" line="5" column="9" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxExpress.hpp" bodystart="5" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxExpress.hpp" line="5" column="9" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxExpress.hpp" bodystart="5" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_express_8hpp_1a915820da0672b4dc79b74489cea4b8c7" prot="public" static="no">
         <name>BxFloat</name>
@@ -121,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxExpress.hpp" line="6" column="9" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxExpress.hpp" bodystart="6" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxExpress.hpp" line="6" column="9" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxExpress.hpp" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_express_8hpp_1ab20410305c53094bc7ad556aa6f12b95" prot="public" static="no">
         <name>BxFloatX</name>
@@ -133,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxExpress.hpp" line="7" column="9" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxExpress.hpp" bodystart="7" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxExpress.hpp" line="7" column="9" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxExpress.hpp" bodystart="7" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -423,6 +430,6 @@
 <codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/>Float<sp/><sp/><sp/>operator/(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>_Float&amp;<sp/>v1,<sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FloatX&amp;<sp/>v2<sp/><sp/>)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Float((fint)((v1.ValueF<sp/>*<sp/>(huge)<sp/>v2.GetInverseF())<sp/>&gt;&gt;<sp/>16),<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);}</highlight></codeline>
 <codeline lineno="282"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxExpress.hpp"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxExpress.hpp"/>
   </compounddef>
 </doxygen>

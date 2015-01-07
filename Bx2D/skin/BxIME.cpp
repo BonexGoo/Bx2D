@@ -1,7 +1,7 @@
 ﻿#include <BxScene.hpp>
 #include <BxPanel.hpp>
 
-FRAMEWORK_SCENE(int, "BxIME")
+FRAMEWORK_SCENE_HIDDEN(int, "BxIME")
 
 static int LastIndex;
 static BxPanel* Board;

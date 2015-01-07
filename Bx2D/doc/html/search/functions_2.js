@@ -6,7 +6,7 @@ var searchData=
   ['clearobjectall',['ClearObjectAll',['../class_bx_animate.html#af29a6641041d7c3dc33f24a817970e79',1,'BxAnimate']]],
   ['clip',['CLIP',['../namespace_bx_draw_global.html#aeec25401761d67115d55bff9619c3681',1,'BxDrawGlobal']]],
   ['clonewithalloc',['CloneWithAlloc',['../class_bx_string.html#aeef5ff61721b1df1629dbc6c4b39f367',1,'BxString']]],
-  ['close',['Close',['../namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b',1,'BxCore::File::Close()'],['../namespace_bx_core_1_1_font.html#a1ff1d4ae902591e6cd8ff3c11dd0218e',1,'BxCore::Font::Close()'],['../namespace_bx_core_1_1_library.html#a4a4735c133e1cf5689553b237901e02a',1,'BxCore::Library::Close()']]],
+  ['close',['Close',['../namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b',1,'BxCore::File::Close()'],['../namespace_bx_core_1_1_font.html#a774eba3b56f296434e719f06842743b1',1,'BxCore::Font::Close()'],['../namespace_bx_core_1_1_library.html#a4a4735c133e1cf5689553b237901e02a',1,'BxCore::Library::Close()']]],
   ['closemutex',['CloseMutex',['../namespace_bx_core_1_1_thread.html#a01f908e2c4137aaf47cbd5adf675e1b7',1,'BxCore::Thread']]],
   ['color',['COLOR',['../namespace_bx_draw_global.html#aa77b8b6570afce4266316a45e5e552ee',1,'BxDrawGlobal::COLOR(byte r, byte g, byte b, uint rate=100)'],['../namespace_bx_draw_global.html#a1106b5aedf54a1f4c833e8b579d54280',1,'BxDrawGlobal::COLOR(color_x888 rgb, uint rate=100)']]],
   ['color565tonativedst',['Color565ToNativeDst',['../namespace_bx_draw_global.html#acdda0ad3e9387274a1fbc9aa6210b757',1,'BxDrawGlobal']]],
@@ -31,5 +31,9 @@ var searchData=
   ['create',['Create',['../class_bx_image.html#a32398885ee66cdbf4614230718ddebea',1,'BxImage::Create(const int Width, const int Height, const int HotspotX, const int HotspotY)'],['../class_bx_image.html#a4a0102f3867f4bc58a5dcf8706f96f3a',1,'BxImage::Create(BxImage &amp;Src, const int X, const int Y, const int Width, const int Height, hotspot Hotspot=KEEP)'],['../namespace_bx_core_1_1_sound.html#afdb4f5ce1bf8fd5d6fe945ccef3d5309',1,'BxCore::Sound::Create()'],['../namespace_bx_core_1_1_socket.html#a85378908a5e811508c7a9b8a96dfa58d',1,'BxCore::Socket::Create()'],['../namespace_bx_core_1_1_thread.html#aaedfd3f40c87744a20478d8a9f08e2ea',1,'BxCore::Thread::Create()']]],
   ['createbmp',['CreateBMP',['../namespace_bx_core_1_1_add_on.html#a54a0230697a6b8d81a01d05f03c2b46c',1,'BxCore::AddOn']]],
   ['createttf',['CreateTTF',['../namespace_bx_core_1_1_add_on.html#ac79df3b34b02bcb690f0d9fae8aace9a',1,'BxCore::AddOn']]],
-  ['createzip',['CreateZIP',['../namespace_bx_core_1_1_add_on.html#a4f0a1d827096b16626f6b0a89ace07f9',1,'BxCore::AddOn']]]
+  ['createzip',['CreateZIP',['../namespace_bx_core_1_1_add_on.html#a4f0a1d827096b16626f6b0a89ace07f9',1,'BxCore::AddOn']]],
+  ['currentcenter',['CurrentCenter',['../class_bx_draw.html#ad3ef8d16fd625afad7f5a576f074b3b3',1,'BxDraw']]],
+  ['currentrect',['CurrentRect',['../class_bx_draw.html#a39a8030d98b2d8581fd6a34a87d97ba6',1,'BxDraw']]],
+  ['currentx',['CurrentX',['../class_bx_draw.html#ac72526273fdbee147697b0cad71af9af',1,'BxDraw']]],
+  ['currenty',['CurrentY',['../class_bx_draw.html#a2a66685703eec3b6a3ab6e45c70ec093',1,'BxDraw']]]
 ];

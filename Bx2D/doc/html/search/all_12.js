@@ -13,7 +13,7 @@ var searchData=
   ['setflow',['SetFlow',['../class_bx_scene.html#a9cabfbf63027948ca118bf54646290d8',1,'BxScene']]],
   ['sethotspot',['SetHotspot',['../class_bx_image.html#ab034b526d1f70cd2da4f2636821069ba',1,'BxImage::SetHotspot(const int HotspotX, const int HotspotY)'],['../class_bx_image.html#a4592c5ed9ec637ae7553f37a3361b827',1,'BxImage::SetHotspot(hotspot Hotspot)']]],
   ['setjustify',['SetJustify',['../namespace_bx_core_1_1_font.html#a4eb0c91806ec25028e4e39ca5871229c',1,'BxCore::Font']]],
-  ['setmarginmode',['SetMarginMode',['../namespace_bx_core_1_1_surface.html#ab700ddbf4f1db9a5e790f6558e8a4c3a',1,'BxCore::Surface']]],
+  ['setmarginmode',['SetMarginMode',['../namespace_bx_core_1_1_surface.html#a301a412c0a71aeca77040391c5417798',1,'BxCore::Surface']]],
   ['setmusicvolume',['SetMusicVolume',['../namespace_bx_core_1_1_sound.html#a7ad143b76624bcfeccda99f889eeb009',1,'BxCore::Sound']]],
   ['setoption',['SetOption',['../namespace_bx_core_1_1_font.html#a8cb6ffc7818a38863f2f0a165d268610',1,'BxCore::Font']]],
   ['setrandom',['SetRandom',['../class_bx_util.html#a0940d3fda4c6f5a425e2043708f7145f',1,'BxUtil']]],

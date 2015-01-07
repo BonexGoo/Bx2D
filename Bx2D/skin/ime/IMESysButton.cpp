@@ -64,8 +64,7 @@ void OnPaint(rect& r, int x1, int y1, int x2, int y2)
 	BxTRY(Draw, CLIP(r = XYXY(x1, y1, x2, y2)))
 	{
 		m--.UpdateRect();
-		Draw.Rectangle9P(&s--.img[m--.flag("IsClicked")],
-			XYWH(0, 0, Draw.Width(), Draw.Height()));
+		Draw.Rectangle9P(&s--.img[m--.flag("IsClicked")], Draw.CurrentRect());
 		Draw.Area(Draw.Width() / 2, Draw.Height() / 2, FORM(&m--.img[m--.flag("IsBrighted")]));
 	}
 }

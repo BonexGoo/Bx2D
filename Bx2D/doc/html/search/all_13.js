@@ -10,8 +10,6 @@ var searchData=
   ['toint',['ToInt',['../class_bx_web_content_1_1_j_s_o_n.html#a503fa4320ef7128508fc5bb1915aa2c7',1,'BxWebContent::JSON']]],
   ['tostr',['ToStr',['../class_bx_web_content_1_1_j_s_o_n.html#abe0168c166a0bd46eaa659729586516d',1,'BxWebContent::JSON']]],
   ['trace',['Trace',['../namespace_bx_core_1_1_system.html#add31af8264dd786fcc5cf2e045877289',1,'BxCore::System']]],
-  ['translatex',['TranslateX',['../class_bx_draw.html#ad633ce6baf25d6c93dde6669d4093a3e',1,'BxDraw']]],
-  ['translatey',['TranslateY',['../class_bx_draw.html#a21597dea9cb25b209963d30307b31baf',1,'BxDraw']]],
   ['trimblank',['TrimBlank',['../class_bx_string.html#ad9729749a9548aaa226d45a930228594',1,'BxString']]],
   ['trimquote',['TrimQuote',['../class_bx_string.html#ae45a4472b463773fb1c8379a88c30d48',1,'BxString']]],
   ['ttftobmp',['TTFToBMP',['../namespace_bx_core_1_1_add_on.html#a140dbe83fcb6cb5236a520e47fc51f9a',1,'BxCore::AddOn']]],

@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.ico"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Bx2D
-   &#160;<span id="projectnumber">4.0.1</span>
+   &#160;<span id="projectnumber">4.0.2</span>
    </div>
   </td>
  </tr>
@@ -239,11 +239,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordflow">if</span>(IsInit) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            IsInit = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">            #if defined(WIN32) &amp;&amp; defined(__BX_DEBUG)</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                DLLHandle() = <a class="code" href="namespace_bx_core_1_1_library.html#a3bf05cb509f5a0648977e48c445cd636">BxCore::Library::Open</a>(<span class="stringliteral">&quot;../../Tiger2D/tool/CodeLogger2.dll&quot;</span>);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                DLLHandle() = <a class="code" href="namespace_bx_core_1_1_library.html#a3bf05cb509f5a0648977e48c445cd636">BxCore::Library::Open</a>(<span class="stringliteral">&quot;../../Bx2D/tool/CodeLogger2.dll&quot;</span>);</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <span class="keywordflow">if</span>(DLLHandle())</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                {</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">int</span> MemSize = <a class="code" href="namespace_bx_core_1_1_system.html#a7e6b5e614e1e3ed23733fb1f21f4d7dd">BxCore::System::GetPlatformConfigNumber</a>(<span class="stringliteral">&quot;MemSizeBx&quot;</span>);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                    <span class="comment">//void* Pool = BxCore::Util::Alloc(MemSize); // 동일한 조건</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                    <span class="keywordtype">void</span>* Pool = <a class="code" href="namespace_bx_core_1_1_util.html#aacaf23bed9737504410d309578cdc7a8">BxCore::Util::Alloc</a>(MemSize); <span class="comment">// 동일한 조건</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                    <span class="keyword">typedef</span> bool (*LoggerOnType)(<span class="keywordtype">string</span> sysname, uint memorysizebykb, <span class="keywordtype">string</span> projname, <span class="keywordtype">string</span> filename);</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                    LoggerOnType LoggerOnMethod = (LoggerOnType) <a class="code" href="namespace_bx_core_1_1_library.html#ae8e1e890037b85ad75aed8a10b403f70">BxCore::Library::Link</a>(DLLHandle(), <span class="stringliteral">&quot;BxMemLoggerOn&quot;</span>);</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                    <span class="keywordflow">if</span>(LoggerOnMethod(<span class="stringliteral">&quot;BxMemoryFast&quot;</span>, MemSize / 1024, <span class="stringliteral">&quot;BxMemory&quot;</span>, __FILE__))</div>
@@ -253,7 +253,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                        FreeMethod() = (FreeType) <a class="code" href="namespace_bx_core_1_1_library.html#ae8e1e890037b85ad75aed8a10b403f70">BxCore::Library::Link</a>(DLLHandle(), <span class="stringliteral">&quot;BxFree&quot;</span>);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                    }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    <span class="comment">//else Pool = BxCore::Util::Free(Pool);</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    <span class="keywordflow">else</span> Pool = <a class="code" href="namespace_bx_core_1_1_util.html#a592c1dc0989b09fbaad862428b8d4d23">BxCore::Util::Free</a>(Pool);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                }</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">            #endif</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordflow">if</span>(DLLHandle() != <span class="keyword">nullptr</span>)</div>
@@ -613,7 +613,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 5 2015 20:33:08 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 7 2015 15:00:29 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

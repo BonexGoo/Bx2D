@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="298" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="298" bodyend="298"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="298" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="298" bodyend="298"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a4ba075e59a125b5a9e2cc09f120759fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -41,7 +41,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="304" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="304" bodyend="304"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="304" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="304" bodyend="304"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a89b7e3b70310a99d944e60748a9b9f2f" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -66,7 +66,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="310" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="310" bodyend="310"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="310" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="310" bodyend="310"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a819ce62aca47966ebea31617d4b7d070" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -91,7 +91,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="316" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="316" bodyend="316"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="316" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="316" bodyend="316"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a1c695c273e1929ba33dd20a5bf769382" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -116,7 +116,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="322" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="322" bodyend="322"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="322" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="322" bodyend="322"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1ad4ecde2d474a277c2cbef1d3491d30af" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -152,7 +152,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="329" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="329" bodyend="330"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="329" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="329" bodyend="330"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a6bce07db311243e6f927e050381bc419" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="335" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="335" bodyend="339"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="335" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="335" bodyend="339"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1aa438d5974c167a3ed314777237575bb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -178,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="345" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="345" bodyend="350"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="345" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="345" bodyend="350"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1ab836b089f90c7851a78ede51321eac74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -192,7 +192,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="356" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="356" bodyend="359"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="356" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="356" bodyend="359"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a47769c17c13951d4013098f05389ee37" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>char &amp;</type>
@@ -218,7 +218,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="366" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="366" bodyend="372"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="366" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="366" bodyend="372"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1ae976132aefcc99a6842a9de18c48d67a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -232,7 +232,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="378" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="378" bodyend="381"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="378" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="378" bodyend="381"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a19db3a70e9304eb5e883a6517500f348" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -246,7 +246,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="387" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="387" bodyend="392"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="387" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="387" bodyend="392"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1abbb8a825bcdda4cb7bd42e40a337d818" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
@@ -272,7 +272,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="399" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="399" bodyend="404"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="399" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="399" bodyend="404"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a9bb15b0c396d74af6c31420d1fa8a072" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
@@ -298,7 +298,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="411" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="411" bodyend="418"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="411" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="411" bodyend="418"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a0f927cc312350c3c8305cb711bab413b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
@@ -324,7 +324,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="425" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="425" bodyend="432"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="425" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="425" bodyend="432"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1aa95207728e64e496d10b395027392f77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -350,7 +350,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="439" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="439" bodyend="444"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="439" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="439" bodyend="444"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1af32e1b19afa666c6d54be622338dc461" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -376,7 +376,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="451" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="451" bodyend="457"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="451" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="451" bodyend="457"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a739d7593d4eb23abc8ec9fb77f1cf6ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -402,7 +402,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="464" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="464" bodyend="472"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="464" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="464" bodyend="472"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1ad12e9a3cf27f763fb7df61be5d837eaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -428,7 +428,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="479" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="479" bodyend="487"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="479" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="479" bodyend="487"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a486a6d77c846171e371da6ac19b41d7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -454,7 +454,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="494" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="494" bodyend="499"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="494" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="494" bodyend="499"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a06f7967c1c2fa3f7fc8a4333a97a185b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -480,7 +480,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="506" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="506" bodyend="513"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="506" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="506" bodyend="513"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a86a6f968685abb850fb558d3569c56a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -506,7 +506,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="520" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="520" bodyend="528"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="520" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="520" bodyend="528"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1aa183dba47eb49b94516aa96bfb856aaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -532,7 +532,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="535" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="535" bodyend="542"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="535" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="535" bodyend="542"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a68f1931fd6a64a27304be6f1a45e08c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -569,7 +569,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="549" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="549" bodyend="557"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="549" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="549" bodyend="557"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1ad9729749a9548aaa226d45a930228594" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -584,7 +584,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="564" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="564" bodyend="574"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="564" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="564" bodyend="574"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1ae45a4472b463773fb1c8379a88c30d48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -599,7 +599,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="581" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="581" bodyend="591"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="581" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="581" bodyend="591"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a662659cfa6c9919e979989475eef455f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
@@ -626,7 +626,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="599" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="599" bodyend="606"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="599" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="599" bodyend="606"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1af5b1fc61daec00d218359b63ae882bf8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
@@ -653,7 +653,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="614" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="614" bodyend="622"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="614" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="614" bodyend="622"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1acad22d7718d272cc1ee89716639b0ca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -680,7 +680,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="630" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="630" bodyend="637"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="630" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="630" bodyend="637"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a4b69e4d1bc7da67d55680d069b0b72ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref> &amp;</type>
@@ -707,7 +707,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="645" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="645" bodyend="652"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="645" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="645" bodyend="652"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a62950b02c18b526b8b713245f132e398" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -734,7 +734,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="660" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="660" bodyend="664"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="660" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="660" bodyend="664"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a76878ecdaacc377608ed58a2d517dbfe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -749,7 +749,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="671" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="671" bodyend="678"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="671" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="671" bodyend="678"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1aafeae4b637d3adf019f9bd9a8a89917e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -775,7 +775,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="685" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="685" bodyend="692"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="685" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="685" bodyend="692"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1adb768c0c24546e11a7ef88f86ec9c53b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -801,7 +801,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="699" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="699" bodyend="706"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="699" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="699" bodyend="706"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1aeef5ff61721b1df1629dbc6c4b39f367" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>string_rw</type>
@@ -815,7 +815,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="712" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="712" bodyend="715"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="712" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="712" bodyend="715"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a27909ea496f8e3791ed7232036e70c65" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>compare</type>
@@ -841,7 +841,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="722" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="722" bodyend="731"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="722" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="722" bodyend="731"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a0175be4966575f46b9a051636f1ac399" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>compare</type>
@@ -867,7 +867,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="738" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="738" bodyend="747"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="738" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="738" bodyend="747"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a1b3bf6e7cb1eeeffd7a2d046ad0bce09" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>compare</type>
@@ -893,7 +893,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="754" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="754" bodyend="767"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="754" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="754" bodyend="767"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a94884d76667ef9c23af072dcde07ba67" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>compare</type>
@@ -919,7 +919,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="774" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="774" bodyend="787"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="774" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="774" bodyend="787"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1abf4bf9f4f289c83596dcb870b1715f5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -956,7 +956,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="794" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="794" bodyend="801"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="794" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="794" bodyend="801"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a854946ab5a5bf85872bc281ac7dfa24f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func int</type>
@@ -993,7 +993,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="809" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="809" bodyend="840"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="809" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="809" bodyend="840"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a403472e1b5d831c700304e6bee5f461c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -1029,7 +1029,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="847" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="847" bodyend="872"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="847" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="847" bodyend="872"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1afb3b6ca22c79fb98f2aa300b9cf939cf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
@@ -1043,7 +1043,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="878" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="878" bodyend="881"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="878" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="878" bodyend="881"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a35b102ea2640d73c151790d3acc24438" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
@@ -1057,7 +1057,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="887" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="887" bodyend="891"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="887" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="887" bodyend="891"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1abb9dbf8d9f3f79ff7c2f2f39c7e34417" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
@@ -1071,7 +1071,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="897" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="897" bodyend="901"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="897" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="897" bodyend="901"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1a91f2b08bcf6746e9d730598ae0134594" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_string" kindref="compound">BxString</ref></type>
@@ -1085,7 +1085,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="907" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="907" bodyend="912"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="907" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="907" bodyend="912"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_string_1afdb5c11ac9fedea47f19d8d03a48ccaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1110,14 +1110,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="918" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="918" bodyend="924"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="918" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="918" bodyend="924"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>스트링 관리 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" line="8" column="1" bodyfile="C:/Users/ONEZAY/Desktop/bonex_backup_20141224/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp" bodystart="7" bodyend="953"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" line="8" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxString.hpp" bodystart="7" bodyend="953"/>
     <listofallmembers>
       <member refid="class_bx_string_1a4f6530249875ce5e8975039673be1ea4" prot="public" virt="non-virtual"><scope>BxString</scope><name>BxString</name></member>
       <member refid="class_bx_string_1a4ba075e59a125b5a9e2cc09f120759fb" prot="public" virt="non-virtual"><scope>BxString</scope><name>BxString</name></member>

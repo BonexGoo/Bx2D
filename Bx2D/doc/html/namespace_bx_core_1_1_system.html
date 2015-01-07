@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.ico"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Bx2D
-   &#160;<span id="projectnumber">4.0.1</span>
+   &#160;<span id="projectnumber">4.0.2</span>
    </div>
   </td>
  </tr>
@@ -166,9 +166,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <tr class="memitem:a205224e0b9c11290043936005f07b07d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#a205224e0b9c11290043936005f07b07d">IsEnableFontDebug</a> ()</td></tr>
 <tr class="memdesc:a205224e0b9c11290043936005f07b07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">폰트디버그기능 활성화여부  <a href="#a205224e0b9c11290043936005f07b07d">More...</a><br /></td></tr>
 <tr class="separator:a205224e0b9c11290043936005f07b07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2720511c7c99b2d22757eccffaafbbd6"><td class="memItemLeft" align="right" valign="top">assertresult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#a2720511c7c99b2d22757eccffaafbbd6">Break</a> (string name, string query __DEBUG_PRM__)</td></tr>
-<tr class="memdesc:a2720511c7c99b2d22757eccffaafbbd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">실행중지(Macro함수인 BxASSERT로 사용권장)  <a href="#a2720511c7c99b2d22757eccffaafbbd6">More...</a><br /></td></tr>
-<tr class="separator:a2720511c7c99b2d22757eccffaafbbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1378bb03a6217f9098f0386b4668f2e"><td class="memItemLeft" align="right" valign="top">assertresult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#af1378bb03a6217f9098f0386b4668f2e">Break</a> (string name, string query __DEBUG_PRM__)</td></tr>
+<tr class="memdesc:af1378bb03a6217f9098f0386b4668f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">실행중지(Macro함수인 BxASSERT로 사용권장)  <a href="#af1378bb03a6217f9098f0386b4668f2e">More...</a><br /></td></tr>
+<tr class="separator:af1378bb03a6217f9098f0386b4668f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add31af8264dd786fcc5cf2e045877289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#add31af8264dd786fcc5cf2e045877289">Trace</a> (string map, const <a class="el" href="class_bx_argument.html">BxArgument</a> &amp;args=<a class="el" href="class_bx_argument.html#ab9054620e6687cb4e0dfff9c4c54c5c1">BxArgument::zero</a>())</td></tr>
 <tr class="memdesc:add31af8264dd786fcc5cf2e045877289"><td class="mdescLeft">&#160;</td><td class="mdescRight">출력창에 스트링기록(Macro함수인 BxTRACE로 사용권장)  <a href="#add31af8264dd786fcc5cf2e045877289">More...</a><br /></td></tr>
 <tr class="separator:add31af8264dd786fcc5cf2e045877289"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,6 +235,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <tr class="memitem:a1e4876a7dd4f73cdff4dd4fb2a9999ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e4876a7dd4f73cdff4dd4fb2a9999ce"></a>
 local_data QSemaphore&#160;</td><td class="memItemRight" valign="bottom"><b>QuitFlag</b> (1)</td></tr>
 <tr class="separator:a1e4876a7dd4f73cdff4dd4fb2a9999ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510c9d39d960f5c707c117e9a62937fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a510c9d39d960f5c707c117e9a62937fc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeTouchEvent</b> (systouchtype type, int x, int y)</td></tr>
+<tr class="separator:a510c9d39d960f5c707c117e9a62937fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>System파트 </p>
@@ -355,12 +358,12 @@ local_data QSemaphore&#160;</td><td class="memItemRight" valign="bottom"><b>Quit
 
 </div>
 </div>
-<a class="anchor" id="a2720511c7c99b2d22757eccffaafbbd6"></a>
+<a class="anchor" id="af1378bb03a6217f9098f0386b4668f2e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">assertresult BxCore::System::Break </td>
+          <td class="memname">bool BxCore::System::Break </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -1385,7 +1388,7 @@ local_data QSemaphore&#160;</td><td class="memItemRight" valign="bottom"><b>Quit
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 5 2015 20:33:08 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 7 2015 15:00:31 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

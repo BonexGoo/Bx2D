@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{5c61e721-a50e-4103-9859-c4c48d6b4d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bx2D">
+      <UniqueIdentifier>{b9ec81c3-d60a-4964-80db-fcbf75b83792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bx2D\addon">
+      <UniqueIdentifier>{84ca4c00-4854-43a4-a96b-dad526593f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bx2D\core">
+      <UniqueIdentifier>{cd0c3695-abad-4e20-82e1-6f1ba42b5e25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bx2D\lib">
+      <UniqueIdentifier>{8be0a710-6379-423b-955e-dd798bf2de3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{8df4f49a-cf96-4d68-9242-b4ea3b50067d}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{eeae6519-8247-47e1-bf39-fd78381f8294}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{dae8e128-f5f3-49eb-8468-268892f88190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\config">
+      <UniqueIdentifier>{319912cc-1718-4b1d-98c1-78d6fad7bdc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bx2D\skin">
+      <UniqueIdentifier>{83e2fe3b-2c9d-4975-8355-7e3e55d315cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bx2D\skin\ime">
+      <UniqueIdentifier>{ef3aefdb-7810-4ca6-b5ce-d4d7de40e6b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Bx2D\addon\BxAddOn_GIF.cpp">
+      <Filter>Bx2D\addon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\addon\BxAddOn_HQX.cpp">
+      <Filter>Bx2D\addon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\addon\BxAddOn_JPG.cpp">
+      <Filter>Bx2D\addon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\addon\BxAddOn_MD5.cpp">
+      <Filter>Bx2D\addon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\addon\BxAddOn_TTF.cpp">
+      <Filter>Bx2D\addon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\addon\BxAddOn_ZIP.cpp">
+      <Filter>Bx2D\addon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\core\BxCoreForQT5.cpp">
+      <Filter>Bx2D\core</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BxCoreForQT5.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BxCoreForQT5.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\core\BxCoreImpl.cpp">
+      <Filter>Bx2D\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\ime\IMEBoard.cpp">
+      <Filter>Bx2D\skin\ime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\ime\IMEButton.cpp">
+      <Filter>Bx2D\skin\ime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\ime\IMEEdit.cpp">
+      <Filter>Bx2D\skin\ime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\ime\IMESysButton.cpp">
+      <Filter>Bx2D\skin\ime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\ime\IMETip.cpp">
+      <Filter>Bx2D\skin\ime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\BxIME.cpp">
+      <Filter>Bx2D\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\BxSimulator.cpp">
+      <Filter>Bx2D\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\BxStartPage.cpp">
+      <Filter>Bx2D\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\HelloWorld.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneSwap_A.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneSwap_B.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneSwap_C.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneSwap_D.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SceneSwap_E.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Bx2D\core\BxCore.hpp">
+      <Filter>Bx2D\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\core\BxCoreImpl.hpp">
+      <Filter>Bx2D\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxAnimate.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxArgument.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxAutoBuffer.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxConsole.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxDraw.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxDynamic.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxExpress.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxImage.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxKeyword.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxMemory.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxPathFind.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxPool.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxScene.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxSingleton.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxString.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxTween.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxType.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxUtil.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxVar.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxVarMap.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxVarVector.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxWebContent.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxXml.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxPanel.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\common\main.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Bx2D\core\BxCoreForQT5.hpp">
+      <Filter>Bx2D\core</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resource\assets\config\default.key">
+      <Filter>assets\config</Filter>
+    </None>
+  </ItemGroup>
+</Project>

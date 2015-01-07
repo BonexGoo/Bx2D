@@ -190,14 +190,6 @@ namespace BxCore
 			// 전역객체 해제
 			BxSingleton::UnbindAll(true);
 
-			// 메모리해제확인
-            while(BxMemory::DoMemLogger())
-			{
-				void* Test = BxAlloc(1); // 메모리해제확인중...
-				BxFree(Test); // 메모리해제확인중...
-				BxCore::System::Sleep(10);
-            }
-
 			// 풀링객체 해제
 			BxPoolGlobal::UnbindAll();
 			// 스레드저장소 해제

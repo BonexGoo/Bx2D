@@ -25,7 +25,7 @@ public:
 	}
 };
 
-FRAMEWORK_SCENE(BxStartPage, "BxStartPage")
+FRAMEWORK_SCENE_HIDDEN(BxStartPage, "BxStartPage")
 
 syseventresult OnEvent(BxStartPage& This, const sysevent& Event)
 {
@@ -78,21 +78,20 @@ void OnRender(BxStartPage& This, BxDraw& Draw)
 	for(int y = 0, i = 0; i < iend; ++y)
 	for(int x = 0; x < xend && i < iend; ++x, ++i)
 	{
-		if(iScene->Next) iScene = iScene->Next;
-		if(StrSameCount(iScene->Name, "Bx") == 2) --x;
+		if((iScene = (iScene->Next)? iScene->Next : iScene)->Hidden) --x;
 		else BxTRY(Draw, CLIP(XYWH(Gap + (FrameW + Gap) * x, Gap + (FrameH + Gap) * y, FrameW, FrameH)))
 		{
 			// 스크린샷
 			BxTRY(Draw, CLIP(XYXY(3, 23, Draw.Width() - 3, Draw.Height() - 17)))
-				Draw.Rectangle(FILL, XYWH(0, 0, Draw.Width(), Draw.Height()), COLOR(128, 128, 128));
+				Draw.Rectangle(FILL, Draw.CurrentRect(), COLOR(128, 128, 128));
 			// 프레임, 제목, 빌드날짜
 			Draw.Area(0, 0, FORM(&This.WinFrameImage));
 			BxTRY(Draw, CLIP(XYXY(3, 0, Draw.Width() - 3, 23)))
-				Draw.TextByRect(This.WinFont, iScene->Name, XYWH(0, 0, Draw.Width(), Draw.Height()),
+				Draw.TextByRect(This.WinFont, iScene->Name, Draw.CurrentRect(),
 					textalign_center_middle, (StrCmp(iScene->Name, This.StartPage) == same)?
 					COLOR(255, 128, 128) : COLOR(255, 255, 255));
 			BxTRY(Draw, CLIP(XYXY(14, Draw.Height() - 17, Draw.Width() - 14, Draw.Height())))
-				Draw.TextByRect(This.WinFont, iScene->BuildDate, XYWH(0, 0, Draw.Width(), Draw.Height()),
+				Draw.TextByRect(This.WinFont, iScene->BuildDate, Draw.CurrentRect(),
 					textalign_center_middle, COLOR(255, 255, 255));
 			// 플레이버튼
 			BxTRY(Draw, CLIP(XYXY(3, 23, Draw.Width() - 3, Draw.Height() - 17)), iScene->Name)

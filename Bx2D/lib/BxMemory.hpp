@@ -218,11 +218,11 @@
 			if(IsInit) return;
 			IsInit = true;
 			#if defined(WIN32) && defined(__BX_DEBUG)
-				DLLHandle() = BxCore::Library::Open("../../Tiger2D/tool/CodeLogger2.dll");
+				DLLHandle() = BxCore::Library::Open("../../Bx2D/tool/CodeLogger2.dll");
 				if(DLLHandle())
 				{
 					const int MemSize = BxCore::System::GetPlatformConfigNumber("MemSizeBx");
-					//void* Pool = BxCore::Util::Alloc(MemSize); // 동일한 조건
+					void* Pool = BxCore::Util::Alloc(MemSize); // 동일한 조건
 					typedef bool (*LoggerOnType)(string sysname, uint memorysizebykb, string projname, string filename);
 					LoggerOnType LoggerOnMethod = (LoggerOnType) BxCore::Library::Link(DLLHandle(), "BxMemLoggerOn");
 					if(LoggerOnMethod("BxMemoryFast", MemSize / 1024, "BxMemory", __FILE__))
@@ -232,7 +232,7 @@
 						FreeMethod() = (FreeType) BxCore::Library::Link(DLLHandle(), "BxFree");
 						return;
 					}
-					//else Pool = BxCore::Util::Free(Pool);
+					else Pool = BxCore::Util::Free(Pool);
 				}
 			#endif
 			if(DLLHandle() != nullptr)

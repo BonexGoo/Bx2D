@@ -319,10 +319,12 @@
     <member refid="class_bx_draw_1a6e7cd38d7d7acac6b1ebc32687f18939" kind="function"><name>IsActivated</name></member>
     <member refid="class_bx_draw_1a8428f4d8b7e8afcd637a75ca20a0d37c" kind="function"><name>BxDraw</name></member>
     <member refid="class_bx_draw_1a76b4a684ffb3790d3f48795a5f6fb556" kind="function"><name>~BxDraw</name></member>
-    <member refid="class_bx_draw_1ad633ce6baf25d6c93dde6669d4093a3e" kind="function"><name>TranslateX</name></member>
-    <member refid="class_bx_draw_1a21597dea9cb25b209963d30307b31baf" kind="function"><name>TranslateY</name></member>
-    <member refid="class_bx_draw_1a629c65ebda9be9d1dd7c507a30557eb8" kind="function"><name>Width</name></member>
-    <member refid="class_bx_draw_1a378f6d7988a5a667fd3e720c25e6a297" kind="function"><name>Height</name></member>
+    <member refid="class_bx_draw_1ac72526273fdbee147697b0cad71af9af" kind="function"><name>CurrentX</name></member>
+    <member refid="class_bx_draw_1a2a66685703eec3b6a3ab6e45c70ec093" kind="function"><name>CurrentY</name></member>
+    <member refid="class_bx_draw_1a39a8030d98b2d8581fd6a34a87d97ba6" kind="function"><name>CurrentRect</name></member>
+    <member refid="class_bx_draw_1ad3ef8d16fd625afad7f5a576f074b3b3" kind="function"><name>CurrentCenter</name></member>
+    <member refid="class_bx_draw_1a938f6c87427471644b6ade7aab1b3e0d" kind="function"><name>Width</name></member>
+    <member refid="class_bx_draw_1ab49bed8f8e7369094fb4d6fd1b55c4e5" kind="function"><name>Height</name></member>
     <member refid="class_bx_draw_1ad082728129e5106507963d63f4a622e8" kind="function"><name>GetBackBufferPtr</name></member>
     <member refid="class_bx_draw_1a0caa56d5fcda446e944fa1ffd397bd10" kind="function"><name>GetBackBufferPitch</name></member>
     <member refid="class_bx_draw_1a58dd427c33d344d7c302338fbbdc9491" kind="function"><name>Area</name></member>
@@ -1610,10 +1612,11 @@
     <member refid="namespace_bx_core_1_1_file_1ae5f9334c76be6620f62e255f4415bbb6" kind="function"><name>SearchFiles</name></member>
     <member refid="namespace_bx_core_1_1_file_1a6e174bc48590d33a8389aa627ead540a" kind="function"><name>RemoveFile</name></member>
     <member refid="namespace_bx_core_1_1_file_1aa619ac618c718c7497eb786a68dd7aba" kind="function"><name>RenameFile</name></member>
+    <member refid="namespace_bx_core_1_1_file_1a81b8aee658da8a26de291fcc41d8fb78" kind="function"><name>SearchFiles</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_font" kind="namespace"><name>BxCore::Font</name>
     <member refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kind="function"><name>Open</name></member>
-    <member refid="namespace_bx_core_1_1_font_1a1ff1d4ae902591e6cd8ff3c11dd0218e" kind="function"><name>Close</name></member>
+    <member refid="namespace_bx_core_1_1_font_1a774eba3b56f296434e719f06842743b1" kind="function"><name>Close</name></member>
     <member refid="namespace_bx_core_1_1_font_1a3eec7800226444ec3c5429d3694adc53" kind="function"><name>Default</name></member>
     <member refid="namespace_bx_core_1_1_font_1a7957798859cbadf9c6f09286c9ff33b3" kind="function"><name>NickOpen</name></member>
     <member refid="namespace_bx_core_1_1_font_1a9eafc9510f244a1fc3f07a218f6e6e20" kind="function"><name>NickOpenByBuffer</name></member>
@@ -1631,6 +1634,13 @@
     <member refid="namespace_bx_core_1_1_font_1ae6cb1f1eaa2bdc2171820f49a8b95aa5" kind="function"><name>GetLengthByLetter</name></member>
     <member refid="namespace_bx_core_1_1_font_1aceefbd7b0dc2522d2026010c532cea4d" kind="function"><name>DrawRequest</name></member>
     <member refid="namespace_bx_core_1_1_font_1a9a581fddb1fc4e67b149cefbcc4b24dd" kind="function"><name>RequestFlush</name></member>
+    <member refid="namespace_bx_core_1_1_font_1a18f0128d323c6ff668c54fecd747ae4a" kind="function"><name>Open</name></member>
+    <member refid="namespace_bx_core_1_1_font_1a27f298732420ac4510406c345af2e3cf" kind="function"><name>Open</name></member>
+    <member refid="namespace_bx_core_1_1_font_1a42e36e9ec26a01aff7ecb46fbb04a3fb" kind="function"><name>SetEncoding</name></member>
+    <member refid="namespace_bx_core_1_1_font_1ae60240526e2359e3d127719208ac85cd" kind="function"><name>SetSort</name></member>
+    <member refid="namespace_bx_core_1_1_font_1a07ef06bae8c115ab918ccec5b2a7bc8e" kind="function"><name>SetStyle</name></member>
+    <member refid="namespace_bx_core_1_1_font_1a20b7cb622a1e37c0115e50460f8f9ebd" kind="function"><name>GetSize</name></member>
+    <member refid="namespace_bx_core_1_1_font_1ae671877d1add9a74b9020385942e948f" kind="function"><name>Draw</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_library" kind="namespace"><name>BxCore::Library</name>
     <member refid="namespace_bx_core_1_1_library_1a3bf05cb509f5a0648977e48c445cd636" kind="function"><name>Open</name></member>
@@ -1716,7 +1726,8 @@
     <member refid="namespace_bx_core_1_1_surface_1ac12a46758c8b9837608938cbbed95365" kind="function"><name>GetHeight</name></member>
     <member refid="namespace_bx_core_1_1_surface_1add1206ac58b30b117600c186daca0973" kind="function"><name>GetWidthHW</name></member>
     <member refid="namespace_bx_core_1_1_surface_1aa396df855a2d8c80089340c5542e0a52" kind="function"><name>GetHeightHW</name></member>
-    <member refid="namespace_bx_core_1_1_surface_1ab700ddbf4f1db9a5e790f6558e8a4c3a" kind="function"><name>SetMarginMode</name></member>
+    <member refid="namespace_bx_core_1_1_surface_1a301a412c0a71aeca77040391c5417798" kind="function"><name>SetMarginMode</name></member>
+    <member refid="namespace_bx_core_1_1_surface_1a403b067f7bae56e4ac2c57490bf5a1e6" kind="function"><name>_MarginEnable</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_system" kind="namespace"><name>BxCore::System</name>
     <member refid="namespace_bx_core_1_1_system_1ab2e59628389afb803d3f45060383d1b6" kind="function"><name>IsQuit</name></member>
@@ -1741,7 +1752,7 @@
     <member refid="namespace_bx_core_1_1_system_1aa3061377ddfe3bbfbd8d81198d958b4f" kind="function"><name>DoSimulatorMinimize</name></member>
     <member refid="namespace_bx_core_1_1_system_1a9c02a7032f944631b8e40a10d92d0611" kind="function"><name>IsEnablePanelDebug</name></member>
     <member refid="namespace_bx_core_1_1_system_1a205224e0b9c11290043936005f07b07d" kind="function"><name>IsEnableFontDebug</name></member>
-    <member refid="namespace_bx_core_1_1_system_1a2720511c7c99b2d22757eccffaafbbd6" kind="function"><name>Break</name></member>
+    <member refid="namespace_bx_core_1_1_system_1af1378bb03a6217f9098f0386b4668f2e" kind="function"><name>Break</name></member>
     <member refid="namespace_bx_core_1_1_system_1add31af8264dd786fcc5cf2e045877289" kind="function"><name>Trace</name></member>
     <member refid="namespace_bx_core_1_1_system_1accf8c5fcd138e845fd50c7e144ef5305" kind="function"><name>GetUTF8ByCP949</name></member>
     <member refid="namespace_bx_core_1_1_system_1a83e5f78f4d3a1045e3b0c47ac2f86f61" kind="function"><name>GetCP949ByUTF8</name></member>
@@ -1764,6 +1775,7 @@
     <member refid="namespace_bx_core_1_1_system_1aa721d486c3bd5d827a78b5ffb49dc2df" kind="function"><name>AddCallbackJNI</name></member>
     <member refid="namespace_bx_core_1_1_system_1ab1e1b596a676fcce2dfd0d73cc568265" kind="function"><name>SetCallbackEDK</name></member>
     <member refid="namespace_bx_core_1_1_system_1a1e4876a7dd4f73cdff4dd4fb2a9999ce" kind="function"><name>QuitFlag</name></member>
+    <member refid="namespace_bx_core_1_1_system_1a510c9d39d960f5c707c117e9a62937fc" kind="function"><name>MakeTouchEvent</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_thread" kind="namespace"><name>BxCore::Thread</name>
     <member refid="namespace_bx_core_1_1_thread_1aaedfd3f40c87744a20478d8a9f08e2ea" kind="function"><name>Create</name></member>
@@ -1786,6 +1798,7 @@
     <member refid="namespace_bx_core_1_1_util_1ae6c876f32bae515d93b7c1fe9388ec5a" kind="function"><name>Tan1024Table</name></member>
     <member refid="namespace_bx_core_1_1_util_1abf0ab76dfa6db0a92832c1671b69a590" kind="function"><name>UTF16Table</name></member>
     <member refid="namespace_bx_core_1_1_util_1a6170dbf2be53fcdfb6670dbb022cb154" kind="function"><name>CP949Table</name></member>
+    <member refid="namespace_bx_core_1_1_util_1a0ae2281f5d95f61e687a262fb1398fa4" kind="function"><name>Free</name></member>
   </compound>
   <compound refid="namespace_bx_draw_global" kind="namespace"><name>BxDrawGlobal</name>
     <member refid="namespace_bx_draw_global_1ab4ffc772a3f20e7fad41aac4f67bf083" kind="enum"><name>option</name></member>
@@ -1952,6 +1965,10 @@
   <compound refid="_bx_core_for_q_t5_8hpp" kind="file"><name>BxCoreForQT5.hpp</name>
     <member refid="_bx_core_for_q_t5_8hpp_1ae03487905903e29b129995ab56860aa1" kind="define"><name>GLSCALE</name></member>
   </compound>
+  <compound refid="_bx_core_for_s3_e_8cpp" kind="file"><name>BxCoreForS3E.cpp</name>
+  </compound>
+  <compound refid="_bx_core_for_s3_e_8hpp" kind="file"><name>BxCoreForS3E.hpp</name>
+  </compound>
   <compound refid="_bx_core_impl_8cpp" kind="file"><name>BxCoreImpl.cpp</name>
   </compound>
   <compound refid="_bx_core_impl_8hpp" kind="file"><name>BxCoreImpl.hpp</name>
@@ -2035,6 +2052,8 @@
   </compound>
   <compound refid="_bx_scene_8hpp" kind="file"><name>BxScene.hpp</name>
     <member refid="_bx_scene_8hpp_1add48bbb5eb9f03d4e17f0c108ab22186" kind="define"><name>FRAMEWORK_SCENE</name></member>
+    <member refid="_bx_scene_8hpp_1a4e73d689b0d5b831051c487e959517cc" kind="define"><name>FRAMEWORK_SCENE_HIDDEN</name></member>
+    <member refid="_bx_scene_8hpp_1a6e980f9465d7ac7d44b91282a97171bc" kind="define"><name>FRAMEWORK_SCENE_OPTIONAL</name></member>
     <member refid="_bx_scene_8hpp_1a0eb7aae201e3d51293e31c9eec12adb9" kind="enum"><name>sceneside</name></member>
     <member refid="_bx_scene_8hpp_1a0eb7aae201e3d51293e31c9eec12adb9a96e4f3ea92bfc30d64c736e788f38230" kind="enumvalue"><name>sceneside_current</name></member>
     <member refid="_bx_scene_8hpp_1a0eb7aae201e3d51293e31c9eec12adb9a02cf11a8f37467be5d4cdcf21857e985" kind="enumvalue"><name>sceneside_center</name></member>
