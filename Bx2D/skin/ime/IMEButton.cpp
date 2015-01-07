@@ -1,6 +1,6 @@
 ﻿#include <BxPanel.hpp>
 
-FRAMEWORK_PANEL("fw.ime.IMEButton", XYXY)
+FRAMEWORK_PANEL("BxIME.Button", XYXY)
 
 void OnCreate(string option, unknown param, const bool first)
 {
@@ -23,7 +23,7 @@ void OnCreate(string option, unknown param, const bool first)
 		m--.flag("IsClicked") = false;
 		m--.flag("IsSpace") = (StrCmp(option, "space") == same);
 		if(!m--.flag("IsSpace"))
-			m--("Tip").Bind("fw.ime.IMETip", option);
+			m--("Tip").Bind("BxIME.Tip", option);
 	}
 }
 

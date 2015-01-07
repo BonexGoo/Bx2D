@@ -1,4 +1,4 @@
-#include "BxScene.hpp"
+#include <BxScene.hpp>
 
 class HelloWorldData
 {
@@ -7,13 +7,13 @@ public:
 public:
 	HelloWorldData()
 	{
-		BxCore::Font::NickOpen("hoonr", "sys/hoonr.ttf");
+		if(!BxCore::Font::IsExistNick("hoonr"))
+			BxCore::Font::NickOpen("hoonr", "sys/hoonr.ttf");
 		font1 = BxCore::Font::Open("hoonr", 100);
 
 	}
 	~HelloWorldData()
 	{
-		BxCore::Font::NickClose("hoonr");
 		BxCore::Font::Close(font1);
 	}
 };

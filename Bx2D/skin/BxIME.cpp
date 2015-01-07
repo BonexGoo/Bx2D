@@ -13,7 +13,7 @@ syseventresult OnEvent(int& Top, const sysevent& Event)
 		Top = 0;
 		LastIndex = -1;
 		Board = BxNew(BxPanel);
-		Board->Bind("fw.ime.IMEBoard", Event.init.message);
+		Board->Bind("BxIME.Board", Event.init.message);
 	}
 	else if(Event.type == syseventtype_quit)
 	{

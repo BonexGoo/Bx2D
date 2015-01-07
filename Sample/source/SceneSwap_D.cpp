@@ -1,4 +1,4 @@
-﻿#include "BxScene.hpp"
+﻿#include <BxScene.hpp>
 
 FRAMEWORK_SCENE_HIDDEN(unknown, "SceneSwap_D")
 

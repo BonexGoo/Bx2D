@@ -40,6 +40,7 @@ SOURCES += ../../Bx2D/addon/BxAddOn_ZIP.cpp
 SOURCES += ../../Bx2D/core/BxCoreForQT5.cpp
 SOURCES += ../../Bx2D/core/BxCoreImpl.cpp
 SOURCES += ../../Bx2D/skin/BxIME.cpp
+win32|macx: SOURCES += ../../Bx2D/skin/BxProjectHelper.cpp
 win32|macx: SOURCES += ../../Bx2D/skin/BxSimulator.cpp
 SOURCES += ../../Bx2D/skin/BxStartPage.cpp
 SOURCES += ../../Bx2D/skin/ime/IMEBoard.cpp

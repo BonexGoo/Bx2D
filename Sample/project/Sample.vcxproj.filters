@@ -90,15 +90,6 @@
     <ClCompile Include="..\..\Bx2D\skin\ime\IMETip.cpp">
       <Filter>Bx2D\skin\ime</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Bx2D\skin\BxIME.cpp">
-      <Filter>Bx2D\skin</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Bx2D\skin\BxSimulator.cpp">
-      <Filter>Bx2D\skin</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Bx2D\skin\BxStartPage.cpp">
-      <Filter>Bx2D\skin</Filter>
-    </ClCompile>
     <ClCompile Include="..\source\HelloWorld.cpp">
       <Filter>source</Filter>
     </ClCompile>
@@ -116,6 +107,18 @@
     </ClCompile>
     <ClCompile Include="..\source\SceneSwap_E.cpp">
       <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\BxIME.cpp">
+      <Filter>Bx2D\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\BxProjectHelper.cpp">
+      <Filter>Bx2D\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\BxSimulator.cpp">
+      <Filter>Bx2D\skin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Bx2D\skin\BxStartPage.cpp">
+      <Filter>Bx2D\skin</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

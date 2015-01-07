@@ -240,12 +240,12 @@ private:
 
 	inline void CalcIndex(int& index) const
 	{
-		if((index & 0xE0000000) == 0x60000000)
+		if((index & 0xC0000000) == 0x40000000)
 		{
 			if(index == FINAL) index = (0 < Size)? Size - 1 : 0;
 			else index = index - END + Size - 1;
 		}
-		BxASSERT("BxVarVector", 0 <= index);
+		BxASSERT("BxVarVector<index에는 음수가 올 수 없습니다>", 0 <= index);
 	}
 	void ValidIndex(const int index)
 	{

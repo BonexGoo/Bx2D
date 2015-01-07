@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="453" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="453" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="458" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="458" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="454" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="454" bodyend="454"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="459" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="459" bodyend="459"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_panel_1_1_service_m_1a11d2429845fd898fdc0ec2c917940724" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="455" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="455" bodyend="455"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="460" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="460" bodyend="460"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_panel_1_1_service_m_1a98455f41e48c6ecd1ce7d0862ed1ba82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_panel_1_1_variable_m" kindref="compound">VariableM</ref>&lt; TYPE &gt; &amp;</type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="456" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="456" bodyend="456"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="461" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="461" bodyend="461"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_panel_1_1_service_m_1ac931a739c4f86f2e4d03117b344960c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -80,14 +80,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="457" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="457" bodyend="457"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="462" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="462" bodyend="462"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="452" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="451" bodyend="458"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="457" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="456" bodyend="463"/>
     <listofallmembers>
       <member refid="class_bx_panel_1_1_service_m_1a98455f41e48c6ecd1ce7d0862ed1ba82" prot="public" virt="non-virtual"><scope>BxPanel::ServiceM</scope><name>operator--</name></member>
       <member refid="class_bx_panel_1_1_service_m_1abb0f090bb1a7f599c93e0f6168d57903" prot="private" virt="non-virtual"><scope>BxPanel::ServiceM</scope><name>RefM</name></member>

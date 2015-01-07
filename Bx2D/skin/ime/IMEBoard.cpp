@@ -22,13 +22,13 @@ class IMEBoard : public BxPanel
 		// Shift 무효화
 		const int Mode = (M--.int4("Mode") & 0x2);
 		M--[M--.int4("ShiftID")].Notify("SetBright", false);
-		BxPanel().Bind("fw.ime.IMEButton", "SetMode", Mode);
+		BxPanel().Bind("BxIME.Button", "SetMode", Mode);
 		M--.int4("Mode") = Mode;
 	}
 	private: string ConvertIME(int* JohapCombine);
 	public: void UpdateIME(bool DoFlush);
 };
-FRAMEWORK_PANEL_CLASS("fw.ime.IMEBoard", IMEBoard, XYXY)
+FRAMEWORK_PANEL_CLASS("BxIME.Board", IMEBoard, XYXY)
 
 local_data const int ButtonLength = 41;
 local_data wstring ButtonChars[2][2][ButtonLength] =
@@ -151,12 +151,12 @@ local_func void OnClickedSysButton(BxPanel* panel, string message, void* data)
 		{
 			*M--.ResultChars = M--.IMEChars + M--.IMETails;
 			*M--.ResultTails = "";
-			m--.UserPanel->Notify("SetEnable", false);
+			m--.UserPanel->Notify("SetBind", false);
 			BxScene::SubRequest("BxIME", sceneside_down);
 		}
 	}
 
-	BxPanel().Bind("fw.ime.IMEButton", "SetMode", Mode);
+	BxPanel().Bind("BxIME.Button", "SetMode", Mode);
 	M--.int4("Mode") = Mode;
 }
 
@@ -183,22 +183,22 @@ void OnCreate(string option, unknown param, const bool first)
 				CharSet[1] = ButtonChars[0][1][i];
 				CharSet[2] = ButtonChars[1][0][i];
 				CharSet[3] = ButtonChars[1][1][i];
-				m--[i].Bind("fw.ime.IMEButton", TipType[ButtonType[i]], CharSet);
+				m--[i].Bind("BxIME.Button", TipType[ButtonType[i]], CharSet);
 			}
 			break;
-		case 4: m--[i].Bind("fw.ime.IMESysButton", "Shift"); m--.int4("ShiftID") = i; break;
-		case 5: m--[i].Bind("fw.ime.IMESysButton", "BSpace"); break;
-		case 6: m--[i].Bind("fw.ime.IMESysButton", "Language"); break;
-		case 7: m--[i].Bind("fw.ime.IMESysButton", "Done"); break;
+		case 4: m--[i].Bind("BxIME.SysButton", "Shift"); m--.int4("ShiftID") = i; break;
+		case 5: m--[i].Bind("BxIME.SysButton", "BSpace"); break;
+		case 6: m--[i].Bind("BxIME.SysButton", "Language"); break;
+		case 7: m--[i].Bind("BxIME.SysButton", "Done"); break;
 		}
 		if(ButtonType[i] < 3) m--[i].Clicked += OnClickedButton, &m;
 		else if(ButtonType[i] == 3) m--[i].Clicked += OnClickedSpaceButton, &m;
 		else m--[i].Clicked += OnClickedSysButton, &m;
 	}
 	m--.int4("Mode") = 0;
-	BxPanel().Bind("fw.ime.IMEButton", "SetMode", m--.int4("Mode"));
+	BxPanel().Bind("BxIME.Button", "SetMode", m--.int4("Mode"));
 
-	m--.UserPanel->Notify("SetEnable", true);
+	m--.UserPanel->Notify("SetBind", true);
 }
 
 unknown OnNotify(string message, unknown param)

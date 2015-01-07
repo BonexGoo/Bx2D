@@ -95,6 +95,7 @@ xcopy "..\..\Bx2D\package\win32\$(ConfigurationName)\*.*" "..\bin_$(Configuratio
     <ClCompile Include="..\..\Bx2D\core\BxCoreForQT5.cpp" />
     <ClCompile Include="..\..\Bx2D\core\BxCoreImpl.cpp" />
     <ClCompile Include="..\..\Bx2D\skin\BxIME.cpp" />
+    <ClCompile Include="..\..\Bx2D\skin\BxProjectHelper.cpp" />
     <ClCompile Include="..\..\Bx2D\skin\BxSimulator.cpp" />
     <ClCompile Include="..\..\Bx2D\skin\BxStartPage.cpp" />
     <ClCompile Include="..\..\Bx2D\skin\ime\IMEBoard.cpp" />

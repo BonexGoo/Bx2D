@@ -20,7 +20,7 @@ class IMEEdit : public BxPanel
 	}
 	public: virtual ~IMEEdit() {}
 };
-FRAMEWORK_PANEL_CLASS("fw.ime.IMEEdit", IMEEdit, XYXY)
+FRAMEWORK_PANEL_CLASS("BxIME.Edit", IMEEdit, XYXY)
 
 void OnCreate(string option, unknown param, const bool first)
 {
@@ -34,7 +34,8 @@ void OnCreate(string option, unknown param, const bool first)
 
 	m--.RefFont = &CurFont;
 	m--.DefaultText = ParsedOption[2];
-	m--.flag("IsEnable") = false;
+	m--.flag("IsEnabled") = true;
+	m--.flag("IsBinded") = false;
 	m--.flag("IsCursorEng") = true;
 }
 
@@ -50,7 +51,13 @@ unknown OnNotify(string message, unknown param)
 		m--.Tail = "";
 	}
 	else if(StrCmp(message, "SetEnable") == same)
-		m--.flag("IsEnable") = (bool) param;
+		m--.flag("IsEnabled") = (bool) param;
+	else if(StrCmp(message, "SetBind") == same)
+	{
+		const bool BindStatus = (bool) param;
+		m--.flag("IsBinded") = BindStatus;
+		if(!BindStatus) m--.UpdateEvent("IMEDone");
+	}
 	else if(StrCmp(message, "SetCursorEng") == same)
 		m--.flag("IsCursorEng") = (bool) param;
 	return nullptr;
@@ -63,17 +70,24 @@ string OnTouch(BxPanel::Touch type)
 
 void OnPaint(rect& r, int x1, int y1, int x2, int y2)
 {
+	const color_x888 TextEnabled = RGB32(0, 0, 0);
+	const color_x888 TextDisabled = RGB32(128, 128, 128);
+	const color_x888 EngCursor = RGB32(128, 160, 192);
+	const color_x888 KorCursor = RGB32(192, 160, 128);
+
 	BxDraw& Draw = m--.GetDraw();
 	BxTRY(Draw, CLIP(r = XYXY(x1, y1, x2, y2)))
 	{
-		if(0 < m--.Text.GetLength() || 0 < m--.Tail.GetLength() || m--.flag("IsEnable"))
+		if(m--.flag("IsEnabled"))
+			m--.UpdateRect();
+		if(0 < m--.Text.GetLength() || 0 < m--.Tail.GetLength() || m--.flag("IsBinded"))
 		{
 			int XPos = Draw.Text(*m--.RefFont, m--.Text, XY(0, Draw.Height() / 2),
-				textalign_left_middle, COLOR(0, 0, 0)).x;
+				textalign_left_middle, COLOR(m--.flag("IsEnabled")? TextEnabled : TextDisabled)).x;
 			XPos = Draw.Text(*m--.RefFont, m--.Tail, XY(XPos, Draw.Height() / 2),
-				textalign_left_middle, COLOR(128, 128, 128)).x;
+				textalign_left_middle, COLOR(TextDisabled)).x;
 			// 커서
-			if(m--.flag("IsEnable"))
+			if(m--.flag("IsBinded"))
 			{
 				const uhuge Time = BxCore::System::GetTimeMilliSecond();
 				id_text Text = BxCore::Font::TextOpen("|");
@@ -82,10 +96,10 @@ void OnPaint(rect& r, int x1, int y1, int x2, int y2)
 				Text = BxCore::Font::TextClose(Text);
 				if((Time >> 8) & 1)
 					Draw.Rectangle(FILL, XYWH(XPos, (Draw.Height() - FontHeight) / 2, FontWidth, FontHeight),
-						m--.flag("IsCursorEng")? COLOR(128, 160, 192) : COLOR(192, 160, 128));
+						COLOR(m--.flag("IsCursorEng")? EngCursor : KorCursor));
 			}
 		}
 		else Draw.Text(*m--.RefFont, m--.DefaultText, XY(0, Draw.Height() / 2),
-			textalign_left_middle, COLOR(128, 128, 128));
+			textalign_left_middle, COLOR(TextDisabled));
 	}
 }

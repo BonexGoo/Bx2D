@@ -1,6 +1,6 @@
 ﻿#include <BxPanel.hpp>
 
-FRAMEWORK_PANEL("fw.ime.IMESysButton", XYXY)
+FRAMEWORK_PANEL("BxIME.SysButton", XYXY)
 
 void OnCreate(string option, unknown param, const bool first)
 {

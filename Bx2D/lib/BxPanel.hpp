@@ -150,7 +150,11 @@ class BxPanel
 		BxASSERT("BxPanel<PaintReady()를 선행호출하지 않았습니다>", Single->RefDraw);
 		return *Single->RefDraw;
 	}
-    public: void UpdateRect(View type = viewNormal)
+	public: void UpdateEvent(string message)
+	{
+		VarL->UpdatedData.Calling(this, message);
+	}
+	public: void UpdateRect(View type = viewNormal)
 	{
 		VarL->LastType = type;
 		VarL->LastRect = BxDrawGlobal::_DrawOption::CurClipRect();
@@ -314,6 +318,7 @@ class BxPanel
 		public: BxPanel* VarM;
 		public: EventData ClickedData;
 		public: EventData BumpedData;
+		public: EventData UpdatedData;
 		public: BxVarMap<BxPanel> Child;
 		public: BxVarVector<UserData, 4> Data;
 		public: int DebugLineHit;
@@ -619,7 +624,8 @@ class BxPanel
 	// ■ Constructors
 	////////////////////////////////////////////////////////////
 	public: BxPanel(bool isRef = false, void* varL = new VariableL())
-		: IsRef(isRef), VarL((VariableL*) varL), Clicked(VarL->ClickedData), Bumped(VarL->BumpedData)
+		: IsRef(isRef), VarL((VariableL*) varL),
+		Clicked(VarL->ClickedData), Bumped(VarL->BumpedData), Updated(VarL->UpdatedData)
 	{
 		global_data Singleton* S = BxNew(Singleton);
 		Single = S;
@@ -637,6 +643,7 @@ class BxPanel
     public: VariableL* const VarL;
 	public: Event Clicked;
 	public: Event Bumped;
+	public: Event Updated;
 };
 
 #define FRAMEWORK_PANEL(NAME, PARAM) FRAMEWORK_PANEL_CLASS(NAME, BxPanel, PARAM)

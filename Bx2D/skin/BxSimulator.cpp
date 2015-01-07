@@ -287,17 +287,17 @@ void OnRender(BxSimulator& This, BxDraw& Draw)
 		Draw.Area(MenuBarWidth / 2, TitleHeight / 2, FORM(&This.TitleImage));
 		// 제목
 		global_data BxString::Parse SubjectName(BxCore::System::GetConfigString("Bx.Currently.Title", "No Title"));
-		Draw.TextByRect(This.GUIFont, SubjectName, XYXY(Gap + MenuBarWidth, 0, Draw.Width(), TitleBottom - 4),
+		Draw.TextByRect(This.GUIFont, SubjectName, XYXY(Gap + MenuBarWidth, 0, Draw.Width(), TitleBottom - 3),
 			textalign_left_bottom, COLOR(255, 255, 255));
 		// 씬리스트
 		global_data BxString::Parse SceneList;
-		SceneList = "[ ";
+		SceneList = "[";
 		for(int i = 0, iend = BxScene::GetCount(); i < iend; ++i)
 		{
 			if(0 < i) SceneList += "/ ";
 			SceneList += BxScene::GetName((scenelayer) i);
 		}
-		SceneList += " ]";
+		SceneList += "]";
 		Draw.TextByRect(This.GUIFontMini, SceneList, XYXY(Gap + MenuBarWidth, TitleBottom, Draw.Width(), Draw.Height()),
 			textalign_left_middle, COLOR(128, 138, 150));
 		// 버튼

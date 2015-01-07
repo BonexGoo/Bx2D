@@ -183,13 +183,10 @@ namespace BxCore
 
 			// 이벤트해제
 			BxCore::Main::EventDetach();
-
 			// Draw객체 해제
 			BxDelete_ByType(BxDraw, ForMain_LetDrawPtr());
-
 			// 전역객체 해제
 			BxSingleton::UnbindAll(true);
-
 			// 풀링객체 해제
 			BxPoolGlobal::UnbindAll();
 			// 스레드저장소 해제

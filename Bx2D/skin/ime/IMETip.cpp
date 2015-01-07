@@ -1,6 +1,6 @@
 ﻿#include <BxPanel.hpp>
 
-FRAMEWORK_PANEL("fw.ime.IMETip", XY)
+FRAMEWORK_PANEL("BxIME.Tip", XY)
 
 void OnCreate(string option, unknown param, const bool first)
 {

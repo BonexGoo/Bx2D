@@ -200,7 +200,7 @@ private:
 	macro int CalcIndex(int _inout_ index) const
 	{
 		const int LastIndex = TreeHead.Range - 1;
-		if((index & 0xE0000000) == 0x60000000)
+		if((index & 0xC0000000) == 0x40000000)
 		{
 			if(index == FINAL) index = (LastIndex < 0)? 0 : LastIndex;
 			else index = index - END + LastIndex;

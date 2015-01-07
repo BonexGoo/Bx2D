@@ -464,6 +464,7 @@
     <member refid="class_bx_panel_1a4df277fd3d51e46c7746a879ba4bb529" kind="variable"><name>VarL</name></member>
     <member refid="class_bx_panel_1ac7787d5e48a372176cf05773ab94d655" kind="variable"><name>Clicked</name></member>
     <member refid="class_bx_panel_1a2ed9dd215251f4a5c3b3718fce71b9ec" kind="variable"><name>Bumped</name></member>
+    <member refid="class_bx_panel_1a5c5fdc0b1b8e7f75ace213de18c9e5c2" kind="variable"><name>Updated</name></member>
     <member refid="class_bx_panel_1a03543ce235d0e442e6226c9ca69ed6f7" kind="function"><name>Bind</name></member>
     <member refid="class_bx_panel_1ab02cb7f7569cca3797026f55b12eeb7e" kind="function"><name>Notify</name></member>
     <member refid="class_bx_panel_1ad8685ce4420add90a6827d0e648784d8" kind="function"><name>Paint</name></member>
@@ -481,6 +482,7 @@
     <member refid="class_bx_panel_1a3be94258d099f2f2170ca243584c40c4" kind="function"><name>operator()</name></member>
     <member refid="class_bx_panel_1a505601640a4c41a07a5d4bdc7512a740" kind="function"><name>DoTouch</name></member>
     <member refid="class_bx_panel_1acc7ad4b86d1ffc8898cbeb40a5d4be5f" kind="function"><name>GetDraw</name></member>
+    <member refid="class_bx_panel_1aa98e0955f2f33b63dfd30620ec12e08c" kind="function"><name>UpdateEvent</name></member>
     <member refid="class_bx_panel_1a77f5dd27161bbd995dc65b70a7b962b0" kind="function"><name>UpdateRect</name></member>
     <member refid="class_bx_panel_1a7ad65666e7ed4b190265c3e973b3895a" kind="function"><name>UpdateScroll</name></member>
     <member refid="class_bx_panel_1a822a3e9a05ed13f34ce280c60904a01d" kind="function"><name>GetScrollPos</name></member>
@@ -1467,6 +1469,7 @@
     <member refid="class_bx_panel_1_1_variable_l_1ab4918152d2727e063b6f5f5daa432b74" kind="variable"><name>VarM</name></member>
     <member refid="class_bx_panel_1_1_variable_l_1a731b7b149cf0b7c29a09f3a6534dc193" kind="variable"><name>ClickedData</name></member>
     <member refid="class_bx_panel_1_1_variable_l_1af420203a6db72ac36c3a6d0088881345" kind="variable"><name>BumpedData</name></member>
+    <member refid="class_bx_panel_1_1_variable_l_1a47d4a6e89ef033ab9f47730b96c97a59" kind="variable"><name>UpdatedData</name></member>
     <member refid="class_bx_panel_1_1_variable_l_1a04872e0c9c7a7d524ecc5d8054996456" kind="variable"><name>Child</name></member>
     <member refid="class_bx_panel_1_1_variable_l_1ae552f697fcfa79c4ded3664684f8a669" kind="variable"><name>Data</name></member>
     <member refid="class_bx_panel_1_1_variable_l_1ae9cc62682e0d084bca7b8d0201f70b9c" kind="variable"><name>DebugLineHit</name></member>
