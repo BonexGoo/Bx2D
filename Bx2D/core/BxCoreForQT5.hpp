@@ -65,7 +65,11 @@ namespace BxCore
                 PosX(0), PosY(0), SizeW(0), SizeH(0)
             {
                 setWindowTitle(BxCore::System::GetConfigString("Bx.Currently.Title", ""));
-                setWindowFlags(Qt::FramelessWindowHint);
+                #ifdef Q_OS_MACX
+                    setWindowFlags(Qt::CustomizeWindowHint | Qt::WindowMinimizeButtonHint | Qt::WindowCloseButtonHint);
+                #else
+                    setWindowFlags(Qt::FramelessWindowHint);
+                #endif
                 setAttribute(Qt::WA_PaintOnScreen);
                 setAttribute(Qt::WA_NoSystemBackground);
                 setAutoBufferSwap(false);
@@ -206,7 +210,10 @@ namespace BxCore
                     sysevent Event;
                     Event.type = syseventtype_key;
                     Event.key.type = syskeytype_down;
-                    Event.key.code = GetKeyKind(event->key());
+                    const uint SCode = event->nativeScanCode();
+                    const uint VKey = event->nativeVirtualKey();
+                    const uint Key = event->key();
+                    Event.key.code = GetKeyKind((SCode)? VKey : Key);
                     BxScene::__AddEvent__(Event, syseventset_do_enable);
                 }
                 else event->ignore();
@@ -218,79 +225,97 @@ namespace BxCore
                     sysevent Event;
                     Event.type = syseventtype_key;
                     Event.key.type = syskeytype_up;
-                    Event.key.code = GetKeyKind(event->key());
+                    const uint SCode = event->nativeScanCode();
+                    const uint VKey = event->nativeVirtualKey();
+                    const uint Key = event->key();
+                    Event.key.code = GetKeyKind((SCode)? VKey : Key);
                     BxScene::__AddEvent__(Event, syseventset_need_enable);
                 }
                 else event->ignore();
             }
 
         private:
-            keykind GetKeyKind(int keycode)
+            keykind GetKeyKind(uint keycode)
             {
                 switch(keycode)
                 {
-                case Qt::Key_Escape: return keykind_esc;
-                case Qt::Key_Tab: return keykind_tab;
-                case Qt::Key_Backspace: return keykind_bspace;
-                case Qt::Key_Return: return keykind_enter;
-                case Qt::Key_Shift: return keykind_shift;
-                case Qt::Key_Control: return keykind_ctrl;
-                case Qt::Key_Space: return keykind_space;
-                case Qt::Key_Left: return keykind_left;
-                case Qt::Key_Up: return keykind_up;
-                case Qt::Key_Right: return keykind_right;
-                case Qt::Key_Down: return keykind_down;
-                case Qt::Key_0: return keykind_0;
-                case Qt::Key_1: return keykind_1;
-                case Qt::Key_2: return keykind_2;
-                case Qt::Key_3: return keykind_3;
-                case Qt::Key_4: return keykind_4;
-                case Qt::Key_5: return keykind_5;
-                case Qt::Key_6: return keykind_6;
-                case Qt::Key_7: return keykind_7;
-                case Qt::Key_8: return keykind_8;
-                case Qt::Key_9: return keykind_9;
-                case Qt::Key_A: return keykind_a;
-                case Qt::Key_B: return keykind_b;
-                case Qt::Key_C: return keykind_c;
-                case Qt::Key_D: return keykind_d;
-                case Qt::Key_E: return keykind_e;
-                case Qt::Key_F: return keykind_f;
-                case Qt::Key_G: return keykind_g;
-                case Qt::Key_H: return keykind_h;
-                case Qt::Key_I: return keykind_i;
-                case Qt::Key_J: return keykind_j;
-                case Qt::Key_K: return keykind_k;
-                case Qt::Key_L: return keykind_l;
-                case Qt::Key_M: return keykind_m;
-                case Qt::Key_N: return keykind_n;
-                case Qt::Key_O: return keykind_o;
-                case Qt::Key_P: return keykind_p;
-                case Qt::Key_Q: return keykind_q;
-                case Qt::Key_R: return keykind_r;
-                case Qt::Key_S: return keykind_s;
-                case Qt::Key_T: return keykind_t;
-                case Qt::Key_U: return keykind_u;
-                case Qt::Key_V: return keykind_v;
-                case Qt::Key_W: return keykind_w;
-                case Qt::Key_X: return keykind_x;
-                case Qt::Key_Y: return keykind_y;
-                case Qt::Key_Z: return keykind_z;
-                case Qt::Key_F1: return keykind_f1;
-                case Qt::Key_F2: return keykind_f2;
-                case Qt::Key_F3: return keykind_f3;
-                case Qt::Key_F4: return keykind_f4;
-                case Qt::Key_F5: return keykind_f5;
-                case Qt::Key_F6: return keykind_f6;
-                case Qt::Key_F7: return keykind_f7;
-                case Qt::Key_F8: return keykind_f8;
-                case Qt::Key_F9: return keykind_f9;
-                case Qt::Key_F10: return keykind_f10;
-                case Qt::Key_Plus: return keykind_pad_plus;
-                case Qt::Key_Minus: return keykind_pad_minus;
-                case Qt::Key_Enter: return keykind_pad_enter;
-                case Qt::Key_NumberSign: return keykind_sharp;
-                case Qt::Key_Asterisk: return keykind_star;
+                case 0: return keykind_a;
+                case 1: return keykind_s;
+                case 2: return keykind_d;
+                case 3: return keykind_f;
+                case 4: return keykind_h;
+                case 5: return keykind_g;
+                case 6: return keykind_z;
+                case 7: return keykind_x;
+                case 8: return keykind_c;
+                case 9: return keykind_v;
+                case 10: break;
+                case 11: return keykind_b;
+                case 12: return keykind_q;
+                case 13: return keykind_w;
+                case 14: return keykind_e;
+                case 15: return keykind_r;
+                case 16: return keykind_y;
+                case 17: return keykind_t;
+                case 18: return keykind_1;
+                case 19: return keykind_2;
+                case 20: return keykind_3;
+                case 21: return keykind_4;
+                case 22: return keykind_6;
+                case 23: return keykind_5;
+                case 24: break;
+                case 25: return keykind_9;
+                case 26: return keykind_7;
+                case 27: break;
+                case 28: return keykind_8;
+                case 29: return keykind_0;
+                case 30: break;
+                case 31: return keykind_o;
+                case 32: return keykind_u;
+                case 33: break;
+                case 34: return keykind_i;
+                case 35: return keykind_p;
+                case 36: return keykind_enter;
+                case 37: return keykind_l;
+                case 38: return keykind_j;
+                case 39: break;
+                case 40: return keykind_k;
+                case 41: case 42: case 43: case 44: break;
+                case 45: return keykind_n;
+                case 46: return keykind_m;
+                case 47: break;
+                case 48: return keykind_tab;
+                case 49: return keykind_space;
+                case 50: break;
+                case 51: return keykind_bspace;
+                case 52: break;
+                case 53: return keykind_esc;
+                }
+                switch(keycode)
+                {
+                case 96: return keykind_f5;
+                case 97: return keykind_f6;
+                case 98: return keykind_f7;
+                case 99: return keykind_f3;
+                case 100: return keykind_f8;
+                case 101: case 102: case 103: case 104: case 105: case 106:
+                case 107: case 108: case 109: case 110: case 111: case 112:
+                case 113: case 114: case 115: case 116: case 117: break;
+                case 118: return keykind_f4;
+                case 119: break;
+                case 120: return keykind_f2;
+                case 121: break;
+                case 122: return keykind_f1;
+                case 123: return keykind_left;
+                case 124: return keykind_right;
+                case 125: return keykind_down;
+                case 126: return keykind_up;
+                }
+                switch(keycode)
+                {
+                case 0x1000020: return keykind_shift;
+                case 0x1000021: break;
+                case 0x1000022: return keykind_ctrl;
                 }
                 return keykind_null;
             }

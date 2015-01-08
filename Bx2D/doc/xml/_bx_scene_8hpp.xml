@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
   <compounddef id="_bx_scene_8hpp" kind="file" language="C++">
     <compoundname>BxScene.hpp</compoundname>
     <includes refid="_bx_draw_8hpp" local="no">BxDraw.hpp</includes>
@@ -7,151 +7,143 @@
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <includedby refid="_bx_core_for_q_t5_8cpp" local="no">BxCoreForQT5.cpp</includedby>
     <includedby refid="_bx_core_for_q_t5_8hpp" local="no">BxCoreForQT5.hpp</includedby>
-    <includedby refid="_bx_core_for_s3_e_8cpp" local="no">BxCoreForS3E.cpp</includedby>
-    <includedby refid="_bx_core_for_s3_e_8hpp" local="no">BxCoreForS3E.hpp</includedby>
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <incdepgraph>
-      <node id="439">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="430" relation="include">
+      <node id="357">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="350" relation="include">
         </childnode>
-        <childnode refid="433" relation="include">
+        <childnode refid="349" relation="include">
         </childnode>
-        <childnode refid="429" relation="include">
-        </childnode>
-      </node>
-      <node id="428">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="429" relation="include">
-        </childnode>
-        <childnode refid="436" relation="include">
+        <childnode refid="352" relation="include">
         </childnode>
       </node>
-      <node id="429">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="430" relation="include">
-        </childnode>
-        <childnode refid="435" relation="include">
-        </childnode>
-      </node>
-      <node id="430">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="431" relation="include">
-        </childnode>
-      </node>
-      <node id="435">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="434" relation="include">
-        </childnode>
-      </node>
-      <node id="442">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="430" relation="include">
-        </childnode>
-        <childnode refid="433" relation="include">
-        </childnode>
-      </node>
-      <node id="437">
-        <label>BxPanel.hpp</label>
-        <link refid="_bx_panel_8hpp_source"/>
-        <childnode refid="428" relation="include">
-        </childnode>
-        <childnode refid="438" relation="include">
-        </childnode>
-        <childnode refid="439" relation="include">
-        </childnode>
-        <childnode refid="440" relation="include">
-        </childnode>
-        <childnode refid="441" relation="include">
-        </childnode>
-      </node>
-      <node id="432">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="433" relation="include">
-        </childnode>
-      </node>
-      <node id="440">
+      <node id="359">
         <label>BxImage.hpp</label>
         <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="428" relation="include">
+        <childnode refid="347" relation="include">
         </childnode>
       </node>
-      <node id="434">
+      <node id="347">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="351" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="352" relation="include">
+        </childnode>
+      </node>
+      <node id="348">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>BxPanel.hpp</label>
+        <link refid="_bx_panel_8hpp_source"/>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+      </node>
+      <node id="361">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+      </node>
+      <node id="346">
+        <label>BxScene.hpp</label>
+        <link refid="BxScene.hpp"/>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="350" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="431">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="432" relation="include">
-        </childnode>
-      </node>
-      <node id="441">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="442" relation="include">
-        </childnode>
-        <childnode refid="429" relation="include">
-        </childnode>
-        <childnode refid="435" relation="include">
-        </childnode>
-      </node>
-      <node id="427">
-        <label>BxScene.hpp</label>
-        <link refid="BxScene.hpp"/>
-        <childnode refid="428" relation="include">
-        </childnode>
-        <childnode refid="437" relation="include">
-        </childnode>
-        <childnode refid="441" relation="include">
-        </childnode>
-      </node>
-      <node id="436">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="434" relation="include">
-        </childnode>
-      </node>
-      <node id="438">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="431" relation="include">
-        </childnode>
-        <childnode refid="430" relation="include">
-        </childnode>
-        <childnode refid="433" relation="include">
-        </childnode>
-      </node>
-      <node id="433">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="434" relation="include">
+      <node id="354">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="353" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="443">
-        <label>BxScene.hpp</label>
-        <link refid="BxScene.hpp"/>
-        <childnode refid="444" relation="include">
-        </childnode>
-        <childnode refid="445" relation="include">
-        </childnode>
-      </node>
-      <node id="445">
-        <label>BxCoreForS3E.hpp</label>
-        <link refid="_bx_core_for_s3_e_8hpp_source"/>
-      </node>
-      <node id="444">
+      <node id="363">
         <label>BxCoreForQT5.hpp</label>
         <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      </node>
+      <node id="362">
+        <label>BxScene.hpp</label>
+        <link refid="BxScene.hpp"/>
+        <childnode refid="363" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_scene" prot="public">BxScene</innerclass>
@@ -167,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" line="790" column="9" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" bodystart="790" bodyend="-1"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" line="790" column="9" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" bodystart="790" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_scene_8hpp_1a4e73d689b0d5b831051c487e959517cc" prot="public" static="no">
         <name>FRAMEWORK_SCENE_HIDDEN</name>
@@ -180,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" line="791" column="9" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" bodystart="791" bodyend="-1"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" line="791" column="9" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" bodystart="791" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_scene_8hpp_1a6e980f9465d7ac7d44b91282a97171bc" prot="public" static="no">
         <name>FRAMEWORK_SCENE_OPTIONAL</name>
@@ -213,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" line="792" column="9" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" bodystart="792" bodyend="-1"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" line="792" column="9" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" bodystart="792" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -268,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" line="8" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" bodystart="8" bodyend="8"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" line="8" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" bodystart="8" bodyend="8"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_scene_8hpp_1a166b4c61f30905e0aa8614b89bafe332" prot="public" static="no">
         <name>scenelayer</name>
@@ -382,7 +374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" line="9" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" bodystart="9" bodyend="11"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" line="9" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" bodystart="9" bodyend="11"/>
       </memberdef>
       <memberdef kind="enum" id="_bx_scene_8hpp_1a0ea8472ee8b3a4393f6f7a1eb30f2b06" prot="public" static="no">
         <name>sceneflow</name>
@@ -427,7 +419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" line="12" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp" bodystart="12" bodyend="12"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" line="12" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp" bodystart="12" bodyend="12"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -960,7 +952,7 @@
 <codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>i;<sp/>++j)<sp/>OneActiveScene<sp/>=<sp/>OneActiveScene-&gt;Next;</highlight></codeline>
 <codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>마진모드<sp/>설정</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsGeneralScene<sp/>=<sp/>(__GetActiveSceneGUICount__()<sp/>&lt;<sp/>i);</highlight></codeline>
-<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>OldMarginMode<sp/>=<sp/><ref refid="namespace_bx_core_1_1_surface_1a301a412c0a71aeca77040391c5417798" kindref="member">BxCore::Surface::SetMarginMode</ref>(IsGeneralScene);</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>OldMarginMode<sp/>=<sp/><ref refid="namespace_bx_core_1_1_surface_1ab700ddbf4f1db9a5e790f6558e8a4c3a" kindref="member">BxCore::Surface::SetMarginMode</ref>(IsGeneralScene);</highlight></codeline>
 <codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>클리핑<sp/>스타일링<sp/>설정</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FlowedX<sp/>=<sp/>(IsGeneralScene)?<sp/>BxCore::Main::GetGUIMarginL()<sp/>:<sp/>0;</highlight></codeline>
 <codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FlowedY<sp/>=<sp/>(IsGeneralScene)?<sp/>BxCore::Main::GetGUIMarginT()<sp/>:<sp/>0;</highlight></codeline>
@@ -971,7 +963,7 @@
 <codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>전체<sp/>스타일링<sp/>해제</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Draw.<ref refid="class_bx_draw_1aa42dd1d1c126a92ff578c3963a024dd7" kindref="member">SubStyle</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>마진모드<sp/>해제</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_surface_1a301a412c0a71aeca77040391c5417798" kindref="member">BxCore::Surface::SetMarginMode</ref>(OldMarginMode);</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_surface_1ab700ddbf4f1db9a5e790f6558e8a4c3a" kindref="member">BxCore::Surface::SetMarginMode</ref>(OldMarginMode);</highlight></codeline>
 <codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>씬이동</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ActiveScene*<sp/>OneActiveScene<sp/>=<sp/>&amp;__GetActiveScene__();</highlight></codeline>
@@ -1155,6 +1147,6 @@
 <codeline lineno="811"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>local_data<sp/>string<sp/>__SCENE__<sp/>=<sp/>STRING;<sp/>\</highlight></codeline>
 <codeline lineno="812"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>local_data<sp/>bool<sp/>_Unknown<sp/>=<sp/>BxScene::__Create__(STRING,<sp/>__OnEvent__,<sp/>__OnUpdate__,<sp/>__OnRender__,<sp/>__GetData__,<sp/>HIDDEN,<sp/>__DATE__,<sp/>__TIME__);</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxScene.hpp"/>
+    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxScene.hpp"/>
   </compounddef>
 </doxygen>

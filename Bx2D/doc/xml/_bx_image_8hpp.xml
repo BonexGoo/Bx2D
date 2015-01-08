@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
   <compounddef id="_bx_image_8hpp" kind="file" language="C++">
     <compoundname>BxImage.hpp</compoundname>
     <includes refid="_bx_draw_8hpp" local="no">BxDraw.hpp</includes>
@@ -7,109 +7,103 @@
     <includedby refid="_bx_console_8hpp" local="yes">BxConsole.hpp</includedby>
     <includedby refid="_bx_panel_8hpp" local="no">BxPanel.hpp</includedby>
     <incdepgraph>
-      <node id="314">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="315" relation="include">
-        </childnode>
-        <childnode refid="322" relation="include">
-        </childnode>
-      </node>
-      <node id="315">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="316" relation="include">
-        </childnode>
-        <childnode refid="321" relation="include">
-        </childnode>
-      </node>
-      <node id="316">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="317" relation="include">
-        </childnode>
-      </node>
-      <node id="321">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="320" relation="include">
-        </childnode>
-      </node>
-      <node id="318">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="319" relation="include">
-        </childnode>
-      </node>
-      <node id="313">
+      <node id="236">
         <label>BxImage.hpp</label>
         <link refid="BxImage.hpp"/>
-        <childnode refid="314" relation="include">
+        <childnode refid="237" relation="include">
         </childnode>
       </node>
-      <node id="320">
+      <node id="237">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="241" relation="include">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="243" relation="include">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="243" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="240" relation="include">
+        </childnode>
+      </node>
+      <node id="243">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="317">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="318" relation="include">
-        </childnode>
-      </node>
-      <node id="322">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="320" relation="include">
-        </childnode>
-      </node>
-      <node id="319">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="320" relation="include">
+      <node id="244">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="243" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="324">
+      <node id="247">
         <label>BxAnimate.hpp</label>
         <link refid="_bx_animate_8hpp_source"/>
       </node>
-      <node id="326">
-        <label>BxPanel.hpp</label>
-        <link refid="_bx_panel_8hpp_source"/>
-        <childnode refid="327" relation="include">
-        </childnode>
-      </node>
-      <node id="325">
-        <label>BxConsole.hpp</label>
-        <link refid="_bx_console_8hpp_source"/>
-      </node>
-      <node id="323">
+      <node id="246">
         <label>BxImage.hpp</label>
         <link refid="BxImage.hpp"/>
-        <childnode refid="324" relation="include">
+        <childnode refid="247" relation="include">
         </childnode>
-        <childnode refid="325" relation="include">
+        <childnode refid="248" relation="include">
         </childnode>
-        <childnode refid="326" relation="include">
-        </childnode>
-      </node>
-      <node id="327">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="328" relation="include">
-        </childnode>
-        <childnode refid="329" relation="include">
+        <childnode refid="249" relation="include">
         </childnode>
       </node>
-      <node id="329">
-        <label>BxCoreForS3E.hpp</label>
-        <link refid="_bx_core_for_s3_e_8hpp_source"/>
+      <node id="249">
+        <label>BxPanel.hpp</label>
+        <link refid="_bx_panel_8hpp_source"/>
+        <childnode refid="250" relation="include">
+        </childnode>
       </node>
-      <node id="328">
+      <node id="251">
         <label>BxCoreForQT5.hpp</label>
         <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      </node>
+      <node id="250">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="251" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>BxConsole.hpp</label>
+        <link refid="_bx_console_8hpp_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_image" prot="public">BxImage</innerclass>
@@ -1404,6 +1398,6 @@
 <codeline lineno="1390"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="1392"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxImage.hpp"/>
+    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxImage.hpp"/>
   </compounddef>
 </doxygen>

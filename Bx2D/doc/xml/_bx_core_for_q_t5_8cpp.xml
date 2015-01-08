@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
   <compounddef id="_bx_core_for_q_t5_8cpp" kind="file" language="C++">
     <compoundname>BxCoreForQT5.cpp</compoundname>
     <includes refid="_bx_core_for_q_t5_8hpp" local="no">BxCoreForQT5.hpp</includes>
@@ -12,153 +12,177 @@
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <incdepgraph>
-      <node id="124">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="120" relation="include">
-        </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
-        <childnode refid="119" relation="include">
-        </childnode>
-      </node>
-      <node id="111">
-        <label>QLibrary</label>
-      </node>
-      <node id="110">
-        <label>QStandardPaths</label>
-      </node>
-      <node id="118">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="119" relation="include">
-        </childnode>
-        <childnode refid="121" relation="include">
-        </childnode>
-      </node>
-      <node id="97">
-        <label>QThread</label>
-      </node>
-      <node id="96">
-        <label>QHostInfo</label>
-      </node>
-      <node id="119">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="120" relation="include">
-        </childnode>
+      <node id="120">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
         <childnode refid="112" relation="include">
         </childnode>
-      </node>
-      <node id="120">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="115" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
-      </node>
-      <node id="105">
-        <label>QMainWindow</label>
-      </node>
-      <node id="107">
-        <label>QGLShaderProgram</label>
-      </node>
-      <node id="112">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="113" relation="include">
-        </childnode>
-      </node>
-      <node id="127">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="120" relation="include">
-        </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
-      </node>
-      <node id="94">
-        <label>QEventLoop</label>
-      </node>
-      <node id="122">
-        <label>BxPanel.hpp</label>
-        <link refid="_bx_panel_8hpp_source"/>
-        <childnode refid="118" relation="include">
-        </childnode>
-        <childnode refid="123" relation="include">
-        </childnode>
-        <childnode refid="124" relation="include">
-        </childnode>
-        <childnode refid="125" relation="include">
-        </childnode>
-        <childnode refid="126" relation="include">
-        </childnode>
-      </node>
-      <node id="98">
-        <label>QMutex</label>
-      </node>
-      <node id="129">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="126" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
       <node id="108">
-        <label>QMouseEvent</label>
+        <label>QLibrary</label>
       </node>
-      <node id="116">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="114" relation="include">
-        </childnode>
+      <node id="107">
+        <label>QStandardPaths</label>
       </node>
-      <node id="125">
+      <node id="122">
         <label>BxImage.hpp</label>
         <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="116" relation="include">
+        </childnode>
         <childnode refid="118" relation="include">
         </childnode>
       </node>
-      <node id="113">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="100">
-        <label>QTime</label>
-      </node>
-      <node id="93">
-        <label>QApplication</label>
-      </node>
-      <node id="115">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
+      <node id="121">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
         <childnode refid="116" relation="include">
         </childnode>
       </node>
-      <node id="126">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="127" relation="include">
+      <node id="112">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="113" relation="include">
         </childnode>
-        <childnode refid="119" relation="include">
+      </node>
+      <node id="94">
+        <label>QThread</label>
+      </node>
+      <node id="93">
+        <label>QHostInfo</label>
+      </node>
+      <node id="102">
+        <label>QMainWindow</label>
+      </node>
+      <node id="104">
+        <label>QGLShaderProgram</label>
+      </node>
+      <node id="126">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>BxCoreForQT5.cpp</label>
+        <link refid="BxCoreForQT5.cpp"/>
+        <childnode refid="89" relation="include">
         </childnode>
         <childnode refid="112" relation="include">
         </childnode>
-      </node>
-      <node id="101">
-        <label>QTimer</label>
-      </node>
-      <node id="117">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="118" relation="include">
+        <childnode refid="125" relation="include">
         </childnode>
-        <childnode refid="122" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
         <childnode refid="126" relation="include">
         </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
       </node>
-      <node id="92">
+      <node id="123">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>QEventLoop</label>
+      </node>
+      <node id="118">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>QMutex</label>
+      </node>
+      <node id="105">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="111">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>QTime</label>
+      </node>
+      <node id="119">
+        <label>BxPanel.hpp</label>
+        <link refid="_bx_panel_8hpp_source"/>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>QApplication</label>
+      </node>
+      <node id="124">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>QTimer</label>
+      </node>
+      <node id="89">
         <label>BxCoreForQT5.hpp</label>
         <link refid="_bx_core_for_q_t5_8hpp_source"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
         <childnode refid="93" relation="include">
         </childnode>
         <childnode refid="94" relation="include">
@@ -193,96 +217,72 @@
         </childnode>
         <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="110" relation="include">
-        </childnode>
         <childnode refid="111" relation="include">
         </childnode>
         <childnode refid="112" relation="include">
         </childnode>
         <childnode refid="114" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
         </childnode>
         <childnode refid="117" relation="include">
         </childnode>
-        <childnode refid="123" relation="include">
-        </childnode>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="120" relation="include">
-        </childnode>
       </node>
-      <node id="106">
+      <node id="103">
         <label>QGLWidget</label>
       </node>
-      <node id="102">
+      <node id="99">
         <label>QFile</label>
       </node>
-      <node id="99">
-        <label>QSemaphore</label>
-      </node>
-      <node id="121">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="113" relation="include">
-        </childnode>
-      </node>
-      <node id="109">
-        <label>QFontDatabase</label>
-      </node>
-      <node id="123">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="120" relation="include">
-        </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
-      </node>
-      <node id="128">
-        <label>BxAutoBuffer.hpp</label>
-        <link refid="_bx_auto_buffer_8hpp_source"/>
-        <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="120" relation="include">
-        </childnode>
-      </node>
       <node id="114">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="113" relation="include">
-        </childnode>
-      </node>
-      <node id="104">
-        <label>QDir</label>
-      </node>
-      <node id="91">
-        <label>BxCoreForQT5.cpp</label>
-        <link refid="BxCoreForQT5.cpp"/>
-        <childnode refid="92" relation="include">
-        </childnode>
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
         <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="128" relation="include">
-        </childnode>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="129" relation="include">
-        </childnode>
-        <childnode refid="120" relation="include">
-        </childnode>
-        <childnode refid="117" relation="include">
         </childnode>
         <childnode refid="119" relation="include">
         </childnode>
-        <childnode refid="126" relation="include">
+        <childnode refid="123" relation="include">
         </childnode>
       </node>
-      <node id="95">
+      <node id="96">
+        <label>QSemaphore</label>
+      </node>
+      <node id="117">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>QFontDatabase</label>
+      </node>
+      <node id="125">
+        <label>BxAutoBuffer.hpp</label>
+        <link refid="_bx_auto_buffer_8hpp_source"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="101">
+        <label>QDir</label>
+      </node>
+      <node id="92">
         <label>QTcpSocket</label>
       </node>
-      <node id="103">
+      <node id="109">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
         <label>QFileInfo</label>
       </node>
     </incdepgraph>
@@ -309,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" line="171" column="26"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/core/BxCoreForQT5.cpp" line="171" column="26"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -477,7 +477,7 @@
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxCore::Main::GLWidget::Me().showMinimized();</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertresult<sp/><ref refid="namespace_bx_core_1_1_system_1af1378bb03a6217f9098f0386b4668f2e" kindref="member">Break</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>query<sp/>__DEBUG_PRM__)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertresult<sp/><ref refid="namespace_bx_core_1_1_system_1a2720511c7c99b2d22757eccffaafbbd6" kindref="member">Break</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>query<sp/>__DEBUG_PRM__)</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>WIN32</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>BREAK_TEXT(STRING)<sp/>BxCore::System::GetUTF8ByCP949(STRING)</highlight><highlight class="normal"></highlight></codeline>
@@ -638,7 +638,7 @@
 <codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>HeightHW;</highlight></codeline>
 <codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="337"><highlight class="normal"></highlight></codeline>
-<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_surface_1a301a412c0a71aeca77040391c5417798" kindref="member">SetMarginMode</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable)</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_surface_1ab700ddbf4f1db9a5e790f6558e8a4c3a" kindref="member">SetMarginMode</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable)</highlight></codeline>
 <codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Result<sp/>=<sp/>SurfaceSingle().GetMarginEnable();</highlight></codeline>
 <codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SurfaceSingle().SetMarginEnable(enable);</highlight></codeline>
@@ -1026,7 +1026,7 @@
 <codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="structid__struct__00" kindref="compound">id_font</ref>)<sp/>FontSingle().CreateFont(nick,<sp/>height);</highlight></codeline>
 <codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="735"><highlight class="normal"></highlight></codeline>
-<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__00" kindref="compound">id_font_zero</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a774eba3b56f296434e719f06842743b1" kindref="member">Close</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font)</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__00" kindref="compound">id_font_zero</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a1ff1d4ae902591e6cd8ff3c11dd0218e" kindref="member">Close</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font)</highlight></codeline>
 <codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(font)<sp/>FontSingle().RemoveFont((FontClass*)<sp/>font);</highlight></codeline>
 <codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -1537,6 +1537,6 @@
 <codeline lineno="1254"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1255"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp"/>
+    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/core/BxCoreForQT5.cpp"/>
   </compounddef>
 </doxygen>

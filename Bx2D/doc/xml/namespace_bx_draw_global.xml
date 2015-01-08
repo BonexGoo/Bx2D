@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
   <compounddef id="namespace_bx_draw_global" kind="namespace" language="C++">
     <compoundname>BxDrawGlobal</compoundname>
     <innerclass refid="class_bx_draw_global_1_1_style_stack" prot="public">BxDrawGlobal::StyleStack</innerclass>
@@ -26,7 +26,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="149" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="149" bodyend="149"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="149" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="149" bodyend="149"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -65,7 +65,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="157" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="157" bodyend="161"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="157" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="157" bodyend="161"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a6d5024385633b0156b5646f8d5d8cec5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structpointf" kindref="compound">pointf</ref></type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="162" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="162" bodyend="166"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="162" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="162" bodyend="166"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1ade4a0d2e4795dd4468b23b815bb9d46c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structsize" kindref="compound">size</ref></type>
@@ -123,7 +123,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="174" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="174" bodyend="178"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="174" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="174" bodyend="178"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a2ac5a15c4ded15a5ef332569c89d610d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structrect" kindref="compound">rect</ref></type>
@@ -184,7 +184,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="188" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="188" bodyend="194"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="188" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="188" bodyend="194"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1afc92a6029edca2ba5b212e3ef29f4473" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structrect" kindref="compound">rect</ref></type>
@@ -243,7 +243,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="204" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="204" bodyend="210"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="204" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="204" bodyend="210"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a2bfaea206552c636542377670f654361" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structrect" kindref="compound">rect</ref></type>
@@ -291,7 +291,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="219" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="219" bodyend="225"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="219" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="219" bodyend="225"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a1b2fe1dfecb42a72c589db07f6d196b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structrect" kindref="compound">rect</ref></type>
@@ -339,7 +339,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="234" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="234" bodyend="242"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="234" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="234" bodyend="242"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a87af5fd6616302bd1dabdbc28343657a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structrect" kindref="compound">rect</ref></type>
@@ -398,7 +398,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="252" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="252" bodyend="258"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="252" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="252" bodyend="258"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a3d154c2742e70d45fd7bd10c17a92dbb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structpoints" kindref="compound">points</ref> &amp;</type>
@@ -435,7 +435,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="266" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="266" bodyend="282"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="266" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="266" bodyend="282"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a77d25475925ffd41e85cedb205074b4e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structvertexs" kindref="compound">vertexs</ref> &amp;</type>
@@ -483,7 +483,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="291" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="291" bodyend="310"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="291" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="291" bodyend="310"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a69319934d0a26c92cbabf431bfa30abd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structpoints" kindref="compound">points</ref> &amp;</type>
@@ -520,7 +520,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="318" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="318" bodyend="328"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="318" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="318" bodyend="328"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1aac16cfe003644d143984fa2e7b6e8bfb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structvertexs" kindref="compound">vertexs</ref> &amp;</type>
@@ -557,7 +557,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="336" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="336" bodyend="347"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="336" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="336" bodyend="347"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a66c0234539b5abb0c2599d352bd8d50d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structspline" kindref="compound">spline</ref> &amp;</type>
@@ -748,7 +748,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="369" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="369" bodyend="381"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="369" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="369" bodyend="381"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1ac92527c8048b58cf4e184738c1594bb9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const color_x888</type>
@@ -796,7 +796,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="390" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="390" bodyend="393"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="390" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="390" bodyend="393"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a697f3baeaa375440107c563e28404f32" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const color_565</type>
@@ -844,7 +844,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="402" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="402" bodyend="405"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="402" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="402" bodyend="405"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a3af8af57551ff51e3584484517014b4c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const pixel_dst</type>
@@ -892,7 +892,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="414" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="414" bodyend="425"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="414" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="414" bodyend="425"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a2d833b80db8cc513b3a0dc3bb5cd0782" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const pixel_dst</type>
@@ -940,7 +940,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="434" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="434" bodyend="445"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="434" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="434" bodyend="445"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a5626a4423f49d2a3c43d1a2b46180064" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const color_m555_a444</type>
@@ -966,7 +966,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="452" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="452" bodyend="455"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="452" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="452" bodyend="455"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a2a641bcd3364c262e79089d4eaaf2f80" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const color_a888</type>
@@ -992,7 +992,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="462" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="462" bodyend="465"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="462" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="462" bodyend="465"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1aed0fdc6eea4a4727834a7650ea945353" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const color_x888</type>
@@ -1040,7 +1040,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="474" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="474" bodyend="492"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="474" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="474" bodyend="492"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a376b7e70661a03530504bcf0c80c9c58" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const color_x888</type>
@@ -1088,7 +1088,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="501" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="501" bodyend="524"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="501" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="501" bodyend="524"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a3abdbd52000a7c19b9d768ecf271faaa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const color_565</type>
@@ -1114,7 +1114,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="531" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="531" bodyend="537"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="531" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="531" bodyend="537"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a6ddc89338e2f260ae27546f3f9fcac12" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const color_a888</type>
@@ -1140,7 +1140,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="544" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="544" bodyend="552"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="544" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="544" bodyend="552"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1ace2e54d6e9f621e8800cda0be12e8e8e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const color_x888</type>
@@ -1166,7 +1166,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="559" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="559" bodyend="562"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="559" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="559" bodyend="562"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1acdda0ad3e9387274a1fbc9aa6210b757" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const pixel_dst</type>
@@ -1192,7 +1192,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="569" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="569" bodyend="578"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="569" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="569" bodyend="578"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a6ad7cb2fb717655bb122e55879f5757d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const pixel_src</type>
@@ -1223,7 +1223,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="585" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="585" bodyend="597"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="585" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="585" bodyend="597"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1acf4ac9a6456284e2939026cba3c4fc4e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const pixel_dst</type>
@@ -1249,7 +1249,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="604" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="604" bodyend="607"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="604" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="604" bodyend="607"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a47cfb9289b6e1376c1c6667a080e0d31" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const pixel_src</type>
@@ -1275,7 +1275,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="614" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="614" bodyend="617"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="614" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="614" bodyend="617"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a4c30e61d070179051cba5452644d2b87" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const pixel_dst</type>
@@ -1301,7 +1301,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="624" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="624" bodyend="631"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="624" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="624" bodyend="631"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a3dc452d155a051598cf0038062a2a7d8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const pixel_src</type>
@@ -1332,7 +1332,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="638" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="638" bodyend="647"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="638" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="638" bodyend="647"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1aa908d2a442879cd385e3f2028cf23d30" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const pixel_dst</type>
@@ -1358,7 +1358,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="654" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="654" bodyend="657"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="654" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="654" bodyend="657"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1afa4322bd48d4974dd6f9f8cf7b9e44bb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const pixel_src</type>
@@ -1384,7 +1384,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="664" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="664" bodyend="667"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="664" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="664" bodyend="667"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1aeec25401761d67115d55bff9619c3681" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1434,7 +1434,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1035" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1035" bodyend="1055"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1035" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1035" bodyend="1055"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1abceb847546d3d686e5199db2fe991962" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1471,7 +1471,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1063" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1063" bodyend="1066"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1063" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1063" bodyend="1066"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a5dc4bdf501d9b3b89e6364c904d2af9b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1510,7 +1510,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1074" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1074" bodyend="1084"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1074" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1074" bodyend="1084"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1af5c396dd5a27636d07cb401862622461" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1548,7 +1548,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1092" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1092" bodyend="1104"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1092" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1092" bodyend="1104"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1ac89614000096bfdbddd9362dd330db7b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1585,7 +1585,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1112" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1112" bodyend="1122"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1112" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1112" bodyend="1122"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a93950df79909d5d4934e2b27c8269d53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1622,7 +1622,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1130" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1130" bodyend="1133"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1130" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1130" bodyend="1133"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1aa77b8b6570afce4266316a45e5e552ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1682,7 +1682,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1143" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1143" bodyend="1157"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1143" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1143" bodyend="1157"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a1106b5aedf54a1f4c833e8b579d54280" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1720,7 +1720,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1165" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1165" bodyend="1168"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1165" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1165" bodyend="1168"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a7fa6f827fc2f2ed183f211bfb127d3ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1746,7 +1746,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1188" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1188" bodyend="1198"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1188" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1188" bodyend="1198"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1ace28c010cf3281f551f837e6428cf690" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1772,7 +1772,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1205" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1205" bodyend="1218"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1205" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1205" bodyend="1218"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a50883fceecae4f90627db55e7de4c141" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1811,7 +1811,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1226" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1226" bodyend="1247"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1226" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1226" bodyend="1247"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_draw_global_1a80ba83be68f5db3990b6acb7ad96c3bc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_bx_draw_global_1_1_style_stack" kindref="compound">StyleStack</ref></type>
@@ -1859,13 +1859,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="1256" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" bodystart="1256" bodyend="1267"/>
+        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="1256" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" bodystart="1256" bodyend="1267"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>BxDraw관련 글로벌함수 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxDraw.hpp" line="128" column="1"/>
+    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxDraw.hpp" line="128" column="1"/>
   </compounddef>
 </doxygen>

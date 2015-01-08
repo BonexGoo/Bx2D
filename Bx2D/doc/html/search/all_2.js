@@ -9,7 +9,7 @@ var searchData=
   ['bitmapinfo',['bitmapinfo',['../structbitmapinfo.html',1,'']]],
   ['bitmappixel',['bitmappixel',['../unionbitmappixel.html',1,'']]],
   ['blend',['BLEND',['../namespace_bx_draw_global.html#ace28c010cf3281f551f837e6428cf690',1,'BxDrawGlobal']]],
-  ['break',['Break',['../namespace_bx_core_1_1_system.html#af1378bb03a6217f9098f0386b4668f2e',1,'BxCore::System']]],
+  ['break',['Break',['../namespace_bx_core_1_1_system.html#a2720511c7c99b2d22757eccffaafbbd6',1,'BxCore::System']]],
   ['buftobase64',['BUFToBASE64',['../namespace_bx_core_1_1_add_on.html#a6b8db6137aa9337195bbaca1007f6cf4',1,'BxCore::AddOn']]],
   ['buftomd5',['BUFToMD5',['../namespace_bx_core_1_1_add_on.html#a7e5afd2b177cb0dfa7ad9cdc7a00ad7f',1,'BxCore::AddOn']]],
   ['bxanimate',['BxAnimate',['../class_bx_animate.html',1,'BxAnimate'],['../class_bx_animate.html#a9a318e782bd9ddf40ea4ef54fd3df799',1,'BxAnimate::BxAnimate()']]],
