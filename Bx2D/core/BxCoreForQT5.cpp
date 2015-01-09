@@ -200,8 +200,7 @@ namespace BxCore
 				__android_log_print(7,  "SystemJNI", "%s", BxCore::System::
 					GetUTF8ByCP949(BxCore::Util::Print(BxCore::System::GetCP949ByUTF8(map), args)));
 			#else
-				printf("%s\n", BxCore::System::GetUTF8ByCP949(BxCore::Util::Print(map, args)));
-				fflush(stdout);
+				qDebug() << BxCore::System::GetUTF8ByCP949(BxCore::Util::Print(map, args));
 			#endif
 		}
 
