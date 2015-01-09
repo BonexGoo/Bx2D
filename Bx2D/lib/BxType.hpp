@@ -139,15 +139,10 @@ enum keykind:byte
 	keykind_k, keykind_l, keykind_m, keykind_n, keykind_o,
 	keykind_p, keykind_q, keykind_r, keykind_s, keykind_t,
 	keykind_u, keykind_v, keykind_w, keykind_x, keykind_y, keykind_z,
-	keykind_f1, keykind_f2, keykind_f3, keykind_f4, keykind_f5,
-	keykind_f6, keykind_f7, keykind_f8, keykind_f9, keykind_f10,
-	keykind_pad_0, keykind_pad_1, keykind_pad_2, keykind_pad_3, keykind_pad_4,
-	keykind_pad_5, keykind_pad_6, keykind_pad_7, keykind_pad_8, keykind_pad_9,
+	keykind_f1, keykind_f2, keykind_f3, keykind_f4,
+	keykind_f5, keykind_f6, keykind_f7, keykind_f8,
 	keykind_pad_plus, keykind_pad_minus, keykind_pad_enter,
-	keykind_soft_left, keykind_soft_right,
-	keykind_shoulder_left, keykind_shoulder_right,
-	keykind_star, keykind_sharp, keykind_ok, keykind_clr,
-	keykind_vol_up, keykind_vol_down, keykind_max
+	keykind_max
 };
 enum fonttype:byte {fonttype_kor, fonttype_eng, fonttype_both};
 enum fontarea:byte {fontarea_fore, fontarea_bold, fontarea_both};

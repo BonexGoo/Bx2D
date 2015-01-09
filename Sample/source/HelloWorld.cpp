@@ -37,7 +37,7 @@ sysupdateresult OnUpdate(HelloWorldData& This)
 
 void OnRender(HelloWorldData& This, BxDraw& Draw)
 {
-    Draw.Rectangle(FILL, Draw.CurrentRect(), COLOR(255, 255, 255));
+	Draw.Rectangle(FILL, Draw.CurrentRect(), COLOR(255, 255, 255));
 	Draw.Text(This.font1, BxString("Hello world!"),
 		Draw.CurrentCenter(), textalign_center_middle, COLOR(255, 0, 0));
 }

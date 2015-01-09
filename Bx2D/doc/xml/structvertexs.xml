@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="structvertexs" kind="struct" language="C++" prot="public">
     <compoundname>vertexs</compoundname>
     <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" line="250" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" bodystart="250" bodyend="250"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="245" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="245" bodyend="245"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" line="250" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" bodystart="250" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="245" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="245" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structvertexs_1a13092ff1fccec250a75c4c07efef5426" prot="public" static="no" mutable="no">
         <type><ref refid="structvertex" kindref="compound">vertex</ref></type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" line="250" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" bodystart="250" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="245" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="245" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -68,7 +68,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" line="250" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" bodystart="250" bodyend="250"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="245" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="245" bodyend="245"/>
     <listofallmembers>
       <member refid="structvertexs_1ade944f1099634a5dabf43eaa4d0396f5" prot="public" virt="non-virtual"><scope>vertexs</scope><name>count</name></member>
       <member refid="structvertexs_1a9fd77e3c17b7640228eba4ba1f084201a6f8d9379421ed82e0be5e435f56dc67e" prot="public" virt="non-virtual"><scope>vertexs</scope><name>max</name></member>

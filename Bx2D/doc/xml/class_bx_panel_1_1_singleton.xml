@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="class_bx_panel_1_1_singleton" kind="class" language="C++" prot="private">
     <compoundname>BxPanel::Singleton</compoundname>
     <innerclass refid="class_bx_panel_1_1_singleton_1_1_panel_cell" prot="public">BxPanel::Singleton::PanelCell</innerclass>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="218" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="218" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="218" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="218" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1aef91f641f9a5572d4ea9b569915d92d0" prot="public" static="no" mutable="no">
         <type>uint</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="219" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="219" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="219" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="219" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1ab10e84e49992a49971ef2ef74f743bc4" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_panel" kindref="compound">BxPanel</ref> *</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="220" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="220" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="220" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="220" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1a18d17f72f39d1631dd65268b5819eac6" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_panel" kindref="compound">BxPanel</ref> *</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="221" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="221" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="221" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1a9732de61824dcc7caa2c2d629e5dc267" prot="public" static="no" mutable="no">
         <type><ref refid="structpoint" kindref="compound">point</ref></type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="222" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="222" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="222" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="222" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1aac4df790a2faa47e850c2e9c943d0753" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; <ref refid="class_bx_panel_1_1_singleton_1_1_panel_cell" kindref="compound">PanelCell</ref>, 4 &gt;</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="223" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="223" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="223" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="223" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="224" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="224" bodyend="233"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="224" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="224" bodyend="233"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -232,7 +232,7 @@
         <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="210" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="209" bodyend="234"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="210" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="209" bodyend="234"/>
     <listofallmembers>
       <member refid="class_bx_panel_1_1_singleton_1ab10e84e49992a49971ef2ef74f743bc4" prot="public" virt="non-virtual"><scope>BxPanel::Singleton</scope><name>LastPanel</name></member>
       <member refid="class_bx_panel_1_1_singleton_1a18d17f72f39d1631dd65268b5819eac6" prot="public" virt="non-virtual"><scope>BxPanel::Singleton</scope><name>LastPanelScrolled</name></member>

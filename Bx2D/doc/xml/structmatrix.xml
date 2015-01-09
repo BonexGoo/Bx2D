@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="structmatrix" kind="struct" language="C++" prot="public">
     <compoundname>matrix</compoundname>
     <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
@@ -15,14 +15,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" line="244" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" bodystart="244" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="239" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="239" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>matrix구조체 : m[4][4] </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" line="244" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" bodystart="244" bodyend="244"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="239" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="239" bodyend="239"/>
     <listofallmembers>
       <member refid="structmatrix_1a2e81c025ac684f32b282ab81579ef535" prot="public" virt="non-virtual"><scope>matrix</scope><name>m</name></member>
     </listofallmembers>

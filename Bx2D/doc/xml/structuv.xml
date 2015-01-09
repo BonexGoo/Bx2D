@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="structuv" kind="struct" language="C++" prot="public">
     <compoundname>uv</compoundname>
     <includes refid="_bx_type_8hpp" local="no">BxType.hpp</includes>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" line="238" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" bodystart="238" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="233" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="233" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structuv_1a5621e5abdbc73a3101130128389e922a" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -28,14 +28,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" line="238" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" bodystart="238" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="233" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="233" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>uv구조체 : u, v </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" line="238" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxType.hpp" bodystart="238" bodyend="238"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="233" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="233" bodyend="233"/>
     <listofallmembers>
       <member refid="structuv_1af115f41d014631dd92184509b38d7fad" prot="public" virt="non-virtual"><scope>uv</scope><name>u</name></member>
       <member refid="structuv_1a5621e5abdbc73a3101130128389e922a" prot="public" virt="non-virtual"><scope>uv</scope><name>v</name></member>

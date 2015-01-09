@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="class_bx_panel_1_1_service_s" kind="class" language="C++" prot="public">
     <compoundname>BxPanel::ServiceS</compoundname>
       <sectiondef kind="private-attrib">
@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="449" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="449" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="449" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="449" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="450" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="450" bodyend="450"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="450" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="450" bodyend="450"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_panel_1_1_service_s_1a8a456dfc9c6cc64f28b2098c328db4fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="451" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="451" bodyend="451"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="451" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="451" bodyend="451"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_panel_1_1_service_s_1a667815f4c67ff35c2ff09b8f4ca500a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_panel_1_1_variable_s" kindref="compound">VariableS</ref> &amp;</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="452" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="452" bodyend="452"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="452" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="452" bodyend="452"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_panel_1_1_service_s_1a7e8558f70e756f83fe2930dac099da08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void **</type>
@@ -71,14 +71,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="453" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="453" bodyend="453"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="453" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="453" bodyend="453"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" line="448" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxPanel.hpp" bodystart="447" bodyend="454"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="448" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="447" bodyend="454"/>
     <listofallmembers>
       <member refid="class_bx_panel_1_1_service_s_1a7e8558f70e756f83fe2930dac099da08" prot="public" virt="non-virtual"><scope>BxPanel::ServiceS</scope><name>Get</name></member>
       <member refid="class_bx_panel_1_1_service_s_1a667815f4c67ff35c2ff09b8f4ca500a5" prot="public" virt="non-virtual"><scope>BxPanel::ServiceS</scope><name>operator--</name></member>

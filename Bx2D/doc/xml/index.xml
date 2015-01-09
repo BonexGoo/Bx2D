@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.9">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.9.1">
   <compound refid="class_bx_express_1_1___float" kind="class"><name>BxExpress::_Float</name>
     <member refid="class_bx_express_1_1___float_1ab69dbd14ab2419ea1bdffb62e0785df2" kind="friend"><name>Float</name></member>
     <member refid="class_bx_express_1_1___float_1a1720798b9b961937704fea28c98bbc43" kind="friend"><name>FloatX</name></member>
@@ -2357,31 +2357,9 @@
     <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faaf96a7f66fa290f1262ca9c796a11b0d8" kind="enumvalue"><name>keykind_f6</name></member>
     <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa54f3514b07c8bb98311b3a52cc799786" kind="enumvalue"><name>keykind_f7</name></member>
     <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa4658e151694d03cec7172778e5b250f5" kind="enumvalue"><name>keykind_f8</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa16e3e32297e374ea69cae74560516af6" kind="enumvalue"><name>keykind_f9</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa621ef26357f7529ae37e504f85cad173" kind="enumvalue"><name>keykind_f10</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa474ee11bae9b6b7d5cad8ba192d505bc" kind="enumvalue"><name>keykind_pad_0</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faadb560242c3351f3b6f83adbf77114a77" kind="enumvalue"><name>keykind_pad_1</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faaa258ffc8df8d736e40e42736d540284d" kind="enumvalue"><name>keykind_pad_2</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faaacc75c26bab0fc94306e27bbd84a9531" kind="enumvalue"><name>keykind_pad_3</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa0a9feed3f41068bed44e48fdfedb262f" kind="enumvalue"><name>keykind_pad_4</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faaef009d2ba8df8126f6c3f5a82fe9f919" kind="enumvalue"><name>keykind_pad_5</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa37cb129f0c8518933f27bb2a70e40501" kind="enumvalue"><name>keykind_pad_6</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa7dd2591a58cc65adae37637f31023951" kind="enumvalue"><name>keykind_pad_7</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faad6cf51dae933ec715c96d6e8febcd26f" kind="enumvalue"><name>keykind_pad_8</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa45ce59a5d09abe65274bfb200f184c14" kind="enumvalue"><name>keykind_pad_9</name></member>
     <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa1aea818fc40666307165325f703bb3ae" kind="enumvalue"><name>keykind_pad_plus</name></member>
     <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa09d8d4f0bea2e960f5840c871e4a3e51" kind="enumvalue"><name>keykind_pad_minus</name></member>
     <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa56161c49e2f948d26e887b2cb4fbe5eb" kind="enumvalue"><name>keykind_pad_enter</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faabb5a95d17d42a8077117ba968052a43a" kind="enumvalue"><name>keykind_soft_left</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa10cb687ba700e5a830d610bc5d8d44d2" kind="enumvalue"><name>keykind_soft_right</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faac76964fe42ef5decbc71521d25b6969e" kind="enumvalue"><name>keykind_shoulder_left</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa4352de3c5fb9ee3eaf89b8bbcb91dd26" kind="enumvalue"><name>keykind_shoulder_right</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa02a5f92bbd84f0dc9dfd410fbc05b167" kind="enumvalue"><name>keykind_star</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa60ce5b733781f1a1e3f0655fbe8e516d" kind="enumvalue"><name>keykind_sharp</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa7aebc640dd88dc4a16cf5d9848722390" kind="enumvalue"><name>keykind_ok</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa798764052c58414bc8e437b7ab8c8dbf" kind="enumvalue"><name>keykind_clr</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faad36c21ab38c4bd3b88f54665f864111e" kind="enumvalue"><name>keykind_vol_up</name></member>
-    <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa377d6016301339b9ca8c5defd4b3f93a" kind="enumvalue"><name>keykind_vol_down</name></member>
     <member refid="_bx_type_8hpp_1a0e93b288f50f213a5beadffecfb331faa9de9f82eb2b46db9053a7b4b3e272c8b" kind="enumvalue"><name>keykind_max</name></member>
     <member refid="_bx_type_8hpp_1a8b6c9805575b8204581f42e97a08bbf0" kind="enum"><name>fonttype</name></member>
     <member refid="_bx_type_8hpp_1a8b6c9805575b8204581f42e97a08bbf0ac110d4756ec249ac13adce3c9c392900" kind="enumvalue"><name>fonttype_kor</name></member>

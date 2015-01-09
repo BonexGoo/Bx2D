@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="class_bx_singleton_1_1_value" kind="class" language="C++" prot="private">
     <compoundname>BxSingleton::Value</compoundname>
     <basecompoundref prot="public" virt="non-virtual">BxSingleton::Element</basecompoundref>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" line="82" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" bodystart="82" bodyend="84"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" line="82" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" bodystart="82" bodyend="84"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1_1_value_1a1516209bbb18d7e6616eb0fa08a051e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE *</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" line="85" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" bodystart="85" bodyend="86"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" line="85" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" bodystart="85" bodyend="86"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -76,7 +76,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" line="80" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" bodystart="79" bodyend="87"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" line="80" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" bodystart="79" bodyend="87"/>
     <listofallmembers>
       <member refid="class_bx_singleton_1_1_element_1abc60a323d34d493fcc4a3a0df574ff96" prot="protected" virt="non-virtual"><scope>BxSingleton::Value</scope><name>CountPtr</name></member>
       <member refid="class_bx_singleton_1_1_element_1aa7a8699afcb26df13f4136ede82a8bdd" prot="public" virt="non-virtual"><scope>BxSingleton::Value</scope><name>Element</name></member>

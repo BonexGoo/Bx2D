@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="class_bx_singleton" kind="class" language="C++" prot="public">
     <compoundname>BxSingleton</compoundname>
     <includes refid="_bx_singleton_8hpp" local="no">BxSingleton.hpp</includes>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" line="29" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" bodystart="29" bodyend="32"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" line="29" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" bodystart="29" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1ade24df0a7a72811d112bd7b1cdce3959" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" line="35" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" bodystart="35" bodyend="40"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" line="35" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" bodystart="35" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1a584afce577fc6543f1451ce31b2ad72b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" line="43" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" bodystart="43" bodyend="46"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" line="43" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" bodystart="43" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1a06a4e09e52dfd1cd9c13759d3448a6be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" line="48" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" bodystart="48" bodyend="51"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" line="48" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" bodystart="48" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_singleton_1a9f0d7f7ea33d9dee12d745553c3be9bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" line="53" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" bodystart="53" bodyend="56"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" line="53" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" bodystart="53" bodyend="56"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -157,14 +157,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" line="59" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" bodystart="59" bodyend="67"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" line="59" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" bodystart="59" bodyend="67"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>싱글톤인스턴스들의 일괄소멸을 위한 도구 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" line="27" column="1" bodyfile="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxSingleton.hpp" bodystart="26" bodyend="155"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" line="27" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxSingleton.hpp" bodystart="26" bodyend="155"/>
     <listofallmembers>
       <member refid="class_bx_singleton_1ade24df0a7a72811d112bd7b1cdce3959" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Bind</name></member>
       <member refid="class_bx_singleton_1a9908f2cd91b1304edddc5520a20e220d" prot="public" virt="non-virtual"><scope>BxSingleton</scope><name>Link</name></member>

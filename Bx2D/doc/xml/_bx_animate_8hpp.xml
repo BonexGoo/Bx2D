@@ -1,15 +1,19 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
   <compounddef id="_bx_animate_8hpp" kind="file" language="C++">
     <compoundname>BxAnimate.hpp</compoundname>
     <includes refid="_bx_var_vector_8hpp" local="no">BxVarVector.hpp</includes>
     <includes refid="_bx_image_8hpp" local="no">BxImage.hpp</includes>
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <incdepgraph>
-      <node id="9">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="10" relation="include">
+      <node id="1">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="0">
@@ -30,20 +34,32 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="1">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
+      <node id="7">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -52,12 +68,20 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="7">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="2" relation="include">
+      <node id="9">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+      </node>
+      <node id="6">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="3">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="12">
@@ -79,30 +103,6 @@
       <node id="5">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="8">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
         <childnode refid="6" relation="include">
         </childnode>
       </node>
@@ -1541,6 +1541,6 @@
 <codeline lineno="1516"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var_vector" kindref="compound">BxVarVector&lt;_Active, 256&gt;</ref><sp/>DeadActive;</highlight></codeline>
 <codeline lineno="1518"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="/Users/bonex/Desktop/Bx2D-master/Bx2D/lib/BxAnimate.hpp"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxAnimate.hpp"/>
   </compounddef>
 </doxygen>
