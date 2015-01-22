@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.ico"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Bx2D
-   &#160;<span id="projectnumber">4.0.6</span>
+   &#160;<span id="projectnumber">4.0.7</span>
    </div>
   </td>
  </tr>
@@ -120,9 +120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae89a8d48541b11a69ed90cf5076e2d06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#ae89a8d48541b11a69ed90cf5076e2d06">IsMultiTouchAvailable</a> ()</td></tr>
 <tr class="memdesc:ae89a8d48541b11a69ed90cf5076e2d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">멀티터치 가능여부  <a href="#ae89a8d48541b11a69ed90cf5076e2d06">More...</a><br /></td></tr>
 <tr class="separator:ae89a8d48541b11a69ed90cf5076e2d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86fbb372ea32b5ef24e6da6ed3bcfd3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#a86fbb372ea32b5ef24e6da6ed3bcfd3c">IsTouchDown</a> ()</td></tr>
-<tr class="memdesc:a86fbb372ea32b5ef24e6da6ed3bcfd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">터치의 현재 누름여부  <a href="#a86fbb372ea32b5ef24e6da6ed3bcfd3c">More...</a><br /></td></tr>
-<tr class="separator:a86fbb372ea32b5ef24e6da6ed3bcfd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7b8ab56fc5237a4fc505e4483354f5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#ac7b8ab56fc5237a4fc505e4483354f5d">IsTouchDown</a> (bool includeSpecial=true)</td></tr>
+<tr class="memdesc:ac7b8ab56fc5237a4fc505e4483354f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">터치의 현재 누름여부  <a href="#ac7b8ab56fc5237a4fc505e4483354f5d">More...</a><br /></td></tr>
+<tr class="separator:ac7b8ab56fc5237a4fc505e4483354f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a230fc6a703a2c6e4aa9c9f220c3de98c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_system.html#a230fc6a703a2c6e4aa9c9f220c3de98c">IsKeyDown</a> (keykind key)</td></tr>
 <tr class="memdesc:a230fc6a703a2c6e4aa9c9f220c3de98c"><td class="mdescLeft">&#160;</td><td class="mdescRight">특정 키의 현재 누름여부  <a href="#a230fc6a703a2c6e4aa9c9f220c3de98c">More...</a><br /></td></tr>
 <tr class="separator:a230fc6a703a2c6e4aa9c9f220c3de98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1125,20 +1125,27 @@ local_data QSemaphore&#160;</td><td class="memItemRight" valign="bottom"><b>Quit
 
 </div>
 </div>
-<a class="anchor" id="a86fbb372ea32b5ef24e6da6ed3bcfd3c"></a>
+<a class="anchor" id="ac7b8ab56fc5237a4fc505e4483354f5d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool BxCore::System::IsTouchDown </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeSpecial</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>터치의 현재 누름여부 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">includeSpecial</td><td>: 특수터치 포함여부 </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>true-눌러짐, false-안눌러짐 </dd></dl>
 
 </div>
@@ -1385,7 +1392,7 @@ local_data QSemaphore&#160;</td><td class="memItemRight" valign="bottom"><b>Quit
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 1 2015 17:27:41 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 22 2015 18:40:42 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

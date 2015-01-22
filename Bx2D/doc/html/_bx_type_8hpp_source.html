@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.ico"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Bx2D
-   &#160;<span id="projectnumber">4.0.6</span>
+   &#160;<span id="projectnumber">4.0.7</span>
    </div>
   </td>
  </tr>
@@ -336,7 +336,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keyword">struct </span>{} quit;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keyword">struct </span>{uint w; uint h;} resize;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keyword">struct </span>{syskeytype type; keykind code;} key;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">struct </span>{systouchtype type; uint id; <span class="keywordtype">int</span> x; <span class="keywordtype">int</span> y;} touch;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">struct </span>{systouchtype type; uint id; <span class="keywordtype">int</span> x; <span class="keywordtype">int</span> y; <span class="keywordtype">bool</span> special;} touch;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keyword">struct </span>{sysbuttontype type; <span class="keywordtype">string</span> name; <a class="code" href="structrect.html">rect</a> field; <span class="keywordtype">int</span> x; <span class="keywordtype">int</span> y;} button;</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;} <a class="code" href="structsysevent.html">sysevent</a>;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">// 콜백-프레임</span></div>
@@ -498,7 +498,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structvertex_html"><div class="ttname"><a href="structvertex.html">vertex</a></div><div class="ttdoc">vertex구조체 : x, y, z, nouse(구조체2승수맞춤) </div><div class="ttdef"><b>Definition:</b> BxType.hpp:229</div></div>
 <div class="ttc" id="structid__struct__03_html"><div class="ttname"><a href="structid__struct__03.html">id_struct_03</a></div><div class="ttdef"><b>Definition:</b> BxType.hpp:257</div></div>
 <div class="ttc" id="structcolor__bgra_html"><div class="ttname"><a href="structcolor__bgra.html">color_bgra</a></div><div class="ttdoc">color_bgra구조체 : b, g, r, a </div><div class="ttdef"><b>Definition:</b> BxType.hpp:77</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_system_html_a2720511c7c99b2d22757eccffaafbbd6"><div class="ttname"><a href="namespace_bx_core_1_1_system.html#a2720511c7c99b2d22757eccffaafbbd6">BxCore::System::Break</a></div><div class="ttdeci">assertresult Break(string name, string query __DEBUG_PRM__)</div><div class="ttdoc">실행중지(Macro함수인 BxASSERT로 사용권장) </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:166</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_system_html_a2720511c7c99b2d22757eccffaafbbd6"><div class="ttname"><a href="namespace_bx_core_1_1_system.html#a2720511c7c99b2d22757eccffaafbbd6">BxCore::System::Break</a></div><div class="ttdeci">assertresult Break(string name, string query __DEBUG_PRM__)</div><div class="ttdoc">실행중지(Macro함수인 BxASSERT로 사용권장) </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:169</div></div>
 <div class="ttc" id="structid__struct__07_html"><div class="ttname"><a href="structid__struct__07.html">id_struct_07</a></div><div class="ttdef"><b>Definition:</b> BxType.hpp:261</div></div>
 <div class="ttc" id="structid__struct__11_html"><div class="ttname"><a href="structid__struct__11.html">id_struct_11</a></div><div class="ttdef"><b>Definition:</b> BxType.hpp:265</div></div>
 <div class="ttc" id="structid__struct__13_html"><div class="ttname"><a href="structid__struct__13.html">id_struct_13</a></div><div class="ttdef"><b>Definition:</b> BxType.hpp:267</div></div>
@@ -531,7 +531,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 1 2015 17:27:36 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 22 2015 18:40:40 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

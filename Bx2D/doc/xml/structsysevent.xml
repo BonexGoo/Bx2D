@@ -186,6 +186,19 @@
         </inbodydescription>
         <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="277" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="277" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structsysevent_1ac0a18b79b3ad7481e355b685ef95b066" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sysevent::special</definition>
+        <argsstring></argsstring>
+        <name>special</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="277" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="277" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structsysevent_1a8122d1afbc2742c325bf145c592ecb26" prot="public" static="no" mutable="no">
         <type>struct sysevent::@13</type>
         <definition>struct sysevent::@13  sysevent::touch</definition>
@@ -282,6 +295,7 @@
       <member refid="structsysevent_1a30ced2766629cf099b82adba6b89e67a" prot="public" virt="non-virtual"><scope>sysevent</scope><name>name</name></member>
       <member refid="structsysevent_1a0449062dc381769dfd23f5ffd16c9dc5" prot="public" virt="non-virtual"><scope>sysevent</scope><name>quit</name></member>
       <member refid="structsysevent_1af3acd508489a7a09bb9ce018f941e7ff" prot="public" virt="non-virtual"><scope>sysevent</scope><name>resize</name></member>
+      <member refid="structsysevent_1ac0a18b79b3ad7481e355b685ef95b066" prot="public" virt="non-virtual"><scope>sysevent</scope><name>special</name></member>
       <member refid="structsysevent_1a8122d1afbc2742c325bf145c592ecb26" prot="public" virt="non-virtual"><scope>sysevent</scope><name>touch</name></member>
       <member refid="structsysevent_1a66c1eafb65022fe54cf53d354b0a6668" prot="public" virt="non-virtual"><scope>sysevent</scope><name>type</name></member>
       <member refid="structsysevent_1a0356b480678cbe74f473d6fa2d89ba30" prot="public" virt="non-virtual"><scope>sysevent</scope><name>type</name></member>

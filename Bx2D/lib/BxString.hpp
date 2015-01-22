@@ -190,6 +190,18 @@ public:
 		}
 
 		/*!
+		\brief 배열접근
+		\param index : 배열번호
+		\return char형 해당 데이터
+		*/
+		inline const char operator[](int Index) const
+		{
+			if(Index < 0 || ValidCount <= Index)
+				return '\0';
+			return String[Index];
+		}
+
+		/*!
 		\brief 형변환 중복함수(string)
 		\return string형 전체스트링
 		*/
@@ -207,18 +219,6 @@ public:
 			if(!Text)
 				Text = BxCore::Font::TextOpen(operator string());
 			return Text;
-		}
-
-		/*!
-		\brief 배열접근
-		\param index : 배열번호
-		\return char형 해당 데이터
-		*/
-		inline const char operator[](int Index) const
-		{
-			if(Index < 0 || ValidCount <= Index)
-				return '\0';
-			return String[Index];
 		}
 
 		/*!
@@ -363,12 +363,11 @@ public:
 	\param index : 배열번호
 	\return char형 해당 데이터
 	*/
-	inline char& operator[](int Index) const
+	inline const char operator[](int Index) const
 	{
-		global_data char NullResult = '\0';
-		if(0 <= Index && Index < Chars.Length())
-			return Chars[Index];
-		return NullResult;
+		if(Index < 0 || Chars.Length() <= Index)
+			return '\0';
+		return Chars[Index];
 	}
 
 	/*!

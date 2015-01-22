@@ -99,9 +99,12 @@ namespace BxCore
 			return false;
 		}
 
-		bool IsTouchDown()
+		bool IsTouchDown(bool includeSpecial)
 		{
-            return BxCore::Main::GLWidget::Me().IsPressed();
+			if(!includeSpecial)
+				return BxCore::Main::GLWidget::Me().IsTouchPressed();
+			return BxCore::Main::GLWidget::Me().IsTouchPressed()
+				|| BxCore::Main::GLWidget::Me().IsSpecialPressed();
 		}
 
 		bool IsKeyDown(keykind key)
@@ -141,11 +144,17 @@ namespace BxCore
             return Result;
 		}
 
+        #if __APPLE__ == 1
+            #define TITLE_HEIGHT (25)
+        #else
+            #define TITLE_HEIGHT (0)
+        #endif
+
 		void SetSimulatorCursorPos(int x, int y)
 		{
-			QCursor Cursor;
-			point WindowPos = GetSimulatorWindowPos();
-			Cursor.setPos(QPoint(WindowPos.x + x, WindowPos.y + y));
+            QCursor Cursor;
+            point WindowPos = GetSimulatorWindowPos();
+            Cursor.setPos(QPoint(WindowPos.x + x, WindowPos.y + y + TITLE_HEIGHT));
             BxCore::Main::GLWidget::Me().setCursor(Cursor);
 		}
 
@@ -154,7 +163,7 @@ namespace BxCore
             QPoint Point = BxCore::Main::GLWidget::Me().cursor().pos();
             point Result;
             Result.x = Point.x();
-            Result.y = Point.y();
+            Result.y = Point.y() - TITLE_HEIGHT;
             return Result;
 		}
 

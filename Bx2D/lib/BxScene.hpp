@@ -458,7 +458,7 @@ public:
 								NeedRecall = true;
 							}
 						}
-						if(-1 < SelectedButton)
+						if(-1 < SelectedButton && !Event.touch.special)
 						{
 							Event.type = syseventtype_button;
 							switch(Event.touch.type)

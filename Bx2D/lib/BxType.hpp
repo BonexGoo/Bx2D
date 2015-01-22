@@ -274,7 +274,7 @@ typedef struct sysevent
 	struct {} quit;
 	struct {uint w; uint h;} resize;
 	struct {syskeytype type; keykind code;} key;
-	struct {systouchtype type; uint id; int x; int y;} touch;
+	struct {systouchtype type; uint id; int x; int y; bool special;} touch;
 	struct {sysbuttontype type; string name; rect field; int x; int y;} button;
 } sysevent;
 // 콜백-프레임

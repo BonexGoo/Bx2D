@@ -540,7 +540,7 @@
     <member refid="class_bx_string_1a6bce07db311243e6f927e050381bc419" kind="function"><name>~BxString</name></member>
     <member refid="class_bx_string_1aa438d5974c167a3ed314777237575bb8" kind="function"><name>Empty</name></member>
     <member refid="class_bx_string_1ab836b089f90c7851a78ede51321eac74" kind="function"><name>GetLength</name></member>
-    <member refid="class_bx_string_1a47769c17c13951d4013098f05389ee37" kind="function"><name>operator[]</name></member>
+    <member refid="class_bx_string_1a93719ae11fd25391525d1508415b07af" kind="function"><name>operator[]</name></member>
     <member refid="class_bx_string_1ae976132aefcc99a6842a9de18c48d67a" kind="function"><name>operator string</name></member>
     <member refid="class_bx_string_1a19db3a70e9304eb5e883a6517500f348" kind="function"><name>operator id_text</name></member>
     <member refid="class_bx_string_1abbb8a825bcdda4cb7bd42e40a337d818" kind="function"><name>operator+</name></member>
@@ -1176,9 +1176,9 @@
     <member refid="class_bx_string_1_1_parse_1a60eb1e05b7c0913618f714b06ab46c49" kind="function"><name>operator=</name></member>
     <member refid="class_bx_string_1_1_parse_1a5db01feb4515750b37566145091f2377" kind="function"><name>operator+=</name></member>
     <member refid="class_bx_string_1_1_parse_1adbdcec24abd464a3ee914a5802053e60" kind="function"><name>operator+=</name></member>
+    <member refid="class_bx_string_1_1_parse_1a16edc62b59aa67d20cf6843140229c02" kind="function"><name>operator[]</name></member>
     <member refid="class_bx_string_1_1_parse_1aae8758a16fc500fe8ce629748bdfd138" kind="function"><name>operator string</name></member>
     <member refid="class_bx_string_1_1_parse_1a09c291cdc4c3d8ce1a39c469e2a0b9cf" kind="function"><name>operator id_text</name></member>
-    <member refid="class_bx_string_1_1_parse_1a8a3db8693b604250c1e72f089652b7ed" kind="function"><name>operator[]</name></member>
     <member refid="class_bx_string_1_1_parse_1aa77903d68a117f96c7514bd1c9b50c35" kind="function"><name>Division</name></member>
     <member refid="class_bx_string_1_1_parse_1a3ec32ba0a6e656d34b313ca6b28676e1" kind="function"><name>UnitName</name></member>
     <member refid="class_bx_string_1_1_parse_1abcaf42e665a9a274dc1192de26c9e1be" kind="function"><name>UnitParam</name></member>
@@ -1373,6 +1373,7 @@
     <member refid="structsysevent_1a074476c500099505a4907760274bd0a6" kind="variable"><name>id</name></member>
     <member refid="structsysevent_1a5b63f5d2bf488002cdbeb246fdd85aa2" kind="variable"><name>x</name></member>
     <member refid="structsysevent_1a85854ea1a6cef851c99b01b1323f3cbd" kind="variable"><name>y</name></member>
+    <member refid="structsysevent_1ac0a18b79b3ad7481e355b685ef95b066" kind="variable"><name>special</name></member>
     <member refid="structsysevent_1a8122d1afbc2742c325bf145c592ecb26" kind="variable"><name>touch</name></member>
     <member refid="structsysevent_1a91f81aa28238f22af1d41d6412a0403b" kind="variable"><name>type</name></member>
     <member refid="structsysevent_1a30ced2766629cf099b82adba6b89e67a" kind="variable"><name>name</name></member>
@@ -1731,7 +1732,7 @@
     <member refid="namespace_bx_core_1_1_system_1ad2a6c71226e0449a64c37b80b5cdbe99" kind="function"><name>GetTimeNanoSecond</name></member>
     <member refid="namespace_bx_core_1_1_system_1a34998eba0b8d104f30f3f51f7f7bf9d0" kind="function"><name>GetTimeSimilarMicroSecond</name></member>
     <member refid="namespace_bx_core_1_1_system_1ae89a8d48541b11a69ed90cf5076e2d06" kind="function"><name>IsMultiTouchAvailable</name></member>
-    <member refid="namespace_bx_core_1_1_system_1a86fbb372ea32b5ef24e6da6ed3bcfd3c" kind="function"><name>IsTouchDown</name></member>
+    <member refid="namespace_bx_core_1_1_system_1ac7b8ab56fc5237a4fc505e4483354f5d" kind="function"><name>IsTouchDown</name></member>
     <member refid="namespace_bx_core_1_1_system_1a230fc6a703a2c6e4aa9c9f220c3de98c" kind="function"><name>IsKeyDown</name></member>
     <member refid="namespace_bx_core_1_1_system_1ac714d932b1b27b88793c01f528752691" kind="function"><name>IsExistConfig</name></member>
     <member refid="namespace_bx_core_1_1_system_1a233de8b9a6ff5a590555f6ef58033bef" kind="function"><name>GetConfigCheck</name></member>

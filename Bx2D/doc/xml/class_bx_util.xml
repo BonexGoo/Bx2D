@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1435" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1435" bodyend="1435"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1434" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1434" bodyend="1434"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -621,7 +621,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1076" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1076" bodyend="1109"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1076" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1076" bodyend="1108"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1a0abbd37b71ecc2aa9556dd38323677ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -657,7 +657,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1116" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1116" bodyend="1123"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1115" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1115" bodyend="1122"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1a67d75745d20650033cb419129baaaed8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func int</type>
@@ -716,7 +716,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1133" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1133" bodyend="1157"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1132" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1132" bodyend="1156"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1afd59076fe1010b645d232f24fa34e84e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func int</type>
@@ -775,7 +775,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1167" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1167" bodyend="1182"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1166" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1166" bodyend="1181"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1ace58b8597a34f4d9b9ab4f27b4f48dde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -823,7 +823,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1191" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1191" bodyend="1220"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1190" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1190" bodyend="1219"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1a641e1bebe3972ac651d08b6890d76fb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -871,7 +871,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1229" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1229" bodyend="1257"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1228" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1228" bodyend="1256"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1a9734058f17823d1e2f3f7fc07a4aa121" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func int</type>
@@ -908,7 +908,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1265" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1265" bodyend="1284"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1264" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1264" bodyend="1283"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1a6609c0c508f2148565c35b9212052d33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func int</type>
@@ -945,7 +945,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1292" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1292" bodyend="1317"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1291" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1291" bodyend="1316"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1a8363c42cb6abcbd477dc37e85e26c84f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func const <ref refid="structpoint" kindref="compound">point</ref> *</type>
@@ -1004,7 +1004,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1327" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1327" bodyend="1432"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1326" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1326" bodyend="1431"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1023,7 +1023,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1437" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1437" bodyend="1438"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1436" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1436" bodyend="1437"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1ae8e93161e2775e940196f69f09c967aa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func const wchar</type>
@@ -1045,7 +1045,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1440" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1440" bodyend="1479"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1439" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1439" bodyend="1478"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1a67b7e92c55df2c22a393394826943b84" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func string</type>
@@ -1062,7 +1062,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1481" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1481" bodyend="1520"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1480" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1480" bodyend="1519"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1a4d08ffdfaf5a93afab46a6530393155b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func uint &amp;</type>
@@ -1075,7 +1075,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1522" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1522" bodyend="1526"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1521" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1521" bodyend="1525"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1a8cababb7db6694f440db551c9840a326" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -1092,7 +1092,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1528" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1528" bodyend="1531"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1527" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1527" bodyend="1530"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_util_1a87c769df8c7ed43a97806ea042f4db68" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func uint</type>
@@ -1105,14 +1105,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1533" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1533" bodyend="1538"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="1532" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="1532" bodyend="1537"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>각종 수학/물리모듈 제공 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="776" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="775" bodyend="1539"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" line="776" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxUtil.hpp" bodystart="775" bodyend="1538"/>
     <listofallmembers>
       <member refid="class_bx_util_1a87c769df8c7ed43a97806ea042f4db68" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>_MakeRand</name></member>
       <member refid="class_bx_util_1a4d08ffdfaf5a93afab46a6530393155b" prot="private" virt="non-virtual"><scope>BxUtil</scope><name>_RandValue</name></member>

@@ -53,16 +53,27 @@ namespace BxCore
             static GLWidget& Me() {static GLWidget* _ = new GLWidget(); return *_;}
 
         private:
-            bool Pressed;
+			enum {DClickRadius = 100, DClickRadiusMin = 10, DClickRadiusSpeed = 10};
+			bool TouchPressed;
+			bool TouchRPressed;
+            uint SavedTouchFlag;
+            point SavedTouchPos[32];
+			QTimer WheelMoveTimer;
+			QTimer WheelEndTimer;
+			bool WheelPressed;
+			int RadiusForWheel;
             bool FirstMoved;
             bool FirstSized;
             int PosX;
             int PosY;
             int SizeW;
             int SizeH;
+
+        private:
             GLWidget() : QGLWidget(QGLFormat(QGL::SampleBuffers)),
-                Pressed(false), FirstMoved(false), FirstSized(false),
-                PosX(0), PosY(0), SizeW(0), SizeH(0)
+                TouchPressed(false), TouchRPressed(false), SavedTouchFlag(0),
+				WheelMoveTimer(this), WheelEndTimer(this), WheelPressed(false), RadiusForWheel(0),
+				FirstMoved(false), FirstSized(false), PosX(0), PosY(0), SizeW(0), SizeH(0)
             {
                 setWindowTitle(BxCore::System::GetConfigString("Bx.Currently.Title", ""));
                 #ifdef Q_OS_MACX
@@ -72,15 +83,22 @@ namespace BxCore
                 #endif
                 setAttribute(Qt::WA_PaintOnScreen);
                 setAttribute(Qt::WA_NoSystemBackground);
+                setAttribute(Qt::WA_AcceptTouchEvents);
                 setAutoBufferSwap(false);
                 setAutoFillBackground(false);
+				connect(&WheelMoveTimer, SIGNAL(timeout()), this, SLOT(WheelMove()));
+				connect(&WheelEndTimer, SIGNAL(timeout()), this, SLOT(WheelEnd()));
             }
             virtual ~GLWidget() {}
 
         public:
-            bool IsPressed()
+            bool IsTouchPressed()
             {
-                return Pressed;
+                return TouchPressed;
+            }
+			bool IsSpecialPressed()
+            {
+                return TouchRPressed | WheelPressed;
             }
             void BindTexture(GLuint texture)
             {
@@ -124,6 +142,24 @@ namespace BxCore
                     close();
                 }
             }
+			void WheelMove()
+			{
+				if(WheelPressed)
+				{
+					point CursorPos = BxCore::System::GetSimulatorCursorPos();
+					point WindowPos = BxCore::System::GetSimulatorWindowPos();
+					const int X = CursorPos.x - WindowPos.x;
+					const int Y = CursorPos.y - WindowPos.y;
+					PostMouseEvent(systouchtype_move, 0, X, Y, true, -RadiusForWheel);
+					PostMouseEvent(systouchtype_move, 1, X, Y, true, +RadiusForWheel);
+				}
+			}
+			void WheelEnd()
+			{
+				WheelMoveTimer.stop();
+				WheelEndTimer.stop();
+				PostMouseEventsByWheelDone();
+			}
 
         protected:
             void initializeGL()
@@ -165,43 +201,98 @@ namespace BxCore
             {
                 BxCore::System::DoQuit();
             }
+            bool event(QEvent* event)
+            {
+                switch(event->type())
+                {
+                case QEvent::TouchBegin:
+                case QEvent::TouchUpdate:
+                    touchEvent(static_cast<QTouchEvent*>(event));
+                    return true;
+                case QEvent::TouchEnd:
+                    touchEventDone();
+                    return true;
+                }
+                return QWidget::event(event);
+            }
+            void touchEvent(QTouchEvent* event)
+            {
+                if(SavedTouchFlag == 0)
+                {
+                    PostMouseEventsByWheelDone();
+                    TouchPressed = true;
+                }
+                uint CurTouchFlag = 0;
+                QList<QTouchEvent::TouchPoint> Points = event->touchPoints();
+                foreach(const QTouchEvent::TouchPoint& Point, Points)
+                {
+                    if(Point.state() == Qt::TouchPointStationary)
+                        continue;
+                    const int ID = Point.id();
+                    if(31 < ID) continue;
+                    const int X = (int) Point.pos().x();
+                    const int Y = (int) Point.pos().y();
+                    const bool IsPressed = ((SavedTouchFlag & (1 << ID)) != 0);
+                    PostMouseEvent((IsPressed)? systouchtype_move : systouchtype_down, ID, X, Y);
+                    CurTouchFlag |= 1 << ID;
+                    SavedTouchPos[ID] = BxDrawGlobal::XY(X, Y);
+                }
+                for(int i = 0; i < 32; ++i)
+                {
+                    const bool IsPressed = ((SavedTouchFlag & (1 << i)) != 0);
+                    const bool IsPressNow = ((CurTouchFlag & (1 << i)) != 0);
+                    if(IsPressed && !IsPressNow)
+                        PostMouseEvent(systouchtype_up, i, SavedTouchPos[i].x, SavedTouchPos[i].y);
+                }
+                SavedTouchFlag = CurTouchFlag;
+            }
+            void touchEventDone()
+            {
+                TouchPressed = false;
+                for(int i = 0; i < 32; ++i)
+                    if((SavedTouchFlag & (1 << i)) != 0)
+                        PostMouseEvent(systouchtype_up, i, SavedTouchPos[i].x, SavedTouchPos[i].y);
+                SavedTouchFlag = 0;
+            }
             void mousePressEvent(QMouseEvent* event)
             {
-                Pressed = true;
-                sysevent Event;
-                Event.type = syseventtype_touch;
-                Event.touch.type = systouchtype_down;
-                Event.touch.id = 0;
-                Event.touch.x = event->x() * GLSCALE - GetGUIMarginL();
-                Event.touch.y = event->y() * GLSCALE - GetGUIMarginT();
-                Event.touch.x = Event.touch.x * BxCore::Surface::GetWidth() / BxCore::Surface::GetWidthHW();
-                Event.touch.y = Event.touch.y * BxCore::Surface::GetHeight() / BxCore::Surface::GetHeightHW();
-                BxScene::__AddEvent__(Event, syseventset_do_enable);
+				if(!TouchRPressed && event->button() == Qt::LeftButton)
+				{
+					PostMouseEventsByWheelDone();
+					TouchPressed = true;
+					PostMouseEvent(systouchtype_down, 0, event->x(), event->y());
+				}
+				if(!TouchPressed && event->button() == Qt::RightButton)
+				{
+					PostMouseEventsByWheelDone();
+					TouchRPressed = true;
+					PostMouseEvent(systouchtype_down, 0, event->x(), event->y(), true, -DClickRadius);
+					PostMouseEvent(systouchtype_down, 1, event->x(), event->y(), true, +DClickRadius);
+				}
+            }
+			void mouseMoveEvent(QMouseEvent* event)
+            {
+				if(TouchPressed && (event->buttons() & Qt::LeftButton))
+					PostMouseEvent(systouchtype_move, 0, event->x(), event->y());
+				if(TouchRPressed && (event->buttons() & Qt::RightButton))
+				{
+					PostMouseEvent(systouchtype_move, 0, event->x(), event->y(), true, -DClickRadius);
+					PostMouseEvent(systouchtype_move, 1, event->x(), event->y(), true, +DClickRadius);
+				}
             }
             void mouseReleaseEvent(QMouseEvent* event)
             {
-                Pressed = false;
-                sysevent Event;
-                Event.type = syseventtype_touch;
-                Event.touch.type = systouchtype_up;
-                Event.touch.id = 0;
-                Event.touch.x = event->x() * GLSCALE - GetGUIMarginL();
-                Event.touch.y = event->y() * GLSCALE - GetGUIMarginT();
-                Event.touch.x = Event.touch.x * BxCore::Surface::GetWidth() / BxCore::Surface::GetWidthHW();
-                Event.touch.y = Event.touch.y * BxCore::Surface::GetHeight() / BxCore::Surface::GetHeightHW();
-                BxScene::__AddEvent__(Event, syseventset_need_enable);
-            }
-            void mouseMoveEvent(QMouseEvent* event)
-            {
-                sysevent Event;
-                Event.type = syseventtype_touch;
-                Event.touch.type = systouchtype_move;
-                Event.touch.id = 0;
-                Event.touch.x = event->x() * GLSCALE - GetGUIMarginL();
-                Event.touch.y = event->y() * GLSCALE - GetGUIMarginT();
-                Event.touch.x = Event.touch.x * BxCore::Surface::GetWidth() / BxCore::Surface::GetWidthHW();
-                Event.touch.y = Event.touch.y * BxCore::Surface::GetHeight() / BxCore::Surface::GetHeightHW();
-                BxScene::__AddEvent__(Event, syseventset_need_enable);
+				if(TouchPressed && event->button() == Qt::LeftButton)
+				{
+					TouchPressed = false;
+					PostMouseEvent(systouchtype_up, 0, event->x(), event->y());
+				}
+				if(TouchRPressed && event->button() == Qt::RightButton)
+				{
+					TouchRPressed = false;
+					PostMouseEvent(systouchtype_up, 0, event->x(), event->y(), true, -DClickRadius);
+					PostMouseEvent(systouchtype_up, 1, event->x(), event->y(), true, +DClickRadius);
+				}
             }
             void keyPressEvent(QKeyEvent* event)
             {
@@ -241,8 +332,54 @@ namespace BxCore
                 }
                 else event->ignore();
             }
+			void wheelEvent(QWheelEvent* event)
+			{
+				if(TouchPressed) return;
+				const int X = event->x();
+				const int Y = event->y();
+				if(!WheelPressed)
+				{
+					WheelPressed = true;
+					RadiusForWheel = DClickRadius;
+					PostMouseEvent(systouchtype_down, 0, X, Y, true, -RadiusForWheel);
+					PostMouseEvent(systouchtype_down, 1, X, Y, true, +RadiusForWheel);
+				}
+				RadiusForWheel = BxUtilGlobal::Max(DClickRadiusMin,
+					RadiusForWheel + DClickRadiusSpeed * event->delta() / 120);
+				PostMouseEvent(systouchtype_move, 0, X, Y, true, -RadiusForWheel);
+				PostMouseEvent(systouchtype_move, 1, X, Y, true, +RadiusForWheel);
+				WheelMoveTimer.start(20);
+				WheelEndTimer.start(200);
+			}
 
-        private:
+		private:
+			void PostMouseEvent(systouchtype type, uint id, int x, int y, bool special = false, int xadd = 0, int yadd = 0)
+			{
+				sysevent Event;
+				Event.type = syseventtype_touch;
+				Event.touch.type = type;
+				Event.touch.id = id;
+				Event.touch.x = x * GLSCALE - GetGUIMarginL() + xadd;
+				Event.touch.y = y * GLSCALE - GetGUIMarginT() + yadd;
+				Event.touch.x = Event.touch.x * BxCore::Surface::GetWidth() / BxCore::Surface::GetWidthHW();
+				Event.touch.y = Event.touch.y * BxCore::Surface::GetHeight() / BxCore::Surface::GetHeightHW();
+				Event.touch.special = special;
+				BxScene::__AddEvent__(Event, (type == systouchtype_down)? syseventset_do_enable : syseventset_need_enable);
+			}
+			void PostMouseEventsByWheelDone()
+			{
+				if(WheelPressed)
+				{
+					WheelPressed = false;
+					point CursorPos = BxCore::System::GetSimulatorCursorPos();
+					point WindowPos = BxCore::System::GetSimulatorWindowPos();
+					const int X = CursorPos.x - WindowPos.x;
+					const int Y = CursorPos.y - WindowPos.y;
+					PostMouseEvent(systouchtype_up, 0, X, Y, true, -RadiusForWheel);
+					PostMouseEvent(systouchtype_up, 1, X, Y, true, +RadiusForWheel);
+				}
+			}
+
 			#ifdef Q_OS_MACX
 				keykind GetKeyKind(uint keycode)
 				{

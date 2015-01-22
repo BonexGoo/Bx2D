@@ -336,6 +336,7 @@ void OnRender(BxSimulator& This, BxDraw& Draw)
 				BxTRY(Draw, CLIP(XYWH(0, y, Draw.Width(), CurImage.Height() + Gap * 2)))
 				{
 					Draw.Area(Draw.Width() / 2, Gap, FORM(&CurImage));
+					if(!BxCore::System::IsTouchDown())
 					if(BxDrawGlobal::_DrawOption::CurClipRect().inside(This.CursorPos))
 						IsMenuVisible = true;
 				}

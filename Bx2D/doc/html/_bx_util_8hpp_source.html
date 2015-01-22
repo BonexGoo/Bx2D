@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.ico"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Bx2D
-   &#160;<span id="projectnumber">4.0.6</span>
+   &#160;<span id="projectnumber">4.0.7</span>
    </div>
   </td>
  </tr>
@@ -823,17 +823,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;        <span class="keyword">const</span> fint VecXE, <span class="keyword">const</span> fint VecYE, <a class="code" href="structpointf.html">pointf</a> _out_ ResultE)</div>
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;    {</div>
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;        <span class="keyword">const</span> fint dist = <a class="code" href="namespace_bx_util_global.html#a0732d3795e4787d47c7ac63e74c083ab">BxUtilGlobal::Sqrt64</a>(<a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(VecX) + <a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(VecY));</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;        <span class="keywordflow">if</span>(!dist)</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;        {</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;            ResultB = pointf::zero();</div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;            ResultE = pointf::zero();</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;        }</div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;        <span class="keyword">const</span> fint distb = <a class="code" href="namespace_bx_util_global.html#a0732d3795e4787d47c7ac63e74c083ab">BxUtilGlobal::Sqrt64</a>(<a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(VecXB) + <a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(VecYB));</div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;        <span class="keywordflow">if</span>(distb)</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;        {</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;            <span class="keyword">const</span> fint k = F_Divide_F(distb, dist);</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;        fint k;</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;        <span class="keywordflow">if</span>(!dist)</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;        {</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;            ResultB = pointf::zero();</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;            ResultE = pointf::zero();</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;        }</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;        <span class="keyword">const</span> fint distb = <a class="code" href="namespace_bx_util_global.html#a0732d3795e4787d47c7ac63e74c083ab">BxUtilGlobal::Sqrt64</a>(<a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(VecXB) + <a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(VecYB));</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;        <span class="keywordflow">if</span>(distb &amp;&amp; (k = F_Divide_F(distb, dist)))</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;        {</div>
 <div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;            <span class="keyword">const</span> fint m = F_Multiply_F(2 * k, ItoF(1) + k);</div>
 <div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;            <span class="keyword">const</span> fint kk = F_Multiply_F(k, k);</div>
 <div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;            ResultB.x = F_Divide_F(3 * (VecXB + F_Multiply_F(kk, VecX)), m);</div>
@@ -842,391 +842,390 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;        <span class="keywordflow">else</span> ResultB = pointf::zero();</div>
 <div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;</div>
 <div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;        <span class="keyword">const</span> fint diste = <a class="code" href="namespace_bx_util_global.html#a0732d3795e4787d47c7ac63e74c083ab">BxUtilGlobal::Sqrt64</a>(<a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(VecXE) + <a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(VecYE));</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;        <span class="keywordflow">if</span>(diste)</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;        <span class="keywordflow">if</span>(diste &amp;&amp; (k = F_Divide_F(dist, diste)))</div>
 <div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;        {</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;            <span class="keyword">const</span> fint k = F_Divide_F(dist, diste);</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;            <span class="keyword">const</span> fint m = F_Multiply_F(2 * k, ItoF(1) + k);</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;            <span class="keyword">const</span> fint kk = F_Multiply_F(k, k);</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;            ResultE.x = F_Divide_F(F_Multiply_F(k, 3 * (VecX + F_Multiply_F(kk, VecXE))), m);</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;            ResultE.y = F_Divide_F(F_Multiply_F(k, 3 * (VecY + F_Multiply_F(kk, VecYE))), m);</div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;        }</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;        <span class="keywordflow">else</span> ResultE = pointf::zero();</div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;    }</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;</div>
-<div class="line"><a name="l01116"></a><span class="lineno"><a class="line" href="class_bx_util.html#a0abbd37b71ecc2aa9556dd38323677ae"> 1116</a></span>&#160;    global_func <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_bx_util.html#a0abbd37b71ecc2aa9556dd38323677ae">MatrixApply</a>(<a class="code" href="structvertex.html">vertex</a> _inout_ Dst, <span class="keyword">const</span> <a class="code" href="structmatrix.html">matrix</a> _in_ Src)</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    {</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;        <a class="code" href="structvertex.html">vertex</a> Result;</div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;        Result.x = FtoI(Src.m[0][0] * Dst.x + Src.m[0][1] * Dst.y + Src.m[0][2] * Dst.z + Src.m[0][3]);</div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;        Result.y = FtoI(Src.m[1][0] * Dst.x + Src.m[1][1] * Dst.y + Src.m[1][2] * Dst.z + Src.m[1][3]);</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        Result.z = FtoI(Src.m[2][0] * Dst.x + Src.m[2][1] * Dst.y + Src.m[2][2] * Dst.z + Src.m[2][3]);</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a>(&amp;Dst, &amp;Result, <span class="keyword">sizeof</span>(<a class="code" href="structvertex.html">vertex</a>));</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    }</div>
-<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;</div>
-<div class="line"><a name="l01133"></a><span class="lineno"><a class="line" href="class_bx_util.html#a67d75745d20650033cb419129baaaed8"> 1133</a></span>&#160;    global_func <span class="keywordtype">int</span> <a class="code" href="class_bx_util.html#a67d75745d20650033cb419129baaaed8">CP949ToUTF16</a>(<span class="keywordtype">string</span> cp949, <span class="keywordtype">int</span> cp949length, wstring_rw utf16, <span class="keywordtype">int</span> utf16length)</div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;    {</div>
-<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;        <span class="keywordflow">if</span>(cp949length &lt; 0) cp949length = 0x7FFFFFFF;</div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;        utf16length *= 2;</div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;        byte* utf16bytes = (byte*) utf16;</div>
-<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;        <span class="keywordtype">int</span> utf16focus = 0;</div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; cp949[i] &amp;&amp; i &lt; cp949length &amp;&amp; utf16focus &lt; utf16length; ++i)</div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;        {</div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;            <span class="keywordflow">if</span>(!(cp949[i] &amp; 0x80))</div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;            {</div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;                <span class="keyword">const</span> wchar onechar = CP949ToUTF16_Search(cp949[i]);</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;                utf16bytes[utf16focus++] = (byte)(onechar &amp; 0xFF);</div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;                utf16bytes[utf16focus++] = (byte)(onechar &gt;&gt; 8);</div>
-<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;            }</div>
-<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cp949[++i] &amp;&amp; i &lt; cp949length)</div>
-<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;            {</div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;                <span class="keyword">const</span> wchar onechar = CP949ToUTF16_Search(cp949[i - 1], cp949[i]);</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;                utf16bytes[utf16focus++] = (byte)(onechar &amp; 0xFF);</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;                utf16bytes[utf16focus++] = (byte)(onechar &gt;&gt; 8);</div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;            }</div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;        }</div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;        utf16bytes[utf16focus++] = 0;</div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;        utf16bytes[utf16focus] = 0;</div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;        <span class="keywordflow">return</span> utf16focus / 2;</div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;    }</div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;</div>
-<div class="line"><a name="l01167"></a><span class="lineno"><a class="line" href="class_bx_util.html#afd59076fe1010b645d232f24fa34e84e"> 1167</a></span>&#160;    global_func <span class="keywordtype">int</span> <a class="code" href="class_bx_util.html#afd59076fe1010b645d232f24fa34e84e">UTF16ToCP949</a>(wstring utf16, <span class="keywordtype">int</span> utf16length, string_rw cp949, <span class="keyword">const</span> <span class="keywordtype">int</span> cp949length)</div>
-<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;    {</div>
-<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;        <span class="keywordflow">if</span>(utf16length &lt; 0) utf16length = 0x7FFFFFFF;</div>
-<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;        <span class="keywordflow">else</span> utf16length *= 2;</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;        <span class="keyword">const</span> byte* utf16bytes = (<span class="keyword">const</span> byte*) utf16;</div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;        <span class="keywordtype">int</span> cp949focus = 0;</div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; (utf16bytes[i] || utf16bytes[i + 1]) &amp;&amp; i &lt; utf16length &amp;&amp; cp949focus &lt; cp949length; i += 2)</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;        {</div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;            <span class="keywordtype">string</span> Result = UTF16ToCP949_Search((utf16bytes[i] &amp; 0xFF) | (utf16bytes[i + 1] &lt;&lt; 8));</div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;            cp949[cp949focus++] = Result[0];</div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;            <span class="keywordflow">if</span>((Result[0] &amp; 0x80) &amp;&amp; cp949focus &lt; cp949length)</div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;                cp949[cp949focus++] = Result[1];</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;        }</div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;        cp949[cp949focus] = 0;</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;        <span class="keywordflow">return</span> cp949focus;</div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;    }</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;</div>
-<div class="line"><a name="l01191"></a><span class="lineno"><a class="line" href="class_bx_util.html#ace58b8597a34f4d9b9ab4f27b4f48dde"> 1191</a></span>&#160;    global_func <span class="keywordtype">void</span> <a class="code" href="class_bx_util.html#ace58b8597a34f4d9b9ab4f27b4f48dde">UTF16ToUTF8</a>(wstring utf16, <span class="keywordtype">int</span> utf16length, string_rw utf8)</div>
-<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;    {</div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;        <span class="keywordflow">if</span>(utf16length &lt; 0) utf16length = 0x7FFFFFFF;</div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; utf16length &amp;&amp; utf16[i]; ++i)</div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;        {</div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;            <span class="keywordflow">if</span>((utf16[i] &amp; 0xFF80) == 0x0000) <span class="comment">// Ascii</span></div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;                *(utf8++) = utf16[i] &amp; 0x00FF;</div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf16[i] &amp; 0xF800) == 0x0000) <span class="comment">// 2Bytes-Less</span></div>
-<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;            {</div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;                *(utf8++) = 0xC0 | ((utf16[i] &amp; 0x07C0) &gt;&gt; 6);</div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;                *(utf8++) = 0x80 | (utf16[i] &amp; 0x003F);</div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;            }</div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf16[i] &amp; 0xFC00) == 0xD800 &amp;&amp; (utf16[i + 1] &amp; 0xFC00) == 0xDC00) <span class="comment">// 4Bytes</span></div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;            {</div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;                <span class="keyword">const</span> wchar U_Value = ((utf16[i] &amp; 0x03C0) &gt;&gt; 6) + 1;</div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;                *(utf8++) = 0xF0 | ((U_Value &amp; 0x001C) &gt;&gt; 2);</div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;                *(utf8++) = 0x80 | ((U_Value &amp; 0x0003) &lt;&lt; 4) | ((utf16[i] &amp; 0x003C) &gt;&gt; 2);</div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;                *(utf8++) = 0x80 | ((utf16[i] &amp; 0x0003) &lt;&lt; 4) | ((utf16[i + 1] &amp; 0x03C0) &gt;&gt; 6);</div>
-<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;                *(utf8++) = 0x80 | (utf16[i + 1] &amp; 0x003F);</div>
-<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;                i += 1;</div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;            }</div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;            <span class="keywordflow">else</span> <span class="comment">// 2Bytes-Full</span></div>
-<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;            {</div>
-<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;                *(utf8++) = 0xE0 | ((utf16[i] &amp; 0xF000) &gt;&gt; 12);</div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;                *(utf8++) = 0x80 | ((utf16[i] &amp; 0x0FC0) &gt;&gt; 6);</div>
-<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;                *(utf8++) = 0x80 | (utf16[i] &amp; 0x003F);</div>
-<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;            }</div>
-<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;        }</div>
-<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;        *utf8 = 0;</div>
-<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;    }</div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;</div>
-<div class="line"><a name="l01229"></a><span class="lineno"><a class="line" href="class_bx_util.html#a641e1bebe3972ac651d08b6890d76fb0"> 1229</a></span>&#160;    global_func <span class="keywordtype">void</span> <a class="code" href="class_bx_util.html#a641e1bebe3972ac651d08b6890d76fb0">UTF8ToUTF16</a>(<span class="keywordtype">string</span> utf8, <span class="keywordtype">int</span> utf8length, wstring_rw utf16)</div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;    {</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        <span class="keywordflow">if</span>(utf8length &lt; 0) utf8length = 0x7FFFFFFF;</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; utf8length &amp;&amp; utf8[i]; ++i)</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;        {</div>
-<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;            <span class="keywordflow">if</span>((utf8[i] &amp; 0xF8) == 0xF0) <span class="comment">// 4Bytes</span></div>
-<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;            {</div>
-<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">char</span> W_Value = (((utf8[i] &amp; 0x07) &lt;&lt; 2) | ((utf8[i + 1] &amp; 0x30) &gt;&gt; 4)) - 1;</div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;                *(utf16++) = 0xD800 | (W_Value &lt;&lt; 6) | ((utf8[i + 1] &amp; 0x0F) &lt;&lt; 2) | ((utf8[i + 2] &amp; 0x30) &gt;&gt; 4);</div>
-<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;                *(utf16++) = 0xDC00 | ((utf8[i + 2] &amp; 0x0F) &lt;&lt; 6) | (utf8[i + 3] &amp; 0x3F);</div>
-<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;                i += 3;</div>
-<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;            }</div>
-<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf8[i] &amp; 0xF0) == 0xE0) <span class="comment">// 3Bytes</span></div>
-<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;            {</div>
-<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;                *(utf16++) = ((utf8[i] &amp; 0x0F) &lt;&lt; 12) | ((utf8[i + 1] &amp; 0x3F) &lt;&lt; 6) | (utf8[i + 2] &amp; 0x3F);</div>
-<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;                i += 2;</div>
-<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;            }</div>
-<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf8[i] &amp; 0xE0) == 0xC0) <span class="comment">// 2Bytes</span></div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;            {</div>
-<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;                *(utf16++) = ((utf8[i] &amp; 0x1F) &lt;&lt; 6) | (utf8[i + 1] &amp; 0x3F);</div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;                i += 1;</div>
-<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;            }</div>
-<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;            <span class="keywordflow">else</span> <span class="comment">// 1Bytes</span></div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;            {</div>
-<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;                *(utf16++) = utf8[i] &amp; 0xFF;</div>
-<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;            }</div>
-<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;        }</div>
-<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;        *utf16 = 0;</div>
-<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;    }</div>
-<div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;</div>
-<div class="line"><a name="l01265"></a><span class="lineno"><a class="line" href="class_bx_util.html#a9734058f17823d1e2f3f7fc07a4aa121"> 1265</a></span>&#160;    global_func <span class="keywordtype">int</span> <a class="code" href="class_bx_util.html#a9734058f17823d1e2f3f7fc07a4aa121">GetLengthForUTF8</a>(wstring utf16, <span class="keywordtype">int</span> utf16length)</div>
-<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;    {</div>
-<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;        <span class="keywordflow">if</span>(utf16length &lt; 0) utf16length = 0x7FFFFFFF;</div>
-<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;        <span class="keywordtype">int</span> Result = 0;</div>
-<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; utf16length &amp;&amp; utf16[i]; ++i)</div>
-<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;        {</div>
-<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;            <span class="keywordflow">if</span>((utf16[i] &amp; 0xFF80) == 0x0000) <span class="comment">// Ascii</span></div>
-<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;                Result += 1;</div>
-<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf16[i] &amp; 0xF800) == 0x0000) <span class="comment">// 2Bytes-Less</span></div>
-<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;                Result += 2;</div>
-<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf16[i] &amp; 0xFC00) == 0xD800 &amp;&amp; (utf16[i + 1] &amp; 0xFC00) == 0xDC00) <span class="comment">// 4Bytes</span></div>
-<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;            {</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;                Result += 4;</div>
-<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;                i += 1;</div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;            }</div>
-<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;            <span class="keywordflow">else</span> <span class="comment">// 2Bytes-Full</span></div>
-<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;                Result += 3;</div>
-<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;        }</div>
-<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;        <span class="keywordflow">return</span> Result;</div>
-<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;    }</div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;</div>
-<div class="line"><a name="l01292"></a><span class="lineno"><a class="line" href="class_bx_util.html#a6609c0c508f2148565c35b9212052d33"> 1292</a></span>&#160;    global_func <span class="keywordtype">int</span> <a class="code" href="class_bx_util.html#a6609c0c508f2148565c35b9212052d33">GetLengthForUTF16</a>(<span class="keywordtype">string</span> utf8, <span class="keywordtype">int</span> utf8length)</div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;    {</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;        <span class="keywordflow">if</span>(utf8length &lt; 0) utf8length = 0x7FFFFFFF;</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;        <span class="keywordtype">int</span> Result = 0;</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; utf8length &amp;&amp; utf8[i]; ++i)</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;        {</div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;            <span class="keywordflow">if</span>((utf8[i] &amp; 0xF8) == 0xF0) <span class="comment">// 4Bytes</span></div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;            {</div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;                Result += 2;</div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;                i += 3;</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;            }</div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf8[i] &amp; 0xF0) == 0xE0) <span class="comment">// 3Bytes</span></div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;            {</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;                Result += 1;</div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;                i += 2;</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;            }</div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf8[i] &amp; 0xE0) == 0xC0) <span class="comment">// 2Bytes</span></div>
-<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;            {</div>
-<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;                Result += 1;</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;                i += 1;</div>
-<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;            }</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;            <span class="keywordflow">else</span> <span class="comment">// 1Bytes</span></div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;                Result += 1;</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        }</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        <span class="keywordflow">return</span> Result;</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;    }</div>
-<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;</div>
-<div class="line"><a name="l01327"></a><span class="lineno"><a class="line" href="class_bx_util.html#a8363c42cb6abcbd477dc37e85e26c84f"> 1327</a></span>&#160;    global_func <span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>* <a class="code" href="class_bx_util.html#a8363c42cb6abcbd477dc37e85e26c84f">GetDotByLineCross</a>(<span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>&amp; DstB, <span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>&amp; DstE, <span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>&amp; SrcB, <span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>&amp; SrcE)</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;    {</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;        thread_storage _ = <span class="keyword">sizeof</span>(<a class="code" href="structpoint.html">point</a>);</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;        <a class="code" href="structpoint.html">point</a>&amp; Result = *((<a class="code" href="structpoint.html">point</a>*) <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a>(&amp;_));</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(SrcB.x, SrcE.x) &lt; <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e">BxUtilGlobal::Min</a>(DstB.x, DstE.x)</div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;            || <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(DstB.x, DstE.x) &lt; <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e">BxUtilGlobal::Min</a>(SrcB.x, SrcE.x)</div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;            || <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(SrcB.y, SrcE.y) &lt; <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e">BxUtilGlobal::Min</a>(DstB.y, DstE.y)</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;            || <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(DstB.y, DstE.y) &lt; <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e">BxUtilGlobal::Min</a>(SrcB.y, SrcE.y))</div>
-<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> ResultA1 = <a class="code" href="class_bx_util.html#a147df2b368fe0381b9b46ea850d6f916">GetClockwiseValue</a>(DstB, DstE, SrcB);</div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> ResultB1 = <a class="code" href="class_bx_util.html#a147df2b368fe0381b9b46ea850d6f916">GetClockwiseValue</a>(DstB, DstE, SrcE);</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> ResultA2 = <a class="code" href="class_bx_util.html#a147df2b368fe0381b9b46ea850d6f916">GetClockwiseValue</a>(SrcB, SrcE, DstB);</div>
-<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> ResultB2 = <a class="code" href="class_bx_util.html#a147df2b368fe0381b9b46ea850d6f916">GetClockwiseValue</a>(SrcB, SrcE, DstE);</div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;        <span class="keywordflow">if</span>((ResultA1 == 0 || ResultB1 == 0 || (ResultA1 &lt; 0 &amp;&amp; 0 &lt; ResultB1) || (0 &lt; ResultA1 &amp;&amp; ResultB1 &lt; 0))</div>
-<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;            &amp;&amp; (ResultA2 == 0 || ResultB2 == 0 || (ResultA2 &lt; 0 &amp;&amp; 0 &lt; ResultB2) || (0 &lt; ResultA2 &amp;&amp; ResultB2 &lt; 0)))</div>
-<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;        {</div>
-<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;            <span class="comment">// 수직</span></div>
-<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;            <span class="keywordflow">if</span>(DstB.x == DstE.x &amp;&amp; SrcB.x == SrcE.x)</div>
-<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;            {</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;                Result.x = DstB.x;</div>
-<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;                <span class="keywordflow">if</span>(DstB.y &lt; DstE.y)</div>
-<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;                {</div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcB = (DstB.y &lt;= SrcB.y &amp;&amp; SrcB.y &lt;= DstE.y);</div>
-<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcE = (DstB.y &lt;= SrcE.y &amp;&amp; SrcE.y &lt;= DstE.y);</div>
-<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;                    <span class="keywordflow">if</span>(IsInSrcB &amp;&amp; IsInSrcE)</div>
-<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;                        Result.y = (SrcB.y &lt; SrcE.y)? SrcB.y : SrcE.y;</div>
-<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcB) Result.y = SrcB.y;</div>
-<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcE) Result.y = SrcE.y;</div>
-<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;                    <span class="keywordflow">else</span> Result.y = (SrcB.y &lt; SrcE.y)? DstB.y : DstE.y;</div>
-<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;                }</div>
-<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;                {</div>
-<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcB = (DstE.y &lt;= SrcB.y &amp;&amp; SrcB.y &lt;= DstB.y);</div>
-<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcE = (DstE.y &lt;= SrcE.y &amp;&amp; SrcE.y &lt;= DstB.y);</div>
-<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;                    <span class="keywordflow">if</span>(IsInSrcB &amp;&amp; IsInSrcE)</div>
-<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;                        Result.y = (SrcB.y &lt; SrcE.y)? SrcE.y : SrcB.y;</div>
-<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcB) Result.y = SrcB.y;</div>
-<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcE) Result.y = SrcE.y;</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;                    <span class="keywordflow">else</span> Result.y = (SrcB.y &lt; SrcE.y)? DstE.y : DstB.y;</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;                }</div>
-<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;            }</div>
-<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;            <span class="comment">// 수평</span></div>
-<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(DstB.y == DstE.y &amp;&amp; SrcB.y == SrcE.y)</div>
-<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;            {</div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;                Result.y = DstB.y;</div>
-<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;                <span class="keywordflow">if</span>(DstB.x &lt; DstE.x)</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;                {</div>
-<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcB = (DstB.x &lt;= SrcB.x &amp;&amp; SrcB.x &lt;= DstE.x);</div>
-<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcE = (DstB.x &lt;= SrcE.x &amp;&amp; SrcE.x &lt;= DstE.x);</div>
-<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;                    <span class="keywordflow">if</span>(IsInSrcB &amp;&amp; IsInSrcE)</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                        Result.x = (SrcB.x &lt; SrcE.x)? SrcB.x : SrcE.x;</div>
-<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcB) Result.x = SrcB.x;</div>
-<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcE) Result.x = SrcE.x;</div>
-<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;                    <span class="keywordflow">else</span> Result.x = (SrcB.x &lt; SrcE.x)? DstB.x : DstE.x;</div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;                }</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;                {</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcB = (DstE.x &lt;= SrcB.x &amp;&amp; SrcB.x &lt;= DstB.x);</div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcE = (DstE.x &lt;= SrcE.x &amp;&amp; SrcE.x &lt;= DstB.x);</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;                    <span class="keywordflow">if</span>(IsInSrcB &amp;&amp; IsInSrcE)</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;                        Result.x = (SrcB.x &lt; SrcE.x)? SrcE.x : SrcB.x;</div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcB) Result.x = SrcB.x;</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcE) Result.x = SrcE.x;</div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;                    <span class="keywordflow">else</span> Result.x = (SrcB.x &lt; SrcE.x)? DstE.x : DstB.x;</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;                }</div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;            }</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;            <span class="comment">// 직교</span></div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(DstB.x == DstE.x &amp;&amp; SrcB.y == SrcE.y)</div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;            {</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;                Result.x = DstB.x;</div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;                Result.y = SrcB.y;</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;            }</div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(SrcB.x == SrcE.x &amp;&amp; DstB.y == DstE.y)</div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;            {</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;                Result.x = SrcB.x;</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;                Result.y = DstB.y;</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;            }</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;            <span class="comment">// 꼭지점닿음</span></div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((DstB.x == SrcB.x &amp;&amp; DstB.y == SrcB.y) || (DstE.x == SrcE.x &amp;&amp; DstE.y == SrcE.y)</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;                || (DstB.x == SrcE.x &amp;&amp; DstB.y == SrcE.y) || (DstE.x == SrcB.x &amp;&amp; DstE.y == SrcB.y))</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;            {</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;                <span class="comment">// 직선A</span></div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;                fint A_A = ItoF(DstB.y - DstE.y);</div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;                fint A_B = ItoF(DstE.x - DstB.x);</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;                <span class="keyword">const</span> fint A_Distance = <a class="code" href="namespace_bx_util_global.html#a0732d3795e4787d47c7ac63e74c083ab">BxUtilGlobal::Sqrt64</a>(<a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(A_A) + <a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(A_B));</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;                A_A = (((huge) A_A) &lt;&lt; 16) / A_Distance;</div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;                A_B = (((huge) A_B) &lt;&lt; 16) / A_Distance;</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;                <span class="keyword">const</span> fint A_C = A_A * DstB.x + A_B * DstB.y;</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;                <span class="comment">// 직선B</span></div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;                fint B_A = ItoF(SrcB.y - SrcE.y);</div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;                fint B_B = ItoF(SrcE.x - SrcB.x);</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;                <span class="keyword">const</span> fint B_Distance = <a class="code" href="namespace_bx_util_global.html#a0732d3795e4787d47c7ac63e74c083ab">BxUtilGlobal::Sqrt64</a>(<a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(B_A) + <a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(B_B));</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;                B_A = (((huge) B_A) &lt;&lt; 16) / B_Distance;</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;                B_B = (((huge) B_B) &lt;&lt; 16) / B_Distance;</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;                <span class="keyword">const</span> fint B_C = B_A * SrcB.x + B_B * SrcB.y;</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;                <span class="comment">// 교점구하기</span></div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;                <span class="keyword">const</span> fint Rate = ((A_B * (huge) B_A) &gt;&gt; 16) - ((A_A * (huge) B_B) &gt;&gt; 16);</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;                Result.x = FtoI((A_B * (huge) B_C - B_B * (huge) A_C) / Rate);</div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;                Result.y = FtoI((A_A * (huge) B_C - B_A * (huge) A_C) / -Rate);</div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;            }</div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;            <span class="keywordflow">return</span> &amp;Result;</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;        }</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;    }</div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;    <span class="keyword">enum</span> {Angle90 = 256, Angle180 = 512, Angle270 = 768};</div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;</div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;    global_func <span class="keyword">inline</span> uint&amp; RandomTable(<span class="keywordtype">int</span> Index)</div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;    {thread_storage _ = <span class="keyword">sizeof</span>(uint) * 256; <span class="keywordflow">return</span> ((uint*) <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a>(&amp;_))[Index];}</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;    global_func <span class="keyword">const</span> wchar CP949ToUTF16_Search(<span class="keyword">const</span> <span class="keywordtype">char</span> cp949a, <span class="keyword">const</span> <span class="keywordtype">char</span> cp949b = <span class="charliteral">&#39;\0&#39;</span>)</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;    {</div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> Length = 98 + 51 + 2350;</div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;        thread_storage _ = <span class="keyword">sizeof</span>(wchar) * (Length + Length);</div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;        wchar* CP949 = (wchar*) <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a>(&amp;_);</div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;        wchar* UTF16 = CP949 + Length;</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        <span class="keywordflow">if</span>(!CP949[0])</div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;        {</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a>(CP949, BxCore::Util::CP949Table(), <span class="keyword">sizeof</span>(wchar) * Length);</div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a>(UTF16, BxCore::Util::UTF16Table(), <span class="keyword">sizeof</span>(wchar) * Length);</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Length - 1; ++i)</div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;            {</div>
-<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;                <span class="keywordtype">int</span> iBest = i;</div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = i + 1; j &lt; Length; ++j)</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;                    <span class="keywordflow">if</span>(CP949[j] &lt; CP949[iBest])</div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;                        iBest = j;</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;                <span class="keywordflow">if</span>(iBest != i)</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;                {</div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;                    wchar Temp = CP949[i];</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;                    CP949[i] = CP949[iBest];</div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;                    CP949[iBest] = Temp;</div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;                    Temp = UTF16[i];</div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;                    UTF16[i] = UTF16[iBest];</div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;                    UTF16[iBest] = Temp;</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;                }</div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;            }</div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;        }</div>
-<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;        <span class="keyword">const</span> wchar Key = ((cp949b &amp; 0xFF) &lt;&lt; 8) | (cp949a &amp; 0xFF);</div>
-<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;        <span class="keywordtype">int</span> Lower = 0, Upper = Length - 1;</div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        <span class="keywordflow">while</span>(Lower &lt;= Upper)</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;        {</div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> Middle = (Lower + Upper) / 2;</div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;            <span class="keywordflow">if</span>(CP949[Middle] == Key)</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;                <span class="keywordflow">return</span> (<span class="keyword">const</span> wchar) UTF16[Middle];</div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;            <span class="keywordflow">if</span>(CP949[Middle] &lt; Key)</div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;                Lower = Middle + 1;</div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;            <span class="keywordflow">else</span> Upper = Middle - 1;</div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;        }</div>
-<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;        <span class="keywordflow">return</span> (<span class="keyword">const</span> wchar) *(_W2(<span class="stringliteral">&quot;\x25A1&quot;</span>));</div>
-<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;    }</div>
-<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;</div>
-<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;    global_func <span class="keywordtype">string</span> UTF16ToCP949_Search(<span class="keyword">const</span> wchar utf16)</div>
-<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;    {</div>
-<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> Length = 98 + 51 + 2350;</div>
-<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;        thread_storage _ = <span class="keyword">sizeof</span>(wchar) * (Length + Length);</div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;        wchar* UTF16 = (wchar*) <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a>(&amp;_);</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;        wchar* CP949 = UTF16 + Length;</div>
-<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;        <span class="keywordflow">if</span>(!UTF16[0])</div>
-<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;        {</div>
-<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a>(UTF16, BxCore::Util::UTF16Table(), <span class="keyword">sizeof</span>(wchar) * Length);</div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a>(CP949, BxCore::Util::CP949Table(), <span class="keyword">sizeof</span>(wchar) * Length);</div>
-<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Length - 1; ++i)</div>
-<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;            {</div>
-<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;                <span class="keywordtype">int</span> iBest = i;</div>
-<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = i + 1; j &lt; Length; ++j)</div>
-<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;                    <span class="keywordflow">if</span>(UTF16[j] &lt; UTF16[iBest])</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;                        iBest = j;</div>
-<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;                <span class="keywordflow">if</span>(iBest != i)</div>
-<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;                {</div>
-<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;                    wchar Temp = UTF16[i];</div>
-<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;                    UTF16[i] = UTF16[iBest];</div>
-<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;                    UTF16[iBest] = Temp;</div>
-<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;                    Temp = CP949[i];</div>
-<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;                    CP949[i] = CP949[iBest];</div>
-<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;                    CP949[iBest] = Temp;</div>
-<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;                }</div>
-<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;            }</div>
-<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;        }</div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;        <span class="keyword">const</span> wchar Key = utf16;</div>
-<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;        <span class="keywordtype">int</span> Lower = 0, Upper = Length - 1;</div>
-<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;        <span class="keywordflow">while</span>(Lower &lt;= Upper)</div>
-<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;        {</div>
-<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> Middle = (Lower + Upper) / 2;</div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;            <span class="keywordflow">if</span>(UTF16[Middle] == Key)</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;                <span class="keywordflow">return</span> (<span class="keywordtype">string</span>) &amp;CP949[Middle];</div>
-<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;            <span class="keywordflow">if</span>(UTF16[Middle] &lt; Key)</div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;                Lower = Middle + 1;</div>
-<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;            <span class="keywordflow">else</span> Upper = Middle - 1;</div>
-<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;        }</div>
-<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">string</span>) _W2(<span class="stringliteral">&quot;\xE0A1&quot;</span>);</div>
-<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;    }</div>
-<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;</div>
-<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;    global_func <span class="keyword">inline</span> uint&amp; _RandValue()</div>
-<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;    {</div>
-<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;        thread_storage _ = <span class="keyword">sizeof</span>(uint);</div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;        <span class="keywordflow">return</span> *((uint*) <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a>(&amp;_));</div>
-<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;    }</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;</div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;    global_func <span class="keyword">inline</span> <span class="keywordtype">void</span> _SetRand(<span class="keyword">const</span> uint Key)</div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;    {</div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;        _RandValue() = Key;</div>
-<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;    }</div>
-<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;</div>
-<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;    global_func <span class="keyword">inline</span> uint _MakeRand()</div>
-<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;    {</div>
-<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;        _RandValue() *= 0x000343fd;</div>
-<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;        _RandValue() += 0x00269ec3;</div>
-<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;        <span class="keywordflow">return</span> (_RandValue() &gt;&gt; 16) &amp; 0x7fff;</div>
-<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;    }</div>
-<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;};</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;            <span class="keyword">const</span> fint m = F_Multiply_F(2 * k, ItoF(1) + k);</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;            <span class="keyword">const</span> fint kk = F_Multiply_F(k, k);</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;            ResultE.x = F_Divide_F(F_Multiply_F(k, 3 * (VecX + F_Multiply_F(kk, VecXE))), m);</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;            ResultE.y = F_Divide_F(F_Multiply_F(k, 3 * (VecY + F_Multiply_F(kk, VecYE))), m);</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;        }</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;        <span class="keywordflow">else</span> ResultE = pointf::zero();</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;    }</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;</div>
+<div class="line"><a name="l01115"></a><span class="lineno"><a class="line" href="class_bx_util.html#a0abbd37b71ecc2aa9556dd38323677ae"> 1115</a></span>&#160;    global_func <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_bx_util.html#a0abbd37b71ecc2aa9556dd38323677ae">MatrixApply</a>(<a class="code" href="structvertex.html">vertex</a> _inout_ Dst, <span class="keyword">const</span> <a class="code" href="structmatrix.html">matrix</a> _in_ Src)</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;    {</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;        <a class="code" href="structvertex.html">vertex</a> Result;</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;        Result.x = FtoI(Src.m[0][0] * Dst.x + Src.m[0][1] * Dst.y + Src.m[0][2] * Dst.z + Src.m[0][3]);</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;        Result.y = FtoI(Src.m[1][0] * Dst.x + Src.m[1][1] * Dst.y + Src.m[1][2] * Dst.z + Src.m[1][3]);</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;        Result.z = FtoI(Src.m[2][0] * Dst.x + Src.m[2][1] * Dst.y + Src.m[2][2] * Dst.z + Src.m[2][3]);</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a>(&amp;Dst, &amp;Result, <span class="keyword">sizeof</span>(<a class="code" href="structvertex.html">vertex</a>));</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;    }</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;</div>
+<div class="line"><a name="l01132"></a><span class="lineno"><a class="line" href="class_bx_util.html#a67d75745d20650033cb419129baaaed8"> 1132</a></span>&#160;    global_func <span class="keywordtype">int</span> <a class="code" href="class_bx_util.html#a67d75745d20650033cb419129baaaed8">CP949ToUTF16</a>(<span class="keywordtype">string</span> cp949, <span class="keywordtype">int</span> cp949length, wstring_rw utf16, <span class="keywordtype">int</span> utf16length)</div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;    {</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;        <span class="keywordflow">if</span>(cp949length &lt; 0) cp949length = 0x7FFFFFFF;</div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;        utf16length *= 2;</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;        byte* utf16bytes = (byte*) utf16;</div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;        <span class="keywordtype">int</span> utf16focus = 0;</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; cp949[i] &amp;&amp; i &lt; cp949length &amp;&amp; utf16focus &lt; utf16length; ++i)</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;        {</div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;            <span class="keywordflow">if</span>(!(cp949[i] &amp; 0x80))</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;            {</div>
+<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;                <span class="keyword">const</span> wchar onechar = CP949ToUTF16_Search(cp949[i]);</div>
+<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;                utf16bytes[utf16focus++] = (byte)(onechar &amp; 0xFF);</div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;                utf16bytes[utf16focus++] = (byte)(onechar &gt;&gt; 8);</div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;            }</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cp949[++i] &amp;&amp; i &lt; cp949length)</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;            {</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;                <span class="keyword">const</span> wchar onechar = CP949ToUTF16_Search(cp949[i - 1], cp949[i]);</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;                utf16bytes[utf16focus++] = (byte)(onechar &amp; 0xFF);</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;                utf16bytes[utf16focus++] = (byte)(onechar &gt;&gt; 8);</div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;            }</div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;        }</div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;        utf16bytes[utf16focus++] = 0;</div>
+<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;        utf16bytes[utf16focus] = 0;</div>
+<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;        <span class="keywordflow">return</span> utf16focus / 2;</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;    }</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;</div>
+<div class="line"><a name="l01166"></a><span class="lineno"><a class="line" href="class_bx_util.html#afd59076fe1010b645d232f24fa34e84e"> 1166</a></span>&#160;    global_func <span class="keywordtype">int</span> <a class="code" href="class_bx_util.html#afd59076fe1010b645d232f24fa34e84e">UTF16ToCP949</a>(wstring utf16, <span class="keywordtype">int</span> utf16length, string_rw cp949, <span class="keyword">const</span> <span class="keywordtype">int</span> cp949length)</div>
+<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160;    {</div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;        <span class="keywordflow">if</span>(utf16length &lt; 0) utf16length = 0x7FFFFFFF;</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;        <span class="keywordflow">else</span> utf16length *= 2;</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;        <span class="keyword">const</span> byte* utf16bytes = (<span class="keyword">const</span> byte*) utf16;</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;        <span class="keywordtype">int</span> cp949focus = 0;</div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; (utf16bytes[i] || utf16bytes[i + 1]) &amp;&amp; i &lt; utf16length &amp;&amp; cp949focus &lt; cp949length; i += 2)</div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;        {</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;            <span class="keywordtype">string</span> Result = UTF16ToCP949_Search((utf16bytes[i] &amp; 0xFF) | (utf16bytes[i + 1] &lt;&lt; 8));</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;            cp949[cp949focus++] = Result[0];</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;            <span class="keywordflow">if</span>((Result[0] &amp; 0x80) &amp;&amp; cp949focus &lt; cp949length)</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;                cp949[cp949focus++] = Result[1];</div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;        }</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;        cp949[cp949focus] = 0;</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;        <span class="keywordflow">return</span> cp949focus;</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;    }</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;</div>
+<div class="line"><a name="l01190"></a><span class="lineno"><a class="line" href="class_bx_util.html#ace58b8597a34f4d9b9ab4f27b4f48dde"> 1190</a></span>&#160;    global_func <span class="keywordtype">void</span> <a class="code" href="class_bx_util.html#ace58b8597a34f4d9b9ab4f27b4f48dde">UTF16ToUTF8</a>(wstring utf16, <span class="keywordtype">int</span> utf16length, string_rw utf8)</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;    {</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;        <span class="keywordflow">if</span>(utf16length &lt; 0) utf16length = 0x7FFFFFFF;</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; utf16length &amp;&amp; utf16[i]; ++i)</div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;        {</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;            <span class="keywordflow">if</span>((utf16[i] &amp; 0xFF80) == 0x0000) <span class="comment">// Ascii</span></div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;                *(utf8++) = utf16[i] &amp; 0x00FF;</div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf16[i] &amp; 0xF800) == 0x0000) <span class="comment">// 2Bytes-Less</span></div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;            {</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;                *(utf8++) = 0xC0 | ((utf16[i] &amp; 0x07C0) &gt;&gt; 6);</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;                *(utf8++) = 0x80 | (utf16[i] &amp; 0x003F);</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;            }</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf16[i] &amp; 0xFC00) == 0xD800 &amp;&amp; (utf16[i + 1] &amp; 0xFC00) == 0xDC00) <span class="comment">// 4Bytes</span></div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;            {</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;                <span class="keyword">const</span> wchar U_Value = ((utf16[i] &amp; 0x03C0) &gt;&gt; 6) + 1;</div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;                *(utf8++) = 0xF0 | ((U_Value &amp; 0x001C) &gt;&gt; 2);</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;                *(utf8++) = 0x80 | ((U_Value &amp; 0x0003) &lt;&lt; 4) | ((utf16[i] &amp; 0x003C) &gt;&gt; 2);</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;                *(utf8++) = 0x80 | ((utf16[i] &amp; 0x0003) &lt;&lt; 4) | ((utf16[i + 1] &amp; 0x03C0) &gt;&gt; 6);</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;                *(utf8++) = 0x80 | (utf16[i + 1] &amp; 0x003F);</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;                i += 1;</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;            }</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;            <span class="keywordflow">else</span> <span class="comment">// 2Bytes-Full</span></div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;            {</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;                *(utf8++) = 0xE0 | ((utf16[i] &amp; 0xF000) &gt;&gt; 12);</div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;                *(utf8++) = 0x80 | ((utf16[i] &amp; 0x0FC0) &gt;&gt; 6);</div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;                *(utf8++) = 0x80 | (utf16[i] &amp; 0x003F);</div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;            }</div>
+<div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;        }</div>
+<div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;        *utf8 = 0;</div>
+<div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;    }</div>
+<div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;</div>
+<div class="line"><a name="l01228"></a><span class="lineno"><a class="line" href="class_bx_util.html#a641e1bebe3972ac651d08b6890d76fb0"> 1228</a></span>&#160;    global_func <span class="keywordtype">void</span> <a class="code" href="class_bx_util.html#a641e1bebe3972ac651d08b6890d76fb0">UTF8ToUTF16</a>(<span class="keywordtype">string</span> utf8, <span class="keywordtype">int</span> utf8length, wstring_rw utf16)</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;    {</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;        <span class="keywordflow">if</span>(utf8length &lt; 0) utf8length = 0x7FFFFFFF;</div>
+<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; utf8length &amp;&amp; utf8[i]; ++i)</div>
+<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;        {</div>
+<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;            <span class="keywordflow">if</span>((utf8[i] &amp; 0xF8) == 0xF0) <span class="comment">// 4Bytes</span></div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;            {</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">char</span> W_Value = (((utf8[i] &amp; 0x07) &lt;&lt; 2) | ((utf8[i + 1] &amp; 0x30) &gt;&gt; 4)) - 1;</div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;                *(utf16++) = 0xD800 | (W_Value &lt;&lt; 6) | ((utf8[i + 1] &amp; 0x0F) &lt;&lt; 2) | ((utf8[i + 2] &amp; 0x30) &gt;&gt; 4);</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;                *(utf16++) = 0xDC00 | ((utf8[i + 2] &amp; 0x0F) &lt;&lt; 6) | (utf8[i + 3] &amp; 0x3F);</div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;                i += 3;</div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;            }</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf8[i] &amp; 0xF0) == 0xE0) <span class="comment">// 3Bytes</span></div>
+<div class="line"><a name="l01241"></a><span class="lineno"> 1241</span>&#160;            {</div>
+<div class="line"><a name="l01242"></a><span class="lineno"> 1242</span>&#160;                *(utf16++) = ((utf8[i] &amp; 0x0F) &lt;&lt; 12) | ((utf8[i + 1] &amp; 0x3F) &lt;&lt; 6) | (utf8[i + 2] &amp; 0x3F);</div>
+<div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;                i += 2;</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;            }</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf8[i] &amp; 0xE0) == 0xC0) <span class="comment">// 2Bytes</span></div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;            {</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;                *(utf16++) = ((utf8[i] &amp; 0x1F) &lt;&lt; 6) | (utf8[i + 1] &amp; 0x3F);</div>
+<div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;                i += 1;</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;            }</div>
+<div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;            <span class="keywordflow">else</span> <span class="comment">// 1Bytes</span></div>
+<div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;            {</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;                *(utf16++) = utf8[i] &amp; 0xFF;</div>
+<div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160;            }</div>
+<div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;        }</div>
+<div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;        *utf16 = 0;</div>
+<div class="line"><a name="l01256"></a><span class="lineno"> 1256</span>&#160;    }</div>
+<div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;</div>
+<div class="line"><a name="l01264"></a><span class="lineno"><a class="line" href="class_bx_util.html#a9734058f17823d1e2f3f7fc07a4aa121"> 1264</a></span>&#160;    global_func <span class="keywordtype">int</span> <a class="code" href="class_bx_util.html#a9734058f17823d1e2f3f7fc07a4aa121">GetLengthForUTF8</a>(wstring utf16, <span class="keywordtype">int</span> utf16length)</div>
+<div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;    {</div>
+<div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;        <span class="keywordflow">if</span>(utf16length &lt; 0) utf16length = 0x7FFFFFFF;</div>
+<div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;        <span class="keywordtype">int</span> Result = 0;</div>
+<div class="line"><a name="l01268"></a><span class="lineno"> 1268</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; utf16length &amp;&amp; utf16[i]; ++i)</div>
+<div class="line"><a name="l01269"></a><span class="lineno"> 1269</span>&#160;        {</div>
+<div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;            <span class="keywordflow">if</span>((utf16[i] &amp; 0xFF80) == 0x0000) <span class="comment">// Ascii</span></div>
+<div class="line"><a name="l01271"></a><span class="lineno"> 1271</span>&#160;                Result += 1;</div>
+<div class="line"><a name="l01272"></a><span class="lineno"> 1272</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf16[i] &amp; 0xF800) == 0x0000) <span class="comment">// 2Bytes-Less</span></div>
+<div class="line"><a name="l01273"></a><span class="lineno"> 1273</span>&#160;                Result += 2;</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf16[i] &amp; 0xFC00) == 0xD800 &amp;&amp; (utf16[i + 1] &amp; 0xFC00) == 0xDC00) <span class="comment">// 4Bytes</span></div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;            {</div>
+<div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;                Result += 4;</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;                i += 1;</div>
+<div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;            }</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;            <span class="keywordflow">else</span> <span class="comment">// 2Bytes-Full</span></div>
+<div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;                Result += 3;</div>
+<div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;        }</div>
+<div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;        <span class="keywordflow">return</span> Result;</div>
+<div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;    }</div>
+<div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;</div>
+<div class="line"><a name="l01291"></a><span class="lineno"><a class="line" href="class_bx_util.html#a6609c0c508f2148565c35b9212052d33"> 1291</a></span>&#160;    global_func <span class="keywordtype">int</span> <a class="code" href="class_bx_util.html#a6609c0c508f2148565c35b9212052d33">GetLengthForUTF16</a>(<span class="keywordtype">string</span> utf8, <span class="keywordtype">int</span> utf8length)</div>
+<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;    {</div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;        <span class="keywordflow">if</span>(utf8length &lt; 0) utf8length = 0x7FFFFFFF;</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;        <span class="keywordtype">int</span> Result = 0;</div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; utf8length &amp;&amp; utf8[i]; ++i)</div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;        {</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;            <span class="keywordflow">if</span>((utf8[i] &amp; 0xF8) == 0xF0) <span class="comment">// 4Bytes</span></div>
+<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;            {</div>
+<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;                Result += 2;</div>
+<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;                i += 3;</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;            }</div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf8[i] &amp; 0xF0) == 0xE0) <span class="comment">// 3Bytes</span></div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;            {</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;                Result += 1;</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;                i += 2;</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;            }</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((utf8[i] &amp; 0xE0) == 0xC0) <span class="comment">// 2Bytes</span></div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;            {</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;                Result += 1;</div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;                i += 1;</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;            }</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;            <span class="keywordflow">else</span> <span class="comment">// 1Bytes</span></div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;                Result += 1;</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        }</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        <span class="keywordflow">return</span> Result;</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;    }</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;</div>
+<div class="line"><a name="l01326"></a><span class="lineno"><a class="line" href="class_bx_util.html#a8363c42cb6abcbd477dc37e85e26c84f"> 1326</a></span>&#160;    global_func <span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>* <a class="code" href="class_bx_util.html#a8363c42cb6abcbd477dc37e85e26c84f">GetDotByLineCross</a>(<span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>&amp; DstB, <span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>&amp; DstE, <span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>&amp; SrcB, <span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>&amp; SrcE)</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;    {</div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;        thread_storage _ = <span class="keyword">sizeof</span>(<a class="code" href="structpoint.html">point</a>);</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;        <a class="code" href="structpoint.html">point</a>&amp; Result = *((<a class="code" href="structpoint.html">point</a>*) <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a>(&amp;_));</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(SrcB.x, SrcE.x) &lt; <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e">BxUtilGlobal::Min</a>(DstB.x, DstE.x)</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;            || <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(DstB.x, DstE.x) &lt; <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e">BxUtilGlobal::Min</a>(SrcB.x, SrcE.x)</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;            || <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(SrcB.y, SrcE.y) &lt; <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e">BxUtilGlobal::Min</a>(DstB.y, DstE.y)</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;            || <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(DstB.y, DstE.y) &lt; <a class="code" href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e">BxUtilGlobal::Min</a>(SrcB.y, SrcE.y))</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> ResultA1 = <a class="code" href="class_bx_util.html#a147df2b368fe0381b9b46ea850d6f916">GetClockwiseValue</a>(DstB, DstE, SrcB);</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> ResultB1 = <a class="code" href="class_bx_util.html#a147df2b368fe0381b9b46ea850d6f916">GetClockwiseValue</a>(DstB, DstE, SrcE);</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> ResultA2 = <a class="code" href="class_bx_util.html#a147df2b368fe0381b9b46ea850d6f916">GetClockwiseValue</a>(SrcB, SrcE, DstB);</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> ResultB2 = <a class="code" href="class_bx_util.html#a147df2b368fe0381b9b46ea850d6f916">GetClockwiseValue</a>(SrcB, SrcE, DstE);</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;        <span class="keywordflow">if</span>((ResultA1 == 0 || ResultB1 == 0 || (ResultA1 &lt; 0 &amp;&amp; 0 &lt; ResultB1) || (0 &lt; ResultA1 &amp;&amp; ResultB1 &lt; 0))</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;            &amp;&amp; (ResultA2 == 0 || ResultB2 == 0 || (ResultA2 &lt; 0 &amp;&amp; 0 &lt; ResultB2) || (0 &lt; ResultA2 &amp;&amp; ResultB2 &lt; 0)))</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        {</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;            <span class="comment">// 수직</span></div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;            <span class="keywordflow">if</span>(DstB.x == DstE.x &amp;&amp; SrcB.x == SrcE.x)</div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;            {</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;                Result.x = DstB.x;</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;                <span class="keywordflow">if</span>(DstB.y &lt; DstE.y)</div>
+<div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;                {</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcB = (DstB.y &lt;= SrcB.y &amp;&amp; SrcB.y &lt;= DstE.y);</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcE = (DstB.y &lt;= SrcE.y &amp;&amp; SrcE.y &lt;= DstE.y);</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;                    <span class="keywordflow">if</span>(IsInSrcB &amp;&amp; IsInSrcE)</div>
+<div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;                        Result.y = (SrcB.y &lt; SrcE.y)? SrcB.y : SrcE.y;</div>
+<div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcB) Result.y = SrcB.y;</div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcE) Result.y = SrcE.y;</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;                    <span class="keywordflow">else</span> Result.y = (SrcB.y &lt; SrcE.y)? DstB.y : DstE.y;</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;                }</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;                {</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcB = (DstE.y &lt;= SrcB.y &amp;&amp; SrcB.y &lt;= DstB.y);</div>
+<div class="line"><a name="l01359"></a><span class="lineno"> 1359</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcE = (DstE.y &lt;= SrcE.y &amp;&amp; SrcE.y &lt;= DstB.y);</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;                    <span class="keywordflow">if</span>(IsInSrcB &amp;&amp; IsInSrcE)</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;                        Result.y = (SrcB.y &lt; SrcE.y)? SrcE.y : SrcB.y;</div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcB) Result.y = SrcB.y;</div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcE) Result.y = SrcE.y;</div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;                    <span class="keywordflow">else</span> Result.y = (SrcB.y &lt; SrcE.y)? DstE.y : DstB.y;</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;                }</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;            }</div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;            <span class="comment">// 수평</span></div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(DstB.y == DstE.y &amp;&amp; SrcB.y == SrcE.y)</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;            {</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;                Result.y = DstB.y;</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;                <span class="keywordflow">if</span>(DstB.x &lt; DstE.x)</div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;                {</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcB = (DstB.x &lt;= SrcB.x &amp;&amp; SrcB.x &lt;= DstE.x);</div>
+<div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcE = (DstB.x &lt;= SrcE.x &amp;&amp; SrcE.x &lt;= DstE.x);</div>
+<div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;                    <span class="keywordflow">if</span>(IsInSrcB &amp;&amp; IsInSrcE)</div>
+<div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;                        Result.x = (SrcB.x &lt; SrcE.x)? SrcB.x : SrcE.x;</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcB) Result.x = SrcB.x;</div>
+<div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcE) Result.x = SrcE.x;</div>
+<div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;                    <span class="keywordflow">else</span> Result.x = (SrcB.x &lt; SrcE.x)? DstB.x : DstE.x;</div>
+<div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;                }</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;                {</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcB = (DstE.x &lt;= SrcB.x &amp;&amp; SrcB.x &lt;= DstB.x);</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">bool</span> IsInSrcE = (DstE.x &lt;= SrcE.x &amp;&amp; SrcE.x &lt;= DstB.x);</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;                    <span class="keywordflow">if</span>(IsInSrcB &amp;&amp; IsInSrcE)</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;                        Result.x = (SrcB.x &lt; SrcE.x)? SrcE.x : SrcB.x;</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcB) Result.x = SrcB.x;</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(IsInSrcE) Result.x = SrcE.x;</div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;                    <span class="keywordflow">else</span> Result.x = (SrcB.x &lt; SrcE.x)? DstE.x : DstB.x;</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;                }</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;            }</div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;            <span class="comment">// 직교</span></div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(DstB.x == DstE.x &amp;&amp; SrcB.y == SrcE.y)</div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;            {</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;                Result.x = DstB.x;</div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;                Result.y = SrcB.y;</div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;            }</div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(SrcB.x == SrcE.x &amp;&amp; DstB.y == DstE.y)</div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;            {</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;                Result.x = SrcB.x;</div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;                Result.y = DstB.y;</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;            }</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;            <span class="comment">// 꼭지점닿음</span></div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>((DstB.x == SrcB.x &amp;&amp; DstB.y == SrcB.y) || (DstE.x == SrcE.x &amp;&amp; DstE.y == SrcE.y)</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;                || (DstB.x == SrcE.x &amp;&amp; DstB.y == SrcE.y) || (DstE.x == SrcB.x &amp;&amp; DstE.y == SrcB.y))</div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;            {</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;                <span class="comment">// 직선A</span></div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;                fint A_A = ItoF(DstB.y - DstE.y);</div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;                fint A_B = ItoF(DstE.x - DstB.x);</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;                <span class="keyword">const</span> fint A_Distance = <a class="code" href="namespace_bx_util_global.html#a0732d3795e4787d47c7ac63e74c083ab">BxUtilGlobal::Sqrt64</a>(<a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(A_A) + <a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(A_B));</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;                A_A = (((huge) A_A) &lt;&lt; 16) / A_Distance;</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;                A_B = (((huge) A_B) &lt;&lt; 16) / A_Distance;</div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;                <span class="keyword">const</span> fint A_C = A_A * DstB.x + A_B * DstB.y;</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;                <span class="comment">// 직선B</span></div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;                fint B_A = ItoF(SrcB.y - SrcE.y);</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;                fint B_B = ItoF(SrcE.x - SrcB.x);</div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;                <span class="keyword">const</span> fint B_Distance = <a class="code" href="namespace_bx_util_global.html#a0732d3795e4787d47c7ac63e74c083ab">BxUtilGlobal::Sqrt64</a>(<a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(B_A) + <a class="code" href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a>(B_B));</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;                B_A = (((huge) B_A) &lt;&lt; 16) / B_Distance;</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;                B_B = (((huge) B_B) &lt;&lt; 16) / B_Distance;</div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;                <span class="keyword">const</span> fint B_C = B_A * SrcB.x + B_B * SrcB.y;</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;                <span class="comment">// 교점구하기</span></div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;                <span class="keyword">const</span> fint Rate = ((A_B * (huge) B_A) &gt;&gt; 16) - ((A_A * (huge) B_B) &gt;&gt; 16);</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;                Result.x = FtoI((A_B * (huge) B_C - B_B * (huge) A_C) / Rate);</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;                Result.y = FtoI((A_A * (huge) B_C - B_A * (huge) A_C) / -Rate);</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;            }</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;            <span class="keywordflow">return</span> &amp;Result;</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;        }</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;    }</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;</div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;    <span class="keyword">enum</span> {Angle90 = 256, Angle180 = 512, Angle270 = 768};</div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;    global_func <span class="keyword">inline</span> uint&amp; RandomTable(<span class="keywordtype">int</span> Index)</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;    {thread_storage _ = <span class="keyword">sizeof</span>(uint) * 256; <span class="keywordflow">return</span> ((uint*) <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a>(&amp;_))[Index];}</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;</div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;    global_func <span class="keyword">const</span> wchar CP949ToUTF16_Search(<span class="keyword">const</span> <span class="keywordtype">char</span> cp949a, <span class="keyword">const</span> <span class="keywordtype">char</span> cp949b = <span class="charliteral">&#39;\0&#39;</span>)</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;    {</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> Length = 98 + 51 + 2350;</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;        thread_storage _ = <span class="keyword">sizeof</span>(wchar) * (Length + Length);</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;        wchar* CP949 = (wchar*) <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a>(&amp;_);</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;        wchar* UTF16 = CP949 + Length;</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;        <span class="keywordflow">if</span>(!CP949[0])</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        {</div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a>(CP949, BxCore::Util::CP949Table(), <span class="keyword">sizeof</span>(wchar) * Length);</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a>(UTF16, BxCore::Util::UTF16Table(), <span class="keyword">sizeof</span>(wchar) * Length);</div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Length - 1; ++i)</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;            {</div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;                <span class="keywordtype">int</span> iBest = i;</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = i + 1; j &lt; Length; ++j)</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;                    <span class="keywordflow">if</span>(CP949[j] &lt; CP949[iBest])</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;                        iBest = j;</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;                <span class="keywordflow">if</span>(iBest != i)</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;                {</div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;                    wchar Temp = CP949[i];</div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;                    CP949[i] = CP949[iBest];</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;                    CP949[iBest] = Temp;</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;                    Temp = UTF16[i];</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;                    UTF16[i] = UTF16[iBest];</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;                    UTF16[iBest] = Temp;</div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;                }</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;            }</div>
+<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;        }</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;        <span class="keyword">const</span> wchar Key = ((cp949b &amp; 0xFF) &lt;&lt; 8) | (cp949a &amp; 0xFF);</div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;        <span class="keywordtype">int</span> Lower = 0, Upper = Length - 1;</div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;        <span class="keywordflow">while</span>(Lower &lt;= Upper)</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        {</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> Middle = (Lower + Upper) / 2;</div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;            <span class="keywordflow">if</span>(CP949[Middle] == Key)</div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;                <span class="keywordflow">return</span> (<span class="keyword">const</span> wchar) UTF16[Middle];</div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;            <span class="keywordflow">if</span>(CP949[Middle] &lt; Key)</div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;                Lower = Middle + 1;</div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;            <span class="keywordflow">else</span> Upper = Middle - 1;</div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;        }</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;        <span class="keywordflow">return</span> (<span class="keyword">const</span> wchar) *(_W2(<span class="stringliteral">&quot;\x25A1&quot;</span>));</div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;    }</div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;</div>
+<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;    global_func <span class="keywordtype">string</span> UTF16ToCP949_Search(<span class="keyword">const</span> wchar utf16)</div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;    {</div>
+<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> Length = 98 + 51 + 2350;</div>
+<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;        thread_storage _ = <span class="keyword">sizeof</span>(wchar) * (Length + Length);</div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;        wchar* UTF16 = (wchar*) <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a>(&amp;_);</div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;        wchar* CP949 = UTF16 + Length;</div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;        <span class="keywordflow">if</span>(!UTF16[0])</div>
+<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;        {</div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a>(UTF16, BxCore::Util::UTF16Table(), <span class="keyword">sizeof</span>(wchar) * Length);</div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;            <a class="code" href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a>(CP949, BxCore::Util::CP949Table(), <span class="keyword">sizeof</span>(wchar) * Length);</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Length - 1; ++i)</div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;            {</div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;                <span class="keywordtype">int</span> iBest = i;</div>
+<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = i + 1; j &lt; Length; ++j)</div>
+<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;                    <span class="keywordflow">if</span>(UTF16[j] &lt; UTF16[iBest])</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;                        iBest = j;</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;                <span class="keywordflow">if</span>(iBest != i)</div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;                {</div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;                    wchar Temp = UTF16[i];</div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;                    UTF16[i] = UTF16[iBest];</div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;                    UTF16[iBest] = Temp;</div>
+<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;                    Temp = CP949[i];</div>
+<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;                    CP949[i] = CP949[iBest];</div>
+<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;                    CP949[iBest] = Temp;</div>
+<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;                }</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;            }</div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;        }</div>
+<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;        <span class="keyword">const</span> wchar Key = utf16;</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;        <span class="keywordtype">int</span> Lower = 0, Upper = Length - 1;</div>
+<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;        <span class="keywordflow">while</span>(Lower &lt;= Upper)</div>
+<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;        {</div>
+<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> Middle = (Lower + Upper) / 2;</div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;            <span class="keywordflow">if</span>(UTF16[Middle] == Key)</div>
+<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;                <span class="keywordflow">return</span> (<span class="keywordtype">string</span>) &amp;CP949[Middle];</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;            <span class="keywordflow">if</span>(UTF16[Middle] &lt; Key)</div>
+<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;                Lower = Middle + 1;</div>
+<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;            <span class="keywordflow">else</span> Upper = Middle - 1;</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;        }</div>
+<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;        <span class="keywordflow">return</span> (<span class="keywordtype">string</span>) _W2(<span class="stringliteral">&quot;\xE0A1&quot;</span>);</div>
+<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;    }</div>
+<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;</div>
+<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;    global_func <span class="keyword">inline</span> uint&amp; _RandValue()</div>
+<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;    {</div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;        thread_storage _ = <span class="keyword">sizeof</span>(uint);</div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;        <span class="keywordflow">return</span> *((uint*) <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a>(&amp;_));</div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;    }</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;    global_func <span class="keyword">inline</span> <span class="keywordtype">void</span> _SetRand(<span class="keyword">const</span> uint Key)</div>
+<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;    {</div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;        _RandValue() = Key;</div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;    }</div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;</div>
+<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;    global_func <span class="keyword">inline</span> uint _MakeRand()</div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;    {</div>
+<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;        _RandValue() *= 0x000343fd;</div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;        _RandValue() += 0x00269ec3;</div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;        <span class="keywordflow">return</span> (_RandValue() &gt;&gt; 16) &amp; 0x7fff;</div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;    }</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;};</div>
 <div class="ttc" id="namespace_bx_util_global_html_a8e494971c4c523b48ff9a4f8f5c7f5f7"><div class="ttname"><a href="namespace_bx_util_global.html#a8e494971c4c523b48ff9a4f8f5c7f5f7">BxUtilGlobal::IsNumeric</a></div><div class="ttdeci">static bool IsNumeric(string String, int StringLength=-1)</div><div class="ttdoc">해당 스트링이 숫자인지의 여부 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:407</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a9d45cf5f144f0aaa40fa169feb915ea1"><div class="ttname"><a href="namespace_bx_util_global.html#a9d45cf5f144f0aaa40fa169feb915ea1">BxUtilGlobal::AtoI</a></div><div class="ttdeci">static int AtoI(string String, int StringLength=-1)</div><div class="ttdoc">스트링을 정수로 변환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:444</div></div>
 <div class="ttc" id="class_bx_util_html_a04e9b5e06b9b8f02c05ed1ee380aa054"><div class="ttname"><a href="class_bx_util.html#a04e9b5e06b9b8f02c05ed1ee380aa054">BxUtil::MatrixClear</a></div><div class="ttdeci">global_func void MatrixClear(matrix _out_ Dst)</div><div class="ttdoc">단위행렬화 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:880</div></div>
@@ -1234,14 +1233,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structvertex_html"><div class="ttname"><a href="structvertex.html">vertex</a></div><div class="ttdoc">vertex구조체 : x, y, z, nouse(구조체2승수맞춤) </div><div class="ttdef"><b>Definition:</b> BxType.hpp:229</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a79b68673159a50732cfaf0e7252c0500"><div class="ttname"><a href="namespace_bx_util_global.html#a79b68673159a50732cfaf0e7252c0500">BxUtilGlobal::SetArray</a></div><div class="ttdeci">static void SetArray(TYPE *Dst, const BxArgument &amp;Src)</div><div class="ttdoc">상수들로 배열을 초기화 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:767</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a52580a7f5dbd7722b56eab2e3167292f"><div class="ttname"><a href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a></div><div class="ttdeci">static const int Max(const int A, const int B)</div><div class="ttdoc">최대값 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:46</div></div>
-<div class="ttc" id="class_bx_util_html_afd59076fe1010b645d232f24fa34e84e"><div class="ttname"><a href="class_bx_util.html#afd59076fe1010b645d232f24fa34e84e">BxUtil::UTF16ToCP949</a></div><div class="ttdeci">global_func int UTF16ToCP949(wstring utf16, int utf16length, string_rw cp949, const int cp949length)</div><div class="ttdoc">UTF16를 CP949로 전환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1167</div></div>
+<div class="ttc" id="class_bx_util_html_afd59076fe1010b645d232f24fa34e84e"><div class="ttname"><a href="class_bx_util.html#afd59076fe1010b645d232f24fa34e84e">BxUtil::UTF16ToCP949</a></div><div class="ttdeci">global_func int UTF16ToCP949(wstring utf16, int utf16length, string_rw cp949, const int cp949length)</div><div class="ttdoc">UTF16를 CP949로 전환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1166</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_aac495a865fddc971089bedc397adff54"><div class="ttname"><a href="namespace_bx_util_global.html#aac495a865fddc971089bedc397adff54">BxUtilGlobal::StrCmp</a></div><div class="ttdeci">static compare StrCmp(string StringA, string StringB, int FixedLength=-1)</div><div class="ttdoc">스트링 비교하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:276</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_af2cc8a19541c23620fd82cc5f76ce048"><div class="ttname"><a href="namespace_bx_util_global.html#af2cc8a19541c23620fd82cc5f76ce048">BxUtilGlobal::LoadUint16</a></div><div class="ttdeci">static ushort LoadUint16(byte *&amp;Resource)</div><div class="ttdoc">데이터에서 로드(ushort) </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:681</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a5bd37d311b067ed2ac52c3443363013f"><div class="ttname"><a href="namespace_bx_util_global.html#a5bd37d311b067ed2ac52c3443363013f">BxUtilGlobal::LoadType</a></div><div class="ttdeci">static byte * LoadType(byte *&amp;Resource, uint TypeLen)</div><div class="ttdoc">데이터에서 임의배열 로드 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:740</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_util_html_aa1d8a11236853f4cbb3207c80cf5b4fc"><div class="ttname"><a href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a></div><div class="ttdeci">void MemCpy(void *dst, const void *src, int length)</div><div class="ttdoc">메모리 복사 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:420</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_util_html_aa1d8a11236853f4cbb3207c80cf5b4fc"><div class="ttname"><a href="namespace_bx_core_1_1_util.html#aa1d8a11236853f4cbb3207c80cf5b4fc">BxCore::Util::MemCpy</a></div><div class="ttdeci">void MemCpy(void *dst, const void *src, int length)</div><div class="ttdoc">메모리 복사 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:422</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_ad12eeb6b5b454f85bf6ea3cf7dcd3094"><div class="ttname"><a href="namespace_bx_util_global.html#ad12eeb6b5b454f85bf6ea3cf7dcd3094">BxUtilGlobal::Sqrt</a></div><div class="ttdeci">static const int Sqrt(const int A)</div><div class="ttdoc">제곱근값 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:101</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a159f4e68b9dc0b952782037990be93c2"><div class="ttname"><a href="namespace_bx_util_global.html#a159f4e68b9dc0b952782037990be93c2">BxUtilGlobal::ItoH</a></div><div class="ttdeci">static string _tmp_ ItoH(bool IsUpper, uint Value)</div><div class="ttdoc">양수를 헥사덤프로 변환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:533</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_util_html_a592c1dc0989b09fbaad862428b8d4d23"><div class="ttname"><a href="namespace_bx_core_1_1_util.html#a592c1dc0989b09fbaad862428b8d4d23">BxCore::Util::Free</a></div><div class="ttdeci">void * Free(const void *buf)</div><div class="ttdoc">메모리반환 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:409</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_util_html_a592c1dc0989b09fbaad862428b8d4d23"><div class="ttname"><a href="namespace_bx_core_1_1_util.html#a592c1dc0989b09fbaad862428b8d4d23">BxCore::Util::Free</a></div><div class="ttdeci">void * Free(const void *buf)</div><div class="ttdoc">메모리반환 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:411</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a6287716f318295b8e32e131197694730"><div class="ttname"><a href="namespace_bx_util_global.html#a6287716f318295b8e32e131197694730">BxUtilGlobal::MinMax</a></div><div class="ttdeci">static const int MinMax(const int MinValue, const int Value, const int MaxValue)</div><div class="ttdoc">최소최대 한계설정 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:60</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a39b70575037e5a54e79b304c82c1822a"><div class="ttname"><a href="namespace_bx_util_global.html#a39b70575037e5a54e79b304c82c1822a">BxUtilGlobal::StrLenEx</a></div><div class="ttdeci">static int StrLenEx(string String)</div><div class="ttdoc">확장된 스트링길이(char) 구하기(과  도 인식) </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:156</div></div>
 <div class="ttc" id="class_bx_argument_html_a35e8e0a2c2ee8d5b344c513aa6dc723b"><div class="ttname"><a href="class_bx_argument.html#a35e8e0a2c2ee8d5b344c513aa6dc723b">BxArgument::Access</a></div><div class="ttdeci">TYPE * Access(int i) const </div><div class="ttdoc">데이터 접근하기 </div><div class="ttdef"><b>Definition:</b> BxArgument.hpp:80</div></div>
@@ -1252,7 +1251,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_bx_util_html_a19bef9b1c3c37b263ad5d68a9fb710d0"><div class="ttname"><a href="class_bx_util.html#a19bef9b1c3c37b263ad5d68a9fb710d0">BxUtil::Sin</a></div><div class="ttdeci">global_func fint Sin(int Angle1024)</div><div class="ttdoc">Sin값 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:844</div></div>
 <div class="ttc" id="class_bx_argument_html"><div class="ttname"><a href="class_bx_argument.html">BxArgument</a></div><div class="ttdoc">가변인자 제공 </div><div class="ttdef"><b>Definition:</b> BxArgument.hpp:44</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a8c08efd6bb979a28ba69e6a752e3ddde"><div class="ttname"><a href="namespace_bx_util_global.html#a8c08efd6bb979a28ba69e6a752e3ddde">BxUtilGlobal::StrFreeCB</a></div><div class="ttdeci">static void StrFreeCB(void *Data)</div><div class="ttdoc">스트링 해제(CB용) </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:233</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_util_html_ad732eb2a2948cdab353d9291533cbe14"><div class="ttname"><a href="namespace_bx_core_1_1_util.html#ad732eb2a2948cdab353d9291533cbe14">BxCore::Util::MemCmp</a></div><div class="ttdeci">int MemCmp(const void *dst, const void *src, int length)</div><div class="ttdoc">메모리 비교 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:425</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_util_html_ad732eb2a2948cdab353d9291533cbe14"><div class="ttname"><a href="namespace_bx_core_1_1_util.html#ad732eb2a2948cdab353d9291533cbe14">BxCore::Util::MemCmp</a></div><div class="ttdeci">int MemCmp(const void *dst, const void *src, int length)</div><div class="ttdoc">메모리 비교 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:427</div></div>
 <div class="ttc" id="structmatrix_html"><div class="ttname"><a href="structmatrix.html">matrix</a></div><div class="ttdoc">matrix구조체 : m[4][4] </div><div class="ttdef"><b>Definition:</b> BxType.hpp:239</div></div>
 <div class="ttc" id="class_bx_util_html_a1d0271ff4863c0b8fbe8b7f9c1076653"><div class="ttname"><a href="class_bx_util.html#a1d0271ff4863c0b8fbe8b7f9c1076653">BxUtil::Cos</a></div><div class="ttdeci">global_func fint Cos(int Angle1024)</div><div class="ttdoc">Cos값 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:832</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a2b718de4bf83cecd812c0409d74286bc"><div class="ttname"><a href="namespace_bx_util_global.html#a2b718de4bf83cecd812c0409d74286bc">BxUtilGlobal::StrSameCount</a></div><div class="ttdeci">static int StrSameCount(string StringA, string StringB)</div><div class="ttdoc">스트링간 동일구역의 길이(byte) 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:331</div></div>
@@ -1260,9 +1259,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="namespace_bx_util_global_html_ad0d73de4f241c8cd6b2a89cf95570d43"><div class="ttname"><a href="namespace_bx_util_global.html#ad0d73de4f241c8cd6b2a89cf95570d43">BxUtilGlobal::StrAlloc</a></div><div class="ttdeci">static string_rw StrAlloc(int SrcLength)</div><div class="ttdoc">스트링 할당 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:210</div></div>
 <div class="ttc" id="structpointf_html"><div class="ttname"><a href="structpointf.html">pointf</a></div><div class="ttdoc">pointf구조체 : x, y </div><div class="ttdef"><b>Definition:</b> BxType.hpp:194</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a1779e753e6ac06f0b0538095c0ff0ca9"><div class="ttname"><a href="namespace_bx_util_global.html#a1779e753e6ac06f0b0538095c0ff0ca9">BxUtilGlobal::LoadInt8</a></div><div class="ttdeci">static char LoadInt8(byte *&amp;Resource)</div><div class="ttdoc">데이터에서 로드(char) </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:633</div></div>
-<div class="ttc" id="class_bx_util_html_a8363c42cb6abcbd477dc37e85e26c84f"><div class="ttname"><a href="class_bx_util.html#a8363c42cb6abcbd477dc37e85e26c84f">BxUtil::GetDotByLineCross</a></div><div class="ttdeci">global_func const point * GetDotByLineCross(const point &amp;DstB, const point &amp;DstE, const point &amp;SrcB, const point &amp;SrcE)</div><div class="ttdoc">교차테스트후 교차점을 구함 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1327</div></div>
+<div class="ttc" id="class_bx_util_html_a8363c42cb6abcbd477dc37e85e26c84f"><div class="ttname"><a href="class_bx_util.html#a8363c42cb6abcbd477dc37e85e26c84f">BxUtil::GetDotByLineCross</a></div><div class="ttdeci">global_func const point * GetDotByLineCross(const point &amp;DstB, const point &amp;DstE, const point &amp;SrcB, const point &amp;SrcE)</div><div class="ttdoc">교차테스트후 교차점을 구함 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1326</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_af336f01897cb6e50d0347d5ba54aa968"><div class="ttname"><a href="namespace_bx_util_global.html#af336f01897cb6e50d0347d5ba54aa968">BxUtilGlobal::LoadInt32</a></div><div class="ttdeci">static int LoadInt32(byte *&amp;Resource)</div><div class="ttdoc">데이터에서 로드(int) </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:657</div></div>
-<div class="ttc" id="class_bx_util_html_a0abbd37b71ecc2aa9556dd38323677ae"><div class="ttname"><a href="class_bx_util.html#a0abbd37b71ecc2aa9556dd38323677ae">BxUtil::MatrixApply</a></div><div class="ttdeci">global_func void MatrixApply(vertex _inout_ Dst, const matrix _in_ Src)</div><div class="ttdoc">버텍스에 행렬곱하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1116</div></div>
+<div class="ttc" id="class_bx_util_html_a0abbd37b71ecc2aa9556dd38323677ae"><div class="ttname"><a href="class_bx_util.html#a0abbd37b71ecc2aa9556dd38323677ae">BxUtil::MatrixApply</a></div><div class="ttdeci">global_func void MatrixApply(vertex _inout_ Dst, const matrix _in_ Src)</div><div class="ttdoc">버텍스에 행렬곱하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1115</div></div>
 <div class="ttc" id="class_bx_util_html_a3882d50474b76769b82316e8666150a1"><div class="ttname"><a href="class_bx_util.html#a3882d50474b76769b82316e8666150a1">BxUtil::GetAngle1024</a></div><div class="ttdeci">global_func int GetAngle1024(const int VectorX, const int VectorY)</div><div class="ttdoc">방향으로 각도 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:855</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_aecfd04966f2d01ed9b53f0109cb1424b"><div class="ttname"><a href="namespace_bx_util_global.html#aecfd04966f2d01ed9b53f0109cb1424b">BxUtilGlobal::StrICmp</a></div><div class="ttdeci">static compare StrICmp(string StringA, string StringB, int FixedLength=-1)</div><div class="ttdoc">대소문자 구분없이 스트링 비교하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:300</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a677b3048a42145d09849067b4d4a73ce"><div class="ttname"><a href="namespace_bx_util_global.html#a677b3048a42145d09849067b4d4a73ce">BxUtilGlobal::StrLen</a></div><div class="ttdeci">static int StrLen(string String)</div><div class="ttdoc">스트링길이(char) 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:129</div></div>
@@ -1273,30 +1272,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="namespace_bx_util_global_html_acf3ce0b4c4af01dfb26f0e82a438fb22"><div class="ttname"><a href="namespace_bx_util_global.html#acf3ce0b4c4af01dfb26f0e82a438fb22">BxUtilGlobal::StrLenT</a></div><div class="ttdeci">static int StrLenT(const TYPE *String)</div><div class="ttdoc">템플릿타입 스트링길이(T) 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:143</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_aa3ddb995529bff12b689a073cd518e67"><div class="ttname"><a href="namespace_bx_util_global.html#aa3ddb995529bff12b689a073cd518e67">BxUtilGlobal::LoadBits</a></div><div class="ttdeci">static uint LoadBits(byte *&amp;Resource, int &amp;CurrentBit, const int BitCount)</div><div class="ttdoc">데이터에서 비트배열 로드 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:719</div></div>
 <div class="ttc" id="class_bx_util_html_a0940d3fda4c6f5a425e2043708f7145f"><div class="ttname"><a href="class_bx_util.html#a0940d3fda4c6f5a425e2043708f7145f">BxUtil::SetRandom</a></div><div class="ttdeci">global_func void SetRandom(const uint Seed)</div><div class="ttdoc">랜덤함수 초기화 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:783</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_util_html_aacaf23bed9737504410d309578cdc7a8"><div class="ttname"><a href="namespace_bx_core_1_1_util.html#aacaf23bed9737504410d309578cdc7a8">BxCore::Util::Alloc</a></div><div class="ttdeci">void * Alloc(int size)</div><div class="ttdoc">메모리할당 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:404</div></div>
-<div class="ttc" id="class_bx_util_html_a6609c0c508f2148565c35b9212052d33"><div class="ttname"><a href="class_bx_util.html#a6609c0c508f2148565c35b9212052d33">BxUtil::GetLengthForUTF16</a></div><div class="ttdeci">global_func int GetLengthForUTF16(string utf8, int utf8length)</div><div class="ttdoc">UTF8을 UTF16으로 전환시 필요한 UTF16의 길이 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1292</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_util_html_aacaf23bed9737504410d309578cdc7a8"><div class="ttname"><a href="namespace_bx_core_1_1_util.html#aacaf23bed9737504410d309578cdc7a8">BxCore::Util::Alloc</a></div><div class="ttdeci">void * Alloc(int size)</div><div class="ttdoc">메모리할당 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:406</div></div>
+<div class="ttc" id="class_bx_util_html_a6609c0c508f2148565c35b9212052d33"><div class="ttname"><a href="class_bx_util.html#a6609c0c508f2148565c35b9212052d33">BxUtil::GetLengthForUTF16</a></div><div class="ttdeci">global_func int GetLengthForUTF16(string utf8, int utf8length)</div><div class="ttdoc">UTF8을 UTF16으로 전환시 필요한 UTF16의 길이 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1291</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a1081879216fd645034af99defabfcc58"><div class="ttname"><a href="namespace_bx_util_global.html#a1081879216fd645034af99defabfcc58">BxUtilGlobal::MtoH</a></div><div class="ttdeci">static string _tmp_ MtoH(bool IsUpper, mint Value)</div><div class="ttdoc">주소정수를 헥사덤프로 변환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:585</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_ad2174a731be330c26da64403b394bab4"><div class="ttname"><a href="namespace_bx_util_global.html#ad2174a731be330c26da64403b394bab4">BxUtilGlobal::StrSearch</a></div><div class="ttdeci">static int StrSearch(string DstString, string SrcString, const int(&amp;SrcSearchMap)[256], int DstLength=-1)</div><div class="ttdoc">스트링검색 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:367</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_ab14ffb7aca1aca4b34fb1501091862ac"><div class="ttname"><a href="namespace_bx_util_global.html#ab14ffb7aca1aca4b34fb1501091862ac">BxUtilGlobal::HtoM</a></div><div class="ttdeci">static mint HtoM(string Hex, int HexLength=-1)</div><div class="ttdoc">헥사덤프를 주소정수로 변환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:554</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a89891dd65b308771858ff8d3dc2be904"><div class="ttname"><a href="namespace_bx_util_global.html#a89891dd65b308771858ff8d3dc2be904">BxUtilGlobal::StrSearchMap</a></div><div class="ttdeci">static void StrSearchMap(string String, int(_out_ SearchMap)[256])</div><div class="ttdoc">스트링검색을 위한 검색맵 만들기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:392</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a49fe224b36cf92615d28ca70e38d9257"><div class="ttname"><a href="namespace_bx_util_global.html#a49fe224b36cf92615d28ca70e38d9257">BxUtilGlobal::LoadUint32</a></div><div class="ttdeci">static uint LoadUint32(byte *&amp;Resource)</div><div class="ttdoc">데이터에서 로드(uint) </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:693</div></div>
-<div class="ttc" id="class_bx_util_html_a641e1bebe3972ac651d08b6890d76fb0"><div class="ttname"><a href="class_bx_util.html#a641e1bebe3972ac651d08b6890d76fb0">BxUtil::UTF8ToUTF16</a></div><div class="ttdeci">global_func void UTF8ToUTF16(string utf8, int utf8length, wstring_rw utf16)</div><div class="ttdoc">UTF8을 UTF16으로 전환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1229</div></div>
+<div class="ttc" id="class_bx_util_html_a641e1bebe3972ac651d08b6890d76fb0"><div class="ttname"><a href="class_bx_util.html#a641e1bebe3972ac651d08b6890d76fb0">BxUtil::UTF8ToUTF16</a></div><div class="ttdeci">global_func void UTF8ToUTF16(string utf8, int utf8length, wstring_rw utf16)</div><div class="ttdoc">UTF8을 UTF16으로 전환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1228</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a488ff490d994d4173653ee396893d5b9"><div class="ttname"><a href="namespace_bx_util_global.html#a488ff490d994d4173653ee396893d5b9">BxUtilGlobal::Abs</a></div><div class="ttdeci">static int Abs(const int A)</div><div class="ttdoc">절대값 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:70</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a7eae0e60a7c0d68747315118d63c44d3"><div class="ttname"><a href="namespace_bx_util_global.html#a7eae0e60a7c0d68747315118d63c44d3">BxUtilGlobal::LoadInt16</a></div><div class="ttdeci">static short LoadInt16(byte *&amp;Resource)</div><div class="ttdoc">데이터에서 로드(short) </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:645</div></div>
-<div class="ttc" id="class_bx_util_html_a9734058f17823d1e2f3f7fc07a4aa121"><div class="ttname"><a href="class_bx_util.html#a9734058f17823d1e2f3f7fc07a4aa121">BxUtil::GetLengthForUTF8</a></div><div class="ttdeci">global_func int GetLengthForUTF8(wstring utf16, int utf16length)</div><div class="ttdoc">UTF16을 UTF8로 전환시 필요한 UTF8의 길이(byte) </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1265</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_thread_html_ac8200a15947866932b0851974b98257b"><div class="ttname"><a href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a></div><div class="ttdeci">void * BindStorage(int *storagekey)</div><div class="ttdoc">현 스레드상의 저장소 개별연결(스레드수량 x 정적변수수량) </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:903</div></div>
+<div class="ttc" id="class_bx_util_html_a9734058f17823d1e2f3f7fc07a4aa121"><div class="ttname"><a href="class_bx_util.html#a9734058f17823d1e2f3f7fc07a4aa121">BxUtil::GetLengthForUTF8</a></div><div class="ttdeci">global_func int GetLengthForUTF8(wstring utf16, int utf16length)</div><div class="ttdoc">UTF16을 UTF8로 전환시 필요한 UTF8의 길이(byte) </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1264</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_thread_html_ac8200a15947866932b0851974b98257b"><div class="ttname"><a href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a></div><div class="ttdeci">void * BindStorage(int *storagekey)</div><div class="ttdoc">현 스레드상의 저장소 개별연결(스레드수량 x 정적변수수량) </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:905</div></div>
 <div class="ttc" id="structpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdoc">point구조체 : x, y </div><div class="ttdef"><b>Definition:</b> BxType.hpp:187</div></div>
 <div class="ttc" id="class_bx_util_html_a5263a4d55543963e06caf13351a948c0"><div class="ttname"><a href="class_bx_util.html#a5263a4d55543963e06caf13351a948c0">BxUtil::GetValue</a></div><div class="ttdeci">global_func int GetValue(const int MinValue, const int MaxValue, int Key=-1)</div><div class="ttdoc">구간내 랜덤값 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:808</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a8fdd65e4b612e98e3f9f9f7141b9ddb2"><div class="ttname"><a href="namespace_bx_util_global.html#a8fdd65e4b612e98e3f9f9f7141b9ddb2">BxUtilGlobal::StrCpy</a></div><div class="ttdeci">static int StrCpy(string_rw DstString, string SrcString, int SrcLength=-1)</div><div class="ttdoc">스트링 복사하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:245</div></div>
 <div class="ttc" id="class_bx_util_html_a5c3ac899f819d98214f9f3345ac5bd87"><div class="ttname"><a href="class_bx_util.html#a5c3ac899f819d98214f9f3345ac5bd87">BxUtil::GetRandom</a></div><div class="ttdeci">global_func uint GetRandom(const int Key=-1)</div><div class="ttdoc">랜덤값 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:795</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_af6b6936a90b9f791ce6f2b2b4d15b15e"><div class="ttname"><a href="namespace_bx_util_global.html#af6b6936a90b9f791ce6f2b2b4d15b15e">BxUtilGlobal::Min</a></div><div class="ttdeci">static const int Min(const int A, const int B)</div><div class="ttdoc">최소값 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:33</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_util_html_a86d9f355240f547de643ac1dcbb2ed08"><div class="ttname"><a href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08">BxCore::Util::MemSet</a></div><div class="ttdeci">void MemSet(void *dst, byte value, int length)</div><div class="ttdoc">메모리 초기화 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:415</div></div>
-<div class="ttc" id="class_bx_util_html_a67d75745d20650033cb419129baaaed8"><div class="ttname"><a href="class_bx_util.html#a67d75745d20650033cb419129baaaed8">BxUtil::CP949ToUTF16</a></div><div class="ttdeci">global_func int CP949ToUTF16(string cp949, int cp949length, wstring_rw utf16, int utf16length)</div><div class="ttdoc">CP949를 UTF16으로 전환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1133</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_util_html_a86d9f355240f547de643ac1dcbb2ed08"><div class="ttname"><a href="namespace_bx_core_1_1_util.html#a86d9f355240f547de643ac1dcbb2ed08">BxCore::Util::MemSet</a></div><div class="ttdeci">void MemSet(void *dst, byte value, int length)</div><div class="ttdoc">메모리 초기화 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:417</div></div>
+<div class="ttc" id="class_bx_util_html_a67d75745d20650033cb419129baaaed8"><div class="ttname"><a href="class_bx_util.html#a67d75745d20650033cb419129baaaed8">BxUtil::CP949ToUTF16</a></div><div class="ttdeci">global_func int CP949ToUTF16(string cp949, int cp949length, wstring_rw utf16, int utf16length)</div><div class="ttdoc">CP949를 UTF16으로 전환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1132</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_aed2b77f1f355f083931ba7e118115b9a"><div class="ttname"><a href="namespace_bx_util_global.html#aed2b77f1f355f083931ba7e118115b9a">BxUtilGlobal::Pow64</a></div><div class="ttdeci">static const huge Pow64(const int A)</div><div class="ttdoc">64비트 제곱값 구하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:91</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a47cdf91c7f5f3970844dff6463bb98a9"><div class="ttname"><a href="namespace_bx_util_global.html#a47cdf91c7f5f3970844dff6463bb98a9">BxUtilGlobal::HtoI</a></div><div class="ttdeci">static uint HtoI(string Hex, int HexLength=-1)</div><div class="ttdoc">헥사덤프를 양수로 변환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:502</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a2aaf81ab8c431009a2f6d9f095c70e40"><div class="ttname"><a href="namespace_bx_util_global.html#a2aaf81ab8c431009a2f6d9f095c70e40">BxUtilGlobal::AtoA</a></div><div class="ttdeci">static string _tmp_ AtoA(bool IsUpper, string String, int StringLength=-1)</div><div class="ttdoc">스트링을 대소문자 스트링으로 변환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:607</div></div>
 <div class="ttc" id="class_bx_util_html_a147df2b368fe0381b9b46ea850d6f916"><div class="ttname"><a href="class_bx_util.html#a147df2b368fe0381b9b46ea850d6f916">BxUtil::GetClockwiseValue</a></div><div class="ttdeci">global_func const int GetClockwiseValue(const point &amp;Start, const point &amp;End, const point &amp;Src)</div><div class="ttdoc">점 3개의 방향성 값을 확인 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:871</div></div>
-<div class="ttc" id="class_bx_util_html_ace58b8597a34f4d9b9ab4f27b4f48dde"><div class="ttname"><a href="class_bx_util.html#ace58b8597a34f4d9b9ab4f27b4f48dde">BxUtil::UTF16ToUTF8</a></div><div class="ttdeci">global_func void UTF16ToUTF8(wstring utf16, int utf16length, string_rw utf8)</div><div class="ttdoc">UTF16를 UTF8로 전환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1191</div></div>
+<div class="ttc" id="class_bx_util_html_ace58b8597a34f4d9b9ab4f27b4f48dde"><div class="ttname"><a href="class_bx_util.html#ace58b8597a34f4d9b9ab4f27b4f48dde">BxUtil::UTF16ToUTF8</a></div><div class="ttdeci">global_func void UTF16ToUTF8(wstring utf16, int utf16length, string_rw utf8)</div><div class="ttdoc">UTF16를 UTF8로 전환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1190</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_af070166376fc2c75242084d8cb7deb3a"><div class="ttname"><a href="namespace_bx_util_global.html#af070166376fc2c75242084d8cb7deb3a">BxUtilGlobal::StrCpyWithAlloc</a></div><div class="ttdeci">static string_rw StrCpyWithAlloc(string SrcString, int SrcLength=-1)</div><div class="ttdoc">스트링 할당 및 복사하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:260</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a9bba584552f6e46a3645bf9ba4179f9d"><div class="ttname"><a href="namespace_bx_util_global.html#a9bba584552f6e46a3645bf9ba4179f9d">BxUtilGlobal::LoadString</a></div><div class="ttdeci">static string_rw LoadString(byte *&amp;Resource)</div><div class="ttdoc">데이터에서 스트링 로드 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:752</div></div>
 <div class="ttc" id="class_bx_util_html_ae15d759d6643cd9ed4382a76308b831d"><div class="ttname"><a href="class_bx_util.html#ae15d759d6643cd9ed4382a76308b831d">BxUtil::MatrixCombine</a></div><div class="ttdeci">global_func void MatrixCombine(matrix _inout_ Dst, const fint _in_ Src00, const fint _in_ Src10, const fint _in_ Src20, const fint _in_ Src30, const fint _in_ Src01, const fint _in_ Src11, const fint _in_ Src21, const fint _in_ Src31, const fint _in_ Src02, const fint _in_ Src12, const fint _in_ Src22, const fint _in_ Src32, const fint _in_ Src03, const fint _in_ Src13, const fint _in_ Src23, const fint _in_ Src33)</div><div class="ttdoc">행렬에 행렬곱하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:967</div></div>
@@ -1311,7 +1310,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 1 2015 17:27:36 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 22 2015 18:40:40 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

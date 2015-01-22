@@ -1078,6 +1078,7 @@ public:
 		const fint VecXE, const fint VecYE, pointf _out_ ResultE)
 	{
 		const fint dist = BxUtilGlobal::Sqrt64(BxUtilGlobal::Pow64(VecX) + BxUtilGlobal::Pow64(VecY));
+		fint k;
 		if(!dist)
 		{
 			ResultB = pointf::zero();
@@ -1086,9 +1087,8 @@ public:
 		}
 
 		const fint distb = BxUtilGlobal::Sqrt64(BxUtilGlobal::Pow64(VecXB) + BxUtilGlobal::Pow64(VecYB));
-		if(distb)
+		if(distb && (k = F_Divide_F(distb, dist)))
 		{
-			const fint k = F_Divide_F(distb, dist);
 			const fint m = F_Multiply_F(2 * k, ItoF(1) + k);
 			const fint kk = F_Multiply_F(k, k);
 			ResultB.x = F_Divide_F(3 * (VecXB + F_Multiply_F(kk, VecX)), m);
@@ -1097,9 +1097,8 @@ public:
 		else ResultB = pointf::zero();
 
 		const fint diste = BxUtilGlobal::Sqrt64(BxUtilGlobal::Pow64(VecXE) + BxUtilGlobal::Pow64(VecYE));
-		if(diste)
+		if(diste && (k = F_Divide_F(dist, diste)))
 		{
-			const fint k = F_Divide_F(dist, diste);
 			const fint m = F_Multiply_F(2 * k, ItoF(1) + k);
 			const fint kk = F_Multiply_F(k, k);
 			ResultE.x = F_Divide_F(F_Multiply_F(k, 3 * (VecX + F_Multiply_F(kk, VecXE))), m);

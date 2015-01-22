@@ -73,9 +73,10 @@ namespace BxCore
 
 		/*!
 		\brief 터치의 현재 누름여부
+		\param includeSpecial : 특수터치 포함여부
 		\return true-눌러짐, false-안눌러짐
 		*/
-		bool IsTouchDown();
+		bool IsTouchDown(bool includeSpecial = true);
 
 		/*!
 		\brief 특정 키의 현재 누름여부

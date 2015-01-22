@@ -17,7 +17,7 @@ var searchData=
   ['ismultitouchavailable',['IsMultiTouchAvailable',['../namespace_bx_core_1_1_system.html#ae89a8d48541b11a69ed90cf5076e2d06',1,'BxCore::System']]],
   ['isnumeric',['IsNumeric',['../namespace_bx_util_global.html#a8e494971c4c523b48ff9a4f8f5c7f5f7',1,'BxUtilGlobal']]],
   ['isquit',['IsQuit',['../namespace_bx_core_1_1_system.html#ab2e59628389afb803d3f45060383d1b6',1,'BxCore::System']]],
-  ['istouchdown',['IsTouchDown',['../namespace_bx_core_1_1_system.html#a86fbb372ea32b5ef24e6da6ed3bcfd3c',1,'BxCore::System']]],
+  ['istouchdown',['IsTouchDown',['../namespace_bx_core_1_1_system.html#ac7b8ab56fc5237a4fc505e4483354f5d',1,'BxCore::System']]],
   ['itoa',['ItoA',['../namespace_bx_util_global.html#ae93b9c22557509ab724aaebb7877f15e',1,'BxUtilGlobal']]],
   ['itoh',['ItoH',['../namespace_bx_util_global.html#a159f4e68b9dc0b952782037990be93c2',1,'BxUtilGlobal']]]
 ];
