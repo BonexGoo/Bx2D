@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespace_bx_core_1_1_bluetooth" kind="namespace" language="C++">
+    <compoundname>BxCore::Bluetooth</compoundname>
+    <innernamespace refid="namespace_bx_core_1_1_bluetooth_1_1_scan">BxCore::Bluetooth::Scan</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1a3741effd96af5f07c3a79c4053e927a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref></type>
+        <definition>id_bluetooth BxCore::Bluetooth::Connect</definition>
+        <argsstring>(string uuid)</argsstring>
+        <name>Connect</name>
+        <param>
+          <type>string</type>
+          <declname>uuid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="995" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="767" bodyend="770"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1a9fca6c239b0986a1e1e9c5eff55cbb02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Bluetooth::Disconnect</definition>
+        <argsstring>(id_bluetooth bluetooth)</argsstring>
+        <name>Disconnect</name>
+        <param>
+          <type><ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref></type>
+          <declname>bluetooth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="996" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="772" bodyend="774"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1a174e9ed0458130e3866179fc4e31775d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::Bluetooth::IsConnected</definition>
+        <argsstring>(id_bluetooth bluetooth)</argsstring>
+        <name>IsConnected</name>
+        <param>
+          <type><ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref></type>
+          <declname>bluetooth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="997" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="776" bodyend="779"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1a1f0ebde3e283f98787d961f50ece40f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::Bluetooth::Send</definition>
+        <argsstring>(id_bluetooth bluetooth, const void *buffer, int len)</argsstring>
+        <name>Send</name>
+        <param>
+          <type><ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref></type>
+          <declname>bluetooth</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="998" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="781" bodyend="784"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1a7e8fd3cb4846542aa762c750845aefab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Bluetooth::CountOfRecv</definition>
+        <argsstring>()</argsstring>
+        <name>CountOfRecv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="999" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="786" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1ad681cd4d0498845fefadb916b664fe51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const void *</type>
+        <definition>const void * BxCore::Bluetooth::Recv</definition>
+        <argsstring>(id_bluetooth bluetooth, int _out_ len)</argsstring>
+        <name>Recv</name>
+        <param>
+          <type><ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref></type>
+          <declname>bluetooth</declname>
+        </param>
+        <param>
+          <type>int _out_</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1000" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="791" bodyend="794"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1ab7519c3b3e277cacab2678d13aea11fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Bluetooth::CountOfEvent</definition>
+        <argsstring>()</argsstring>
+        <name>CountOfEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1001" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="796" bodyend="799"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1a7be27e8d340f12ef18eebc94fb118417" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxCore::Bluetooth::GetEvent</definition>
+        <argsstring>(id_bluetooth bluetooth)</argsstring>
+        <name>GetEvent</name>
+        <param>
+          <type><ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref></type>
+          <declname>bluetooth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1002" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="801" bodyend="804"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bluetooth파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="984" column="1"/>
+  </compounddef>
+</doxygen>

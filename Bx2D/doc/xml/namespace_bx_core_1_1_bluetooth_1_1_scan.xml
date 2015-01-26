@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespace_bx_core_1_1_bluetooth_1_1_scan" kind="namespace" language="C++">
+    <compoundname>BxCore::Bluetooth::Scan</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1_1_scan_1ae67efd90e2ea14e650b1b059d84d1ffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Bluetooth::Scan::Begin</definition>
+        <argsstring>()</argsstring>
+        <name>Begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="988" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="741" bodyend="744"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1_1_scan_1a778a194d64b970fafc7b85be5a2cd687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Bluetooth::Scan::End</definition>
+        <argsstring>()</argsstring>
+        <name>End</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="989" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="746" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1_1_scan_1a085a7a90cbef745c24adbc1125040409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Bluetooth::Scan::CountOfQueue</definition>
+        <argsstring>()</argsstring>
+        <name>CountOfQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="990" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="751" bodyend="754"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1_1_scan_1af56580823ea3845405d7bcde9c3b5a46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxCore::Bluetooth::Scan::GetUuidFromQueue</definition>
+        <argsstring>()</argsstring>
+        <name>GetUuidFromQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="991" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="756" bodyend="759"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1_1_scan_1aac64d419aeb81f19603077f947d5356d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string BxCore::Bluetooth::Scan::UuidToName</definition>
+        <argsstring>(string uuid)</argsstring>
+        <name>UuidToName</name>
+        <param>
+          <type>string</type>
+          <declname>uuid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="992" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="761" bodyend="764"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Scan파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="987" column="1"/>
+  </compounddef>
+</doxygen>

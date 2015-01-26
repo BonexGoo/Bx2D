@@ -7,22 +7,6 @@
     <includedby refid="_bx_core_for_q_t5_8cpp" local="no">BxCoreForQT5.cpp</includedby>
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <incdepgraph>
-      <node id="46">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="42" relation="include">
-        </childnode>
-      </node>
-      <node id="43">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="44" relation="include">
-        </childnode>
-      </node>
-      <node id="45">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
       <node id="42">
         <label>BxCore.hpp</label>
         <link refid="_bx_core_8hpp_source"/>
@@ -37,10 +21,26 @@
         <childnode refid="46" relation="include">
         </childnode>
       </node>
+      <node id="43">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
       <node id="44">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
         <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="46">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="42" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -196,6 +196,6 @@
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="145"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxAutoBuffer.hpp"/>
+    <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxAutoBuffer.hpp"/>
   </compounddef>
 </doxygen>

@@ -10,7 +10,6 @@ public:
 		if(!BxCore::Font::IsExistNick("hoonr"))
 			BxCore::Font::NickOpen("hoonr", "sys/hoonr.ttf");
 		font1 = BxCore::Font::Open("hoonr", 100);
-
 	}
 	~HelloWorldData()
 	{

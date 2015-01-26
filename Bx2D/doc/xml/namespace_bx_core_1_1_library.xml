@@ -4,7 +4,7 @@
     <compoundname>BxCore::Library</compoundname>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespace_bx_core_1_1_library_1a3bf05cb509f5a0648977e48c445cd636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__05" kindref="compound">id_library</ref></type>
+        <type><ref refid="structid__struct__06" kindref="compound">id_library</ref></type>
         <definition>id_library BxCore::Library::Open</definition>
         <argsstring>(string filename)</argsstring>
         <name>Open</name>
@@ -28,7 +28,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1230" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="928" bodyend="938"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1253" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1005" bodyend="1015"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_library_1a4a4735c133e1cf5689553b237901e02a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -36,7 +36,7 @@
         <argsstring>(id_library handle)</argsstring>
         <name>Close</name>
         <param>
-          <type><ref refid="structid__struct__05" kindref="compound">id_library</ref></type>
+          <type><ref refid="structid__struct__06" kindref="compound">id_library</ref></type>
           <declname>handle</declname>
         </param>
         <briefdescription>
@@ -54,7 +54,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1237" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="940" bodyend="945"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1260" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1017" bodyend="1022"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -62,7 +62,7 @@
         <argsstring>(id_library handle, string name)</argsstring>
         <name>Link</name>
         <param>
-          <type><ref refid="structid__struct__05" kindref="compound">id_library</ref></type>
+          <type><ref refid="structid__struct__06" kindref="compound">id_library</ref></type>
           <declname>handle</declname>
         </param>
         <param>
@@ -91,13 +91,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1245" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="947" bodyend="954"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1268" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1024" bodyend="1031"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Library파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1223" column="1"/>
+    <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1246" column="1"/>
   </compounddef>
 </doxygen>

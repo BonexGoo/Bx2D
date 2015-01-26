@@ -6,14 +6,30 @@
     <includes refid="_bx_image_8hpp" local="no">BxImage.hpp</includes>
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <incdepgraph>
-      <node id="1">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
+      <node id="7">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+      </node>
+      <node id="9">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="0">
@@ -26,40 +42,10 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="10">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
       <node id="8">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
         <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -68,20 +54,14 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="10" relation="include">
+      <node id="1">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="2" relation="include">
         </childnode>
-      </node>
-      <node id="6">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="3">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="12">
@@ -94,16 +74,36 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="11">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
       <node id="5">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
         <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="2">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -122,7 +122,7 @@
 <codeline lineno="8"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>콜백</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>compare<sp/>(*OnSort)(<ref refid="class_bx_animate" kindref="compound">BxAnimate</ref>&amp;<sp/>anim,<sp/><ref refid="structid__struct__06" kindref="compound">id_object</ref><sp/>objectA,<sp/><ref refid="structid__struct__06" kindref="compound">id_object</ref><sp/>objectB);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>compare<sp/>(*OnSort)(<ref refid="class_bx_animate" kindref="compound">BxAnimate</ref>&amp;<sp/>anim,<sp/><ref refid="structid__struct__07" kindref="compound">id_object</ref><sp/>objectA,<sp/><ref refid="structid__struct__07" kindref="compound">id_object</ref><sp/>objectB);</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>열거형</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{KEYWORD,<sp/>FORM,<sp/>OUTLINE,<sp/>BEGIN_MAX};</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
@@ -188,13 +188,13 @@
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Result;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
-<codeline lineno="103" refid="class_bx_animate_1ab0f7c308b817d3b003519354e9fbb830" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bx_animate_1ab0f7c308b817d3b003519354e9fbb830" kindref="member">IsAliveObject</ref>(<ref refid="structid__struct__06" kindref="compound">id_object</ref><sp/>objectID)</highlight></codeline>
+<codeline lineno="103" refid="class_bx_animate_1ab0f7c308b817d3b003519354e9fbb830" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bx_animate_1ab0f7c308b817d3b003519354e9fbb830" kindref="member">IsAliveObject</ref>(<ref refid="structid__struct__07" kindref="compound">id_object</ref><sp/>objectID)</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Active*<sp/>OneActive<sp/>=<sp/>(_Active*)<sp/>objectID;</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(OneActive)?<sp/>OneActive-&gt;IsAlive<sp/>:<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117" refid="class_bx_animate_1aab1fa6b757b448fd3aedf2476491269a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structid__struct__06" kindref="compound">id_object</ref><sp/><ref refid="class_bx_animate_1aab1fa6b757b448fd3aedf2476491269a" kindref="member">AddObject</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>objectName,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)</highlight></codeline>
+<codeline lineno="117" refid="class_bx_animate_1aab1fa6b757b448fd3aedf2476491269a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structid__struct__07" kindref="compound">id_object</ref><sp/><ref refid="class_bx_animate_1aab1fa6b757b448fd3aedf2476491269a" kindref="member">AddObject</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>objectName,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y)</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxAnimate&quot;</highlight><highlight class="normal">,<sp/>objectName);</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Object*<sp/>FindObject<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -212,7 +212,7 @@
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NewActive;</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight></codeline>
-<codeline lineno="140" refid="class_bx_animate_1a29b3ce3c84b11b8208fe9c8855da0c93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bx_animate_1a29b3ce3c84b11b8208fe9c8855da0c93" kindref="member">SubObject</ref>(<ref refid="structid__struct__06" kindref="compound">id_object</ref><sp/>_inout_<sp/>objectID)</highlight></codeline>
+<codeline lineno="140" refid="class_bx_animate_1a29b3ce3c84b11b8208fe9c8855da0c93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bx_animate_1a29b3ce3c84b11b8208fe9c8855da0c93" kindref="member">SubObject</ref>(<ref refid="structid__struct__07" kindref="compound">id_object</ref><sp/>_inout_<sp/>objectID)</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Active*<sp/>OneActive<sp/>=<sp/>(_Active*)<sp/>objectID;</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>objectID<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -256,7 +256,7 @@
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
-<codeline lineno="192" refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structpoint" kindref="compound">point</ref>&amp;<sp/><ref refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" kindref="member">ObjectPos</ref>(<ref refid="structid__struct__06" kindref="compound">id_object</ref><sp/>objectID)</highlight></codeline>
+<codeline lineno="192" refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structpoint" kindref="compound">point</ref>&amp;<sp/><ref refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" kindref="member">ObjectPos</ref>(<ref refid="structid__struct__07" kindref="compound">id_object</ref><sp/>objectID)</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxAnimate&quot;</highlight><highlight class="normal">,<sp/>objectID);</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Active*<sp/>OneActive<sp/>=<sp/>(_Active*)<sp/>objectID;</highlight></codeline>
@@ -270,7 +270,7 @@
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>OneActive-&gt;GetPos();</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"></highlight></codeline>
-<codeline lineno="212" refid="class_bx_animate_1aaf88b551be77ef906da4e61ac407a62c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bx_animate_1aaf88b551be77ef906da4e61ac407a62c" kindref="member">SendEvent</ref>(<ref refid="structid__struct__06" kindref="compound">id_object</ref><sp/>objectID,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>eventName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doInterrupt<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="212" refid="class_bx_animate_1aaf88b551be77ef906da4e61ac407a62c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bx_animate_1aaf88b551be77ef906da4e61ac407a62c" kindref="member">SendEvent</ref>(<ref refid="structid__struct__07" kindref="compound">id_object</ref><sp/>objectID,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>eventName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doInterrupt<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxAnimate&quot;</highlight><highlight class="normal">,<sp/>objectID);</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxAnimate&quot;</highlight><highlight class="normal">,<sp/>eventName);</highlight></codeline>
@@ -372,7 +372,7 @@
 <codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="323"><highlight class="normal"></highlight></codeline>
-<codeline lineno="331" refid="class_bx_animate_1a909ebf3f49ff9f5e17d9c823a156eb14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/>compare<sp/><ref refid="class_bx_animate_1a909ebf3f49ff9f5e17d9c823a156eb14" kindref="member">DefaultSort</ref>(<ref refid="class_bx_animate" kindref="compound">BxAnimate</ref>&amp;<sp/>anim,<sp/><ref refid="structid__struct__06" kindref="compound">id_object</ref><sp/>objectA,<sp/><ref refid="structid__struct__06" kindref="compound">id_object</ref><sp/>objectB)</highlight></codeline>
+<codeline lineno="331" refid="class_bx_animate_1a909ebf3f49ff9f5e17d9c823a156eb14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>global_func<sp/>compare<sp/><ref refid="class_bx_animate_1a909ebf3f49ff9f5e17d9c823a156eb14" kindref="member">DefaultSort</ref>(<ref refid="class_bx_animate" kindref="compound">BxAnimate</ref>&amp;<sp/>anim,<sp/><ref refid="structid__struct__07" kindref="compound">id_object</ref><sp/>objectA,<sp/><ref refid="structid__struct__07" kindref="compound">id_object</ref><sp/>objectB)</highlight></codeline>
 <codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(anim.<ref refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" kindref="member">ObjectPos</ref>(objectB).y<sp/>&lt;<sp/>anim.<ref refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" kindref="member">ObjectPos</ref>(objectA).y)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>b_is_less;</highlight></codeline>
 <codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(anim.<ref refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" kindref="member">ObjectPos</ref>(objectA).y<sp/>==<sp/>anim.<ref refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" kindref="member">ObjectPos</ref>(objectB).y<sp/>&amp;&amp;<sp/>anim.<ref refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" kindref="member">ObjectPos</ref>(objectB).x<sp/>&lt;<sp/>anim.<ref refid="class_bx_animate_1a1ff1c42988f1dbdea0098ffd84a7365c" kindref="member">ObjectPos</ref>(objectA).x)</highlight></codeline>
@@ -1541,6 +1541,6 @@
 <codeline lineno="1516"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var_vector" kindref="compound">BxVarVector&lt;_Active, 256&gt;</ref><sp/>DeadActive;</highlight></codeline>
 <codeline lineno="1518"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxAnimate.hpp"/>
+    <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxAnimate.hpp"/>
   </compounddef>
 </doxygen>

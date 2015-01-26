@@ -256,15 +256,16 @@ typedef struct id_struct_01 {unknown value;} *id_text, *id_text_zero;
 typedef struct id_struct_02 {unknown value;} *id_sound;
 typedef struct id_struct_03 {unknown value;} *id_file;
 typedef struct id_struct_04 {unknown value;} *id_socket;
-typedef struct id_struct_05 {unknown value;} *id_library;
-typedef struct id_struct_06 {unknown value;} *id_object;
-typedef struct id_struct_07 {unknown value;} *id_opengl_form;
-typedef struct id_struct_08 {unknown value;} *id_opengl_outline;
-typedef struct id_struct_09 {unknown value;} *id_static;
-typedef struct id_struct_10 {unknown value;} *id_zip;
-typedef struct id_struct_11 {unknown value;} *id_ttf;
-typedef struct id_struct_12 {unknown value;} *id_thread;
-typedef struct id_struct_13 {unknown value;} *id_mutex;
+typedef struct id_struct_05 {unknown value;} *id_bluetooth;
+typedef struct id_struct_06 {unknown value;} *id_library;
+typedef struct id_struct_07 {unknown value;} *id_object;
+typedef struct id_struct_08 {unknown value;} *id_opengl_form;
+typedef struct id_struct_09 {unknown value;} *id_opengl_outline;
+typedef struct id_struct_10 {unknown value;} *id_static;
+typedef struct id_struct_11 {unknown value;} *id_zip;
+typedef struct id_struct_12 {unknown value;} *id_ttf;
+typedef struct id_struct_13 {unknown value;} *id_thread;
+typedef struct id_struct_14 {unknown value;} *id_mutex;
 typedef bool delete_me;
 //! \brief OnEvent()의 이벤트파라미터
 typedef struct sysevent

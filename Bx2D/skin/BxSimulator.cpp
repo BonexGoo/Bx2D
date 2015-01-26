@@ -15,6 +15,7 @@ class BxSimulator
 public:
 	enum {MENU_HUB, MENU_GRID, MENU_LOG, MENU_START, MENU_SNAP, MENU_MAX};
 	enum {BTN_EXIT, BTN_MIN, BTN_MAX};
+	enum {TOUCH_0, TOUCH_1, TOUCH_MAX};
 	enum {GUI_MENUWIDTH = 112};
 
 	point NCWindowPos;
@@ -34,6 +35,9 @@ public:
 	string BtnName[BTN_MAX];
 	bool IsBtnDown[BTN_MAX];
 	BxImage BtnImage[BTN_MAX][3];
+
+	point TouchPos[2];
+	BxImage TouchImage[TOUCH_MAX];
 
 	point CursorPos;
 	int AvgFrameTime;
@@ -95,6 +99,11 @@ public:
 		BtnImage[BTN_MIN][0].Load("sys/min_base.png", BxImage::PNG, BxImage::PAD7);
 		BtnImage[BTN_MIN][1].Load("sys/min_focus.png", BxImage::PNG, BxImage::PAD7);
 		BtnImage[BTN_MIN][2].Load("sys/min_push.png", BxImage::PNG, BxImage::PAD7);
+
+		TouchPos[TOUCH_0] = point::zero();
+		TouchPos[TOUCH_1] = point::zero();
+		TouchImage[TOUCH_0].Load("sys/systouch_0.png", BxImage::PNG, BxImage::PAD5);
+		TouchImage[TOUCH_1].Load("sys/systouch_1.png", BxImage::PNG, BxImage::PAD5);
 
 		CursorPos = point::zero();
 		AvgFrameTime = 0;
@@ -230,6 +239,11 @@ syseventresult OnEvent(BxSimulator& This, const sysevent& Event)
 			return syseventresult_done;
 		}
 	}
+	else if(Event.type == syseventtype_touch)
+	{
+		if(Event.touch.id < 2)
+			This.TouchPos[Event.touch.id] = XY(Event.touch.x, Event.touch.y);
+	}
 	return syseventresult_pass;
 }
 
@@ -278,6 +292,12 @@ void OnRender(BxSimulator& This, BxDraw& Draw)
 	const int MenuBarWidth = BxCore::System::GetConfigNumber("Bx.Framework.GUIMargin.Left", 100);
 	const int Gap = 5;
 
+	// 멀티터치 표식
+	if(BxCore::System::IsTouchDown() && !BxCore::System::IsTouchDown(false))
+	BxTRY(Draw, CLIP(XYXY(MenuBarWidth, TitleHeight, Draw.Width(), Draw.Height())))
+		for(int i = 0; i < BxSimulator::TOUCH_MAX; ++i)
+			Draw.Area(This.TouchPos[i].x, This.TouchPos[i].y, FORM(&This.TouchImage[i]) >> OPACITY(192));
+
 	// 타이틀
 	BxTRY(Draw, CLIP(XYXY(0, 0, Draw.Width(), TitleHeight)), "BxSimulator:TitleBar")
 	{
@@ -322,6 +342,7 @@ void OnRender(BxSimulator& This, BxDraw& Draw)
 			textalign_right_bottom, COLOR(4, 237, 244));
 	}
 
+	// 메뉴
 	bool IsMenuVisible = false;
 	BxTRY(Draw, CLIP(XYXY(0, TitleHeight, Draw.Width(), Draw.Height())))
 	{

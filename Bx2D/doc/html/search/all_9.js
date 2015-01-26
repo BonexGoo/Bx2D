@@ -14,6 +14,7 @@ var searchData=
   ['id_5fstruct_5f11',['id_struct_11',['../structid__struct__11.html',1,'']]],
   ['id_5fstruct_5f12',['id_struct_12',['../structid__struct__12.html',1,'']]],
   ['id_5fstruct_5f13',['id_struct_13',['../structid__struct__13.html',1,'']]],
+  ['id_5fstruct_5f14',['id_struct_14',['../structid__struct__14.html',1,'']]],
   ['init',['Init',['../namespace_bx_core_1_1_surface.html#aaef270c828cd57bb99c8d11128bfbbe3',1,'BxCore::Surface']]],
   ['integer',['Integer',['../class_bx_express_1_1_integer.html',1,'BxExpress']]],
   ['integerx',['IntegerX',['../class_bx_express_1_1_integer_x.html',1,'BxExpress']]],

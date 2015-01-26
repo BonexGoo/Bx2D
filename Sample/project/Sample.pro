@@ -5,6 +5,7 @@ QT += gui
 QT += network
 QT += opengl
 QT += widgets
+win32|macx|android: QT += bluetooth
 win32: RC_ICONS += ../common/main.ico
 
 CONFIG += c++11
@@ -48,7 +49,6 @@ SOURCES += ../../Bx2D/skin/ime/IMEButton.cpp
 SOURCES += ../../Bx2D/skin/ime/IMEEdit.cpp
 SOURCES += ../../Bx2D/skin/ime/IMESysButton.cpp
 SOURCES += ../../Bx2D/skin/ime/IMETip.cpp
-
 HEADERS += ../../Bx2D/core/BxCore.hpp
 HEADERS += ../../Bx2D/core/BxCoreImpl.hpp
 HEADERS += ../../Bx2D/core/BxCoreForQT5.hpp
@@ -109,6 +109,8 @@ ASSETS_SYS.files += ../../Bx2D/assets/sys/shift.png
 ASSETS_SYS.files += ../../Bx2D/assets/sys/shift_selected.png
 ASSETS_SYS.files += ../../Bx2D/assets/sys/sysbutton.png
 ASSETS_SYS.files += ../../Bx2D/assets/sys/sysbutton_clicked.png
+ASSETS_SYS.files += ../../Bx2D/assets/sys/systouch_0.png
+ASSETS_SYS.files += ../../Bx2D/assets/sys/systouch_1.png
 ASSETS_SYS.files += ../../Bx2D/assets/sys/text_grid.png
 ASSETS_SYS.files += ../../Bx2D/assets/sys/text_hub.png
 ASSETS_SYS.files += ../../Bx2D/assets/sys/text_log.png

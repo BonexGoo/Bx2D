@@ -22,6 +22,7 @@
 #include <QFontDatabase>
 #include <QStandardPaths>
 #include <QLibrary>
+#include <QBluetoothDeviceDiscoveryAgent>
 
 #ifdef OpenMutex
     #undef OpenMutex
@@ -41,6 +42,17 @@
 	#define GLSCALE 1
 #endif
 
+#define STATIC_CLASS(_NAME, NAME) \
+	class NAME \
+	{ \
+	private: \
+		_NAME* This; \
+	public: \
+		NAME() {global_data _NAME* _ = BxNew(_NAME); This = _;} \
+		~NAME() {} \
+		_NAME* operator->() {return This;} \
+	}
+
 namespace BxCore
 {
 	namespace Main
@@ -53,7 +65,7 @@ namespace BxCore
             static GLWidget& Me() {static GLWidget* _ = new GLWidget(); return *_;}
 
         private:
-			enum {DClickRadius = 100, DClickRadiusMin = 10, DClickRadiusSpeed = 10};
+			enum {DClickRadius = 100, DClickRadiusMin = 20, DClickRadiusSpeed = 10};
 			bool TouchPressed;
 			bool TouchRPressed;
             uint SavedTouchFlag;
@@ -334,7 +346,8 @@ namespace BxCore
             }
 			void wheelEvent(QWheelEvent* event)
 			{
-				if(TouchPressed) return;
+				if(TouchPressed || TouchRPressed)
+					return;
 				const int X = event->x();
 				const int Y = event->y();
 				if(!WheelPressed)
@@ -872,7 +885,59 @@ namespace BxCore
 		/// @endcond
 	}
 
-    namespace Font
+	namespace Bluetooth
+	{
+		/// @cond SECTION_NAME
+		class _DeviceAgent : public QBluetoothDeviceDiscoveryAgent
+		{
+			Q_OBJECT
+		public:
+			_DeviceAgent()
+			{
+				connect(this, SIGNAL(deviceDiscovered(const QBluetoothDeviceInfo&)),
+					this, SLOT(addDevice(const QBluetoothDeviceInfo&)));
+				connect(this, SIGNAL(error(QBluetoothDeviceDiscoveryAgent::Error)),
+					this, SLOT(deviceScanError(QBluetoothDeviceDiscoveryAgent::Error)));
+				connect(this, SIGNAL(finished()), this, SLOT(deviceScanFinished()));
+
+			}
+			virtual ~_DeviceAgent() {}
+		private slots:
+			void addDevice(const QBluetoothDeviceInfo& info)
+            {
+                BxASSERT(BxCore::Util::Print("<>:##-addDevice[<A>]", BxARG(info.name().toLocal8Bit().constData())), false);
+            }
+            void deviceScanError(QBluetoothDeviceDiscoveryAgent::Error error)
+            {
+                switch(error)
+                {
+                case QBluetoothDeviceDiscoveryAgent::NoError:
+                    BxASSERT("##-deviceScanError:NoError", false);
+                    break;
+                case QBluetoothDeviceDiscoveryAgent::InputOutputError:
+                    BxASSERT("##-deviceScanError:InputOutputError", false);
+                    break;
+                case QBluetoothDeviceDiscoveryAgent::PoweredOffError:
+                    BxASSERT("##-deviceScanError:PoweredOffError", false);
+                    break;
+                case QBluetoothDeviceDiscoveryAgent::InvalidBluetoothAdapterError:
+                    BxASSERT("##-deviceScanError:InvalidBluetoothAdapterError", false);
+                    break;
+                case QBluetoothDeviceDiscoveryAgent::UnknownError:
+                    BxASSERT("##-deviceScanError:UnknownError", false);
+                    break;
+                }
+            }
+			void deviceScanFinished()
+			{
+				BxASSERT("##-deviceScanFinished", false);
+			}
+		};
+		STATIC_CLASS(_DeviceAgent, DeviceAgent);
+		/// @endcond
+	}
+
+	namespace Font
     {
 		/// @cond SECTION_NAME
 		class TextClass

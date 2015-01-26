@@ -979,6 +979,29 @@ namespace BxCore
 		int Ping(string addr, uint timeout);
 	}
 
+	//! \brief Bluetooth파트
+	namespace Bluetooth
+	{
+		//! \brief Scan파트
+		namespace Scan
+		{
+			void Begin();
+			void End();
+			int CountOfQueue();
+			string GetUuidFromQueue();
+			string UuidToName(string uuid);
+		}
+
+		id_bluetooth Connect(string uuid);
+		void Disconnect(id_bluetooth bluetooth);
+		bool IsConnected(id_bluetooth bluetooth);
+		bool Send(id_bluetooth bluetooth, const void* buffer, int len);
+		int CountOfRecv();
+		const void* Recv(id_bluetooth bluetooth, int _out_ len);
+		int CountOfEvent();
+		string GetEvent(id_bluetooth bluetooth);
+	}
+
 	//! \brief Font파트
 	namespace Font
 	{

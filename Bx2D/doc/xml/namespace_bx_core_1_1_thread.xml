@@ -4,7 +4,7 @@
     <compoundname>BxCore::Thread</compoundname>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aaedfd3f40c87744a20478d8a9f08e2ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__12" kindref="compound">id_thread</ref></type>
+        <type><ref refid="structid__struct__13" kindref="compound">id_thread</ref></type>
         <definition>id_thread BxCore::Thread::Create</definition>
         <argsstring>(callback_thread threadCB, void *data=nullptr)</argsstring>
         <name>Create</name>
@@ -40,7 +40,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1167" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="866" bodyend="870"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1190" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="943" bodyend="947"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1ab826ab467ee70b36c1884e87a855c3c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -48,7 +48,7 @@
         <argsstring>(id_thread thread, bool dokill=false, bool dowait=false)</argsstring>
         <name>Release</name>
         <param>
-          <type><ref refid="structid__struct__12" kindref="compound">id_thread</ref></type>
+          <type><ref refid="structid__struct__13" kindref="compound">id_thread</ref></type>
           <declname>thread</declname>
         </param>
         <param>
@@ -90,10 +90,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1176" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="872" bodyend="879"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1199" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="949" bodyend="956"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1adf48754093833abf8c23636bf6feaaac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__13" kindref="compound">id_mutex</ref></type>
+        <type><ref refid="structid__struct__14" kindref="compound">id_mutex</ref></type>
         <definition>id_mutex BxCore::Thread::OpenMutex</definition>
         <argsstring>()</argsstring>
         <name>OpenMutex</name>
@@ -105,7 +105,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1183" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="881" bodyend="885"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1206" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="958" bodyend="962"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1a01f908e2c4137aaf47cbd5adf675e1b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -113,7 +113,7 @@
         <argsstring>(id_mutex mutex)</argsstring>
         <name>CloseMutex</name>
         <param>
-          <type><ref refid="structid__struct__13" kindref="compound">id_mutex</ref></type>
+          <type><ref refid="structid__struct__14" kindref="compound">id_mutex</ref></type>
           <declname>mutex</declname>
         </param>
         <briefdescription>
@@ -131,7 +131,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1190" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="887" bodyend="891"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1213" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="964" bodyend="968"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aace37ba76a186ad61d8c615e7928030f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -139,7 +139,7 @@
         <argsstring>(id_mutex mutex)</argsstring>
         <name>Lock</name>
         <param>
-          <type><ref refid="structid__struct__13" kindref="compound">id_mutex</ref></type>
+          <type><ref refid="structid__struct__14" kindref="compound">id_mutex</ref></type>
           <declname>mutex</declname>
         </param>
         <briefdescription>
@@ -157,7 +157,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1197" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="893" bodyend="897"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1220" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="970" bodyend="974"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aebb2be9b9ffe6df5360f05fadc5cdff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -165,7 +165,7 @@
         <argsstring>(id_mutex mutex)</argsstring>
         <name>Unlock</name>
         <param>
-          <type><ref refid="structid__struct__13" kindref="compound">id_mutex</ref></type>
+          <type><ref refid="structid__struct__14" kindref="compound">id_mutex</ref></type>
           <declname>mutex</declname>
         </param>
         <briefdescription>
@@ -183,7 +183,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1204" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="899" bodyend="903"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1227" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="976" bodyend="980"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1ac8200a15947866932b0851974b98257b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -210,7 +210,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1212" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="905" bodyend="915"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1235" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="982" bodyend="992"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1a9948511867e74c60e15e31f5e0d5e2b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -224,13 +224,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1218" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="917" bodyend="922"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1241" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="994" bodyend="999"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Thread파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1159" column="1"/>
+    <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1182" column="1"/>
   </compounddef>
 </doxygen>

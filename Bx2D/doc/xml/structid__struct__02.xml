@@ -14,14 +14,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="256" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="256" bodyend="-1"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" line="256" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" bodystart="256" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="256" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="256" bodyend="256"/>
+    <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" line="256" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" bodystart="256" bodyend="256"/>
     <listofallmembers>
       <member refid="structid__struct__02_1ac8c35016c083aa995fccb62d083c8889" prot="public" virt="non-virtual"><scope>id_struct_02</scope><name>value</name></member>
     </listofallmembers>

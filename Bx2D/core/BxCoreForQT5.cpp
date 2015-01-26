@@ -734,6 +734,77 @@ namespace BxCore
 	}
 
 	// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	namespace Bluetooth
+	{
+		namespace Scan
+		{
+			void Begin()
+			{
+				DeviceAgent()->start();
+			}
+
+			void End()
+			{
+				DeviceAgent()->stop();
+			}
+
+			int CountOfQueue()
+			{
+				return 0;
+			}
+
+			string GetUuidFromQueue()
+			{
+				return "";
+			}
+
+			string UuidToName(string uuid)
+			{
+				return "";
+			}
+		}
+
+		id_bluetooth Connect(string uuid)
+		{
+			return nullptr;
+		}
+
+		void Disconnect(id_bluetooth bluetooth)
+		{
+		}
+
+		bool IsConnected(id_bluetooth bluetooth)
+		{
+			return false;
+		}
+
+		bool Send(id_bluetooth bluetooth, const void* buffer, int len)
+		{
+			return false;
+		}
+
+		int CountOfRecv()
+		{
+			return 0;
+		}
+
+		const void* Recv(id_bluetooth bluetooth, int _out_ len)
+		{
+			return nullptr;
+		}
+
+		int CountOfEvent()
+		{
+			return 0;
+		}
+
+		string GetEvent(id_bluetooth bluetooth)
+		{
+			return "";
+		}
+	}
+
+	// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 	namespace Font
 	{
 		id_font Open(string nick, int height)

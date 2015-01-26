@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="structid__struct__14" kind="struct" language="C++" prot="public">
+    <compoundname>id_struct_14</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structid__struct__14_1a83591a561859cb8cb93acd6f31f2b042" prot="public" static="no" mutable="no">
+        <type>unknown</type>
+        <definition>unknown id_struct_14::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" line="268" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" line="268" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" bodystart="268" bodyend="268"/>
+    <listofallmembers>
+      <member refid="structid__struct__14_1a83591a561859cb8cb93acd6f31f2b042" prot="public" virt="non-virtual"><scope>id_struct_14</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="10" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="48" bodyend="50"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="10" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="48" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1a10d016a2659bc9581498b37bc214c6bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="11" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="52" bodyend="54"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="11" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="52" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1a864663329e5257c4c08e22b86f1faf90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="12" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="21" bodyend="24"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="12" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="21" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1a66729b5b34312b674e8c04040b7c7a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="13" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="26" bodyend="29"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="13" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="26" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1aa620fe03358ef06c3cb848016d3b326b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="14" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="31" bodyend="34"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="14" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="31" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1ac2340a9fdd53fffe7f7d0e3ac8b2074e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="15" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="36" bodyend="40"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="15" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="36" bodyend="40"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1a977b213840b2782d952a4502f7eef38c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="16" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="42" bodyend="45"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="16" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="42" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1a9ee27c1ea32f9694312afd69d3d3acd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="17" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="47" bodyend="51"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="17" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="47" bodyend="51"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1acb3a0d556c844684cc1f0e7fdff0db20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="18" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="53" bodyend="57"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="18" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="53" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1a1919a13f6747ab451a16b7fd47157369" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="19" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="59" bodyend="63"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="19" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="59" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1a0a111722e48f1f1ddd65ee74a3112c41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -153,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="20" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="65" bodyend="69"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="20" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="65" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1a54c807359b65f4f4641760ccc9178c20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="21" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="71" bodyend="74"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="21" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="71" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1a5d4c460ed149c2380f94d63692a121d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="22" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="76" bodyend="79"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="22" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="76" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1acd366d9ecb94fd0157d8927f395508b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -192,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="23" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="81" bodyend="108"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="23" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="81" bodyend="108"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1a16f4e8eca116a274d3238896d484ac38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -209,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="24" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="110" bodyend="129"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="24" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="110" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_main_1ac02f41d429b1f6b62e2d783b81fbd12e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -222,13 +222,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="25" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="131" bodyend="194"/>
+        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="25" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="131" bodyend="194"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Main파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="9" column="1"/>
+    <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="9" column="1"/>
   </compounddef>
 </doxygen>

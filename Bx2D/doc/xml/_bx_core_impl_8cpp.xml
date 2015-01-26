@@ -13,172 +13,172 @@
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <incdepgraph>
-      <node id="183">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
+      <node id="177">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
         <childnode refid="170" relation="include">
         </childnode>
+      </node>
+      <node id="186">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+      <node id="173">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>BxAutoBuffer.hpp</label>
+        <link refid="_bx_auto_buffer_8hpp_source"/>
         <childnode refid="173" relation="include">
         </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>BxCoreImpl.hpp</label>
+        <link refid="_bx_core_impl_8hpp_source"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>BxPanel.hpp</label>
+        <link refid="_bx_panel_8hpp_source"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
         <childnode refid="175" relation="include">
         </childnode>
       </node>
-      <node id="165">
+      <node id="185">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="175" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="167">
         <label>BxCoreImpl.cpp</label>
         <link refid="BxCoreImpl.cpp"/>
-        <childnode refid="166" relation="include">
+        <childnode refid="168" relation="include">
         </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
         <childnode refid="171" relation="include">
         </childnode>
         <childnode refid="177" relation="include">
         </childnode>
         <childnode refid="178" relation="include">
         </childnode>
-        <childnode refid="167" relation="include">
-        </childnode>
-        <childnode refid="170" relation="include">
-        </childnode>
-        <childnode refid="179" relation="include">
-        </childnode>
-        <childnode refid="175" relation="include">
-        </childnode>
-        <childnode refid="168" relation="include">
-        </childnode>
-        <childnode refid="182" relation="include">
-        </childnode>
-      </node>
-      <node id="180">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="175" relation="include">
-        </childnode>
-        <childnode refid="178" relation="include">
-        </childnode>
       </node>
       <node id="175">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="170" relation="include">
-        </childnode>
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
         <childnode refid="176" relation="include">
         </childnode>
-      </node>
-      <node id="170">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="171" relation="include">
-        </childnode>
-      </node>
-      <node id="166">
-        <label>BxCoreImpl.hpp</label>
-        <link refid="_bx_core_impl_8hpp_source"/>
-        <childnode refid="167" relation="include">
-        </childnode>
-      </node>
-      <node id="176">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="174" relation="include">
-        </childnode>
-      </node>
-      <node id="169">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="170" relation="include">
-        </childnode>
-        <childnode refid="173" relation="include">
-        </childnode>
-      </node>
-      <node id="181">
-        <label>BxPanel.hpp</label>
-        <link refid="_bx_panel_8hpp_source"/>
-        <childnode refid="180" relation="include">
-        </childnode>
-        <childnode refid="182" relation="include">
-        </childnode>
-        <childnode refid="183" relation="include">
-        </childnode>
-        <childnode refid="184" relation="include">
-        </childnode>
-        <childnode refid="168" relation="include">
-        </childnode>
-      </node>
-      <node id="167">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="168" relation="include">
-        </childnode>
-      </node>
-      <node id="172">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="173" relation="include">
-        </childnode>
-      </node>
-      <node id="184">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="180" relation="include">
-        </childnode>
-      </node>
-      <node id="174">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
       </node>
       <node id="171">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
         <childnode refid="172" relation="include">
         </childnode>
-      </node>
-      <node id="168">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="169" relation="include">
-        </childnode>
         <childnode refid="175" relation="include">
-        </childnode>
-        <childnode refid="176" relation="include">
-        </childnode>
-      </node>
-      <node id="179">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="180" relation="include">
-        </childnode>
-        <childnode refid="181" relation="include">
-        </childnode>
-        <childnode refid="168" relation="include">
-        </childnode>
-      </node>
-      <node id="178">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="174" relation="include">
         </childnode>
       </node>
       <node id="182">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="184">
         <label>BxVarMap.hpp</label>
         <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="171" relation="include">
-        </childnode>
-        <childnode refid="170" relation="include">
-        </childnode>
         <childnode refid="173" relation="include">
         </childnode>
-      </node>
-      <node id="177">
-        <label>BxAutoBuffer.hpp</label>
-        <link refid="_bx_auto_buffer_8hpp_source"/>
-        <childnode refid="171" relation="include">
+        <childnode refid="172" relation="include">
         </childnode>
-        <childnode refid="170" relation="include">
+        <childnode refid="175" relation="include">
         </childnode>
       </node>
-      <node id="173">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="174" relation="include">
+      <node id="172">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="173" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -1133,44 +1133,44 @@
 <codeline lineno="935"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bytes;</highlight></codeline>
 <codeline lineno="936"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="937"><highlight class="normal"></highlight></codeline>
-<codeline lineno="938"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__10" kindref="compound">id_zip</ref><sp/><ref refid="namespace_bx_core_1_1_add_on_1a4f0a1d827096b16626f6b0a89ace07f9" kindref="member">CreateZIP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>numfile,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password)</highlight></codeline>
+<codeline lineno="938"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__11" kindref="compound">id_zip</ref><sp/><ref refid="namespace_bx_core_1_1_add_on_1a4f0a1d827096b16626f6b0a89ace07f9" kindref="member">CreateZIP</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>numfile,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>password)</highlight></codeline>
 <codeline lineno="939"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="940"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((CoreCreateZIP)<sp/>ForExtend_CreateZIP())(zip,<sp/>length,<sp/>numfile,<sp/>password);</highlight></codeline>
 <codeline lineno="941"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="942"><highlight class="normal"></highlight></codeline>
-<codeline lineno="943"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_add_on_1ad8940c44357430f8d5aa09fb22478630" kindref="member">ReleaseZIP</ref>(<ref refid="structid__struct__10" kindref="compound">id_zip</ref><sp/>zip)</highlight></codeline>
+<codeline lineno="943"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_add_on_1ad8940c44357430f8d5aa09fb22478630" kindref="member">ReleaseZIP</ref>(<ref refid="structid__struct__11" kindref="compound">id_zip</ref><sp/>zip)</highlight></codeline>
 <codeline lineno="944"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="945"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((CoreReleaseZIP)<sp/>ForExtend_ReleaseZIP())(zip);</highlight></codeline>
 <codeline lineno="946"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="947"><highlight class="normal"></highlight></codeline>
-<codeline lineno="948"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1a46ac0ae27223a96b93d1eaee33e98e6b" kindref="member">ZIPToFILE</ref>(<ref refid="structid__struct__10" kindref="compound">id_zip</ref><sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileindex,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>filesize)</highlight></codeline>
+<codeline lineno="948"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1a46ac0ae27223a96b93d1eaee33e98e6b" kindref="member">ZIPToFILE</ref>(<ref refid="structid__struct__11" kindref="compound">id_zip</ref><sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileindex,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>filesize)</highlight></codeline>
 <codeline lineno="949"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="950"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((CoreZIPToFILE)<sp/>ForExtend_ZIPToFILE())(zip,<sp/>fileindex,<sp/>filesize);</highlight></codeline>
 <codeline lineno="951"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="952"><highlight class="normal"></highlight></codeline>
-<codeline lineno="953"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/><ref refid="namespace_bx_core_1_1_add_on_1a7b9e110e245439608c9af694714ff3fc" kindref="member">ZIPToINFO</ref>(<ref refid="structid__struct__10" kindref="compound">id_zip</ref><sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileindex,</highlight></codeline>
+<codeline lineno="953"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_tmp_<sp/><ref refid="namespace_bx_core_1_1_add_on_1a7b9e110e245439608c9af694714ff3fc" kindref="member">ZIPToINFO</ref>(<ref refid="structid__struct__11" kindref="compound">id_zip</ref><sp/>zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fileindex,</highlight></codeline>
 <codeline lineno="954"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>isdir,<sp/>uhuge*<sp/>ctime,<sp/>uhuge*<sp/>mtime,<sp/>uhuge*<sp/>atime,</highlight></codeline>
 <codeline lineno="955"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>archive,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>hidden,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>readonly,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>system)</highlight></codeline>
 <codeline lineno="956"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="957"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((CoreZIPToINFO)<sp/>ForExtend_ZIPToINFO())(zip,<sp/>fileindex,<sp/>isdir,<sp/>ctime,<sp/>mtime,<sp/>atime,<sp/>archive,<sp/>hidden,<sp/>readonly,<sp/>system);</highlight></codeline>
 <codeline lineno="958"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="959"><highlight class="normal"></highlight></codeline>
-<codeline lineno="960"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__11" kindref="compound">id_ttf</ref><sp/><ref refid="namespace_bx_core_1_1_add_on_1ac79df3b34b02bcb690f0d9fae8aace9a" kindref="member">CreateTTF</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>ttf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length)</highlight></codeline>
+<codeline lineno="960"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__12" kindref="compound">id_ttf</ref><sp/><ref refid="namespace_bx_core_1_1_add_on_1ac79df3b34b02bcb690f0d9fae8aace9a" kindref="member">CreateTTF</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>ttf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length)</highlight></codeline>
 <codeline lineno="961"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="962"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((CoreCreateTTF)<sp/>ForExtend_CreateTTF())(ttf,<sp/>length);</highlight></codeline>
 <codeline lineno="963"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="964"><highlight class="normal"></highlight></codeline>
-<codeline lineno="965"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_add_on_1a72280d443112f06f3fdd05a5aab34fcf" kindref="member">ReleaseTTF</ref>(<ref refid="structid__struct__11" kindref="compound">id_ttf</ref><sp/>ttf)</highlight></codeline>
+<codeline lineno="965"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_add_on_1a72280d443112f06f3fdd05a5aab34fcf" kindref="member">ReleaseTTF</ref>(<ref refid="structid__struct__12" kindref="compound">id_ttf</ref><sp/>ttf)</highlight></codeline>
 <codeline lineno="966"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="967"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((CoreReleaseTTF)<sp/>ForExtend_ReleaseTTF())(ttf);</highlight></codeline>
 <codeline lineno="968"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="969"><highlight class="normal"></highlight></codeline>
-<codeline lineno="970"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1a140dbe83fcb6cb5236a520e47fc51f9a" kindref="member">TTFToBMP</ref>(<ref refid="structid__struct__11" kindref="compound">id_ttf</ref><sp/>ttf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>uint<sp/>code)</highlight></codeline>
+<codeline lineno="970"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/><ref refid="namespace_bx_core_1_1_add_on_1a140dbe83fcb6cb5236a520e47fc51f9a" kindref="member">TTFToBMP</ref>(<ref refid="structid__struct__12" kindref="compound">id_ttf</ref><sp/>ttf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>uint<sp/>code)</highlight></codeline>
 <codeline lineno="971"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="972"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((CoreTTFToBMP)<sp/>ForExtend_TTFToBMP())(ttf,<sp/>height,<sp/>code);</highlight></codeline>
 <codeline lineno="973"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="974"><highlight class="normal"></highlight></codeline>
-<codeline lineno="975"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_add_on_1a9c19971aa1971820c0232a4393f3503c" kindref="member">TTFToINFO</ref>(<ref refid="structid__struct__11" kindref="compound">id_ttf</ref><sp/>ttf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>uint<sp/>code,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ascent)</highlight></codeline>
+<codeline lineno="975"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_add_on_1a9c19971aa1971820c0232a4393f3503c" kindref="member">TTFToINFO</ref>(<ref refid="structid__struct__12" kindref="compound">id_ttf</ref><sp/>ttf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>uint<sp/>code,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>ascent)</highlight></codeline>
 <codeline lineno="976"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="977"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((CoreTTFToINFO)<sp/>ForExtend_TTFToINFO())(ttf,<sp/>height,<sp/>code,<sp/>width,<sp/>ascent);</highlight></codeline>
 <codeline lineno="978"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1299,6 +1299,6 @@
 <codeline lineno="1101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1102"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp"/>
+    <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp"/>
   </compounddef>
 </doxygen>

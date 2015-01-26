@@ -1,6 +1,7 @@
 var searchData=
 [
   ['addon',['AddOn',['../namespace_bx_core_1_1_add_on.html',1,'BxCore']]],
+  ['bluetooth',['Bluetooth',['../namespace_bx_core_1_1_bluetooth.html',1,'BxCore']]],
   ['bxcore',['BxCore',['../namespace_bx_core.html',1,'']]],
   ['bxdrawglobal',['BxDrawGlobal',['../namespace_bx_draw_global.html',1,'']]],
   ['bxdynamic',['BxDynamic',['../namespace_bx_dynamic.html',1,'']]],
@@ -13,6 +14,7 @@ var searchData=
   ['library',['Library',['../namespace_bx_core_1_1_library.html',1,'BxCore']]],
   ['main',['Main',['../namespace_bx_core_1_1_main.html',1,'BxCore']]],
   ['opengl2d',['OpenGL2D',['../namespace_bx_core_1_1_open_g_l2_d.html',1,'BxCore']]],
+  ['scan',['Scan',['../namespace_bx_core_1_1_bluetooth_1_1_scan.html',1,'BxCore::Bluetooth']]],
   ['socket',['Socket',['../namespace_bx_core_1_1_socket.html',1,'BxCore']]],
   ['sound',['Sound',['../namespace_bx_core_1_1_sound.html',1,'BxCore']]],
   ['surface',['Surface',['../namespace_bx_core_1_1_surface.html',1,'BxCore']]],

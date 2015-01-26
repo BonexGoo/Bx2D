@@ -5,76 +5,76 @@
     <includes refid="_bx_keyword_8hpp" local="no">BxKeyword.hpp</includes>
     <includedby refid="_bx_core_impl_8cpp" local="no">BxCoreImpl.cpp</includedby>
     <incdepgraph>
-      <node id="195">
+      <node id="197">
         <label>BxUtil.hpp</label>
         <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="196" relation="include">
-        </childnode>
-      </node>
-      <node id="190">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="191" relation="include">
-        </childnode>
-      </node>
-      <node id="186">
-        <label>BxCoreImpl.hpp</label>
-        <link refid="BxCoreImpl.hpp"/>
-        <childnode refid="187" relation="include">
-        </childnode>
-      </node>
-      <node id="196">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="194" relation="include">
-        </childnode>
-      </node>
-      <node id="189">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="193" relation="include">
-        </childnode>
-      </node>
-      <node id="187">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="188" relation="include">
-        </childnode>
-      </node>
-      <node id="192">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="193" relation="include">
-        </childnode>
-      </node>
-      <node id="194">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="191">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
         <childnode refid="192" relation="include">
         </childnode>
-      </node>
-      <node id="188">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="189" relation="include">
-        </childnode>
-        <childnode refid="195" relation="include">
-        </childnode>
-        <childnode refid="196" relation="include">
+        <childnode refid="198" relation="include">
         </childnode>
       </node>
       <node id="193">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>BxCoreImpl.hpp</label>
+        <link refid="BxCoreImpl.hpp"/>
+        <childnode refid="189" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="194" relation="include">
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="192">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="193" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -248,17 +248,17 @@
 <codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>BUFToMD5확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_BUFToMD5()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultBUFToMD5;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
 <codeline lineno="185"></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structid__struct__10" kindref="compound">id_zip</ref><sp/>(*CoreCreateZIP)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_,<sp/>string);</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__10" kindref="compound">id_zip</ref><sp/>DefaultCreateZIP(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structid__struct__11" kindref="compound">id_zip</ref><sp/>(*CoreCreateZIP)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_,<sp/>string);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__11" kindref="compound">id_zip</ref><sp/>DefaultCreateZIP(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>CreateZIP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_CreateZIP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultCreateZIP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
 <codeline lineno="192"></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*CoreReleaseZIP)(<ref refid="structid__struct__10" kindref="compound">id_zip</ref>);</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DefaultReleaseZIP(<ref refid="structid__struct__10" kindref="compound">id_zip</ref>)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*CoreReleaseZIP)(<ref refid="structid__struct__11" kindref="compound">id_zip</ref>);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DefaultReleaseZIP(<ref refid="structid__struct__11" kindref="compound">id_zip</ref>)</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>ReleaseZIP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);}</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_ReleaseZIP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultReleaseZIP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
 <codeline lineno="199"></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreZIPToFILE)(<ref refid="structid__struct__10" kindref="compound">id_zip</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreZIPToFILE)(<ref refid="structid__struct__11" kindref="compound">id_zip</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_);</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>DefaultZIPToFILE(id_zip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_)</highlight></codeline>
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>ZIPToFILE확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_ZIPToFILE()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultZIPToFILE;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
@@ -268,17 +268,17 @@
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>ZIPToINFO확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_ZIPToINFO()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultZIPToINFO;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
 <codeline lineno="213"></codeline>
-<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structid__struct__11" kindref="compound">id_ttf</ref><sp/>(*CoreCreateTTF)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int);</highlight></codeline>
-<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__11" kindref="compound">id_ttf</ref><sp/>DefaultCreateTTF(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structid__struct__12" kindref="compound">id_ttf</ref><sp/>(*CoreCreateTTF)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>int);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__12" kindref="compound">id_ttf</ref><sp/>DefaultCreateTTF(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>CreateTTF확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
 <codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_CreateTTF()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultCreateTTF;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
 <codeline lineno="220"></codeline>
-<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*CoreReleaseTTF)(<ref refid="structid__struct__11" kindref="compound">id_ttf</ref>);</highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DefaultReleaseTTF(<ref refid="structid__struct__11" kindref="compound">id_ttf</ref>)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*CoreReleaseTTF)(<ref refid="structid__struct__12" kindref="compound">id_ttf</ref>);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DefaultReleaseTTF(<ref refid="structid__struct__12" kindref="compound">id_ttf</ref>)</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>ReleaseTTF확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);}</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_ReleaseTTF()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultReleaseTTF;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
 <codeline lineno="227"></codeline>
-<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreTTFToBMP)(<ref refid="structid__struct__11" kindref="compound">id_ttf</ref>,<sp/>int,<sp/>uint);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>(*CoreTTFToBMP)(<ref refid="structid__struct__12" kindref="compound">id_ttf</ref>,<sp/>int,<sp/>uint);</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>DefaultTTFToBMP(id_ttf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>uint)</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{BxASSERT(</highlight><highlight class="stringliteral">&quot;BxCore::AddOn&lt;해당<sp/>TTFToBMP확장함수가<sp/>없습니다&gt;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;}</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>_inout_<sp/>ForExtend_TTFToBMP()<sp/>{</highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Function<sp/>=<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<sp/>DefaultTTFToBMP;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Function;}</highlight></codeline>
@@ -290,6 +290,6 @@
 <codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="242"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.hpp"/>
+    <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.hpp"/>
   </compounddef>
 </doxygen>
