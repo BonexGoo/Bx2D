@@ -5,7 +5,7 @@ QT += gui
 QT += network
 QT += opengl
 QT += widgets
-win32|macx|android: QT += bluetooth
+win32|android: QT += bluetooth
 win32: RC_ICONS += ../common/main.ico
 
 CONFIG += c++11

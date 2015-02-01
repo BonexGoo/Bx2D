@@ -1765,6 +1765,7 @@
     <member refid="namespace_bx_core_1_1_system_1aad77049e11f6b4520d2b233631228871" kind="function"><name>SetSimulatorCursorPos</name></member>
     <member refid="namespace_bx_core_1_1_system_1a7fb73d2ee4780e2463f3bd4d93cba8b6" kind="function"><name>GetSimulatorCursorPos</name></member>
     <member refid="namespace_bx_core_1_1_system_1aa3061377ddfe3bbfbd8d81198d958b4f" kind="function"><name>DoSimulatorMinimize</name></member>
+    <member refid="namespace_bx_core_1_1_system_1a200c5faeb9a20f634ca2e321345516b8" kind="function"><name>DoExportSnapshot</name></member>
     <member refid="namespace_bx_core_1_1_system_1a9c02a7032f944631b8e40a10d92d0611" kind="function"><name>IsEnablePanelDebug</name></member>
     <member refid="namespace_bx_core_1_1_system_1a205224e0b9c11290043936005f07b07d" kind="function"><name>IsEnableFontDebug</name></member>
     <member refid="namespace_bx_core_1_1_system_1a2720511c7c99b2d22757eccffaafbbd6" kind="function"><name>Break</name></member>

@@ -163,6 +163,12 @@ namespace BxCore
 		void DoSimulatorMinimize();
 
 		/*!
+		\brief 스냅샷 찍기
+		\param filename : 파일명
+		*/
+		void DoExportSnapshot(string filename);
+
+		/*!
 		\brief 패널디버그기능 활성화여부
 		\return 활성화여부
 		*/
@@ -893,6 +899,13 @@ namespace BxCore
 		\return 성공여부
 		*/
 		bool RenameFile(string srcname, string dstname);
+
+        /*!
+        \brief 카메라폴더로 복사
+        \param filename : 파일명
+        \return 성공여부
+        */
+        bool CopyToCamera(string filename);
 	}
 
 	//! \brief Socket파트

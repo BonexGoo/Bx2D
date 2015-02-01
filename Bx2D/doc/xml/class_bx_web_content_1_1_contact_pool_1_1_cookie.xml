@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" line="13" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" bodystart="13" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" line="13" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_web_content_1_1_contact_pool_1_1_cookie_1acdb9d8b20b8e851879a6b59b41fbcbce" prot="public" static="no" mutable="no">
         <type>string_rw</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" line="14" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" bodystart="14" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" line="14" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" bodystart="14" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" line="15" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" bodystart="15" bodyend="15"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" line="15" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" bodystart="15" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1_1_contact_pool_1_1_cookie_1a01a82217d74526b955d0fd0f0817ca57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" line="16" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" bodystart="16" bodyend="16"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" line="16" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" bodystart="16" bodyend="16"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1_1_contact_pool_1_1_cookie_1af11a7dbdfa20831cc1f1c9d2fc1f0fcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_bx_web_content_1_1_contact_pool_1_1_cookie" kindref="compound">Cookie</ref> *</type>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" line="17" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" bodystart="17" bodyend="23"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" line="17" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" bodystart="17" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_web_content_1_1_contact_pool_1_1_cookie_1a6ed8ffb4086f3c166366e710360748b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -93,14 +93,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" line="24" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" bodystart="24" bodyend="28"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" line="24" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" bodystart="24" bodyend="28"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" line="12" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxWebContent.hpp" bodystart="11" bodyend="29"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" line="12" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxWebContent.hpp" bodystart="11" bodyend="29"/>
     <listofallmembers>
       <member refid="class_bx_web_content_1_1_contact_pool_1_1_cookie_1a8b292f0d906b0a2c093c6dd5ce128a7e" prot="public" virt="non-virtual"><scope>BxWebContent::ContactPool::Cookie</scope><name>Cookie</name></member>
       <member refid="class_bx_web_content_1_1_contact_pool_1_1_cookie_1af11a7dbdfa20831cc1f1c9d2fc1f0fcd" prot="public" virt="non-virtual"><scope>BxWebContent::ContactPool::Cookie</scope><name>Init</name></member>

@@ -55,7 +55,7 @@ typedef unsigned char byte;
 typedef unsigned short ushort;
 typedef unsigned int uint;
 typedef int fint; // Float-Int : 고정소수점(16/16)
-#if defined(__x86_64__) || defined(__amd64__)
+#if defined(__x86_64__) || defined(__amd64__) || defined(__LP64__)
 	typedef unsigned long long mint; // Memory-Int : 메모리주소
 #else
 	typedef unsigned int mint; // Memory-Int : 메모리주소

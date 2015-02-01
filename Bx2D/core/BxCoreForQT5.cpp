@@ -172,6 +172,22 @@ namespace BxCore
             BxCore::Main::GLWidget::Me().showMinimized();
 		}
 
+		void DoExportSnapshot(string filename)
+		{
+			#if defined(WIN32) || defined(Q_OS_MACX)
+				point WindowPos = GetSimulatorWindowPos();
+				QPixmap Pixmap = QPixmap::grabWindow(QApplication::desktop()->winId(),
+					WindowPos.x + BxCore::Main::GetGUIMarginL(),
+                    WindowPos.y + BxCore::Main::GetGUIMarginT() + TITLE_HEIGHT,
+					BxCore::Surface::GetWidthHW(), BxCore::Surface::GetHeightHW());
+			#else
+                BxCore::Main::GLWidget::Me().swapBuffers();
+                QImage Pixmap = BxCore::Main::GLWidget::Me().grabFrameBuffer();
+                BxCore::Main::GLWidget::Me().swapBuffers();
+			#endif
+            Pixmap.save(BxCore::File::FileClass::RootForWrite() + filename, "bmp");
+		}
+
 		assertresult Break(string name, string query __DEBUG_PRM__)
 		{
             #ifdef WIN32
@@ -181,9 +197,9 @@ namespace BxCore
             #endif
 			#ifdef __BX_DEBUG
 				QMessageBox AssertBox(QMessageBox::Warning, "ASSERT BREAK", BREAK_TEXT(name),
-					QMessageBox::Yes | QMessageBox::No | QMessageBox::NoToAll);
+                    QMessageBox::Yes | QMessageBox::No | QMessageBox::NoToAll);
 				QString AssertMessage;
-				AssertMessage.sprintf(
+                AssertMessage.sprintf(
 					"[QUERY] %s\t\t\n"
 					"[METHOD] %s()\t\t\n"
 					"[FILE/LINE] %s(%dLn)\t\t\n"
@@ -649,6 +665,16 @@ namespace BxCore
 		{
             return FileClass::Rename(srcname, dstname);
 		}
+
+        bool CopyToCamera(string filename)
+        {
+            FileClass* File = BxNew_Param(FileClass, filename, false);
+            bool Result = false;
+            if(File->IsSuccess())
+                Result = File->CopyToCamera(filename);
+            BxDelete(File);
+            return Result;
+        }
 	}
 
 	// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -740,12 +766,16 @@ namespace BxCore
 		{
 			void Begin()
 			{
-				DeviceAgent()->start();
+                #if defined(WIN32) || defined(ANDROID)
+                    DeviceAgent()->start();
+                #endif
 			}
 
 			void End()
 			{
-				DeviceAgent()->stop();
+                #if defined(WIN32) || defined(ANDROID)
+                    DeviceAgent()->stop();
+                #endif
 			}
 
 			int CountOfQueue()

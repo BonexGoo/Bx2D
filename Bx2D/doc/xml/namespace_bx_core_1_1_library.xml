@@ -28,7 +28,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1253" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1005" bodyend="1015"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1259" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1015" bodyend="1025"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_library_1a4a4735c133e1cf5689553b237901e02a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -54,7 +54,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1260" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1017" bodyend="1022"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1266" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1027" bodyend="1032"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -91,13 +91,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1268" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="1024" bodyend="1031"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1274" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1034" bodyend="1041"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Library파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="1246" column="1"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="1252" column="1"/>
   </compounddef>
 </doxygen>

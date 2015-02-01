@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxPanel.hpp" line="255" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxPanel.hpp" bodystart="255" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="255" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="255" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_event_data_1_1_node_1ae99f3ff3ee1d2b6a3840a3b4617a2f42" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxPanel.hpp" line="256" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxPanel.hpp" bodystart="256" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="256" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="256" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxPanel.hpp" line="257" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxPanel.hpp" bodystart="257" bodyend="257"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="257" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="257" bodyend="257"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -162,7 +162,7 @@
         <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxPanel.hpp" line="254" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxPanel.hpp" bodystart="253" bodyend="258"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" line="254" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxPanel.hpp" bodystart="253" bodyend="258"/>
     <listofallmembers>
       <member refid="class_bx_panel_1_1_event_data_1_1_node_1a381a46e2e2fc3d79b57c6abcdc82be71" prot="public" virt="non-virtual"><scope>BxPanel::EventData::Node</scope><name>CB</name></member>
       <member refid="class_bx_panel_1_1_event_data_1_1_node_1ae99f3ff3ee1d2b6a3840a3b4617a2f42" prot="public" virt="non-virtual"><scope>BxPanel::EventData::Node</scope><name>Data</name></member>

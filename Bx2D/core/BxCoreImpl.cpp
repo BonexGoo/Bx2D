@@ -430,6 +430,11 @@ namespace BxCore
 								ArgString[0] = (char*) ArgData;
 								ArgStringLength[0] = 1;
 							}
+                            else if(ArgData = args.Access<bool>(ArgID))
+                            {
+                                ArgString[0] = (*((bool*) ArgData))? "true" : "false";
+                                ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
+                            }
 							else if(ArgData = args.Access<int>(ArgID))
 							{
 								ArgString[0] = BxUtilGlobal::ItoA(*((int*) ArgData));
@@ -472,16 +477,16 @@ namespace BxCore
 								ArgString[1] = CipherString;
 								ArgStringLength[1] = CipherFocus - CipherString;
 							}
-							else if(ArgData = args.Access<string>(ArgID))
-							{
-								ArgString[0] = (string) ArgData; // 특수처리
-								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
-							}
 							else if(ArgData = args.Access<char*>(ArgID))
 							{
 								ArgString[0] = *((char**) ArgData);
 								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
 							}
+                            else if(ArgData = args.Access<string>(ArgID))
+                            {
+                                ArgString[0] = (string) ArgData; // 특수처리
+                                ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
+                            }
 							else if(ArgData = args.Access<BxString>(ArgID))
 							{
 								ArgString[0] = (string) *((BxString*) ArgData);

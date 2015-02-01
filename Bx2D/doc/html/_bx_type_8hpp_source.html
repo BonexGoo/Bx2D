@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx_logo.ico"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Bx2D
-   &#160;<span id="projectnumber">4.0.8</span>
+   &#160;<span id="projectnumber">4.0.9</span>
    </div>
   </td>
  </tr>
@@ -136,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> ushort;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> uint;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> fint; <span class="comment">// Float-Int : 고정소수점(16/16)</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if defined(__x86_64__) || defined(__amd64__)</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#if defined(__x86_64__) || defined(__amd64__) || defined(__LP64__)</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> mint; <span class="comment">// Memory-Int : 메모리주소</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mint; <span class="comment">// Memory-Int : 메모리주소</span></div>
@@ -500,7 +500,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structvertex_html"><div class="ttname"><a href="structvertex.html">vertex</a></div><div class="ttdoc">vertex구조체 : x, y, z, nouse(구조체2승수맞춤) </div><div class="ttdef"><b>Definition:</b> BxType.hpp:229</div></div>
 <div class="ttc" id="structid__struct__03_html"><div class="ttname"><a href="structid__struct__03.html">id_struct_03</a></div><div class="ttdef"><b>Definition:</b> BxType.hpp:257</div></div>
 <div class="ttc" id="structcolor__bgra_html"><div class="ttname"><a href="structcolor__bgra.html">color_bgra</a></div><div class="ttdoc">color_bgra구조체 : b, g, r, a </div><div class="ttdef"><b>Definition:</b> BxType.hpp:77</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_system_html_a2720511c7c99b2d22757eccffaafbbd6"><div class="ttname"><a href="namespace_bx_core_1_1_system.html#a2720511c7c99b2d22757eccffaafbbd6">BxCore::System::Break</a></div><div class="ttdeci">assertresult Break(string name, string query __DEBUG_PRM__)</div><div class="ttdoc">실행중지(Macro함수인 BxASSERT로 사용권장) </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:175</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_system_html_a2720511c7c99b2d22757eccffaafbbd6"><div class="ttname"><a href="namespace_bx_core_1_1_system.html#a2720511c7c99b2d22757eccffaafbbd6">BxCore::System::Break</a></div><div class="ttdeci">assertresult Break(string name, string query __DEBUG_PRM__)</div><div class="ttdoc">실행중지(Macro함수인 BxASSERT로 사용권장) </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:185</div></div>
 <div class="ttc" id="structid__struct__07_html"><div class="ttname"><a href="structid__struct__07.html">id_struct_07</a></div><div class="ttdef"><b>Definition:</b> BxType.hpp:261</div></div>
 <div class="ttc" id="structid__struct__11_html"><div class="ttname"><a href="structid__struct__11.html">id_struct_11</a></div><div class="ttdef"><b>Definition:</b> BxType.hpp:265</div></div>
 <div class="ttc" id="structid__struct__13_html"><div class="ttname"><a href="structid__struct__13.html">id_struct_13</a></div><div class="ttdef"><b>Definition:</b> BxType.hpp:267</div></div>
@@ -533,7 +533,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 27 2015 01:29:38 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 28 2015 18:18:10 for Bx2D by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

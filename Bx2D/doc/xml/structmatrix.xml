@@ -15,14 +15,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" line="239" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" bodystart="239" bodyend="-1"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="239" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="239" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>matrix구조체 : m[4][4] </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" line="239" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/lib/BxType.hpp" bodystart="239" bodyend="239"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" line="239" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/lib/BxType.hpp" bodystart="239" bodyend="239"/>
     <listofallmembers>
       <member refid="structmatrix_1a2e81c025ac684f32b282ab81579ef535" prot="public" virt="non-virtual"><scope>matrix</scope><name>m</name></member>
     </listofallmembers>

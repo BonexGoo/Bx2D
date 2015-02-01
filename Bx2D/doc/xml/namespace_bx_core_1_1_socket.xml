@@ -16,7 +16,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="906" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="657" bodyend="664"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="912" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="667" bodyend="674"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -42,7 +42,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="913" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="666" bodyend="670"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="919" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="676" bodyend="680"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>socketstate</type>
@@ -68,7 +68,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="920" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="672" bodyend="676"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="926" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="682" bodyend="686"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>connectresult</type>
@@ -141,7 +141,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="932" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="678" bodyend="698"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="938" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="688" bodyend="708"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -167,7 +167,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="939" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="700" bodyend="705"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="945" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="710" bodyend="715"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a9a23c3a4ad8819aa795983a72eb8c5b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -216,7 +216,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="949" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="707" bodyend="717"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="955" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="717" bodyend="727"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -265,7 +265,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="959" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="719" bodyend="728"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="965" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="729" bodyend="738"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -336,7 +336,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="971" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreImpl.cpp" bodystart="1047" bodyend="1069"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="977" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreImpl.cpp" bodystart="1047" bodyend="1069"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a4b654fd3ff8eabe722999d7e7ea71eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -373,13 +373,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="979" column="1" bodyfile="C:/Bonex/Bx2D_Project/Bx2D/core/BxCoreForQT5.cpp" bodystart="730" bodyend="733"/>
+        <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="985" column="1" bodyfile="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="740" bodyend="743"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Socket파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Bonex/Bx2D_Project/Bx2D/core/BxCore.hpp" line="900" column="1"/>
+    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp" line="906" column="1"/>
   </compounddef>
 </doxygen>

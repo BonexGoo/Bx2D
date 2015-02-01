@@ -22,7 +22,10 @@
 #include <QFontDatabase>
 #include <QStandardPaths>
 #include <QLibrary>
-#include <QBluetoothDeviceDiscoveryAgent>
+#if defined(WIN32) || defined(ANDROID)
+    #include <QBluetoothDeviceDiscoveryAgent>
+#endif
+#include <QDesktopWidget>
 
 #ifdef OpenMutex
     #undef OpenMutex
@@ -618,18 +621,24 @@ namespace BxCore
 				{
 					ValidRemFile(fileName);
                     File = new QFile(RootForWrite() + fileName);
-                    Success = File->open(QFileDevice::ReadWrite);
+                    Success = File->open(QFileDevice::WriteOnly);
+                    BxTRACE("<>:FileOpen(<A>/<A>):<A>", BxARG((writable)? "W" : "R",
+                        Success, (RootForWrite() + fileName).toLocal8Bit().constData()));
 				}
 				else
 				{
+                    QString FilePath = "";
                     if(QFileInfo(RootForWrite() + fileName).exists())
-                        File = new QFile(RootForWrite() + fileName);
+                        FilePath = RootForWrite() + fileName;
 					#ifdef WIN32
 						else if(QFileInfo(RootForSystem() + fileName).exists())
-							File = new QFile(RootForSystem() + fileName);
+                            FilePath = RootForSystem() + fileName;
 					#endif
-					else File = new QFile(RootForRead() + fileName);
+                    else FilePath = RootForRead() + fileName;
+                    File = new QFile(FilePath);
                     Success = File->open(QFileDevice::ReadOnly);
+                    BxTRACE("<>:FileOpen(<A>/<A>):<A>", BxARG((writable)? "W" : "R",
+                        Success, FilePath.toLocal8Bit().constData()));
 				}
 			}
             ~FileClass() {delete File;}
@@ -637,13 +646,14 @@ namespace BxCore
 			bool IsSuccess() {return Success;}
 			QFile* operator->() {return File;}
         public:
-            static QString& RootForWrite()
+            static const QString& RootForWrite()
             {
-                static QString Root = ValidRemRoot();
-                return Root;
+                return ValidRemRoot();
             }
-            static QString& RootForRead()
+            static const QString& RootForRead()
             {
+                static QString Result = "";
+                if(0 < Result.length()) return Result;
                 #ifdef WIN32
                     static QString Root = "../resource/assets/";
                 #elif defined(Q_OS_MACX)
@@ -655,9 +665,9 @@ namespace BxCore
                 #else
                     static QString Root = "../resource/assets/";
                 #endif
-                return Root;
+                return Result = Root;
             }
-			static QString& RootForSystem()
+            static const QString& RootForSystem()
             {
                 static QString Root = "../../Bx2D/assets/";
                 return Root;
@@ -681,36 +691,59 @@ namespace BxCore
 				ValidRemFile(oldName);
                 return QFile::rename(RootForWrite() + oldName, RootForWrite() + newName);
             }
-		private:
-            static QString ValidRemRoot()
+            bool CopyToCamera(const QString& newName)
             {
+                QString FilePath = ValidCameraRoot() + newName;
+                if(QFileInfo(FilePath).exists())
+                    QFile::remove(FilePath);
+                bool Result = File->copy(FilePath);
+                BxTRACE("<>:CopyToCamera(<A>):<A>", BxARG(Result, FilePath.toLocal8Bit().constData()));
+                return Result;
+            }
+		private:
+            static void ValidRemFile(const QString& fileName)
+            {
+                if(!QFileInfo(RootForWrite() + fileName).exists())
+                {
+                    #ifdef WIN32
+                        if(QFileInfo(RootForSystem() + fileName).exists())
+                            QFile::copy(RootForSystem() + fileName, RootForWrite() + fileName);
+                        else
+                    #endif
+                    if(QFileInfo(RootForRead() + fileName).exists())
+                        QFile::copy(RootForRead() + fileName, RootForWrite() + fileName);
+                }
+            }
+            static const QString& ValidRemRoot()
+            {
+                static QString Result = "";
+                if(0 < Result.length()) return Result;
                 #ifdef WIN32
                     QString Root = "../resource";
-                #elif ANDROID
-                    QString Root = "../" + QCoreApplication::applicationName().toLower();
-                #elif defined(Q_OS_MAC)
-                    QString Root = QStandardPaths::standardLocations(QStandardPaths::DataLocation).value(0);
                 #else
-                    QString Root = "../resource";
+                    QString Root = QStandardPaths::standardLocations(QStandardPaths::DataLocation).value(0);
                 #endif
                 if(!QFileInfo(Root).exists()) QDir().mkdir(Root);
                 Root += "/assets-rem";
                 if(!QFileInfo(Root).exists()) QDir().mkdir(Root);
-                return Root + "/";
+                return Result = Root + "/";
             }
-			static void ValidRemFile(const QString& fileName)
-			{
-				if(!QFileInfo(RootForWrite() + fileName).exists())
-				{
-					#ifdef WIN32
-						if(QFileInfo(RootForSystem() + fileName).exists())
-							QFile::copy(RootForSystem() + fileName, RootForWrite() + fileName);
-						else
-					#endif
-					if(QFileInfo(RootForRead() + fileName).exists())
-						QFile::copy(RootForRead() + fileName, RootForWrite() + fileName);
-				}
-			}
+            static QString ValidCameraRoot()
+            {
+                static QString Result = "";
+                if(0 < Result.length()) return Result;
+                #if defined(WIN32) || defined(Q_OS_MACX)
+                    QString Root = QStandardPaths::standardLocations(QStandardPaths::PicturesLocation).value(0);
+                #else
+                    QString Root = QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation).value(0);
+                    if(!QFileInfo(Root).exists()) QDir().mkdir(Root);
+                    Root += "/DCIM";
+                #endif
+                if(!QFileInfo(Root).exists()) QDir().mkdir(Root);
+				Root += "/Camera";
+                if(!QFileInfo(Root).exists()) QDir().mkdir(Root);
+                return Result = Root + "/";
+            }
         };
         /// @endcond
 
@@ -888,52 +921,54 @@ namespace BxCore
 	namespace Bluetooth
 	{
 		/// @cond SECTION_NAME
-		class _DeviceAgent : public QBluetoothDeviceDiscoveryAgent
-		{
-			Q_OBJECT
-		public:
-			_DeviceAgent()
-			{
-				connect(this, SIGNAL(deviceDiscovered(const QBluetoothDeviceInfo&)),
-					this, SLOT(addDevice(const QBluetoothDeviceInfo&)));
-				connect(this, SIGNAL(error(QBluetoothDeviceDiscoveryAgent::Error)),
-					this, SLOT(deviceScanError(QBluetoothDeviceDiscoveryAgent::Error)));
-				connect(this, SIGNAL(finished()), this, SLOT(deviceScanFinished()));
-
-			}
-			virtual ~_DeviceAgent() {}
-		private slots:
-			void addDevice(const QBluetoothDeviceInfo& info)
+        #if defined(WIN32) || defined(ANDROID)
+            class _DeviceAgent : public QBluetoothDeviceDiscoveryAgent
             {
-                BxASSERT(BxCore::Util::Print("<>:##-addDevice[<A>]", BxARG(info.name().toLocal8Bit().constData())), false);
-            }
-            void deviceScanError(QBluetoothDeviceDiscoveryAgent::Error error)
-            {
-                switch(error)
+                Q_OBJECT
+            public:
+                _DeviceAgent()
                 {
-                case QBluetoothDeviceDiscoveryAgent::NoError:
-                    BxASSERT("##-deviceScanError:NoError", false);
-                    break;
-                case QBluetoothDeviceDiscoveryAgent::InputOutputError:
-                    BxASSERT("##-deviceScanError:InputOutputError", false);
-                    break;
-                case QBluetoothDeviceDiscoveryAgent::PoweredOffError:
-                    BxASSERT("##-deviceScanError:PoweredOffError", false);
-                    break;
-                case QBluetoothDeviceDiscoveryAgent::InvalidBluetoothAdapterError:
-                    BxASSERT("##-deviceScanError:InvalidBluetoothAdapterError", false);
-                    break;
-                case QBluetoothDeviceDiscoveryAgent::UnknownError:
-                    BxASSERT("##-deviceScanError:UnknownError", false);
-                    break;
+                    connect(this, SIGNAL(deviceDiscovered(const QBluetoothDeviceInfo&)),
+                        this, SLOT(addDevice(const QBluetoothDeviceInfo&)));
+                    connect(this, SIGNAL(error(QBluetoothDeviceDiscoveryAgent::Error)),
+                        this, SLOT(deviceScanError(QBluetoothDeviceDiscoveryAgent::Error)));
+                    connect(this, SIGNAL(finished()), this, SLOT(deviceScanFinished()));
+
                 }
-            }
-			void deviceScanFinished()
-			{
-				BxASSERT("##-deviceScanFinished", false);
-			}
-		};
-		STATIC_CLASS(_DeviceAgent, DeviceAgent);
+                virtual ~_DeviceAgent() {}
+            private slots:
+                void addDevice(const QBluetoothDeviceInfo& info)
+                {
+                    BxASSERT(BxCore::Util::Print("<>:##-addDevice[<A>]", BxARG(info.name().toLocal8Bit().constData())), false);
+                }
+                void deviceScanError(QBluetoothDeviceDiscoveryAgent::Error error)
+                {
+                    switch(error)
+                    {
+                    case QBluetoothDeviceDiscoveryAgent::NoError:
+                        BxASSERT("##-deviceScanError:NoError", false);
+                        break;
+                    case QBluetoothDeviceDiscoveryAgent::InputOutputError:
+                        BxASSERT("##-deviceScanError:InputOutputError", false);
+                        break;
+                    case QBluetoothDeviceDiscoveryAgent::PoweredOffError:
+                        BxASSERT("##-deviceScanError:PoweredOffError", false);
+                        break;
+                    case QBluetoothDeviceDiscoveryAgent::InvalidBluetoothAdapterError:
+                        BxASSERT("##-deviceScanError:InvalidBluetoothAdapterError", false);
+                        break;
+                    case QBluetoothDeviceDiscoveryAgent::UnknownError:
+                        BxASSERT("##-deviceScanError:UnknownError", false);
+                        break;
+                    }
+                }
+                void deviceScanFinished()
+                {
+                    BxASSERT("##-deviceScanFinished", false);
+                }
+            };
+            STATIC_CLASS(_DeviceAgent, DeviceAgent);
+        #endif
 		/// @endcond
 	}
 
