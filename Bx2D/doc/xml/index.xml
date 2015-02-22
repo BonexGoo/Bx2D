@@ -1636,6 +1636,7 @@
     <member refid="namespace_bx_core_1_1_file_1ae5f9334c76be6620f62e255f4415bbb6" kind="function"><name>SearchFiles</name></member>
     <member refid="namespace_bx_core_1_1_file_1a6e174bc48590d33a8389aa627ead540a" kind="function"><name>RemoveFile</name></member>
     <member refid="namespace_bx_core_1_1_file_1aa619ac618c718c7497eb786a68dd7aba" kind="function"><name>RenameFile</name></member>
+    <member refid="namespace_bx_core_1_1_file_1adbb260421edff7d313897d7fb7de6bff" kind="function"><name>CopyToCamera</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_font" kind="namespace"><name>BxCore::Font</name>
     <member refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kind="function"><name>Open</name></member>
@@ -1707,6 +1708,8 @@
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1a7814d24c44b6d72823f6d2cd0c7f06c5" kind="function"><name>Outline_PolyVertexUV_SetRotate</name></member>
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1a4ba87315049dff4c0d9107d5f3d5daef" kind="function"><name>Render</name></member>
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1a996f444283f9cbcd441d3a2cb7dd8dc1" kind="function"><name>Render3D</name></member>
+    <member refid="namespace_bx_core_1_1_open_g_l2_d_1a6bfaf570ee91c1947d42606761392ae4" kind="function"><name>RenderLinesDirectly</name></member>
+    <member refid="namespace_bx_core_1_1_open_g_l2_d_1a9461750321ea7459f8ec5bff5e19570f" kind="function"><name>RenderStripDirectly</name></member>
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1ac4e47adab45dcc3fd549fded7440b29d" kind="function"><name>Clip</name></member>
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1a0d01bdfb74bfc4ce9c968ff9677c29eb" kind="function"><name>GetTextureMargin</name></member>
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1a58f576b8a1326ff364da4be247dbebf3" kind="function"><name>DoTextureInterpolation</name></member>
@@ -1833,6 +1836,9 @@
     <member refid="namespace_bx_draw_global_1a66c0234539b5abb0c2599d352bd8d50d" kind="function"><name>XYSPLINE</name></member>
     <member refid="namespace_bx_draw_global_1ac92527c8048b58cf4e184738c1594bb9" kind="function"><name>RGB32</name></member>
     <member refid="namespace_bx_draw_global_1a697f3baeaa375440107c563e28404f32" kind="function"><name>RGB16</name></member>
+    <member refid="namespace_bx_draw_global_1a10b53cf759b09f4208463f83b0bc0960" kind="function"><name>ColorToRed</name></member>
+    <member refid="namespace_bx_draw_global_1aaf54d680cd5de0af66d8fe3f75aeae8a" kind="function"><name>ColorToGreen</name></member>
+    <member refid="namespace_bx_draw_global_1a2308e0b05240fbc75425e2e5bba75ec6" kind="function"><name>ColorToBlue</name></member>
     <member refid="namespace_bx_draw_global_1a3af8af57551ff51e3584484517014b4c" kind="function"><name>SpriteBlending</name></member>
     <member refid="namespace_bx_draw_global_1a2d833b80db8cc513b3a0dc3bb5cd0782" kind="function"><name>AlphaBlending</name></member>
     <member refid="namespace_bx_draw_global_1a5626a4423f49d2a3c43d1a2b46180064" kind="function"><name>OpacityBitByM555A444</name></member>

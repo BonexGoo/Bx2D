@@ -188,8 +188,6 @@ namespace BxDrawGlobal
 	static inline const rect XYWH(const int x, const int y, const int w = size::max, const int h = size::max)
 	{
 		const rect Result = {x, y, x + w, y + h};
-		BxASSERT("BxDraw<너비가 MAXSIZE를 초과합니다>", Result.r - Result.l <= size::max);
-		BxASSERT("BxDraw<높이가 MAXSIZE를 초과합니다>", Result.b - Result.t <= size::max);
 		return Result;
 	}
 
@@ -204,8 +202,6 @@ namespace BxDrawGlobal
 	static inline const rect XYXY(const int x1, const int y1, const int x2, const int y2)
 	{
 		const rect Result = {x1, y1, x2, y2};
-		BxASSERT("BxDraw<너비가 MAXSIZE를 초과합니다>", Result.r - Result.l <= size::max);
-		BxASSERT("BxDraw<높이가 MAXSIZE를 초과합니다>", Result.b - Result.t <= size::max);
 		return Result;
 	}
 
@@ -219,8 +215,6 @@ namespace BxDrawGlobal
 	static inline const rect XYR(const int x, const int y, const int r)
 	{
 		const rect Result = {x - r, y - r, x + r, y + r};
-		BxASSERT("BxDraw<너비가 MAXSIZE를 초과합니다>", Result.r - Result.l <= size::max);
-		BxASSERT("BxDraw<높이가 MAXSIZE를 초과합니다>", Result.b - Result.t <= size::max);
 		return Result;
 	}
 
@@ -236,8 +230,6 @@ namespace BxDrawGlobal
 		const int Left = x - form->Width() / 2;
 		const int Top = y - form->Height() / 2;
 		const rect Result = {Left, Top, Left + form->Width(), Top + form->Height()};
-		BxASSERT("BxDraw<너비가 MAXSIZE를 초과합니다>", Result.r - Result.l <= size::max);
-		BxASSERT("BxDraw<높이가 MAXSIZE를 초과합니다>", Result.b - Result.t <= size::max);
 		return Result;
 	}
 
@@ -252,8 +244,6 @@ namespace BxDrawGlobal
 	static inline const rect XYRR(const int x, const int y, const int wr, const int hr)
 	{
 		const rect Result = {x - wr, y - hr, x + wr, y + hr};
-		BxASSERT("BxDraw<너비가 MAXSIZE를 초과합니다>", Result.r - Result.l <= size::max);
-		BxASSERT("BxDraw<높이가 MAXSIZE를 초과합니다>", Result.b - Result.t <= size::max);
 		return Result;
 	}
 
@@ -402,6 +392,36 @@ namespace BxDrawGlobal
 	static inline const color_565 RGB16(const byte r, const byte g, const byte b)
 	{
 		return ((r & 0xF8) << 8) | ((g & 0xFC) << 3) | ((b & 0xF8) >> 3);
+	}
+
+	/*!
+	\brief 색상추출(Red)
+	\param color : 32비트 색상
+	\return 색상값
+	*/
+	static inline const byte ColorToRed(const color_x888 color)
+	{
+		return (color >> 16) & 0xFF;
+	}
+
+	/*!
+	\brief 색상추출(Green)
+	\param color : 32비트 색상
+	\return 색상값
+	*/
+	static inline const byte ColorToGreen(const color_x888 color)
+	{
+		return (color >> 8) & 0xFF;
+	}
+
+	/*!
+	\brief 색상추출(Blue)
+	\param color : 32비트 색상
+	\return 색상값
+	*/
+	static inline const byte ColorToBlue(const color_x888 color)
+	{
+		return (color >> 0) & 0xFF;
 	}
 
 	/*!

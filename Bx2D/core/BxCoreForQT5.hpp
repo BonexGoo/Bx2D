@@ -22,7 +22,7 @@
 #include <QFontDatabase>
 #include <QStandardPaths>
 #include <QLibrary>
-#if defined(WIN32) || defined(ANDROID)
+#if defined(WIN32)
     #include <QBluetoothDeviceDiscoveryAgent>
 #endif
 #include <QDesktopWidget>
@@ -71,6 +71,7 @@ namespace BxCore
 			enum {DClickRadius = 100, DClickRadiusMin = 20, DClickRadiusSpeed = 10};
 			bool TouchPressed;
 			bool TouchRPressed;
+			int TouchRAngle;
             uint SavedTouchFlag;
             point SavedTouchPos[32];
 			QTimer WheelMoveTimer;
@@ -86,7 +87,7 @@ namespace BxCore
 
         private:
             GLWidget() : QGLWidget(QGLFormat(QGL::SampleBuffers)),
-                TouchPressed(false), TouchRPressed(false), SavedTouchFlag(0),
+                TouchPressed(false), TouchRPressed(false), TouchRAngle(0), SavedTouchFlag(0),
 				WheelMoveTimer(this), WheelEndTimer(this), WheelPressed(false), RadiusForWheel(0),
 				FirstMoved(false), FirstSized(false), PosX(0), PosY(0), SizeW(0), SizeH(0)
             {
@@ -281,8 +282,8 @@ namespace BxCore
 				{
 					PostMouseEventsByWheelDone();
 					TouchRPressed = true;
-					PostMouseEvent(systouchtype_down, 0, event->x(), event->y(), true, -DClickRadius);
-					PostMouseEvent(systouchtype_down, 1, event->x(), event->y(), true, +DClickRadius);
+					TouchRAngle = 0;
+					PostMouseEventByRotate(systouchtype_down, event->x(), event->y());
 				}
             }
 			void mouseMoveEvent(QMouseEvent* event)
@@ -290,10 +291,7 @@ namespace BxCore
 				if(TouchPressed && (event->buttons() & Qt::LeftButton))
 					PostMouseEvent(systouchtype_move, 0, event->x(), event->y());
 				if(TouchRPressed && (event->buttons() & Qt::RightButton))
-				{
-					PostMouseEvent(systouchtype_move, 0, event->x(), event->y(), true, -DClickRadius);
-					PostMouseEvent(systouchtype_move, 1, event->x(), event->y(), true, +DClickRadius);
-				}
+					PostMouseEventByRotate(systouchtype_move, event->x(), event->y());
             }
             void mouseReleaseEvent(QMouseEvent* event)
             {
@@ -305,8 +303,7 @@ namespace BxCore
 				if(TouchRPressed && event->button() == Qt::RightButton)
 				{
 					TouchRPressed = false;
-					PostMouseEvent(systouchtype_up, 0, event->x(), event->y(), true, -DClickRadius);
-					PostMouseEvent(systouchtype_up, 1, event->x(), event->y(), true, +DClickRadius);
+					PostMouseEventByRotate(systouchtype_up, event->x(), event->y());
 				}
             }
             void keyPressEvent(QKeyEvent* event)
@@ -349,23 +346,29 @@ namespace BxCore
             }
 			void wheelEvent(QWheelEvent* event)
 			{
-				if(TouchPressed || TouchRPressed)
-					return;
 				const int X = event->x();
 				const int Y = event->y();
-				if(!WheelPressed)
+				if(TouchRPressed)
 				{
-					WheelPressed = true;
-					RadiusForWheel = DClickRadius;
-					PostMouseEvent(systouchtype_down, 0, X, Y, true, -RadiusForWheel);
-					PostMouseEvent(systouchtype_down, 1, X, Y, true, +RadiusForWheel);
+					TouchRAngle = (TouchRAngle + 16 * event->delta() / 120 + 1024) % 1024;
+					PostMouseEventByRotate(systouchtype_move, event->x(), event->y());
 				}
-				RadiusForWheel = BxUtilGlobal::Max(DClickRadiusMin,
-					RadiusForWheel + DClickRadiusSpeed * event->delta() / 120);
-				PostMouseEvent(systouchtype_move, 0, X, Y, true, -RadiusForWheel);
-				PostMouseEvent(systouchtype_move, 1, X, Y, true, +RadiusForWheel);
-				WheelMoveTimer.start(20);
-				WheelEndTimer.start(200);
+				else if(!TouchPressed)
+				{
+					if(!WheelPressed)
+					{
+						WheelPressed = true;
+						RadiusForWheel = DClickRadius;
+						PostMouseEvent(systouchtype_down, 0, X, Y, true, -RadiusForWheel);
+						PostMouseEvent(systouchtype_down, 1, X, Y, true, +RadiusForWheel);
+					}
+					RadiusForWheel = BxUtilGlobal::Max(DClickRadiusMin,
+						RadiusForWheel + DClickRadiusSpeed * event->delta() / 120);
+					PostMouseEvent(systouchtype_move, 0, X, Y, true, -RadiusForWheel);
+					PostMouseEvent(systouchtype_move, 1, X, Y, true, +RadiusForWheel);
+					WheelMoveTimer.start(20);
+					WheelEndTimer.start(200);
+				}
 			}
 
 		private:
@@ -381,6 +384,13 @@ namespace BxCore
 				Event.touch.y = Event.touch.y * BxCore::Surface::GetHeight() / BxCore::Surface::GetHeightHW();
 				Event.touch.special = special;
 				BxScene::__AddEvent__(Event, (type == systouchtype_down)? syseventset_do_enable : syseventset_need_enable);
+			}
+			void PostMouseEventByRotate(systouchtype type, int x, int y)
+			{
+				const int XAdd = FtoR(DClickRadius * BxUtil::Cos(TouchRAngle));
+				const int YAdd = FtoR(DClickRadius * BxUtil::Sin(TouchRAngle));
+				PostMouseEvent(type, 0, x, y, true, -XAdd, -YAdd);
+				PostMouseEvent(type, 1, x, y, true, +XAdd, +YAdd);
 			}
 			void PostMouseEventsByWheelDone()
 			{
@@ -921,7 +931,7 @@ namespace BxCore
 	namespace Bluetooth
 	{
 		/// @cond SECTION_NAME
-        #if defined(WIN32) || defined(ANDROID)
+        #if defined(WIN32)
             class _DeviceAgent : public QBluetoothDeviceDiscoveryAgent
             {
                 Q_OBJECT
@@ -1893,6 +1903,22 @@ namespace BxCore
 			SplineVertex() : OpenGLOutline(SPLINE) {}
             virtual ~SplineVertex() {}
 		};
+		struct LinesData
+		{
+		public:
+			float x;
+			float y;
+			float reserved;
+		};
+		struct StripData
+		{
+		public:
+			byte opacity;
+			float lx;
+			float ly;
+			float rx;
+			float ry;
+		};
 		/// @endcond
 
         /// @cond SECTION_NAME
@@ -2025,7 +2051,7 @@ namespace BxCore
 						const fint RVecXB = SV->VertexR[1].x - SV->VertexR[0].x;
 						const fint RVecYB = SV->VertexR[1].y - SV->VertexR[0].y;
 						const fint RVecXE = SV->VertexR[3].x - SV->VertexR[2].x;
-						const fint RVecYE = SV->VertexR[3].y - SV->VertexR[2].y;						
+						const fint RVecYE = SV->VertexR[3].y - SV->VertexR[2].y;
 						BxUtil::GetCubicSpline(RVecX, RVecY, RVecXB, RVecYB, RB, RVecXE, RVecYE, RE);
 
 						const fint LMax = BxUtilGlobal::Max(BxUtilGlobal::Abs(LVecX), BxUtilGlobal::Abs(LVecY));
@@ -2079,6 +2105,106 @@ namespace BxCore
                     break;
                 }
             }
+			void DrawLines(int Count, const LinesData* Data, const float x, const float y, const float scale, const byte opacity, const color_x888 color, const bool loop)
+			{
+                global_data int CountMax = 256;
+                global_data QVector2D* Vertex = new QVector2D[CountMax];
+                if(Count < 2) return;
+
+                if(CountMax < Count)
+                {
+                    delete[] Vertex;
+                    Vertex = new QVector2D[CountMax = Count];
+                }
+
+				BxCore::Surface::SurfaceSingle().SetRenderMode(rendermode_2d);
+				QGLShaderProgram* LastProgram = This->Program[Data::COL]->SetFocus();
+                const float DeWidth = scale / BxCore::Surface::GetWidthHW(false);
+                const float DeHeight = scale / BxCore::Surface::GetHeightHW(false);
+                const float DeX = x + BxCore::Main::GetGUIMarginL() / 2 / scale;
+                const float DeY = y + BxCore::Main::GetGUIMarginT() / 2 / scale;
+                const int R = (color >> 16) & 0xFF;
+                const int G = (color >> 8) & 0xFF;
+                const int B = (color >> 0) & 0xFF;
+                const int A = opacity & 0xFF;
+
+                // Vertex
+                for(int i = 0; i < Count; ++i)
+                {
+                    Vertex[i].setX((Data[i].x + DeX) * DeWidth);
+                    Vertex[i].setY((Data[i].y + DeY) * DeHeight);
+                }
+                LastProgram->setAttributeArray(0, Vertex);
+                // Color
+				QColor Color(R, G, B, A);
+				LastProgram->setUniformValue("color", Color);
+                // Draw
+                glDrawArrays((loop)? GL_LINE_LOOP : GL_LINE_STRIP, 0, Count);
+			}
+            template<bool useStripOpacity, bool useMatrix>
+            void DrawStrip(int Count, const StripData* Data,
+				const byte opacity, const color_x888 color, const float x, const float y, const float scale,
+                const float m11, const float m12, const float m21, const float m22, const float dx, const float dy)
+			{
+				global_data const int CountMax = 256;
+				global_data QVector2D Vertex[2 * CountMax];
+				if(Count < 2) return;
+
+				BxCore::Surface::SurfaceSingle().SetRenderMode(rendermode_2d);
+				QGLShaderProgram* LastProgram = This->Program[Data::COL]->SetFocus();
+				const float DeWidth = scale / BxCore::Surface::GetWidthHW(false);
+                const float DeHeight = scale / BxCore::Surface::GetHeightHW(false);
+                const float De11 = m11 * DeWidth;
+                const float De12 = m12 * DeHeight;
+                const float De21 = m21 * DeWidth;
+                const float De22 = m22 * DeHeight;
+                const float DeX = (dx + x + BxCore::Main::GetGUIMarginL() / 2 / scale) * DeWidth;
+                const float DeY = (dy + y + BxCore::Main::GetGUIMarginT() / 2 / scale) * DeHeight;
+				const int R = (color >> 16) & 0xFF;
+				const int G = (color >> 8) & 0xFF;
+				const int B = (color >> 0) & 0xFF;
+				const int A = opacity & 0xFF;
+
+				int FocusBegin = 1;
+				while(FocusBegin < Count)
+				{
+                    // Vertex
+					int Focus = FocusBegin -= 1;
+                    const int Opacity = (useStripOpacity)? A * Data[Focus].opacity / 0xFF : A;
+					for(int i = 0; i < 2 * CountMax && Focus < Count; i += 2)
+					{
+						const StripData& CurData = Data[Focus];
+						if(useMatrix)
+						{
+							Vertex[i + 0].setX(CurData.lx * De11 + CurData.ly * De21 + DeX);
+							Vertex[i + 0].setY(CurData.lx * De12 + CurData.ly * De22 + DeY);
+							Vertex[i + 1].setX(CurData.rx * De11 + CurData.ry * De21 + DeX);
+							Vertex[i + 1].setY(CurData.rx * De12 + CurData.ry * De22 + DeY);
+						}
+						else
+						{
+							Vertex[i + 0].setX(CurData.lx * De11 + DeX);
+							Vertex[i + 0].setY(CurData.ly * De22 + DeY);
+							Vertex[i + 1].setX(CurData.rx * De11 + DeX);
+							Vertex[i + 1].setY(CurData.ry * De22 + DeY);
+						}
+						if(!useStripOpacity) Focus++;
+						else if(Opacity != A * Data[Focus++].opacity / 0xFF)
+							break;
+					}
+					LastProgram->setAttributeArray(0, Vertex);
+                    // Color
+                    QColor Color(R, G, B, Opacity);
+					LastProgram->setUniformValue("color", Color);
+                    // Draw
+					#ifdef GL_QUAD_STRIP
+						glDrawArrays(GL_QUAD_STRIP, 0, 2 * (Focus - FocusBegin));
+					#else
+						glDrawArrays(GL_TRIANGLE_STRIP, 0, 2 * (Focus - FocusBegin));
+					#endif
+					FocusBegin = Focus;
+				}
+			}
             void Flush()
             {
                 glFlush();
@@ -2091,8 +2217,10 @@ namespace BxCore
             }
             void SetScissor(int x, int y, int w, int h)
             {
+				global_data const int PixelRatio = BxCore::Main::GLWidget::Me().devicePixelRatio();
                 y = BxCore::Surface::SurfaceSingle().GetHeightHW() - (y + h);
-                glScissor(x, y, w, h);
+                glScissor(x * PixelRatio / GLSCALE, y * PixelRatio / GLSCALE,
+					w * PixelRatio / GLSCALE, h * PixelRatio / GLSCALE);
             }
         public:
             OpenGLSingle() {global_data Data* Ref = BxNew(Data); This = Ref;}

@@ -1313,6 +1313,11 @@ namespace BxCore
 		// Render
 		void Render(id_opengl_form form, id_opengl_outline outline, int x, int y, const byte opacity, const color_x888 color);
 		void Render3D(id_opengl_form form, id_opengl_outline outline, int x, int y, int z, const byte opacity, const color_x888 color);
+		void RenderLinesDirectly(int Count, const void* Data, const float x, const float y,
+			const float scale, const byte opacity, const color_x888 color, const bool loop);
+		void RenderStripDirectly(int Count, const void* Data,
+			const byte opacity, const color_x888 color, const float x, const float y, const float scale,
+			const float m11, const float m12, const float m21, const float m22, const float dx, const float dy);
 		// Option
 		void Clip(rect r);
 		// Property

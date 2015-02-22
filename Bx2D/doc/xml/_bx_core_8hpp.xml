@@ -11,6 +11,12 @@
     <includedby refid="_bx_dynamic_8hpp" local="no">BxDynamic.hpp</includedby>
     <includedby refid="_bx_memory_8hpp" local="no">BxMemory.hpp</includedby>
     <incdepgraph>
+      <node id="62">
+        <label>BxCore.hpp</label>
+        <link refid="BxCore.hpp"/>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
       <node id="63">
         <label>BxArgument.hpp</label>
         <link refid="_bx_argument_8hpp_source"/>
@@ -21,12 +27,6 @@
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="62">
-        <label>BxCore.hpp</label>
-        <link refid="BxCore.hpp"/>
-        <childnode refid="63" relation="include">
-        </childnode>
-      </node>
       <node id="64">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
@@ -35,58 +35,24 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="76">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
+      <node id="81">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
         <childnode refid="77" relation="include">
         </childnode>
         <childnode refid="70" relation="include">
         </childnode>
         <childnode refid="72" relation="include">
         </childnode>
-        <childnode refid="78" relation="include">
-        </childnode>
-        <childnode refid="74" relation="include">
-        </childnode>
       </node>
-      <node id="86">
-        <label>BxTween.hpp</label>
-        <link refid="_bx_tween_8hpp_source"/>
+      <node id="85">
+        <label>BxXml.hpp</label>
+        <link refid="_bx_xml_8hpp_source"/>
       </node>
-      <node id="78">
-        <label>BxPathFind.hpp</label>
-        <link refid="_bx_path_find_8hpp_source"/>
-      </node>
-      <node id="77">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
-      </node>
-      <node id="80">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="81" relation="include">
-        </childnode>
-        <childnode refid="72" relation="include">
-        </childnode>
-        <childnode refid="78" relation="include">
-        </childnode>
-        <childnode refid="73" relation="include">
-        </childnode>
-      </node>
-      <node id="79">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="76" relation="include">
-        </childnode>
-        <childnode refid="80" relation="include">
-        </childnode>
-        <childnode refid="71" relation="include">
-        </childnode>
-        <childnode refid="78" relation="include">
-        </childnode>
-        <childnode refid="82" relation="include">
-        </childnode>
-        <childnode refid="86" relation="include">
+      <node id="83">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+        <childnode refid="84" relation="include">
         </childnode>
       </node>
       <node id="75">
@@ -105,45 +71,13 @@
         <childnode refid="87" relation="include">
         </childnode>
       </node>
-      <node id="84">
-        <label>BxCoreImpl.hpp</label>
-        <link refid="_bx_core_impl_8hpp_source"/>
+      <node id="77">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
       </node>
-      <node id="87">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="82" relation="include">
-        </childnode>
-      </node>
-      <node id="72">
-        <label>BxPanel.hpp</label>
-        <link refid="_bx_panel_8hpp_source"/>
-        <childnode refid="73" relation="include">
-        </childnode>
-      </node>
-      <node id="83">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="84" relation="include">
-        </childnode>
-      </node>
-      <node id="70">
-        <label>BxConsole.hpp</label>
-        <link refid="_bx_console_8hpp_source"/>
-      </node>
-      <node id="81">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="77" relation="include">
-        </childnode>
-        <childnode refid="70" relation="include">
-        </childnode>
-        <childnode refid="72" relation="include">
-        </childnode>
-      </node>
-      <node id="71">
-        <label>BxDynamic.hpp</label>
-        <link refid="_bx_dynamic_8hpp_source"/>
+      <node id="86">
+        <label>BxTween.hpp</label>
+        <link refid="_bx_tween_8hpp_source"/>
       </node>
       <node id="66">
         <label>BxCore.hpp</label>
@@ -158,6 +92,58 @@
         </childnode>
         <childnode refid="75" relation="include">
         </childnode>
+      </node>
+      <node id="69">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>BxWebContent.hpp</label>
+        <link refid="_bx_web_content_8hpp_source"/>
+      </node>
+      <node id="80">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>BxAutoBuffer.hpp</label>
+        <link refid="_bx_auto_buffer_8hpp_source"/>
+      </node>
+      <node id="76">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>BxPathFind.hpp</label>
+        <link refid="_bx_path_find_8hpp_source"/>
       </node>
       <node id="82">
         <label>BxString.hpp</label>
@@ -175,9 +161,21 @@
         <childnode refid="85" relation="include">
         </childnode>
       </node>
-      <node id="74">
-        <label>BxWebContent.hpp</label>
-        <link refid="_bx_web_content_8hpp_source"/>
+      <node id="67">
+        <label>BxCoreForQT5.hpp</label>
+        <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      </node>
+      <node id="84">
+        <label>BxCoreImpl.hpp</label>
+        <link refid="_bx_core_impl_8hpp_source"/>
+      </node>
+      <node id="70">
+        <label>BxConsole.hpp</label>
+        <link refid="_bx_console_8hpp_source"/>
+      </node>
+      <node id="71">
+        <label>BxDynamic.hpp</label>
+        <link refid="_bx_dynamic_8hpp_source"/>
       </node>
       <node id="73">
         <label>BxScene.hpp</label>
@@ -185,31 +183,33 @@
         <childnode refid="67" relation="include">
         </childnode>
       </node>
-      <node id="67">
-        <label>BxCoreForQT5.hpp</label>
-        <link refid="_bx_core_for_q_t5_8hpp_source"/>
-      </node>
-      <node id="85">
-        <label>BxXml.hpp</label>
-        <link refid="_bx_xml_8hpp_source"/>
-      </node>
-      <node id="69">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="67" relation="include">
+      <node id="79">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="76" relation="include">
         </childnode>
-        <childnode refid="70" relation="include">
+        <childnode refid="80" relation="include">
         </childnode>
         <childnode refid="71" relation="include">
         </childnode>
-        <childnode refid="72" relation="include">
+        <childnode refid="78" relation="include">
         </childnode>
-        <childnode refid="74" relation="include">
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
         </childnode>
       </node>
-      <node id="68">
-        <label>BxAutoBuffer.hpp</label>
-        <link refid="_bx_auto_buffer_8hpp_source"/>
+      <node id="87">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>BxPanel.hpp</label>
+        <link refid="_bx_panel_8hpp_source"/>
+        <childnode refid="73" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innernamespace refid="namespace_bx_core">BxCore</innernamespace>
@@ -498,158 +498,165 @@
 <codeline lineno="893"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1a6e174bc48590d33a8389aa627ead540a" kindref="member">RemoveFile</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doRemoveBlankedDirectory<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="894"><highlight class="normal"></highlight></codeline>
 <codeline lineno="901"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1aa619ac618c718c7497eb786a68dd7aba" kindref="member">RenameFile</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>srcname,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>dstname);</highlight></codeline>
-<codeline lineno="902"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="903"><highlight class="normal"></highlight></codeline>
-<codeline lineno="905" refid="namespace_bx_core_1_1_socket" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Socket</highlight></codeline>
-<codeline lineno="906"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="912"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/><ref refid="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" kindref="member">Create</ref>();</highlight></codeline>
-<codeline lineno="913"><highlight class="normal"></highlight></codeline>
-<codeline lineno="919"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member">Release</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock);</highlight></codeline>
+<codeline lineno="902"><highlight class="normal"></highlight></codeline>
+<codeline lineno="908"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_file_1adbb260421edff7d313897d7fb7de6bff" kindref="member">CopyToCamera</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="909"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="910"><highlight class="normal"></highlight></codeline>
+<codeline lineno="912" refid="namespace_bx_core_1_1_socket" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Socket</highlight></codeline>
+<codeline lineno="913"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="919"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/><ref refid="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" kindref="member">Create</ref>();</highlight></codeline>
 <codeline lineno="920"><highlight class="normal"></highlight></codeline>
-<codeline lineno="926"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>socketstate<sp/><ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock);</highlight></codeline>
+<codeline lineno="926"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member">Release</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock);</highlight></codeline>
 <codeline lineno="927"><highlight class="normal"></highlight></codeline>
-<codeline lineno="938"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connectresult<sp/><ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member">Connect</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>addr,<sp/>ushort<sp/>port,<sp/>uint<sp/>timeout<sp/>=<sp/>0,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="939"><highlight class="normal"></highlight></codeline>
-<codeline lineno="945"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" kindref="member">Disconnect</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock);</highlight></codeline>
+<codeline lineno="933"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>socketstate<sp/><ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock);</highlight></codeline>
+<codeline lineno="934"><highlight class="normal"></highlight></codeline>
+<codeline lineno="945"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connectresult<sp/><ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member">Connect</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>addr,<sp/>ushort<sp/>port,<sp/>uint<sp/>timeout<sp/>=<sp/>0,<sp/>callback_progress<sp/>progress<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="946"><highlight class="normal"></highlight></codeline>
-<codeline lineno="955"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a9a23c3a4ad8819aa795983a72eb8c5b2" kindref="member">Send</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
-<codeline lineno="956"><highlight class="normal"></highlight></codeline>
-<codeline lineno="965"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" kindref="member">Recv</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
-<codeline lineno="966"><highlight class="normal"></highlight></codeline>
-<codeline lineno="977"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" kindref="member">RecvFully</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock,<sp/>byte*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cancelmode);</highlight></codeline>
-<codeline lineno="978"><highlight class="normal"></highlight></codeline>
-<codeline lineno="985"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a4b654fd3ff8eabe722999d7e7ea71eed" kindref="member">Ping</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>addr,<sp/>uint<sp/>timeout);</highlight></codeline>
-<codeline lineno="986"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="987"><highlight class="normal"></highlight></codeline>
-<codeline lineno="989" refid="namespace_bx_core_1_1_bluetooth" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Bluetooth</highlight></codeline>
-<codeline lineno="990"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="992" refid="namespace_bx_core_1_1_bluetooth_1_1_scan" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Scan</highlight></codeline>
-<codeline lineno="993"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="994"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Begin();</highlight></codeline>
-<codeline lineno="995"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>End();</highlight></codeline>
-<codeline lineno="996"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CountOfQueue();</highlight></codeline>
-<codeline lineno="997"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>GetUuidFromQueue();</highlight></codeline>
-<codeline lineno="998"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>UuidToName(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>uuid);</highlight></codeline>
-<codeline lineno="999"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="1000"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1001"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>Connect(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>uuid);</highlight></codeline>
-<codeline lineno="1002"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Disconnect(<ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>bluetooth);</highlight></codeline>
-<codeline lineno="1003"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsConnected(<ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>bluetooth);</highlight></codeline>
-<codeline lineno="1004"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Send(<ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>bluetooth,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
-<codeline lineno="1005"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CountOfRecv();</highlight></codeline>
-<codeline lineno="1006"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Recv(<ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>bluetooth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>len);</highlight></codeline>
-<codeline lineno="1007"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CountOfEvent();</highlight></codeline>
-<codeline lineno="1008"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>GetEvent(<ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>bluetooth);</highlight></codeline>
-<codeline lineno="1009"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="1010"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1012" refid="namespace_bx_core_1_1_font" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Font</highlight></codeline>
-<codeline lineno="1013"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="1021"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nick,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
-<codeline lineno="1022"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1029"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__00" kindref="compound">id_font_zero</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a1ff1d4ae902591e6cd8ff3c11dd0218e" kindref="member">Close</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font);</highlight></codeline>
-<codeline lineno="1030"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1035"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a3eec7800226444ec3c5429d3694adc53" kindref="member">Default</ref>();</highlight></codeline>
-<codeline lineno="1036"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1044"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a7957798859cbadf9c6f09286c9ff33b3" kindref="member">NickOpen</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nick,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
-<codeline lineno="1045"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1054"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a9eafc9510f244a1fc3f07a218f6e6e20" kindref="member">NickOpenByBuffer</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nick,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buffersize);</highlight></codeline>
-<codeline lineno="1055"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1061"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a05a4f40903754c3da911c65a636b8cab" kindref="member">NickClose</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nick);</highlight></codeline>
+<codeline lineno="952"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" kindref="member">Disconnect</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock);</highlight></codeline>
+<codeline lineno="953"><highlight class="normal"></highlight></codeline>
+<codeline lineno="962"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a9a23c3a4ad8819aa795983a72eb8c5b2" kindref="member">Send</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="963"><highlight class="normal"></highlight></codeline>
+<codeline lineno="972"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" kindref="member">Recv</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="973"><highlight class="normal"></highlight></codeline>
+<codeline lineno="984"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" kindref="member">RecvFully</ref>(<ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>sock,<sp/>byte*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>timeout,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cancelmode);</highlight></codeline>
+<codeline lineno="985"><highlight class="normal"></highlight></codeline>
+<codeline lineno="992"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_socket_1a4b654fd3ff8eabe722999d7e7ea71eed" kindref="member">Ping</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>addr,<sp/>uint<sp/>timeout);</highlight></codeline>
+<codeline lineno="993"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="994"><highlight class="normal"></highlight></codeline>
+<codeline lineno="996" refid="namespace_bx_core_1_1_bluetooth" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Bluetooth</highlight></codeline>
+<codeline lineno="997"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="999" refid="namespace_bx_core_1_1_bluetooth_1_1_scan" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Scan</highlight></codeline>
+<codeline lineno="1000"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1001"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Begin();</highlight></codeline>
+<codeline lineno="1002"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>End();</highlight></codeline>
+<codeline lineno="1003"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CountOfQueue();</highlight></codeline>
+<codeline lineno="1004"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>GetUuidFromQueue();</highlight></codeline>
+<codeline lineno="1005"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>UuidToName(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>uuid);</highlight></codeline>
+<codeline lineno="1006"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1007"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1008"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>Connect(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>uuid);</highlight></codeline>
+<codeline lineno="1009"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Disconnect(<ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>bluetooth);</highlight></codeline>
+<codeline lineno="1010"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsConnected(<ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>bluetooth);</highlight></codeline>
+<codeline lineno="1011"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Send(<ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>bluetooth,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="1012"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CountOfRecv();</highlight></codeline>
+<codeline lineno="1013"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Recv(<ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>bluetooth,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_out_<sp/>len);</highlight></codeline>
+<codeline lineno="1014"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CountOfEvent();</highlight></codeline>
+<codeline lineno="1015"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>GetEvent(<ref refid="structid__struct__05" kindref="compound">id_bluetooth</ref><sp/>bluetooth);</highlight></codeline>
+<codeline lineno="1016"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1017"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1019" refid="namespace_bx_core_1_1_font" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Font</highlight></codeline>
+<codeline lineno="1020"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1028"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" kindref="member">Open</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nick,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="1029"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1036"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__00" kindref="compound">id_font_zero</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a1ff1d4ae902591e6cd8ff3c11dd0218e" kindref="member">Close</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font);</highlight></codeline>
+<codeline lineno="1037"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1042"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a3eec7800226444ec3c5429d3694adc53" kindref="member">Default</ref>();</highlight></codeline>
+<codeline lineno="1043"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1051"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a7957798859cbadf9c6f09286c9ff33b3" kindref="member">NickOpen</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nick,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="1052"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1061"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a9eafc9510f244a1fc3f07a218f6e6e20" kindref="member">NickOpenByBuffer</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nick,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>buffer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buffersize);</highlight></codeline>
 <codeline lineno="1062"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1069"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1adc235af149b20f3b2b444af6afe65013" kindref="member">IsExistNick</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nick);</highlight></codeline>
-<codeline lineno="1070"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1078"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a585ced3b642de2a8b287167da413553b" kindref="member">TextOpen</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>str,<sp/>textencoding<sp/>encoding<sp/>=<sp/>textencoding_cp949);</highlight></codeline>
-<codeline lineno="1079"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1087"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a0f2cdec76d6b6275e5ac848784e4aa29" kindref="member">TextOpenByUTF16</ref>(wstring<sp/>wstr,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>referonly<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="1088"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1095"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__01" kindref="compound">id_text_zero</ref><sp/><ref refid="namespace_bx_core_1_1_font_1ad27688ebfa61f58b4d2c8655d77177dc" kindref="member">TextClose</ref>(<ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>text);</highlight></codeline>
-<codeline lineno="1096"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a8cb6ffc7818a38863f2f0a165d268610" kindref="member">SetOption</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/>color_x888<sp/>color,<sp/>byte<sp/>opacity<sp/>=<sp/>0xFF,<sp/>textalign<sp/>align<sp/>=<sp/>textalign_left_top);</highlight></codeline>
-<codeline lineno="1106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a496db2ab00cf3bb0a776f3dede596532" kindref="member">SetRotate</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle1024<sp/>=<sp/>0);</highlight></codeline>
-<codeline lineno="1114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a4eb0c91806ec25028e4e39ca5871229c" kindref="member">SetJustify</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>column<sp/>=<sp/>0);</highlight></codeline>
-<codeline lineno="1122"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a4c516642ce31018e5f5e5bc93b458bee" kindref="member">GetWidth</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length<sp/>=<sp/>-1);</highlight></codeline>
-<codeline lineno="1133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a5cd10190369910d42145f470d944287d" kindref="member">GetHeight</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font);</highlight></codeline>
-<codeline lineno="1141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a3a0d1fd2041a2a2682dea5897b37a6bf" kindref="member">GetLength</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>column,<sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>width<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="1153"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1ae6cb1f1eaa2bdc2171820f49a8b95aa5" kindref="member">GetLengthByLetter</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>column,<sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>width<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="1165"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpoint" kindref="compound">point</ref><sp/><ref refid="namespace_bx_core_1_1_font_1aceefbd7b0dc2522d2026010c532cea4d" kindref="member">DrawRequest</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/><ref refid="structpoint" kindref="compound">point</ref><sp/>pos,<sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length<sp/>=<sp/>-1);</highlight></codeline>
-<codeline lineno="1177"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a9a581fddb1fc4e67b149cefbcc4b24dd" kindref="member">RequestFlush</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font);</highlight></codeline>
-<codeline lineno="1184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="1185"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1187" refid="namespace_bx_core_1_1_thread" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Thread</highlight></codeline>
-<codeline lineno="1188"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="1196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__13" kindref="compound">id_thread</ref><sp/><ref refid="namespace_bx_core_1_1_thread_1aaedfd3f40c87744a20478d8a9f08e2ea" kindref="member">Create</ref>(callback_thread<sp/>threadCB,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="1197"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1ab826ab467ee70b36c1884e87a855c3c4" kindref="member">Release</ref>(<ref refid="structid__struct__13" kindref="compound">id_thread</ref><sp/>thread,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dokill<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dowait<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="1206"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__14" kindref="compound">id_mutex</ref><sp/><ref refid="namespace_bx_core_1_1_thread_1adf48754093833abf8c23636bf6feaaac" kindref="member">OpenMutex</ref>();</highlight></codeline>
-<codeline lineno="1213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1a01f908e2c4137aaf47cbd5adf675e1b7" kindref="member">CloseMutex</ref>(<ref refid="structid__struct__14" kindref="compound">id_mutex</ref><sp/>mutex);</highlight></codeline>
+<codeline lineno="1068"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a05a4f40903754c3da911c65a636b8cab" kindref="member">NickClose</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nick);</highlight></codeline>
+<codeline lineno="1069"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1076"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1adc235af149b20f3b2b444af6afe65013" kindref="member">IsExistNick</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nick);</highlight></codeline>
+<codeline lineno="1077"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1085"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a585ced3b642de2a8b287167da413553b" kindref="member">TextOpen</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>str,<sp/>textencoding<sp/>encoding<sp/>=<sp/>textencoding_cp949);</highlight></codeline>
+<codeline lineno="1086"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1094"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/><ref refid="namespace_bx_core_1_1_font_1a0f2cdec76d6b6275e5ac848784e4aa29" kindref="member">TextOpenByUTF16</ref>(wstring<sp/>wstr,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>referonly<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1095"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__01" kindref="compound">id_text_zero</ref><sp/><ref refid="namespace_bx_core_1_1_font_1ad27688ebfa61f58b4d2c8655d77177dc" kindref="member">TextClose</ref>(<ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>text);</highlight></codeline>
+<codeline lineno="1103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a8cb6ffc7818a38863f2f0a165d268610" kindref="member">SetOption</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/>color_x888<sp/>color,<sp/>byte<sp/>opacity<sp/>=<sp/>0xFF,<sp/>textalign<sp/>align<sp/>=<sp/>textalign_left_top);</highlight></codeline>
+<codeline lineno="1113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a496db2ab00cf3bb0a776f3dede596532" kindref="member">SetRotate</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle1024<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="1121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a4eb0c91806ec25028e4e39ca5871229c" kindref="member">SetJustify</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>column<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="1129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a4c516642ce31018e5f5e5bc93b458bee" kindref="member">GetWidth</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="1140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a5cd10190369910d42145f470d944287d" kindref="member">GetHeight</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font);</highlight></codeline>
+<codeline lineno="1148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a3a0d1fd2041a2a2682dea5897b37a6bf" kindref="member">GetLength</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>column,<sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>width<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1ae6cb1f1eaa2bdc2171820f49a8b95aa5" kindref="member">GetLengthByLetter</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>column,<sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>width<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpoint" kindref="compound">point</ref><sp/><ref refid="namespace_bx_core_1_1_font_1aceefbd7b0dc2522d2026010c532cea4d" kindref="member">DrawRequest</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font,<sp/><ref refid="structpoint" kindref="compound">point</ref><sp/>pos,<sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="1184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_font_1a9a581fddb1fc4e67b149cefbcc4b24dd" kindref="member">RequestFlush</ref>(<ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>font);</highlight></codeline>
+<codeline lineno="1191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1194" refid="namespace_bx_core_1_1_thread" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Thread</highlight></codeline>
+<codeline lineno="1195"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__13" kindref="compound">id_thread</ref><sp/><ref refid="namespace_bx_core_1_1_thread_1aaedfd3f40c87744a20478d8a9f08e2ea" kindref="member">Create</ref>(callback_thread<sp/>threadCB,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1ab826ab467ee70b36c1884e87a855c3c4" kindref="member">Release</ref>(<ref refid="structid__struct__13" kindref="compound">id_thread</ref><sp/>thread,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dokill<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>dowait<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__14" kindref="compound">id_mutex</ref><sp/><ref refid="namespace_bx_core_1_1_thread_1adf48754093833abf8c23636bf6feaaac" kindref="member">OpenMutex</ref>();</highlight></codeline>
 <codeline lineno="1220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1aace37ba76a186ad61d8c615e7928030f" kindref="member">Lock</ref>(<ref refid="structid__struct__14" kindref="compound">id_mutex</ref><sp/>mutex);</highlight></codeline>
+<codeline lineno="1226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1a01f908e2c4137aaf47cbd5adf675e1b7" kindref="member">CloseMutex</ref>(<ref refid="structid__struct__14" kindref="compound">id_mutex</ref><sp/>mutex);</highlight></codeline>
 <codeline lineno="1227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="1233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1aebb2be9b9ffe6df5360f05fadc5cdff7" kindref="member">Unlock</ref>(<ref refid="structid__struct__14" kindref="compound">id_mutex</ref><sp/>mutex);</highlight></codeline>
-<codeline lineno="1234"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_thread_1ac8200a15947866932b0851974b98257b" kindref="member">BindStorage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>storagekey);</highlight></codeline>
-<codeline lineno="1242"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1a9948511867e74c60e15e31f5e0d5e2b6" kindref="member">UnbindStorageAll</ref>();</highlight></codeline>
-<codeline lineno="1248"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1aace37ba76a186ad61d8c615e7928030f" kindref="member">Lock</ref>(<ref refid="structid__struct__14" kindref="compound">id_mutex</ref><sp/>mutex);</highlight></codeline>
+<codeline lineno="1234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1aebb2be9b9ffe6df5360f05fadc5cdff7" kindref="member">Unlock</ref>(<ref refid="structid__struct__14" kindref="compound">id_mutex</ref><sp/>mutex);</highlight></codeline>
+<codeline lineno="1241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_thread_1ac8200a15947866932b0851974b98257b" kindref="member">BindStorage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>storagekey);</highlight></codeline>
 <codeline lineno="1249"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1251" refid="namespace_bx_core_1_1_library" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Library</highlight></codeline>
-<codeline lineno="1252"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="1259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__06" kindref="compound">id_library</ref><sp/><ref refid="namespace_bx_core_1_1_library_1a3bf05cb509f5a0648977e48c445cd636" kindref="member">Open</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
-<codeline lineno="1260"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_library_1a4a4735c133e1cf5689553b237901e02a" kindref="member">Close</ref>(<ref refid="structid__struct__06" kindref="compound">id_library</ref><sp/>handle);</highlight></codeline>
+<codeline lineno="1254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_thread_1a9948511867e74c60e15e31f5e0d5e2b6" kindref="member">UnbindStorageAll</ref>();</highlight></codeline>
+<codeline lineno="1255"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1258" refid="namespace_bx_core_1_1_library" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Library</highlight></codeline>
+<codeline lineno="1259"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__06" kindref="compound">id_library</ref><sp/><ref refid="namespace_bx_core_1_1_library_1a3bf05cb509f5a0648977e48c445cd636" kindref="member">Open</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
 <codeline lineno="1267"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member">Link</ref>(<ref refid="structid__struct__06" kindref="compound">id_library</ref><sp/>handle,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name);</highlight></codeline>
-<codeline lineno="1275"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="1276"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1278" refid="namespace_bx_core_1_1_open_g_l2_d" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenGL2D</highlight></codeline>
-<codeline lineno="1279"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="1280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init();</highlight></codeline>
-<codeline lineno="1281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Quit();</highlight></codeline>
-<codeline lineno="1282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Flush();</highlight></codeline>
-<codeline lineno="1283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>View</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPerspective(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mul,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>far,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>near);</highlight></codeline>
-<codeline lineno="1285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetOrthogonal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>far,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>near);</highlight></codeline>
-<codeline lineno="1286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewTrans(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
-<codeline lineno="1287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotX(fint<sp/>angle);</highlight></codeline>
-<codeline lineno="1288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotY(fint<sp/>angle);</highlight></codeline>
-<codeline lineno="1289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotZ(fint<sp/>angle);</highlight></codeline>
-<codeline lineno="1290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make/Free</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>MakeForm_TextureMaterial(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
-<codeline lineno="1292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>MakeForm_TextureMaterial(color_a888*<sp/>image,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pitch);</highlight></codeline>
-<codeline lineno="1293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>MakeForm_ColorAmbient(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
-<codeline lineno="1294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FreeForm(<ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>form);</highlight></codeline>
-<codeline lineno="1295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>MakeOutline_VertexUV(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound">rect</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound">rect</ref>&amp;<sp/>uvclip);</highlight></codeline>
-<codeline lineno="1296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>MakeOutline_PolyVertexUV(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound">points</ref>&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound">rect</ref>&amp;<sp/>uvclip);</highlight></codeline>
-<codeline lineno="1297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>MakeOutline_PolyVertexUV3D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvertexs" kindref="compound">vertexs</ref>&amp;<sp/>v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound">points</ref>&amp;<sp/><ref refid="structuv" kindref="compound">uv</ref>);</highlight></codeline>
-<codeline lineno="1298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>MakeOutline_SplineVertex(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structspline" kindref="compound">spline</ref>&amp;<sp/>s);</highlight></codeline>
-<codeline lineno="1299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FreeOutline(<ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline);</highlight></codeline>
-<codeline lineno="1300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color_x888<sp/>Form_ColorAmbient_GetColor(<ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>form);</highlight></codeline>
-<codeline lineno="1302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_VertexUV_SetScale(<ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/>fint<sp/>hoz,<sp/>fint<sp/>ver);</highlight></codeline>
-<codeline lineno="1303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_VertexUV_SetRotate(<ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle1024,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doFlip);</highlight></codeline>
-<codeline lineno="1304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_PolyVertexUV_SetScale(<ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/>fint<sp/>hoz,<sp/>fint<sp/>ver);</highlight></codeline>
-<codeline lineno="1305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_PolyVertexUV_SetRotate(<ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle1024,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doFlip);</highlight></codeline>
-<codeline lineno="1306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Render</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Render(<ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>form,<sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
-<codeline lineno="1308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Render3D(<ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>form,<sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
-<codeline lineno="1309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Option</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Clip(<ref refid="structrect" kindref="compound">rect</ref><sp/>r);</highlight></codeline>
-<codeline lineno="1311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Property</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetTextureMargin();</highlight></codeline>
-<codeline lineno="1313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DoTextureInterpolation();</highlight></codeline>
-<codeline lineno="1314"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="1315"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespace_bx_core_1_1_library_1a4a4735c133e1cf5689553b237901e02a" kindref="member">Close</ref>(<ref refid="structid__struct__06" kindref="compound">id_library</ref><sp/>handle);</highlight></codeline>
+<codeline lineno="1274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="namespace_bx_core_1_1_library_1ae8e1e890037b85ad75aed8a10b403f70" kindref="member">Link</ref>(<ref refid="structid__struct__06" kindref="compound">id_library</ref><sp/>handle,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name);</highlight></codeline>
+<codeline lineno="1282"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1285" refid="namespace_bx_core_1_1_open_g_l2_d" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">OpenGL2D</highlight></codeline>
+<codeline lineno="1286"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init();</highlight></codeline>
+<codeline lineno="1288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Quit();</highlight></codeline>
+<codeline lineno="1289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Flush();</highlight></codeline>
+<codeline lineno="1290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>View</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetPerspective(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mul,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>far,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>near);</highlight></codeline>
+<codeline lineno="1292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetOrthogonal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>far,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>near);</highlight></codeline>
+<codeline lineno="1293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewTrans(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="1294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotX(fint<sp/>angle);</highlight></codeline>
+<codeline lineno="1295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotY(fint<sp/>angle);</highlight></codeline>
+<codeline lineno="1296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>AddViewRotZ(fint<sp/>angle);</highlight></codeline>
+<codeline lineno="1297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make/Free</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>MakeForm_TextureMaterial(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename);</highlight></codeline>
+<codeline lineno="1299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>MakeForm_TextureMaterial(color_a888*<sp/>image,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pitch);</highlight></codeline>
+<codeline lineno="1300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>MakeForm_ColorAmbient(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
+<codeline lineno="1301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FreeForm(<ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>form);</highlight></codeline>
+<codeline lineno="1302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>MakeOutline_VertexUV(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound">rect</ref>&amp;<sp/>r,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound">rect</ref>&amp;<sp/>uvclip);</highlight></codeline>
+<codeline lineno="1303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>MakeOutline_PolyVertexUV(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound">points</ref>&amp;<sp/>p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structrect" kindref="compound">rect</ref>&amp;<sp/>uvclip);</highlight></codeline>
+<codeline lineno="1304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>MakeOutline_PolyVertexUV3D(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structvertexs" kindref="compound">vertexs</ref>&amp;<sp/>v,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structpoints" kindref="compound">points</ref>&amp;<sp/><ref refid="structuv" kindref="compound">uv</ref>);</highlight></codeline>
+<codeline lineno="1305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>MakeOutline_SplineVertex(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structspline" kindref="compound">spline</ref>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="1306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FreeOutline(<ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline);</highlight></codeline>
+<codeline lineno="1307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>color_x888<sp/>Form_ColorAmbient_GetColor(<ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>form);</highlight></codeline>
+<codeline lineno="1309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_VertexUV_SetScale(<ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/>fint<sp/>hoz,<sp/>fint<sp/>ver);</highlight></codeline>
+<codeline lineno="1310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_VertexUV_SetRotate(<ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle1024,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doFlip);</highlight></codeline>
+<codeline lineno="1311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_PolyVertexUV_SetScale(<ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/>fint<sp/>hoz,<sp/>fint<sp/>ver);</highlight></codeline>
+<codeline lineno="1312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Outline_PolyVertexUV_SetRotate(<ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle1024,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>doFlip);</highlight></codeline>
+<codeline lineno="1313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Render</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Render(<ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>form,<sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
+<codeline lineno="1315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Render3D(<ref refid="structid__struct__08" kindref="compound">id_opengl_form</ref><sp/>form,<sp/><ref refid="structid__struct__09" kindref="compound">id_opengl_outline</ref><sp/>outline,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color);</highlight></codeline>
+<codeline lineno="1316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RenderLinesDirectly(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Count,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,</highlight></codeline>
+<codeline lineno="1317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>loop);</highlight></codeline>
+<codeline lineno="1318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RenderStripDirectly(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Count,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>Data,</highlight></codeline>
+<codeline lineno="1319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte<sp/>opacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>color_x888<sp/>color,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale,</highlight></codeline>
+<codeline lineno="1320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m11,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m12,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m21,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>m22,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dy);</highlight></codeline>
+<codeline lineno="1321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Option</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Clip(<ref refid="structrect" kindref="compound">rect</ref><sp/>r);</highlight></codeline>
+<codeline lineno="1323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Property</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GetTextureMargin();</highlight></codeline>
+<codeline lineno="1325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>DoTextureInterpolation();</highlight></codeline>
+<codeline lineno="1326"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1327"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/onejay/Desktop/PgProject/Bx2D/core/BxCore.hpp"/>
+    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp"/>
   </compounddef>
 </doxygen>
