@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="218" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="218" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="219" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="219" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1aef91f641f9a5572d4ea9b569915d92d0" prot="public" static="no" mutable="no">
         <type>uint</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="219" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="219" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="220" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="220" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1ab10e84e49992a49971ef2ef74f743bc4" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_panel" kindref="compound">BxPanel</ref> *</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="220" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="220" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="221" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="221" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1a18d17f72f39d1631dd65268b5819eac6" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_panel" kindref="compound">BxPanel</ref> *</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="221" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="221" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="222" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="222" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1a9732de61824dcc7caa2c2d629e5dc267" prot="public" static="no" mutable="no">
         <type><ref refid="structpoint" kindref="compound">point</ref></type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="222" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="222" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="223" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="223" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_singleton_1aac4df790a2faa47e850c2e9c943d0753" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_var_vector" kindref="compound">BxVarVector</ref>&lt; <ref refid="class_bx_panel_1_1_singleton_1_1_panel_cell" kindref="compound">PanelCell</ref>, 4 &gt;</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="223" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="223" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="224" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="224" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="224" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="224" bodyend="233"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="225" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="225" bodyend="234"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -103,136 +103,129 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="299">
+      <node id="264">
         <label>BxVarVector&lt; UserData, 4 &gt;</label>
         <link refid="class_bx_var_vector"/>
       </node>
-      <node id="298">
+      <node id="263">
         <label>rect</label>
         <link refid="structrect"/>
       </node>
-      <node id="297">
+      <node id="262">
         <label>BxVarVector&lt; BxPanel::EventData::Node, 1 &gt;</label>
         <link refid="class_bx_var_vector"/>
       </node>
-      <node id="296">
+      <node id="261">
         <label>BxPanel::EventData</label>
-        <childnode refid="297" relation="usage">
+        <childnode refid="262" relation="usage">
           <edgelabel>Callbacks</edgelabel>
         </childnode>
       </node>
-      <node id="288">
+      <node id="253">
         <label>BxPanel::Singleton</label>
-        <childnode refid="289" relation="usage">
+        <childnode refid="254" relation="usage">
           <edgelabel>RefDraw</edgelabel>
         </childnode>
-        <childnode refid="290" relation="usage">
+        <childnode refid="255" relation="usage">
           <edgelabel>LastTouch</edgelabel>
         </childnode>
-        <childnode refid="291" relation="usage">
+        <childnode refid="256" relation="usage">
           <edgelabel>LastPanel</edgelabel>
           <edgelabel>LastPanelScrolled</edgelabel>
         </childnode>
-        <childnode refid="304" relation="usage">
+        <childnode refid="268" relation="usage">
           <edgelabel>PanelCells</edgelabel>
         </childnode>
       </node>
-      <node id="293">
+      <node id="258">
         <label>BxPanel::VariableL</label>
-        <childnode refid="294" relation="usage">
+        <childnode refid="259" relation="usage">
           <edgelabel>Child</edgelabel>
         </childnode>
-        <childnode refid="296" relation="usage">
+        <childnode refid="261" relation="usage">
           <edgelabel>ClickedData</edgelabel>
           <edgelabel>UpdatedData</edgelabel>
           <edgelabel>BumpedData</edgelabel>
         </childnode>
-        <childnode refid="298" relation="usage">
+        <childnode refid="263" relation="usage">
           <edgelabel>LastRect</edgelabel>
         </childnode>
-        <childnode refid="299" relation="usage">
+        <childnode refid="264" relation="usage">
           <edgelabel>Data</edgelabel>
         </childnode>
-        <childnode refid="300" relation="usage">
+        <childnode refid="265" relation="usage">
           <edgelabel>RefFunc</edgelabel>
         </childnode>
-        <childnode refid="290" relation="usage">
+        <childnode refid="255" relation="usage">
           <edgelabel>LastScrollPhy</edgelabel>
         </childnode>
-        <childnode refid="291" relation="usage">
+        <childnode refid="256" relation="usage">
           <edgelabel>VarM</edgelabel>
         </childnode>
-        <childnode refid="303" relation="usage">
+        <childnode refid="267" relation="usage">
           <edgelabel>LastScroll</edgelabel>
         </childnode>
       </node>
-      <node id="304">
+      <node id="268">
         <label>BxVarVector&lt; BxPanel::Singleton::PanelCell, 4 &gt;</label>
         <link refid="class_bx_var_vector"/>
       </node>
-      <node id="292">
+      <node id="257">
         <label>BxPanel::Event</label>
       </node>
-      <node id="303">
+      <node id="267">
         <label>area</label>
         <link refid="structarea"/>
       </node>
-      <node id="291">
+      <node id="256">
         <label>BxPanel</label>
         <link refid="class_bx_panel"/>
-        <childnode refid="292" relation="usage">
+        <childnode refid="257" relation="usage">
           <edgelabel>Bumped</edgelabel>
           <edgelabel>Clicked</edgelabel>
           <edgelabel>Updated</edgelabel>
         </childnode>
-        <childnode refid="293" relation="usage">
+        <childnode refid="258" relation="usage">
           <edgelabel>VarL</edgelabel>
         </childnode>
       </node>
-      <node id="294">
+      <node id="259">
         <label>BxVarMap&lt; BxPanel &gt;</label>
         <link refid="class_bx_var_map"/>
-        <childnode refid="295" relation="usage">
+        <childnode refid="260" relation="usage">
           <edgelabel>Info</edgelabel>
         </childnode>
-        <childnode refid="291" relation="usage">
+        <childnode refid="256" relation="usage">
           <edgelabel>Data</edgelabel>
         </childnode>
       </node>
-      <node id="289">
+      <node id="254">
         <label>BxDraw</label>
         <link refid="class_bx_draw"/>
       </node>
-      <node id="301">
-        <label>id_struct_01</label>
-        <link refid="structid__struct__01"/>
-      </node>
-      <node id="300">
+      <node id="265">
         <label>BxPanel::Function</label>
-        <childnode refid="291" relation="usage">
+        <childnode refid="256" relation="usage">
           <edgelabel>Alloc</edgelabel>
           <edgelabel>Free</edgelabel>
         </childnode>
-        <childnode refid="301" relation="usage">
-          <edgelabel>TypeText</edgelabel>
-        </childnode>
-        <childnode refid="302" relation="usage">
+        <childnode refid="266" relation="usage">
           <edgelabel>Paint</edgelabel>
         </childnode>
       </node>
-      <node id="290">
+      <node id="255">
         <label>point</label>
         <link refid="structpoint"/>
       </node>
-      <node id="302">
+      <node id="266">
         <label>BxArgument</label>
         <link refid="class_bx_argument"/>
       </node>
-      <node id="295">
+      <node id="260">
         <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
       </node>
     </collaborationgraph>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="210" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="209" bodyend="234"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="211" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="210" bodyend="235"/>
     <listofallmembers>
       <member refid="class_bx_panel_1_1_singleton_1ab10e84e49992a49971ef2ef74f743bc4" prot="public" virt="non-virtual"><scope>BxPanel::Singleton</scope><name>LastPanel</name></member>
       <member refid="class_bx_panel_1_1_singleton_1a18d17f72f39d1631dd65268b5819eac6" prot="public" virt="non-virtual"><scope>BxPanel::Singleton</scope><name>LastPanelScrolled</name></member>

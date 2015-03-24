@@ -22,7 +22,7 @@ class BxPanel
 	public: typedef void (*EventCB)(BxPanel*, string, void*);
 	private: typedef void (*CreateCB)(string, unknown);
 	private: typedef unknown (*NotifyCB)(string, unknown);
-	private: typedef string (*TouchCB)(Touch);
+	private: typedef string (*TouchCB)(Touch, int, int);
 	private: typedef void (*PaintCB)(Param, const BxArgument&, rect&);
 	private: typedef BxPanel* (*AllocCB)(BxPanel*);
 	private: typedef void (*FreeCB)(BxPanel**);
@@ -132,18 +132,19 @@ class BxPanel
 	////////////////////////////////////////////////////////////
 	// ■ Inner funtions
 	////////////////////////////////////////////////////////////
-	private: string OnTouch(Touch type)
+	private: string OnTouch(Touch type, int x, int y)
 	{
 		VarL->RefFunc->Service(VarL->VarM);
-		return VarL->RefFunc->Touch(type);
+		return VarL->RefFunc->Touch(type, x, y);
 	}
     public: void DoTouch(systouchtype type)
 	{
 		const int X = (VarL->LastRect.l + VarL->LastRect.r) / 2;
 		const int Y = (VarL->LastRect.t + VarL->LastRect.b) / 2;
 		CalcTouch(type, X, Y);
-		BxCore::System::SetSimulatorCursorPos
-			(X + BxCore::Main::GetGUIMarginL(), Y + BxCore::Main::GetGUIMarginT());
+		BxCore::Simulator::SetCursorPos(
+			X + BxCore::Main::GetGUIMarginL(),
+			Y + BxCore::Main::GetGUIMarginT());
 	}
     public: BxDraw& GetDraw()
 	{
@@ -529,10 +530,10 @@ class BxPanel
 					{
 						Panel.Single->LastPanel = CurPanelScrolled;
 						Panel.Single->LastTouch[0] = Panel.Single->LastTouch[1] = Panel.Single->LastTouch[2] = XY(x, y);
-						CurPanel->OnTouch(tchUpAuto);
+						CurPanel->OnTouch(tchUpAuto, x - Rect.l, y - Rect.t);
 						return true;
 					}
-					else CurPanel->OnTouch((IsOutside)? tchMoveOut : tchMoveIn);
+					else CurPanel->OnTouch((IsOutside)? tchMoveOut : tchMoveIn, x - Rect.l, y - Rect.t);
 					break;
 				case systouchtype_down: IsOutside = false; // For key pressed
 				case systouchtype_up:
@@ -540,7 +541,7 @@ class BxPanel
 					{
 						Panel.Single->LastPanel = nullptr;
 						Panel.Single->LastPanelScrolled = nullptr;
-						string Message = CurPanel->OnTouch((IsOutside)? tchUpOut : tchUpIn);
+						string Message = CurPanel->OnTouch((IsOutside)? tchUpOut : tchUpIn, x - Rect.l, y - Rect.t);
 						if(!IsOutside) CurPanel->VarL->ClickedData.Calling(CurPanel, Message);
 					}
 					break;
@@ -581,15 +582,15 @@ class BxPanel
 					}
 					Panel.Single->LastPanel = CurPanel;
 					Panel.Single->LastPanelScrolled = CurPanelScrolled;
-					CurPanel->OnTouch(tchDown);
+					CurPanel->OnTouch(tchDown, x - Rect.l, y - Rect.t);
 					CurPanel->VarL->ForceScroll(CurPanel, 0, 0);
 					break;
 				case systouchtype_move:
-					CurPanel->OnTouch(tchDrag);
+					CurPanel->OnTouch(tchDrag, x - Rect.l, y - Rect.t);
 					break;
 				case systouchtype_up:
 				case systouchtype_cancel:
-					CurPanel->OnTouch(tchDrop);
+					CurPanel->OnTouch(tchDrop, x - Rect.l, y - Rect.t);
 					break;
 				}
 			}
@@ -650,7 +651,7 @@ class BxPanel
 #define FRAMEWORK_PANEL_CLASS(NAME, CLASS, PARAM) \
 	local_func void OnCreate(string, unknown, const bool); \
 	local_func unknown OnNotify(string, unknown); \
-	local_func string OnTouch(BxPanel::Touch); \
+	local_func string OnTouch(BxPanel::Touch, int, int); \
 	local_func void OnPaint(rect&, int, int, int, int); \
 	local_func void _Create(string option, unknown param) \
 	{ \
@@ -662,9 +663,9 @@ class BxPanel
 	{ \
 		return OnNotify(message, param); \
 	} \
-	local_func string _Touch(BxPanel::Touch type) \
+	local_func string _Touch(BxPanel::Touch type, int x, int y) \
 	{ \
-		return OnTouch(type); \
+		return OnTouch(type, x, y); \
 	} \
 	local_func void _Paint(BxPanel::Param type, const BxArgument& args, rect& result) \
 	{ \

@@ -6,7 +6,7 @@ namespace BxCore
 {
 	namespace Thread
 	{
-		void* BindStorage(int* storagekey);
+        void* BindStorage(int* storagekey __DEBUG_PRM__);
 	}
 }
 /// @endcond
@@ -67,7 +67,7 @@ namespace BxPoolGlobal
 		}
 	public:
 		global_func inline UnitLink* LinkHead()
-		{thread_storage _ = sizeof(UnitLink); return (UnitLink*) BxCore::Thread::BindStorage(&_);}
+        {thread_storage _ = sizeof(UnitLink); return (UnitLink*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__);}
 	};
 
 	global_func void Bind(Unit* _ref_ Head)
@@ -224,7 +224,7 @@ private:
 	global_func inline Unit* UnitHead()
 	{
 		thread_storage _ = sizeof(Unit);
-		Unit* Result = (Unit*) BxCore::Thread::BindStorage(&_);
+        Unit* Result = (Unit*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__);
 		if(!*((void**) Result))
 			BxPoolGlobal::Bind(new((mint) Result) Unit);
 		return (Unit*) Result;
@@ -233,7 +233,7 @@ private:
 	global_func inline Unit* UnitFocus(Unit* Set = nullptr)
 	{
 		thread_storage _ = sizeof(Unit*);
-		Unit*& Result = *((Unit**) BxCore::Thread::BindStorage(&_));
+        Unit*& Result = *((Unit**) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__));
 		if(Set) Result = Set;
 		else if(!Result) Result = UnitHead();
 		return Result;

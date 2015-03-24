@@ -12,86 +12,86 @@
     <includedby refid="_bx_panel_8hpp" local="no">BxPanel.hpp</includedby>
     <includedby refid="_bx_web_content_8hpp" local="no">BxWebContent.hpp</includedby>
     <incdepgraph>
-      <node id="486">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="482" relation="include">
+      <node id="490">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="491" relation="include">
         </childnode>
       </node>
-      <node id="482">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="483" relation="include">
-        </childnode>
-      </node>
-      <node id="481">
-        <label>BxVarMap.hpp</label>
-        <link refid="BxVarMap.hpp"/>
-        <childnode refid="482" relation="include">
-        </childnode>
-        <childnode refid="486" relation="include">
-        </childnode>
-        <childnode refid="484" relation="include">
-        </childnode>
-      </node>
-      <node id="483">
+      <node id="489">
         <label>BxArgument.hpp</label>
         <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="484" relation="include">
+        <childnode refid="490" relation="include">
         </childnode>
       </node>
-      <node id="485">
+      <node id="491">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="484">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="485" relation="include">
+      <node id="492">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="488" relation="include">
         </childnode>
       </node>
-    </incdepgraph>
-    <invincdepgraph>
       <node id="487">
         <label>BxVarMap.hpp</label>
         <link refid="BxVarMap.hpp"/>
         <childnode refid="488" relation="include">
         </childnode>
-        <childnode refid="489" relation="include">
+        <childnode refid="492" relation="include">
         </childnode>
         <childnode refid="490" relation="include">
         </childnode>
-        <childnode refid="491" relation="include">
-        </childnode>
-        <childnode refid="493" relation="include">
-        </childnode>
-      </node>
-      <node id="493">
-        <label>BxWebContent.hpp</label>
-        <link refid="_bx_web_content_8hpp_source"/>
       </node>
       <node id="488">
-        <label>BxCoreForQT5.hpp</label>
-        <link refid="_bx_core_for_q_t5_8hpp_source"/>
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="489" relation="include">
+        </childnode>
       </node>
-      <node id="489">
-        <label>BxConsole.hpp</label>
-        <link refid="_bx_console_8hpp_source"/>
-      </node>
-      <node id="490">
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="496">
         <label>BxDynamic.hpp</label>
         <link refid="_bx_dynamic_8hpp_source"/>
       </node>
-      <node id="492">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="488" relation="include">
+      <node id="493">
+        <label>BxVarMap.hpp</label>
+        <link refid="BxVarMap.hpp"/>
+        <childnode refid="494" relation="include">
+        </childnode>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="496" relation="include">
+        </childnode>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
         </childnode>
       </node>
-      <node id="491">
+      <node id="499">
+        <label>BxWebContent.hpp</label>
+        <link refid="_bx_web_content_8hpp_source"/>
+      </node>
+      <node id="494">
+        <label>BxCoreForQT5.hpp</label>
+        <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      </node>
+      <node id="498">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="494" relation="include">
+        </childnode>
+      </node>
+      <node id="495">
+        <label>BxConsole.hpp</label>
+        <link refid="_bx_console_8hpp_source"/>
+      </node>
+      <node id="497">
         <label>BxPanel.hpp</label>
         <link refid="_bx_panel_8hpp_source"/>
-        <childnode refid="492" relation="include">
+        <childnode refid="498" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -284,7 +284,7 @@
 <codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(USE_NEW)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>Table-&gt;Ch[i]-&gt;Data;</highlight></codeline>
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member">TypePool::FreeClass</ref>(Table-&gt;Ch[i]-&gt;Data);</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Table-&gt;Ch[i]-&gt;Data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>For<sp/>child&apos;s<sp/>Reset()</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(USE_NEW)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>Table-&gt;Ch[i];</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(USE_NEW)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>(VarMap*)<sp/>Table-&gt;Ch[i];</highlight></codeline>
 <codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member">MapPool::FreeClass</ref>((VarMap*)<sp/>Table-&gt;Ch[i]);</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(USE_NEW)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>Table;</highlight></codeline>
@@ -358,7 +358,7 @@
 <codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Table-&gt;Ch[i])</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(USE_NEW)<sp/>Table-&gt;Ch[i]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>();</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(USE_NEW)<sp/>Table-&gt;Ch[i]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>VarMap();</highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Table-&gt;Ch[i]<sp/>=<sp/><ref refid="class_bx_pool_1a7f75b4c0eb4fe8c8d5ab7b0d0e8fb088" kindref="member">MapPool::MakeClass</ref>();</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Table-&gt;Count++;</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -368,7 +368,7 @@
 <codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>InvalideChild(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
 <codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxASSERT(</highlight><highlight class="stringliteral">&quot;BxVarMap&lt;이미<sp/>삭제된<sp/>Table-&gt;Ch[i]를<sp/>삭제하려<sp/>합니다&gt;&quot;</highlight><highlight class="normal">,<sp/>Table-&gt;Ch[i]);</highlight></codeline>
-<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(USE_NEW)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>Table-&gt;Ch[i];</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(USE_NEW)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>(VarMap*)<sp/>Table-&gt;Ch[i];</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="class_bx_pool_1a5d0b66ef6087251ad5825736cfae6e0d" kindref="member">MapPool::FreeClass</ref>((VarMap*)<sp/>Table-&gt;Ch[i]);</highlight></codeline>
 <codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Table-&gt;Ch[i]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(--Table-&gt;Count<sp/>==<sp/>0)</highlight></codeline>
@@ -446,6 +446,6 @@
 <codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="350"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp"/>
   </compounddef>
 </doxygen>

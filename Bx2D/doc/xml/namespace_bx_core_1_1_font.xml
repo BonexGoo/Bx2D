@@ -4,7 +4,7 @@
     <compoundname>BxCore::Font</compoundname>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a0160ee11bd59ca5fa82e71d0299dbe0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+        <type>id_font</type>
         <definition>id_font BxCore::Font::Open</definition>
         <argsstring>(string nick, int height)</argsstring>
         <name>Open</name>
@@ -39,15 +39,15 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1028" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="840" bodyend="843"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1089" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="897" bodyend="900"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a1ff1d4ae902591e6cd8ff3c11dd0218e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__00" kindref="compound">id_font_zero</ref></type>
+        <type>id_font_zero</type>
         <definition>id_font_zero BxCore::Font::Close</definition>
         <argsstring>(id_font font)</argsstring>
         <name>Close</name>
         <param>
-          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <type>id_font</type>
           <declname>font</declname>
         </param>
         <briefdescription>
@@ -66,10 +66,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1036" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="845" bodyend="849"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1097" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="902" bodyend="906"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a3eec7800226444ec3c5429d3694adc53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+        <type>id_font</type>
         <definition>id_font BxCore::Font::Default</definition>
         <argsstring>()</argsstring>
         <name>Default</name>
@@ -80,7 +80,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1042" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreImpl.cpp" bodystart="1080" bodyend="1085"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1103" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreImpl.cpp" bodystart="1163" bodyend="1168"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a7957798859cbadf9c6f09286c9ff33b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -118,7 +118,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1051" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="851" bodyend="861"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1112" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="908" bodyend="918"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a9eafc9510f244a1fc3f07a218f6e6e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -167,7 +167,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1061" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="863" bodyend="866"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1122" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="920" bodyend="923"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a05a4f40903754c3da911c65a636b8cab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -193,7 +193,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1068" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="868" bodyend="871"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1129" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="925" bodyend="928"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1adc235af149b20f3b2b444af6afe65013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -220,10 +220,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1076" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="873" bodyend="876"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1137" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="930" bodyend="933"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a585ced3b642de2a8b287167da413553b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+        <type>id_text</type>
         <definition>id_text BxCore::Font::TextOpen</definition>
         <argsstring>(string str, textencoding encoding=textencoding_cp949)</argsstring>
         <name>TextOpen</name>
@@ -259,10 +259,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1085" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="878" bodyend="881"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1146" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="935" bodyend="938"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a0f2cdec76d6b6275e5ac848784e4aa29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+        <type>id_text</type>
         <definition>id_text BxCore::Font::TextOpenByUTF16</definition>
         <argsstring>(wstring wstr, bool referonly=false)</argsstring>
         <name>TextOpenByUTF16</name>
@@ -298,15 +298,15 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1094" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="883" bodyend="886"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1155" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="940" bodyend="943"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1ad27688ebfa61f58b4d2c8655d77177dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__01" kindref="compound">id_text_zero</ref></type>
+        <type>id_text_zero</type>
         <definition>id_text_zero BxCore::Font::TextClose</definition>
         <argsstring>(id_text text)</argsstring>
         <name>TextClose</name>
         <param>
-          <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+          <type>id_text</type>
           <declname>text</declname>
         </param>
         <briefdescription>
@@ -325,7 +325,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1102" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="888" bodyend="892"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1163" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="945" bodyend="949"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a8cb6ffc7818a38863f2f0a165d268610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -333,7 +333,7 @@
         <argsstring>(id_font font, color_x888 color, byte opacity=0xFF, textalign align=textalign_left_top)</argsstring>
         <name>SetOption</name>
         <param>
-          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <type>id_font</type>
           <declname>font</declname>
         </param>
         <param>
@@ -386,7 +386,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1112" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="894" bodyend="899"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1173" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="951" bodyend="956"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a496db2ab00cf3bb0a776f3dede596532" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -394,7 +394,7 @@
         <argsstring>(id_font font, int angle1024=0)</argsstring>
         <name>SetRotate</name>
         <param>
-          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <type>id_font</type>
           <declname>font</declname>
         </param>
         <param>
@@ -424,7 +424,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1120" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="901" bodyend="906"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1181" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="958" bodyend="963"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a4eb0c91806ec25028e4e39ca5871229c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -432,7 +432,7 @@
         <argsstring>(id_font font, int column=0)</argsstring>
         <name>SetJustify</name>
         <param>
-          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <type>id_font</type>
           <declname>font</declname>
         </param>
         <param>
@@ -462,7 +462,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1128" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="908" bodyend="913"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1189" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="965" bodyend="970"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a4c516642ce31018e5f5e5bc93b458bee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -470,11 +470,11 @@
         <argsstring>(id_font font, id_text text, int offset=0, int length=-1)</argsstring>
         <name>GetWidth</name>
         <param>
-          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <type>id_font</type>
           <declname>font</declname>
         </param>
         <param>
-          <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+          <type>id_text</type>
           <declname>text</declname>
         </param>
         <param>
@@ -524,7 +524,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1139" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="915" bodyend="923"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1200" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="972" bodyend="980"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a5cd10190369910d42145f470d944287d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -532,7 +532,7 @@
         <argsstring>(id_font font)</argsstring>
         <name>GetHeight</name>
         <param>
-          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <type>id_font</type>
           <declname>font</declname>
         </param>
         <briefdescription>
@@ -551,7 +551,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1147" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="925" bodyend="930"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1208" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="982" bodyend="987"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a3a0d1fd2041a2a2682dea5897b37a6bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -559,7 +559,7 @@
         <argsstring>(id_font font, int column, id_text text, int offset=0, int *width=nullptr)</argsstring>
         <name>GetLength</name>
         <param>
-          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <type>id_font</type>
           <declname>font</declname>
         </param>
         <param>
@@ -567,7 +567,7 @@
           <declname>column</declname>
         </param>
         <param>
-          <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+          <type>id_text</type>
           <declname>text</declname>
         </param>
         <param>
@@ -624,7 +624,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1159" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="932" bodyend="939"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1220" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="989" bodyend="996"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1ae6cb1f1eaa2bdc2171820f49a8b95aa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -632,7 +632,7 @@
         <argsstring>(id_font font, int column, id_text text, int offset=0, int *width=nullptr)</argsstring>
         <name>GetLengthByLetter</name>
         <param>
-          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <type>id_font</type>
           <declname>font</declname>
         </param>
         <param>
@@ -640,7 +640,7 @@
           <declname>column</declname>
         </param>
         <param>
-          <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+          <type>id_text</type>
           <declname>text</declname>
         </param>
         <param>
@@ -697,7 +697,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1171" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="941" bodyend="948"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1232" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="998" bodyend="1005"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1aceefbd7b0dc2522d2026010c532cea4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structpoint" kindref="compound">point</ref></type>
@@ -705,7 +705,7 @@
         <argsstring>(id_font font, point pos, id_text text, int offset=0, int length=-1)</argsstring>
         <name>DrawRequest</name>
         <param>
-          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <type>id_font</type>
           <declname>font</declname>
         </param>
         <param>
@@ -713,7 +713,7 @@
           <declname>pos</declname>
         </param>
         <param>
-          <type><ref refid="structid__struct__01" kindref="compound">id_text</ref></type>
+          <type>id_text</type>
           <declname>text</declname>
         </param>
         <param>
@@ -770,7 +770,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1183" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="950" bodyend="958"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1244" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1007" bodyend="1015"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_font_1a9a581fddb1fc4e67b149cefbcc4b24dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -778,7 +778,7 @@
         <argsstring>(id_font font)</argsstring>
         <name>RequestFlush</name>
         <param>
-          <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+          <type>id_font</type>
           <declname>font</declname>
         </param>
         <briefdescription>
@@ -796,13 +796,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1190" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="960" bodyend="967"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1251" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1017" bodyend="1024"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Font파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1020" column="1"/>
+    <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1081" column="1"/>
   </compounddef>
 </doxygen>

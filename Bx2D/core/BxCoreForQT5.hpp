@@ -26,6 +26,9 @@
     #include <QBluetoothDeviceDiscoveryAgent>
 #endif
 #include <QDesktopWidget>
+#include <QWindow>
+#include <5.4.0/QtGui/qpa/qplatformnativeinterface.h>
+#include <QAbstractNativeEventFilter>
 
 #ifdef OpenMutex
     #undef OpenMutex
@@ -45,22 +48,48 @@
 	#define GLSCALE 1
 #endif
 
-#define STATIC_CLASS(_NAME, NAME) \
-	class NAME \
-	{ \
-	private: \
-		_NAME* This; \
-	public: \
-		NAME() {global_data _NAME* _ = BxNew(_NAME); This = _;} \
-		~NAME() {} \
-		_NAME* operator->() {return This;} \
-	}
-
 namespace BxCore
 {
+	namespace Simulator
+    {
+		/// @cond SECTION_NAME
+		class EventFilter : public QAbstractNativeEventFilter
+		{
+		public:
+			BxVarMap<callback_windowevent> EventCB;
+			BxVarMap<void*> EventData;
+
+		public:
+			bool nativeEventFilter(const QByteArray& eventType, void* message, long* result)
+			{
+                #ifdef WIN32
+                    if(eventType == "windows_generic_MSG")
+                    {
+                        MSG* msg = (MSG*) message;
+                        if(msg->hwnd == (HWND) BxCore::Simulator::GetWindowHandle())
+                        {
+                            callback_windowevent* cb = EventCB.Access(msg->message);
+                            if(cb)
+                            {
+                                (*cb)(msg->message, msg->wParam, msg->lParam, EventData[msg->message]);
+                                return true;
+                            }
+                        }
+                    }
+                #elif defined(Q_OS_MACX)
+                    if(eventType == "windows_generic_MSG")
+                    {
+                    }
+                #endif
+				return false;
+			}
+		};
+		/// @endcond
+	}
+
 	namespace Main
     {
-        /// @cond SECTION_NAME
+		/// @cond SECTION_NAME
         class GLWidget : public QGLWidget
         {
             Q_OBJECT
@@ -73,7 +102,8 @@ namespace BxCore
 			bool TouchRPressed;
 			int TouchRAngle;
             uint SavedTouchFlag;
-            point SavedTouchPos[32];
+            float SavedTouchPosX[32];
+            float SavedTouchPosY[32];
 			QTimer WheelMoveTimer;
 			QTimer WheelEndTimer;
 			bool WheelPressed;
@@ -84,6 +114,7 @@ namespace BxCore
             int PosY;
             int SizeW;
             int SizeH;
+			BxCore::Simulator::EventFilter Filter;
 
         private:
             GLWidget() : QGLWidget(QGLFormat(QGL::SampleBuffers)),
@@ -108,7 +139,7 @@ namespace BxCore
             virtual ~GLWidget() {}
 
         public:
-            bool IsTouchPressed()
+			bool IsTouchPressed()
             {
                 return TouchPressed;
             }
@@ -145,6 +176,16 @@ namespace BxCore
                 global_data const int Height = height();
                 return Height;
             }
+			BxCore::Simulator::EventFilter& GetFilter()
+			{return Filter;}
+
+			void SetVirtualTouch(inputkind kind, float x, float y, float force, bool pressed)
+            {
+				if(TouchPressed != pressed)
+					PostMouseEvent((pressed)? systouchtype_down : systouchtype_up, 0, x, y, force, kind);
+				else if(pressed) PostMouseEvent(systouchtype_move, 0, x, y, force, kind);
+                TouchPressed = pressed;
+            }
 
         public slots:
             void RunApplication()
@@ -162,12 +203,12 @@ namespace BxCore
 			{
 				if(WheelPressed)
 				{
-					point CursorPos = BxCore::System::GetSimulatorCursorPos();
-					point WindowPos = BxCore::System::GetSimulatorWindowPos();
+					point CursorPos = BxCore::Simulator::GetCursorPos();
+					point WindowPos = BxCore::Simulator::GetWindowPos();
 					const int X = CursorPos.x - WindowPos.x;
 					const int Y = CursorPos.y - WindowPos.y;
-					PostMouseEvent(systouchtype_move, 0, X, Y, true, -RadiusForWheel);
-					PostMouseEvent(systouchtype_move, 1, X, Y, true, +RadiusForWheel);
+					PostMouseEvent(systouchtype_move, 0, X, Y, 1, inputkind_mouse_wheel, -RadiusForWheel);
+					PostMouseEvent(systouchtype_move, 1, X, Y, 1, inputkind_mouse_wheel, +RadiusForWheel);
 				}
 			}
 			void WheelEnd()
@@ -219,8 +260,14 @@ namespace BxCore
             }
             bool event(QEvent* event)
             {
-                switch(event->type())
+				switch(event->type())
                 {
+				case QEvent::WindowActivate:
+					QCoreApplication::instance()->installNativeEventFilter(&Filter);
+					break;
+				case QEvent::WindowDeactivate:
+					QCoreApplication::instance()->removeNativeEventFilter(&Filter);
+					break;
                 case QEvent::TouchBegin:
                 case QEvent::TouchUpdate:
                     touchEvent(static_cast<QTouchEvent*>(event));
@@ -246,19 +293,20 @@ namespace BxCore
                         continue;
                     const int ID = Point.id();
                     if(31 < ID) continue;
-                    const int X = (int) Point.pos().x();
-                    const int Y = (int) Point.pos().y();
+                    const float X = (float) Point.pos().x();
+                    const float Y = (float) Point.pos().y();
                     const bool IsPressed = ((SavedTouchFlag & (1 << ID)) != 0);
-                    PostMouseEvent((IsPressed)? systouchtype_move : systouchtype_down, ID, X, Y);
+                    PostMouseEvent((IsPressed)? systouchtype_move : systouchtype_down, ID, X, Y, 1, inputkind_finger);
                     CurTouchFlag |= 1 << ID;
-                    SavedTouchPos[ID] = BxDrawGlobal::XY(X, Y);
+                    SavedTouchPosX[ID] = X;
+                    SavedTouchPosY[ID] = Y;
                 }
                 for(int i = 0; i < 32; ++i)
                 {
                     const bool IsPressed = ((SavedTouchFlag & (1 << i)) != 0);
                     const bool IsPressNow = ((CurTouchFlag & (1 << i)) != 0);
                     if(IsPressed && !IsPressNow)
-                        PostMouseEvent(systouchtype_up, i, SavedTouchPos[i].x, SavedTouchPos[i].y);
+                        PostMouseEvent(systouchtype_up, i, SavedTouchPosX[i], SavedTouchPosY[i], 1, inputkind_finger);
                 }
                 SavedTouchFlag = CurTouchFlag;
             }
@@ -267,7 +315,7 @@ namespace BxCore
                 TouchPressed = false;
                 for(int i = 0; i < 32; ++i)
                     if((SavedTouchFlag & (1 << i)) != 0)
-                        PostMouseEvent(systouchtype_up, i, SavedTouchPos[i].x, SavedTouchPos[i].y);
+                        PostMouseEvent(systouchtype_up, i, SavedTouchPosX[i], SavedTouchPosY[i], 1, inputkind_finger);
                 SavedTouchFlag = 0;
             }
             void mousePressEvent(QMouseEvent* event)
@@ -276,34 +324,34 @@ namespace BxCore
 				{
 					PostMouseEventsByWheelDone();
 					TouchPressed = true;
-					PostMouseEvent(systouchtype_down, 0, event->x(), event->y());
+					PostMouseEvent(systouchtype_down, 0, event->x(), event->y(), 1, inputkind_mouse_left);
 				}
 				if(!TouchPressed && event->button() == Qt::RightButton)
 				{
 					PostMouseEventsByWheelDone();
 					TouchRPressed = true;
 					TouchRAngle = 0;
-					PostMouseEventByRotate(systouchtype_down, event->x(), event->y());
+					PostMouseEventByRotate(systouchtype_down, event->x(), event->y(), 1, TouchRAngle);
 				}
             }
 			void mouseMoveEvent(QMouseEvent* event)
             {
 				if(TouchPressed && (event->buttons() & Qt::LeftButton))
-					PostMouseEvent(systouchtype_move, 0, event->x(), event->y());
+					PostMouseEvent(systouchtype_move, 0, event->x(), event->y(), 1, inputkind_mouse_left);
 				if(TouchRPressed && (event->buttons() & Qt::RightButton))
-					PostMouseEventByRotate(systouchtype_move, event->x(), event->y());
+					PostMouseEventByRotate(systouchtype_move, event->x(), event->y(), 1, TouchRAngle);
             }
             void mouseReleaseEvent(QMouseEvent* event)
             {
 				if(TouchPressed && event->button() == Qt::LeftButton)
 				{
 					TouchPressed = false;
-					PostMouseEvent(systouchtype_up, 0, event->x(), event->y());
+					PostMouseEvent(systouchtype_up, 0, event->x(), event->y(), 1, inputkind_mouse_left);
 				}
 				if(TouchRPressed && event->button() == Qt::RightButton)
 				{
 					TouchRPressed = false;
-					PostMouseEventByRotate(systouchtype_up, event->x(), event->y());
+					PostMouseEventByRotate(systouchtype_up, event->x(), event->y(), 1, TouchRAngle);
 				}
             }
             void keyPressEvent(QKeyEvent* event)
@@ -351,7 +399,7 @@ namespace BxCore
 				if(TouchRPressed)
 				{
 					TouchRAngle = (TouchRAngle + 16 * event->delta() / 120 + 1024) % 1024;
-					PostMouseEventByRotate(systouchtype_move, event->x(), event->y());
+					PostMouseEventByRotate(systouchtype_move, event->x(), event->y(), 1, TouchRAngle);
 				}
 				else if(!TouchPressed)
 				{
@@ -359,50 +407,55 @@ namespace BxCore
 					{
 						WheelPressed = true;
 						RadiusForWheel = DClickRadius;
-						PostMouseEvent(systouchtype_down, 0, X, Y, true, -RadiusForWheel);
-						PostMouseEvent(systouchtype_down, 1, X, Y, true, +RadiusForWheel);
+						PostMouseEvent(systouchtype_down, 0, X, Y, 1, inputkind_mouse_wheel, -RadiusForWheel);
+						PostMouseEvent(systouchtype_down, 1, X, Y, 1, inputkind_mouse_wheel, +RadiusForWheel);
 					}
 					RadiusForWheel = BxUtilGlobal::Max(DClickRadiusMin,
 						RadiusForWheel + DClickRadiusSpeed * event->delta() / 120);
-					PostMouseEvent(systouchtype_move, 0, X, Y, true, -RadiusForWheel);
-					PostMouseEvent(systouchtype_move, 1, X, Y, true, +RadiusForWheel);
+					PostMouseEvent(systouchtype_move, 0, X, Y, 1, inputkind_mouse_wheel, -RadiusForWheel);
+					PostMouseEvent(systouchtype_move, 1, X, Y, 1, inputkind_mouse_wheel, +RadiusForWheel);
 					WheelMoveTimer.start(20);
 					WheelEndTimer.start(200);
 				}
 			}
 
 		private:
-			void PostMouseEvent(systouchtype type, uint id, int x, int y, bool special = false, int xadd = 0, int yadd = 0)
+			void PostMouseEvent(systouchtype type, uint id, float x, float y, float force, inputkind kind, int xadd = 0, int yadd = 0)
 			{
 				sysevent Event;
 				Event.type = syseventtype_touch;
 				Event.touch.type = type;
 				Event.touch.id = id;
-				Event.touch.x = x * GLSCALE - GetGUIMarginL() + xadd;
-				Event.touch.y = y * GLSCALE - GetGUIMarginT() + yadd;
-				Event.touch.x = Event.touch.x * BxCore::Surface::GetWidth() / BxCore::Surface::GetWidthHW();
-				Event.touch.y = Event.touch.y * BxCore::Surface::GetHeight() / BxCore::Surface::GetHeightHW();
-				Event.touch.special = special;
+				const float fx = (x * GLSCALE - GetGUIMarginL() + xadd)
+					* BxCore::Surface::GetWidth() / BxCore::Surface::GetWidthHW();
+				const float fy = (y * GLSCALE - GetGUIMarginT() + yadd)
+					* BxCore::Surface::GetHeight() / BxCore::Surface::GetHeightHW();
+				Event.touch.x = (int) fx;
+				Event.touch.y = (int) fy;
+				Event.touch.kind = kind;
+				Event.touch.fx = fx;
+				Event.touch.fy = fy;
+				Event.touch.force = force;
 				BxScene::__AddEvent__(Event, (type == systouchtype_down)? syseventset_do_enable : syseventset_need_enable);
 			}
-			void PostMouseEventByRotate(systouchtype type, int x, int y)
+			void PostMouseEventByRotate(systouchtype type, float x, float y, float force, int angle)
 			{
-				const int XAdd = FtoR(DClickRadius * BxUtil::Cos(TouchRAngle));
-				const int YAdd = FtoR(DClickRadius * BxUtil::Sin(TouchRAngle));
-				PostMouseEvent(type, 0, x, y, true, -XAdd, -YAdd);
-				PostMouseEvent(type, 1, x, y, true, +XAdd, +YAdd);
+				const int XAdd = FtoR(DClickRadius * BxUtil::Cos(angle));
+				const int YAdd = FtoR(DClickRadius * BxUtil::Sin(angle));
+				PostMouseEvent(type, 0, x, y, force, inputkind_mouse_right, -XAdd, -YAdd);
+				PostMouseEvent(type, 1, x, y, force, inputkind_mouse_right, +XAdd, +YAdd);
 			}
 			void PostMouseEventsByWheelDone()
 			{
 				if(WheelPressed)
 				{
 					WheelPressed = false;
-					point CursorPos = BxCore::System::GetSimulatorCursorPos();
-					point WindowPos = BxCore::System::GetSimulatorWindowPos();
+					point CursorPos = BxCore::Simulator::GetCursorPos();
+					point WindowPos = BxCore::Simulator::GetWindowPos();
 					const int X = CursorPos.x - WindowPos.x;
 					const int Y = CursorPos.y - WindowPos.y;
-					PostMouseEvent(systouchtype_up, 0, X, Y, true, -RadiusForWheel);
-					PostMouseEvent(systouchtype_up, 1, X, Y, true, +RadiusForWheel);
+					PostMouseEvent(systouchtype_up, 0, X, Y, 1, inputkind_mouse_wheel, -RadiusForWheel);
+					PostMouseEvent(systouchtype_up, 1, X, Y, 1, inputkind_mouse_wheel, +RadiusForWheel);
 				}
 			}
 
@@ -580,10 +633,11 @@ namespace BxCore
 		public:
 			void Initialize()
 			{
-                QGLShader* VShader = new QGLShader(QGLShader::Vertex, BxCore::Main::GLWidget::Me().context());
+				BxCore::Main::GLWidget& Widget = BxCore::Main::GLWidget::Me();
+                QGLShader* VShader = new QGLShader(QGLShader::Vertex, Widget.context());
 				bool SuccessVShader = VShader->compileSourceCode(GetVertexScript());
 				BxASSERT("BxCore::OpenGL2D<VShader의 컴파일이 실패하였습니다>", SuccessVShader);
-                QGLShader* FShader = new QGLShader(QGLShader::Fragment, BxCore::Main::GLWidget::Me().context());
+                QGLShader* FShader = new QGLShader(QGLShader::Fragment, Widget.context());
 				bool SuccessFShader = FShader->compileSourceCode(GetFragmentScript());
 				BxASSERT("BxCore::OpenGL2D<FShader의 컴파일이 실패하였습니다>", SuccessFShader);
 				addShader(VShader);
@@ -977,7 +1031,7 @@ namespace BxCore
                     BxASSERT("##-deviceScanFinished", false);
                 }
             };
-            STATIC_CLASS(_DeviceAgent, DeviceAgent);
+            SINGLETON_CLASS(_DeviceAgent, DeviceAgent);
         #endif
 		/// @endcond
 	}
@@ -1575,21 +1629,24 @@ namespace BxCore
 		public:
 			typedef BxVarMap<StorageClass, 0, true> VarMap;
 			typedef BxVarMap<VarMap, 0, true> VarMapMap;
-		public:
+        private:
 			void* Data;
+            __DEBUG_VAL__
 		public:
-			StorageClass() : Data(nullptr) {}
-			~StorageClass() {BxCore::Util::Free(Data);}
-			void* Init(int size)
-			{
+            StorageClass() : Data(nullptr) {}
+            ~StorageClass() {BxCore::Util::Free(Data);}
+            void* GetData() {return Data;}
+            void* InitData(int size __DEBUG_PRM__)
+            {
 				Data = BxCore::Util::Alloc(size);
-				BxCore::Util::MemSet(Data, 0, size);
-				return Data;
-			}
+                BxCore::Util::MemSet(Data, 0, size);
+                __DEBUG_SET__
+                return Data;
+            }
 		public:
             global_func mint CurrentThreadID() {return (mint) QThread::currentThreadId();}
 			global_func id_mutex& Mutex() {global_data id_mutex _ = OpenMutex(); return _;}
-			global_func VarMapMap& Map() {global_data VarMapMap _; return _;}
+            global_func VarMapMap& Map() {global_data VarMapMap _; return _;}
 		};
 		/// @endcond
 	}
@@ -2142,8 +2199,8 @@ namespace BxCore
                 glDrawArrays((loop)? GL_LINE_LOOP : GL_LINE_STRIP, 0, Count);
 			}
             template<bool useStripOpacity, bool useMatrix>
-            void DrawStrip(int Count, const StripData* Data,
-				const byte opacity, const color_x888 color, const float x, const float y, const float scale,
+            void DrawStrip(int Count, const StripData* Data, const byte opacity,
+				const byte aqua, const color_x888 color, const float x, const float y, const float scale,
                 const float m11, const float m12, const float m21, const float m22, const float dx, const float dy)
 			{
 				global_data const int CountMax = 256;
@@ -2164,13 +2221,15 @@ namespace BxCore
 				const int G = (color >> 8) & 0xFF;
 				const int B = (color >> 0) & 0xFF;
 				const int A = opacity & 0xFF;
+				const int AquaValue = aqua;
 
 				int FocusBegin = 1;
 				while(FocusBegin < Count)
 				{
-                    // Vertex
+					// Vertex
 					int Focus = FocusBegin -= 1;
-                    const int Opacity = (useStripOpacity)? A * Data[Focus].opacity / 0xFF : A;
+                    const int Opacity = (useStripOpacity && Data[Focus].opacity < AquaValue)?
+						A * Data[Focus].opacity / AquaValue : A;
 					for(int i = 0; i < 2 * CountMax && Focus < Count; i += 2)
 					{
 						const StripData& CurData = Data[Focus];
@@ -2188,9 +2247,13 @@ namespace BxCore
 							Vertex[i + 1].setX(CurData.rx * De11 + DeX);
 							Vertex[i + 1].setY(CurData.ry * De22 + DeY);
 						}
-						if(!useStripOpacity) Focus++;
-						else if(Opacity != A * Data[Focus++].opacity / 0xFF)
-							break;
+						Focus++;
+						if(useStripOpacity)
+						{
+							const int CurOpacity = (Data[Focus - 1].opacity < AquaValue)?
+								A * Data[Focus - 1].opacity / AquaValue : A;
+							if(Opacity != CurOpacity) break;
+						}
 					}
 					LastProgram->setAttributeArray(0, Vertex);
                     // Color
@@ -2211,8 +2274,9 @@ namespace BxCore
             }
             void SwapBuffer()
             {
-				BxCore::Main::GLWidget::Me().makeCurrent();
-                BxCore::Main::GLWidget::Me().swapBuffers();
+				BxCore::Main::GLWidget& Widget = BxCore::Main::GLWidget::Me();
+				Widget.makeCurrent();
+                Widget.swapBuffers();
                 glClear(GL_COLOR_BUFFER_BIT);
             }
             void SetScissor(int x, int y, int w, int h)
@@ -2232,12 +2296,13 @@ namespace BxCore
 				BxCore::Main::ProgramClass* Program[MAX];
                 Data()
                 {
+					BxCore::Main::GLWidget& Widget = BxCore::Main::GLWidget::Me();
 					LastProgramType = COL;
-                    Program[IMG] = BxNew_Param(ImageProgram, BxCore::Main::GLWidget::Me().context());
+                    Program[IMG] = BxNew_Param(ImageProgram, Widget.context());
 					Program[IMG]->Initialize();
-                    Program[COL] = BxNew_Param(ColorProgram, BxCore::Main::GLWidget::Me().context());
+                    Program[COL] = BxNew_Param(ColorProgram, Widget.context());
 					Program[COL]->Initialize();
-                    Program[FNT] = BxNew_Param(FontProgram, BxCore::Main::GLWidget::Me().context());
+                    Program[FNT] = BxNew_Param(FontProgram, Widget.context());
 					Program[FNT]->Initialize();
 					BxCore::Font::FontSingle().SetProgram(Program[FNT], Program[COL]);
                 }

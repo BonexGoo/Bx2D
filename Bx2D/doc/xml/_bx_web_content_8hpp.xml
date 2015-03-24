@@ -6,94 +6,94 @@
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <includes refid="_bx_var_vector_8hpp" local="no">BxVarVector.hpp</includes>
     <incdepgraph>
-      <node id="513">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="514" relation="include">
+      <node id="518">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="519" relation="include">
         </childnode>
-      </node>
-      <node id="514">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="515" relation="include">
-        </childnode>
-      </node>
-      <node id="520">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="514" relation="include">
-        </childnode>
-        <childnode refid="513" relation="include">
-        </childnode>
-        <childnode refid="516" relation="include">
-        </childnode>
-      </node>
-      <node id="515">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="516" relation="include">
-        </childnode>
-      </node>
-      <node id="510">
-        <label>BxWebContent.hpp</label>
-        <link refid="BxWebContent.hpp"/>
-        <childnode refid="511" relation="include">
-        </childnode>
-        <childnode refid="520" relation="include">
-        </childnode>
-        <childnode refid="521" relation="include">
+        <childnode refid="522" relation="include">
         </childnode>
       </node>
       <node id="517">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+      </node>
+      <node id="522">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="523" relation="include">
+        </childnode>
+      </node>
+      <node id="521">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="522" relation="include">
+        </childnode>
+      </node>
+      <node id="523">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="521">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="513" relation="include">
-        </childnode>
-        <childnode refid="516" relation="include">
-        </childnode>
-        <childnode refid="518" relation="include">
-        </childnode>
-      </node>
-      <node id="516">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="517" relation="include">
-        </childnode>
-      </node>
-      <node id="511">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="512" relation="include">
-        </childnode>
-        <childnode refid="518" relation="include">
-        </childnode>
-        <childnode refid="519" relation="include">
-        </childnode>
-      </node>
-      <node id="518">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="513" relation="include">
-        </childnode>
-        <childnode refid="519" relation="include">
-        </childnode>
-      </node>
-      <node id="512">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="513" relation="include">
-        </childnode>
-        <childnode refid="516" relation="include">
+      <node id="525">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="523" relation="include">
         </childnode>
       </node>
       <node id="519">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="520" relation="include">
+        </childnode>
+      </node>
+      <node id="524">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+      </node>
+      <node id="527">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+      </node>
+      <node id="526">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>BxWebContent.hpp</label>
+        <link refid="BxWebContent.hpp"/>
         <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="521" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -138,7 +138,7 @@
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="class_bx_var_map" kindref="compound">BxVarMap&lt;Cookie*&gt;</ref><sp/>CookieMap;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="class_bx_var_vector" kindref="compound">BxVarVector&lt;Cookie, 4&gt;</ref><sp/>CookieList;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/><ref refid="structid__struct__04" kindref="compound">id_socket</ref><sp/>Socket;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>id_socket<sp/>Socket;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>ContactPool()<sp/>:<sp/>Socket(nullptr)<sp/>{}</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>~ContactPool()<sp/>{<ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member">BxCore::Socket::Release</ref>(Socket);}</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="class_bx_var_map" kindref="compound">BxVarMap&lt;ContactPool&gt;</ref><sp/>ContactMap;</highlight></codeline>
@@ -562,7 +562,7 @@
 <codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CacheFileName[FindedPos]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kindref="member">BxCore::File::IsExist</ref>(CacheFileName))</highlight></codeline>
 <codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__03" kindref="compound">id_file</ref><sp/>CacheFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">BxCore::File::Open</ref>(CacheFileName,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>CacheFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">BxCore::File::Open</ref>(CacheFileName,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FileSize<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member">BxCore::File::GetSize</ref>(CacheFile);</highlight></codeline>
 <codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="namespace_bx_core_1_1_file_1a7c4421ffa8085d228868baf036991fe2" kindref="member">BxCore::File::IsExist</ref>(CacheFileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.downloading&quot;</highlight><highlight class="normal">))</highlight></codeline>
 <codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -601,11 +601,11 @@
 <codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>캐시저장</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1acbf9996018af3765259e886a85199251" kindref="member">BxCore::File::MakeDirectory</ref>(CacheFileName.<ref refid="class_bx_string_1a35b102ea2640d73c151790d3acc24438" kindref="member">GetFilePath</ref>());</highlight></codeline>
 <codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>다운로드중<sp/>생성</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__03" kindref="compound">id_file</ref><sp/>DownloadingFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">BxCore::File::Open</ref>(CacheFileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.downloading&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>DownloadingFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">BxCore::File::Open</ref>(CacheFileName<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.downloading&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member">BxCore::File::Write</ref>(DownloadingFile,<sp/>&amp;ResponseLength,<sp/>4);</highlight></codeline>
 <codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member">BxCore::File::Close</ref>(DownloadingFile);</highlight></codeline>
 <codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>실제파일<sp/>생성</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__03" kindref="compound">id_file</ref><sp/>CacheFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">BxCore::File::Open</ref>(CacheFileName,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>CacheFile<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">BxCore::File::Open</ref>(CacheFileName,<sp/></highlight><highlight class="stringliteral">&quot;wb&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1abb50947274e3627df003a64bff23c0f0" kindref="member">BxCore::File::Write</ref>(CacheFile,<sp/>ResponseBytes,<sp/>ResponseLength);</highlight></codeline>
 <codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1afdafda12e8c12af83e6724dfeb49b44b" kindref="member">BxCore::File::Close</ref>(CacheFile);</highlight></codeline>
 <codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>다운로드중<sp/>삭제</highlight><highlight class="normal"></highlight></codeline>
@@ -648,6 +648,6 @@
 <codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="623"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxWebContent.hpp"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxWebContent.hpp"/>
   </compounddef>
 </doxygen>

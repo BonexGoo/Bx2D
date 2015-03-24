@@ -183,7 +183,7 @@ public:
 				if(USE_NEW) delete Table->Ch[i]->Data;
 				else TypePool::FreeClass(Table->Ch[i]->Data);
 				Table->Ch[i]->Data = nullptr; // For child's Reset()
-				if(USE_NEW) delete Table->Ch[i];
+				if(USE_NEW) delete (VarMap*) Table->Ch[i];
 				else MapPool::FreeClass((VarMap*) Table->Ch[i]);
 			}
 			if(USE_NEW) delete Table;
@@ -261,7 +261,7 @@ private:
 		}
 		if(!Table->Ch[i])
 		{
-			if(USE_NEW) Table->Ch[i] = new BxVarMap();
+			if(USE_NEW) Table->Ch[i] = new VarMap();
 			else Table->Ch[i] = MapPool::MakeClass();
 			Table->Count++;
 		}
@@ -271,7 +271,7 @@ private:
 	inline void InvalideChild(const int i)
 	{
 		BxASSERT("BxVarMap<이미 삭제된 Table->Ch[i]를 삭제하려 합니다>", Table->Ch[i]);
-		if(USE_NEW) delete Table->Ch[i];
+		if(USE_NEW) delete (VarMap*) Table->Ch[i];
 		else MapPool::FreeClass((VarMap*) Table->Ch[i]);
 		Table->Ch[i] = nullptr;
 		if(--Table->Count == 0)

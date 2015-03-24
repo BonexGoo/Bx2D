@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx2d.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">API
-   &#160;<span id="projectnumber">4.0.10</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -154,7 +154,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            Pool.Delete(i);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="structid__struct__03.html">id_file</a> KeywordFile = <a class="code" href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2">BxCore::File::Open</a>(filename, <span class="stringliteral">&quot;rb&quot;</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        id_file KeywordFile = <a class="code" href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2">BxCore::File::Open</a>(filename, <span class="stringliteral">&quot;rb&quot;</span>);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span>(KeywordFile)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> KeywordBufferSize = <a class="code" href="namespace_bx_core_1_1_file.html#a9d540bf3bdc003c35a4ad9673654b920">BxCore::File::GetSize</a>(KeywordFile);</div>
@@ -330,7 +330,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    global_func <span class="keywordtype">void</span> Save(<span class="keywordtype">string</span> filename)</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    {</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="structid__struct__03.html">id_file</a> KeywordFile = <a class="code" href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2">BxCore::File::Open</a>(filename, <span class="stringliteral">&quot;wb&quot;</span>);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        id_file KeywordFile = <a class="code" href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2">BxCore::File::Open</a>(filename, <span class="stringliteral">&quot;wb&quot;</span>);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">if</span>(KeywordFile)</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        {</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#a41dce6f617e445367761b3216b98ef44">BxCore::File::WriteString</a>(KeywordFile, <span class="stringliteral">&quot;bekon_script_area&lt;begin&gt;\r\n&quot;</span>);</div>
@@ -586,10 +586,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_bx_string_html_a27909ea496f8e3791ed7232036e70c65"><div class="ttname"><a href="class_bx_string.html#a27909ea496f8e3791ed7232036e70c65">BxString::Compare</a></div><div class="ttdeci">compare Compare(string Other) const </div><div class="ttdoc">스트링간 비교(string) </div><div class="ttdef"><b>Definition:</b> BxString.hpp:721</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a9d45cf5f144f0aaa40fa169feb915ea1"><div class="ttname"><a href="namespace_bx_util_global.html#a9d45cf5f144f0aaa40fa169feb915ea1">BxUtilGlobal::AtoI</a></div><div class="ttdeci">static int AtoI(string String, int StringLength=-1)</div><div class="ttdoc">스트링을 정수로 변환 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:444</div></div>
 <div class="ttc" id="class_bx_keyword_1_1_check_html"><div class="ttname"><a href="class_bx_keyword_1_1_check.html">BxKeyword::Check</a></div><div class="ttdef"><b>Definition:</b> BxKeyword.hpp:419</div></div>
-<div class="ttc" id="structid__struct__03_html"><div class="ttname"><a href="structid__struct__03.html">id_struct_03</a></div><div class="ttdef"><b>Definition:</b> BxType.hpp:257</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_file_html_afdafda12e8c12af83e6724dfeb49b44b"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b">BxCore::File::Close</a></div><div class="ttdeci">void Close(id_file file)</div><div class="ttdoc">파일닫기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:472</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_file_html_afdafda12e8c12af83e6724dfeb49b44b"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#afdafda12e8c12af83e6724dfeb49b44b">BxCore::File::Close</a></div><div class="ttdeci">void Close(id_file file)</div><div class="ttdoc">파일닫기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:529</div></div>
 <div class="ttc" id="class_bx_string_html_ab836b089f90c7851a78ede51321eac74"><div class="ttname"><a href="class_bx_string.html#ab836b089f90c7851a78ede51321eac74">BxString::GetLength</a></div><div class="ttdeci">int GetLength() const </div><div class="ttdoc">길이(byte) 구하기 </div><div class="ttdef"><b>Definition:</b> BxString.hpp:356</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_file_html_a41dce6f617e445367761b3216b98ef44"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#a41dce6f617e445367761b3216b98ef44">BxCore::File::WriteString</a></div><div class="ttdeci">uint WriteString(id_file file, string buffer, callback_progress progress=nullptr)</div><div class="ttdoc">파일로 스트링쓰기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:566</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_file_html_a41dce6f617e445367761b3216b98ef44"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#a41dce6f617e445367761b3216b98ef44">BxCore::File::WriteString</a></div><div class="ttdeci">uint WriteString(id_file file, string buffer, callback_progress progress=nullptr)</div><div class="ttdoc">파일로 스트링쓰기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:623</div></div>
 <div class="ttc" id="class_bx_keyword_html"><div class="ttname"><a href="class_bx_keyword.html">BxKeyword</a></div><div class="ttdoc">직렬자료 제공 </div><div class="ttdef"><b>Definition:</b> BxKeyword.hpp:25</div></div>
 <div class="ttc" id="class_bx_keyword_1_1_clone_html"><div class="ttname"><a href="class_bx_keyword_1_1_clone.html">BxKeyword::Clone</a></div><div class="ttdef"><b>Definition:</b> BxKeyword.hpp:387</div></div>
 <div class="ttc" id="class_bx_var_html"><div class="ttname"><a href="class_bx_var.html">BxVar</a></div><div class="ttdoc">가변배열 제공 </div><div class="ttdef"><b>Definition:</b> BxVar.hpp:20</div></div>
@@ -601,16 +600,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="class_bx_keyword_1_1_string_html"><div class="ttname"><a href="class_bx_keyword_1_1_string.html">BxKeyword::String</a></div><div class="ttdef"><b>Definition:</b> BxKeyword.hpp:422</div></div>
 <div class="ttc" id="class_bx_string_html"><div class="ttname"><a href="class_bx_string.html">BxString</a></div><div class="ttdoc">스트링 관리 </div><div class="ttdef"><b>Definition:</b> BxString.hpp:7</div></div>
 <div class="ttc" id="class_bx_keyword_1_1_radio_html"><div class="ttname"><a href="class_bx_keyword_1_1_radio.html">BxKeyword::Radio</a></div><div class="ttdef"><b>Definition:</b> BxKeyword.hpp:420</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_file_html_a0b223eda0b9a76c839171ba70fe300d1"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1">BxCore::File::Read</a></div><div class="ttdeci">uint Read(id_file file, void *buffer, uint length, callback_progress progress=nullptr)</div><div class="ttdoc">파일에서 읽기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:478</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_file_html_a9d540bf3bdc003c35a4ad9673654b920"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#a9d540bf3bdc003c35a4ad9673654b920">BxCore::File::GetSize</a></div><div class="ttdeci">int GetSize(id_file file)</div><div class="ttdoc">파일의 전체길이(byte) 얻기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:578</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_file_html_a0b223eda0b9a76c839171ba70fe300d1"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1">BxCore::File::Read</a></div><div class="ttdeci">uint Read(id_file file, void *buffer, uint length, callback_progress progress=nullptr)</div><div class="ttdoc">파일에서 읽기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:535</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_file_html_a9d540bf3bdc003c35a4ad9673654b920"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#a9d540bf3bdc003c35a4ad9673654b920">BxCore::File::GetSize</a></div><div class="ttdeci">int GetSize(id_file file)</div><div class="ttdoc">파일의 전체길이(byte) 얻기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:635</div></div>
 <div class="ttc" id="class_bx_keyword_1_1_number_html"><div class="ttname"><a href="class_bx_keyword_1_1_number.html">BxKeyword::Number</a></div><div class="ttdef"><b>Definition:</b> BxKeyword.hpp:421</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a375f1472e96d7ab00dfe744c7fab2b78"><div class="ttname"><a href="namespace_bx_util_global.html#a375f1472e96d7ab00dfe744c7fab2b78">BxUtilGlobal::StrFree</a></div><div class="ttdeci">static string_rw StrFree(string AllocedString)</div><div class="ttdoc">스트링 해제 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:224</div></div>
 <div class="ttc" id="class_bx_keyword_1_1_access_html"><div class="ttname"><a href="class_bx_keyword_1_1_access.html">BxKeyword::Access</a></div><div class="ttdef"><b>Definition:</b> BxKeyword.hpp:425</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_file_html_a3c33eb71f02021128234b721c94701e2"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2">BxCore::File::Open</a></div><div class="ttdeci">id_file Open(string filename, string mode)</div><div class="ttdoc">파일열기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:463</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_file_html_a3c33eb71f02021128234b721c94701e2"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#a3c33eb71f02021128234b721c94701e2">BxCore::File::Open</a></div><div class="ttdeci">id_file Open(string filename, string mode)</div><div class="ttdoc">파일열기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:520</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 22 2015 19:42:07 for API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 24 2015 12:11:00 for API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -213,10 +213,10 @@ const byte* JPGToBMP(const byte* jpg)
 		for(int x = 0; x < Width; ++x)
 		{
 			bitmappixel& CurPixel = BmpFocus[x];
-			CurPixel.r = *(StreamV++);
-			CurPixel.g = *(StreamU++);
-			CurPixel.b = *(StreamY++);
 			CurPixel.a = 0xFF;
+			CurPixel.r = *(StreamY++);
+			CurPixel.g = *(StreamU++);
+			CurPixel.b = *(StreamV++);
 		}
 	}
 

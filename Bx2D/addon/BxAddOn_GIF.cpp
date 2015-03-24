@@ -206,12 +206,12 @@ const byte* GIFToBMP(const byte* gif, const int length, int _out_ numpage)
 				bitmappixel& CurPixel = BmpFocus[x];
 				if(ImgFocus[s + 3])
 				{
-					CurPixel.r = ImgFocus[s + 2];
-					CurPixel.g = ImgFocus[s + 1];
-					CurPixel.b = ImgFocus[s + 0];
 					CurPixel.a = ImgFocus[s + 3];
+					CurPixel.r = ImgFocus[s + 0];
+					CurPixel.g = ImgFocus[s + 1];
+					CurPixel.b = ImgFocus[s + 2];
 				}
-				else CurPixel.rgba = 0;
+				else CurPixel.argb = 0;
 			}
 			BmpFocus += Width;
 			ImgFocus -= Width * 4;

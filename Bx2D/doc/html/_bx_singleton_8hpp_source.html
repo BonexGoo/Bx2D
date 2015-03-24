@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx2d.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">API
-   &#160;<span id="projectnumber">4.0.10</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">namespace </span>Thread</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordtype">void</span>* <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BindStorage</a>(<span class="keywordtype">int</span>* storagekey);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordtype">void</span>* <a class="code" href="namespace_bx_core_1_1_thread.html#a3c044242802c703c595e4f6324b340e1">BindStorage</a>(<span class="keywordtype">int</span>* storagekey __DEBUG_PRM__);</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    }</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
@@ -106,7 +106,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    do { \</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">        if(LEN == 0) {RET = nullptr; break;} \</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">        thread_storage Key = sizeof(decltype(RET)) + sizeof(int); \</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">        decltype(RET)* Value = (decltype(RET)*) BxCore::Thread::BindStorage(&amp;Key); \</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">        decltype(RET)* Value = (decltype(RET)*) BxCore::Thread::BindStorage(&amp;Key __DEBUG_MCR__); \</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">        int* Count = (int*) &amp;Value[1]; \</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">        if(!*Count) *Count = BxSingleton::Link(Value, Count __DEBUG_MCR__); \</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">        RET = BxSingleton::Bind(Value, Count, LEN); \</span></div>
@@ -180,7 +180,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">private</span>: Element* Unit;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">private</span>: List* Next;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">private</span>: global_func <span class="keyword">inline</span> List* Head()</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {thread_storage _ = <span class="keyword">sizeof</span>(List); <span class="keywordflow">return</span> (List*) <a class="code" href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a>(&amp;_);}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {thread_storage _ = <span class="keyword">sizeof</span>(List); <span class="keywordflow">return</span> (List*) <a class="code" href="namespace_bx_core_1_1_thread.html#a3c044242802c703c595e4f6324b340e1">BxCore::Thread::BindStorage</a>(&amp;_ __DEBUG_MCR__);}</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">private</span>: List(Element* unit)</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            Unit = unit;</div>
@@ -243,12 +243,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    };</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
 <div class="ttc" id="class_bx_singleton_html"><div class="ttname"><a href="class_bx_singleton.html">BxSingleton</a></div><div class="ttdoc">싱글톤인스턴스들의 일괄소멸을 위한 도구 </div><div class="ttdef"><b>Definition:</b> BxSingleton.hpp:26</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_thread_html_a3c044242802c703c595e4f6324b340e1"><div class="ttname"><a href="namespace_bx_core_1_1_thread.html#a3c044242802c703c595e4f6324b340e1">BxCore::Thread::BindStorage</a></div><div class="ttdeci">void * BindStorage(int *storagekey __DEBUG_PRM__)</div><div class="ttdoc">현 스레드상의 저장소 개별연결(스레드수량 x 정적변수수량) </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:1069</div></div>
 <div class="ttc" id="namespace_bx_core_html"><div class="ttname"><a href="namespace_bx_core.html">BxCore</a></div><div class="ttdoc">BxEngine Core-API. </div><div class="ttdef"><b>Definition:</b> BxCore.hpp:5</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_thread_html_ac8200a15947866932b0851974b98257b"><div class="ttname"><a href="namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b">BxCore::Thread::BindStorage</a></div><div class="ttdeci">void * BindStorage(int *storagekey)</div><div class="ttdoc">현 스레드상의 저장소 개별연결(스레드수량 x 정적변수수량) </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:1012</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 22 2015 19:42:07 for API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 24 2015 12:11:00 for API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

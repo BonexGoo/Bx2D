@@ -44,6 +44,16 @@ namespace BxCore
 			return ForMain_RealFrameTime();
 		}
 
+		bool IsEnableGUI()
+		{
+			global_data bool IsEnableGUIScene =
+				BxCore::File::IsExist("sys/title.png") &&
+				BxCore::System::IsExistConfig(keyword_string, "Bx.Framework.GUIScene") &&
+                (BxUtilGlobal::StrCmp(BxCore::System::GetOSName(), "WINDOWS") == same ||
+                 BxUtilGlobal::StrCmp(BxCore::System::GetOSName(), "OSX") == same);
+			return IsEnableGUIScene;
+		}
+
 		int GetGUIMarginL()
 		{
 			global_data bool InitCheck = _CertifyGUIMarginLoad();
@@ -139,12 +149,11 @@ namespace BxCore
 			// 씬등록
 			BxString::Parse SimulatorName(BxCore::System::GetConfigString("Bx.Framework.GUIScene", "BxSimulator"));
 			BxString::Parse StartPageName(BxCore::System::GetConfigString("Bx.Framework.FirstScene", "BxStartPage"));
-			const bool IsEnableGUIScene = _IsEnableGUIScene();
 			// 시뮬레이터 추가
-			if(IsEnableGUIScene)
+			if(IsEnableGUI())
 				BxScene::AddRequest(SimulatorName, sceneside_center, scenelayer_gui, StartPageName);
 			// 첫페이지 추가
-			if(IsEnableGUIScene && BxUtilGlobal::StrCmp(SimulatorName, "BxSimulator") == same)
+			if(IsEnableGUI() && BxUtilGlobal::StrCmp(SimulatorName, "BxSimulator") == same)
 				BxScene::AddRequest("BxStartPage", sceneside_center, scenelayer_top, StartPageName);
 			else BxScene::AddRequest(StartPageName);
 
@@ -183,6 +192,8 @@ namespace BxCore
 
 			// 이벤트해제
 			BxCore::Main::EventDetach();
+			// 이벤트후킹 해제
+			BxCore::Simulator::UnhookEventAll();
 			// Draw객체 해제
 			BxDelete_ByType(BxDraw, ForMain_LetDrawPtr());
 			// 전역객체 해제
@@ -271,7 +282,7 @@ namespace BxCore
 			// 임시공간
 			const int LetterLen = BxUtilGlobal::StrLen(cp949);
 			thread_storage _ = sizeof(int);
-			int& TempSizeMax = *((int*) BxCore::Thread::BindStorage(&_));
+            int& TempSizeMax = *((int*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__));
 			if(TempSizeMax < LetterLen + 1) TempSizeMax = LetterLen + 1;
 			wstring_rw Temp = nullptr;
 			BxSINGLETON(Temp, TempSizeMax);
@@ -292,7 +303,7 @@ namespace BxCore
 			// 임시공간
 			const int LetterLen = BxUtil::GetLengthForUTF16(utf8, -1);
 			thread_storage _ = sizeof(int);
-			int& TempSizeMax = *((int*) BxCore::Thread::BindStorage(&_));
+            int& TempSizeMax = *((int*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__));
 			if(TempSizeMax < LetterLen + 1) TempSizeMax = LetterLen + 1;
 			wstring_rw Temp = nullptr;
 			BxSINGLETON(Temp, TempSizeMax);
@@ -372,7 +383,7 @@ namespace BxCore
 			BxASSERT("BxCore::Util::Print<스트링맵의 형식을 지키지 않았습니다>", map[0] == '<' && map[1] == '>' && map[2] == ':');
 			// 결과버퍼사이즈
 			thread_storage _ = sizeof(int);
-			int& ResultSize = *((int*) BxCore::Thread::BindStorage(&_));
+            int& ResultSize = *((int*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__));
 			if(!ResultSize) ResultSize = 1024;
 			// 결과버퍼
 			string_rw Result = nullptr;
@@ -430,6 +441,11 @@ namespace BxCore
 								ArgString[0] = (char*) ArgData;
 								ArgStringLength[0] = 1;
 							}
+							else if(ArgData = args.Access<byte>(ArgID))
+							{
+								ArgString[0] = BxUtilGlobal::ItoA(*((byte*) ArgData));
+								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
+							}
                             else if(ArgData = args.Access<bool>(ArgID))
                             {
                                 ArgString[0] = (*((bool*) ArgData))? "true" : "false";
@@ -443,6 +459,16 @@ namespace BxCore
 							else if(ArgData = args.Access<unsigned int>(ArgID))
 							{
 								ArgString[0] = BxUtilGlobal::ItoA(*((unsigned int*) ArgData));
+								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
+							}
+							else if(ArgData = args.Access<long>(ArgID))
+							{
+								ArgString[0] = BxUtilGlobal::ItoA(*((long*) ArgData));
+								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
+							}
+							else if(ArgData = args.Access<unsigned long>(ArgID))
+							{
+								ArgString[0] = BxUtilGlobal::ItoA(*((unsigned long*) ArgData));
 								ArgStringLength[0] = BxUtilGlobal::StrLen(ArgString[0]);
 							}
 							else if(ArgData = args.Access<float>(ArgID))
@@ -1071,6 +1097,63 @@ namespace BxCore
 				else BxCore::System::Sleep(BxUtilGlobal::Min(SleepTime++, timeout >> 6));
 			}
 			return RecvResult;
+		}
+	}
+
+	// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	namespace Wacom
+	{
+		bool IsExistDevice()
+		{
+			return (WacomSingleton()->Handle != nullptr);
+		}
+
+		int GetDeviceExtX()
+		{
+			return WacomSingleton()->Context.lcInExtX;
+		}
+
+		int GetDeviceExtY()
+		{
+			return WacomSingleton()->Context.lcInExtY;
+		}
+
+		int GetDeviceExtZ()
+		{
+			return WacomSingleton()->Context.lcInExtZ;
+		}
+
+		bool TryNextPacket()
+		{
+			PACKET* LastPacket = WacomSingleton()->PacketQueue.Dequeue();
+			delete WacomSingleton()->LastPacket;
+			WacomSingleton()->LastPacket = (LastPacket)? LastPacket : new PACKET();
+			return (LastPacket != nullptr);
+		}
+
+		uint GetPacketButtons()
+		{
+			return WacomSingleton()->LastPacket->pkButtons;
+		}
+
+		int GetPacketX()
+		{
+			return (int) WacomSingleton()->LastPacket->pkX;
+		}
+
+		int GetPacketY()
+		{
+			return (int) WacomSingleton()->LastPacket->pkY;
+		}
+
+		int GetPacketZ()
+		{
+			return (int) WacomSingleton()->LastPacket->pkZ;
+		}
+
+		uint GetPacketNormalPressure()
+		{
+			return WacomSingleton()->LastPacket->pkNormalPressure;
 		}
 	}
 

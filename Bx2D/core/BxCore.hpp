@@ -4,6 +4,82 @@
 //! \brief BxEngine Core-API
 namespace BxCore
 {
+	//! \brief Simulator파트(데스크탑 빌드전용)
+	namespace Simulator
+	{
+		/*!
+		\brief 윈도우핸들얻기
+		\return 핸들값
+		*/
+		void* GetWindowHandle();
+
+		/*!
+		\brief 윈도우위치설정
+		\param x : 위치값X
+		\param y : 위치값Y
+		*/
+		void SetWindowPos(int x, int y);
+
+		/*!
+		\brief 윈도우위치얻기
+		\return 위치값
+		*/
+		point GetWindowPos();
+
+		/*!
+		\brief 스크린사이즈얻기
+		\return 사이즈값
+		*/
+		size GetScreenSize();
+
+		/*!
+		\brief 커서상태설정
+		\param kind : 입력장치
+		\param x : 위치값X
+		\param y : 위치값Y
+		\param force : 압력값
+		\param pressed : 눌러짐 여부
+		*/
+		void SetCursorState(inputkind kind, float x, float y, float force, bool pressed);
+
+		/*!
+		\brief 커서위치설정
+		\param x : 위치값X
+		\param y : 위치값Y
+		*/
+		void SetCursorPos(float x, float y);
+
+		/*!
+		\brief 커서위치얻기
+		\return 위치값
+		*/
+		point GetCursorPos();
+
+		/*!
+		\brief 최소화하기
+		*/
+		void DoMinimize();
+
+		/*!
+		\brief 이벤트후킹 신청하기
+		\param message : 메시지번호
+		\param cb : 콜백함수
+		\param data : 전달데이터
+		*/
+		void HookEvent(uint message, callback_windowevent cb, void* data);
+
+		/*!
+		\brief 이벤트후킹 해제하기
+		\param message : 메시지번호
+		*/
+		void UnhookEvent(uint message);
+
+		/*!
+		\brief 이벤트후킹 일괄해제하기
+		*/
+		void UnhookEventAll();
+	}
+
 	//! \brief Main파트
 	namespace Main
 	{
@@ -14,6 +90,7 @@ namespace BxCore
 		void SetCurrentFrameTime(int ms);
 		int GetCurrentFrameTime(bool onlyFrame = false);
 		int GetRealFrameTime();
+		bool IsEnableGUI();
 		int GetGUIMarginL();
 		int GetGUIMarginT();
 		int GetGUIMarginR();
@@ -130,37 +207,6 @@ namespace BxCore
 		\return 해당 설정값
 		*/
 		string _tmp_ GetPlatformConfigString(string name);
-
-		/*!
-		\brief 시뮬레이터 윈도우위치설정(데스크탑 빌드전용)
-		\param x : 위치값X
-		\param y : 위치값Y
-		*/
-		void SetSimulatorWindowPos(int x, int y);
-
-		/*!
-		\brief 시뮬레이터 윈도우위치얻기(데스크탑 빌드전용)
-		\return 위치값
-		*/
-		point GetSimulatorWindowPos();
-
-		/*!
-		\brief 시뮬레이터 커서위치설정(데스크탑 빌드전용)
-		\param x : 위치값X
-		\param y : 위치값Y
-		*/
-		void SetSimulatorCursorPos(int x, int y);
-
-		/*!
-		\brief 시뮬레이터 커서위치얻기(데스크탑 빌드전용)
-		\return 위치값
-		*/
-		point GetSimulatorCursorPos();
-
-		/*!
-		\brief 시뮬레이터 최소화하기(데스크탑 빌드전용)
-		*/
-		void DoSimulatorMinimize();
 
 		/*!
 		\brief 스냅샷 찍기
@@ -1015,6 +1061,21 @@ namespace BxCore
 		string GetEvent(id_bluetooth bluetooth);
 	}
 
+	//! \brief Wacom파트
+	namespace Wacom
+	{
+		bool IsExistDevice();
+		int GetDeviceExtX();
+		int GetDeviceExtY();
+		int GetDeviceExtZ();
+		bool TryNextPacket();
+		uint GetPacketButtons();
+		int GetPacketX();
+		int GetPacketY();
+		int GetPacketZ();
+		uint GetPacketNormalPressure();
+	}
+
 	//! \brief Font파트
 	namespace Font
 	{
@@ -1245,7 +1306,7 @@ namespace BxCore
 		\return 저장소의 버퍼주소(처음 생성시 모든 값은 0으로 초기화됨)
 		\see UnbindStorageAll
 		*/
-		void* BindStorage(int* storagekey);
+        void* BindStorage(int* storagekey __DEBUG_PRM__);
 
 		/*!
 		\brief 현 스레드상의 저장소 전체종료
@@ -1276,9 +1337,10 @@ namespace BxCore
 		\brief 함수연결
 		\param handle : 라이브러리ID
 		\param name : 함수명
+		\param nullvalue : 실패시 반환될 값
 		\see 함수포인터
 		*/
-		void* Link(id_library handle, string name);
+		void* Link(id_library handle, string name, void* nullvalue = nullptr);
 	}
 
 	//! \brief OpenGL2D파트
@@ -1315,8 +1377,8 @@ namespace BxCore
 		void Render3D(id_opengl_form form, id_opengl_outline outline, int x, int y, int z, const byte opacity, const color_x888 color);
 		void RenderLinesDirectly(int Count, const void* Data, const float x, const float y,
 			const float scale, const byte opacity, const color_x888 color, const bool loop);
-		void RenderStripDirectly(int Count, const void* Data,
-			const byte opacity, const color_x888 color, const float x, const float y, const float scale,
+		void RenderStripDirectly(int Count, const void* Data, const byte opacity,
+			const byte aqua, const color_x888 color, const float x, const float y, const float scale,
 			const float m11, const float m12, const float m21, const float m22, const float dx, const float dy);
 		// Option
 		void Clip(rect r);

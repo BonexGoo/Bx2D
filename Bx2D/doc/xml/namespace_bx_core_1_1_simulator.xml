@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespace_bx_core_1_1_simulator" kind="namespace" language="C++">
+    <compoundname>BxCore::Simulator</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_simulator_1a6d787d4823b51efa0c5e54cbfdb9be53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * BxCore::Simulator::GetWindowHandle</definition>
+        <argsstring>()</argsstring>
+        <name>GetWindowHandle</name>
+        <briefdescription>
+<para>윈도우핸들얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>핸들값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="14" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="48" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_simulator_1abfe7db3554f61c5043fbfe40ea50120e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Simulator::SetWindowPos</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>SetWindowPos</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>윈도우위치설정 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값Y </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="21" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_simulator_1a29e75e9888fe73d4a63a130f3d245214" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>point BxCore::Simulator::GetWindowPos</definition>
+        <argsstring>()</argsstring>
+        <name>GetWindowPos</name>
+        <briefdescription>
+<para>윈도우위치얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>위치값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="27" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="74" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_simulator_1aced61045893cf4c4d4dd1e5d229ae0ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structsize" kindref="compound">size</ref></type>
+        <definition>size BxCore::Simulator::GetScreenSize</definition>
+        <argsstring>()</argsstring>
+        <name>GetScreenSize</name>
+        <briefdescription>
+<para>스크린사이즈얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>사이즈값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="33" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_simulator_1aea084406f37145e651b4361e5bde2f27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Simulator::SetCursorState</definition>
+        <argsstring>(inputkind kind, float x, float y, float force, bool pressed)</argsstring>
+        <name>SetCursorState</name>
+        <param>
+          <type>inputkind</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>pressed</declname>
+        </param>
+        <briefdescription>
+<para>커서상태설정 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 입력장치 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값Y </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>force</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 압력값 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pressed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 눌러짐 여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="43" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_simulator_1a5d639331bb5cc963bfc18b8de5a48b41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Simulator::SetCursorPos</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>SetCursorPos</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>커서위치설정 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값X </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 위치값Y </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="50" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="100" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_simulator_1a602d7d98ede50cdff9e707d2be7793fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpoint" kindref="compound">point</ref></type>
+        <definition>point BxCore::Simulator::GetCursorPos</definition>
+        <argsstring>()</argsstring>
+        <name>GetCursorPos</name>
+        <briefdescription>
+<para>커서위치얻기 </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>위치값 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="56" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="108" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_simulator_1a402d6db31e30606286512cb3f3308090" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Simulator::DoMinimize</definition>
+        <argsstring>()</argsstring>
+        <name>DoMinimize</name>
+        <briefdescription>
+<para>최소화하기 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="61" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_simulator_1a2cc150470f7d46d387dcd3899c163329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Simulator::HookEvent</definition>
+        <argsstring>(uint message, callback_windowevent cb, void *data)</argsstring>
+        <name>HookEvent</name>
+        <param>
+          <type>uint</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>callback_windowevent</type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>이벤트후킹 신청하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 메시지번호 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 콜백함수 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 전달데이터 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="69" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_simulator_1a32150dfa8ba2425ca56af67118f25c55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Simulator::UnhookEvent</definition>
+        <argsstring>(uint message)</argsstring>
+        <name>UnhookEvent</name>
+        <param>
+          <type>uint</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>이벤트후킹 해제하기 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 메시지번호 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="75" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="129" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_simulator_1a5fc3049a38ff3535e5ccba7dc7d7b94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Simulator::UnhookEventAll</definition>
+        <argsstring>()</argsstring>
+        <name>UnhookEventAll</name>
+        <briefdescription>
+<para>이벤트후킹 일괄해제하기 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="80" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="136" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simulator파트(데스크탑 빌드전용) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

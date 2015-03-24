@@ -63,7 +63,7 @@ unknown OnNotify(string message, unknown param)
 	return nullptr;
 }
 
-string OnTouch(BxPanel::Touch type)
+string OnTouch(BxPanel::Touch type, int x, int y)
 {
 	return "";
 }

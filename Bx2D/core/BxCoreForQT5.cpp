@@ -17,7 +17,8 @@
 	{
         QApplication App(argc, argv);
 		BxCore::Main::GLWidget& Widget = BxCore::Main::GLWidget::Me();
-        #if defined(WIN32) || defined(Q_OS_MACX)
+		if(BxCore::Main::IsEnableGUI())
+		{
 			const int GUIMarginL = BxCore::Main::GetGUIMarginL();
 			const int GUIMarginT = BxCore::Main::GetGUIMarginT();
 			const int GUIMarginR = BxCore::Main::GetGUIMarginR();
@@ -28,9 +29,8 @@
                 GUIMarginL + WindowsWidth + GUIMarginR,
 				GUIMarginT + WindowsHeight + GUIMarginB);
             Widget.showNormal();
-		#else
-			Widget.showFullScreen();
-		#endif
+		}
+		else Widget.showFullScreen();
         return App.exec();
 	}
 #endif
@@ -42,6 +42,105 @@
 // ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 namespace BxCore
 {
+	// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	namespace Simulator
+	{
+		void* GetWindowHandle()
+		{
+			global_data void* WindowHandle = nullptr;
+			if(!WindowHandle)
+			{
+				BxCore::Main::GLWidget& Widget = BxCore::Main::GLWidget::Me();
+				QWindow* Window = Widget.windowHandle();
+				if(!Window)
+				{
+					const QWidget* nativeParent = Widget.nativeParentWidget();
+					if(nativeParent) Window = nativeParent->windowHandle();
+				}
+				if(Window && Window->handle())
+				{
+					QPlatformNativeInterface* Interface = QGuiApplication::platformNativeInterface();
+					WindowHandle = Interface->nativeResourceForWindow(QByteArrayLiteral("handle"), Window);
+				}
+			}
+			return WindowHandle;
+		}
+
+		void SetWindowPos(int x, int y)
+		{
+            BxCore::Main::GLWidget::Me().move(x, y);
+		}
+
+		point GetWindowPos()
+		{
+            QPoint Point = BxCore::Main::GLWidget::Me().pos();
+            point Result;
+            Result.x = Point.x();
+            Result.y = Point.y();
+            return Result;
+		}
+
+		size GetScreenSize()
+		{
+			 QRect Rect = QApplication::desktop()->screenGeometry();
+			 return WH(Rect.width(), Rect.height());
+		}
+
+		#if __APPLE__ == 1
+            #define TITLE_HEIGHT (25)
+        #else
+            #define TITLE_HEIGHT (0)
+        #endif
+
+		void SetCursorState(inputkind kind, float x, float y, float force, bool pressed)
+		{
+			BxCore::Main::GLWidget::Me().SetVirtualTouch(kind, x, y, force, pressed);
+		}
+
+		void SetCursorPos(float x, float y)
+		{
+			QCursor Cursor;
+            point WindowPos = GetWindowPos();
+            Cursor.setPos(QPoint(WindowPos.x + x, WindowPos.y + y + TITLE_HEIGHT));
+			BxCore::Main::GLWidget::Me().setCursor(Cursor);
+		}
+
+		point GetCursorPos()
+		{
+            QPoint Point = BxCore::Main::GLWidget::Me().cursor().pos();
+            point Result;
+            Result.x = Point.x();
+            Result.y = Point.y() - TITLE_HEIGHT;
+            return Result;
+		}
+
+		void DoMinimize()
+		{
+            BxCore::Main::GLWidget::Me().showMinimized();
+		}
+
+		void HookEvent(uint message, callback_windowevent cb, void* data)
+		{
+			BxCore::Simulator::EventFilter& Filter = BxCore::Main::GLWidget::Me().GetFilter();
+			Filter.EventCB[message] = cb;
+			Filter.EventData[message] = data;
+		}
+
+		void UnhookEvent(uint message)
+		{
+			BxCore::Simulator::EventFilter& Filter = BxCore::Main::GLWidget::Me().GetFilter();
+			Filter.EventCB.Remove(message);
+			Filter.EventData.Remove(message);
+		}
+
+		void UnhookEventAll()
+		{
+			BxCore::Simulator::EventFilter& Filter = BxCore::Main::GLWidget::Me().GetFilter();
+			Filter.EventCB.Reset();
+			Filter.EventData.Reset();
+		}
+	}
+
 	// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 	namespace Main
 	{
@@ -101,10 +200,9 @@ namespace BxCore
 
 		bool IsTouchDown(bool includeSpecial)
 		{
-			if(!includeSpecial)
-				return BxCore::Main::GLWidget::Me().IsTouchPressed();
-			return BxCore::Main::GLWidget::Me().IsTouchPressed()
-				|| BxCore::Main::GLWidget::Me().IsSpecialPressed();
+			BxCore::Main::GLWidget& Widget = BxCore::Main::GLWidget::Me();
+			if(!includeSpecial) return Widget.IsTouchPressed();
+			return Widget.IsTouchPressed() || Widget.IsSpecialPressed();
 		}
 
 		bool IsKeyDown(keykind key)
@@ -130,60 +228,19 @@ namespace BxCore
 			return Result;
 		}
 
-		void SetSimulatorWindowPos(int x, int y)
-		{
-            BxCore::Main::GLWidget::Me().move(x, y);
-		}
-
-		point GetSimulatorWindowPos()
-		{
-            QPoint Point = BxCore::Main::GLWidget::Me().pos();
-            point Result;
-            Result.x = Point.x();
-            Result.y = Point.y();
-            return Result;
-		}
-
-        #if __APPLE__ == 1
-            #define TITLE_HEIGHT (25)
-        #else
-            #define TITLE_HEIGHT (0)
-        #endif
-
-		void SetSimulatorCursorPos(int x, int y)
-		{
-            QCursor Cursor;
-            point WindowPos = GetSimulatorWindowPos();
-            Cursor.setPos(QPoint(WindowPos.x + x, WindowPos.y + y + TITLE_HEIGHT));
-            BxCore::Main::GLWidget::Me().setCursor(Cursor);
-		}
-
-		point GetSimulatorCursorPos()
-		{
-            QPoint Point = BxCore::Main::GLWidget::Me().cursor().pos();
-            point Result;
-            Result.x = Point.x();
-            Result.y = Point.y() - TITLE_HEIGHT;
-            return Result;
-		}
-
-		void DoSimulatorMinimize()
-		{
-            BxCore::Main::GLWidget::Me().showMinimized();
-		}
-
 		void DoExportSnapshot(string filename)
 		{
 			#if defined(WIN32) || defined(Q_OS_MACX)
-				point WindowPos = GetSimulatorWindowPos();
+				point WindowPos = BxCore::Simulator::GetWindowPos();
 				QPixmap Pixmap = QPixmap::grabWindow(QApplication::desktop()->winId(),
 					WindowPos.x + BxCore::Main::GetGUIMarginL(),
                     WindowPos.y + BxCore::Main::GetGUIMarginT() + TITLE_HEIGHT,
 					BxCore::Surface::GetWidthHW(), BxCore::Surface::GetHeightHW());
 			#else
-                BxCore::Main::GLWidget::Me().swapBuffers();
-                QImage Pixmap = BxCore::Main::GLWidget::Me().grabFrameBuffer();
-                BxCore::Main::GLWidget::Me().swapBuffers();
+				BxCore::Main::GLWidget& Widget = BxCore::Main::GLWidget::Me();
+                Widget.swapBuffers();
+                QImage Pixmap = Widget.grabFrameBuffer();
+                Widget.swapBuffers();
 			#endif
             Pixmap.save(BxCore::File::FileClass::RootForWrite() + filename, "bmp");
 		}
@@ -1009,7 +1066,7 @@ namespace BxCore
 			((QMutex*) mutex)->unlock();
 		}
 
-		void* BindStorage(int* storagekey)
+        void* BindStorage(int* storagekey __DEBUG_PRM__)
 		{
 			// 스레드별 저장소그룹 접근
 			Lock(StorageClass::Mutex());
@@ -1017,8 +1074,8 @@ namespace BxCore
 			Unlock(StorageClass::Mutex());
 			// 스레드내 개별저장소 접근
             StorageClass* Result = StorageByThread.Access((mint) storagekey);
-			if(Result) return Result->Data;
-            return StorageByThread[(mint) storagekey].Init(*storagekey);
+            if(Result) return Result->GetData();
+            return StorageByThread[(mint) storagekey].InitData(*storagekey __DEBUG_ARG__);
 		}
 
 		void UnbindStorageAll()
@@ -1036,12 +1093,11 @@ namespace BxCore
 		{
 			#ifdef WIN32
 				QLibrary* Library = new QLibrary(filename);
-				if(Library->load()) return (id_library) Library;
+				if(Library->load())
+					return (id_library) Library;
 				delete Library;
-				return nullptr;
-			#else
-				return nullptr;
 			#endif
+			return nullptr;
 		}
 
 		void Close(id_library handle)
@@ -1051,13 +1107,16 @@ namespace BxCore
 			#endif
 		}
 
-		void* Link(id_library handle, string name)
+		void* Link(id_library handle, string name, void* nullvalue)
 		{
 			#ifdef WIN32
-				return (void*) ((QLibrary*) handle)->resolve(name);
-			#else
-				return nullptr;
+				if(handle)
+				{
+					void* Result = (void*) ((QLibrary*) handle)->resolve(name);
+					if(Result) return Result;
+				}
 			#endif
+			return nullvalue;
 		}
 	}
 
@@ -1360,15 +1419,26 @@ namespace BxCore
 			OpenGLSingle().DrawLines(Count, (const BxCore::OpenGL2D::LinesData*) Data, x, y, scale, opacity, color, loop);
 		}
 
-		void RenderStripDirectly(int Count, const void* Data,
-			const byte opacity, const color_x888 color, const float x, const float y, const float scale,
+		void RenderStripDirectly(int Count, const void* Data, const byte opacity,
+			const byte aqua, const color_x888 color, const float x, const float y, const float scale,
 			const float m11, const float m12, const float m21, const float m22, const float dx, const float dy)
 		{
-			if(m11 == 1 && m12 == 0 && m21 == 0 && m22 == 1)
-				OpenGLSingle().DrawStrip<false, false>(Count, (const BxCore::OpenGL2D::StripData*) Data,
-					opacity, color, x, y, scale, m11, m12, m21, m22, dx, dy);
-			else OpenGLSingle().DrawStrip<false, true>(Count, (const BxCore::OpenGL2D::StripData*) Data,
-					opacity, color, x, y, scale, m11, m12, m21, m22, dx, dy);
+			if(0 < aqua)
+			{
+				if(m11 == 1 && m12 == 0 && m21 == 0 && m22 == 1)
+					OpenGLSingle().DrawStrip<true, false>(Count, (const BxCore::OpenGL2D::StripData*) Data,
+						opacity, aqua, color, x, y, scale, m11, m12, m21, m22, dx, dy);
+				else OpenGLSingle().DrawStrip<true, true>(Count, (const BxCore::OpenGL2D::StripData*) Data,
+						opacity, aqua, color, x, y, scale, m11, m12, m21, m22, dx, dy);
+			}
+			else
+			{
+				if(m11 == 1 && m12 == 0 && m21 == 0 && m22 == 1)
+					OpenGLSingle().DrawStrip<false, false>(Count, (const BxCore::OpenGL2D::StripData*) Data,
+						opacity, 0, color, x, y, scale, m11, m12, m21, m22, dx, dy);
+				else OpenGLSingle().DrawStrip<false, true>(Count, (const BxCore::OpenGL2D::StripData*) Data,
+						opacity, 0, color, x, y, scale, m11, m12, m21, m22, dx, dy);
+			}
 		}
 
 		void Clip(rect r)

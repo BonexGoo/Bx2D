@@ -2768,7 +2768,7 @@ const byte* TTFToBMP(id_ttf ttf, int height, uint code)
 		{
 			bitmappixel* BmpFocusEnd = BmpFocus-- + Width;
 			while(++BmpFocus < BmpFocusEnd)
-				BmpFocus->rgba = 0xFF000000;
+				BmpFocus->argb = 0xFF000000;
 		}
 		return Bmp;
 	}
@@ -2796,7 +2796,7 @@ const byte* TTFToBMP(id_ttf ttf, int height, uint code)
 		byte* FontFocus = &FontBitmap.buffer[FontBitmap.pitch * y];
 		bitmappixel* BmpFocusEnd = BmpFocus-- + Width;
 		while(++BmpFocus < BmpFocusEnd)
-			BmpFocus->rgba = ((uint) (*(FontFocus++) & 0xFF)) << 24;
+			BmpFocus->argb = ((uint) (*(FontFocus++) & 0xFF)) << 24;
 	}
 	return Bmp;
 }

@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx2d.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">API
-   &#160;<span id="projectnumber">4.0.10</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -117,28 +117,28 @@ Functions</h2></td></tr>
 <tr class="memitem:a400d7d51f62351ffc1bea46d3b07d56d"><td class="memItemLeft" align="right" valign="top">const byte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a400d7d51f62351ffc1bea46d3b07d56d">BASE64ToBUF</a> (const byte *base64, const int length, int *get_buffer_length=nullptr)</td></tr>
 <tr class="memdesc:a400d7d51f62351ffc1bea46d3b07d56d"><td class="mdescLeft">&#160;</td><td class="mdescRight">BASE64버퍼를 통해 데이터버퍼를 제작  <a href="#a400d7d51f62351ffc1bea46d3b07d56d">More...</a><br /></td></tr>
 <tr class="separator:a400d7d51f62351ffc1bea46d3b07d56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f0a1d827096b16626f6b0a89ace07f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structid__struct__11.html">id_zip</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a4f0a1d827096b16626f6b0a89ace07f9">CreateZIP</a> (const byte *zip, const int length, int _out_ numfile, string password=nullptr)</td></tr>
+<tr class="memitem:a4f0a1d827096b16626f6b0a89ace07f9"><td class="memItemLeft" align="right" valign="top">id_zip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a4f0a1d827096b16626f6b0a89ace07f9">CreateZIP</a> (const byte *zip, const int length, int _out_ numfile, string password=nullptr)</td></tr>
 <tr class="memdesc:a4f0a1d827096b16626f6b0a89ace07f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZIP파일의 디코딩을 위한 객체 생성  <a href="#a4f0a1d827096b16626f6b0a89ace07f9">More...</a><br /></td></tr>
 <tr class="separator:a4f0a1d827096b16626f6b0a89ace07f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8940c44357430f8d5aa09fb22478630"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#ad8940c44357430f8d5aa09fb22478630">ReleaseZIP</a> (<a class="el" href="structid__struct__11.html">id_zip</a> zip)</td></tr>
+<tr class="memitem:ad8940c44357430f8d5aa09fb22478630"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#ad8940c44357430f8d5aa09fb22478630">ReleaseZIP</a> (id_zip zip)</td></tr>
 <tr class="memdesc:ad8940c44357430f8d5aa09fb22478630"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZIP객체 제거  <a href="#ad8940c44357430f8d5aa09fb22478630">More...</a><br /></td></tr>
 <tr class="separator:ad8940c44357430f8d5aa09fb22478630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46ac0ae27223a96b93d1eaee33e98e6b"><td class="memItemLeft" align="right" valign="top">const byte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a46ac0ae27223a96b93d1eaee33e98e6b">ZIPToFILE</a> (<a class="el" href="structid__struct__11.html">id_zip</a> zip, const int fileindex, int _out_ filesize)</td></tr>
+<tr class="memitem:a46ac0ae27223a96b93d1eaee33e98e6b"><td class="memItemLeft" align="right" valign="top">const byte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a46ac0ae27223a96b93d1eaee33e98e6b">ZIPToFILE</a> (id_zip zip, const int fileindex, int _out_ filesize)</td></tr>
 <tr class="memdesc:a46ac0ae27223a96b93d1eaee33e98e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZIP객체에서 요청 순번의 파일을 로드  <a href="#a46ac0ae27223a96b93d1eaee33e98e6b">More...</a><br /></td></tr>
 <tr class="separator:a46ac0ae27223a96b93d1eaee33e98e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b9e110e245439608c9af694714ff3fc"><td class="memItemLeft" align="right" valign="top">string _tmp_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a7b9e110e245439608c9af694714ff3fc">ZIPToINFO</a> (<a class="el" href="structid__struct__11.html">id_zip</a> zip, const int fileindex, bool *isdir=nullptr, uhuge *ctime=nullptr, uhuge *mtime=nullptr, uhuge *atime=nullptr, bool *archive=nullptr, bool *hidden=nullptr, bool *readonly=nullptr, bool *system=nullptr)</td></tr>
+<tr class="memitem:a7b9e110e245439608c9af694714ff3fc"><td class="memItemLeft" align="right" valign="top">string _tmp_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a7b9e110e245439608c9af694714ff3fc">ZIPToINFO</a> (id_zip zip, const int fileindex, bool *isdir=nullptr, uhuge *ctime=nullptr, uhuge *mtime=nullptr, uhuge *atime=nullptr, bool *archive=nullptr, bool *hidden=nullptr, bool *readonly=nullptr, bool *system=nullptr)</td></tr>
 <tr class="memdesc:a7b9e110e245439608c9af694714ff3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ZIP객체에서 요청 순번의 파일정보를 로드  <a href="#a7b9e110e245439608c9af694714ff3fc">More...</a><br /></td></tr>
 <tr class="separator:a7b9e110e245439608c9af694714ff3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac79df3b34b02bcb690f0d9fae8aace9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structid__struct__12.html">id_ttf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#ac79df3b34b02bcb690f0d9fae8aace9a">CreateTTF</a> (const byte *ttf, const int length)</td></tr>
+<tr class="memitem:ac79df3b34b02bcb690f0d9fae8aace9a"><td class="memItemLeft" align="right" valign="top">id_ttf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#ac79df3b34b02bcb690f0d9fae8aace9a">CreateTTF</a> (const byte *ttf, const int length)</td></tr>
 <tr class="memdesc:ac79df3b34b02bcb690f0d9fae8aace9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">TTF파일의 랜더링을 위한 객체 생성  <a href="#ac79df3b34b02bcb690f0d9fae8aace9a">More...</a><br /></td></tr>
 <tr class="separator:ac79df3b34b02bcb690f0d9fae8aace9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72280d443112f06f3fdd05a5aab34fcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a72280d443112f06f3fdd05a5aab34fcf">ReleaseTTF</a> (<a class="el" href="structid__struct__12.html">id_ttf</a> ttf)</td></tr>
+<tr class="memitem:a72280d443112f06f3fdd05a5aab34fcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a72280d443112f06f3fdd05a5aab34fcf">ReleaseTTF</a> (id_ttf ttf)</td></tr>
 <tr class="memdesc:a72280d443112f06f3fdd05a5aab34fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">TTF객체 제거  <a href="#a72280d443112f06f3fdd05a5aab34fcf">More...</a><br /></td></tr>
 <tr class="separator:a72280d443112f06f3fdd05a5aab34fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a140dbe83fcb6cb5236a520e47fc51f9a"><td class="memItemLeft" align="right" valign="top">const byte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a140dbe83fcb6cb5236a520e47fc51f9a">TTFToBMP</a> (<a class="el" href="structid__struct__12.html">id_ttf</a> ttf, int height, uint code)</td></tr>
+<tr class="memitem:a140dbe83fcb6cb5236a520e47fc51f9a"><td class="memItemLeft" align="right" valign="top">const byte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a140dbe83fcb6cb5236a520e47fc51f9a">TTFToBMP</a> (id_ttf ttf, int height, uint code)</td></tr>
 <tr class="memdesc:a140dbe83fcb6cb5236a520e47fc51f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">TTF객체에서 해당 문자를 BMP로 제작  <a href="#a140dbe83fcb6cb5236a520e47fc51f9a">More...</a><br /></td></tr>
 <tr class="separator:a140dbe83fcb6cb5236a520e47fc51f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c19971aa1971820c0232a4393f3503c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a9c19971aa1971820c0232a4393f3503c">TTFToINFO</a> (<a class="el" href="structid__struct__12.html">id_ttf</a> ttf, int height, uint code, int *width=nullptr, int *ascent=nullptr)</td></tr>
+<tr class="memitem:a9c19971aa1971820c0232a4393f3503c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a9c19971aa1971820c0232a4393f3503c">TTFToINFO</a> (id_ttf ttf, int height, uint code, int *width=nullptr, int *ascent=nullptr)</td></tr>
 <tr class="memdesc:a9c19971aa1971820c0232a4393f3503c"><td class="mdescLeft">&#160;</td><td class="mdescRight">TTF객체에서 해당 문자정보를 로드  <a href="#a9c19971aa1971820c0232a4393f3503c">More...</a><br /></td></tr>
 <tr class="separator:a9c19971aa1971820c0232a4393f3503c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a0230697a6b8d81a01d05f03c2b46c"><td class="memItemLeft" align="right" valign="top">const byte *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_add_on.html#a54a0230697a6b8d81a01d05f03c2b46c">CreateBMP</a> (int width, int height, short param1=0, short param2=0)</td></tr>
@@ -346,7 +346,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structid__struct__12.html">id_ttf</a> BxCore::AddOn::CreateTTF </td>
+          <td class="memname">id_ttf BxCore::AddOn::CreateTTF </td>
           <td>(</td>
           <td class="paramtype">const byte *&#160;</td>
           <td class="paramname"><em>ttf</em>, </td>
@@ -383,7 +383,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structid__struct__11.html">id_zip</a> BxCore::AddOn::CreateZIP </td>
+          <td class="memname">id_zip BxCore::AddOn::CreateZIP </td>
           <td>(</td>
           <td class="paramtype">const byte *&#160;</td>
           <td class="paramname"><em>zip</em>, </td>
@@ -697,7 +697,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void BxCore::AddOn::ReleaseTTF </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structid__struct__12.html">id_ttf</a>&#160;</td>
+          <td class="paramtype">id_ttf&#160;</td>
           <td class="paramname"><em>ttf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -722,7 +722,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void BxCore::AddOn::ReleaseZIP </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structid__struct__11.html">id_zip</a>&#160;</td>
+          <td class="paramtype">id_zip&#160;</td>
           <td class="paramname"><em>zip</em></td><td>)</td>
           <td></td>
         </tr>
@@ -747,7 +747,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const byte * BxCore::AddOn::TTFToBMP </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structid__struct__12.html">id_ttf</a>&#160;</td>
+          <td class="paramtype">id_ttf&#160;</td>
           <td class="paramname"><em>ttf</em>, </td>
         </tr>
         <tr>
@@ -791,7 +791,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool BxCore::AddOn::TTFToINFO </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structid__struct__12.html">id_ttf</a>&#160;</td>
+          <td class="paramtype">id_ttf&#160;</td>
           <td class="paramname"><em>ttf</em>, </td>
         </tr>
         <tr>
@@ -848,7 +848,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const byte * BxCore::AddOn::ZIPToFILE </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structid__struct__11.html">id_zip</a>&#160;</td>
+          <td class="paramtype">id_zip&#160;</td>
           <td class="paramname"><em>zip</em>, </td>
         </tr>
         <tr>
@@ -892,7 +892,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">string _tmp_ BxCore::AddOn::ZIPToINFO </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structid__struct__11.html">id_zip</a>&#160;</td>
+          <td class="paramtype">id_zip&#160;</td>
           <td class="paramname"><em>zip</em>, </td>
         </tr>
         <tr>
@@ -980,7 +980,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 22 2015 19:42:08 for API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 24 2015 12:11:03 for API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

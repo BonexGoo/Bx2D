@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="428" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="428" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="429" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="429" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1a1102e07659e1e185c61ce24dd68cc835" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; <ref refid="class_bx_panel_1_1_variable_s_1_1_font" kindref="compound">Font</ref> &gt;</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="429" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="429" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="430" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="430" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1abe9ca40d465b38278b60526970ab3552" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; void * &gt;</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="430" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="430" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="431" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="431" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1a5fe214a3cf310704a78e652859977e70" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; int &gt;</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="431" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="431" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="432" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="432" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1ae464669455718f39fd81e7d3fd170f5b" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; int &gt;</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="432" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="432" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="433" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="433" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_panel_1_1_variable_s_1a30f1fdb71c7c04377fde523210407ce2" prot="public" static="no" mutable="no">
         <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; huge &gt;</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="433" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="433" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="434" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="434" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -88,107 +88,107 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="378">
+      <node id="341">
         <label>BxImage</label>
         <link refid="class_bx_image"/>
-        <childnode refid="379" relation="public-inheritance">
+        <childnode refid="342" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="383">
+      <node id="346">
         <label>BxVarMap&lt; huge &gt;</label>
         <link refid="class_bx_var_map"/>
-        <childnode refid="376" relation="usage">
+        <childnode refid="339" relation="usage">
           <edgelabel>Info</edgelabel>
         </childnode>
       </node>
-      <node id="374">
+      <node id="337">
         <label>BxPanel::VariableS</label>
         <link refid="class_bx_panel_1_1_variable_s"/>
-        <childnode refid="375" relation="usage">
+        <childnode refid="338" relation="usage">
           <edgelabel>int4</edgelabel>
           <edgelabel>flag</edgelabel>
         </childnode>
-        <childnode refid="377" relation="usage">
+        <childnode refid="340" relation="usage">
           <edgelabel>img</edgelabel>
         </childnode>
-        <childnode refid="383" relation="usage">
+        <childnode refid="346" relation="usage">
           <edgelabel>int8</edgelabel>
         </childnode>
-        <childnode refid="384" relation="usage">
+        <childnode refid="347" relation="usage">
           <edgelabel>fnt</edgelabel>
         </childnode>
-        <childnode refid="386" relation="usage">
+        <childnode refid="349" relation="usage">
           <edgelabel>ptr</edgelabel>
         </childnode>
       </node>
-      <node id="382">
+      <node id="345">
         <label>area</label>
         <link refid="structarea"/>
       </node>
-      <node id="381">
+      <node id="344">
         <label>BxExpress::_Integer</label>
         <link refid="class_bx_express_1_1___integer"/>
       </node>
-      <node id="379">
+      <node id="342">
         <label>BxDrawForm</label>
         <link refid="class_bx_draw_form"/>
-        <childnode refid="380" relation="usage">
+        <childnode refid="343" relation="usage">
           <edgelabel>ExpressAreaW</edgelabel>
           <edgelabel>ExpressAreaH</edgelabel>
         </childnode>
-        <childnode refid="382" relation="usage">
+        <childnode refid="345" relation="usage">
           <edgelabel>Area</edgelabel>
         </childnode>
       </node>
-      <node id="377">
+      <node id="340">
         <label>BxVarMap&lt; BxImage &gt;</label>
         <link refid="class_bx_var_map"/>
-        <childnode refid="376" relation="usage">
+        <childnode refid="339" relation="usage">
           <edgelabel>Info</edgelabel>
         </childnode>
-        <childnode refid="378" relation="usage">
+        <childnode refid="341" relation="usage">
           <edgelabel>Data</edgelabel>
         </childnode>
       </node>
-      <node id="376">
+      <node id="339">
         <label>BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::VarInfo</label>
       </node>
-      <node id="380">
+      <node id="343">
         <label>BxExpress::IntegerX</label>
         <link refid="class_bx_express_1_1_integer_x"/>
-        <childnode refid="381" relation="public-inheritance">
+        <childnode refid="344" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="384">
+      <node id="347">
         <label>BxVarMap&lt; BxPanel::VariableS::Font &gt;</label>
         <link refid="class_bx_var_map"/>
-        <childnode refid="376" relation="usage">
+        <childnode refid="339" relation="usage">
           <edgelabel>Info</edgelabel>
         </childnode>
-        <childnode refid="385" relation="usage">
+        <childnode refid="348" relation="usage">
           <edgelabel>Data</edgelabel>
         </childnode>
       </node>
-      <node id="386">
+      <node id="349">
         <label>BxVarMap&lt; void * &gt;</label>
         <link refid="class_bx_var_map"/>
-        <childnode refid="376" relation="usage">
+        <childnode refid="339" relation="usage">
           <edgelabel>Info</edgelabel>
         </childnode>
       </node>
-      <node id="375">
+      <node id="338">
         <label>BxVarMap&lt; int &gt;</label>
         <link refid="class_bx_var_map"/>
-        <childnode refid="376" relation="usage">
+        <childnode refid="339" relation="usage">
           <edgelabel>Info</edgelabel>
         </childnode>
       </node>
-      <node id="385">
+      <node id="348">
         <label>BxPanel::VariableS::Font</label>
         <link refid="class_bx_panel_1_1_variable_s_1_1_font"/>
       </node>
     </collaborationgraph>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="409" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="408" bodyend="434"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="410" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="409" bodyend="435"/>
     <listofallmembers>
       <member refid="class_bx_panel_1_1_variable_s_1a5fe214a3cf310704a78e652859977e70" prot="public" virt="non-virtual"><scope>BxPanel::VariableS</scope><name>flag</name></member>
       <member refid="class_bx_panel_1_1_variable_s_1a1102e07659e1e185c61ce24dd68cc835" prot="public" virt="non-virtual"><scope>BxPanel::VariableS</scope><name>fnt</name></member>

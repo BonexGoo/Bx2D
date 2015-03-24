@@ -144,6 +144,7 @@ enum keykind:byte
 	keykind_pad_plus, keykind_pad_minus, keykind_pad_enter,
 	keykind_max
 };
+enum inputkind:byte {inputkind_finger, inputkind_wacom_pen, inputkind_mouse_left, inputkind_mouse_right, inputkind_mouse_wheel};
 enum fonttype:byte {fonttype_kor, fonttype_eng, fonttype_both};
 enum fontarea:byte {fontarea_fore, fontarea_bold, fontarea_both};
 enum fontoption:byte {fontoption_style, fontoption_lineup, fontoption_code};
@@ -249,23 +250,25 @@ typedef struct bitmapfile {uint size; short param1; short param2; uint offbits;}
 typedef struct bitmapinfo {uint size; int width; int height; ushort planes; ushort bitcount; uint compression;
 	uint size_image; int xpels_meter; int ypels_meter; uint color_used; uint color_important;} bitmapinfo;
 //! \brief bitmappixel공용체
-typedef union bitmappixel {uint rgba; struct {byte r; byte g; byte b; byte a;};} bitmappixel;
-// 타입-ID/기타
-typedef struct id_struct_00 {unknown value;} *id_font, *id_font_zero;
-typedef struct id_struct_01 {unknown value;} *id_text, *id_text_zero;
-typedef struct id_struct_02 {unknown value;} *id_sound;
-typedef struct id_struct_03 {unknown value;} *id_file;
-typedef struct id_struct_04 {unknown value;} *id_socket;
-typedef struct id_struct_05 {unknown value;} *id_bluetooth;
-typedef struct id_struct_06 {unknown value;} *id_library;
-typedef struct id_struct_07 {unknown value;} *id_object;
-typedef struct id_struct_08 {unknown value;} *id_opengl_form;
-typedef struct id_struct_09 {unknown value;} *id_opengl_outline;
-typedef struct id_struct_10 {unknown value;} *id_static;
-typedef struct id_struct_11 {unknown value;} *id_zip;
-typedef struct id_struct_12 {unknown value;} *id_ttf;
-typedef struct id_struct_13 {unknown value;} *id_thread;
-typedef struct id_struct_14 {unknown value;} *id_mutex;
+typedef union bitmappixel {uint argb; struct {byte b; byte g; byte r; byte a;};} bitmappixel;
+// 타입선언-ID/핸들
+#define DECLARE_ID(name) typedef struct tag_##name {unknown unused;} *name
+#define DECLARE_HND(name) typedef struct tag_##name {int unused;} *name
+DECLARE_ID(id_font), *id_font_zero;
+DECLARE_ID(id_text), *id_text_zero;
+DECLARE_ID(id_sound);
+DECLARE_ID(id_file);
+DECLARE_ID(id_socket);
+DECLARE_ID(id_bluetooth);
+DECLARE_ID(id_library);
+DECLARE_ID(id_object);
+DECLARE_ID(id_opengl_form);
+DECLARE_ID(id_opengl_outline);
+DECLARE_ID(id_static);
+DECLARE_ID(id_zip);
+DECLARE_ID(id_ttf);
+DECLARE_ID(id_thread);
+DECLARE_ID(id_mutex);
 typedef bool delete_me;
 //! \brief OnEvent()의 이벤트파라미터
 typedef struct sysevent
@@ -275,13 +278,15 @@ typedef struct sysevent
 	struct {} quit;
 	struct {uint w; uint h;} resize;
 	struct {syskeytype type; keykind code;} key;
-	struct {systouchtype type; uint id; int x; int y; bool special;} touch;
+	struct {systouchtype type; uint id; int x; int y; inputkind kind; float fx; float fy; float force;} touch;
 	struct {sysbuttontype type; string name; rect field; int x; int y;} button;
 } sysevent;
 // 콜백-프레임
 typedef bool (*callback_frame)(int value, void* data);
 // 콜백-이벤트
 typedef void (*callback_event)(bool isautocall, string name, void* param);
+// 콜백-윈도우이벤트
+typedef void (*callback_windowevent)(uint message, uint wparam, mint lparam, void* data);
 // 콜백-JNI
 typedef int (*callback_jni)(string param1_str256, int param2);
 // 콜백-EDK
@@ -353,13 +358,19 @@ typedef void (*callback_delete)(void* data);
 	case 0x34: A case 0x35: A case 0x36: A case 0x37: A \
 	case 0x38: A case 0x39: A case 0x3A: A case 0x3B: A \
 	case 0x3C: A case 0x3D: A case 0x3E: A case 0x3F: A}
+#define SINGLETON_CLASS(_NAME, NAME) class NAME { \
+	private: _NAME* This; \
+	public: NAME() {global_data _NAME* _ = BxNew(_NAME); This = _;} \
+	public: ~NAME() {} \
+	public: _NAME* operator->() {return This;} }
 
 // DEBUG관련
 #ifdef __BX_DEBUG
 	#define __DEBUG_MCR__ ,__FILE__,__LINE__,__FUNCTION__
-	#define __DEBUG_PRM__ ,string file,const int line,string func
-	#define __DEBUG_VAL__ string File;const int Line;string Func;
+    #define __DEBUG_PRM__ ,string file,int line,string func
+    #define __DEBUG_VAL__ string File;int Line;string Func;
 	#define __DEBUG_INT__ ,File(file),Line(line),Func(func)
+    #define __DEBUG_SET__ File=file;Line=line;Func=func;
 	#define __DEBUG_ARG__ ,file,line,func
 	#define __DEBUG_FILE__ file
 	#define __DEBUG_LINE__ line
@@ -369,6 +380,7 @@ typedef void (*callback_delete)(void* data);
 	#define __DEBUG_PRM__
 	#define __DEBUG_VAL__
 	#define __DEBUG_INT__
+    #define __DEBUG_SET__
 	#define __DEBUG_ARG__
 	#define __DEBUG_FILE__ ""
 	#define __DEBUG_LINE__ -1

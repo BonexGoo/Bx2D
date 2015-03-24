@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="243" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="243" bodyend="243"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="244" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="244" bodyend="244"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="243" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="243" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="244" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="244" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpoints_1a5ff325db875c3d0584d1f7d64a4c347e" prot="public" static="no" mutable="no">
         <type><ref refid="structpoint" kindref="compound">point</ref></type>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="243" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="243" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="244" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="244" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -56,19 +56,19 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="262">
+      <node id="227">
         <label>point</label>
         <link refid="structpoint"/>
       </node>
-      <node id="261">
+      <node id="226">
         <label>points</label>
         <link refid="structpoints"/>
-        <childnode refid="262" relation="usage">
+        <childnode refid="227" relation="usage">
           <edgelabel>pt</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="243" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="243" bodyend="243"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="244" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="244" bodyend="244"/>
     <listofallmembers>
       <member refid="structpoints_1a2b793020dd6f88989fb85d0b026eda0d" prot="public" virt="non-virtual"><scope>points</scope><name>count</name></member>
       <member refid="structpoints_1a24af8f922ec3484ce2bdc8f90ad7caf0ad6367ca852d00d0b5333c7ab80b34158" prot="public" virt="non-virtual"><scope>points</scope><name>max</name></member>

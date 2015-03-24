@@ -2,7 +2,7 @@ var searchData=
 [
   ['base64tobuf',['BASE64ToBUF',['../namespace_bx_core_1_1_add_on.html#a400d7d51f62351ffc1bea46d3b07d56d',1,'BxCore::AddOn']]],
   ['beginchildprocess',['BeginChildProcess',['../namespace_bx_core_1_1_system.html#aaed9632d5a8e7c639d4da18fafdf8e0e',1,'BxCore::System']]],
-  ['bindstorage',['BindStorage',['../namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b',1,'BxCore::Thread']]],
+  ['bindstorage',['BindStorage',['../namespace_bx_core_1_1_thread.html#a3c044242802c703c595e4f6324b340e1',1,'BxCore::Thread']]],
   ['blend',['BLEND',['../namespace_bx_draw_global.html#ace28c010cf3281f551f837e6428cf690',1,'BxDrawGlobal']]],
   ['break',['Break',['../namespace_bx_core_1_1_system.html#a2720511c7c99b2d22757eccffaafbbd6',1,'BxCore::System']]],
   ['buftobase64',['BUFToBASE64',['../namespace_bx_core_1_1_add_on.html#a6b8db6137aa9337195bbaca1007f6cf4',1,'BxCore::AddOn']]],

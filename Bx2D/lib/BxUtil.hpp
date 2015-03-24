@@ -472,7 +472,7 @@ namespace BxUtilGlobal
 	{
 		const int Length = 255;
 		thread_storage _ = sizeof(char) * (Length + 1);
-		char* Result = (char*) BxCore::Thread::BindStorage(&_);
+        char* Result = (char*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__);
 		Result[Length] = '\0';
 		const bool IsMinus = (Value < 0);
 		uint UValue = (uint)((IsMinus)? -Value : Value);
@@ -534,7 +534,7 @@ namespace BxUtilGlobal
 	{
 		const int Length = 8;
 		thread_storage _ = sizeof(char) * (Length + 1);
-		char* Result = (char*) BxCore::Thread::BindStorage(&_);
+        char* Result = (char*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__);
 		Result[Length] = '\0';
 		for(int i = Length - 1; 0 <= i; --i)
 		{
@@ -586,7 +586,7 @@ namespace BxUtilGlobal
 	{
 		const int Length = sizeof(mint) * 2;
 		thread_storage _ = sizeof(char) * (Length + 1);
-		char* Result = (char*) BxCore::Thread::BindStorage(&_);
+        char* Result = (char*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__);
 		Result[Length] = '\0';
 		for(int i = Length - 1; 0 <= i; --i)
 		{
@@ -1326,7 +1326,7 @@ public:
 	global_func const point* GetDotByLineCross(const point& DstB, const point& DstE, const point& SrcB, const point& SrcE)
 	{
 		thread_storage _ = sizeof(point);
-		point& Result = *((point*) BxCore::Thread::BindStorage(&_));
+        point& Result = *((point*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__));
 		if(BxUtilGlobal::Max(SrcB.x, SrcE.x) < BxUtilGlobal::Min(DstB.x, DstE.x)
 			|| BxUtilGlobal::Max(DstB.x, DstE.x) < BxUtilGlobal::Min(SrcB.x, SrcE.x)
 			|| BxUtilGlobal::Max(SrcB.y, SrcE.y) < BxUtilGlobal::Min(DstB.y, DstE.y)
@@ -1434,13 +1434,13 @@ private:
 	enum {Angle90 = 256, Angle180 = 512, Angle270 = 768};
 
 	global_func inline uint& RandomTable(int Index)
-	{thread_storage _ = sizeof(uint) * 256; return ((uint*) BxCore::Thread::BindStorage(&_))[Index];}
+    {thread_storage _ = sizeof(uint) * 256; return ((uint*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__))[Index];}
 
 	global_func const wchar CP949ToUTF16_Search(const char cp949a, const char cp949b = '\0')
 	{
 		const int Length = 98 + 51 + 2350;
 		thread_storage _ = sizeof(wchar) * (Length + Length);
-		wchar* CP949 = (wchar*) BxCore::Thread::BindStorage(&_);
+        wchar* CP949 = (wchar*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__);
 		wchar* UTF16 = CP949 + Length;
 		if(!CP949[0])
 		{
@@ -1481,7 +1481,7 @@ private:
 	{
 		const int Length = 98 + 51 + 2350;
 		thread_storage _ = sizeof(wchar) * (Length + Length);
-		wchar* UTF16 = (wchar*) BxCore::Thread::BindStorage(&_);
+        wchar* UTF16 = (wchar*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__);
 		wchar* CP949 = UTF16 + Length;
 		if(!UTF16[0])
 		{
@@ -1521,7 +1521,7 @@ private:
 	global_func inline uint& _RandValue()
 	{
 		thread_storage _ = sizeof(uint);
-		return *((uint*) BxCore::Thread::BindStorage(&_));
+        return *((uint*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__));
 	}
 
 	global_func inline void _SetRand(const uint Key)

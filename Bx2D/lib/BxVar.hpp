@@ -254,7 +254,7 @@ private:
 			Data = nullptr;
 		}
 		global_func bool& EnableRemove()
-		{thread_storage _ = sizeof(bool); return *((bool*) BxCore::Thread::BindStorage(&_));}
+        {thread_storage _ = sizeof(bool); return *((bool*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__));}
 	};
 
 	class VarTree

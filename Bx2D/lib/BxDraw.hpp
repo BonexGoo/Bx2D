@@ -161,7 +161,9 @@ namespace BxDrawGlobal
 	}
 	static inline const pointf XY(const float x, const float y)
 	{
-		const pointf Result = {(fint)(x * ItoF(1)), (fint)(y * ItoF(1))};
+        const pointf Result = {
+            (fint)(int)(x * (1 << 16)),
+            (fint)(int)(y * (1 << 16))};
 		return Result;
 	}
 
@@ -257,7 +259,7 @@ namespace BxDrawGlobal
 	{
 		BxASSERT("BxDraw<가변인자 x, y의 수량이 서로 다릅니다>", x.Length() == y.Length());
 		thread_storage _ = sizeof(points);
-		points& Result = *((points*) BxCore::Thread::BindStorage(&_));
+        points& Result = *((points*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__));
 		Result.count = x.Length();
 		for(int i = 0; i < Result.count; ++i)
 		{
@@ -282,7 +284,7 @@ namespace BxDrawGlobal
 	{
 		BxASSERT("BxDraw<가변인자 x, y, z의 수량이 서로 다릅니다>", x.Length() == y.Length() && x.Length() == z.Length());
 		thread_storage _ = sizeof(vertexs);
-		vertexs& Result = *((vertexs*) BxCore::Thread::BindStorage(&_));
+        vertexs& Result = *((vertexs*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__));
 		Result.count = x.Length();
 		for(int i = 0; i < Result.count; ++i)
 		{
@@ -520,27 +522,21 @@ namespace BxDrawGlobal
 	*/
 	static inline const color_x888 ColorHLSToRGB(const byte h, const byte l, const byte s)
 	{
-		if(0 < s)
-		{
-			const fint HValue = ItoF(h & 0xFF), LValue = ItoF(l & 0xFF) / 255, SValue = ItoF(s & 0xFF) / 255;
-			const fint XValue = LValue + (fint) ((LValue <= 0x8000)? (LValue * (huge) SValue) >> 16 : SValue - ((LValue * (huge) SValue) >> 16));
-			const fint YValue = 2 * LValue - XValue;
-			fint RValue = (HValue + 0x555555) & 0xFFFFFF, GValue = HValue, BValue = (HValue + 0xAAAAAB) & 0xFFFFFF;
-			if(RValue < 0x2A0000) RValue = YValue + (((XValue - YValue) * (huge) RValue) >> 16) / 42;
-			else if(RValue < 0x800000) RValue = XValue;
-			else if(RValue < 0xAAAAAA) RValue = YValue + (((XValue - YValue) * (huge) (0xAAAAAA - RValue)) >> 16) / 42;
-			else RValue = YValue;
-			if(GValue < 0x2A0000) GValue = YValue + (((XValue - YValue) * (huge) GValue) >> 16) / 42;
-			else if(GValue < 0x800000) GValue = XValue;
-			else if(GValue < 0xAAAAAA) GValue = YValue + (((XValue - YValue) * (huge) (0xAAAAAA - GValue)) >> 16) / 42;
-			else GValue = YValue;
-			if(BValue < 0x2A0000) BValue = YValue + (((XValue - YValue) * (huge) BValue) >> 16) / 42;
-			else if(BValue < 0x800000) BValue = XValue;
-			else if(BValue < 0xAAAAAA) BValue = YValue + (((XValue - YValue) * (huge) (0xAAAAAA - BValue)) >> 16) / 42;
-			else BValue = YValue;
-			return ((((RValue * 255 + 0x8000) >> 16) & 0xFF) << 16) | ((((GValue * 255 + 0x8000) >> 16) & 0xFF) << 8) | (((BValue * 255 + 0x8000) >> 16) & 0xFF);
-		}
-		return ((l & 0xFF) << 16) | ((l & 0xFF) << 8) | (l & 0xFF);
+        const fint HValue = ItoF(h) / 255, LValue = ItoF(l) / 255, SValue = ItoF(s) / 255;
+        const fint C0 = (0x8000 < LValue)? 0x10000 - LValue : LValue;
+        const fint C1 = FtoI(C0 * (huge) SValue);
+        const fint C2 = FtoI(C1 * 2 * (huge) ((HValue * 6) & 0xFFFF));
+        fint R = 0, G = 0, B = 0;
+        switch(FtoI(HValue * 6) % 6)
+        {
+        case 0: G = LValue - (C1 - C2); R = LValue + C1; B = LValue - C1; break;
+        case 1: R = LValue + (C1 - C2); G = LValue + C1; B = LValue - C1; break;
+        case 2: B = LValue - (C1 - C2); G = LValue + C1; R = LValue - C1; break;
+        case 3: G = LValue + (C1 - C2); B = LValue + C1; R = LValue - C1; break;
+        case 4: R = LValue - (C1 - C2); B = LValue + C1; G = LValue - C1; break;
+        case 5: B = LValue + (C1 - C2); R = LValue + C1; G = LValue - C1; break;
+        }
+        return ((FtoI(R * 255) & 0xFF) << 16) | ((FtoI(G * 255) & 0xFF) << 8) | (FtoI(B * 255) & 0xFF);
 	}
 
 	/*!

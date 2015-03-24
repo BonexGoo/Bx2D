@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="67" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="67" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="67" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_console_1a823dadb4bd7cb39432bb431fb5143537" prot="private" static="no" mutable="no">
         <type><ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref>&lt; <ref refid="class_bx_image" kindref="compound">BxImage</ref> &gt;</type>
@@ -28,10 +28,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="68" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="68" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="68" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_console_1a9c8e7e20c0e5bb1e678a7449847a78be" prot="private" static="no" mutable="no">
-        <type><ref refid="structid__struct__00" kindref="compound">id_font</ref></type>
+        <type>id_font</type>
         <definition>id_font BxConsole::Font</definition>
         <argsstring></argsstring>
         <name>Font</name>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="69" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="69" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="69" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_console_1a14b44beb7cfc07d5aed3ea9aadeee4e1" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="70" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="70" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="70" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_console_1a3f5f597b4febd9d731ded23a8168bec6" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="71" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="71" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="71" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_console_1a8b6c561b9be96a48cb62b6125b4b38de" prot="private" static="no" mutable="no">
         <type>char</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="72" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="72" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="72" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_console_1a6f979c287ed10ac733ed80a76475b516" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="73" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="73" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="73" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_console_1aa5c7460c547b3f522a95af39931f2616" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="73" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="73" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="73" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_console_1aee7e42ae006f51b9ad08bdc7595713e2" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="74" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="74" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="74" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_console_1aa6142d3e6d459d44952b6653af958f00" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="74" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="74" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="74" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="74" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -155,7 +155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="10" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="10" bodyend="14"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="10" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="10" bodyend="14"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_console_1a8f83df3ae55ec7e5f1d0a5fd61263e20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -176,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="16" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="16" bodyend="20"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="16" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="16" bodyend="20"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_console_1af3b71e9a5b73ba0cd1633b9bfcf43b66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="22" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="22" bodyend="38"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="22" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="22" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_console_1ae0318c69c6821ba86cf11b85443b2c13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -215,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="40" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="40" bodyend="64"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="40" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="40" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_console_1a93ea39fe50f14a135e350a7d06567299" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="80" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="80" bodyend="102"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="80" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="80" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_console_1a06bd3f87f7da9483b833ad5d98f4275e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -249,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="107" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="107" bodyend="110"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="107" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="107" bodyend="110"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -280,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="113" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="113" bodyend="120"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="113" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="113" bodyend="120"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_console_1a3eec2bdfcb043343c87b0e5f9be55d6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func void</type>
@@ -309,14 +309,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="121" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="121" bodyend="130"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="121" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="121" bodyend="130"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>콘솔 관리 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" line="8" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="7" bodyend="131"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" line="8" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp" bodystart="7" bodyend="131"/>
     <listofallmembers>
       <member refid="class_bx_console_1a4786d2cc0f467230f3ced74182e88b83" prot="private" virt="non-virtual"><scope>BxConsole</scope><name>Back</name></member>
       <member refid="class_bx_console_1a93ea39fe50f14a135e350a7d06567299" prot="public" virt="non-virtual"><scope>BxConsole</scope><name>BxConsole</name></member>

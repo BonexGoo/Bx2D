@@ -130,13 +130,14 @@ syseventresult OnEvent(BxSimulator& This, const sysevent& Event)
 		{
 			if(Event.button.type == sysbuttontype_down)
 			{
-                This.NCWindowPos = BxCore::System::GetSimulatorWindowPos();
-                This.NCClickPos = BxCore::System::GetSimulatorCursorPos();
+                This.NCWindowPos = BxCore::Simulator::GetWindowPos();
+                This.NCClickPos = BxCore::Simulator::GetCursorPos();
 			}
 			else if(Event.button.type == sysbuttontype_drag)
 			{
-                const point NewClickPos = BxCore::System::GetSimulatorCursorPos();
-                BxCore::System::SetSimulatorWindowPos(This.NCWindowPos.x + NewClickPos.x - This.NCClickPos.x,
+                const point NewClickPos = BxCore::Simulator::GetCursorPos();
+                BxCore::Simulator::SetWindowPos(
+					This.NCWindowPos.x + NewClickPos.x - This.NCClickPos.x,
 					This.NCWindowPos.y + NewClickPos.y - This.NCClickPos.y);
 			}
 			return syseventresult_done;
@@ -161,7 +162,7 @@ syseventresult OnEvent(BxSimulator& This, const sysevent& Event)
 			{
 				This.IsBtnDown[This.BTN_MIN] = false;
 				if(Event.button.field.getsize().inside(Event.button.x, Event.button.y))
-                    BxCore::System::DoSimulatorMinimize();
+                    BxCore::Simulator::DoMinimize();
 			}
 			return syseventresult_done;
 		}
@@ -250,8 +251,8 @@ syseventresult OnEvent(BxSimulator& This, const sysevent& Event)
 sysupdateresult OnUpdate(BxSimulator& This)
 {
 	sysupdateresult Result = sysupdateresult_no_render_fixed_frame;
-    const point WindowPos = BxCore::System::GetSimulatorWindowPos();
-    const point CursorPos = BxCore::System::GetSimulatorCursorPos();
+    const point WindowPos = BxCore::Simulator::GetWindowPos();
+    const point CursorPos = BxCore::Simulator::GetCursorPos();
 	This.CursorPos.x = CursorPos.x - WindowPos.x;
 	This.CursorPos.y = CursorPos.y - WindowPos.y;
 

@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx2d.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">API
-   &#160;<span id="projectnumber">4.0.10</span>
+   &#160;<span id="projectnumber">4.1.0</span>
    </div>
   </td>
  </tr>
@@ -140,8 +140,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> LastID = (rsid)(LastID + (rsid) 1);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// 인터페이스</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">protected</span>: <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnLoad(<a class="code" href="structid__struct__03.html">id_file</a> File) = 0;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">protected</span>: <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnSave(<a class="code" href="structid__struct__03.html">id_file</a> File) = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">protected</span>: <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnLoad(id_file File) = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">protected</span>: <span class="keyword">virtual</span> <span class="keywordtype">void</span> OnSave(id_file File) = 0;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// 내부함수</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">public</span>: global_func <a class="code" href="class_bx_dynamic_1_1_resource_1_1_bind_pool.html">BindPool</a>* BinderBegin(<span class="keywordtype">string</span> CachePoolName)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        {</div>
@@ -403,14 +403,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <span class="keywordflow">return</span> (TYPE*) Linker-&gt;GetResource();</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        }</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="comment">// 파일로드</span></div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keyword">public</span>: rsid Load(<a class="code" href="structid__struct__03.html">id_file</a> File)</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keyword">public</span>: rsid Load(id_file File)</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        {</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            uhuge ID = (uhuge) rsid_null;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            <a class="code" href="namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1">BxCore::File::Read</a>(File, &amp;ID, 8);</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keywordflow">return</span> (rsid) ID;</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        }</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="comment">// 파일세이브</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keyword">public</span>: <span class="keywordtype">void</span> Save(<a class="code" href="structid__struct__03.html">id_file</a> File)</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keyword">public</span>: <span class="keywordtype">void</span> Save(id_file File)</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        {</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            uhuge ID = (uhuge) rsid_null;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="keywordflow">if</span>(Linker) ID = (uhuge) Linker-&gt;GetID();</div>
@@ -425,14 +425,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keyword">private</span>: global_func <a class="code" href="class_bx_dynamic_1_1_resource.html">Resource</a>* GetClass() {global_data TYPE Class; <span class="keywordflow">return</span> &amp;Class;}</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    };</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;}</div>
-<div class="ttc" id="structid__struct__03_html"><div class="ttname"><a href="structid__struct__03.html">id_struct_03</a></div><div class="ttdef"><b>Definition:</b> BxType.hpp:257</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_file_html_abb50947274e3627df003a64bff23c0f0"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#abb50947274e3627df003a64bff23c0f0">BxCore::File::Write</a></div><div class="ttdeci">uint Write(id_file file, const void *buffer, uint length, callback_progress progress=nullptr)</div><div class="ttdoc">파일로 쓰기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:535</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_file_html_abb50947274e3627df003a64bff23c0f0"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#abb50947274e3627df003a64bff23c0f0">BxCore::File::Write</a></div><div class="ttdeci">uint Write(id_file file, const void *buffer, uint length, callback_progress progress=nullptr)</div><div class="ttdoc">파일로 쓰기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:592</div></div>
 <div class="ttc" id="namespace_bx_dynamic_html"><div class="ttname"><a href="namespace_bx_dynamic.html">BxDynamic</a></div><div class="ttdoc">동적관리 </div><div class="ttdef"><b>Definition:</b> BxDynamic.hpp:7</div></div>
 <div class="ttc" id="class_bx_dynamic_1_1_resource_html"><div class="ttname"><a href="class_bx_dynamic_1_1_resource.html">BxDynamic::Resource</a></div><div class="ttdoc">리소스 관리 </div><div class="ttdef"><b>Definition:</b> BxDynamic.hpp:10</div></div>
 <div class="ttc" id="class_bx_dynamic_1_1_resource_1_1_bind_pool_html"><div class="ttname"><a href="class_bx_dynamic_1_1_resource_1_1_bind_pool.html">BxDynamic::Resource::BindPool</a></div><div class="ttdef"><b>Definition:</b> BxDynamic.hpp:219</div></div>
 <div class="ttc" id="class_bx_dynamic_1_1_resource_1_1_link_pool_html"><div class="ttname"><a href="class_bx_dynamic_1_1_resource_1_1_link_pool.html">BxDynamic::Resource::LinkPool</a></div><div class="ttdef"><b>Definition:</b> BxDynamic.hpp:254</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_system_html_acdf43bdd47ce78f2d24404bd6d782d4b"><div class="ttname"><a href="namespace_bx_core_1_1_system.html#acdf43bdd47ce78f2d24404bd6d782d4b">BxCore::System::GetConfigNumber</a></div><div class="ttdeci">int GetConfigNumber(string name, int defaultNumber)</div><div class="ttdoc">Number형 환경설정값 불러오기 </div><div class="ttdef"><b>Definition:</b> BxCoreImpl.cpp:214</div></div>
-<div class="ttc" id="namespace_bx_core_1_1_file_html_a0b223eda0b9a76c839171ba70fe300d1"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1">BxCore::File::Read</a></div><div class="ttdeci">uint Read(id_file file, void *buffer, uint length, callback_progress progress=nullptr)</div><div class="ttdoc">파일에서 읽기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:478</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_system_html_acdf43bdd47ce78f2d24404bd6d782d4b"><div class="ttname"><a href="namespace_bx_core_1_1_system.html#acdf43bdd47ce78f2d24404bd6d782d4b">BxCore::System::GetConfigNumber</a></div><div class="ttdeci">int GetConfigNumber(string name, int defaultNumber)</div><div class="ttdoc">Number형 환경설정값 불러오기 </div><div class="ttdef"><b>Definition:</b> BxCoreImpl.cpp:225</div></div>
+<div class="ttc" id="namespace_bx_core_1_1_file_html_a0b223eda0b9a76c839171ba70fe300d1"><div class="ttname"><a href="namespace_bx_core_1_1_file.html#a0b223eda0b9a76c839171ba70fe300d1">BxCore::File::Read</a></div><div class="ttdeci">uint Read(id_file file, void *buffer, uint length, callback_progress progress=nullptr)</div><div class="ttdoc">파일에서 읽기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:535</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_af070166376fc2c75242084d8cb7deb3a"><div class="ttname"><a href="namespace_bx_util_global.html#af070166376fc2c75242084d8cb7deb3a">BxUtilGlobal::StrCpyWithAlloc</a></div><div class="ttdeci">static string_rw StrCpyWithAlloc(string SrcString, int SrcLength=-1)</div><div class="ttdoc">스트링 할당 및 복사하기 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:260</div></div>
 <div class="ttc" id="class_bx_var_map_html"><div class="ttname"><a href="class_bx_var_map.html">BxVarMap</a></div><div class="ttdoc">map식 가변배열 제공 </div><div class="ttdef"><b>Definition:</b> BxVarMap.hpp:8</div></div>
 <div class="ttc" id="namespace_bx_util_global_html_a375f1472e96d7ab00dfe744c7fab2b78"><div class="ttname"><a href="namespace_bx_util_global.html#a375f1472e96d7ab00dfe744c7fab2b78">BxUtilGlobal::StrFree</a></div><div class="ttdeci">static string_rw StrFree(string AllocedString)</div><div class="ttdoc">스트링 해제 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:224</div></div>
@@ -440,7 +439,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 22 2015 19:42:07 for API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 24 2015 12:11:00 for API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

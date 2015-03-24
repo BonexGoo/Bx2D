@@ -6,7 +6,7 @@ namespace BxCore
 {
 	namespace Thread
 	{
-		void* BindStorage(int* storagekey);
+        void* BindStorage(int* storagekey __DEBUG_PRM__);
 	}
 }
 /// @endcond
@@ -16,7 +16,7 @@ namespace BxCore
 	do { \
 		if(LEN == 0) {RET = nullptr; break;} \
 		thread_storage Key = sizeof(decltype(RET)) + sizeof(int); \
-		decltype(RET)* Value = (decltype(RET)*) BxCore::Thread::BindStorage(&Key); \
+        decltype(RET)* Value = (decltype(RET)*) BxCore::Thread::BindStorage(&Key __DEBUG_MCR__); \
 		int* Count = (int*) &Value[1]; \
 		if(!*Count) *Count = BxSingleton::Link(Value, Count __DEBUG_MCR__); \
 		RET = BxSingleton::Bind(Value, Count, LEN); \
@@ -91,7 +91,7 @@ class BxSingleton
 		private: Element* Unit;
 		private: List* Next;
 		private: global_func inline List* Head()
-		{thread_storage _ = sizeof(List); return (List*) BxCore::Thread::BindStorage(&_);}
+        {thread_storage _ = sizeof(List); return (List*) BxCore::Thread::BindStorage(&_ __DEBUG_MCR__);}
 		private: List(Element* unit)
 		{
 			Unit = unit;

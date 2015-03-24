@@ -22,6 +22,7 @@ var searchData=
   ['getcp949byutf8',['GetCP949ByUTF8',['../namespace_bx_core_1_1_system.html#a83e5f78f4d3a1045e3b0c47ac2f86f61',1,'BxCore::System']]],
   ['getcp949literalbyutf8',['GetCP949LiteralByUTF8',['../namespace_bx_core_1_1_system.html#a15ac9a31f47be8502f77a6bc9749ef95',1,'BxCore::System']]],
   ['getcubicspline',['GetCubicSpline',['../class_bx_util.html#ade477ecc188f51521a0d9c309872cca4',1,'BxUtil']]],
+  ['getcursorpos',['GetCursorPos',['../namespace_bx_core_1_1_simulator.html#a602d7d98ede50cdff9e707d2be7793fd',1,'BxCore::Simulator']]],
   ['getdata',['GetData',['../class_bx_scene.html#a31f3363df33df2fe373ed5e96679c95d',1,'BxScene']]],
   ['getdatalength',['GetDataLength',['../class_bx_web_content.html#a4a605274453e93b85aae5e1c7e6fb47f',1,'BxWebContent']]],
   ['getdate',['GetDate',['../namespace_bx_core_1_1_file.html#af7e2fe5c26ea1304e3b4be10b914da34',1,'BxCore::File']]],
@@ -49,9 +50,8 @@ var searchData=
   ['getplatformconfigstring',['GetPlatformConfigString',['../namespace_bx_core_1_1_system.html#a03bc3ee39c5c98605f0b1ae623722eff',1,'BxCore::System']]],
   ['getposition',['GetPosition',['../class_bx_scene.html#a7fb9cff7a95d574a6ee5bbfe646297ba',1,'BxScene']]],
   ['getrandom',['GetRandom',['../class_bx_util.html#a5c3ac899f819d98214f9f3345ac5bd87',1,'BxUtil']]],
+  ['getscreensize',['GetScreenSize',['../namespace_bx_core_1_1_simulator.html#aced61045893cf4c4d4dd1e5d229ae0ec',1,'BxCore::Simulator']]],
   ['getside',['GetSide',['../class_bx_scene.html#aa67af3e1d0f18f5dceef68b6a4bed932',1,'BxScene']]],
-  ['getsimulatorcursorpos',['GetSimulatorCursorPos',['../namespace_bx_core_1_1_system.html#a7fb73d2ee4780e2463f3bd4d93cba8b6',1,'BxCore::System']]],
-  ['getsimulatorwindowpos',['GetSimulatorWindowPos',['../namespace_bx_core_1_1_system.html#a71ae7ed62da3df2c6fb54473529acfb2',1,'BxCore::System']]],
   ['getsize',['GetSize',['../namespace_bx_core_1_1_file.html#a9d540bf3bdc003c35a4ad9673654b920',1,'BxCore::File::GetSize(id_file file)'],['../namespace_bx_core_1_1_file.html#a749f72fef7e4a7d446c288b64596c2b7',1,'BxCore::File::GetSize(string filename)']]],
   ['getstate',['GetState',['../namespace_bx_core_1_1_socket.html#a5505b845782ae3f8fc493a8f26fec984',1,'BxCore::Socket']]],
   ['gettextlength',['GetTextLength',['../class_bx_web_content.html#a2c1ae12564be5f2b1880ad56966fd38c',1,'BxWebContent']]],
@@ -64,5 +64,7 @@ var searchData=
   ['getvalueangle',['GetValueAngle',['../class_bx_util.html#a4263eae18eb8e802e1a00142e1b3689f',1,'BxUtil']]],
   ['getwidth',['GetWidth',['../namespace_bx_core_1_1_surface.html#afb97280c477abd9db89abe0d2451943c',1,'BxCore::Surface::GetWidth()'],['../namespace_bx_core_1_1_font.html#a4c516642ce31018e5f5e5bc93b458bee',1,'BxCore::Font::GetWidth()']]],
   ['getwidthhw',['GetWidthHW',['../namespace_bx_core_1_1_surface.html#add1206ac58b30b117600c186daca0973',1,'BxCore::Surface']]],
+  ['getwindowhandle',['GetWindowHandle',['../namespace_bx_core_1_1_simulator.html#a6d787d4823b51efa0c5e54cbfdb9be53',1,'BxCore::Simulator']]],
+  ['getwindowpos',['GetWindowPos',['../namespace_bx_core_1_1_simulator.html#a29e75e9888fe73d4a63a130f3d245214',1,'BxCore::Simulator']]],
   ['giftobmp',['GIFToBMP',['../namespace_bx_core_1_1_add_on.html#af17ee227494d6911f4d5394d28c4f85b',1,'BxCore::AddOn']]]
 ];

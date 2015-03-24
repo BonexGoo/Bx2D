@@ -4,7 +4,7 @@
     <compoundname>BxCore::Thread</compoundname>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aaedfd3f40c87744a20478d8a9f08e2ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__13" kindref="compound">id_thread</ref></type>
+        <type>id_thread</type>
         <definition>id_thread BxCore::Thread::Create</definition>
         <argsstring>(callback_thread threadCB, void *data=nullptr)</argsstring>
         <name>Create</name>
@@ -40,7 +40,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1203" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="973" bodyend="977"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1264" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1030" bodyend="1034"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1ab826ab467ee70b36c1884e87a855c3c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -48,7 +48,7 @@
         <argsstring>(id_thread thread, bool dokill=false, bool dowait=false)</argsstring>
         <name>Release</name>
         <param>
-          <type><ref refid="structid__struct__13" kindref="compound">id_thread</ref></type>
+          <type>id_thread</type>
           <declname>thread</declname>
         </param>
         <param>
@@ -90,10 +90,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1212" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="979" bodyend="986"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1273" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1036" bodyend="1043"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1adf48754093833abf8c23636bf6feaaac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__14" kindref="compound">id_mutex</ref></type>
+        <type>id_mutex</type>
         <definition>id_mutex BxCore::Thread::OpenMutex</definition>
         <argsstring>()</argsstring>
         <name>OpenMutex</name>
@@ -105,7 +105,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1219" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="988" bodyend="992"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1280" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1045" bodyend="1049"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1a01f908e2c4137aaf47cbd5adf675e1b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -113,7 +113,7 @@
         <argsstring>(id_mutex mutex)</argsstring>
         <name>CloseMutex</name>
         <param>
-          <type><ref refid="structid__struct__14" kindref="compound">id_mutex</ref></type>
+          <type>id_mutex</type>
           <declname>mutex</declname>
         </param>
         <briefdescription>
@@ -131,7 +131,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1226" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="994" bodyend="998"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1287" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1051" bodyend="1055"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aace37ba76a186ad61d8c615e7928030f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -139,7 +139,7 @@
         <argsstring>(id_mutex mutex)</argsstring>
         <name>Lock</name>
         <param>
-          <type><ref refid="structid__struct__14" kindref="compound">id_mutex</ref></type>
+          <type>id_mutex</type>
           <declname>mutex</declname>
         </param>
         <briefdescription>
@@ -157,7 +157,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1233" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1000" bodyend="1004"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1294" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1057" bodyend="1061"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aebb2be9b9ffe6df5360f05fadc5cdff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -165,7 +165,7 @@
         <argsstring>(id_mutex mutex)</argsstring>
         <name>Unlock</name>
         <param>
-          <type><ref refid="structid__struct__14" kindref="compound">id_mutex</ref></type>
+          <type>id_mutex</type>
           <declname>mutex</declname>
         </param>
         <briefdescription>
@@ -183,16 +183,16 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1240" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1006" bodyend="1010"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1301" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1063" bodyend="1067"/>
       </memberdef>
-      <memberdef kind="function" id="namespace_bx_core_1_1_thread_1ac8200a15947866932b0851974b98257b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="namespace_bx_core_1_1_thread_1a3c044242802c703c595e4f6324b340e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
         <definition>void * BxCore::Thread::BindStorage</definition>
-        <argsstring>(int *storagekey)</argsstring>
+        <argsstring>(int *storagekey __DEBUG_PRM__)</argsstring>
         <name>BindStorage</name>
         <param>
-          <type>int *</type>
-          <declname>storagekey</declname>
+          <type>int *storagekey</type>
+          <declname>__DEBUG_PRM__</declname>
         </param>
         <briefdescription>
 <para>현 스레드상의 저장소 개별연결(스레드수량 x 정적변수수량) </para>        </briefdescription>
@@ -210,7 +210,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1248" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1012" bodyend="1022"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1309" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1069" bodyend="1079"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1a9948511867e74c60e15e31f5e0d5e2b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -220,17 +220,17 @@
         <briefdescription>
 <para>현 스레드상의 저장소 전체종료 </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_thread_1ac8200a15947866932b0851974b98257b" kindref="member">BindStorage</ref> </para></simplesect>
+<para><simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_thread_1a3c044242802c703c595e4f6324b340e1" kindref="member">BindStorage</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1254" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1024" bodyend="1029"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1315" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1081" bodyend="1086"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Thread파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1195" column="1"/>
+    <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1256" column="1"/>
   </compounddef>
 </doxygen>

@@ -7,65 +7,65 @@
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <incdepgraph>
       <node id="223">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="218" relation="include">
+        <label>BxDynamic.hpp</label>
+        <link refid="BxDynamic.hpp"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
         </childnode>
       </node>
-      <node id="218">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="219" relation="include">
+      <node id="226">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="227" relation="include">
         </childnode>
       </node>
       <node id="225">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="218" relation="include">
-        </childnode>
-        <childnode refid="223" relation="include">
-        </childnode>
-        <childnode refid="220" relation="include">
-        </childnode>
-      </node>
-      <node id="219">
         <label>BxArgument.hpp</label>
         <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="220" relation="include">
+        <childnode refid="226" relation="include">
         </childnode>
       </node>
-      <node id="221">
+      <node id="227">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="220">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="221" relation="include">
+      <node id="230">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="227" relation="include">
         </childnode>
       </node>
-      <node id="217">
-        <label>BxDynamic.hpp</label>
-        <link refid="BxDynamic.hpp"/>
-        <childnode refid="218" relation="include">
-        </childnode>
-        <childnode refid="222" relation="include">
-        </childnode>
-        <childnode refid="225" relation="include">
-        </childnode>
-      </node>
-      <node id="222">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="223" relation="include">
-        </childnode>
+      <node id="229">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
         <childnode refid="224" relation="include">
         </childnode>
       </node>
+      <node id="228">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
       <node id="224">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="221" relation="include">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="225" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -130,8 +130,8 @@
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LastID<sp/>=<sp/>(rsid)(LastID<sp/>+<sp/>(rsid)<sp/>1);</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>인터페이스</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnLoad(<ref refid="structid__struct__03" kindref="compound">id_file</ref><sp/>File)<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSave(<ref refid="structid__struct__03" kindref="compound">id_file</ref><sp/>File)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnLoad(id_file<sp/>File)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSave(id_file<sp/>File)<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>내부함수</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>global_func<sp/><ref refid="class_bx_dynamic_1_1_resource_1_1_bind_pool" kindref="compound">BindPool</ref>*<sp/>BinderBegin(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>CachePoolName)</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -393,14 +393,14 @@
 <codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(TYPE*)<sp/>Linker-&gt;GetResource();</highlight></codeline>
 <codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>파일로드</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>rsid<sp/>Load(<ref refid="structid__struct__03" kindref="compound">id_file</ref><sp/>File)</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/>rsid<sp/>Load(id_file<sp/>File)</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uhuge<sp/>ID<sp/>=<sp/>(uhuge)<sp/>rsid_null;</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a0b223eda0b9a76c839171ba70fe300d1" kindref="member">BxCore::File::Read</ref>(File,<sp/>&amp;ID,<sp/>8);</highlight></codeline>
 <codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(rsid)<sp/>ID;</highlight></codeline>
 <codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>파일세이브</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Save(<ref refid="structid__struct__03" kindref="compound">id_file</ref><sp/>File)</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Save(id_file<sp/>File)</highlight></codeline>
 <codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uhuge<sp/>ID<sp/>=<sp/>(uhuge)<sp/>rsid_null;</highlight></codeline>
 <codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Linker)<sp/>ID<sp/>=<sp/>(uhuge)<sp/>Linker-&gt;GetID();</highlight></codeline>
@@ -416,6 +416,6 @@
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="338"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDynamic.hpp"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxDynamic.hpp"/>
   </compounddef>
 </doxygen>

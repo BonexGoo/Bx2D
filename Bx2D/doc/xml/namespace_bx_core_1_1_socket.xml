@@ -4,7 +4,7 @@
     <compoundname>BxCore::Socket</compoundname>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structid__struct__04" kindref="compound">id_socket</ref></type>
+        <type>id_socket</type>
         <definition>id_socket BxCore::Socket::Create</definition>
         <argsstring>()</argsstring>
         <name>Create</name>
@@ -16,7 +16,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="919" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="683" bodyend="690"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="965" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="740" bodyend="747"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -24,7 +24,7 @@
         <argsstring>(id_socket sock)</argsstring>
         <name>Release</name>
         <param>
-          <type><ref refid="structid__struct__04" kindref="compound">id_socket</ref></type>
+          <type>id_socket</type>
           <declname>sock</declname>
         </param>
         <briefdescription>
@@ -42,7 +42,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="926" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="692" bodyend="696"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="972" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="749" bodyend="753"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>socketstate</type>
@@ -50,7 +50,7 @@
         <argsstring>(id_socket sock)</argsstring>
         <name>GetState</name>
         <param>
-          <type><ref refid="structid__struct__04" kindref="compound">id_socket</ref></type>
+          <type>id_socket</type>
           <declname>sock</declname>
         </param>
         <briefdescription>
@@ -68,7 +68,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="933" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="698" bodyend="702"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="979" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="755" bodyend="759"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>connectresult</type>
@@ -76,7 +76,7 @@
         <argsstring>(id_socket sock, string addr, ushort port, uint timeout=0, callback_progress progress=nullptr)</argsstring>
         <name>Connect</name>
         <param>
-          <type><ref refid="structid__struct__04" kindref="compound">id_socket</ref></type>
+          <type>id_socket</type>
           <declname>sock</declname>
         </param>
         <param>
@@ -141,7 +141,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="945" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="704" bodyend="724"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="991" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="761" bodyend="781"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -149,7 +149,7 @@
         <argsstring>(id_socket sock)</argsstring>
         <name>Disconnect</name>
         <param>
-          <type><ref refid="structid__struct__04" kindref="compound">id_socket</ref></type>
+          <type>id_socket</type>
           <declname>sock</declname>
         </param>
         <briefdescription>
@@ -167,7 +167,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="952" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="726" bodyend="731"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="998" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="783" bodyend="788"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a9a23c3a4ad8819aa795983a72eb8c5b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -175,7 +175,7 @@
         <argsstring>(id_socket sock, const void *buffer, int len)</argsstring>
         <name>Send</name>
         <param>
-          <type><ref refid="structid__struct__04" kindref="compound">id_socket</ref></type>
+          <type>id_socket</type>
           <declname>sock</declname>
         </param>
         <param>
@@ -216,7 +216,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="962" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="733" bodyend="743"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1008" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="790" bodyend="800"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -224,7 +224,7 @@
         <argsstring>(id_socket sock, void *buffer, int len)</argsstring>
         <name>Recv</name>
         <param>
-          <type><ref refid="structid__struct__04" kindref="compound">id_socket</ref></type>
+          <type>id_socket</type>
           <declname>sock</declname>
         </param>
         <param>
@@ -265,7 +265,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="972" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="745" bodyend="754"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1018" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="802" bodyend="811"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -273,7 +273,7 @@
         <argsstring>(id_socket sock, byte *buffer, int len, int timeout, bool cancelmode)</argsstring>
         <name>RecvFully</name>
         <param>
-          <type><ref refid="structid__struct__04" kindref="compound">id_socket</ref></type>
+          <type>id_socket</type>
           <declname>sock</declname>
         </param>
         <param>
@@ -336,7 +336,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="984" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreImpl.cpp" bodystart="1052" bodyend="1074"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1030" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreImpl.cpp" bodystart="1078" bodyend="1100"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a4b654fd3ff8eabe722999d7e7ea71eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -373,13 +373,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="992" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="756" bodyend="759"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1038" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="813" bodyend="816"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Socket파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="913" column="1"/>
+    <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="959" column="1"/>
   </compounddef>
 </doxygen>

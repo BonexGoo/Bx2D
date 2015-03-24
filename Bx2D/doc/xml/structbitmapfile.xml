@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="247" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="247" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="248" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="248" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbitmapfile_1a53fb11f68855f60609619a44837a603a" prot="public" static="no" mutable="no">
         <type>short</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="247" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="247" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="248" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="248" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbitmapfile_1a050b383427139184533cba1a05a0b6f4" prot="public" static="no" mutable="no">
         <type>short</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="247" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="247" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="248" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="248" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbitmapfile_1a8fea396e72193ceec287e7aef93b5151" prot="public" static="no" mutable="no">
         <type>uint</type>
@@ -54,14 +54,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="247" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="247" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="248" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="248" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>bitmapfile구조체 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="247" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="247" bodyend="247"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="248" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="248" bodyend="248"/>
     <listofallmembers>
       <member refid="structbitmapfile_1a8fea396e72193ceec287e7aef93b5151" prot="public" virt="non-virtual"><scope>bitmapfile</scope><name>offbits</name></member>
       <member refid="structbitmapfile_1a53fb11f68855f60609619a44837a603a" prot="public" virt="non-virtual"><scope>bitmapfile</scope><name>param1</name></member>

@@ -5,7 +5,7 @@ QT += gui
 QT += network
 QT += opengl
 QT += widgets
-win32|android: QT += bluetooth
+win32: QT += bluetooth
 win32: RC_ICONS += ../common/main.ico
 
 CONFIG += c++11
@@ -32,6 +32,9 @@ SOURCES += ../source/SceneSwap_C.cpp
 SOURCES += ../source/SceneSwap_D.cpp
 SOURCES += ../source/SceneSwap_E.cpp
 
+###########################################################
+# Bx2D
+###########################################################
 SOURCES += ../../Bx2D/addon/BxAddOn_GIF.cpp
 SOURCES += ../../Bx2D/addon/BxAddOn_HQX.cpp
 SOURCES += ../../Bx2D/addon/BxAddOn_JPG.cpp
@@ -132,12 +135,7 @@ android{
 	ANDROID_PACKAGE_SOURCE_DIR = $$PWD/../resource/android
 }
 
-ios{
+ios|macx{
 	QMAKE_BUNDLE_DATA += ASSETS_CONFIG
 	QMAKE_BUNDLE_DATA += ASSETS_SYS
-}
-
-macx{
-        QMAKE_BUNDLE_DATA += ASSETS_CONFIG
-        QMAKE_BUNDLE_DATA += ASSETS_SYS
 }

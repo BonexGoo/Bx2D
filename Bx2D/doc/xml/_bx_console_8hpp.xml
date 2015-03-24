@@ -6,10 +6,34 @@
     <includes refid="_bx_var_map_8hpp" local="yes">BxVarMap.hpp</includes>
     <includes refid="_bx_var_vector_8hpp" local="yes">BxVarVector.hpp</includes>
     <incdepgraph>
-      <node id="49">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="50" relation="include">
+      <node id="55">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="50">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="56" relation="include">
         </childnode>
       </node>
       <node id="52">
@@ -18,10 +42,28 @@
         <childnode refid="53" relation="include">
         </childnode>
       </node>
-      <node id="53">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="54" relation="include">
+      <node id="51">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
         </childnode>
       </node>
       <node id="59">
@@ -34,38 +76,16 @@
         <childnode refid="55" relation="include">
         </childnode>
       </node>
-      <node id="54">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="55" relation="include">
-        </childnode>
-      </node>
-      <node id="50">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="51" relation="include">
-        </childnode>
-        <childnode refid="58" relation="include">
-        </childnode>
-      </node>
-      <node id="56">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="60">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="55" relation="include">
-        </childnode>
-        <childnode refid="51" relation="include">
-        </childnode>
-      </node>
-      <node id="55">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
+      <node id="58">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
         <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="54" relation="include">
         </childnode>
       </node>
       <node id="48">
@@ -76,26 +96,6 @@
         <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="60" relation="include">
-        </childnode>
-      </node>
-      <node id="51">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="57" relation="include">
-        </childnode>
-      </node>
-      <node id="58">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="56" relation="include">
-        </childnode>
-      </node>
-      <node id="57">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="56" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -172,7 +172,7 @@
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var_vector" kindref="compound">BxVarVector&lt;BxImage, 256&gt;</ref><sp/>Back;</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var_map" kindref="compound">BxVarMap&lt;BxImage&gt;</ref><sp/>Front;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structid__struct__00" kindref="compound">id_font</ref><sp/>Font;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>id_font<sp/>Font;</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MapColorF[20][30];</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MapColorB[20][30];</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>MapText[20][30][2];</highlight></codeline>
@@ -230,6 +230,6 @@
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="131"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxConsole.hpp"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxConsole.hpp"/>
   </compounddef>
 </doxygen>

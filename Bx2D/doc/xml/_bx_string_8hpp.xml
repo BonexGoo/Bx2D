@@ -14,120 +14,120 @@
     <includedby refid="_bx_web_content_8hpp" local="no">BxWebContent.hpp</includedby>
     <includedby refid="_bx_xml_8hpp" local="no">BxXml.hpp</includedby>
     <incdepgraph>
-      <node id="388">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="389" relation="include">
+      <node id="393">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="394" relation="include">
         </childnode>
-      </node>
-      <node id="389">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="390" relation="include">
-        </childnode>
-      </node>
-      <node id="390">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="391" relation="include">
+        <childnode refid="397" relation="include">
         </childnode>
       </node>
       <node id="392">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="391">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="392" relation="include">
-        </childnode>
-      </node>
-      <node id="386">
         <label>BxString.hpp</label>
         <link refid="BxString.hpp"/>
-        <childnode refid="387" relation="include">
-        </childnode>
         <childnode refid="393" relation="include">
-        </childnode>
-        <childnode refid="394" relation="include">
-        </childnode>
-      </node>
-      <node id="393">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="388" relation="include">
-        </childnode>
-        <childnode refid="394" relation="include">
-        </childnode>
-      </node>
-      <node id="387">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="388" relation="include">
-        </childnode>
-        <childnode refid="391" relation="include">
-        </childnode>
-      </node>
-      <node id="394">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="392" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="403">
-        <label>BxXml.hpp</label>
-        <link refid="_bx_xml_8hpp_source"/>
-      </node>
-      <node id="397">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="398" relation="include">
-        </childnode>
-      </node>
-      <node id="396">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
-      </node>
-      <node id="402">
-        <label>BxWebContent.hpp</label>
-        <link refid="_bx_web_content_8hpp_source"/>
-      </node>
-      <node id="395">
-        <label>BxString.hpp</label>
-        <link refid="BxString.hpp"/>
-        <childnode refid="396" relation="include">
-        </childnode>
-        <childnode refid="397" relation="include">
         </childnode>
         <childnode refid="399" relation="include">
         </childnode>
         <childnode refid="400" relation="include">
         </childnode>
+      </node>
+      <node id="397">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="398" relation="include">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="397" relation="include">
+        </childnode>
+      </node>
+      <node id="398">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="400">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="398" relation="include">
+        </childnode>
+      </node>
+      <node id="394">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="395" relation="include">
+        </childnode>
+      </node>
+      <node id="399">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="396" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="404">
+        <label>BxCoreImpl.hpp</label>
+        <link refid="_bx_core_impl_8hpp_source"/>
+      </node>
+      <node id="401">
+        <label>BxString.hpp</label>
+        <link refid="BxString.hpp"/>
         <childnode refid="402" relation="include">
         </childnode>
         <childnode refid="403" relation="include">
         </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
       </node>
-      <node id="401">
+      <node id="409">
+        <label>BxXml.hpp</label>
+        <link refid="_bx_xml_8hpp_source"/>
+      </node>
+      <node id="403">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="408">
+        <label>BxWebContent.hpp</label>
+        <link refid="_bx_web_content_8hpp_source"/>
+      </node>
+      <node id="407">
         <label>BxCoreForQT5.hpp</label>
         <link refid="_bx_core_for_q_t5_8hpp_source"/>
       </node>
-      <node id="398">
-        <label>BxCoreImpl.hpp</label>
-        <link refid="_bx_core_impl_8hpp_source"/>
+      <node id="402">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
       </node>
-      <node id="400">
+      <node id="406">
         <label>BxScene.hpp</label>
         <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="401" relation="include">
+        <childnode refid="407" relation="include">
         </childnode>
       </node>
-      <node id="399">
+      <node id="405">
         <label>BxPanel.hpp</label>
         <link refid="_bx_panel_8hpp_source"/>
-        <childnode refid="400" relation="include">
+        <childnode refid="406" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -285,7 +285,7 @@
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>String;</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="212"><highlight class="normal"></highlight></codeline>
-<codeline lineno="217" refid="class_bx_string_1_1_parse_1a09c291cdc4c3d8ce1a39c469e2a0b9cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="217" refid="class_bx_string_1_1_parse_1a09c291cdc4c3d8ce1a39c469e2a0b9cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>id_text()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="218"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Text)</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Text<sp/>=<sp/><ref refid="namespace_bx_core_1_1_font_1a585ced3b642de2a8b287167da413553b" kindref="member">BxCore::Font::TextOpen</ref>(</highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">());</highlight></codeline>
@@ -337,7 +337,7 @@
 <codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ValidCount;</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>StringLength;</highlight></codeline>
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>string_rw<sp/>String;</highlight></codeline>
-<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>Text;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>id_text<sp/>Text;</highlight></codeline>
 <codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="293"><highlight class="normal"></highlight></codeline>
 <codeline lineno="294"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
@@ -385,7 +385,7 @@
 <codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">)<sp/>Chars.GetBytes();</highlight></codeline>
 <codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="381"><highlight class="normal"></highlight></codeline>
-<codeline lineno="386" refid="class_bx_string_1a19db3a70e9304eb5e883a6517500f348" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="386" refid="class_bx_string_1a19db3a70e9304eb5e883a6517500f348" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>id_text()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="387"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Text)</highlight></codeline>
 <codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Text<sp/>=<sp/><ref refid="namespace_bx_core_1_1_font_1a585ced3b642de2a8b287167da413553b" kindref="member">BxCore::Font::TextOpen</ref>(</highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">());</highlight></codeline>
@@ -751,7 +751,7 @@
 <codeline lineno="924"><highlight class="normal"></highlight></codeline>
 <codeline lineno="925"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="927"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/><ref refid="class_bx_var" kindref="compound">BxVar&lt;char&gt;</ref><sp/>Chars;</highlight></codeline>
-<codeline lineno="928"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/><ref refid="structid__struct__01" kindref="compound">id_text</ref><sp/>Text;</highlight></codeline>
+<codeline lineno="928"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>id_text<sp/>Text;</highlight></codeline>
 <codeline lineno="930"></codeline>
 <codeline lineno="932"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>FindPathSlash()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="933"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
@@ -772,6 +772,6 @@
 <codeline lineno="950"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="952"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxString.hpp"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxString.hpp"/>
   </compounddef>
 </doxygen>

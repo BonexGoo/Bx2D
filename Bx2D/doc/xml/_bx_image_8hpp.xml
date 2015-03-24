@@ -7,102 +7,102 @@
     <includedby refid="_bx_console_8hpp" local="yes">BxConsole.hpp</includedby>
     <includedby refid="_bx_panel_8hpp" local="no">BxPanel.hpp</includedby>
     <incdepgraph>
-      <node id="238">
-        <label>BxImage.hpp</label>
-        <link refid="BxImage.hpp"/>
-        <childnode refid="239" relation="include">
-        </childnode>
-      </node>
-      <node id="241">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="242" relation="include">
-        </childnode>
-      </node>
-      <node id="242">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="243" relation="include">
-        </childnode>
-      </node>
-      <node id="243">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="244" relation="include">
-        </childnode>
-      </node>
-      <node id="239">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="240" relation="include">
-        </childnode>
-        <childnode refid="247" relation="include">
-        </childnode>
-      </node>
-      <node id="245">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="244">
+      <node id="250">
         <label>BxPool.hpp</label>
         <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="245" relation="include">
-        </childnode>
-      </node>
-      <node id="240">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="241" relation="include">
-        </childnode>
-        <childnode refid="246" relation="include">
-        </childnode>
-      </node>
-      <node id="247">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="245" relation="include">
-        </childnode>
-      </node>
-      <node id="246">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="245" relation="include">
-        </childnode>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="248">
-        <label>BxImage.hpp</label>
-        <link refid="BxImage.hpp"/>
-        <childnode refid="249" relation="include">
-        </childnode>
-        <childnode refid="250" relation="include">
-        </childnode>
         <childnode refid="251" relation="include">
         </childnode>
       </node>
       <node id="249">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
-      </node>
-      <node id="253">
-        <label>BxCoreForQT5.hpp</label>
-        <link refid="_bx_core_for_q_t5_8hpp_source"/>
-      </node>
-      <node id="250">
-        <label>BxConsole.hpp</label>
-        <link refid="_bx_console_8hpp_source"/>
-      </node>
-      <node id="252">
-        <label>BxScene.hpp</label>
-        <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="253" relation="include">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="250" relation="include">
         </childnode>
       </node>
       <node id="251">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="245">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+      </node>
+      <node id="252">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="251" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="248" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+      </node>
+      <node id="244">
+        <label>BxImage.hpp</label>
+        <link refid="BxImage.hpp"/>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="251" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="249" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="254">
+        <label>BxImage.hpp</label>
+        <link refid="BxImage.hpp"/>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>BxCoreForQT5.hpp</label>
+        <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      </node>
+      <node id="255">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
+      </node>
+      <node id="258">
+        <label>BxScene.hpp</label>
+        <link refid="_bx_scene_8hpp_source"/>
+        <childnode refid="259" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>BxConsole.hpp</label>
+        <link refid="_bx_console_8hpp_source"/>
+      </node>
+      <node id="257">
         <label>BxPanel.hpp</label>
         <link refid="_bx_panel_8hpp_source"/>
-        <childnode refid="252" relation="include">
+        <childnode refid="258" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -160,7 +160,7 @@
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="71" refid="class_bx_image_1ad0dcdf54200ff06a4447a83bf830579b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bx_image_1ad0dcdf54200ff06a4447a83bf830579b" kindref="member">Load</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>FileName,<sp/>type<sp/>Type,<sp/>hotspot<sp/>Hotspot<sp/>=<sp/>KEEP)</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__03" kindref="compound">id_file</ref><sp/>File<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">BxCore::File::Open</ref>(FileName,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>File<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">BxCore::File::Open</ref>(FileName,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Length<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member">BxCore::File::GetSize</ref>(File);</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>byte*<sp/>Resource<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Type<sp/>==<sp/>BMP)</highlight></codeline>
@@ -1398,6 +1398,6 @@
 <codeline lineno="1390"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="1392"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxImage.hpp"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxImage.hpp"/>
   </compounddef>
 </doxygen>

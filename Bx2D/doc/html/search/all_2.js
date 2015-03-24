@@ -4,7 +4,7 @@ var searchData=
   ['base64tobuf',['BASE64ToBUF',['../namespace_bx_core_1_1_add_on.html#a400d7d51f62351ffc1bea46d3b07d56d',1,'BxCore::AddOn']]],
   ['beginchildprocess',['BeginChildProcess',['../namespace_bx_core_1_1_system.html#aaed9632d5a8e7c639d4da18fafdf8e0e',1,'BxCore::System']]],
   ['bindpool',['BindPool',['../class_bx_dynamic_1_1_resource_1_1_bind_pool.html',1,'BxDynamic::Resource']]],
-  ['bindstorage',['BindStorage',['../namespace_bx_core_1_1_thread.html#ac8200a15947866932b0851974b98257b',1,'BxCore::Thread']]],
+  ['bindstorage',['BindStorage',['../namespace_bx_core_1_1_thread.html#a3c044242802c703c595e4f6324b340e1',1,'BxCore::Thread']]],
   ['bitmapfile',['bitmapfile',['../structbitmapfile.html',1,'']]],
   ['bitmapinfo',['bitmapinfo',['../structbitmapinfo.html',1,'']]],
   ['bitmappixel',['bitmappixel',['../unionbitmappixel.html',1,'']]],
@@ -69,10 +69,12 @@ var searchData=
   ['main',['Main',['../namespace_bx_core_1_1_main.html',1,'BxCore']]],
   ['opengl2d',['OpenGL2D',['../namespace_bx_core_1_1_open_g_l2_d.html',1,'BxCore']]],
   ['scan',['Scan',['../namespace_bx_core_1_1_bluetooth_1_1_scan.html',1,'BxCore::Bluetooth']]],
+  ['simulator',['Simulator',['../namespace_bx_core_1_1_simulator.html',1,'BxCore']]],
   ['socket',['Socket',['../namespace_bx_core_1_1_socket.html',1,'BxCore']]],
   ['sound',['Sound',['../namespace_bx_core_1_1_sound.html',1,'BxCore']]],
   ['surface',['Surface',['../namespace_bx_core_1_1_surface.html',1,'BxCore']]],
   ['system',['System',['../namespace_bx_core_1_1_system.html',1,'BxCore']]],
   ['thread',['Thread',['../namespace_bx_core_1_1_thread.html',1,'BxCore']]],
-  ['util',['Util',['../namespace_bx_core_1_1_util.html',1,'BxCore']]]
+  ['util',['Util',['../namespace_bx_core_1_1_util.html',1,'BxCore']]],
+  ['wacom',['Wacom',['../namespace_bx_core_1_1_wacom.html',1,'BxCore']]]
 ];

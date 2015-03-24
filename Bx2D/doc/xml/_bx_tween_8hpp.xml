@@ -4,52 +4,52 @@
     <compoundname>BxTween.hpp</compoundname>
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <incdepgraph>
-      <node id="406">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="407" relation="include">
+      <node id="415">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="416" relation="include">
         </childnode>
       </node>
-      <node id="404">
-        <label>BxTween.hpp</label>
-        <link refid="BxTween.hpp"/>
-        <childnode refid="405" relation="include">
-        </childnode>
-      </node>
-      <node id="407">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="408" relation="include">
-        </childnode>
-      </node>
-      <node id="408">
+      <node id="414">
         <label>BxArgument.hpp</label>
         <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="409" relation="include">
+        <childnode refid="415" relation="include">
         </childnode>
       </node>
-      <node id="410">
+      <node id="416">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="409">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="410" relation="include">
+      <node id="417">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="416" relation="include">
         </childnode>
       </node>
-      <node id="405">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="406" relation="include">
-        </childnode>
-        <childnode refid="411" relation="include">
+      <node id="412">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="413" relation="include">
         </childnode>
       </node>
       <node id="411">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="410" relation="include">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+      </node>
+      <node id="410">
+        <label>BxTween.hpp</label>
+        <link refid="BxTween.hpp"/>
+        <childnode refid="411" relation="include">
+        </childnode>
+      </node>
+      <node id="413">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="414" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxTween.hpp" line="428" column="12"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxTween.hpp" line="428" column="12"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -90,7 +90,7 @@
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Open(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>filename)</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structid__struct__03" kindref="compound">id_file</ref><sp/>File<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">BxCore::File::Open</ref>(filename,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_file<sp/>File<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a3c33eb71f02021128234b721c94701e2" kindref="member">BxCore::File::Open</ref>(filename,<sp/></highlight><highlight class="stringliteral">&quot;rb&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Length<sp/>=<sp/><ref refid="namespace_bx_core_1_1_file_1a9d540bf3bdc003c35a4ad9673654b920" kindref="member">BxCore::File::GetSize</ref>(File);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>byte*<sp/>Resource<sp/>=<sp/>(byte*)<sp/>BxAlloc(Length);</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_file_1a0b223eda0b9a76c839171ba70fe300d1" kindref="member">BxCore::File::Read</ref>(File,<sp/>Resource,<sp/>Length);</highlight></codeline>
@@ -745,6 +745,6 @@
 <codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bx_var" kindref="compound">BxVar&lt;_PartTarget&gt;</ref><sp/>_Target;</highlight></codeline>
 <codeline lineno="669"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxTween.hpp"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxTween.hpp"/>
   </compounddef>
 </doxygen>

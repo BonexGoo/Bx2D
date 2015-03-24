@@ -1,6 +1,8 @@
 var searchData=
 [
   ['unbindstorageall',['UnbindStorageAll',['../namespace_bx_core_1_1_thread.html#a9948511867e74c60e15e31f5e0d5e2b6',1,'BxCore::Thread']]],
+  ['unhookevent',['UnhookEvent',['../namespace_bx_core_1_1_simulator.html#a32150dfa8ba2425ca56af67118f25c55',1,'BxCore::Simulator']]],
+  ['unhookeventall',['UnhookEventAll',['../namespace_bx_core_1_1_simulator.html#a5fc3049a38ff3535e5ccba7dc7d7b94b',1,'BxCore::Simulator']]],
   ['unit',['Unit',['../class_bx_pool_global_1_1_unit.html',1,'BxPoolGlobal']]],
   ['unitlink',['UnitLink',['../class_bx_pool_global_1_1_unit_link.html',1,'BxPoolGlobal']]],
   ['unitname',['UnitName',['../class_bx_string_1_1_parse.html#a3ec32ba0a6e656d34b313ca6b28676e1',1,'BxString::Parse']]],

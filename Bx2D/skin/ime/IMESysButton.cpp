@@ -48,7 +48,7 @@ unknown OnNotify(string message, unknown param)
 	return nullptr;
 }
 
-string OnTouch(BxPanel::Touch type)
+string OnTouch(BxPanel::Touch type, int x, int y)
 {
 	if(type == BxPanel::tchDown || type == BxPanel::tchMoveIn) m--.flag("IsClicked") = true;
 	else if(type == BxPanel::tchMoveOut || type == BxPanel::tchUpIn || type == BxPanel::tchUpOut || type == BxPanel::tchUpAuto)
