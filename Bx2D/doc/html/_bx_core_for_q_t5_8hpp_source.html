@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx2d.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">API
-   &#160;<span id="projectnumber">4.1.0</span>
+   &#160;<span id="projectnumber">4.1.1</span>
    </div>
   </td>
  </tr>
@@ -187,30 +187,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keyword">enum</span> {DClickRadius = 100, DClickRadiusMin = 20, DClickRadiusSpeed = 10};</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordtype">bool</span> TouchPressed;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordtype">bool</span> TouchRPressed;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordtype">int</span> TouchRAngle;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            uint SavedTouchFlag;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordtype">float</span> SavedTouchPosX[32];</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordtype">float</span> SavedTouchPosY[32];</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            QTimer WheelMoveTimer;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            QTimer WheelEndTimer;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordtype">bool</span> WheelPressed;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordtype">int</span> RadiusForWheel;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordtype">bool</span> FirstMoved;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordtype">bool</span> FirstSized;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordtype">int</span> PosX;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordtype">int</span> PosY;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordtype">int</span> SizeW;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordtype">int</span> SizeH;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            BxCore::Simulator::EventFilter Filter;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            GLWidget() : QGLWidget(QGLFormat(QGL::SampleBuffers)),</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                TouchPressed(false), TouchRPressed(false), TouchRAngle(0), SavedTouchFlag(0),</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                WheelMoveTimer(this), WheelEndTimer(this), WheelPressed(false), RadiusForWheel(0),</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                FirstMoved(false), FirstSized(false), PosX(0), PosY(0), SizeW(0), SizeH(0)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordtype">bool</span> InputPressed[inputkind_max];</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordtype">int</span> SavedTouchAngle;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            uint SavedTouchFlag;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordtype">float</span> SavedTouchPosX[32];</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordtype">float</span> SavedTouchPosY[32];</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            QTimer WheelMoveTimer;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            QTimer WheelEndTimer;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordtype">int</span> RadiusForWheel;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordtype">bool</span> FirstMoved;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordtype">bool</span> FirstSized;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordtype">int</span> PosX;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordtype">int</span> PosY;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordtype">int</span> SizeW;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordtype">int</span> SizeH;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            BxCore::Simulator::EventFilter Filter;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            GLWidget() : QGLWidget(QGLFormat(QGL::SampleBuffers)),</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                SavedTouchAngle(0), SavedTouchFlag(0), WheelMoveTimer(this), WheelEndTimer(this), RadiusForWheel(0),</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                FirstMoved(false), FirstSized(false), PosX(0), PosY(0), SizeW(0), SizeH(0)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; inputkind_max; ++i)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                    InputPressed[i] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                setWindowTitle(<a class="code" href="namespace_bx_core_1_1_system.html#aaaf026f3d1f3df3ac0794f8adcf1c4f9">BxCore::System::GetConfigString</a>(<span class="stringliteral">&quot;Bx.Currently.Title&quot;</span>, <span class="stringliteral">&quot;&quot;</span>));</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">                #ifdef Q_OS_MACX</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    setWindowFlags(Qt::CustomizeWindowHint | Qt::WindowMinimizeButtonHint | Qt::WindowCloseButtonHint);</div>
@@ -230,11 +230,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordtype">bool</span> IsTouchPressed()</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <span class="keywordflow">return</span> TouchPressed;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <span class="keywordflow">return</span> InputPressed[inputkind_finger] | InputPressed[inputkind_wacom_pen] | InputPressed[inputkind_mouse_left];</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            }</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordtype">bool</span> IsSpecialPressed()</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <span class="keywordflow">return</span> TouchRPressed | WheelPressed;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <span class="keywordflow">return</span> InputPressed[inputkind_mouse_right] | InputPressed[inputkind_mouse_wheel];</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            }</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordtype">void</span> BindTexture(GLuint texture)</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            {</div>
@@ -270,10 +270,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordtype">void</span> SetVirtualTouch(inputkind kind, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> force, <span class="keywordtype">bool</span> pressed)</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <span class="keywordflow">if</span>(TouchPressed != pressed)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <span class="keywordflow">if</span>(InputPressed[kind] != pressed)</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                    PostMouseEvent((pressed)? systouchtype_down : systouchtype_up, 0, x, y, force, kind);</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(pressed) PostMouseEvent(systouchtype_move, 0, x, y, force, kind);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                TouchPressed = pressed;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                InputPressed[kind] = pressed;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            }</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keyword">public</span> slots:</div>
@@ -290,7 +290,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            }</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordtype">void</span> WheelMove()</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            {</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <span class="keywordflow">if</span>(WheelPressed)</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <span class="keywordflow">if</span>(InputPressed[inputkind_mouse_wheel])</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                {</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                    <a class="code" href="structpoint.html">point</a> CursorPos = <a class="code" href="namespace_bx_core_1_1_simulator.html#a602d7d98ede50cdff9e707d2be7793fd">BxCore::Simulator::GetCursorPos</a>();</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                    <a class="code" href="structpoint.html">point</a> WindowPos = <a class="code" href="namespace_bx_core_1_1_simulator.html#a29e75e9888fe73d4a63a130f3d245214">BxCore::Simulator::GetWindowPos</a>();</div>
@@ -372,7 +372,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <span class="keywordflow">if</span>(SavedTouchFlag == 0)</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                {</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                    PostMouseEventsByWheelDone();</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                    TouchPressed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                    InputPressed[inputkind_finger] = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                }</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                uint CurTouchFlag = 0;</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                QList&lt;QTouchEvent::TouchPoint&gt; Points = <span class="keyword">event</span>-&gt;touchPoints();</div>
@@ -401,7 +401,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            }</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            <span class="keywordtype">void</span> touchEventDone()</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            {</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                TouchPressed = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                InputPressed[inputkind_finger] = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 32; ++i)</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                    <span class="keywordflow">if</span>((SavedTouchFlag &amp; (1 &lt;&lt; i)) != 0)</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                        PostMouseEvent(systouchtype_up, i, SavedTouchPosX[i], SavedTouchPosY[i], 1, inputkind_finger);</div>
@@ -409,38 +409,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            }</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keywordtype">void</span> mousePressEvent(QMouseEvent* event)</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="keywordflow">if</span>(!TouchRPressed &amp;&amp; event-&gt;button() == Qt::LeftButton)</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="keywordflow">if</span>(!InputPressed[inputkind_mouse_right] &amp;&amp; event-&gt;button() == Qt::LeftButton)</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                {</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                    PostMouseEventsByWheelDone();</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                    TouchPressed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                    InputPressed[inputkind_mouse_left] = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                    PostMouseEvent(systouchtype_down, 0, event-&gt;x(), <span class="keyword">event</span>-&gt;y(), 1, inputkind_mouse_left);</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                <span class="keywordflow">if</span>(!TouchPressed &amp;&amp; event-&gt;button() == Qt::RightButton)</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                <span class="keywordflow">if</span>(!InputPressed[inputkind_mouse_left] &amp;&amp; event-&gt;button() == Qt::RightButton)</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                {</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                    PostMouseEventsByWheelDone();</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                    TouchRPressed = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                    TouchRAngle = 0;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    PostMouseEventByRotate(systouchtype_down, event-&gt;x(), <span class="keyword">event</span>-&gt;y(), 1, TouchRAngle);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                    InputPressed[inputkind_mouse_right] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                    SavedTouchAngle = 0;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    PostMouseEventByRotate(systouchtype_down, event-&gt;x(), <span class="keyword">event</span>-&gt;y(), 1, SavedTouchAngle);</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                }</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            }</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent* event)</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            {</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                <span class="keywordflow">if</span>(TouchPressed &amp;&amp; (event-&gt;buttons() &amp; Qt::LeftButton))</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                <span class="keywordflow">if</span>(InputPressed[inputkind_mouse_left] &amp;&amp; (event-&gt;buttons() &amp; Qt::LeftButton))</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                    PostMouseEvent(systouchtype_move, 0, event-&gt;x(), <span class="keyword">event</span>-&gt;y(), 1, inputkind_mouse_left);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                <span class="keywordflow">if</span>(TouchRPressed &amp;&amp; (event-&gt;buttons() &amp; Qt::RightButton))</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                    PostMouseEventByRotate(systouchtype_move, event-&gt;x(), <span class="keyword">event</span>-&gt;y(), 1, TouchRAngle);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                <span class="keywordflow">if</span>(InputPressed[inputkind_mouse_right] &amp;&amp; (event-&gt;buttons() &amp; Qt::RightButton))</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                    PostMouseEventByRotate(systouchtype_move, event-&gt;x(), <span class="keyword">event</span>-&gt;y(), 1, SavedTouchAngle);</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            }</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordtype">void</span> mouseReleaseEvent(QMouseEvent* event)</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            {</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                <span class="keywordflow">if</span>(TouchPressed &amp;&amp; event-&gt;button() == Qt::LeftButton)</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                <span class="keywordflow">if</span>(InputPressed[inputkind_mouse_left] &amp;&amp; event-&gt;button() == Qt::LeftButton)</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                    TouchPressed = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                    InputPressed[inputkind_mouse_left] = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                    PostMouseEvent(systouchtype_up, 0, event-&gt;x(), <span class="keyword">event</span>-&gt;y(), 1, inputkind_mouse_left);</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                }</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                <span class="keywordflow">if</span>(TouchRPressed &amp;&amp; event-&gt;button() == Qt::RightButton)</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                <span class="keywordflow">if</span>(InputPressed[inputkind_mouse_right] &amp;&amp; event-&gt;button() == Qt::RightButton)</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                {</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                    TouchRPressed = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                    PostMouseEventByRotate(systouchtype_up, event-&gt;x(), <span class="keyword">event</span>-&gt;y(), 1, TouchRAngle);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                    InputPressed[inputkind_mouse_right] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                    PostMouseEventByRotate(systouchtype_up, event-&gt;x(), <span class="keyword">event</span>-&gt;y(), 1, SavedTouchAngle);</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                }</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            }</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <span class="keywordtype">void</span> keyPressEvent(QKeyEvent* event)</div>
@@ -485,16 +485,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            {</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> X = <span class="keyword">event</span>-&gt;x();</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> Y = <span class="keyword">event</span>-&gt;y();</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                <span class="keywordflow">if</span>(TouchRPressed)</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                <span class="keywordflow">if</span>(InputPressed[inputkind_mouse_right])</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                {</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                    TouchRAngle = (TouchRAngle + 16 * <span class="keyword">event</span>-&gt;delta() / 120 + 1024) % 1024;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                    PostMouseEventByRotate(systouchtype_move, event-&gt;x(), <span class="keyword">event</span>-&gt;y(), 1, TouchRAngle);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                    SavedTouchAngle = (SavedTouchAngle + 16 * <span class="keyword">event</span>-&gt;delta() / 120 + 1024) % 1024;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                    PostMouseEventByRotate(systouchtype_move, event-&gt;x(), <span class="keyword">event</span>-&gt;y(), 1, SavedTouchAngle);</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                }</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!TouchPressed)</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!InputPressed[inputkind_mouse_left])</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                {</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                    <span class="keywordflow">if</span>(!WheelPressed)</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                    <span class="keywordflow">if</span>(!InputPressed[inputkind_mouse_wheel])</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                    {</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                        WheelPressed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                        InputPressed[inputkind_mouse_wheel] = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                        RadiusForWheel = DClickRadius;</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                        PostMouseEvent(systouchtype_down, 0, X, Y, 1, inputkind_mouse_wheel, -RadiusForWheel);</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                        PostMouseEvent(systouchtype_down, 1, X, Y, 1, inputkind_mouse_wheel, +RadiusForWheel);</div>
@@ -536,9 +536,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;            }</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <span class="keywordtype">void</span> PostMouseEventsByWheelDone()</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;            {</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                <span class="keywordflow">if</span>(WheelPressed)</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                <span class="keywordflow">if</span>(InputPressed[inputkind_mouse_wheel])</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                {</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                    WheelPressed = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                    InputPressed[inputkind_mouse_wheel] = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;                    <a class="code" href="structpoint.html">point</a> CursorPos = <a class="code" href="namespace_bx_core_1_1_simulator.html#a602d7d98ede50cdff9e707d2be7793fd">BxCore::Simulator::GetCursorPos</a>();</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                    <a class="code" href="structpoint.html">point</a> WindowPos = <a class="code" href="namespace_bx_core_1_1_simulator.html#a29e75e9888fe73d4a63a130f3d245214">BxCore::Simulator::GetWindowPos</a>();</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">int</span> X = CursorPos.x - WindowPos.x;</div>
@@ -2403,7 +2403,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="namespace_bx_core_1_1_add_on_html_ac49b490a3b41c60a90e6b54a6ba3f2d4"><div class="ttname"><a href="namespace_bx_core_1_1_add_on.html#ac49b490a3b41c60a90e6b54a6ba3f2d4">BxCore::AddOn::GetBMPHeight</a></div><div class="ttdeci">int GetBMPHeight(const byte *bmp)</div><div class="ttdoc">BMP의 세로길이(pixel) </div><div class="ttdef"><b>Definition:</b> BxCoreImpl.cpp:1046</div></div>
 <div class="ttc" id="namespace_bx_core_1_1_surface_html_add1206ac58b30b117600c186daca0973"><div class="ttname"><a href="namespace_bx_core_1_1_surface.html#add1206ac58b30b117600c186daca0973">BxCore::Surface::GetWidthHW</a></div><div class="ttdeci">int GetWidthHW(bool usemargin=true)</div><div class="ttdoc">하드웨어적 화면너비 구하기 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:403</div></div>
 <div class="ttc" id="class_bx_var_vector_html"><div class="ttname"><a href="class_bx_var_vector.html">BxVarVector</a></div><div class="ttdoc">vector식 가변배열 제공(BxVar와 동일인터페이스) </div><div class="ttdef"><b>Definition:</b> BxVarVector.hpp:21</div></div>
-<div class="ttc" id="namespace_bx_core_html"><div class="ttname"><a href="namespace_bx_core.html">BxCore</a></div><div class="ttdoc">BxEngine Core-API. </div><div class="ttdef"><b>Definition:</b> BxCore.hpp:5</div></div>
+<div class="ttc" id="namespace_bx_core_html"><div class="ttname"><a href="namespace_bx_core.html">BxCore</a></div><div class="ttdoc">Bx2D Core-API. </div><div class="ttdef"><b>Definition:</b> BxCore.hpp:5</div></div>
 <div class="ttc" id="namespace_bx_core_1_1_util_html_aacaf23bed9737504410d309578cdc7a8"><div class="ttname"><a href="namespace_bx_core_1_1_util.html#aacaf23bed9737504410d309578cdc7a8">BxCore::Util::Alloc</a></div><div class="ttdeci">void * Alloc(int size)</div><div class="ttdoc">메모리할당 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:485</div></div>
 <div class="ttc" id="class_bx_util_html_a6609c0c508f2148565c35b9212052d33"><div class="ttname"><a href="class_bx_util.html#a6609c0c508f2148565c35b9212052d33">BxUtil::GetLengthForUTF16</a></div><div class="ttdeci">global_func int GetLengthForUTF16(string utf8, int utf8length)</div><div class="ttdoc">UTF8을 UTF16으로 전환시 필요한 UTF16의 길이 </div><div class="ttdef"><b>Definition:</b> BxUtil.hpp:1291</div></div>
 <div class="ttc" id="namespace_bx_core_1_1_add_on_html_ac79df3b34b02bcb690f0d9fae8aace9a"><div class="ttname"><a href="namespace_bx_core_1_1_add_on.html#ac79df3b34b02bcb690f0d9fae8aace9a">BxCore::AddOn::CreateTTF</a></div><div class="ttdeci">id_ttf CreateTTF(const byte *ttf, const int length)</div><div class="ttdoc">TTF파일의 랜더링을 위한 객체 생성 </div><div class="ttdef"><b>Definition:</b> BxCoreImpl.cpp:991</div></div>
@@ -2432,7 +2432,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 24 2015 12:11:00 for API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 25 2015 15:00:43 for API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

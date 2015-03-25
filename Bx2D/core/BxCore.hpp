@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include <BxArgument.hpp>
 
-//! \brief BxEngine Core-API
+//! \brief Bx2D Core-API
 namespace BxCore
 {
 	//! \brief Simulator파트(데스크탑 빌드전용)

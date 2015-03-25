@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bxengine_20개요',['BxEngine 개요',['../index.html',1,'']]]
+  ['bx2d_20개요',['Bx2D 개요',['../index.html',1,'']]]
 ];

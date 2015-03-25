@@ -2379,6 +2379,7 @@
     <member refid="_bx_type_8hpp_1a4c6e25deba8468d0881a2da6271eec08a069e859d486d36fc2efc9cc7d298956d" kind="enumvalue"><name>inputkind_mouse_left</name></member>
     <member refid="_bx_type_8hpp_1a4c6e25deba8468d0881a2da6271eec08af251d6839e65c5eba00c0b244fcd36f6" kind="enumvalue"><name>inputkind_mouse_right</name></member>
     <member refid="_bx_type_8hpp_1a4c6e25deba8468d0881a2da6271eec08a323ad070d6cbbb0176f6150f3b567e0b" kind="enumvalue"><name>inputkind_mouse_wheel</name></member>
+    <member refid="_bx_type_8hpp_1a4c6e25deba8468d0881a2da6271eec08a83533af96fea0c5d49857d9e61a467c7" kind="enumvalue"><name>inputkind_max</name></member>
     <member refid="_bx_type_8hpp_1a8b6c9805575b8204581f42e97a08bbf0" kind="enum"><name>fonttype</name></member>
     <member refid="_bx_type_8hpp_1a8b6c9805575b8204581f42e97a08bbf0ac110d4756ec249ac13adce3c9c392900" kind="enumvalue"><name>fonttype_kor</name></member>
     <member refid="_bx_type_8hpp_1a8b6c9805575b8204581f42e97a08bbf0a86d6d735401cbb4bcad255e95b5b2b09" kind="enumvalue"><name>fonttype_eng</name></member>

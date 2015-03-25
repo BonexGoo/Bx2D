@@ -1,11 +1,11 @@
 ﻿#pragma once
 /*!
-\mainpage BxEngine 개요
+\mainpage Bx2D 개요
 \section developer 개발자
 	- Bonex Gu
-\section infomation 목적
+\section information 목적
 	- 크로스플랫폼향 미들웨어 게임엔진
-\section advenced 소개
+\section advanced 소개
 	- QT5기반 게임엔진
 	- OpenGLES 통합그래픽스
 	- 독립형 Core라이브러리
@@ -144,7 +144,7 @@ enum keykind:byte
 	keykind_pad_plus, keykind_pad_minus, keykind_pad_enter,
 	keykind_max
 };
-enum inputkind:byte {inputkind_finger, inputkind_wacom_pen, inputkind_mouse_left, inputkind_mouse_right, inputkind_mouse_wheel};
+enum inputkind:byte {inputkind_finger, inputkind_wacom_pen, inputkind_mouse_left, inputkind_mouse_right, inputkind_mouse_wheel, inputkind_max};
 enum fonttype:byte {fonttype_kor, fonttype_eng, fonttype_both};
 enum fontarea:byte {fontarea_fore, fontarea_bold, fontarea_both};
 enum fontoption:byte {fontoption_style, fontoption_lineup, fontoption_code};

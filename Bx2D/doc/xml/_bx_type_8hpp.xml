@@ -2652,6 +2652,13 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="_bx_type_8hpp_1a4c6e25deba8468d0881a2da6271eec08a83533af96fea0c5d49857d9e61a467c7" prot="public">
+          <name>inputkind_max</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -4573,7 +4580,7 @@
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>keykind_pad_plus,<sp/>keykind_pad_minus,<sp/>keykind_pad_enter,</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>keykind_max</highlight></codeline>
 <codeline lineno="146"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>inputkind:byte<sp/>{inputkind_finger,<sp/>inputkind_wacom_pen,<sp/>inputkind_mouse_left,<sp/>inputkind_mouse_right,<sp/>inputkind_mouse_wheel};</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>inputkind:byte<sp/>{inputkind_finger,<sp/>inputkind_wacom_pen,<sp/>inputkind_mouse_left,<sp/>inputkind_mouse_right,<sp/>inputkind_mouse_wheel,<sp/>inputkind_max};</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>fonttype:byte<sp/>{fonttype_kor,<sp/>fonttype_eng,<sp/>fonttype_both};</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>fontarea:byte<sp/>{fontarea_fore,<sp/>fontarea_bold,<sp/>fontarea_both};</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>fontoption:byte<sp/>{fontoption_style,<sp/>fontoption_lineup,<sp/>fontoption_code};</highlight></codeline>
