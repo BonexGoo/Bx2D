@@ -7,10 +7,22 @@
     <includedby refid="_bx_console_8hpp" local="yes">BxConsole.hpp</includedby>
     <includedby refid="_bx_panel_8hpp" local="no">BxPanel.hpp</includedby>
     <incdepgraph>
-      <node id="250">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="251" relation="include">
+      <node id="244">
+        <label>BxImage.hpp</label>
+        <link refid="BxImage.hpp"/>
+        <childnode refid="245" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="248" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="249" relation="include">
         </childnode>
       </node>
       <node id="249">
@@ -18,10 +30,6 @@
         <link refid="_bx_argument_8hpp_source"/>
         <childnode refid="250" relation="include">
         </childnode>
-      </node>
-      <node id="251">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
       </node>
       <node id="245">
         <label>BxDraw.hpp</label>
@@ -31,16 +39,14 @@
         <childnode refid="253" relation="include">
         </childnode>
       </node>
-      <node id="252">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="251" relation="include">
-        </childnode>
+      <node id="251">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="247">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="248" relation="include">
+      <node id="250">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="251" relation="include">
         </childnode>
       </node>
       <node id="246">
@@ -51,22 +57,16 @@
         <childnode refid="252" relation="include">
         </childnode>
       </node>
-      <node id="244">
-        <label>BxImage.hpp</label>
-        <link refid="BxImage.hpp"/>
-        <childnode refid="245" relation="include">
-        </childnode>
-      </node>
       <node id="253">
         <label>BxExpress.hpp</label>
         <link refid="_bx_express_8hpp_source"/>
         <childnode refid="251" relation="include">
         </childnode>
       </node>
-      <node id="248">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="249" relation="include">
+      <node id="252">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="251" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -81,23 +81,23 @@
         <childnode refid="257" relation="include">
         </childnode>
       </node>
+      <node id="255">
+        <label>BxAnimate.hpp</label>
+        <link refid="_bx_animate_8hpp_source"/>
+      </node>
       <node id="259">
         <label>BxCoreForQT5.hpp</label>
         <link refid="_bx_core_for_q_t5_8hpp_source"/>
       </node>
-      <node id="255">
-        <label>BxAnimate.hpp</label>
-        <link refid="_bx_animate_8hpp_source"/>
+      <node id="256">
+        <label>BxConsole.hpp</label>
+        <link refid="_bx_console_8hpp_source"/>
       </node>
       <node id="258">
         <label>BxScene.hpp</label>
         <link refid="_bx_scene_8hpp_source"/>
         <childnode refid="259" relation="include">
         </childnode>
-      </node>
-      <node id="256">
-        <label>BxConsole.hpp</label>
-        <link refid="_bx_console_8hpp_source"/>
       </node>
       <node id="257">
         <label>BxPanel.hpp</label>
@@ -1398,6 +1398,6 @@
 <codeline lineno="1390"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="1392"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/BonexData/BxProject/Bx2D/lib/BxImage.hpp"/>
+    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxImage.hpp"/>
   </compounddef>
 </doxygen>

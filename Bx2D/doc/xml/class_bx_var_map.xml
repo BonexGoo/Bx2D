@@ -4,7 +4,6 @@
     <compoundname>BxVarMap</compoundname>
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <innerclass refid="class_bx_var_map_1_1_var_info" prot="private">BxVarMap::VarInfo</innerclass>
-    <innerclass refid="class_bx_var_map_1_1_var_map" prot="private">BxVarMap::VarMap</innerclass>
     <innerclass refid="class_bx_var_map_1_1_var_table" prot="private">BxVarMap::VarTable</innerclass>
     <templateparamlist>
       <param>
@@ -37,20 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="13" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="12" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="class_bx_var_map_1a14b913a323521b9d9cf1480a36c68247" prot="private" static="no">
-        <type><ref refid="class_bx_pool" kindref="compound">BxPool</ref>&lt; VarMap &gt;</type>
-        <definition>typedef BxPool&lt;VarMap&gt; BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::MapPool</definition>
-        <argsstring></argsstring>
-        <name>MapPool</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="14" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="14" bodyend="-1"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="12" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="class_bx_var_map_1ac28c7621dc60e197c0316d731e9b1b91" prot="private" static="no">
         <type><ref refid="class_bx_pool" kindref="compound">BxPool</ref>&lt; VarInfo &gt;</type>
@@ -63,7 +49,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="15" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="15" bodyend="-1"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="13" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="class_bx_var_map_1a58411236d9b595d4846c6be8188eac21" prot="private" static="no">
+        <type><ref refid="class_bx_pool" kindref="compound">BxPool</ref>&lt; <ref refid="class_bx_var_map" kindref="compound">BxVarMap</ref> &gt;</type>
+        <definition>typedef BxPool&lt;BxVarMap&gt; BxVarMap&lt; TYPE, ENDMARK, USE_NEW &gt;::MapPool</definition>
+        <argsstring></argsstring>
+        <name>MapPool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="14" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="class_bx_var_map_1a42f116b8c1f0d6204753bf688b565f0d" prot="private" static="no">
         <type><ref refid="class_bx_pool" kindref="compound">BxPool</ref>&lt; TYPE &gt;</type>
@@ -76,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="16" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="16" bodyend="-1"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="15" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="15" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -91,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="248" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="248" bodyend="-1"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="242" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="242" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_var_map_1afc3203ced12c29d3757f2dc32404a56b" prot="private" static="no" mutable="no">
         <type>union BxVarMap::@18</type>
@@ -104,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="253" column="1"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="247" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -119,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="251" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="251" bodyend="-1"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="245" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="245" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_bx_var_map_1a6c85e9d55750adc317d65a76928084b4" prot="public" static="no" mutable="no">
         <type>TYPE *</type>
@@ -132,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="252" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="252" bodyend="-1"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="246" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="246" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -151,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="21" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="21" bodyend="39"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="20" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="20" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a0b705d1927e03b2335eca07c7ba73381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE &amp;</type>
@@ -168,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="42" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="42" bodyend="62"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="41" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="41" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a3562232edc43c2ef8d9ebf23f36bcf6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE &amp;</type>
@@ -185,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="65" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="65" bodyend="87"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="64" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="64" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1ad6ba0372b4f37820e578c09b6c6d9719" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE *</type>
@@ -202,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="91" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="91" bodyend="101"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="90" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="90" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1ae32667cc60a1a5602e64325d0c78ba72" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE *</type>
@@ -219,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="104" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="104" bodyend="116"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="103" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="103" bodyend="115"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1afd82efae6af202331d71861068135566" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>TYPE *</type>
@@ -236,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="119" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="119" bodyend="133"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="118" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="118" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a99e4af3011fc81482ac6fa3a5ad42f02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -253,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="137" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="137" bodyend="145"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="136" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="136" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a6cce3b47dab5ca4973e16e5c2ed18a75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -270,7 +269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="148" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="148" bodyend="156"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="147" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="147" bodyend="155"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1afac3b8a67996f7f453a9faa009ef3bf6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -287,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="159" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="159" bodyend="167"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="158" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="158" bodyend="166"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a9a8c33fa5b035357808d6d5e76ae2879" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -300,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="171" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="171" bodyend="193"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="170" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="170" bodyend="192"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a620a1b1b480a997c9f7c8a57f1ff194d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const int</type>
@@ -313,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="197" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="197" bodyend="197"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="196" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="196" bodyend="196"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1aa8c21787ff2e1295a1b3366a46a4033c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const void *</type>
@@ -326,7 +325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="201" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="201" bodyend="201"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="200" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="200" bodyend="200"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1ad22b3b33939bbbe3db161d83e1a4893b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -339,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="205" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="205" bodyend="209"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="204" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="204" bodyend="208"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a2fe935faa3ac75e6a395ec325e157fda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -352,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="213" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="213" bodyend="222"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="212" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="212" bodyend="221"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -370,7 +369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="225" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="225" bodyend="225"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="224" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="224" bodyend="224"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -389,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="255" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="255" bodyend="269"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="249" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="249" bodyend="263"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1a2ab51d0705f5c638abad0ea5f450e204" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -406,7 +405,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="271" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="271" bodyend="283"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="265" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="265" bodyend="277"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1afe6d906455ab06498eaecc67e8639e10" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -423,7 +422,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="285" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="285" bodyend="302"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="279" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="279" bodyend="296"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1ac5afe9713c9b693e627b786187f1d223" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -440,7 +439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="304" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="304" bodyend="323"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="298" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="298" bodyend="317"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_var_map_1ac8a9fe2efc21322fa98a3ed4b3467114" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -457,7 +456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="325" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="325" bodyend="349"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="319" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="319" bodyend="343"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -482,7 +481,7 @@
         <label>TYPE</label>
       </node>
     </collaborationgraph>
-    <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" line="9" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="8" bodyend="350"/>
+    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" line="9" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarMap.hpp" bodystart="8" bodyend="344"/>
     <listofallmembers>
       <member refid="class_bx_var_map_1ad6ba0372b4f37820e578c09b6c6d9719" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Access</name></member>
       <member refid="class_bx_var_map_1ae32667cc60a1a5602e64325d0c78ba72" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Access</name></member>
@@ -495,7 +494,7 @@
       <member refid="class_bx_var_map_1a0f63ca5c141a5e48a45378a6ec3bd207" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>Info</name></member>
       <member refid="class_bx_var_map_1ac28c7621dc60e197c0316d731e9b1b91" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>InfoPool</name></member>
       <member refid="class_bx_var_map_1a2ab51d0705f5c638abad0ea5f450e204" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>InvalideChild</name></member>
-      <member refid="class_bx_var_map_1a14b913a323521b9d9cf1480a36c68247" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>MapPool</name></member>
+      <member refid="class_bx_var_map_1a58411236d9b595d4846c6be8188eac21" prot="private" virt="non-virtual"><scope>BxVarMap</scope><name>MapPool</name></member>
       <member refid="class_bx_var_map_1a0b705d1927e03b2335eca07c7ba73381" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>operator()</name></member>
       <member refid="class_bx_var_map_1a3562232edc43c2ef8d9ebf23f36bcf6b" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>operator()</name></member>
       <member refid="class_bx_var_map_1adc7d39ccd232b5d647f557c7bdceeed0" prot="public" virt="non-virtual"><scope>BxVarMap</scope><name>operator[]</name></member>

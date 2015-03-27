@@ -12,58 +12,56 @@
     <includes refid="_bx_util_8hpp" local="no">BxUtil.hpp</includes>
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <incdepgraph>
+      <node id="126">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
       <node id="108">
         <label>QLibrary</label>
+      </node>
+      <node id="130">
+        <label>BxKeyword.hpp</label>
+        <link refid="_bx_keyword_8hpp_source"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="116" relation="include">
+        </childnode>
       </node>
       <node id="107">
         <label>QStandardPaths</label>
       </node>
-      <node id="128">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
-      </node>
-      <node id="127">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="128" relation="include">
-        </childnode>
-        <childnode refid="120" relation="include">
-        </childnode>
-        <childnode refid="113" relation="include">
-        </childnode>
-      </node>
       <node id="94">
         <label>QThread</label>
+      </node>
+      <node id="116">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="117" relation="include">
+        </childnode>
       </node>
       <node id="93">
         <label>QHostInfo</label>
       </node>
-      <node id="115">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="114" relation="include">
+      <node id="124">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
         </childnode>
       </node>
       <node id="117">
         <label>BxArgument.hpp</label>
         <link refid="_bx_argument_8hpp_source"/>
         <childnode refid="115" relation="include">
-        </childnode>
-      </node>
-      <node id="114">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="119">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="120" relation="include">
-        </childnode>
-        <childnode refid="122" relation="include">
         </childnode>
       </node>
       <node id="102">
@@ -75,10 +73,12 @@
       <node id="111">
         <label>5.4.0/QtGui/qpa/qplatformnativeinterface.h</label>
       </node>
-      <node id="113">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="114" relation="include">
+      <node id="119">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
         </childnode>
       </node>
       <node id="91">
@@ -90,14 +90,9 @@
       <node id="112">
         <label>QAbstractNativeEventFilter</label>
       </node>
-      <node id="121">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="116" relation="include">
-        </childnode>
-      </node>
-      <node id="105">
-        <label>QMouseEvent</label>
+      <node id="114">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
       </node>
       <node id="88">
         <label>BxCoreForQT5.cpp</label>
@@ -121,34 +116,22 @@
         <childnode refid="127" relation="include">
         </childnode>
       </node>
+      <node id="105">
+        <label>QMouseEvent</label>
+      </node>
+      <node id="129">
+        <label>BxAutoBuffer.hpp</label>
+        <link refid="_bx_auto_buffer_8hpp_source"/>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
       <node id="97">
         <label>QTime</label>
       </node>
       <node id="90">
         <label>QApplication</label>
-      </node>
-      <node id="120">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="113" relation="include">
-        </childnode>
-      </node>
-      <node id="109">
-        <label>QDesktopWidget</label>
-      </node>
-      <node id="98">
-        <label>QTimer</label>
-      </node>
-      <node id="126">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="119" relation="include">
-        </childnode>
-      </node>
-      <node id="110">
-        <label>QWindow</label>
       </node>
       <node id="125">
         <label>BxVarVector.hpp</label>
@@ -160,26 +143,29 @@
         <childnode refid="120" relation="include">
         </childnode>
       </node>
-      <node id="130">
-        <label>BxKeyword.hpp</label>
-        <link refid="_bx_keyword_8hpp_source"/>
-        <childnode refid="127" relation="include">
-        </childnode>
-      </node>
-      <node id="124">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="116" relation="include">
-        </childnode>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
-      </node>
-      <node id="122">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
+      <node id="115">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
         <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>QDesktopWidget</label>
+      </node>
+      <node id="98">
+        <label>QTimer</label>
+      </node>
+      <node id="110">
+        <label>QWindow</label>
+      </node>
+      <node id="127">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
         </childnode>
       </node>
       <node id="103">
@@ -187,9 +173,6 @@
       </node>
       <node id="99">
         <label>QFile</label>
-      </node>
-      <node id="96">
-        <label>QSemaphore</label>
       </node>
       <node id="89">
         <label>BxCoreForQT5.hpp</label>
@@ -255,16 +238,11 @@
         <childnode refid="121" relation="include">
         </childnode>
       </node>
+      <node id="96">
+        <label>QSemaphore</label>
+      </node>
       <node id="106">
         <label>QFontDatabase</label>
-      </node>
-      <node id="129">
-        <label>BxAutoBuffer.hpp</label>
-        <link refid="_bx_auto_buffer_8hpp_source"/>
-        <childnode refid="116" relation="include">
-        </childnode>
-        <childnode refid="121" relation="include">
-        </childnode>
       </node>
       <node id="118">
         <label>BxScene.hpp</label>
@@ -276,17 +254,30 @@
         <childnode refid="127" relation="include">
         </childnode>
       </node>
+      <node id="120">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
       <node id="101">
         <label>QDir</label>
       </node>
-      <node id="116">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="117" relation="include">
+      <node id="128">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="121" relation="include">
         </childnode>
-      </node>
-      <node id="92">
-        <label>QTcpSocket</label>
+        <childnode refid="115" relation="include">
+        </childnode>
       </node>
       <node id="123">
         <label>BxPanel.hpp</label>
@@ -302,8 +293,17 @@
         <childnode refid="127" relation="include">
         </childnode>
       </node>
+      <node id="92">
+        <label>QTcpSocket</label>
+      </node>
       <node id="100">
         <label>QFileInfo</label>
+      </node>
+      <node id="113">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="114" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innernamespace refid="namespace_bx_core">BxCore</innernamespace>
@@ -331,7 +331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" line="92" column="24" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="92" bodyend="-1"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" line="92" column="24" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_core_for_q_t5_8cpp_1ab7c915e7df4459d83210c361eba45693" prot="public" static="no">
         <name>BREAK_TEXT</name>
@@ -343,7 +343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" line="253" column="26"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" line="253" column="26"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1766,6 +1766,6 @@
 <codeline lineno="1449"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1450"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp"/>
+    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp"/>
   </compounddef>
 </doxygen>

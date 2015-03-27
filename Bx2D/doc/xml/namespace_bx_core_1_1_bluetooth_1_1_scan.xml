@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1047" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="824" bodyend="829"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1047" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="824" bodyend="829"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1_1_scan_1a778a194d64b970fafc7b85be5a2cd687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1048" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="831" bodyend="836"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1048" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="831" bodyend="836"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1_1_scan_1a085a7a90cbef745c24adbc1125040409" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1049" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="838" bodyend="841"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1049" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="838" bodyend="841"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1_1_scan_1af56580823ea3845405d7bcde9c3b5a46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1050" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="843" bodyend="846"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1050" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="843" bodyend="846"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_bluetooth_1_1_scan_1aac64d419aeb81f19603077f947d5356d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>string</type>
@@ -70,13 +70,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1051" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="848" bodyend="851"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1051" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="848" bodyend="851"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Scan파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1046" column="1"/>
+    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1046" column="1"/>
   </compounddef>
 </doxygen>

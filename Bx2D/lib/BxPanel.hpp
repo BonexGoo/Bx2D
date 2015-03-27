@@ -47,7 +47,8 @@ class BxPanel
 	TYPE1 Notify(string message, TYPE2 param = nullptr)
 	{
 		VarL->RefFunc->Service(VarL->VarM);
-		return (TYPE1) VarL->RefFunc->Notify(message, (unknown) param);
+        unknown Result = VarL->RefFunc->Notify(message, *((unknown*) &param));
+        return *((TYPE1*) &Result);
 	}
 	public: const point Paint(Param type, const BxArgument& args)
 	{

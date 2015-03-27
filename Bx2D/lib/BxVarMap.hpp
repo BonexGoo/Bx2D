@@ -8,11 +8,10 @@ template<typename TYPE, uint ENDMARK = 0, bool USE_NEW = false>
 class BxVarMap
 {
 	class VarTable;
-	class VarMap;
 	class VarInfo;
 	typedef BxPool<VarTable> TablePool;
-	typedef BxPool<VarMap> MapPool;
 	typedef BxPool<VarInfo> InfoPool;
+    typedef BxPool<BxVarMap> MapPool;
 	typedef BxPool<TYPE> TypePool;
 
 public:
@@ -183,8 +182,8 @@ public:
 				if(USE_NEW) delete Table->Ch[i]->Data;
 				else TypePool::FreeClass(Table->Ch[i]->Data);
 				Table->Ch[i]->Data = nullptr; // For child's Reset()
-				if(USE_NEW) delete (VarMap*) Table->Ch[i];
-				else MapPool::FreeClass((VarMap*) Table->Ch[i]);
+                if(USE_NEW) delete Table->Ch[i];
+                else MapPool::FreeClass(Table->Ch[i]);
 			}
 			if(USE_NEW) delete Table;
 			else TablePool::FreeClass(Table);
@@ -232,11 +231,6 @@ private:
 		public: VarTable() : Count(0)
 		{BxCore::Util::MemSet(Ch, 0x00, sizeof(BxVarMap*) * 16);}
 	};
-	class VarMap : public BxVarMap
-	{
-		public: VarMap() : BxVarMap(0) {}
-		public: ~VarMap() {}
-	};
 	class VarInfo
 	{
 		public: int Count;
@@ -261,8 +255,8 @@ private:
 		}
 		if(!Table->Ch[i])
 		{
-			if(USE_NEW) Table->Ch[i] = new VarMap();
-			else Table->Ch[i] = MapPool::MakeClass();
+            if(USE_NEW) Table->Ch[i] = new BxVarMap(0);
+            else Table->Ch[i] = new((mint) MapPool::Make()) BxVarMap(0);
 			Table->Count++;
 		}
 		return Table->Ch[i];
@@ -271,8 +265,8 @@ private:
 	inline void InvalideChild(const int i)
 	{
 		BxASSERT("BxVarMap<이미 삭제된 Table->Ch[i]를 삭제하려 합니다>", Table->Ch[i]);
-		if(USE_NEW) delete (VarMap*) Table->Ch[i];
-		else MapPool::FreeClass((VarMap*) Table->Ch[i]);
+        if(USE_NEW) delete Table->Ch[i];
+        else MapPool::FreeClass(Table->Ch[i]);
 		Table->Ch[i] = nullptr;
 		if(--Table->Count == 0)
 		{

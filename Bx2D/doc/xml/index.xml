@@ -668,8 +668,8 @@
   </compound>
   <compound refid="class_bx_var_map" kind="class"><name>BxVarMap</name>
     <member refid="class_bx_var_map_1afab408ba342f66c8f13c67f8db9f8e2c" kind="typedef"><name>TablePool</name></member>
-    <member refid="class_bx_var_map_1a14b913a323521b9d9cf1480a36c68247" kind="typedef"><name>MapPool</name></member>
     <member refid="class_bx_var_map_1ac28c7621dc60e197c0316d731e9b1b91" kind="typedef"><name>InfoPool</name></member>
+    <member refid="class_bx_var_map_1a58411236d9b595d4846c6be8188eac21" kind="typedef"><name>MapPool</name></member>
     <member refid="class_bx_var_map_1a42f116b8c1f0d6204753bf688b565f0d" kind="typedef"><name>TypePool</name></member>
     <member refid="class_bx_var_map_1a9ee9bb1780634bcffdccbcef9d0b6dd4" kind="variable"><name>Table</name></member>
     <member refid="class_bx_var_map_1afc3203ced12c29d3757f2dc32404a56b" kind="variable"><name>@19</name></member>
@@ -1052,6 +1052,13 @@
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a414c01717bf4ff54763d8610ad59f42c" kind="function"><name>GetResource</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1adef288360223f451cc7893fc5b76f5e8" kind="function"><name>CallSerialize</name></member>
   </compound>
+  <compound refid="class_bx_auto_buffer_1_1_list" kind="class"><name>BxAutoBuffer::List</name>
+    <member refid="class_bx_auto_buffer_1_1_list_1ae35c02438d9067deb74156c823a3115f" kind="variable"><name>Data</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1ab4f72478274a95e6b54b672b20d5732c" kind="variable"><name>Size</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1a616cd9450e2d3354a66ac938d4037229" kind="variable"><name>Next</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1a94fd5e62cb0f37710d78e9dfb20800ce" kind="function"><name>List</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1a0c9be1e5f422f13a70a9ea47082cb3cc" kind="function"><name>~List</name></member>
+  </compound>
   <compound refid="class_bx_singleton_1_1_list" kind="class"><name>BxSingleton::List</name>
     <member refid="class_bx_singleton_1_1_list_1a9adfb49d2ba3e720706370792c1ad038" kind="variable"><name>Unit</name></member>
     <member refid="class_bx_singleton_1_1_list_1a53d1d7119b04f1c89f2353c7d7d4b4be" kind="variable"><name>Next</name></member>
@@ -1062,13 +1069,6 @@
     <member refid="class_bx_singleton_1_1_list_1a09172576a94e56e6753917ee9307ff7d" kind="function"><name>Rebind</name></member>
     <member refid="class_bx_singleton_1_1_list_1aac733da6cfca2cf8c2059154d82cc1ac" kind="function"><name>Unbind</name></member>
     <member refid="class_bx_singleton_1_1_list_1a0e5b91668b0278e628ad6326576f9468" kind="function"><name>UnbindAll</name></member>
-  </compound>
-  <compound refid="class_bx_auto_buffer_1_1_list" kind="class"><name>BxAutoBuffer::List</name>
-    <member refid="class_bx_auto_buffer_1_1_list_1ae35c02438d9067deb74156c823a3115f" kind="variable"><name>Data</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1ab4f72478274a95e6b54b672b20d5732c" kind="variable"><name>Size</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1a616cd9450e2d3354a66ac938d4037229" kind="variable"><name>Next</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1a94fd5e62cb0f37710d78e9dfb20800ce" kind="function"><name>List</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1a0c9be1e5f422f13a70a9ea47082cb3cc" kind="function"><name>~List</name></member>
   </compound>
   <compound refid="class_bx_path_find_1_1_map" kind="class"><name>BxPathFind::Map</name>
     <member refid="class_bx_path_find_1_1_map_1a72878b3428294efec8b65ebc57ed35fd" kind="friend"><name>Hurdle</name></member>
@@ -1360,18 +1360,18 @@
     <member refid="class_bx_path_find_1_1_map_1_1_triangle_1aa89ec58e16208cb7c953c4aef9b7a856" kind="function"><name>INSERT_FIRST</name></member>
     <member refid="class_bx_path_find_1_1_map_1_1_triangle_1abfd96ca3b81c98259b869318913694cb" kind="function"><name>~Triangle</name></member>
   </compound>
+  <compound refid="class_bx_argument_1_1_unit" kind="class"><name>BxArgument::Unit</name>
+    <member refid="class_bx_argument_1_1_unit_1a24d06e65bcfe1606c27b768aa36c70ef" kind="variable"><name>Next</name></member>
+    <member refid="class_bx_argument_1_1_unit_1a2e755b02a3c3ecdfef821244667e894c" kind="function"><name>Unit</name></member>
+    <member refid="class_bx_argument_1_1_unit_1ac7919f7925dc94a46b27a52c072c804b" kind="function"><name>~Unit</name></member>
+    <member refid="class_bx_argument_1_1_unit_1a4a3857d548a770b7b59fd06e68622d0e" kind="function"><name>VTablePtr</name></member>
+  </compound>
   <compound refid="class_bx_pool_global_1_1_unit" kind="class"><name>BxPoolGlobal::Unit</name>
     <member refid="class_bx_pool_global_1_1_unit_1a5e77968b9faaebb82d6bbb83810b752c" kind="variable"><name>Next</name></member>
     <member refid="class_bx_pool_global_1_1_unit_1a38355505768c59fae2266502bb22b8ac" kind="function"><name>Unit</name></member>
     <member refid="class_bx_pool_global_1_1_unit_1a85a079f0820f9e0a0e5e1b50e5f3f8aa" kind="function"><name>Quit</name></member>
     <member refid="class_bx_pool_global_1_1_unit_1ab40c59973e7765b3cba71f985939a282" kind="function"><name>Free</name></member>
     <member refid="class_bx_pool_global_1_1_unit_1a76c51992d6f880345f9728b2dd9c591d" kind="function"><name>Find</name></member>
-  </compound>
-  <compound refid="class_bx_argument_1_1_unit" kind="class"><name>BxArgument::Unit</name>
-    <member refid="class_bx_argument_1_1_unit_1a24d06e65bcfe1606c27b768aa36c70ef" kind="variable"><name>Next</name></member>
-    <member refid="class_bx_argument_1_1_unit_1a2e755b02a3c3ecdfef821244667e894c" kind="function"><name>Unit</name></member>
-    <member refid="class_bx_argument_1_1_unit_1ac7919f7925dc94a46b27a52c072c804b" kind="function"><name>~Unit</name></member>
-    <member refid="class_bx_argument_1_1_unit_1a4a3857d548a770b7b59fd06e68622d0e" kind="function"><name>VTablePtr</name></member>
   </compound>
   <compound refid="class_bx_pool_1_1_unit" kind="class"><name>BxPool::Unit</name>
     <member refid="class_bx_pool_1_1_unit_1a6cc20bf3832dac5e80922491a2c48ffa" kind="enum"><name>@3</name></member>
@@ -1472,10 +1472,6 @@
     <member refid="class_bx_var_1_1_var_list_1a30563483bb50be87a39aea6acc012ed1" kind="function"><name>Init</name></member>
     <member refid="class_bx_var_1_1_var_list_1a8d33a55c26f9bb4acb375123a31200c7" kind="function"><name>RemoveData</name></member>
     <member refid="class_bx_var_1_1_var_list_1aeeab28a7316de5d59115b428f8132172" kind="function"><name>EnableRemove</name></member>
-  </compound>
-  <compound refid="class_bx_var_map_1_1_var_map" kind="class"><name>BxVarMap::VarMap</name>
-    <member refid="class_bx_var_map_1_1_var_map_1af4f586a2d94e2010cfe6444edc6eb707" kind="function"><name>VarMap</name></member>
-    <member refid="class_bx_var_map_1_1_var_map_1ac13d23687f325465f31b21461da63c5f" kind="function"><name>~VarMap</name></member>
   </compound>
   <compound refid="class_bx_var_vector_1_1_var_table" kind="class"><name>BxVarVector::VarTable</name>
     <member refid="class_bx_var_vector_1_1_var_table_1ac3f745c2539f319e70b7523c332802b6" kind="variable"><name>Ch</name></member>
