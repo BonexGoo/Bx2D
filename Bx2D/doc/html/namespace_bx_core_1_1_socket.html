@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx2d.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">API
-   &#160;<span id="projectnumber">4.1.2</span>
+   &#160;<span id="projectnumber">4.1.3</span>
    </div>
   </td>
  </tr>
@@ -108,9 +108,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5505b845782ae3f8fc493a8f26fec984"><td class="memItemLeft" align="right" valign="top">socketstate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_socket.html#a5505b845782ae3f8fc493a8f26fec984">GetState</a> (id_socket sock)</td></tr>
 <tr class="memdesc:a5505b845782ae3f8fc493a8f26fec984"><td class="mdescLeft">&#160;</td><td class="mdescRight">소켓 상태  <a href="#a5505b845782ae3f8fc493a8f26fec984">More...</a><br /></td></tr>
 <tr class="separator:a5505b845782ae3f8fc493a8f26fec984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5663d5681c5c863a16a895c0ced67b3"><td class="memItemLeft" align="right" valign="top">connectresult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_socket.html#ab5663d5681c5c863a16a895c0ced67b3">Connect</a> (id_socket sock, string addr, ushort port, uint timeout=0, callback_progress progress=nullptr)</td></tr>
-<tr class="memdesc:ab5663d5681c5c863a16a895c0ced67b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">서버로 접속  <a href="#ab5663d5681c5c863a16a895c0ced67b3">More...</a><br /></td></tr>
-<tr class="separator:ab5663d5681c5c863a16a895c0ced67b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76bb13c2ac8e53c2eb2682a4cbc5d8fd"><td class="memItemLeft" align="right" valign="top">connectstate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_socket.html#a76bb13c2ac8e53c2eb2682a4cbc5d8fd">Connect</a> (id_socket sock, string addr, ushort port, uint timeout=0, callback_progress progress=nullptr)</td></tr>
+<tr class="memdesc:a76bb13c2ac8e53c2eb2682a4cbc5d8fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">서버로 접속  <a href="#a76bb13c2ac8e53c2eb2682a4cbc5d8fd">More...</a><br /></td></tr>
+<tr class="separator:a76bb13c2ac8e53c2eb2682a4cbc5d8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea75d34361bd74bef8a073e0c747fc4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_socket.html#aea75d34361bd74bef8a073e0c747fc4c">Disconnect</a> (id_socket sock)</td></tr>
 <tr class="memdesc:aea75d34361bd74bef8a073e0c747fc4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">서버와의 접속종료  <a href="#aea75d34361bd74bef8a073e0c747fc4c">More...</a><br /></td></tr>
 <tr class="separator:aea75d34361bd74bef8a073e0c747fc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,6 +120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7be3798b55912b18de94d464abc420e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_socket.html#a7be3798b55912b18de94d464abc420e5">Recv</a> (id_socket sock, void *buffer, int len)</td></tr>
 <tr class="memdesc:a7be3798b55912b18de94d464abc420e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">데이터 수신  <a href="#a7be3798b55912b18de94d464abc420e5">More...</a><br /></td></tr>
 <tr class="separator:a7be3798b55912b18de94d464abc420e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8adaee320918ef4f41f5a1c2ed12a210"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_socket.html#a8adaee320918ef4f41f5a1c2ed12a210">GetRecvLength</a> (id_socket sock)</td></tr>
+<tr class="memdesc:a8adaee320918ef4f41f5a1c2ed12a210"><td class="mdescLeft">&#160;</td><td class="mdescRight">데이터 수신대기 길이  <a href="#a8adaee320918ef4f41f5a1c2ed12a210">More...</a><br /></td></tr>
+<tr class="separator:a8adaee320918ef4f41f5a1c2ed12a210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ff5faa5156e2443a76dfff25c8c3e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_bx_core_1_1_socket.html#aa8ff5faa5156e2443a76dfff25c8c3e2">RecvFully</a> (id_socket sock, byte *buffer, int len, int timeout, bool cancelmode)</td></tr>
 <tr class="memdesc:aa8ff5faa5156e2443a76dfff25c8c3e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">데이터 강제수신  <a href="#aa8ff5faa5156e2443a76dfff25c8c3e2">More...</a><br /></td></tr>
 <tr class="separator:aa8ff5faa5156e2443a76dfff25c8c3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,12 +133,12 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Socket파트 </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ab5663d5681c5c863a16a895c0ced67b3"></a>
+<a class="anchor" id="a76bb13c2ac8e53c2eb2682a4cbc5d8fd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">connectresult BxCore::Socket::Connect </td>
+          <td class="memname">connectstate BxCore::Socket::Connect </td>
           <td>(</td>
           <td class="paramtype">id_socket&#160;</td>
           <td class="paramname"><em>sock</em>, </td>
@@ -178,12 +181,12 @@ Functions</h2></td></tr>
     <tr><td class="paramname">sock</td><td>: 소켓ID </td></tr>
     <tr><td class="paramname">addr</td><td>: 도메인 또는 IP </td></tr>
     <tr><td class="paramname">port</td><td>: 포트번호 </td></tr>
-    <tr><td class="paramname">timeout</td><td>: 결과를 기다릴 시간 </td></tr>
+    <tr><td class="paramname">timeout</td><td>: 결과를 기다릴 시간(0이면 기다리지 않음) </td></tr>
     <tr><td class="paramname">progress</td><td>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>결과를 기다릴 경우 dowait_connected/dowait_disconnected, 안 기다릴 경우 connecting </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>결과를 기다릴 경우 connected/disconnected, 안 기다릴 경우 connecting </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_bx_core_1_1_socket.html#aea75d34361bd74bef8a073e0c747fc4c" title="서버와의 접속종료 ">Disconnect</a>, <a class="el" href="namespace_bx_core_1_1_socket.html#a5505b845782ae3f8fc493a8f26fec984" title="소켓 상태 ">GetState</a> </dd></dl>
 
 </div>
@@ -203,7 +206,7 @@ Functions</h2></td></tr>
 
 <p>소켓ID 할당 </p>
 <dl class="section return"><dt>Returns</dt><dd>소켓ID(nullptr은 실패) </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_bx_core_1_1_socket.html#afdf495c4e929f01992eba0ab78572de9" title="소켓ID 반환, 접속종료 ">Release</a>, <a class="el" href="namespace_bx_core_1_1_socket.html#ab5663d5681c5c863a16a895c0ced67b3" title="서버로 접속 ">Connect</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_bx_core_1_1_socket.html#afdf495c4e929f01992eba0ab78572de9" title="소켓ID 반환, 접속종료 ">Release</a>, <a class="el" href="namespace_bx_core_1_1_socket.html#a76bb13c2ac8e53c2eb2682a4cbc5d8fd" title="서버로 접속 ">Connect</a> </dd></dl>
 
 </div>
 </div>
@@ -228,7 +231,33 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_bx_core_1_1_socket.html#ab5663d5681c5c863a16a895c0ced67b3" title="서버로 접속 ">Connect</a>, <a class="el" href="namespace_bx_core_1_1_socket.html#a5505b845782ae3f8fc493a8f26fec984" title="소켓 상태 ">GetState</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_bx_core_1_1_socket.html#a76bb13c2ac8e53c2eb2682a4cbc5d8fd" title="서버로 접속 ">Connect</a>, <a class="el" href="namespace_bx_core_1_1_socket.html#a5505b845782ae3f8fc493a8f26fec984" title="소켓 상태 ">GetState</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8adaee320918ef4f41f5a1c2ed12a210"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int BxCore::Socket::GetRecvLength </td>
+          <td>(</td>
+          <td class="paramtype">id_socket&#160;</td>
+          <td class="paramname"><em>sock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>데이터 수신대기 길이 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sock</td><td>: 소켓ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>수신대기 길이(byte) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespace_bx_core_1_1_socket.html#a5505b845782ae3f8fc493a8f26fec984" title="소켓 상태 ">GetState</a> </dd></dl>
 
 </div>
 </div>
@@ -385,7 +414,7 @@ Functions</h2></td></tr>
     <tr><td class="paramname">sock</td><td>: 소켓ID </td></tr>
     <tr><td class="paramname">buffer</td><td>: 수신할 버퍼 </td></tr>
     <tr><td class="paramname">len</td><td>: 수신할 길이(byte) </td></tr>
-    <tr><td class="paramname">timeout</td><td>: 결과를 기다릴 시간(-1은 디폴트값) </td></tr>
+    <tr><td class="paramname">timeout</td><td>: 결과를 기다릴 시간 </td></tr>
     <tr><td class="paramname">cancelmode</td><td>: 탈출가능여부(현재 수신된 데이터가 0일 경우만 작동) </td></tr>
   </table>
   </dd>
@@ -467,7 +496,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 27 2015 01:06:18 for API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 7 2015 09:56:00 for API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

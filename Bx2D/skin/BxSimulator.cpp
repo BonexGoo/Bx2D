@@ -13,9 +13,9 @@ namespace BxCore
 class BxSimulator
 {
 public:
-	enum {MENU_HUB, MENU_GRID, MENU_LOG, MENU_START, MENU_SNAP, MENU_MAX};
-	enum {BTN_EXIT, BTN_MIN, BTN_MAX};
-	enum {TOUCH_0, TOUCH_1, TOUCH_MAX};
+	enum {MENU_HUB, MENU_GRID, MENU_LOG, MENU_START, MENU_SNAP, MENU_LENGTH};
+	enum {BTN_EXIT, BTN_MAX, BTN_MIN, BTN_LENGTH};
+	enum {TOUCH_0, TOUCH_1, TOUCH_LENGTH};
 	enum {GUI_MENUWIDTH = 112};
 
 	point NCWindowPos;
@@ -26,18 +26,19 @@ public:
 
 	bool IsMenuVisible;
 	int MenuPos;
-	bool IsMenuOn[MENU_MAX];
-	string MenuName[MENU_MAX];
-	bool IsMenuDown[MENU_MAX];
-	BxImage MenuImage[MENU_MAX][2];
-	BxImage TextImage[MENU_MAX];
+	bool IsMenuOn[MENU_LENGTH];
+	string MenuName[MENU_LENGTH];
+	bool IsMenuDown[MENU_LENGTH];
+	BxImage MenuImage[MENU_LENGTH][2];
+	BxImage TextImage[MENU_LENGTH];
 
-	string BtnName[BTN_MAX];
-	bool IsBtnDown[BTN_MAX];
-	BxImage BtnImage[BTN_MAX][3];
+	bool IsFullScreenMode;
+	string BtnName[BTN_LENGTH];
+	bool IsBtnDown[BTN_LENGTH];
+	BxImage BtnImage[BTN_LENGTH][3];
 
 	point TouchPos[2];
-	BxImage TouchImage[TOUCH_MAX];
+	BxImage TouchImage[TOUCH_LENGTH];
 
 	point CursorPos;
 	int AvgFrameTime;
@@ -89,13 +90,19 @@ public:
 		TextImage[MENU_START].Load("sys/text_start.png", BxImage::PNG, BxImage::PAD5);
 		TextImage[MENU_SNAP].Load("sys/text_snap.png", BxImage::PNG, BxImage::PAD5);
 
+		IsFullScreenMode = false;
 		BtnName[BTN_EXIT] = "BxSimulator:Exit";
+		BtnName[BTN_MAX] = "BxSimulator:Max";
 		BtnName[BTN_MIN] = "BxSimulator:Min";
 		IsBtnDown[BTN_EXIT] = false;
+		IsBtnDown[BTN_MAX] = false;
 		IsBtnDown[BTN_MIN] = false;
 		BtnImage[BTN_EXIT][0].Load("sys/exit_base.png", BxImage::PNG, BxImage::PAD7);
 		BtnImage[BTN_EXIT][1].Load("sys/exit_focus.png", BxImage::PNG, BxImage::PAD7);
 		BtnImage[BTN_EXIT][2].Load("sys/exit_push.png", BxImage::PNG, BxImage::PAD7);
+		BtnImage[BTN_MAX][0].Load("sys/max_base.png", BxImage::PNG, BxImage::PAD7);
+		BtnImage[BTN_MAX][1].Load("sys/max_focus.png", BxImage::PNG, BxImage::PAD7);
+		BtnImage[BTN_MAX][2].Load("sys/max_push.png", BxImage::PNG, BxImage::PAD7);
 		BtnImage[BTN_MIN][0].Load("sys/min_base.png", BxImage::PNG, BxImage::PAD7);
 		BtnImage[BTN_MIN][1].Load("sys/min_focus.png", BxImage::PNG, BxImage::PAD7);
 		BtnImage[BTN_MIN][2].Load("sys/min_push.png", BxImage::PNG, BxImage::PAD7);
@@ -151,6 +158,22 @@ syseventresult OnEvent(BxSimulator& This, const sysevent& Event)
 				This.IsBtnDown[This.BTN_EXIT] = false;
 				if(Event.button.field.getsize().inside(Event.button.x, Event.button.y))
                     BxCore::System::DoQuit();
+			}
+			return syseventresult_done;
+		}
+		else if(StrCmp(Event.button.name, This.BtnName[This.BTN_MAX]) == same)
+		{
+			if(Event.button.type == sysbuttontype_down)
+				This.IsBtnDown[This.BTN_MAX] = true;
+			else if(Event.button.type == sysbuttontype_up)
+			{
+				This.IsBtnDown[This.BTN_MAX] = false;
+				if(Event.button.field.getsize().inside(Event.button.x, Event.button.y))
+				{
+					if(This.IsFullScreenMode = !This.IsFullScreenMode)
+						BxCore::Simulator::DoFullScreen();
+					else BxCore::Simulator::DoNormalScreen();
+				}
 			}
 			return syseventresult_done;
 		}
@@ -296,7 +319,7 @@ void OnRender(BxSimulator& This, BxDraw& Draw)
 	// 멀티터치 표식
 	if(BxCore::System::IsTouchDown() && !BxCore::System::IsTouchDown(false))
 	BxTRY(Draw, CLIP(XYXY(MenuBarWidth, TitleHeight, Draw.Width(), Draw.Height())))
-		for(int i = 0; i < BxSimulator::TOUCH_MAX; ++i)
+		for(int i = 0; i < BxSimulator::TOUCH_LENGTH; ++i)
 			Draw.Area(This.TouchPos[i].x, This.TouchPos[i].y, FORM(&This.TouchImage[i]) >> OPACITY(192));
 
 	// 타이틀
@@ -323,7 +346,7 @@ void OnRender(BxSimulator& This, BxDraw& Draw)
 			textalign_left_middle, COLOR(128, 138, 150));
 		// 버튼
 		int x = Draw.Width();
-		for(int i = 0; i < BxSimulator::BTN_MAX; ++i)
+		for(int i = 0; i < BxSimulator::BTN_LENGTH; ++i)
 		{
 			BxImage& CurImage = This.BtnImage[i][0];
 			x -= CurImage.Width();
@@ -351,7 +374,7 @@ void OnRender(BxSimulator& This, BxDraw& Draw)
 		BxTRY(Draw, CLIP(XYWH(0, 0, MenuBarWidth, Draw.Height())), "BxSimulator:MenuBar")
 		{
 			Draw.Rectangle(FILL, XYWH(0, 0), COLOR(44, 44, 44));
-			for(int i = 0, y = 0; i < BxSimulator::MENU_MAX; ++i)
+			for(int i = 0, y = 0; i < BxSimulator::MENU_LENGTH; ++i)
 			{
 				const int Index = (This.IsMenuOn[i])? 1 : 0;
 				BxImage& CurImage = This.MenuImage[i][Index];
@@ -373,7 +396,7 @@ void OnRender(BxSimulator& This, BxDraw& Draw)
 			BxTRY(Draw, CLIP(XYWH(MenuPos, 0, This.GUI_MENUWIDTH, Draw.Height())))
 			{
 				Draw.Rectangle(FILL, XYWH(0, 0), COLOR(242, 242, 234));
-				for(int i = 0, y = 0; i < BxSimulator::MENU_MAX; ++i)
+				for(int i = 0, y = 0; i < BxSimulator::MENU_LENGTH; ++i)
 				{
 					BxImage& CurImage = This.MenuImage[i][0];
 					BxTRY(Draw, CLIP(XYWH(0, y, Draw.Width(), CurImage.Height() + Gap * 2)), This.MenuName[i])

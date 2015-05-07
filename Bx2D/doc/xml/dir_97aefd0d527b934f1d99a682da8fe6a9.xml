@@ -23,6 +23,7 @@
     <innerfile refid="_bx_util_8hpp">BxUtil.hpp</innerfile>
     <innerfile refid="_bx_var_8hpp">BxVar.hpp</innerfile>
     <innerfile refid="_bx_var_map_8hpp">BxVarMap.hpp</innerfile>
+    <innerfile refid="_bx_var_queue_8hpp">BxVarQueue.hpp</innerfile>
     <innerfile refid="_bx_var_vector_8hpp">BxVarVector.hpp</innerfile>
     <innerfile refid="_bx_web_content_8hpp">BxWebContent.hpp</innerfile>
     <innerfile refid="_bx_xml_8hpp">BxXml.hpp</innerfile>
@@ -30,6 +31,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/"/>
   </compounddef>
 </doxygen>

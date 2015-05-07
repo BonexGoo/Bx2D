@@ -9,136 +9,136 @@
     <includes refid="_bx_string_8hpp" local="no">BxString.hpp</includes>
     <includedby refid="_bx_scene_8hpp" local="no">BxScene.hpp</includedby>
     <incdepgraph>
-      <node id="310">
-        <label>BxImage.hpp</label>
-        <link refid="_bx_image_8hpp_source"/>
-        <childnode refid="299" relation="include">
-        </childnode>
-      </node>
-      <node id="301">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="302" relation="include">
-        </childnode>
-      </node>
-      <node id="302">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="303" relation="include">
-        </childnode>
-      </node>
-      <node id="308">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="302" relation="include">
-        </childnode>
-        <childnode refid="301" relation="include">
-        </childnode>
-        <childnode refid="304" relation="include">
-        </childnode>
-      </node>
-      <node id="303">
-        <label>BxArgument.hpp</label>
-        <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="304" relation="include">
-        </childnode>
-      </node>
-      <node id="299">
-        <label>BxDraw.hpp</label>
-        <link refid="_bx_draw_8hpp_source"/>
-        <childnode refid="300" relation="include">
-        </childnode>
-        <childnode refid="307" relation="include">
-        </childnode>
-      </node>
-      <node id="305">
-        <label>BxType.hpp</label>
-        <link refid="_bx_type_8hpp_source"/>
-      </node>
-      <node id="309">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="301" relation="include">
-        </childnode>
-        <childnode refid="304" relation="include">
-        </childnode>
-        <childnode refid="300" relation="include">
-        </childnode>
-      </node>
-      <node id="304">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="305" relation="include">
-        </childnode>
-      </node>
-      <node id="311">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="312" relation="include">
-        </childnode>
-        <childnode refid="300" relation="include">
-        </childnode>
-        <childnode refid="306" relation="include">
-        </childnode>
-      </node>
-      <node id="300">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="301" relation="include">
-        </childnode>
-        <childnode refid="306" relation="include">
-        </childnode>
-      </node>
-      <node id="307">
-        <label>BxExpress.hpp</label>
-        <link refid="_bx_express_8hpp_source"/>
-        <childnode refid="305" relation="include">
-        </childnode>
-      </node>
-      <node id="312">
+      <node id="320">
         <label>BxVar.hpp</label>
         <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="301" relation="include">
+        <childnode refid="309" relation="include">
         </childnode>
-        <childnode refid="304" relation="include">
+        <childnode refid="312" relation="include">
         </childnode>
       </node>
-      <node id="298">
-        <label>BxPanel.hpp</label>
-        <link refid="BxPanel.hpp"/>
-        <childnode refid="299" relation="include">
+      <node id="319">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="320" relation="include">
         </childnode>
         <childnode refid="308" relation="include">
         </childnode>
-        <childnode refid="309" relation="include">
+        <childnode refid="314" relation="include">
         </childnode>
+      </node>
+      <node id="312">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>BxArgument.hpp</label>
+        <link refid="_bx_argument_8hpp_source"/>
+        <childnode refid="312" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>BxType.hpp</label>
+        <link refid="_bx_type_8hpp_source"/>
+      </node>
+      <node id="307">
+        <label>BxDraw.hpp</label>
+        <link refid="_bx_draw_8hpp_source"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>BxSingleton.hpp</label>
+        <link refid="_bx_singleton_8hpp_source"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
         <childnode refid="310" relation="include">
         </childnode>
+      </node>
+      <node id="308">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>BxImage.hpp</label>
+        <link refid="_bx_image_8hpp_source"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>BxExpress.hpp</label>
+        <link refid="_bx_express_8hpp_source"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
         <childnode refid="311" relation="include">
         </childnode>
       </node>
       <node id="306">
-        <label>BxSingleton.hpp</label>
-        <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="305" relation="include">
+        <label>BxPanel.hpp</label>
+        <link refid="BxPanel.hpp"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="315">
+      <node id="323">
         <label>BxCoreForQT5.hpp</label>
         <link refid="_bx_core_for_q_t5_8hpp_source"/>
       </node>
-      <node id="314">
+      <node id="322">
         <label>BxScene.hpp</label>
         <link refid="_bx_scene_8hpp_source"/>
-        <childnode refid="315" relation="include">
+        <childnode refid="323" relation="include">
         </childnode>
       </node>
-      <node id="313">
+      <node id="321">
         <label>BxPanel.hpp</label>
         <link refid="BxPanel.hpp"/>
-        <childnode refid="314" relation="include">
+        <childnode refid="322" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="651" column="9" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="651" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="651" column="9" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="651" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_bx_panel_8hpp_1a97eeb620e2833b6a06079f41fdcd2f8d" prot="public" static="no">
         <name>FRAMEWORK_PANEL_CLASS</name>
@@ -181,7 +181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" line="652" column="9" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="652" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" line="652" column="9" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp" bodystart="652" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -349,8 +349,8 @@
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarL-&gt;LastRect.t<sp/>-=<sp/>GUIMarginT;</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarL-&gt;LastRect.r<sp/>-=<sp/>GUIMarginL;</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarL-&gt;LastRect.b<sp/>-=<sp/>GUIMarginT;</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XLength<sp/>=<sp/>(Single-&gt;RefDraw-&gt;Width(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>YLength<sp/>=<sp/>(Single-&gt;RefDraw-&gt;Height(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XLength<sp/>=<sp/>(Single-&gt;RefDraw-&gt;Width(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>YLength<sp/>=<sp/>(Single-&gt;RefDraw-&gt;Height(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XBegin<sp/>=<sp/><ref refid="namespace_bx_util_global_1a52580a7f5dbd7722b56eab2e3167292f" kindref="member">BxUtilGlobal::Max</ref>(0,<sp/>VarL-&gt;LastRect.l<sp/>/<sp/>CellSize);</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>YBegin<sp/>=<sp/><ref refid="namespace_bx_util_global_1a52580a7f5dbd7722b56eab2e3167292f" kindref="member">BxUtilGlobal::Max</ref>(0,<sp/>VarL-&gt;LastRect.t<sp/>/<sp/>CellSize);</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XEnd<sp/>=<sp/><ref refid="namespace_bx_util_global_1af6b6936a90b9f791ce6f2b2b4d15b15e" kindref="member">BxUtilGlobal::Min</ref>(XLength,<sp/>(VarL-&gt;LastRect.r<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize);</highlight></codeline>
@@ -729,8 +729,8 @@
 <codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Look<sp/>into<sp/>new<sp/>panel</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XLength<sp/>=<sp/>(Panel.Single-&gt;RefDraw-&gt;Width(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
-<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>YLength<sp/>=<sp/>(Panel.Single-&gt;RefDraw-&gt;Height(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XLength<sp/>=<sp/>(Panel.Single-&gt;RefDraw-&gt;Width(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>YLength<sp/>=<sp/>(Panel.Single-&gt;RefDraw-&gt;Height(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
 <codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>X<sp/>=<sp/>x<sp/>/<sp/>CellSize,<sp/>Y<sp/>=<sp/>y<sp/>/<sp/>CellSize;</highlight></codeline>
 <codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(X<sp/>&lt;<sp/>0<sp/>||<sp/>XLength<sp/>&lt;=<sp/>X<sp/>||<sp/>Y<sp/>&lt;<sp/>0<sp/>||<sp/>YLength<sp/>&lt;=<sp/>Y)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Singleton::PanelCell&amp;<sp/>Cell<sp/>=<sp/>Panel.Single-&gt;PanelCells[X<sp/>+<sp/>Y<sp/>*<sp/>XLength];</highlight></codeline>
@@ -782,8 +782,8 @@
 <codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BxPanel<sp/>Panel;</highlight></codeline>
 <codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!Panel.Single-&gt;RefDraw)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XLength<sp/>=<sp/>(Panel.Single-&gt;RefDraw-&gt;Width(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
-<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>YLength<sp/>=<sp/>(Panel.Single-&gt;RefDraw-&gt;Height(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>XLength<sp/>=<sp/>(Panel.Single-&gt;RefDraw-&gt;Width(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>YLength<sp/>=<sp/>(Panel.Single-&gt;RefDraw-&gt;Height(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>+<sp/>CellSize<sp/>-<sp/>1)<sp/>/<sp/>CellSize;</highlight></codeline>
 <codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>X<sp/>=<sp/>x<sp/>/<sp/>CellSize,<sp/>Y<sp/>=<sp/>y<sp/>/<sp/>CellSize;</highlight></codeline>
 <codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(X<sp/>&lt;<sp/>0<sp/>||<sp/>XLength<sp/>&lt;=<sp/>X<sp/>||<sp/>Y<sp/>&lt;<sp/>0<sp/>||<sp/>YLength<sp/>&lt;=<sp/>Y)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Singleton::PanelCell&amp;<sp/>Cell<sp/>=<sp/>Panel.Single-&gt;PanelCells[X<sp/>+<sp/>Y<sp/>*<sp/>XLength];</highlight></codeline>
@@ -884,6 +884,6 @@
 <codeline lineno="709"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
 <codeline lineno="710"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>local_data<sp/>bool<sp/>unknown_panel<sp/>=<sp/>BxPanel::AddPanel(&quot;&quot;<sp/>NAME,<sp/>_Create,<sp/>_Notify,<sp/>_Touch,<sp/>_Paint,<sp/>_Alloc,<sp/>_Free,<sp/>_Service);</highlight></codeline>
     </programlisting>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxPanel.hpp"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxPanel.hpp"/>
   </compounddef>
 </doxygen>

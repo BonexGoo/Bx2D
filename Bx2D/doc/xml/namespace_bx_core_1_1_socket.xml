@@ -12,11 +12,11 @@
 <para>소켓ID 할당 </para>        </briefdescription>
         <detaileddescription>
 <para><simplesect kind="return"><para>소켓ID(nullptr은 실패) </para></simplesect>
-<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member">Release</ref>, <ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member">Connect</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member">Release</ref>, <ref refid="namespace_bx_core_1_1_socket_1a76bb13c2ac8e53c2eb2682a4cbc5d8fd" kindref="member">Connect</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="965" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="740" bodyend="747"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="975" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="750" bodyend="757"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -42,7 +42,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="972" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="749" bodyend="753"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="982" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="759" bodyend="763"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>socketstate</type>
@@ -68,11 +68,11 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="979" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="755" bodyend="759"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="989" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="765" bodyend="769"/>
       </memberdef>
-      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>connectresult</type>
-        <definition>connectresult BxCore::Socket::Connect</definition>
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a76bb13c2ac8e53c2eb2682a4cbc5d8fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>connectstate</type>
+        <definition>connectstate BxCore::Socket::Connect</definition>
         <argsstring>(id_socket sock, string addr, ushort port, uint timeout=0, callback_progress progress=nullptr)</argsstring>
         <name>Connect</name>
         <param>
@@ -126,7 +126,7 @@
 <parametername>timeout</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>: 결과를 기다릴 시간 </para></parameterdescription>
+<para>: 결과를 기다릴 시간(0이면 기다리지 않음) </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -136,12 +136,12 @@
 <para>: 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출) </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>결과를 기다릴 경우 dowait_connected/dowait_disconnected, 안 기다릴 경우 connecting </para></simplesect>
+<simplesect kind="return"><para>결과를 기다릴 경우 connected/disconnected, 안 기다릴 경우 connecting </para></simplesect>
 <simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" kindref="member">Disconnect</ref>, <ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="991" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="761" bodyend="781"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1001" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="771" bodyend="791"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -163,11 +163,11 @@
 <para>: 소켓ID </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member">Connect</ref>, <ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1a76bb13c2ac8e53c2eb2682a4cbc5d8fd" kindref="member">Connect</ref>, <ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref> </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="998" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="783" bodyend="788"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1008" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="793" bodyend="798"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a9a23c3a4ad8819aa795983a72eb8c5b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -216,7 +216,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1008" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="790" bodyend="800"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1018" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="800" bodyend="810"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -265,7 +265,34 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1018" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="802" bodyend="811"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1028" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="812" bodyend="825"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a8adaee320918ef4f41f5a1c2ed12a210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Socket::GetRecvLength</definition>
+        <argsstring>(id_socket sock)</argsstring>
+        <name>GetRecvLength</name>
+        <param>
+          <type>id_socket</type>
+          <declname>sock</declname>
+        </param>
+        <briefdescription>
+<para>데이터 수신대기 길이 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 소켓ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>수신대기 길이(byte) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kindref="member">GetState</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1036" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="827" bodyend="832"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -321,7 +348,7 @@
 <parametername>timeout</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>: 결과를 기다릴 시간(-1은 디폴트값) </para></parameterdescription>
+<para>: 결과를 기다릴 시간 </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -336,7 +363,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1030" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreImpl.cpp" bodystart="1078" bodyend="1100"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1048" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreImpl.cpp" bodystart="1079" bodyend="1101"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_socket_1a4b654fd3ff8eabe722999d7e7ea71eed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -373,13 +400,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1038" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="813" bodyend="816"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1056" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="834" bodyend="837"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Socket파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="959" column="1"/>
+    <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="969" column="1"/>
   </compounddef>
 </doxygen>

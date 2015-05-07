@@ -4,6 +4,7 @@ var searchData=
   ['searchfiles',['SearchFiles',['../namespace_bx_core_1_1_file.html#ae5f9334c76be6620f62e255f4415bbb6',1,'BxCore::File']]],
   ['send',['Send',['../namespace_bx_core_1_1_socket.html#a9a23c3a4ad8819aa795983a72eb8c5b2',1,'BxCore::Socket']]],
   ['sendevent',['SendEvent',['../class_bx_animate.html#aaf88b551be77ef906da4e61ac407a62c',1,'BxAnimate']]],
+  ['sendtopeer',['SendToPeer',['../namespace_bx_core_1_1_server.html#ab8bb563cf9f73b130c10cd880c19ec08',1,'BxCore::Server']]],
   ['setarray',['SetArray',['../namespace_bx_util_global.html#a79b68673159a50732cfaf0e7252c0500',1,'BxUtilGlobal']]],
   ['setcallbackedk',['SetCallbackEDK',['../namespace_bx_core_1_1_system.html#ab1e1b596a676fcce2dfd0d73cc568265',1,'BxCore::System']]],
   ['setcursorpos',['SetCursorPos',['../namespace_bx_core_1_1_simulator.html#a5d639331bb5cc963bfc18b8de5a48b41',1,'BxCore::Simulator']]],

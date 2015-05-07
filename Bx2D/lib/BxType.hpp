@@ -163,9 +163,11 @@ enum textalign:byte {
 	textalign_left_ascent, textalign_center_ascent, textalign_right_ascent,
 	textalign_left_bottom, textalign_center_bottom, textalign_right_bottom};
 enum socketstate:byte {socketstate_null, socketstate_created, socketstate_connecting, socketstate_connected, socketstate_disconnected};
-enum connectresult:int {connect_connected = 2, connect_connecting = 1, connect_disconnected = 0,
-	connect_error_param = -1, connect_error_already = -2, connect_error_netdown = -3,
-	connect_error_timeout = -4, connect_error_refused = -5, connect_error_wrong_address = -6, connect_error_unknown = -7};
+enum connectstate:int {connectstate_connected = 2, connectstate_connecting = 1, connectstate_disconnected = 0,
+	connectstate_error_param = -1, connectstate_error_already = -2, connectstate_error_netdown = -3,
+	connectstate_error_timeout = -4, connectstate_error_refused = -5, connectstate_error_wrong_address = -6,
+	connectstate_error_unknown = -7};
+enum peerpacketkind:byte {peerpacketkind_null, peerpacketkind_entrance, peerpacketkind_message, peerpacketkind_leaved, peerpacketkind_kicked};
 enum autobuffer:byte {autobuffer_sound, autobuffer_user};
 enum autorelease:byte {autorelease_global, autorelease_user};
 enum oskeyboardtype:byte {oskeyboardtype_base, oskeyboardtype_email, oskeyboardtype_number, oskeyboardtype_password, oskeyboardtype_url};
@@ -259,6 +261,7 @@ DECLARE_ID(id_text), *id_text_zero;
 DECLARE_ID(id_sound);
 DECLARE_ID(id_file);
 DECLARE_ID(id_socket);
+DECLARE_ID(id_server);
 DECLARE_ID(id_bluetooth);
 DECLARE_ID(id_library);
 DECLARE_ID(id_object);

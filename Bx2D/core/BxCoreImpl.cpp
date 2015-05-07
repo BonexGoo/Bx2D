@@ -158,13 +158,14 @@ namespace BxCore
 			else BxScene::AddRequest(StartPageName);
 
 			// Scene Init(SceneData Create)
-			sysevent Event;
-			Event.type = syseventtype_init;
-			Event.init.w = BxCore::Surface::GetWidth();
-			Event.init.h = BxCore::Surface::GetHeight();
-			Event.init.message = "";
-			BxScene::__AddEvent__(Event, syseventset_null);
-			BxScene::__OnEvent__(*((BxDraw*) ForMain_LetDrawPtr()));
+			// 체크할 것!!!
+            sysevent Event;
+            Event.type = syseventtype_init;
+            Event.init.w = BxCore::Surface::GetWidth();
+            Event.init.h = BxCore::Surface::GetHeight();
+            Event.init.message = "";
+            BxScene::__AddEvent__(Event, syseventset_null);
+            BxScene::__OnEvent__(*((BxDraw*) ForMain_LetDrawPtr()));
 
 			uhuge CheckTime = BxCore::System::GetTimeMilliSecond();
 			while(Procedure())

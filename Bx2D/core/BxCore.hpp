@@ -61,6 +61,16 @@ namespace BxCore
 		void DoMinimize();
 
 		/*!
+		\brief 전체모드 전환하기
+		*/
+		void DoFullScreen();
+
+		/*!
+		\brief 윈도우모드 전환하기
+		*/
+		void DoNormalScreen();
+
+		/*!
 		\brief 이벤트후킹 신청하기
 		\param message : 메시지번호
 		\param cb : 콜백함수
@@ -983,12 +993,12 @@ namespace BxCore
 		\param sock : 소켓ID
 		\param addr : 도메인 또는 IP
 		\param port : 포트번호
-		\param timeout : 결과를 기다릴 시간
+		\param timeout : 결과를 기다릴 시간(0이면 기다리지 않음)
 		\param progress : 프로그레스의 전달(업데이트전용, progress(-1, 0)로 호출)
-		\return 결과를 기다릴 경우 dowait_connected/dowait_disconnected, 안 기다릴 경우 connecting
+		\return 결과를 기다릴 경우 connected/disconnected, 안 기다릴 경우 connecting
 		\see Disconnect, GetState
 		*/
-		connectresult Connect(id_socket sock, string addr, ushort port, uint timeout = 0, callback_progress progress = nullptr);
+		connectstate Connect(id_socket sock, string addr, ushort port, uint timeout = 0, callback_progress progress = nullptr);
 
 		/*!
 		\brief 서버와의 접속종료
@@ -1018,11 +1028,19 @@ namespace BxCore
 		int Recv(id_socket sock, void* buffer, int len);
 
 		/*!
+		\brief 데이터 수신대기 길이
+		\param sock : 소켓ID
+		\return 수신대기 길이(byte)
+		\see GetState
+		*/
+		int GetRecvLength(id_socket sock);
+
+		/*!
 		\brief 데이터 강제수신
 		\param sock : 소켓ID
 		\param buffer : 수신할 버퍼
 		\param len : 수신할 길이(byte)
-		\param timeout : 결과를 기다릴 시간(-1은 디폴트값)
+		\param timeout : 결과를 기다릴 시간
 		\param cancelmode : 탈출가능여부(현재 수신된 데이터가 0일 경우만 작동)
 		\return 수신된 길이(byte, 음수는 수신에러코드, 이때 GetState로 Create/Connect를 판단)
 		\see GetState
@@ -1036,6 +1054,77 @@ namespace BxCore
 		\return 핑시간(밀리초, 음수면 실패)
 		*/
 		int Ping(string addr, uint timeout);
+	}
+
+	//! \brief Server파트
+	namespace Server
+	{
+		/*!
+		\brief 서버ID 할당
+		\param sizefield : 사이즈필드 사용여부
+		\return 서버ID(nullptr은 실패)
+		\see Release, Listen
+		*/
+		id_server Create(bool sizefield);
+
+		/*!
+		\brief 서버ID 반환
+		\param serv : 서버ID
+		\see Create
+		*/
+		void Release(id_server serv);
+
+		/*!
+		\brief 서비스개시
+		\param serv : 서버ID
+		\param port : 포트번호
+		\return 성공여부
+		\see Create, Release
+		*/
+		bool Listen(id_server serv, ushort port);
+
+		/*!
+		\brief 수신된 패킷확인 및 포커싱
+		\param serv : 서버ID
+		\return 수신여부
+		\see GetPacketKind, GetPacketPeerID, GetPacketBuffer
+		*/
+		bool TryNextPacket(id_server serv);
+
+		/*!
+		\brief 포커싱된 패킷종류 반환
+		\param serv : 서버ID
+		\return 패킷종류
+		\see TryNextPacket
+		*/
+		peerpacketkind GetPacketKind(id_server serv);
+
+		/*!
+		\brief 포커싱된 패킷의 송신자ID 반환
+		\param serv : 서버ID
+		\return 송신자ID
+		\see TryNextPacket
+		*/
+		int GetPacketPeerID(id_server serv);
+
+		/*!
+		\brief 포커싱된 패킷버퍼 반환
+		\param serv : 서버ID
+		\param getsize : 버퍼의 길이를 요청
+		\return 패킷버퍼
+		\see TryNextPacket
+		*/
+		const byte* GetPacketBuffer(id_server serv, huge* getsize = nullptr);
+
+		/*!
+		\brief 특정 송신자에게 데이터전달
+		\param serv : 서버ID
+		\param peerid : 송신자ID
+		\param buffer : 데이터버퍼
+		\param buffersize : 버퍼의 길이
+		\return 성공여부
+		*/
+		bool SendToPeer(id_server serv, int peerid, const void* buffer, huge buffersize);
 	}
 
 	//! \brief Bluetooth파트
@@ -1378,7 +1467,7 @@ namespace BxCore
 		void RenderLinesDirectly(int Count, const void* Data, const float x, const float y,
 			const float scale, const byte opacity, const color_x888 color, const bool loop);
 		void RenderStripDirectly(int Count, const void* Data, const byte opacity,
-			const byte aqua, const color_x888 color, const float x, const float y, const float scale,
+			const uint aqua, const color_x888 color, const float x, const float y, const float scale,
 			const float m11, const float m12, const float m21, const float m22, const float dx, const float dy);
 		// Option
 		void Clip(rect r);

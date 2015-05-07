@@ -40,7 +40,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1264" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1030" bodyend="1034"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1353" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1114" bodyend="1118"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1ab826ab467ee70b36c1884e87a855c3c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -90,7 +90,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1273" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1036" bodyend="1043"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1362" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1120" bodyend="1127"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1adf48754093833abf8c23636bf6feaaac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>id_mutex</type>
@@ -105,7 +105,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1280" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1045" bodyend="1049"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1369" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1129" bodyend="1133"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1a01f908e2c4137aaf47cbd5adf675e1b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -131,7 +131,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1287" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1051" bodyend="1055"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1376" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1135" bodyend="1139"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aace37ba76a186ad61d8c615e7928030f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -157,7 +157,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1294" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1057" bodyend="1061"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1383" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1141" bodyend="1145"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1aebb2be9b9ffe6df5360f05fadc5cdff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -183,7 +183,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1301" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1063" bodyend="1067"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1390" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1147" bodyend="1151"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1a3c044242802c703c595e4f6324b340e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -210,7 +210,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1309" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1069" bodyend="1079"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1398" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1153" bodyend="1163"/>
       </memberdef>
       <memberdef kind="function" id="namespace_bx_core_1_1_thread_1a9948511867e74c60e15e31f5e0d5e2b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -224,13 +224,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1315" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1081" bodyend="1086"/>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1404" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="1165" bodyend="1170"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Thread파트 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/core/BxCore.hpp" line="1256" column="1"/>
+    <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1345" column="1"/>
   </compounddef>
 </doxygen>

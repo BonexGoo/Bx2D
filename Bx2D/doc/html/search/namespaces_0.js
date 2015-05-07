@@ -15,6 +15,7 @@ var searchData=
   ['main',['Main',['../namespace_bx_core_1_1_main.html',1,'BxCore']]],
   ['opengl2d',['OpenGL2D',['../namespace_bx_core_1_1_open_g_l2_d.html',1,'BxCore']]],
   ['scan',['Scan',['../namespace_bx_core_1_1_bluetooth_1_1_scan.html',1,'BxCore::Bluetooth']]],
+  ['server',['Server',['../namespace_bx_core_1_1_server.html',1,'BxCore']]],
   ['simulator',['Simulator',['../namespace_bx_core_1_1_simulator.html',1,'BxCore']]],
   ['socket',['Socket',['../namespace_bx_core_1_1_socket.html',1,'BxCore']]],
   ['sound',['Sound',['../namespace_bx_core_1_1_sound.html',1,'BxCore']]],

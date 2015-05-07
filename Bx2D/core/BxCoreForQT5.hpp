@@ -2,6 +2,7 @@
 #include <QApplication>
 #include <QEventLoop>
 #include <QTcpSocket>
+#include <QTcpServer>
 #include <QHostInfo>
 #include <QThread>
 #include <QMutex>
@@ -39,6 +40,7 @@
 #include <BxCore.hpp>
 #include <BxScene.hpp>
 #include <BxVarMap.hpp>
+#include <BxVarQueue.hpp>
 #include <BxExpress.hpp>
 #include <BxMemory.hpp>
 
@@ -98,6 +100,7 @@ namespace BxCore
 
         private:
 			enum {DClickRadius = 100, DClickRadiusMin = 20, DClickRadiusSpeed = 10};
+			GLuint LastTexture;
 			bool InputPressed[inputkind_max];
 			int SavedTouchAngle;
             uint SavedTouchFlag;
@@ -106,6 +109,7 @@ namespace BxCore
 			QTimer WheelMoveTimer;
 			QTimer WheelEndTimer;
 			int RadiusForWheel;
+            bool TabletPressed;
             bool FirstMoved;
             bool FirstSized;
             int PosX;
@@ -117,8 +121,9 @@ namespace BxCore
         private:
             GLWidget() : QGLWidget(QGLFormat(QGL::SampleBuffers)),
                 SavedTouchAngle(0), SavedTouchFlag(0), WheelMoveTimer(this), WheelEndTimer(this), RadiusForWheel(0),
-				FirstMoved(false), FirstSized(false), PosX(0), PosY(0), SizeW(0), SizeH(0)
+                TabletPressed(false), FirstMoved(false), FirstSized(false), PosX(0), PosY(0), SizeW(0), SizeH(0)
             {
+				LastTexture = 0;
 				for(int i = 0; i < inputkind_max; ++i)
 					InputPressed[i] = false;
 
@@ -149,11 +154,15 @@ namespace BxCore
             }
             void BindTexture(GLuint texture)
             {
-                glBindTexture(GL_TEXTURE_2D, texture);
-                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR); // GL_NEAREST
-                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR); // GL_NEAREST
-                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+				if(LastTexture != texture)
+				{
+					LastTexture = texture;
+					glBindTexture(GL_TEXTURE_2D, texture);
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR); // GL_NEAREST
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR); // GL_NEAREST
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+					glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+				}
             }
             void SetWindowRect(int x, int y, int w, int h)
             {
@@ -165,16 +174,6 @@ namespace BxCore
                 SizeH = h;
 				resize(w, h);
 				move(x, y);
-            }
-            const int GetWidth()
-            {
-                global_data const int Width = width();
-                return Width;
-            }
-            const int GetHeight()
-            {
-                global_data const int Height = height();
-                return Height;
             }
 			BxCore::Simulator::EventFilter& GetFilter()
 			{return Filter;}
@@ -236,6 +235,21 @@ namespace BxCore
                     FirstSized = false;
                     resize(SizeW, SizeH);
                 }
+				else
+				{
+					const int GUIMarginL = BxCore::Main::GetGUIMarginL();
+					const int GUIMarginT = BxCore::Main::GetGUIMarginT();
+					const int GUIMarginR = BxCore::Main::GetGUIMarginR();
+					const int GUIMarginB = BxCore::Main::GetGUIMarginB();
+					SizeW = event->size().width() - GUIMarginL - GUIMarginR;
+					SizeH = event->size().height() - GUIMarginT - GUIMarginB;
+
+					sysevent Event;
+					Event.type = syseventtype_resize;
+					Event.resize.w = SizeW;
+					Event.resize.h = SizeH;
+					BxScene::__AddEvent__(Event, syseventset_null);
+				}
             }
             void moveEvent(QMoveEvent* event)
             {
@@ -320,6 +334,7 @@ namespace BxCore
             }
             void mousePressEvent(QMouseEvent* event)
             {
+                if(TabletPressed) return; // for tablet event
 				if(!InputPressed[inputkind_mouse_right] && event->button() == Qt::LeftButton)
 				{
 					PostMouseEventsByWheelDone();
@@ -394,15 +409,18 @@ namespace BxCore
             }
 			void wheelEvent(QWheelEvent* event)
 			{
-				const int X = event->x();
+                const int X = event->x();
 				const int Y = event->y();
+                const int Delta = event->delta();
+                if(Delta == 0) return; // for tablet event
+
 				if(InputPressed[inputkind_mouse_right])
 				{
-					SavedTouchAngle = (SavedTouchAngle + 16 * event->delta() / 120 + 1024) % 1024;
-					PostMouseEventByRotate(systouchtype_move, event->x(), event->y(), 1, SavedTouchAngle);
+                    SavedTouchAngle = (SavedTouchAngle + 16 * Delta / 120 + 1024) % 1024;
+                    PostMouseEventByRotate(systouchtype_move, X, Y, 1, SavedTouchAngle);
 				}
 				else if(!InputPressed[inputkind_mouse_left])
-				{
+                {
 					if(!InputPressed[inputkind_mouse_wheel])
 					{
 						InputPressed[inputkind_mouse_wheel] = true;
@@ -411,13 +429,33 @@ namespace BxCore
 						PostMouseEvent(systouchtype_down, 1, X, Y, 1, inputkind_mouse_wheel, +RadiusForWheel);
 					}
 					RadiusForWheel = BxUtilGlobal::Max(DClickRadiusMin,
-						RadiusForWheel + DClickRadiusSpeed * event->delta() / 120);
+                        RadiusForWheel + DClickRadiusSpeed * Delta / 120);
 					PostMouseEvent(systouchtype_move, 0, X, Y, 1, inputkind_mouse_wheel, -RadiusForWheel);
 					PostMouseEvent(systouchtype_move, 1, X, Y, 1, inputkind_mouse_wheel, +RadiusForWheel);
 					WheelMoveTimer.start(20);
 					WheelEndTimer.start(200);
 				}
 			}
+            void tabletEvent(QTabletEvent *event)
+            {
+                if(BxCore::Wacom::IsExistDevice())
+                    return;
+                switch(event->type())
+                {
+                case QEvent::TabletPress:
+                    TabletPressed = true;
+                    PostMouseEvent(systouchtype_down, 0, event->posF().x(), event->posF().y(), event->pressure(), inputkind_wacom_pen);
+                    break;
+                case QEvent::TabletRelease:
+                    TabletPressed = false;
+                    PostMouseEvent(systouchtype_up, 0, event->posF().x(), event->posF().y(), event->pressure(), inputkind_wacom_pen);
+                    break;
+                case QEvent::TabletMove:
+                    if(TabletPressed)
+                        PostMouseEvent(systouchtype_move, 0, event->posF().x(), event->posF().y(), event->pressure(), inputkind_wacom_pen);
+                    break;
+                }
+            }
 
 		private:
 			void PostMouseEvent(systouchtype type, uint id, float x, float y, float force, inputkind kind, int xadd = 0, int yadd = 0)
@@ -838,20 +876,33 @@ namespace BxCore
         public:
 			static void EntryList(const QString& pathName, QStringList& fileNames)
 			{
+				// 체크할 것!!!
                 QStringList ListW = QDir(FileClass::RootForWrite() + pathName).entryList
                     (QDir::Files | QDir::Dirs | QDir::NoSymLinks | QDir::NoDotAndDotDot);
 				for(int i = 0, iend = ListW.size(); i < iend; ++i)
-                    if(fileNames.indexOf(ListW.at(i)) == -1) fileNames << ListW.at(i);
+                    if(fileNames.indexOf(ListW.at(i)) == -1)
+                    {
+                        BxTRACE("<>:EntryList(W) : <A>", BxARG(ListW.at(i).toLocal8Bit().constData()));
+                        fileNames << ListW.at(i);
+                    }
 				#ifdef WIN32
 					QStringList ListS = QDir(FileClass::RootForSystem() + pathName).entryList
 						(QDir::Files | QDir::Dirs | QDir::NoSymLinks | QDir::NoDotAndDotDot);
 					for(int i = 0, iend = ListS.size(); i < iend; ++i)
-						if(fileNames.indexOf(ListS.at(i)) == -1) fileNames << ListS.at(i);
+                        if(fileNames.indexOf(ListS.at(i)) == -1)
+                        {
+                            BxTRACE("<>:EntryList(S) : <A>", BxARG(ListS.at(i).toLocal8Bit().constData()));
+                            fileNames << ListS.at(i);
+                        }
 				#endif
                 QStringList ListR = QDir(FileClass::RootForRead() + pathName).entryList
                     (QDir::Files | QDir::Dirs | QDir::NoSymLinks | QDir::NoDotAndDotDot);
 				for(int i = 0, iend = ListR.size(); i < iend; ++i)
-                    if(fileNames.indexOf(ListR.at(i)) == -1) fileNames << ListR.at(i);
+                    if(fileNames.indexOf(ListR.at(i)) == -1)
+                    {
+                        BxTRACE("<>:EntryList(R) : <A>", BxARG(ListR.at(i).toLocal8Bit().constData()));
+                        fileNames << ListR.at(i);
+                    }
 			}
             static bool Mkdir(const QString& pathName) {return QDir().mkdir(FileClass::RootForWrite() + pathName);}
             static bool Rmdir(const QString& pathName) {return QDir().rmdir(FileClass::RootForWrite() + pathName);}
@@ -897,16 +948,8 @@ namespace BxCore
             }
             bool GetMarginEnable() {return This->MarginEnable;}
             void SetMarginEnable(bool enable) {This->MarginEnable = enable;}
-            int GetWidthHW()
-            {
-                global_data const int Width = BxCore::Main::GLWidget::Me().GetWidth() * GLSCALE;
-                return Width;
-            }
-            int GetHeightHW()
-            {
-                global_data const int Height = BxCore::Main::GLWidget::Me().GetHeight() * GLSCALE;
-                return Height;
-            }
+            int GetWidthHW() {return BxCore::Main::GLWidget::Me().width() * GLSCALE;}
+            int GetHeightHW() {return BxCore::Main::GLWidget::Me().height() * GLSCALE;}
         public:
             SurfaceSingle() {global_data Data* Ref = BxNew(Data); This = Ref;}
         private:
@@ -930,6 +973,7 @@ namespace BxCore
 			Q_OBJECT
 		private:
 			socketstate State;
+			int RecvLength;
 		private slots:
 			void OnConnected()
 			{
@@ -941,6 +985,8 @@ namespace BxCore
 			}
 			void OnReadyRead()
 			{
+				QTcpSocket* Peer = (QTcpSocket*) sender();
+				RecvLength = (int) Peer->bytesAvailable();
 			}
 			void OnError()
 			{
@@ -967,16 +1013,186 @@ namespace BxCore
 			{
 				State = state;
 			}
+			inline int GetRecvLength()
+			{
+				return RecvLength;
+			}
+			inline void SubRecvLength(int length)
+			{
+				if(0 < length && (RecvLength -= length) == 0)
+					connect(this, SIGNAL(readyRead()), this, SLOT(OnReadyRead()));
+			}
 			inline void ResetClient()
 			{
 				Disconnect(true);
 				State = socketstate_created;
+				RecvLength = 0;
 			}
 			inline void Disconnect(bool dowait)
 			{
 				disconnectFromHost();
 				if(dowait && !waitForDisconnected())
 					State = socketstate_null;
+			}
+		};
+		/// @endcond
+	}
+
+	namespace Server
+	{
+		/// @cond SECTION_NAME
+		class TCPPeerData : public QObjectUserData
+		{
+		public:
+			const int ID;
+			huge PacketNeeds;
+		public:
+			TCPPeerData() : ID(MakeID()) {PacketNeeds = 0;}
+			virtual ~TCPPeerData() {}
+		public:
+			static uint ClassID()
+			{static uint _ = QObject::registerUserData(); return _;}
+			static int MakeID() {static int _ = -1; return ++_;}
+		};
+		/// @endcond
+
+		/// @cond SECTION_NAME
+		class TCPPacket
+		{
+		public:
+			const peerpacketkind Kind;
+			const int PeerID;
+			const huge BufferSize;
+			byte* Buffer;
+		public:
+			TCPPacket(peerpacketkind kind, int peerid, huge buffersize)
+				: Kind(kind), PeerID(peerid), BufferSize(buffersize) {Buffer = new byte[buffersize];}
+			~TCPPacket() {delete[] Buffer;}
+		public:
+			void DestroyMe() {delete this;}
+		};
+		/// @endcond
+
+		/// @cond SECTION_NAME
+		class TCPAgent : public QTcpServer
+		{
+			Q_OBJECT
+		private:
+			bool UsingSizeField;
+			BxVarMap<QTcpSocket*, 0, true> Peers;
+			BxVarQueue<TCPPacket, true> PacketQueue;
+			TCPPacket* LastPacket;
+		private slots:
+			void acceptPeer()
+			{
+				QTcpSocket* Peer = nextPendingConnection();
+				TCPPeerData* NewData = new TCPPeerData();
+				Peers[NewData->ID] = Peer;
+				Peer->setUserData(TCPPeerData::ClassID(), NewData);
+				PacketQueue.Enqueue(new TCPPacket(peerpacketkind_entrance, NewData->ID, 0));
+
+				if(!UsingSizeField) connect(Peer, SIGNAL(readyRead()), this, SLOT(readyPeer()));
+				else connect(Peer, SIGNAL(readyRead()), this, SLOT(readyPeerWithSizeField()));
+				connect(Peer, SIGNAL(error(QAbstractSocket::SocketError)),
+					this, SLOT(errorPeer(QAbstractSocket::SocketError)));
+			}
+			void readyPeer()
+			{
+				QTcpSocket* Peer = (QTcpSocket*) sender();
+				TCPPeerData* Data = (TCPPeerData*) Peer->userData(TCPPeerData::ClassID());
+				huge PacketSize = Peer->bytesAvailable();
+
+				TCPPacket* NewPacket = new TCPPacket(peerpacketkind_message, Data->ID, PacketSize);
+				Peer->read((char*) NewPacket->Buffer, PacketSize);
+				PacketQueue.Enqueue(NewPacket);
+
+				connect(Peer, SIGNAL(readyRead()), this, SLOT(readyPeer()));
+			}
+			void readyPeerWithSizeField()
+			{
+				QTcpSocket* Peer = (QTcpSocket*) sender();
+				TCPPeerData* Data = (TCPPeerData*) Peer->userData(TCPPeerData::ClassID());
+				huge PacketSize = Peer->bytesAvailable();
+
+				while(0 < PacketSize)
+				{
+					if(Data->PacketNeeds == 0)
+					{
+						if(4 <= PacketSize)
+						{
+							PacketSize -= 4;
+							int GetPacketSize = 0;
+							Peer->read((char*) &GetPacketSize, 4);
+							Data->PacketNeeds = GetPacketSize;
+						}
+						else
+						{
+							connect(Peer, SIGNAL(readyRead()), this, SLOT(readyPeerWithSizeField()));
+							break;
+						}
+					}
+					if(0 < Data->PacketNeeds)
+					{
+						if(Data->PacketNeeds <= PacketSize)
+						{
+							PacketSize -= Data->PacketNeeds;
+							TCPPacket* NewPacket = new TCPPacket(peerpacketkind_message, Data->ID, Data->PacketNeeds);
+							Peer->read((char*) NewPacket->Buffer, Data->PacketNeeds);
+							PacketQueue.Enqueue(NewPacket);
+							Data->PacketNeeds = 0;
+						}
+						else
+						{
+							connect(Peer, SIGNAL(readyRead()), this, SLOT(readyPeerWithSizeField()));
+							break;
+						}
+					}
+				}
+			}
+			void errorPeer(QAbstractSocket::SocketError error)
+			{
+				QTcpSocket* Peer = (QTcpSocket*) sender();
+				TCPPeerData* Data = (TCPPeerData*) Peer->userData(TCPPeerData::ClassID());
+				Peers.Remove(Data->ID);
+				PacketQueue.Enqueue(new TCPPacket((error == QAbstractSocket::RemoteHostClosedError)?
+					peerpacketkind_leaved : peerpacketkind_kicked, Data->ID, 0));
+			}
+		public:
+			TCPAgent(bool sizefield)
+			{
+				UsingSizeField = sizefield;
+				LastPacket = new TCPPacket(peerpacketkind_null, -1, 0);
+				connect(this, SIGNAL(newConnection()), this, SLOT(acceptPeer()));
+			}
+			virtual ~TCPAgent()
+			{
+				for(TCPPacket* UnusedPacket = nullptr; UnusedPacket = PacketQueue.Dequeue();)
+					UnusedPacket->DestroyMe();
+				delete LastPacket;
+			}
+		public:
+			bool TryPacket()
+			{
+				TCPPacket* PopPacket = PacketQueue.Dequeue();
+				if(!PopPacket) return false;
+				delete LastPacket;
+				LastPacket = PopPacket;
+				return true;
+			}
+			TCPPacket* GetLastPacket()
+			{
+				return LastPacket;
+			}
+			bool SendPacket(int peerid, const void* buffer, huge buffersize)
+			{
+				QTcpSocket* Peer = Peers[peerid];
+				if(!Peer)
+				{
+					Peers.Remove(peerid);
+					return false;
+				}
+				const huge SendedSize = Peer->write((string) buffer, buffersize);
+				return (SendedSize == buffersize);
 			}
 		};
 		/// @endcond
@@ -1970,7 +2186,7 @@ namespace BxCore
 		struct StripData
 		{
 		public:
-			byte opacity;
+			float force;
 			float lx;
 			float ly;
 			float rx;
@@ -2200,7 +2416,7 @@ namespace BxCore
 			}
             template<bool useStripOpacity, bool useMatrix>
             void DrawStrip(int Count, const StripData* Data, const byte opacity,
-				const byte aqua, const color_x888 color, const float x, const float y, const float scale,
+				const uint aqua, const color_x888 color, const float x, const float y, const float scale,
                 const float m11, const float m12, const float m21, const float m22, const float dx, const float dy)
 			{
 				global_data const int CountMax = 256;
@@ -2221,15 +2437,16 @@ namespace BxCore
 				const int G = (color >> 8) & 0xFF;
 				const int B = (color >> 0) & 0xFF;
 				const int A = opacity & 0xFF;
-				const int AquaValue = aqua;
+				const float AquaForce = aqua / 255.0f;
+				const float AquaValue = (0 < AquaForce)? A / AquaForce : 0;
 
 				int FocusBegin = 1;
 				while(FocusBegin < Count)
 				{
 					// Vertex
 					int Focus = FocusBegin -= 1;
-                    const int Opacity = (useStripOpacity && Data[Focus].opacity < AquaValue)?
-						A * Data[Focus].opacity / AquaValue : A;
+                    const int Opacity = (useStripOpacity && Data[Focus].force < AquaForce)?
+						(int) (AquaValue * Data[Focus].force) : A;
 					for(int i = 0; i < 2 * CountMax && Focus < Count; i += 2)
 					{
 						const StripData& CurData = Data[Focus];
@@ -2250,8 +2467,8 @@ namespace BxCore
 						Focus++;
 						if(useStripOpacity)
 						{
-							const int CurOpacity = (Data[Focus - 1].opacity < AquaValue)?
-								A * Data[Focus - 1].opacity / AquaValue : A;
+							const int CurOpacity = (Data[Focus - 1].force < AquaForce)?
+								(int) (AquaValue * Data[Focus - 1].force) : A;
 							if(Opacity != CurOpacity) break;
 						}
 					}
@@ -2277,7 +2494,6 @@ namespace BxCore
 				BxCore::Main::GLWidget& Widget = BxCore::Main::GLWidget::Me();
 				Widget.makeCurrent();
                 Widget.swapBuffers();
-                glClear(GL_COLOR_BUFFER_BIT);
             }
             void SetScissor(int x, int y, int w, int h)
             {

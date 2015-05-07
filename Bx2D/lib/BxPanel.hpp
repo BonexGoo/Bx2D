@@ -166,8 +166,8 @@ class BxPanel
 		VarL->LastRect.t -= GUIMarginT;
 		VarL->LastRect.r -= GUIMarginL;
 		VarL->LastRect.b -= GUIMarginT;
-		static const int XLength = (Single->RefDraw->Width(true) + CellSize - 1) / CellSize;
-		static const int YLength = (Single->RefDraw->Height(true) + CellSize - 1) / CellSize;
+		const int XLength = (Single->RefDraw->Width(true) + CellSize - 1) / CellSize;
+		const int YLength = (Single->RefDraw->Height(true) + CellSize - 1) / CellSize;
 		const int XBegin = BxUtilGlobal::Max(0, VarL->LastRect.l / CellSize);
 		const int YBegin = BxUtilGlobal::Max(0, VarL->LastRect.t / CellSize);
 		const int XEnd = BxUtilGlobal::Min(XLength, (VarL->LastRect.r + CellSize - 1) / CellSize);
@@ -550,8 +550,8 @@ class BxPanel
 			}
 		}
 		// Look into new panel
-		static const int XLength = (Panel.Single->RefDraw->Width(true) + CellSize - 1) / CellSize;
-		static const int YLength = (Panel.Single->RefDraw->Height(true) + CellSize - 1) / CellSize;
+		const int XLength = (Panel.Single->RefDraw->Width(true) + CellSize - 1) / CellSize;
+		const int YLength = (Panel.Single->RefDraw->Height(true) + CellSize - 1) / CellSize;
 		const int X = x / CellSize, Y = y / CellSize;
 		if(X < 0 || XLength <= X || Y < 0 || YLength <= Y) return false;
 		Singleton::PanelCell& Cell = Panel.Single->PanelCells[X + Y * XLength];
@@ -603,8 +603,8 @@ class BxPanel
 	{
 		BxPanel Panel;
 		if(!Panel.Single->RefDraw) return;
-		static const int XLength = (Panel.Single->RefDraw->Width(true) + CellSize - 1) / CellSize;
-		static const int YLength = (Panel.Single->RefDraw->Height(true) + CellSize - 1) / CellSize;
+		const int XLength = (Panel.Single->RefDraw->Width(true) + CellSize - 1) / CellSize;
+		const int YLength = (Panel.Single->RefDraw->Height(true) + CellSize - 1) / CellSize;
 		const int X = x / CellSize, Y = y / CellSize;
 		if(X < 0 || XLength <= X || Y < 0 || YLength <= Y) return;
 		Singleton::PanelCell& Cell = Panel.Single->PanelCells[X + Y * XLength];

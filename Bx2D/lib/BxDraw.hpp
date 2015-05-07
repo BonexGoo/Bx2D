@@ -793,6 +793,7 @@ namespace BxDrawGlobal
 		global_func inline fint& CurScaleHor() {global_data fint ScaleHor; return ScaleHor;}
 		global_func inline fint& CurScaleVer() {global_data fint ScaleVer; return ScaleVer;}
 		global_func inline color_x888& CurColor() {global_data color_x888 Color; return Color;}
+		global_func inline int& CurOpacity255() {global_data int Opacity255; return Opacity255;}
 		global_func inline int& CurOpacity7() {global_data int Opacity7; return Opacity7;} // -1:0%, 0:12.5%, 6:87.5%, 7:100%
 		global_func inline drawblend& CurBlend() {global_data drawblend Blend; return Blend;}
 		#ifndef __BX_OPENGL
@@ -970,7 +971,7 @@ namespace BxDrawGlobal
 			Color[0].Sum = 0;
 			Color[0].Color = _DrawOption::CurColor() = RGB32(Color[0].R, Color[0].G, Color[0].B); // 현재색상
 			Hue[0] = 0;
-			Opacity[0].Opacity255 = 255;
+			Opacity[0].Opacity255 = _DrawOption::CurOpacity255() = 255;
 			Opacity[0].Opacity7 = _DrawOption::CurOpacity7() = 7; // 현재불투명도
 			Blend[0] = _DrawOption::CurBlend() = blend_normal; // 현재블랜드
 			#ifndef __BX_OPENGL
@@ -1013,7 +1014,10 @@ namespace BxDrawGlobal
 				case drawstyle_scale: _DrawOption::CurScaleHor() = Scale[Focus].Horizon; _DrawOption::CurScaleVer() = Scale[Focus].Vertical; break; // 현재배율
 				case drawstyle_color: _DrawOption::CurColor() = Color[Focus].Color; break; // 현재색상
 				case drawstyle_hue: break;
-				case drawstyle_opacity: _DrawOption::CurOpacity7() = Opacity[Focus].Opacity7; break; // 현재불투명도
+				case drawstyle_opacity:
+					_DrawOption::CurOpacity255() = Opacity[Focus].Opacity255; // 현재불투명도
+					_DrawOption::CurOpacity7() = Opacity[Focus].Opacity7; // 현재불투명도
+					break;
 				case drawstyle_blend: _DrawOption::CurBlend() = Blend[Focus]; // 현재블랜드
 					#ifndef __BX_OPENGL
 					_DrawOption::CurSpriteTable() = _DrawOption::GetSpriteTable(Blend[Focus]);
@@ -1205,7 +1209,7 @@ namespace BxDrawGlobal
 	{
 		const int Focus = ++Stack().StyleFocus[drawstyle_opacity];
 		BxASSERT("BxDraw", Focus < Stack().MAX);
-		Stack().Opacity[Focus].Opacity255 = Stack().Opacity[Focus - 1].Opacity255 * opa / 255;
+		Stack().Opacity[Focus].Opacity255 = _DrawOption::CurOpacity255() = Stack().Opacity[Focus - 1].Opacity255 * opa / 255;
 		Stack().Opacity[Focus].Opacity7 = _DrawOption::CurOpacity7() = 8 * Stack().Opacity[Focus].Opacity255 / 255 - 1; // 현재불투명도
 		// 스택증가
 		Stack().Order[++Stack().OrderFocus] = drawstyle_opacity;
@@ -1470,7 +1474,7 @@ public:
 				BxCore::OpenGL2D::Outline_VertexUV_SetRotate(Outline, Angle, DoFlip);
 				BxCore::OpenGL2D::Render(BxDrawGlobal::_DrawOption::CurForm()->GetFormGL(), Outline,
 					BxDrawGlobal::_DrawOption::CurHotspotX(), BxDrawGlobal::_DrawOption::CurHotspotY(),
-					255 * (BxDrawGlobal::_DrawOption::CurOpacity7() + 1) / 8,
+					BxDrawGlobal::_DrawOption::CurOpacity255(),//255 * (BxDrawGlobal::_DrawOption::CurOpacity7() + 1) / 8,
 					BxDrawGlobal::_DrawOption::CurColor());
 				BxCore::OpenGL2D::FreeOutline(Outline);
 			}
@@ -1693,7 +1697,7 @@ public:
 				BxCore::OpenGL2D::Outline_PolyVertexUV_SetRotate(Outline, Angle, DoFlip);
 				BxCore::OpenGL2D::Render(BxDrawGlobal::_DrawOption::CurForm()->GetFormGL(), Outline,
 					BxDrawGlobal::_DrawOption::CurHotspotX(), BxDrawGlobal::_DrawOption::CurHotspotY(),
-					255 * (BxDrawGlobal::_DrawOption::CurOpacity7() + 1) / 8,
+					BxDrawGlobal::_DrawOption::CurOpacity255(),//255 * (BxDrawGlobal::_DrawOption::CurOpacity7() + 1) / 8,
 					BxDrawGlobal::_DrawOption::CurColor());
 				BxCore::OpenGL2D::FreeOutline(Outline);
 			}
@@ -1991,7 +1995,7 @@ public:
 			//BxCore::OpenGL2D::Outline_PolyVertexUV_SetRotate(Outline, Angle, DoFlip);
 			BxCore::OpenGL2D::Render3D(BxDrawGlobal::_DrawOption::CurForm()->GetFormGL(), Outline,
 				BxDrawGlobal::_DrawOption::CurMoveX3D(), BxDrawGlobal::_DrawOption::CurMoveY3D(), BxDrawGlobal::_DrawOption::CurMoveZ3D(),
-				255 * (BxDrawGlobal::_DrawOption::CurOpacity7() + 1) / 8,
+				BxDrawGlobal::_DrawOption::CurOpacity255(),//255 * (BxDrawGlobal::_DrawOption::CurOpacity7() + 1) / 8,
 				BxDrawGlobal::_DrawOption::CurColor());
 			BxCore::OpenGL2D::FreeOutline(Outline);
 		}
@@ -2020,7 +2024,7 @@ public:
 				BxCore::OpenGL2D::Outline_PolyVertexUV_SetRotate(Outline, Angle, DoFlip);
 				BxCore::OpenGL2D::Render(BxDrawGlobal::_DrawOption::CurForm()->GetFormGL(), Outline,
 					BxDrawGlobal::_DrawOption::CurHotspotX(), BxDrawGlobal::_DrawOption::CurHotspotY(),
-					255 * (BxDrawGlobal::_DrawOption::CurOpacity7() + 1) / 8,
+					BxDrawGlobal::_DrawOption::CurOpacity255(),//255 * (BxDrawGlobal::_DrawOption::CurOpacity7() + 1) / 8,
 					BxDrawGlobal::_DrawOption::CurColor());
 				BxCore::OpenGL2D::FreeOutline(Outline);
 			}
@@ -2113,7 +2117,8 @@ public:
 		if(!AddStyleByIf(count)) return point::zero();
 
 		BxCore::Font::SetOption(font, BxDrawGlobal::_DrawOption::CurColor(),
-			255 * (BxDrawGlobal::_DrawOption::CurOpacity7() + 1) / 8, align);
+			BxDrawGlobal::_DrawOption::CurOpacity255(),//255 * (BxDrawGlobal::_DrawOption::CurOpacity7() + 1) / 8,
+			align);
 
 		const int& HotspotX = BxDrawGlobal::_DrawOption::CurHotspotX();
 		const int& HotspotY = BxDrawGlobal::_DrawOption::CurHotspotY();
@@ -2262,7 +2267,7 @@ protected:
 	/// @cond SECTION_NAME
 	inline bool VisibleTest(BxDrawGlobal::StyleStack count)
 	{
-		if(BxDrawGlobal::_DrawOption::CurOpacity7() < 0
+		if(BxDrawGlobal::_DrawOption::CurOpacity255() == 0//BxDrawGlobal::_DrawOption::CurOpacity7() < 0
 			|| BxDrawGlobal::_DrawOption::CurScaleHor() == 0
 			|| BxDrawGlobal::_DrawOption::CurScaleVer() == 0)
 		{

@@ -158,6 +158,9 @@
     <ClInclude Include="..\..\Bx2D\lib\BxMemory.hpp">
       <Filter>Bx2D\lib</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxPanel.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Bx2D\lib\BxPathFind.hpp">
       <Filter>Bx2D\lib</Filter>
     </ClInclude>
@@ -188,6 +191,9 @@
     <ClInclude Include="..\..\Bx2D\lib\BxVarMap.hpp">
       <Filter>Bx2D\lib</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Bx2D\lib\BxVarQueue.hpp">
+      <Filter>Bx2D\lib</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Bx2D\lib\BxVarVector.hpp">
       <Filter>Bx2D\lib</Filter>
     </ClInclude>
@@ -195,9 +201,6 @@
       <Filter>Bx2D\lib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Bx2D\lib\BxXml.hpp">
-      <Filter>Bx2D\lib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Bx2D\lib\BxPanel.hpp">
       <Filter>Bx2D\lib</Filter>
     </ClInclude>
   </ItemGroup>

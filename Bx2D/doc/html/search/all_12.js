@@ -4,6 +4,7 @@ var searchData=
   ['searchfiles',['SearchFiles',['../namespace_bx_core_1_1_file.html#ae5f9334c76be6620f62e255f4415bbb6',1,'BxCore::File']]],
   ['send',['Send',['../namespace_bx_core_1_1_socket.html#a9a23c3a4ad8819aa795983a72eb8c5b2',1,'BxCore::Socket']]],
   ['sendevent',['SendEvent',['../class_bx_animate.html#aaf88b551be77ef906da4e61ac407a62c',1,'BxAnimate']]],
+  ['sendtopeer',['SendToPeer',['../namespace_bx_core_1_1_server.html#ab8bb563cf9f73b130c10cd880c19ec08',1,'BxCore::Server']]],
   ['serialize',['Serialize',['../class_bx_dynamic_1_1_serialize.html',1,'BxDynamic']]],
   ['servicem',['ServiceM',['../class_bx_panel_1_1_service_m.html',1,'BxPanel']]],
   ['services',['ServiceS',['../class_bx_panel_1_1_service_s.html',1,'BxPanel']]],

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_bx_var_queue" kind="class" language="C++" prot="public">
+    <compoundname>BxVarQueue</compoundname>
+    <includes refid="_bx_var_queue_8hpp" local="no">BxVarQueue.hpp</includes>
+    <innerclass refid="class_bx_var_queue_1_1_queue_element" prot="private">BxVarQueue::QueueElement</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>TYPE</declname>
+        <defname>TYPE</defname>
+      </param>
+      <param>
+        <type>bool</type>
+        <declname>FORTHREAD</declname>
+        <defname>FORTHREAD</defname>
+        <defval>true</defval>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>MAXCOUNT</declname>
+        <defname>MAXCOUNT</defname>
+        <defval>256</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bx_var_queue_1a64ce5785e958d8cb3e5641d15382b197" prot="private" static="no" mutable="no">
+        <type>QueueElement</type>
+        <definition>QueueElement BxVarQueue&lt; TYPE, FORTHREAD, MAXCOUNT &gt;::Head</definition>
+        <argsstring></argsstring>
+        <name>Head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" line="49" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_var_queue_1a08a88d3cdc114714ad6f47b0f5fb57de" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BxVarQueue&lt; TYPE, FORTHREAD, MAXCOUNT &gt;::DataCount</definition>
+        <argsstring></argsstring>
+        <name>DataCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" line="50" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bx_var_queue_1ab3d289741ea61c0fac26ae6ec605761d" prot="private" static="no" mutable="no">
+        <type>id_mutex</type>
+        <definition>id_mutex BxVarQueue&lt; TYPE, FORTHREAD, MAXCOUNT &gt;::Mutex</definition>
+        <argsstring></argsstring>
+        <name>Mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" line="51" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bx_var_queue_1acbcc5b6565e3ee39ee2b9c7bf901dd0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxVarQueue&lt; TYPE, FORTHREAD, MAXCOUNT &gt;::BxVarQueue</definition>
+        <argsstring>()</argsstring>
+        <name>BxVarQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" line="54" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" bodystart="54" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_queue_1abf3ece67e113a2a82d6958d439bf6b99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BxVarQueue&lt; TYPE, FORTHREAD, MAXCOUNT &gt;::~BxVarQueue</definition>
+        <argsstring>()</argsstring>
+        <name>~BxVarQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" line="60" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_queue_1a850626806cf7c2c116b078aa654505a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxVarQueue&lt; TYPE, FORTHREAD, MAXCOUNT &gt;::Enqueue</definition>
+        <argsstring>(TYPE *data)</argsstring>
+        <name>Enqueue</name>
+        <param>
+          <type>TYPE *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" line="68" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" bodystart="68" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bx_var_queue_1aadaca6efe09bc153d5334e8d415b2573" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TYPE *</type>
+        <definition>TYPE* BxVarQueue&lt; TYPE, FORTHREAD, MAXCOUNT &gt;::Dequeue</definition>
+        <argsstring>()</argsstring>
+        <name>Dequeue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" line="80" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" bodystart="80" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>큐 제공 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" line="7" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp" bodystart="6" bodyend="92"/>
+    <listofallmembers>
+      <member refid="class_bx_var_queue_1acbcc5b6565e3ee39ee2b9c7bf901dd0c" prot="public" virt="non-virtual"><scope>BxVarQueue</scope><name>BxVarQueue</name></member>
+      <member refid="class_bx_var_queue_1a08a88d3cdc114714ad6f47b0f5fb57de" prot="private" virt="non-virtual"><scope>BxVarQueue</scope><name>DataCount</name></member>
+      <member refid="class_bx_var_queue_1aadaca6efe09bc153d5334e8d415b2573" prot="public" virt="non-virtual"><scope>BxVarQueue</scope><name>Dequeue</name></member>
+      <member refid="class_bx_var_queue_1a850626806cf7c2c116b078aa654505a4" prot="public" virt="non-virtual"><scope>BxVarQueue</scope><name>Enqueue</name></member>
+      <member refid="class_bx_var_queue_1a64ce5785e958d8cb3e5641d15382b197" prot="private" virt="non-virtual"><scope>BxVarQueue</scope><name>Head</name></member>
+      <member refid="class_bx_var_queue_1ab3d289741ea61c0fac26ae6ec605761d" prot="private" virt="non-virtual"><scope>BxVarQueue</scope><name>Mutex</name></member>
+      <member refid="class_bx_var_queue_1abf3ece67e113a2a82d6958d439bf6b99" prot="public" virt="non-virtual"><scope>BxVarQueue</scope><name>~BxVarQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

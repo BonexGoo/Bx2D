@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="205" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="205" bodyend="205"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="207" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="207" bodyend="207"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="204" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="204" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="206" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structsize_1a6c969fe8f7eba85ca0235ab86fe49cff" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="204" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="204" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="206" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="206" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="206" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="206" bodyend="207"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="208" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="208" bodyend="209"/>
       </memberdef>
       <memberdef kind="function" id="structsize_1ac8d1657b6cc546b9713eb14bbd93f49e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>const bool</type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="208" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="208" bodyend="209"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="210" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="210" bodyend="211"/>
       </memberdef>
       <memberdef kind="function" id="structsize_1a73f20cf2b279769b2bb665b05509bcfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func const <ref refid="structsize" kindref="compound">size</ref> &amp;</type>
@@ -109,7 +109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="210" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="210" bodyend="210"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="212" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="212" bodyend="212"/>
       </memberdef>
       <memberdef kind="function" id="structsize_1a722fd3476384568ed279a6001bd88b16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>global_func const <ref refid="structsize" kindref="compound">size</ref> &amp;</type>
@@ -122,7 +122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="211" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="211" bodyend="211"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="213" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="213" bodyend="213"/>
       </memberdef>
       <memberdef kind="function" id="structsize_1a414048a953d865d2c55f1226093a2c67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structsize" kindref="compound">size</ref> &amp;</type>
@@ -139,14 +139,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="212" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="212" bodyend="212"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="214" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="214" bodyend="214"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>size구조체 : w, h </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="203" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="202" bodyend="213"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="205" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="204" bodyend="215"/>
     <listofallmembers>
       <member refid="structsize_1a722fd3476384568ed279a6001bd88b16" prot="public" virt="non-virtual"><scope>size</scope><name>full</name></member>
       <member refid="structsize_1a6c969fe8f7eba85ca0235ab86fe49cff" prot="public" virt="non-virtual"><scope>size</scope><name>h</name></member>

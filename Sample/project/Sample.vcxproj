@@ -118,7 +118,31 @@ xcopy "..\..\Bx2D\package\win32\$(ConfigurationName)\*.*" "..\bin_$(Configuratio
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Bx2D\core\BxCore.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxAnimate.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxArgument.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxAutoBuffer.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxConsole.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxDraw.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxDynamic.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxExpress.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxImage.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxKeyword.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxMemory.hpp" />
     <ClInclude Include="..\..\Bx2D\lib\BxPanel.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxPathFind.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxPool.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxScene.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxSingleton.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxString.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxTween.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxType.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxUtil.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxVar.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxVarMap.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxVarQueue.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxVarVector.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxWebContent.hpp" />
+    <ClInclude Include="..\..\Bx2D\lib\BxXml.hpp" />
     <CustomBuild Include="..\..\Bx2D\core\BxCoreForQT5.hpp">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing BxCoreForQT5.hpp...</Message>
@@ -130,29 +154,6 @@ xcopy "..\..\Bx2D\package\win32\$(ConfigurationName)\*.*" "..\bin_$(Configuratio
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D__BX_APPLICATION -D__BX_OPENGL -D__BX_MEMORY -DWIN32 -DNDEBUG -DQT_DLL -DQT_NO_DEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB  "-I." "-I.\GeneratedFiles" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtWidgets" "-I.\..\..\Bx2D\addon" "-I.\..\..\Bx2D\core" "-I.\..\..\Bx2D\lib" "-I.\..\..\Bx2D\skin"</Command>
     </CustomBuild>
     <ClInclude Include="..\..\Bx2D\core\BxCoreImpl.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxAnimate.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxArgument.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxAutoBuffer.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxConsole.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxDraw.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxDynamic.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxExpress.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxImage.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxKeyword.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxMemory.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxPathFind.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxPool.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxScene.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxSingleton.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxString.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxTween.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxType.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxUtil.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxVar.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxVarMap.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxVarVector.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxWebContent.hpp" />
-    <ClInclude Include="..\..\Bx2D\lib\BxXml.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\common\main.rc" />

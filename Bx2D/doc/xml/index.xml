@@ -696,6 +696,15 @@
     <member refid="class_bx_var_map_1ac5afe9713c9b693e627b786187f1d223" kind="function"><name>RemoveCore</name></member>
     <member refid="class_bx_var_map_1ac8a9fe2efc21322fa98a3ed4b3467114" kind="function"><name>RemoveCore</name></member>
   </compound>
+  <compound refid="class_bx_var_queue" kind="class"><name>BxVarQueue</name>
+    <member refid="class_bx_var_queue_1a64ce5785e958d8cb3e5641d15382b197" kind="variable"><name>Head</name></member>
+    <member refid="class_bx_var_queue_1a08a88d3cdc114714ad6f47b0f5fb57de" kind="variable"><name>DataCount</name></member>
+    <member refid="class_bx_var_queue_1ab3d289741ea61c0fac26ae6ec605761d" kind="variable"><name>Mutex</name></member>
+    <member refid="class_bx_var_queue_1acbcc5b6565e3ee39ee2b9c7bf901dd0c" kind="function"><name>BxVarQueue</name></member>
+    <member refid="class_bx_var_queue_1abf3ece67e113a2a82d6958d439bf6b99" kind="function"><name>~BxVarQueue</name></member>
+    <member refid="class_bx_var_queue_1a850626806cf7c2c116b078aa654505a4" kind="function"><name>Enqueue</name></member>
+    <member refid="class_bx_var_queue_1aadaca6efe09bc153d5334e8d415b2573" kind="function"><name>Dequeue</name></member>
+  </compound>
   <compound refid="class_bx_var_vector" kind="class"><name>BxVarVector</name>
     <member refid="class_bx_var_vector_1a0ebcac5fb97e9bb800bb5ef91cfcd020" kind="enum"><name>Parameter</name></member>
     <member refid="class_bx_var_vector_1a0ebcac5fb97e9bb800bb5ef91cfcd020a4565cbbd7da6f64c9bdde499c0cf05d3" kind="enumvalue"><name>AutoCreate</name></member>
@@ -1052,13 +1061,6 @@
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1a414c01717bf4ff54763d8610ad59f42c" kind="function"><name>GetResource</name></member>
     <member refid="class_bx_dynamic_1_1_resource_1_1_link_pool_1adef288360223f451cc7893fc5b76f5e8" kind="function"><name>CallSerialize</name></member>
   </compound>
-  <compound refid="class_bx_auto_buffer_1_1_list" kind="class"><name>BxAutoBuffer::List</name>
-    <member refid="class_bx_auto_buffer_1_1_list_1ae35c02438d9067deb74156c823a3115f" kind="variable"><name>Data</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1ab4f72478274a95e6b54b672b20d5732c" kind="variable"><name>Size</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1a616cd9450e2d3354a66ac938d4037229" kind="variable"><name>Next</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1a94fd5e62cb0f37710d78e9dfb20800ce" kind="function"><name>List</name></member>
-    <member refid="class_bx_auto_buffer_1_1_list_1a0c9be1e5f422f13a70a9ea47082cb3cc" kind="function"><name>~List</name></member>
-  </compound>
   <compound refid="class_bx_singleton_1_1_list" kind="class"><name>BxSingleton::List</name>
     <member refid="class_bx_singleton_1_1_list_1a9adfb49d2ba3e720706370792c1ad038" kind="variable"><name>Unit</name></member>
     <member refid="class_bx_singleton_1_1_list_1a53d1d7119b04f1c89f2353c7d7d4b4be" kind="variable"><name>Next</name></member>
@@ -1069,6 +1071,13 @@
     <member refid="class_bx_singleton_1_1_list_1a09172576a94e56e6753917ee9307ff7d" kind="function"><name>Rebind</name></member>
     <member refid="class_bx_singleton_1_1_list_1aac733da6cfca2cf8c2059154d82cc1ac" kind="function"><name>Unbind</name></member>
     <member refid="class_bx_singleton_1_1_list_1a0e5b91668b0278e628ad6326576f9468" kind="function"><name>UnbindAll</name></member>
+  </compound>
+  <compound refid="class_bx_auto_buffer_1_1_list" kind="class"><name>BxAutoBuffer::List</name>
+    <member refid="class_bx_auto_buffer_1_1_list_1ae35c02438d9067deb74156c823a3115f" kind="variable"><name>Data</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1ab4f72478274a95e6b54b672b20d5732c" kind="variable"><name>Size</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1a616cd9450e2d3354a66ac938d4037229" kind="variable"><name>Next</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1a94fd5e62cb0f37710d78e9dfb20800ce" kind="function"><name>List</name></member>
+    <member refid="class_bx_auto_buffer_1_1_list_1a0c9be1e5f422f13a70a9ea47082cb3cc" kind="function"><name>~List</name></member>
   </compound>
   <compound refid="class_bx_path_find_1_1_map" kind="class"><name>BxPathFind::Map</name>
     <member refid="class_bx_path_find_1_1_map_1a72878b3428294efec8b65ebc57ed35fd" kind="friend"><name>Hurdle</name></member>
@@ -1196,6 +1205,15 @@
     <member refid="structquater_1a9ca04f034110ffda39af6647f4ad88ad" kind="variable"><name>y</name></member>
     <member refid="structquater_1ae291bf3a49b2fd943cba108b5885833f" kind="variable"><name>z</name></member>
     <member refid="structquater_1a79495603979e92604f8ccc71e7d01663" kind="variable"><name>angle1024</name></member>
+  </compound>
+  <compound refid="class_bx_var_queue_1_1_queue_element" kind="class"><name>BxVarQueue::QueueElement</name>
+    <member refid="class_bx_var_queue_1_1_queue_element_1a65437b2094875e60fcd381aaf4bc17d3" kind="variable"><name>Data</name></member>
+    <member refid="class_bx_var_queue_1_1_queue_element_1a8d620a5a3f21b0c965d04dde2a132ccf" kind="variable"><name>Prev</name></member>
+    <member refid="class_bx_var_queue_1_1_queue_element_1a84caadc2fae2f3e87c19331a44a4a472" kind="variable"><name>Next</name></member>
+    <member refid="class_bx_var_queue_1_1_queue_element_1a6da959c248777c58ebd67329dc9b0e97" kind="function"><name>QueueElement</name></member>
+    <member refid="class_bx_var_queue_1_1_queue_element_1ab479be8409ef4838f4be6f55b32d8524" kind="function"><name>~QueueElement</name></member>
+    <member refid="class_bx_var_queue_1_1_queue_element_1a43f6d1ac01b49f8761692171eff2e9eb" kind="function"><name>Enqueue</name></member>
+    <member refid="class_bx_var_queue_1_1_queue_element_1ade6bd427f889b0ce718f8d4cd35b12ec" kind="function"><name>Dequeue</name></member>
   </compound>
   <compound refid="class_bx_keyword_1_1_radio" kind="class"><name>BxKeyword::Radio</name>
     <member refid="class_bx_keyword_1_1_radio_1a6c7bd738326c12d9fbe354b8f5562a1d" kind="variable"><name>Data</name></member>
@@ -1360,19 +1378,6 @@
     <member refid="class_bx_path_find_1_1_map_1_1_triangle_1aa89ec58e16208cb7c953c4aef9b7a856" kind="function"><name>INSERT_FIRST</name></member>
     <member refid="class_bx_path_find_1_1_map_1_1_triangle_1abfd96ca3b81c98259b869318913694cb" kind="function"><name>~Triangle</name></member>
   </compound>
-  <compound refid="class_bx_argument_1_1_unit" kind="class"><name>BxArgument::Unit</name>
-    <member refid="class_bx_argument_1_1_unit_1a24d06e65bcfe1606c27b768aa36c70ef" kind="variable"><name>Next</name></member>
-    <member refid="class_bx_argument_1_1_unit_1a2e755b02a3c3ecdfef821244667e894c" kind="function"><name>Unit</name></member>
-    <member refid="class_bx_argument_1_1_unit_1ac7919f7925dc94a46b27a52c072c804b" kind="function"><name>~Unit</name></member>
-    <member refid="class_bx_argument_1_1_unit_1a4a3857d548a770b7b59fd06e68622d0e" kind="function"><name>VTablePtr</name></member>
-  </compound>
-  <compound refid="class_bx_pool_global_1_1_unit" kind="class"><name>BxPoolGlobal::Unit</name>
-    <member refid="class_bx_pool_global_1_1_unit_1a5e77968b9faaebb82d6bbb83810b752c" kind="variable"><name>Next</name></member>
-    <member refid="class_bx_pool_global_1_1_unit_1a38355505768c59fae2266502bb22b8ac" kind="function"><name>Unit</name></member>
-    <member refid="class_bx_pool_global_1_1_unit_1a85a079f0820f9e0a0e5e1b50e5f3f8aa" kind="function"><name>Quit</name></member>
-    <member refid="class_bx_pool_global_1_1_unit_1ab40c59973e7765b3cba71f985939a282" kind="function"><name>Free</name></member>
-    <member refid="class_bx_pool_global_1_1_unit_1a76c51992d6f880345f9728b2dd9c591d" kind="function"><name>Find</name></member>
-  </compound>
   <compound refid="class_bx_pool_1_1_unit" kind="class"><name>BxPool::Unit</name>
     <member refid="class_bx_pool_1_1_unit_1a6cc20bf3832dac5e80922491a2c48ffa" kind="enum"><name>@3</name></member>
     <member refid="class_bx_pool_1_1_unit_1a6cc20bf3832dac5e80922491a2c48ffaa92184c49a9c84c510c6f959a37e34fca" kind="enumvalue"><name>MAX</name></member>
@@ -1385,6 +1390,13 @@
     <member refid="class_bx_pool_1_1_unit_1a4b823bdd28e76d909a185230a62e488e" kind="function"><name>Free</name></member>
     <member refid="class_bx_pool_1_1_unit_1a44e1937723a2f62d86c5e0cac7707756" kind="function"><name>Find</name></member>
   </compound>
+  <compound refid="class_bx_pool_global_1_1_unit" kind="class"><name>BxPoolGlobal::Unit</name>
+    <member refid="class_bx_pool_global_1_1_unit_1a5e77968b9faaebb82d6bbb83810b752c" kind="variable"><name>Next</name></member>
+    <member refid="class_bx_pool_global_1_1_unit_1a38355505768c59fae2266502bb22b8ac" kind="function"><name>Unit</name></member>
+    <member refid="class_bx_pool_global_1_1_unit_1a85a079f0820f9e0a0e5e1b50e5f3f8aa" kind="function"><name>Quit</name></member>
+    <member refid="class_bx_pool_global_1_1_unit_1ab40c59973e7765b3cba71f985939a282" kind="function"><name>Free</name></member>
+    <member refid="class_bx_pool_global_1_1_unit_1a76c51992d6f880345f9728b2dd9c591d" kind="function"><name>Find</name></member>
+  </compound>
   <compound refid="class_bx_xml_1_1_unit" kind="class"><name>BxXml::Unit</name>
     <member refid="class_bx_xml_1_1_unit_1a230ffac023d60fe81b0e952e099d7d81" kind="variable"><name>IsWritten</name></member>
     <member refid="class_bx_xml_1_1_unit_1ac3e85fb97cb60a682601ee392e4d6f5c" kind="variable"><name>TagName</name></member>
@@ -1396,6 +1408,12 @@
     <member refid="class_bx_xml_1_1_unit_1aac6d850fe1ed7d6d1b2b4c805c193825" kind="function"><name>Read</name></member>
     <member refid="class_bx_xml_1_1_unit_1a1e5bdf39475c4e6fee0074ef71208b66" kind="function"><name>Write</name></member>
     <member refid="class_bx_xml_1_1_unit_1a79575c9bfc936766557c15000a54b78d" kind="function"><name>AtoH</name></member>
+  </compound>
+  <compound refid="class_bx_argument_1_1_unit" kind="class"><name>BxArgument::Unit</name>
+    <member refid="class_bx_argument_1_1_unit_1a24d06e65bcfe1606c27b768aa36c70ef" kind="variable"><name>Next</name></member>
+    <member refid="class_bx_argument_1_1_unit_1a2e755b02a3c3ecdfef821244667e894c" kind="function"><name>Unit</name></member>
+    <member refid="class_bx_argument_1_1_unit_1ac7919f7925dc94a46b27a52c072c804b" kind="function"><name>~Unit</name></member>
+    <member refid="class_bx_argument_1_1_unit_1a4a3857d548a770b7b59fd06e68622d0e" kind="function"><name>VTablePtr</name></member>
   </compound>
   <compound refid="class_bx_pool_global_1_1_unit_link" kind="class"><name>BxPoolGlobal::UnitLink</name>
     <member refid="class_bx_pool_global_1_1_unit_link_1a039795c6e0ac983ed8845c5c5e5071f3" kind="variable"><name>Head</name></member>
@@ -1473,14 +1491,14 @@
     <member refid="class_bx_var_1_1_var_list_1a8d33a55c26f9bb4acb375123a31200c7" kind="function"><name>RemoveData</name></member>
     <member refid="class_bx_var_1_1_var_list_1aeeab28a7316de5d59115b428f8132172" kind="function"><name>EnableRemove</name></member>
   </compound>
-  <compound refid="class_bx_var_vector_1_1_var_table" kind="class"><name>BxVarVector::VarTable</name>
-    <member refid="class_bx_var_vector_1_1_var_table_1ac3f745c2539f319e70b7523c332802b6" kind="variable"><name>Ch</name></member>
-    <member refid="class_bx_var_vector_1_1_var_table_1ac04e1cca3f8c82bc8d21c8f9cee93e00" kind="function"><name>VarTable</name></member>
-  </compound>
   <compound refid="class_bx_var_map_1_1_var_table" kind="class"><name>BxVarMap::VarTable</name>
     <member refid="class_bx_var_map_1_1_var_table_1ac29764df150f8803dfa20677365227e8" kind="variable"><name>Count</name></member>
     <member refid="class_bx_var_map_1_1_var_table_1aaf59cba7d53e987c864a7e4208be51ff" kind="variable"><name>Ch</name></member>
     <member refid="class_bx_var_map_1_1_var_table_1a15e3edfdf651126e139788c6b1f275ea" kind="function"><name>VarTable</name></member>
+  </compound>
+  <compound refid="class_bx_var_vector_1_1_var_table" kind="class"><name>BxVarVector::VarTable</name>
+    <member refid="class_bx_var_vector_1_1_var_table_1ac3f745c2539f319e70b7523c332802b6" kind="variable"><name>Ch</name></member>
+    <member refid="class_bx_var_vector_1_1_var_table_1ac04e1cca3f8c82bc8d21c8f9cee93e00" kind="function"><name>VarTable</name></member>
   </compound>
   <compound refid="class_bx_var_1_1_var_tree" kind="class"><name>BxVar::VarTree</name>
     <member refid="class_bx_var_1_1_var_tree_1a0c1ea2528ef2b4422f083c2b3e0ffed5" kind="enum"><name>Parameter</name></member>
@@ -1664,10 +1682,20 @@
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1a4ba87315049dff4c0d9107d5f3d5daef" kind="function"><name>Render</name></member>
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1a996f444283f9cbcd441d3a2cb7dd8dc1" kind="function"><name>Render3D</name></member>
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1a6bfaf570ee91c1947d42606761392ae4" kind="function"><name>RenderLinesDirectly</name></member>
-    <member refid="namespace_bx_core_1_1_open_g_l2_d_1afb158f79be6a95f3f369854e4a62bf1e" kind="function"><name>RenderStripDirectly</name></member>
+    <member refid="namespace_bx_core_1_1_open_g_l2_d_1a3986744a96c7ec0b94af52980b2a12a4" kind="function"><name>RenderStripDirectly</name></member>
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1ac4e47adab45dcc3fd549fded7440b29d" kind="function"><name>Clip</name></member>
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1a0d01bdfb74bfc4ce9c968ff9677c29eb" kind="function"><name>GetTextureMargin</name></member>
     <member refid="namespace_bx_core_1_1_open_g_l2_d_1a58f576b8a1326ff364da4be247dbebf3" kind="function"><name>DoTextureInterpolation</name></member>
+  </compound>
+  <compound refid="namespace_bx_core_1_1_server" kind="namespace"><name>BxCore::Server</name>
+    <member refid="namespace_bx_core_1_1_server_1aba256e69490a2047d1074e13e22255ee" kind="function"><name>Create</name></member>
+    <member refid="namespace_bx_core_1_1_server_1a49168aa2d8640b9cc8f2a8c12aa8ad7c" kind="function"><name>Release</name></member>
+    <member refid="namespace_bx_core_1_1_server_1a639f6c7b40294960e7d8719603dd1f70" kind="function"><name>Listen</name></member>
+    <member refid="namespace_bx_core_1_1_server_1ace8256ec8b9ca56bf62792abe58fa2b9" kind="function"><name>TryNextPacket</name></member>
+    <member refid="namespace_bx_core_1_1_server_1affbdb9a2046ddeb19bc9cf4422bf03a1" kind="function"><name>GetPacketKind</name></member>
+    <member refid="namespace_bx_core_1_1_server_1a6cda5188b79a373811979aee1cb1dfe4" kind="function"><name>GetPacketPeerID</name></member>
+    <member refid="namespace_bx_core_1_1_server_1ae422215c74cad22dfc3c091b015ddb32" kind="function"><name>GetPacketBuffer</name></member>
+    <member refid="namespace_bx_core_1_1_server_1ab8bb563cf9f73b130c10cd880c19ec08" kind="function"><name>SendToPeer</name></member>
   </compound>
   <compound refid="namespace_bx_core_1_1_simulator" kind="namespace"><name>BxCore::Simulator</name>
     <member refid="namespace_bx_core_1_1_simulator_1a6d787d4823b51efa0c5e54cbfdb9be53" kind="function"><name>GetWindowHandle</name></member>
@@ -1678,6 +1706,8 @@
     <member refid="namespace_bx_core_1_1_simulator_1a5d639331bb5cc963bfc18b8de5a48b41" kind="function"><name>SetCursorPos</name></member>
     <member refid="namespace_bx_core_1_1_simulator_1a602d7d98ede50cdff9e707d2be7793fd" kind="function"><name>GetCursorPos</name></member>
     <member refid="namespace_bx_core_1_1_simulator_1a402d6db31e30606286512cb3f3308090" kind="function"><name>DoMinimize</name></member>
+    <member refid="namespace_bx_core_1_1_simulator_1a600ed3f0b11147a09055c0475a40df53" kind="function"><name>DoFullScreen</name></member>
+    <member refid="namespace_bx_core_1_1_simulator_1a4d6e2edb874305989d6be600f06c8733" kind="function"><name>DoNormalScreen</name></member>
     <member refid="namespace_bx_core_1_1_simulator_1a2cc150470f7d46d387dcd3899c163329" kind="function"><name>HookEvent</name></member>
     <member refid="namespace_bx_core_1_1_simulator_1a32150dfa8ba2425ca56af67118f25c55" kind="function"><name>UnhookEvent</name></member>
     <member refid="namespace_bx_core_1_1_simulator_1a5fc3049a38ff3535e5ccba7dc7d7b94b" kind="function"><name>UnhookEventAll</name></member>
@@ -1686,10 +1716,11 @@
     <member refid="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" kind="function"><name>Create</name></member>
     <member refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kind="function"><name>Release</name></member>
     <member refid="namespace_bx_core_1_1_socket_1a5505b845782ae3f8fc493a8f26fec984" kind="function"><name>GetState</name></member>
-    <member refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kind="function"><name>Connect</name></member>
+    <member refid="namespace_bx_core_1_1_socket_1a76bb13c2ac8e53c2eb2682a4cbc5d8fd" kind="function"><name>Connect</name></member>
     <member refid="namespace_bx_core_1_1_socket_1aea75d34361bd74bef8a073e0c747fc4c" kind="function"><name>Disconnect</name></member>
     <member refid="namespace_bx_core_1_1_socket_1a9a23c3a4ad8819aa795983a72eb8c5b2" kind="function"><name>Send</name></member>
     <member refid="namespace_bx_core_1_1_socket_1a7be3798b55912b18de94d464abc420e5" kind="function"><name>Recv</name></member>
+    <member refid="namespace_bx_core_1_1_socket_1a8adaee320918ef4f41f5a1c2ed12a210" kind="function"><name>GetRecvLength</name></member>
     <member refid="namespace_bx_core_1_1_socket_1aa8ff5faa5156e2443a76dfff25c8c3e2" kind="function"><name>RecvFully</name></member>
     <member refid="namespace_bx_core_1_1_socket_1a4b654fd3ff8eabe722999d7e7ea71eed" kind="function"><name>Ping</name></member>
   </compound>
@@ -2429,17 +2460,23 @@
     <member refid="_bx_type_8hpp_1acec36d1565a24cab34391d9998667bb4ab71af0e2ece272a4978fb3a31bfe600c" kind="enumvalue"><name>socketstate_connecting</name></member>
     <member refid="_bx_type_8hpp_1acec36d1565a24cab34391d9998667bb4a3a3d5aa14e0fb5887693af0202829993" kind="enumvalue"><name>socketstate_connected</name></member>
     <member refid="_bx_type_8hpp_1acec36d1565a24cab34391d9998667bb4a9fb84af2b7194507f4cbc124ef7d2371" kind="enumvalue"><name>socketstate_disconnected</name></member>
-    <member refid="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7be" kind="enum"><name>connectresult</name></member>
-    <member refid="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7bea571f64411b7be2955e8d4a4c5feacb5b" kind="enumvalue"><name>connect_connected</name></member>
-    <member refid="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7bea73ac1053c5d2c8dff94ce1ead24ed1ca" kind="enumvalue"><name>connect_connecting</name></member>
-    <member refid="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7beae151fd2153245f32411f1c026b25a3bc" kind="enumvalue"><name>connect_disconnected</name></member>
-    <member refid="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7bea9040545f98fed00b0e4f59e60f5541d4" kind="enumvalue"><name>connect_error_param</name></member>
-    <member refid="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7beabb8317546f21965b9cc1d0f20a75c321" kind="enumvalue"><name>connect_error_already</name></member>
-    <member refid="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7bea1f42d79284441de053a750314c3f57b6" kind="enumvalue"><name>connect_error_netdown</name></member>
-    <member refid="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7beabe0bdd09091a25d561571d63fdbf50d7" kind="enumvalue"><name>connect_error_timeout</name></member>
-    <member refid="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7bea4f8d73870abf8ed12a5e0fde42d73680" kind="enumvalue"><name>connect_error_refused</name></member>
-    <member refid="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7bea329405b6a260e49f67fb976d4f8e3249" kind="enumvalue"><name>connect_error_wrong_address</name></member>
-    <member refid="_bx_type_8hpp_1a3937962e41e99b1208f97fbd1404a7bea772385a33b2a6a8f5e4869b12d643703" kind="enumvalue"><name>connect_error_unknown</name></member>
+    <member refid="_bx_type_8hpp_1aca8a9cd9fcbf0b30fd379785d4b97438" kind="enum"><name>connectstate</name></member>
+    <member refid="_bx_type_8hpp_1aca8a9cd9fcbf0b30fd379785d4b97438ae2ca2a1311ad412c4e4f7f4794a35d60" kind="enumvalue"><name>connectstate_connected</name></member>
+    <member refid="_bx_type_8hpp_1aca8a9cd9fcbf0b30fd379785d4b97438ac3e0776110398c29135571f594dbf863" kind="enumvalue"><name>connectstate_connecting</name></member>
+    <member refid="_bx_type_8hpp_1aca8a9cd9fcbf0b30fd379785d4b97438aea3f0a6e1c7c0ed40b24a7fcf4b3ca45" kind="enumvalue"><name>connectstate_disconnected</name></member>
+    <member refid="_bx_type_8hpp_1aca8a9cd9fcbf0b30fd379785d4b97438aa5129255b32becfa7881e04a0f543453" kind="enumvalue"><name>connectstate_error_param</name></member>
+    <member refid="_bx_type_8hpp_1aca8a9cd9fcbf0b30fd379785d4b97438ab3abb4c85682579b5215ee9e7af6e409" kind="enumvalue"><name>connectstate_error_already</name></member>
+    <member refid="_bx_type_8hpp_1aca8a9cd9fcbf0b30fd379785d4b97438a6f8ff54389ad873a72082a107800dcf2" kind="enumvalue"><name>connectstate_error_netdown</name></member>
+    <member refid="_bx_type_8hpp_1aca8a9cd9fcbf0b30fd379785d4b97438af1a8d3bcee5c2daa54572193c340dccc" kind="enumvalue"><name>connectstate_error_timeout</name></member>
+    <member refid="_bx_type_8hpp_1aca8a9cd9fcbf0b30fd379785d4b97438ae560318e2bc96ddca6e11cf54ce4b39c" kind="enumvalue"><name>connectstate_error_refused</name></member>
+    <member refid="_bx_type_8hpp_1aca8a9cd9fcbf0b30fd379785d4b97438aee475a86af2ed45a946e92dd15f2e651" kind="enumvalue"><name>connectstate_error_wrong_address</name></member>
+    <member refid="_bx_type_8hpp_1aca8a9cd9fcbf0b30fd379785d4b97438a3b8d82efac4e9cd5eebfa0a7a9a3a168" kind="enumvalue"><name>connectstate_error_unknown</name></member>
+    <member refid="_bx_type_8hpp_1afd6eafe6c9b18b29202b57061e28a4bb" kind="enum"><name>peerpacketkind</name></member>
+    <member refid="_bx_type_8hpp_1afd6eafe6c9b18b29202b57061e28a4bbaae35224a96239e844740b96bb7b21aea" kind="enumvalue"><name>peerpacketkind_null</name></member>
+    <member refid="_bx_type_8hpp_1afd6eafe6c9b18b29202b57061e28a4bba90a654503c8eceee3e3abaf0f17a1b35" kind="enumvalue"><name>peerpacketkind_entrance</name></member>
+    <member refid="_bx_type_8hpp_1afd6eafe6c9b18b29202b57061e28a4bba783e84d562a37ca91f998449f1028578" kind="enumvalue"><name>peerpacketkind_message</name></member>
+    <member refid="_bx_type_8hpp_1afd6eafe6c9b18b29202b57061e28a4bba5c0731f3a57bfa79628d2b413079c72d" kind="enumvalue"><name>peerpacketkind_leaved</name></member>
+    <member refid="_bx_type_8hpp_1afd6eafe6c9b18b29202b57061e28a4bba4cd18df99f5afaa468ce3d4b7207aee0" kind="enumvalue"><name>peerpacketkind_kicked</name></member>
     <member refid="_bx_type_8hpp_1a6cad29f76803e213a3caec20d856992d" kind="enum"><name>autobuffer</name></member>
     <member refid="_bx_type_8hpp_1a6cad29f76803e213a3caec20d856992da7176f8e188384c4987f19b27f0991f8a" kind="enumvalue"><name>autobuffer_sound</name></member>
     <member refid="_bx_type_8hpp_1a6cad29f76803e213a3caec20d856992dafa2168eff702f63aa3c7e8c5cf0e59f6" kind="enumvalue"><name>autobuffer_user</name></member>
@@ -2522,6 +2559,7 @@
     <member refid="_bx_type_8hpp_1a69f8f1aa8853665baaa7869c7883765d" kind="function"><name>DECLARE_ID</name></member>
     <member refid="_bx_type_8hpp_1af112e8362684bc460cc5bb1cba0645c7" kind="function"><name>DECLARE_ID</name></member>
     <member refid="_bx_type_8hpp_1ab1c9242f363bd8bc21020c86f1615175" kind="function"><name>DECLARE_ID</name></member>
+    <member refid="_bx_type_8hpp_1a73dfc2d634c7d399d7ea04f3b94f3be9" kind="function"><name>DECLARE_ID</name></member>
     <member refid="_bx_type_8hpp_1abddf020006076ec70aedee085d6082aa" kind="function"><name>DECLARE_ID</name></member>
     <member refid="_bx_type_8hpp_1a715228ff844a3ac9e0974a55c7c7e284" kind="function"><name>DECLARE_ID</name></member>
     <member refid="_bx_type_8hpp_1afdd88cea98878b404e8c39227c2b38dd" kind="function"><name>DECLARE_ID</name></member>
@@ -2548,6 +2586,8 @@
     <member refid="_bx_var_8hpp_1a7c4c1083e1a62791293d8893fe35a708" kind="define"><name>FINAL</name></member>
   </compound>
   <compound refid="_bx_var_map_8hpp" kind="file"><name>BxVarMap.hpp</name>
+  </compound>
+  <compound refid="_bx_var_queue_8hpp" kind="file"><name>BxVarQueue.hpp</name>
   </compound>
   <compound refid="_bx_var_vector_8hpp" kind="file"><name>BxVarVector.hpp</name>
     <member refid="_bx_var_vector_8hpp_1a29fd18bed01c4d836c7ebfe73a125c3f" kind="define"><name>END</name></member>

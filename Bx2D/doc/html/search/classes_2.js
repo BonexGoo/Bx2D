@@ -34,6 +34,7 @@ var searchData=
   ['bxvarmap_3c_20huge_20_3e',['BxVarMap&lt; huge &gt;',['../class_bx_var_map.html',1,'']]],
   ['bxvarmap_3c_20int_20_3e',['BxVarMap&lt; int &gt;',['../class_bx_var_map.html',1,'']]],
   ['bxvarmap_3c_20void_20_2a_20_3e',['BxVarMap&lt; void * &gt;',['../class_bx_var_map.html',1,'']]],
+  ['bxvarqueue',['BxVarQueue',['../class_bx_var_queue.html',1,'']]],
   ['bxvarvector',['BxVarVector',['../class_bx_var_vector.html',1,'']]],
   ['bxvarvector_3c_20bximage_2c_20256_20_3e',['BxVarVector&lt; BxImage, 256 &gt;',['../class_bx_var_vector.html',1,'']]],
   ['bxvarvector_3c_20bxpanel_20_2a_2c_208_20_3e',['BxVarVector&lt; BxPanel *, 8 &gt;',['../class_bx_var_vector.html',1,'']]],

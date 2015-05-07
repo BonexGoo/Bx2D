@@ -6,94 +6,94 @@
     <includes refid="_bx_var_map_8hpp" local="no">BxVarMap.hpp</includes>
     <includes refid="_bx_var_vector_8hpp" local="no">BxVarVector.hpp</includes>
     <incdepgraph>
-      <node id="519">
-        <label>BxMemory.hpp</label>
-        <link refid="_bx_memory_8hpp_source"/>
-        <childnode refid="520" relation="include">
+      <node id="536">
+        <label>BxVar.hpp</label>
+        <link refid="_bx_var_8hpp_source"/>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="540" relation="include">
         </childnode>
       </node>
-      <node id="520">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="521" relation="include">
+      <node id="535">
+        <label>BxString.hpp</label>
+        <link refid="_bx_string_8hpp_source"/>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="542" relation="include">
+        </childnode>
+        <childnode refid="543" relation="include">
         </childnode>
       </node>
-      <node id="526">
-        <label>BxVarMap.hpp</label>
-        <link refid="_bx_var_map_8hpp_source"/>
-        <childnode refid="520" relation="include">
-        </childnode>
-        <childnode refid="519" relation="include">
-        </childnode>
-        <childnode refid="522" relation="include">
+      <node id="540">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="541" relation="include">
         </childnode>
       </node>
-      <node id="521">
+      <node id="539">
         <label>BxArgument.hpp</label>
         <link refid="_bx_argument_8hpp_source"/>
-        <childnode refid="522" relation="include">
+        <childnode refid="540" relation="include">
         </childnode>
       </node>
-      <node id="516">
-        <label>BxWebContent.hpp</label>
-        <link refid="BxWebContent.hpp"/>
-        <childnode refid="517" relation="include">
-        </childnode>
-        <childnode refid="526" relation="include">
-        </childnode>
-        <childnode refid="527" relation="include">
-        </childnode>
-      </node>
-      <node id="523">
+      <node id="541">
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="527">
-        <label>BxVarVector.hpp</label>
-        <link refid="_bx_var_vector_8hpp_source"/>
-        <childnode refid="519" relation="include">
-        </childnode>
-        <childnode refid="522" relation="include">
-        </childnode>
-        <childnode refid="524" relation="include">
-        </childnode>
-      </node>
-      <node id="522">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="523" relation="include">
-        </childnode>
-      </node>
-      <node id="517">
-        <label>BxString.hpp</label>
-        <link refid="_bx_string_8hpp_source"/>
-        <childnode refid="518" relation="include">
-        </childnode>
-        <childnode refid="524" relation="include">
-        </childnode>
-        <childnode refid="525" relation="include">
-        </childnode>
-      </node>
-      <node id="524">
-        <label>BxUtil.hpp</label>
-        <link refid="_bx_util_8hpp_source"/>
-        <childnode refid="519" relation="include">
-        </childnode>
-        <childnode refid="525" relation="include">
-        </childnode>
-      </node>
-      <node id="518">
-        <label>BxVar.hpp</label>
-        <link refid="_bx_var_8hpp_source"/>
-        <childnode refid="519" relation="include">
-        </childnode>
-        <childnode refid="522" relation="include">
-        </childnode>
-      </node>
-      <node id="525">
+      <node id="543">
         <label>BxSingleton.hpp</label>
         <link refid="_bx_singleton_8hpp_source"/>
-        <childnode refid="523" relation="include">
+        <childnode refid="541" relation="include">
+        </childnode>
+      </node>
+      <node id="537">
+        <label>BxMemory.hpp</label>
+        <link refid="_bx_memory_8hpp_source"/>
+        <childnode refid="538" relation="include">
+        </childnode>
+      </node>
+      <node id="542">
+        <label>BxUtil.hpp</label>
+        <link refid="_bx_util_8hpp_source"/>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="543" relation="include">
+        </childnode>
+      </node>
+      <node id="545">
+        <label>BxVarVector.hpp</label>
+        <link refid="_bx_var_vector_8hpp_source"/>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="540" relation="include">
+        </childnode>
+        <childnode refid="542" relation="include">
+        </childnode>
+      </node>
+      <node id="544">
+        <label>BxVarMap.hpp</label>
+        <link refid="_bx_var_map_8hpp_source"/>
+        <childnode refid="538" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="540" relation="include">
+        </childnode>
+      </node>
+      <node id="534">
+        <label>BxWebContent.hpp</label>
+        <link refid="BxWebContent.hpp"/>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="544" relation="include">
+        </childnode>
+        <childnode refid="545" relation="include">
+        </childnode>
+      </node>
+      <node id="538">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="539" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -374,7 +374,7 @@
 <codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_bx_core_1_1_socket_1afdf495c4e929f01992eba0ab78572de9" kindref="member">BxCore::Socket::Release</ref>(LastContact-&gt;Socket);</highlight></codeline>
 <codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LastContact-&gt;Socket<sp/>=<sp/><ref refid="namespace_bx_core_1_1_socket_1a85378908a5e811508c7a9b8a96dfa58d" kindref="member">BxCore::Socket::Create</ref>();</highlight></codeline>
-<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(connect_connected<sp/>!=<sp/><ref refid="namespace_bx_core_1_1_socket_1ab5663d5681c5c863a16a895c0ced67b3" kindref="member">BxCore::Socket::Connect</ref>(LastContact-&gt;Socket,<sp/>Domain,<sp/>Port,<sp/>Timeout,<sp/>Progress))</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(connect_connected<sp/>!=<sp/><ref refid="namespace_bx_core_1_1_socket_1a76bb13c2ac8e53c2eb2682a4cbc5d8fd" kindref="member">BxCore::Socket::Connect</ref>(LastContact-&gt;Socket,<sp/>Domain,<sp/>Port,<sp/>Timeout,<sp/>Progress))</highlight></codeline>
 <codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SetLastError(</highlight><highlight class="stringliteral">&quot;Failed<sp/>connect&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>연결실패</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="343"><highlight class="normal"></highlight></codeline>
@@ -648,6 +648,6 @@
 <codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="623"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxWebContent.hpp"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxWebContent.hpp"/>
   </compounddef>
 </doxygen>

@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespace_bx_core_1_1_server" kind="namespace" language="C++">
+    <compoundname>BxCore::Server</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_bx_core_1_1_server_1aba256e69490a2047d1074e13e22255ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>id_server</type>
+        <definition>id_server BxCore::Server::Create</definition>
+        <argsstring>(bool sizefield)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>bool</type>
+          <declname>sizefield</declname>
+        </param>
+        <briefdescription>
+<para>서버ID 할당 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sizefield</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 사이즈필드 사용여부 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>서버ID(nullptr은 실패) </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_server_1a49168aa2d8640b9cc8f2a8c12aa8ad7c" kindref="member">Release</ref>, <ref refid="namespace_bx_core_1_1_server_1a639f6c7b40294960e7d8719603dd1f70" kindref="member">Listen</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1068" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="843" bodyend="847"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_server_1a49168aa2d8640b9cc8f2a8c12aa8ad7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BxCore::Server::Release</definition>
+        <argsstring>(id_server serv)</argsstring>
+        <name>Release</name>
+        <param>
+          <type>id_server</type>
+          <declname>serv</declname>
+        </param>
+        <briefdescription>
+<para>서버ID 반환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 서버ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_server_1aba256e69490a2047d1074e13e22255ee" kindref="member">Create</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1075" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="849" bodyend="853"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_server_1a639f6c7b40294960e7d8719603dd1f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::Server::Listen</definition>
+        <argsstring>(id_server serv, ushort port)</argsstring>
+        <name>Listen</name>
+        <param>
+          <type>id_server</type>
+          <declname>serv</declname>
+        </param>
+        <param>
+          <type>ushort</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>서비스개시 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 서버ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 포트번호 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>성공여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_server_1aba256e69490a2047d1074e13e22255ee" kindref="member">Create</ref>, <ref refid="namespace_bx_core_1_1_server_1a49168aa2d8640b9cc8f2a8c12aa8ad7c" kindref="member">Release</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1084" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="855" bodyend="861"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_server_1ace8256ec8b9ca56bf62792abe58fa2b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::Server::TryNextPacket</definition>
+        <argsstring>(id_server serv)</argsstring>
+        <name>TryNextPacket</name>
+        <param>
+          <type>id_server</type>
+          <declname>serv</declname>
+        </param>
+        <briefdescription>
+<para>수신된 패킷확인 및 포커싱 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 서버ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>수신여부 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_server_1affbdb9a2046ddeb19bc9cf4422bf03a1" kindref="member">GetPacketKind</ref>, <ref refid="namespace_bx_core_1_1_server_1a6cda5188b79a373811979aee1cb1dfe4" kindref="member">GetPacketPeerID</ref>, <ref refid="namespace_bx_core_1_1_server_1ae422215c74cad22dfc3c091b015ddb32" kindref="member">GetPacketBuffer</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1092" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="863" bodyend="868"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_server_1affbdb9a2046ddeb19bc9cf4422bf03a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>peerpacketkind</type>
+        <definition>peerpacketkind BxCore::Server::GetPacketKind</definition>
+        <argsstring>(id_server serv)</argsstring>
+        <name>GetPacketKind</name>
+        <param>
+          <type>id_server</type>
+          <declname>serv</declname>
+        </param>
+        <briefdescription>
+<para>포커싱된 패킷종류 반환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 서버ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>패킷종류 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_server_1ace8256ec8b9ca56bf62792abe58fa2b9" kindref="member">TryNextPacket</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1100" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="870" bodyend="876"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_server_1a6cda5188b79a373811979aee1cb1dfe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BxCore::Server::GetPacketPeerID</definition>
+        <argsstring>(id_server serv)</argsstring>
+        <name>GetPacketPeerID</name>
+        <param>
+          <type>id_server</type>
+          <declname>serv</declname>
+        </param>
+        <briefdescription>
+<para>포커싱된 패킷의 송신자ID 반환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 서버ID </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>송신자ID </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_server_1ace8256ec8b9ca56bf62792abe58fa2b9" kindref="member">TryNextPacket</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1108" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="878" bodyend="884"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_server_1ae422215c74cad22dfc3c091b015ddb32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const byte *</type>
+        <definition>const byte * BxCore::Server::GetPacketBuffer</definition>
+        <argsstring>(id_server serv, huge *getsize=nullptr)</argsstring>
+        <name>GetPacketBuffer</name>
+        <param>
+          <type>id_server</type>
+          <declname>serv</declname>
+        </param>
+        <param>
+          <type>huge *</type>
+          <declname>getsize</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>포커싱된 패킷버퍼 반환 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 서버ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>getsize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 버퍼의 길이를 요청 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>패킷버퍼 </para></simplesect>
+<simplesect kind="see"><para><ref refid="namespace_bx_core_1_1_server_1ace8256ec8b9ca56bf62792abe58fa2b9" kindref="member">TryNextPacket</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1117" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="886" bodyend="893"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_bx_core_1_1_server_1ab8bb563cf9f73b130c10cd880c19ec08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BxCore::Server::SendToPeer</definition>
+        <argsstring>(id_server serv, int peerid, const void *buffer, huge buffersize)</argsstring>
+        <name>SendToPeer</name>
+        <param>
+          <type>id_server</type>
+          <declname>serv</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>peerid</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>huge</type>
+          <declname>buffersize</declname>
+        </param>
+        <briefdescription>
+<para>특정 송신자에게 데이터전달 </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 서버ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>peerid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 송신자ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 데이터버퍼 </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffersize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: 버퍼의 길이 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>성공여부 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1127" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/core/BxCoreForQT5.cpp" bodystart="895" bodyend="900"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Server파트 </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/BonexData/BxProject/Bx2D/core/BxCore.hpp" line="1061" column="1"/>
+  </compounddef>
+</doxygen>

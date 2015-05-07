@@ -119,6 +119,16 @@ namespace BxCore
             BxCore::Main::GLWidget::Me().showMinimized();
 		}
 
+		void DoFullScreen()
+		{
+			BxCore::Main::GLWidget::Me().showFullScreen();
+		}
+
+		void DoNormalScreen()
+		{
+			BxCore::Main::GLWidget::Me().showNormal();
+		}
+
 		void HookEvent(uint message, callback_windowevent cb, void* data)
 		{
 			BxCore::Simulator::EventFilter& Filter = BxCore::Main::GLWidget::Me().GetFilter();
@@ -216,7 +226,7 @@ namespace BxCore
 			int Result = -1;
 			////////////////////////////////////////
 			if(BxUtilGlobal::StrICmp(name, "MemSizeBx") == same)
-				Result = 50000000;
+                Result = 90000000;
 			////////////////////////////////////////
 			return Result;
 		}
@@ -758,26 +768,26 @@ namespace BxCore
 			return ((TCPData*) sock)->GetState();
 		}
 
-		connectresult Connect(id_socket sock, string addr, ushort port, uint timeout, callback_progress progress)
+		connectstate Connect(id_socket sock, string addr, ushort port, uint timeout, callback_progress progress)
 		{
-			if(!sock) return connect_error_param;
+			if(!sock) return connectstate_error_param;
 			TCPData* TCP = (TCPData*) sock;
-			if(TCP->GetState() == socketstate_null) return connect_error_param;
-			else if(TCP->GetState() == socketstate_connecting) return connect_connecting;
-			else if(TCP->GetState() == socketstate_connected) return connect_connected;
+			if(TCP->GetState() == socketstate_null) return connectstate_error_param;
+			else if(TCP->GetState() == socketstate_connecting) return connectstate_connecting;
+			else if(TCP->GetState() == socketstate_connected) return connectstate_connected;
 			// IP조사
 			QList<QHostAddress> Address = QHostInfo::fromName(QString(addr)).addresses();
-			if(Address.length() == 0) return connect_error_wrong_address;
+			if(Address.length() == 0) return connectstate_error_wrong_address;
 			TCP->SetState(socketstate_connecting);
 			TCP->connectToHost(Address[0], port);
-			if(timeout == 0) return connect_connecting;
+			if(timeout == 0) return connectstate_connecting;
 			// 결과확인
 			if(!TCP->waitForConnected(timeout))
 			{
 				TCP->Disconnect(true);
-				return connect_disconnected;
+				return connectstate_disconnected;
 			}
-			return connect_connected;
+			return connectstate_connected;
 		}
 
 		void Disconnect(id_socket sock)
@@ -806,13 +816,87 @@ namespace BxCore
 			if(TCP->GetState() != socketstate_connected)
 				return -2;
 			const int Result = TCP->read((char*) buffer, len);
-			if(0 <= Result) return Result;
+			if(0 <= Result)
+			{
+				TCP->SubRecvLength(Result);
+				return Result;
+			}
 			return -100 - ((int) TCP->error());
+		}
+
+		int GetRecvLength(id_socket sock)
+		{
+			if(!sock) return -1;
+			TCPData* TCP = (TCPData*) sock;
+			return TCP->GetRecvLength();
 		}
 
 		int Ping(string addr, uint timeout)
 		{
 			return -1;
+		}
+	}
+
+	// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+	namespace Server
+	{
+		id_server Create(bool sizefield)
+		{
+			TCPAgent* Agent = BxNew_Param(TCPAgent, sizefield);
+			return (id_server) Agent;
+		}
+
+		void Release(id_server serv)
+		{
+			if(!serv) return;
+			BxDelete_ByType(TCPAgent, serv);
+		}
+
+		bool Listen(id_server serv, ushort port)
+		{
+			if(!serv) return false;
+			TCPAgent* Agent = (TCPAgent*) serv;
+			if(Agent->isListening()) return true;
+			return Agent->listen(QHostAddress::Any, port);
+		}
+
+		bool TryNextPacket(id_server serv)
+		{
+			if(!serv) return false;
+			TCPAgent* Agent = (TCPAgent*) serv;
+			return Agent->TryPacket();
+		}
+
+		peerpacketkind GetPacketKind(id_server serv)
+		{
+			if(!serv) return peerpacketkind_null;
+			TCPAgent* Agent = (TCPAgent*) serv;
+			TCPPacket* LastPacket = Agent->GetLastPacket();
+			return LastPacket->Kind;
+		}
+
+		int GetPacketPeerID(id_server serv)
+		{
+			if(!serv) return -1;
+			TCPAgent* Agent = (TCPAgent*) serv;
+			TCPPacket* LastPacket = Agent->GetLastPacket();
+			return LastPacket->PeerID;
+		}
+
+		const byte* GetPacketBuffer(id_server serv, huge* getsize)
+		{
+			if(!serv) return nullptr;
+			TCPAgent* Agent = (TCPAgent*) serv;
+			TCPPacket* LastPacket = Agent->GetLastPacket();
+			if(getsize) *getsize = LastPacket->BufferSize;
+			return LastPacket->Buffer;
+		}
+
+		bool SendToPeer(id_server serv, int peerid, const void* buffer, huge buffersize)
+		{
+			if(!serv) return false;
+			TCPAgent* Agent = (TCPAgent*) serv;
+			return Agent->SendPacket(peerid, buffer, buffersize);
 		}
 	}
 
@@ -1420,10 +1504,12 @@ namespace BxCore
 		}
 
 		void RenderStripDirectly(int Count, const void* Data, const byte opacity,
-			const byte aqua, const color_x888 color, const float x, const float y, const float scale,
+			const uint aqua, const color_x888 color, const float x, const float y, const float scale,
 			const float m11, const float m12, const float m21, const float m22, const float dx, const float dy)
 		{
-			if(0 < aqua)
+			// 체크할 것!!!
+            #ifndef ANDROID
+            if(0 < aqua)
 			{
 				if(m11 == 1 && m12 == 0 && m21 == 0 && m22 == 1)
 					OpenGLSingle().DrawStrip<true, false>(Count, (const BxCore::OpenGL2D::StripData*) Data,
@@ -1431,7 +1517,8 @@ namespace BxCore
 				else OpenGLSingle().DrawStrip<true, true>(Count, (const BxCore::OpenGL2D::StripData*) Data,
 						opacity, aqua, color, x, y, scale, m11, m12, m21, m22, dx, dy);
 			}
-			else
+            else
+            #endif
 			{
 				if(m11 == 1 && m12 == 0 && m21 == 0 && m22 == 1)
 					OpenGLSingle().DrawStrip<false, false>(Count, (const BxCore::OpenGL2D::StripData*) Data,

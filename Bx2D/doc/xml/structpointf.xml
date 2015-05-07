@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="197" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="197" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="199" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpointf_1a07424937d6ca5e955588f30569d98b1e" prot="public" static="no" mutable="no">
         <type>fint</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="197" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="197" bodyend="-1"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="199" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="199" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="198" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="198" bodyend="198"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="200" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="200" bodyend="200"/>
       </memberdef>
       <memberdef kind="function" id="structpointf_1ac6b8eeb74c7a77a0990d7b14fa5b5400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structpointf" kindref="compound">pointf</ref> &amp;</type>
@@ -60,14 +60,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="199" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="199" bodyend="199"/>
+        <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="201" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="201" bodyend="201"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>pointf구조체 : x, y </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" line="196" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxType.hpp" bodystart="195" bodyend="200"/>
+    <location file="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" line="198" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxType.hpp" bodystart="197" bodyend="202"/>
     <listofallmembers>
       <member refid="structpointf_1ac6b8eeb74c7a77a0990d7b14fa5b5400" prot="public" virt="non-virtual"><scope>pointf</scope><name>operator=</name></member>
       <member refid="structpointf_1a85778a54b1c145b923caa6ac2ce8135d" prot="public" virt="non-virtual"><scope>pointf</scope><name>x</name></member>
