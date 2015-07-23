@@ -25,7 +25,7 @@
   <td id="projectlogo"><img alt="Logo" src="bx2d.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">API
-   &#160;<span id="projectnumber">4.1.3</span>
+   &#160;<span id="projectnumber">4.1.4</span>
    </div>
   </td>
  </tr>
@@ -2229,357 +2229,355 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02178"></a><span class="lineno"> 2178</span>&#160;        };</div>
 <div class="line"><a name="l02179"></a><span class="lineno"> 2179</span>&#160;        <span class="keyword">struct </span>LinesData</div>
 <div class="line"><a name="l02180"></a><span class="lineno"> 2180</span>&#160;        {</div>
-<div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;            <span class="keywordtype">float</span> x;</div>
-<div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;            <span class="keywordtype">float</span> y;</div>
-<div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;            <span class="keywordtype">float</span> reserved;</div>
-<div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;        };</div>
-<div class="line"><a name="l02186"></a><span class="lineno"> 2186</span>&#160;        <span class="keyword">struct </span>StripData</div>
-<div class="line"><a name="l02187"></a><span class="lineno"> 2187</span>&#160;        {</div>
-<div class="line"><a name="l02188"></a><span class="lineno"> 2188</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l02189"></a><span class="lineno"> 2189</span>&#160;            <span class="keywordtype">float</span> force;</div>
-<div class="line"><a name="l02190"></a><span class="lineno"> 2190</span>&#160;            <span class="keywordtype">float</span> lx;</div>
-<div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;            <span class="keywordtype">float</span> ly;</div>
-<div class="line"><a name="l02192"></a><span class="lineno"> 2192</span>&#160;            <span class="keywordtype">float</span> rx;</div>
-<div class="line"><a name="l02193"></a><span class="lineno"> 2193</span>&#160;            <span class="keywordtype">float</span> ry;</div>
-<div class="line"><a name="l02194"></a><span class="lineno"> 2194</span>&#160;        };</div>
-<div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160;</div>
-<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;        <span class="keyword">class </span>OpenGLSingle</div>
-<div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;        {</div>
-<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;            <span class="keywordtype">void</span> BindForm(OpenGLForm* form)</div>
-<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;            {</div>
-<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;                <span class="keywordflow">switch</span>(form-&gt;Type)</div>
-<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;                {</div>
-<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160;                <span class="keywordflow">case</span> OpenGLForm::IMAGE:</div>
-<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;                    This-&gt;LastProgramType = Data::IMG;</div>
-<div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160;                    BxCore::Main::GLWidget::Me().BindTexture(((TextureMaterial*) form)-&gt;TextureID);</div>
-<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160;                <span class="keywordflow">case</span> OpenGLForm::COLOR:</div>
-<div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;                    This-&gt;LastProgramType = Data::COL;</div>
-<div class="line"><a name="l02211"></a><span class="lineno"> 2211</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02212"></a><span class="lineno"> 2212</span>&#160;                }</div>
-<div class="line"><a name="l02213"></a><span class="lineno"> 2213</span>&#160;            }</div>
-<div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160;            <span class="keywordtype">void</span> DrawOutline(OpenGLOutline* outline, <span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>&amp; uvrate, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keyword">const</span> byte opacity, <span class="keyword">const</span> color_x888 color)</div>
-<div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;            {</div>
-<div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160;                global_data <span class="keywordtype">int</span> EdgeCount = 4;</div>
-<div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160;                global_data QVector3D* Vertex = <span class="keyword">new</span> QVector3D[EdgeCount];</div>
-<div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160;                global_data QVector2D* UV = <span class="keyword">new</span> QVector2D[EdgeCount];</div>
-<div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;</div>
-<div class="line"><a name="l02220"></a><span class="lineno"> 2220</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> WidthHW = BxCore::Surface::SurfaceSingle().GetWidthHW();</div>
-<div class="line"><a name="l02221"></a><span class="lineno"> 2221</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> HeightHW = BxCore::Surface::SurfaceSingle().GetHeightHW();</div>
-<div class="line"><a name="l02222"></a><span class="lineno"> 2222</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> HalfWidth = WidthHW / 2.0f;</div>
-<div class="line"><a name="l02223"></a><span class="lineno"> 2223</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> HalfHeight = HeightHW / 2.0f;</div>
-<div class="line"><a name="l02224"></a><span class="lineno"> 2224</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeWidth = 1.0f / WidthHW;</div>
-<div class="line"><a name="l02225"></a><span class="lineno"> 2225</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeHeight = 1.0f / HeightHW;</div>
-<div class="line"><a name="l02226"></a><span class="lineno"> 2226</span>&#160;</div>
-<div class="line"><a name="l02227"></a><span class="lineno"> 2227</span>&#160;                BxCore::Surface::SurfaceSingle().SetRenderMode(rendermode_2d);</div>
-<div class="line"><a name="l02228"></a><span class="lineno"> 2228</span>&#160;                QGLShaderProgram* LastProgram = This-&gt;Program[This-&gt;LastProgramType]-&gt;SetFocus();</div>
-<div class="line"><a name="l02229"></a><span class="lineno"> 2229</span>&#160;                <span class="keywordflow">switch</span>(outline-&gt;Type)</div>
-<div class="line"><a name="l02230"></a><span class="lineno"> 2230</span>&#160;                {</div>
-<div class="line"><a name="l02231"></a><span class="lineno"> 2231</span>&#160;                <span class="keywordflow">case</span> OpenGLOutline::RECT:</div>
-<div class="line"><a name="l02232"></a><span class="lineno"> 2232</span>&#160;                    {</div>
-<div class="line"><a name="l02233"></a><span class="lineno"> 2233</span>&#160;                        VertexUV* VUV = (VertexUV*) outline;</div>
-<div class="line"><a name="l02234"></a><span class="lineno"> 2234</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> Count = 4;</div>
-<div class="line"><a name="l02235"></a><span class="lineno"> 2235</span>&#160;                        <span class="comment">// Vertex</span></div>
-<div class="line"><a name="l02236"></a><span class="lineno"> 2236</span>&#160;                        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Count; ++i)</div>
-<div class="line"><a name="l02237"></a><span class="lineno"> 2237</span>&#160;                        {</div>
-<div class="line"><a name="l02238"></a><span class="lineno"> 2238</span>&#160;                            Vertex[i].setX((FtoR(VUV-&gt;Vertex[i].x) + x - HalfWidth) * DeWidth);</div>
-<div class="line"><a name="l02239"></a><span class="lineno"> 2239</span>&#160;                            Vertex[i].setY((FtoR(VUV-&gt;Vertex[i].y) + y - HalfHeight) * DeHeight);</div>
-<div class="line"><a name="l02240"></a><span class="lineno"> 2240</span>&#160;                            Vertex[i].setZ(0);</div>
-<div class="line"><a name="l02241"></a><span class="lineno"> 2241</span>&#160;                        }</div>
-<div class="line"><a name="l02242"></a><span class="lineno"> 2242</span>&#160;                        LastProgram-&gt;setAttributeArray(0, Vertex);</div>
-<div class="line"><a name="l02243"></a><span class="lineno"> 2243</span>&#160;                        <span class="comment">// UV</span></div>
-<div class="line"><a name="l02244"></a><span class="lineno"> 2244</span>&#160;                        <span class="keywordflow">if</span>(This-&gt;LastProgramType == Data::IMG)</div>
-<div class="line"><a name="l02245"></a><span class="lineno"> 2245</span>&#160;                        {</div>
-<div class="line"><a name="l02246"></a><span class="lineno"> 2246</span>&#160;                            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Count; ++i)</div>
-<div class="line"><a name="l02247"></a><span class="lineno"> 2247</span>&#160;                            {</div>
-<div class="line"><a name="l02248"></a><span class="lineno"> 2248</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> X = (VUV-&gt;UV[i].x - (1 &lt;&lt; 11)) * uvrate.x / BxIntegerX(1 &lt;&lt; 11) + (1 &lt;&lt; 11);</div>
-<div class="line"><a name="l02249"></a><span class="lineno"> 2249</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> Y = (VUV-&gt;UV[i].y - (1 &lt;&lt; 11)) * uvrate.y / BxIntegerX(1 &lt;&lt; 11) + (1 &lt;&lt; 11);</div>
-<div class="line"><a name="l02250"></a><span class="lineno"> 2250</span>&#160;                                UV[i].setX(X * (1.0f / (1 &lt;&lt; 12)));</div>
-<div class="line"><a name="l02251"></a><span class="lineno"> 2251</span>&#160;                                UV[i].setY(1.0f - Y * (1.0f / (1 &lt;&lt; 12)));</div>
-<div class="line"><a name="l02252"></a><span class="lineno"> 2252</span>&#160;                            }</div>
-<div class="line"><a name="l02253"></a><span class="lineno"> 2253</span>&#160;                            LastProgram-&gt;setAttributeArray(1, UV);</div>
-<div class="line"><a name="l02254"></a><span class="lineno"> 2254</span>&#160;                        }</div>
-<div class="line"><a name="l02255"></a><span class="lineno"> 2255</span>&#160;                        <span class="comment">// Color</span></div>
-<div class="line"><a name="l02256"></a><span class="lineno"> 2256</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> R = (color &gt;&gt; 16) &amp; 0xFF;</div>
-<div class="line"><a name="l02257"></a><span class="lineno"> 2257</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> G = (color &gt;&gt; 8) &amp; 0xFF;</div>
-<div class="line"><a name="l02258"></a><span class="lineno"> 2258</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> B = (color &gt;&gt; 0) &amp; 0xFF;</div>
-<div class="line"><a name="l02259"></a><span class="lineno"> 2259</span>&#160;                        QColor Color(R, G, B, opacity);</div>
-<div class="line"><a name="l02260"></a><span class="lineno"> 2260</span>&#160;                        LastProgram-&gt;setUniformValue(<span class="stringliteral">&quot;color&quot;</span>, Color);</div>
-<div class="line"><a name="l02261"></a><span class="lineno"> 2261</span>&#160;                        glDrawArrays(GL_TRIANGLE_FAN, 0, Count);</div>
-<div class="line"><a name="l02262"></a><span class="lineno"> 2262</span>&#160;                    }</div>
-<div class="line"><a name="l02263"></a><span class="lineno"> 2263</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02264"></a><span class="lineno"> 2264</span>&#160;                <span class="keywordflow">case</span> OpenGLOutline::POLYGON:</div>
-<div class="line"><a name="l02265"></a><span class="lineno"> 2265</span>&#160;                    {</div>
-<div class="line"><a name="l02266"></a><span class="lineno"> 2266</span>&#160;                        PolyVertexUV* PVUV = (PolyVertexUV*) outline;</div>
-<div class="line"><a name="l02267"></a><span class="lineno"> 2267</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> Count = PVUV-&gt;Count;</div>
-<div class="line"><a name="l02268"></a><span class="lineno"> 2268</span>&#160;                        <span class="keywordflow">if</span>(EdgeCount &lt; Count)</div>
-<div class="line"><a name="l02269"></a><span class="lineno"> 2269</span>&#160;                        {</div>
-<div class="line"><a name="l02270"></a><span class="lineno"> 2270</span>&#160;                            EdgeCount = Count;</div>
-<div class="line"><a name="l02271"></a><span class="lineno"> 2271</span>&#160;                            <span class="keyword">delete</span>[] Vertex;</div>
-<div class="line"><a name="l02272"></a><span class="lineno"> 2272</span>&#160;                            <span class="keyword">delete</span>[] UV;</div>
-<div class="line"><a name="l02273"></a><span class="lineno"> 2273</span>&#160;                            Vertex = <span class="keyword">new</span> QVector3D[EdgeCount];</div>
-<div class="line"><a name="l02274"></a><span class="lineno"> 2274</span>&#160;                            UV = <span class="keyword">new</span> QVector2D[EdgeCount];</div>
-<div class="line"><a name="l02275"></a><span class="lineno"> 2275</span>&#160;                        }</div>
-<div class="line"><a name="l02276"></a><span class="lineno"> 2276</span>&#160;                        <span class="comment">// Vertex</span></div>
-<div class="line"><a name="l02277"></a><span class="lineno"> 2277</span>&#160;                        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Count; ++i)</div>
-<div class="line"><a name="l02278"></a><span class="lineno"> 2278</span>&#160;                        {</div>
-<div class="line"><a name="l02279"></a><span class="lineno"> 2279</span>&#160;                            Vertex[i].setX((FtoR(PVUV-&gt;Vertex[i].x) + x - HalfWidth) * DeWidth);</div>
-<div class="line"><a name="l02280"></a><span class="lineno"> 2280</span>&#160;                            Vertex[i].setY((FtoR(PVUV-&gt;Vertex[i].y) + y - HalfHeight) * DeHeight);</div>
-<div class="line"><a name="l02281"></a><span class="lineno"> 2281</span>&#160;                            Vertex[i].setZ(0);</div>
-<div class="line"><a name="l02282"></a><span class="lineno"> 2282</span>&#160;                        }</div>
-<div class="line"><a name="l02283"></a><span class="lineno"> 2283</span>&#160;                        LastProgram-&gt;setAttributeArray(0, Vertex);</div>
-<div class="line"><a name="l02284"></a><span class="lineno"> 2284</span>&#160;                        <span class="comment">// UV</span></div>
-<div class="line"><a name="l02285"></a><span class="lineno"> 2285</span>&#160;                        <span class="keywordflow">if</span>(This-&gt;LastProgramType == Data::IMG)</div>
-<div class="line"><a name="l02286"></a><span class="lineno"> 2286</span>&#160;                        {</div>
-<div class="line"><a name="l02287"></a><span class="lineno"> 2287</span>&#160;                            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Count; ++i)</div>
-<div class="line"><a name="l02288"></a><span class="lineno"> 2288</span>&#160;                            {</div>
-<div class="line"><a name="l02289"></a><span class="lineno"> 2289</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> X = (PVUV-&gt;UV[i].x - (1 &lt;&lt; 11)) * uvrate.x / BxIntegerX(1 &lt;&lt; 11) + (1 &lt;&lt; 11);</div>
-<div class="line"><a name="l02290"></a><span class="lineno"> 2290</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> Y = (PVUV-&gt;UV[i].y - (1 &lt;&lt; 11)) * uvrate.y / BxIntegerX(1 &lt;&lt; 11) + (1 &lt;&lt; 11);</div>
-<div class="line"><a name="l02291"></a><span class="lineno"> 2291</span>&#160;                                UV[i].setX(X * (1.0f / (1 &lt;&lt; 12)));</div>
-<div class="line"><a name="l02292"></a><span class="lineno"> 2292</span>&#160;                                UV[i].setY(1.0f - Y * (1.0f / (1 &lt;&lt; 12)));</div>
-<div class="line"><a name="l02293"></a><span class="lineno"> 2293</span>&#160;                            }</div>
-<div class="line"><a name="l02294"></a><span class="lineno"> 2294</span>&#160;                            LastProgram-&gt;setAttributeArray(1, UV);</div>
-<div class="line"><a name="l02295"></a><span class="lineno"> 2295</span>&#160;                        }</div>
-<div class="line"><a name="l02296"></a><span class="lineno"> 2296</span>&#160;                        <span class="comment">// Color</span></div>
-<div class="line"><a name="l02297"></a><span class="lineno"> 2297</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> R = (color &gt;&gt; 16) &amp; 0xFF;</div>
-<div class="line"><a name="l02298"></a><span class="lineno"> 2298</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> G = (color &gt;&gt; 8) &amp; 0xFF;</div>
-<div class="line"><a name="l02299"></a><span class="lineno"> 2299</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> B = (color &gt;&gt; 0) &amp; 0xFF;</div>
-<div class="line"><a name="l02300"></a><span class="lineno"> 2300</span>&#160;                        QColor Color(R, G, B, opacity);</div>
-<div class="line"><a name="l02301"></a><span class="lineno"> 2301</span>&#160;                        LastProgram-&gt;setUniformValue(<span class="stringliteral">&quot;color&quot;</span>, Color);</div>
-<div class="line"><a name="l02302"></a><span class="lineno"> 2302</span>&#160;                        glDrawArrays(GL_TRIANGLE_FAN, 0, Count);</div>
-<div class="line"><a name="l02303"></a><span class="lineno"> 2303</span>&#160;                    }</div>
-<div class="line"><a name="l02304"></a><span class="lineno"> 2304</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02305"></a><span class="lineno"> 2305</span>&#160;                <span class="keywordflow">case</span> OpenGLOutline::POLYGON3D:</div>
-<div class="line"><a name="l02306"></a><span class="lineno"> 2306</span>&#160;                    <span class="comment">//Program-&gt;setAttributeArray(0, ((PolyVertexUV3D*) outline)-&gt;Vertex);</span></div>
-<div class="line"><a name="l02307"></a><span class="lineno"> 2307</span>&#160;                    <span class="comment">//Program-&gt;setAttributeArray(0, ((PolyVertexUV3D*) outline)-&gt;UV);</span></div>
-<div class="line"><a name="l02308"></a><span class="lineno"> 2308</span>&#160;                    <span class="comment">//RefFunctions-&gt;glDrawArrays(GL_TRIANGLE_FAN, 0, ((PolyVertexUV3D*) outline)-&gt;Count);</span></div>
-<div class="line"><a name="l02309"></a><span class="lineno"> 2309</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02310"></a><span class="lineno"> 2310</span>&#160;                <span class="keywordflow">case</span> OpenGLOutline::SPLINE:</div>
-<div class="line"><a name="l02311"></a><span class="lineno"> 2311</span>&#160;                    {</div>
-<div class="line"><a name="l02312"></a><span class="lineno"> 2312</span>&#160;                        SplineVertex* SV = (SplineVertex*) outline;</div>
-<div class="line"><a name="l02313"></a><span class="lineno"> 2313</span>&#160;                        <a class="code" href="structpointf.html">pointf</a> LB, LE;</div>
-<div class="line"><a name="l02314"></a><span class="lineno"> 2314</span>&#160;                        <span class="keyword">const</span> fint LVecX = SV-&gt;VertexL[2].x - SV-&gt;VertexL[1].x;</div>
-<div class="line"><a name="l02315"></a><span class="lineno"> 2315</span>&#160;                        <span class="keyword">const</span> fint LVecY = SV-&gt;VertexL[2].y - SV-&gt;VertexL[1].y;</div>
-<div class="line"><a name="l02316"></a><span class="lineno"> 2316</span>&#160;                        <span class="keyword">const</span> fint LVecXB = SV-&gt;VertexL[1].x - SV-&gt;VertexL[0].x;</div>
-<div class="line"><a name="l02317"></a><span class="lineno"> 2317</span>&#160;                        <span class="keyword">const</span> fint LVecYB = SV-&gt;VertexL[1].y - SV-&gt;VertexL[0].y;</div>
-<div class="line"><a name="l02318"></a><span class="lineno"> 2318</span>&#160;                        <span class="keyword">const</span> fint LVecXE = SV-&gt;VertexL[3].x - SV-&gt;VertexL[2].x;</div>
-<div class="line"><a name="l02319"></a><span class="lineno"> 2319</span>&#160;                        <span class="keyword">const</span> fint LVecYE = SV-&gt;VertexL[3].y - SV-&gt;VertexL[2].y;</div>
-<div class="line"><a name="l02320"></a><span class="lineno"> 2320</span>&#160;                        <a class="code" href="class_bx_util.html#ade477ecc188f51521a0d9c309872cca4">BxUtil::GetCubicSpline</a>(LVecX, LVecY, LVecXB, LVecYB, LB, LVecXE, LVecYE, LE);</div>
-<div class="line"><a name="l02321"></a><span class="lineno"> 2321</span>&#160;                        <a class="code" href="structpointf.html">pointf</a> RB, RE;</div>
-<div class="line"><a name="l02322"></a><span class="lineno"> 2322</span>&#160;                        <span class="keyword">const</span> fint RVecX = SV-&gt;VertexR[2].x - SV-&gt;VertexR[1].x;</div>
-<div class="line"><a name="l02323"></a><span class="lineno"> 2323</span>&#160;                        <span class="keyword">const</span> fint RVecY = SV-&gt;VertexR[2].y - SV-&gt;VertexR[1].y;</div>
-<div class="line"><a name="l02324"></a><span class="lineno"> 2324</span>&#160;                        <span class="keyword">const</span> fint RVecXB = SV-&gt;VertexR[1].x - SV-&gt;VertexR[0].x;</div>
-<div class="line"><a name="l02325"></a><span class="lineno"> 2325</span>&#160;                        <span class="keyword">const</span> fint RVecYB = SV-&gt;VertexR[1].y - SV-&gt;VertexR[0].y;</div>
-<div class="line"><a name="l02326"></a><span class="lineno"> 2326</span>&#160;                        <span class="keyword">const</span> fint RVecXE = SV-&gt;VertexR[3].x - SV-&gt;VertexR[2].x;</div>
-<div class="line"><a name="l02327"></a><span class="lineno"> 2327</span>&#160;                        <span class="keyword">const</span> fint RVecYE = SV-&gt;VertexR[3].y - SV-&gt;VertexR[2].y;</div>
-<div class="line"><a name="l02328"></a><span class="lineno"> 2328</span>&#160;                        <a class="code" href="class_bx_util.html#ade477ecc188f51521a0d9c309872cca4">BxUtil::GetCubicSpline</a>(RVecX, RVecY, RVecXB, RVecYB, RB, RVecXE, RVecYE, RE);</div>
-<div class="line"><a name="l02329"></a><span class="lineno"> 2329</span>&#160;</div>
-<div class="line"><a name="l02330"></a><span class="lineno"> 2330</span>&#160;                        <span class="keyword">const</span> fint LMax = <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(<a class="code" href="namespace_bx_util_global.html#a488ff490d994d4173653ee396893d5b9">BxUtilGlobal::Abs</a>(LVecX), <a class="code" href="namespace_bx_util_global.html#a488ff490d994d4173653ee396893d5b9">BxUtilGlobal::Abs</a>(LVecY));</div>
-<div class="line"><a name="l02331"></a><span class="lineno"> 2331</span>&#160;                        <span class="keyword">const</span> fint RMax = <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(<a class="code" href="namespace_bx_util_global.html#a488ff490d994d4173653ee396893d5b9">BxUtilGlobal::Abs</a>(RVecX), <a class="code" href="namespace_bx_util_global.html#a488ff490d994d4173653ee396893d5b9">BxUtilGlobal::Abs</a>(RVecY));</div>
-<div class="line"><a name="l02332"></a><span class="lineno"> 2332</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> CountSolo = <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(1, FtoI(<a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(LMax, RMax)) / 2);</div>
-<div class="line"><a name="l02333"></a><span class="lineno"> 2333</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> Count = (CountSolo + 1) * 2;</div>
-<div class="line"><a name="l02334"></a><span class="lineno"> 2334</span>&#160;                        <span class="keywordflow">if</span>(EdgeCount &lt; Count)</div>
-<div class="line"><a name="l02335"></a><span class="lineno"> 2335</span>&#160;                        {</div>
-<div class="line"><a name="l02336"></a><span class="lineno"> 2336</span>&#160;                            EdgeCount = Count;</div>
-<div class="line"><a name="l02337"></a><span class="lineno"> 2337</span>&#160;                            <span class="keyword">delete</span>[] Vertex;</div>
-<div class="line"><a name="l02338"></a><span class="lineno"> 2338</span>&#160;                            <span class="keyword">delete</span>[] UV;</div>
-<div class="line"><a name="l02339"></a><span class="lineno"> 2339</span>&#160;                            Vertex = <span class="keyword">new</span> QVector3D[EdgeCount];</div>
-<div class="line"><a name="l02340"></a><span class="lineno"> 2340</span>&#160;                            UV = <span class="keyword">new</span> QVector2D[EdgeCount];</div>
-<div class="line"><a name="l02341"></a><span class="lineno"> 2341</span>&#160;                        }</div>
-<div class="line"><a name="l02342"></a><span class="lineno"> 2342</span>&#160;</div>
-<div class="line"><a name="l02343"></a><span class="lineno"> 2343</span>&#160;                        <span class="comment">// Vertex</span></div>
-<div class="line"><a name="l02344"></a><span class="lineno"> 2344</span>&#160;                        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt;= CountSolo; ++i)</div>
-<div class="line"><a name="l02345"></a><span class="lineno"> 2345</span>&#160;                        {</div>
-<div class="line"><a name="l02346"></a><span class="lineno"> 2346</span>&#160;                            <span class="keyword">const</span> fint t = ItoF(i) / CountSolo;</div>
-<div class="line"><a name="l02347"></a><span class="lineno"> 2347</span>&#160;                            <span class="keyword">const</span> fint tt = F_Multiply_F(t, t);</div>
-<div class="line"><a name="l02348"></a><span class="lineno"> 2348</span>&#160;                            <span class="keyword">const</span> fint r = t - ItoF(1);</div>
-<div class="line"><a name="l02349"></a><span class="lineno"> 2349</span>&#160;                            <span class="keyword">const</span> fint av = F_Multiply_F(tt, ItoF(3) - 2 * t);</div>
-<div class="line"><a name="l02350"></a><span class="lineno"> 2350</span>&#160;                            <span class="keyword">const</span> fint bv = F_Multiply_F(t, F_Multiply_F(r, r));</div>
-<div class="line"><a name="l02351"></a><span class="lineno"> 2351</span>&#160;                            <span class="keyword">const</span> fint cv = F_Multiply_F(tt, r);</div>
-<div class="line"><a name="l02352"></a><span class="lineno"> 2352</span>&#160;                            <span class="keyword">const</span> fint lvx = SV-&gt;VertexL[1].x + F_Multiply_F(LVecX, av) + F_Multiply_F(LB.x, bv) + F_Multiply_F(LE.x, cv);</div>
-<div class="line"><a name="l02353"></a><span class="lineno"> 2353</span>&#160;                            <span class="keyword">const</span> fint lvy = SV-&gt;VertexL[1].y + F_Multiply_F(LVecY, av) + F_Multiply_F(LB.y, bv) + F_Multiply_F(LE.y, cv);</div>
-<div class="line"><a name="l02354"></a><span class="lineno"> 2354</span>&#160;                            <span class="keyword">const</span> fint rvx = SV-&gt;VertexR[1].x + F_Multiply_F(RVecX, av) + F_Multiply_F(RB.x, bv) + F_Multiply_F(RE.x, cv);</div>
-<div class="line"><a name="l02355"></a><span class="lineno"> 2355</span>&#160;                            <span class="keyword">const</span> fint rvy = SV-&gt;VertexR[1].y + F_Multiply_F(RVecY, av) + F_Multiply_F(RB.y, bv) + F_Multiply_F(RE.y, cv);</div>
-<div class="line"><a name="l02356"></a><span class="lineno"> 2356</span>&#160;                            Vertex[i * 2 + 0].setX((FtoD(lvx) + x - HalfWidth) * DeWidth);</div>
-<div class="line"><a name="l02357"></a><span class="lineno"> 2357</span>&#160;                            Vertex[i * 2 + 0].setY((FtoD(lvy) + y - HalfHeight) * DeHeight);</div>
-<div class="line"><a name="l02358"></a><span class="lineno"> 2358</span>&#160;                            Vertex[i * 2 + 0].setZ(0);</div>
-<div class="line"><a name="l02359"></a><span class="lineno"> 2359</span>&#160;                            Vertex[i * 2 + 1].setX((FtoD(rvx) + x - HalfWidth) * DeWidth);</div>
-<div class="line"><a name="l02360"></a><span class="lineno"> 2360</span>&#160;                            Vertex[i * 2 + 1].setY((FtoD(rvy) + y - HalfHeight) * DeHeight);</div>
-<div class="line"><a name="l02361"></a><span class="lineno"> 2361</span>&#160;                            Vertex[i * 2 + 1].setZ(0);</div>
-<div class="line"><a name="l02362"></a><span class="lineno"> 2362</span>&#160;                        }</div>
-<div class="line"><a name="l02363"></a><span class="lineno"> 2363</span>&#160;                        LastProgram-&gt;setAttributeArray(0, Vertex);</div>
-<div class="line"><a name="l02364"></a><span class="lineno"> 2364</span>&#160;</div>
-<div class="line"><a name="l02365"></a><span class="lineno"> 2365</span>&#160;                        <span class="comment">// Color</span></div>
-<div class="line"><a name="l02366"></a><span class="lineno"> 2366</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> R = (color &gt;&gt; 16) &amp; 0xFF;</div>
-<div class="line"><a name="l02367"></a><span class="lineno"> 2367</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> G = (color &gt;&gt; 8) &amp; 0xFF;</div>
-<div class="line"><a name="l02368"></a><span class="lineno"> 2368</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> B = (color &gt;&gt; 0) &amp; 0xFF;</div>
-<div class="line"><a name="l02369"></a><span class="lineno"> 2369</span>&#160;                        QColor Color(R, G, B, opacity);</div>
-<div class="line"><a name="l02370"></a><span class="lineno"> 2370</span>&#160;                        LastProgram-&gt;setUniformValue(<span class="stringliteral">&quot;color&quot;</span>, Color);</div>
-<div class="line"><a name="l02371"></a><span class="lineno"> 2371</span>&#160;</div>
-<div class="line"><a name="l02372"></a><span class="lineno"> 2372</span>&#160;<span class="preprocessor">                        #ifdef GL_QUAD_STRIP</span></div>
-<div class="line"><a name="l02373"></a><span class="lineno"> 2373</span>&#160;                            glDrawArrays(GL_QUAD_STRIP, 0, Count);</div>
-<div class="line"><a name="l02374"></a><span class="lineno"> 2374</span>&#160;<span class="preprocessor">                        #else</span></div>
-<div class="line"><a name="l02375"></a><span class="lineno"> 2375</span>&#160;                            glDrawArrays(GL_TRIANGLE_STRIP, 0, Count);</div>
-<div class="line"><a name="l02376"></a><span class="lineno"> 2376</span>&#160;<span class="preprocessor">                        #endif</span></div>
-<div class="line"><a name="l02377"></a><span class="lineno"> 2377</span>&#160;                    }</div>
-<div class="line"><a name="l02378"></a><span class="lineno"> 2378</span>&#160;                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02379"></a><span class="lineno"> 2379</span>&#160;                }</div>
-<div class="line"><a name="l02380"></a><span class="lineno"> 2380</span>&#160;            }</div>
-<div class="line"><a name="l02381"></a><span class="lineno"> 2381</span>&#160;            <span class="keywordtype">void</span> DrawLines(<span class="keywordtype">int</span> Count, <span class="keyword">const</span> LinesData* Data, <span class="keyword">const</span> <span class="keywordtype">float</span> x, <span class="keyword">const</span> <span class="keywordtype">float</span> y, <span class="keyword">const</span> <span class="keywordtype">float</span> scale, <span class="keyword">const</span> byte opacity, <span class="keyword">const</span> color_x888 color, <span class="keyword">const</span> <span class="keywordtype">bool</span> loop)</div>
-<div class="line"><a name="l02382"></a><span class="lineno"> 2382</span>&#160;            {</div>
-<div class="line"><a name="l02383"></a><span class="lineno"> 2383</span>&#160;                global_data <span class="keywordtype">int</span> CountMax = 256;</div>
-<div class="line"><a name="l02384"></a><span class="lineno"> 2384</span>&#160;                global_data QVector2D* Vertex = <span class="keyword">new</span> QVector2D[CountMax];</div>
-<div class="line"><a name="l02385"></a><span class="lineno"> 2385</span>&#160;                <span class="keywordflow">if</span>(Count &lt; 2) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02386"></a><span class="lineno"> 2386</span>&#160;</div>
-<div class="line"><a name="l02387"></a><span class="lineno"> 2387</span>&#160;                <span class="keywordflow">if</span>(CountMax &lt; Count)</div>
-<div class="line"><a name="l02388"></a><span class="lineno"> 2388</span>&#160;                {</div>
-<div class="line"><a name="l02389"></a><span class="lineno"> 2389</span>&#160;                    <span class="keyword">delete</span>[] Vertex;</div>
-<div class="line"><a name="l02390"></a><span class="lineno"> 2390</span>&#160;                    Vertex = <span class="keyword">new</span> QVector2D[CountMax = Count];</div>
-<div class="line"><a name="l02391"></a><span class="lineno"> 2391</span>&#160;                }</div>
-<div class="line"><a name="l02392"></a><span class="lineno"> 2392</span>&#160;</div>
-<div class="line"><a name="l02393"></a><span class="lineno"> 2393</span>&#160;                BxCore::Surface::SurfaceSingle().SetRenderMode(rendermode_2d);</div>
-<div class="line"><a name="l02394"></a><span class="lineno"> 2394</span>&#160;                QGLShaderProgram* LastProgram = This-&gt;Program[Data::COL]-&gt;SetFocus();</div>
-<div class="line"><a name="l02395"></a><span class="lineno"> 2395</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeWidth = scale / <a class="code" href="namespace_bx_core_1_1_surface.html#add1206ac58b30b117600c186daca0973">BxCore::Surface::GetWidthHW</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l02396"></a><span class="lineno"> 2396</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeHeight = scale / <a class="code" href="namespace_bx_core_1_1_surface.html#aa396df855a2d8c80089340c5542e0a52">BxCore::Surface::GetHeightHW</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l02397"></a><span class="lineno"> 2397</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeX = x + BxCore::Main::GetGUIMarginL() / 2 / scale;</div>
-<div class="line"><a name="l02398"></a><span class="lineno"> 2398</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeY = y + BxCore::Main::GetGUIMarginT() / 2 / scale;</div>
-<div class="line"><a name="l02399"></a><span class="lineno"> 2399</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> R = (color &gt;&gt; 16) &amp; 0xFF;</div>
-<div class="line"><a name="l02400"></a><span class="lineno"> 2400</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> G = (color &gt;&gt; 8) &amp; 0xFF;</div>
-<div class="line"><a name="l02401"></a><span class="lineno"> 2401</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> B = (color &gt;&gt; 0) &amp; 0xFF;</div>
-<div class="line"><a name="l02402"></a><span class="lineno"> 2402</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> A = opacity &amp; 0xFF;</div>
-<div class="line"><a name="l02403"></a><span class="lineno"> 2403</span>&#160;</div>
-<div class="line"><a name="l02404"></a><span class="lineno"> 2404</span>&#160;                <span class="comment">// Vertex</span></div>
-<div class="line"><a name="l02405"></a><span class="lineno"> 2405</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Count; ++i)</div>
-<div class="line"><a name="l02406"></a><span class="lineno"> 2406</span>&#160;                {</div>
-<div class="line"><a name="l02407"></a><span class="lineno"> 2407</span>&#160;                    Vertex[i].setX((Data[i].x + DeX) * DeWidth);</div>
-<div class="line"><a name="l02408"></a><span class="lineno"> 2408</span>&#160;                    Vertex[i].setY((Data[i].y + DeY) * DeHeight);</div>
-<div class="line"><a name="l02409"></a><span class="lineno"> 2409</span>&#160;                }</div>
-<div class="line"><a name="l02410"></a><span class="lineno"> 2410</span>&#160;                LastProgram-&gt;setAttributeArray(0, Vertex);</div>
-<div class="line"><a name="l02411"></a><span class="lineno"> 2411</span>&#160;                <span class="comment">// Color</span></div>
-<div class="line"><a name="l02412"></a><span class="lineno"> 2412</span>&#160;                QColor Color(R, G, B, A);</div>
-<div class="line"><a name="l02413"></a><span class="lineno"> 2413</span>&#160;                LastProgram-&gt;setUniformValue(<span class="stringliteral">&quot;color&quot;</span>, Color);</div>
-<div class="line"><a name="l02414"></a><span class="lineno"> 2414</span>&#160;                <span class="comment">// Draw</span></div>
-<div class="line"><a name="l02415"></a><span class="lineno"> 2415</span>&#160;                glDrawArrays((loop)? GL_LINE_LOOP : GL_LINE_STRIP, 0, Count);</div>
-<div class="line"><a name="l02416"></a><span class="lineno"> 2416</span>&#160;            }</div>
-<div class="line"><a name="l02417"></a><span class="lineno"> 2417</span>&#160;            <span class="keyword">template</span>&lt;<span class="keywordtype">bool</span> useStripOpacity, <span class="keywordtype">bool</span> useMatrix&gt;</div>
-<div class="line"><a name="l02418"></a><span class="lineno"> 2418</span>&#160;            <span class="keywordtype">void</span> DrawStrip(<span class="keywordtype">int</span> Count, <span class="keyword">const</span> StripData* Data, <span class="keyword">const</span> byte opacity,</div>
-<div class="line"><a name="l02419"></a><span class="lineno"> 2419</span>&#160;                <span class="keyword">const</span> uint aqua, <span class="keyword">const</span> color_x888 color, <span class="keyword">const</span> <span class="keywordtype">float</span> x, <span class="keyword">const</span> <span class="keywordtype">float</span> y, <span class="keyword">const</span> <span class="keywordtype">float</span> scale,</div>
-<div class="line"><a name="l02420"></a><span class="lineno"> 2420</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> m11, <span class="keyword">const</span> <span class="keywordtype">float</span> m12, <span class="keyword">const</span> <span class="keywordtype">float</span> m21, <span class="keyword">const</span> <span class="keywordtype">float</span> m22, <span class="keyword">const</span> <span class="keywordtype">float</span> dx, <span class="keyword">const</span> <span class="keywordtype">float</span> dy)</div>
-<div class="line"><a name="l02421"></a><span class="lineno"> 2421</span>&#160;            {</div>
-<div class="line"><a name="l02422"></a><span class="lineno"> 2422</span>&#160;                global_data <span class="keyword">const</span> <span class="keywordtype">int</span> CountMax = 256;</div>
-<div class="line"><a name="l02423"></a><span class="lineno"> 2423</span>&#160;                global_data QVector2D Vertex[2 * CountMax];</div>
-<div class="line"><a name="l02424"></a><span class="lineno"> 2424</span>&#160;                <span class="keywordflow">if</span>(Count &lt; 2) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l02425"></a><span class="lineno"> 2425</span>&#160;</div>
-<div class="line"><a name="l02426"></a><span class="lineno"> 2426</span>&#160;                BxCore::Surface::SurfaceSingle().SetRenderMode(rendermode_2d);</div>
-<div class="line"><a name="l02427"></a><span class="lineno"> 2427</span>&#160;                QGLShaderProgram* LastProgram = This-&gt;Program[Data::COL]-&gt;SetFocus();</div>
-<div class="line"><a name="l02428"></a><span class="lineno"> 2428</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeWidth = scale / <a class="code" href="namespace_bx_core_1_1_surface.html#add1206ac58b30b117600c186daca0973">BxCore::Surface::GetWidthHW</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l02429"></a><span class="lineno"> 2429</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeHeight = scale / <a class="code" href="namespace_bx_core_1_1_surface.html#aa396df855a2d8c80089340c5542e0a52">BxCore::Surface::GetHeightHW</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l02430"></a><span class="lineno"> 2430</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> De11 = m11 * DeWidth;</div>
-<div class="line"><a name="l02431"></a><span class="lineno"> 2431</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> De12 = m12 * DeHeight;</div>
-<div class="line"><a name="l02432"></a><span class="lineno"> 2432</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> De21 = m21 * DeWidth;</div>
-<div class="line"><a name="l02433"></a><span class="lineno"> 2433</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> De22 = m22 * DeHeight;</div>
-<div class="line"><a name="l02434"></a><span class="lineno"> 2434</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeX = (dx + x + BxCore::Main::GetGUIMarginL() / 2 / scale) * DeWidth;</div>
-<div class="line"><a name="l02435"></a><span class="lineno"> 2435</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeY = (dy + y + BxCore::Main::GetGUIMarginT() / 2 / scale) * DeHeight;</div>
-<div class="line"><a name="l02436"></a><span class="lineno"> 2436</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> R = (color &gt;&gt; 16) &amp; 0xFF;</div>
-<div class="line"><a name="l02437"></a><span class="lineno"> 2437</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> G = (color &gt;&gt; 8) &amp; 0xFF;</div>
-<div class="line"><a name="l02438"></a><span class="lineno"> 2438</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> B = (color &gt;&gt; 0) &amp; 0xFF;</div>
-<div class="line"><a name="l02439"></a><span class="lineno"> 2439</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> A = opacity &amp; 0xFF;</div>
-<div class="line"><a name="l02440"></a><span class="lineno"> 2440</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> AquaForce = aqua / 255.0f;</div>
-<div class="line"><a name="l02441"></a><span class="lineno"> 2441</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> AquaValue = (0 &lt; AquaForce)? A / AquaForce : 0;</div>
-<div class="line"><a name="l02442"></a><span class="lineno"> 2442</span>&#160;</div>
-<div class="line"><a name="l02443"></a><span class="lineno"> 2443</span>&#160;                <span class="keywordtype">int</span> FocusBegin = 1;</div>
-<div class="line"><a name="l02444"></a><span class="lineno"> 2444</span>&#160;                <span class="keywordflow">while</span>(FocusBegin &lt; Count)</div>
-<div class="line"><a name="l02445"></a><span class="lineno"> 2445</span>&#160;                {</div>
-<div class="line"><a name="l02446"></a><span class="lineno"> 2446</span>&#160;                    <span class="comment">// Vertex</span></div>
-<div class="line"><a name="l02447"></a><span class="lineno"> 2447</span>&#160;                    <span class="keywordtype">int</span> Focus = FocusBegin -= 1;</div>
-<div class="line"><a name="l02448"></a><span class="lineno"> 2448</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">int</span> Opacity = (useStripOpacity &amp;&amp; Data[Focus].force &lt; AquaForce)?</div>
-<div class="line"><a name="l02449"></a><span class="lineno"> 2449</span>&#160;                        (<span class="keywordtype">int</span>) (AquaValue * Data[Focus].force) : A;</div>
-<div class="line"><a name="l02450"></a><span class="lineno"> 2450</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 2 * CountMax &amp;&amp; Focus &lt; Count; i += 2)</div>
-<div class="line"><a name="l02451"></a><span class="lineno"> 2451</span>&#160;                    {</div>
-<div class="line"><a name="l02452"></a><span class="lineno"> 2452</span>&#160;                        <span class="keyword">const</span> StripData&amp; CurData = Data[Focus];</div>
-<div class="line"><a name="l02453"></a><span class="lineno"> 2453</span>&#160;                        <span class="keywordflow">if</span>(useMatrix)</div>
-<div class="line"><a name="l02454"></a><span class="lineno"> 2454</span>&#160;                        {</div>
-<div class="line"><a name="l02455"></a><span class="lineno"> 2455</span>&#160;                            Vertex[i + 0].setX(CurData.lx * De11 + CurData.ly * De21 + DeX);</div>
-<div class="line"><a name="l02456"></a><span class="lineno"> 2456</span>&#160;                            Vertex[i + 0].setY(CurData.lx * De12 + CurData.ly * De22 + DeY);</div>
-<div class="line"><a name="l02457"></a><span class="lineno"> 2457</span>&#160;                            Vertex[i + 1].setX(CurData.rx * De11 + CurData.ry * De21 + DeX);</div>
-<div class="line"><a name="l02458"></a><span class="lineno"> 2458</span>&#160;                            Vertex[i + 1].setY(CurData.rx * De12 + CurData.ry * De22 + DeY);</div>
-<div class="line"><a name="l02459"></a><span class="lineno"> 2459</span>&#160;                        }</div>
-<div class="line"><a name="l02460"></a><span class="lineno"> 2460</span>&#160;                        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l02461"></a><span class="lineno"> 2461</span>&#160;                        {</div>
-<div class="line"><a name="l02462"></a><span class="lineno"> 2462</span>&#160;                            Vertex[i + 0].setX(CurData.lx * De11 + DeX);</div>
-<div class="line"><a name="l02463"></a><span class="lineno"> 2463</span>&#160;                            Vertex[i + 0].setY(CurData.ly * De22 + DeY);</div>
-<div class="line"><a name="l02464"></a><span class="lineno"> 2464</span>&#160;                            Vertex[i + 1].setX(CurData.rx * De11 + DeX);</div>
-<div class="line"><a name="l02465"></a><span class="lineno"> 2465</span>&#160;                            Vertex[i + 1].setY(CurData.ry * De22 + DeY);</div>
-<div class="line"><a name="l02466"></a><span class="lineno"> 2466</span>&#160;                        }</div>
-<div class="line"><a name="l02467"></a><span class="lineno"> 2467</span>&#160;                        Focus++;</div>
-<div class="line"><a name="l02468"></a><span class="lineno"> 2468</span>&#160;                        <span class="keywordflow">if</span>(useStripOpacity)</div>
-<div class="line"><a name="l02469"></a><span class="lineno"> 2469</span>&#160;                        {</div>
-<div class="line"><a name="l02470"></a><span class="lineno"> 2470</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">int</span> CurOpacity = (Data[Focus - 1].force &lt; AquaForce)?</div>
-<div class="line"><a name="l02471"></a><span class="lineno"> 2471</span>&#160;                                (<span class="keywordtype">int</span>) (AquaValue * Data[Focus - 1].force) : A;</div>
-<div class="line"><a name="l02472"></a><span class="lineno"> 2472</span>&#160;                            <span class="keywordflow">if</span>(Opacity != CurOpacity) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l02473"></a><span class="lineno"> 2473</span>&#160;                        }</div>
-<div class="line"><a name="l02474"></a><span class="lineno"> 2474</span>&#160;                    }</div>
-<div class="line"><a name="l02475"></a><span class="lineno"> 2475</span>&#160;                    LastProgram-&gt;setAttributeArray(0, Vertex);</div>
-<div class="line"><a name="l02476"></a><span class="lineno"> 2476</span>&#160;                    <span class="comment">// Color</span></div>
-<div class="line"><a name="l02477"></a><span class="lineno"> 2477</span>&#160;                    QColor Color(R, G, B, Opacity);</div>
-<div class="line"><a name="l02478"></a><span class="lineno"> 2478</span>&#160;                    LastProgram-&gt;setUniformValue(<span class="stringliteral">&quot;color&quot;</span>, Color);</div>
-<div class="line"><a name="l02479"></a><span class="lineno"> 2479</span>&#160;                    <span class="comment">// Draw</span></div>
-<div class="line"><a name="l02480"></a><span class="lineno"> 2480</span>&#160;<span class="preprocessor">                    #ifdef GL_QUAD_STRIP</span></div>
-<div class="line"><a name="l02481"></a><span class="lineno"> 2481</span>&#160;                        glDrawArrays(GL_QUAD_STRIP, 0, 2 * (Focus - FocusBegin));</div>
-<div class="line"><a name="l02482"></a><span class="lineno"> 2482</span>&#160;<span class="preprocessor">                    #else</span></div>
-<div class="line"><a name="l02483"></a><span class="lineno"> 2483</span>&#160;                        glDrawArrays(GL_TRIANGLE_STRIP, 0, 2 * (Focus - FocusBegin));</div>
-<div class="line"><a name="l02484"></a><span class="lineno"> 2484</span>&#160;<span class="preprocessor">                    #endif</span></div>
-<div class="line"><a name="l02485"></a><span class="lineno"> 2485</span>&#160;                    FocusBegin = Focus;</div>
-<div class="line"><a name="l02486"></a><span class="lineno"> 2486</span>&#160;                }</div>
-<div class="line"><a name="l02487"></a><span class="lineno"> 2487</span>&#160;            }</div>
-<div class="line"><a name="l02488"></a><span class="lineno"> 2488</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="namespace_bx_core_1_1_surface.html#abfe9836c517ee028a1e4a858b26b82ff">Flush</a>()</div>
-<div class="line"><a name="l02489"></a><span class="lineno"> 2489</span>&#160;            {</div>
-<div class="line"><a name="l02490"></a><span class="lineno"> 2490</span>&#160;                glFlush();</div>
-<div class="line"><a name="l02491"></a><span class="lineno"> 2491</span>&#160;            }</div>
-<div class="line"><a name="l02492"></a><span class="lineno"> 2492</span>&#160;            <span class="keywordtype">void</span> SwapBuffer()</div>
-<div class="line"><a name="l02493"></a><span class="lineno"> 2493</span>&#160;            {</div>
-<div class="line"><a name="l02494"></a><span class="lineno"> 2494</span>&#160;                BxCore::Main::GLWidget&amp; Widget = BxCore::Main::GLWidget::Me();</div>
-<div class="line"><a name="l02495"></a><span class="lineno"> 2495</span>&#160;                Widget.makeCurrent();</div>
-<div class="line"><a name="l02496"></a><span class="lineno"> 2496</span>&#160;                Widget.swapBuffers();</div>
-<div class="line"><a name="l02497"></a><span class="lineno"> 2497</span>&#160;            }</div>
-<div class="line"><a name="l02498"></a><span class="lineno"> 2498</span>&#160;            <span class="keywordtype">void</span> SetScissor(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h)</div>
-<div class="line"><a name="l02499"></a><span class="lineno"> 2499</span>&#160;            {</div>
-<div class="line"><a name="l02500"></a><span class="lineno"> 2500</span>&#160;                global_data <span class="keyword">const</span> <span class="keywordtype">int</span> PixelRatio = BxCore::Main::GLWidget::Me().devicePixelRatio();</div>
-<div class="line"><a name="l02501"></a><span class="lineno"> 2501</span>&#160;                y = BxCore::Surface::SurfaceSingle().GetHeightHW() - (y + h);</div>
-<div class="line"><a name="l02502"></a><span class="lineno"> 2502</span>&#160;                glScissor(x * PixelRatio / GLSCALE, y * PixelRatio / GLSCALE,</div>
-<div class="line"><a name="l02503"></a><span class="lineno"> 2503</span>&#160;                    w * PixelRatio / GLSCALE, h * PixelRatio / GLSCALE);</div>
-<div class="line"><a name="l02504"></a><span class="lineno"> 2504</span>&#160;            }</div>
-<div class="line"><a name="l02505"></a><span class="lineno"> 2505</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l02506"></a><span class="lineno"> 2506</span>&#160;            OpenGLSingle() {global_data Data* Ref = BxNew(Data); This = Ref;}</div>
-<div class="line"><a name="l02507"></a><span class="lineno"> 2507</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l02508"></a><span class="lineno"> 2508</span>&#160;            <span class="keyword">class </span>Data</div>
-<div class="line"><a name="l02509"></a><span class="lineno"> 2509</span>&#160;            {</div>
-<div class="line"><a name="l02510"></a><span class="lineno"> 2510</span>&#160;            <span class="keyword">public</span>:</div>
-<div class="line"><a name="l02511"></a><span class="lineno"> 2511</span>&#160;                <span class="keyword">enum</span> {IMG, COL, FNT, MAX} LastProgramType;</div>
-<div class="line"><a name="l02512"></a><span class="lineno"> 2512</span>&#160;                BxCore::Main::ProgramClass* Program[MAX];</div>
-<div class="line"><a name="l02513"></a><span class="lineno"> 2513</span>&#160;                Data()</div>
-<div class="line"><a name="l02514"></a><span class="lineno"> 2514</span>&#160;                {</div>
-<div class="line"><a name="l02515"></a><span class="lineno"> 2515</span>&#160;                    BxCore::Main::GLWidget&amp; Widget = BxCore::Main::GLWidget::Me();</div>
-<div class="line"><a name="l02516"></a><span class="lineno"> 2516</span>&#160;                    LastProgramType = COL;</div>
-<div class="line"><a name="l02517"></a><span class="lineno"> 2517</span>&#160;                    Program[IMG] = BxNew_Param(ImageProgram, Widget.context());</div>
-<div class="line"><a name="l02518"></a><span class="lineno"> 2518</span>&#160;                    Program[IMG]-&gt;Initialize();</div>
-<div class="line"><a name="l02519"></a><span class="lineno"> 2519</span>&#160;                    Program[COL] = BxNew_Param(ColorProgram, Widget.context());</div>
-<div class="line"><a name="l02520"></a><span class="lineno"> 2520</span>&#160;                    Program[COL]-&gt;Initialize();</div>
-<div class="line"><a name="l02521"></a><span class="lineno"> 2521</span>&#160;                    Program[FNT] = BxNew_Param(FontProgram, Widget.context());</div>
-<div class="line"><a name="l02522"></a><span class="lineno"> 2522</span>&#160;                    Program[FNT]-&gt;Initialize();</div>
-<div class="line"><a name="l02523"></a><span class="lineno"> 2523</span>&#160;                    BxCore::Font::FontSingle().SetProgram(Program[FNT], Program[COL]);</div>
-<div class="line"><a name="l02524"></a><span class="lineno"> 2524</span>&#160;                }</div>
-<div class="line"><a name="l02525"></a><span class="lineno"> 2525</span>&#160;                ~Data()</div>
-<div class="line"><a name="l02526"></a><span class="lineno"> 2526</span>&#160;                {</div>
-<div class="line"><a name="l02527"></a><span class="lineno"> 2527</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; MAX; ++i)</div>
-<div class="line"><a name="l02528"></a><span class="lineno"> 2528</span>&#160;                        BxDelete(Program[i]);</div>
-<div class="line"><a name="l02529"></a><span class="lineno"> 2529</span>&#160;                }</div>
-<div class="line"><a name="l02530"></a><span class="lineno"> 2530</span>&#160;            } *This;</div>
-<div class="line"><a name="l02531"></a><span class="lineno"> 2531</span>&#160;        };</div>
-<div class="line"><a name="l02533"></a><span class="lineno"> 2533</span>&#160;    }</div>
-<div class="line"><a name="l02534"></a><span class="lineno"> 2534</span>&#160;}</div>
+<div class="line"><a name="l02181"></a><span class="lineno"> 2181</span>&#160;            <span class="keywordtype">float</span> x;</div>
+<div class="line"><a name="l02182"></a><span class="lineno"> 2182</span>&#160;            <span class="keywordtype">float</span> y;</div>
+<div class="line"><a name="l02183"></a><span class="lineno"> 2183</span>&#160;            <span class="keywordtype">float</span> reserved;</div>
+<div class="line"><a name="l02184"></a><span class="lineno"> 2184</span>&#160;        };</div>
+<div class="line"><a name="l02185"></a><span class="lineno"> 2185</span>&#160;        <span class="keyword">struct </span>StripData</div>
+<div class="line"><a name="l02186"></a><span class="lineno"> 2186</span>&#160;        {</div>
+<div class="line"><a name="l02187"></a><span class="lineno"> 2187</span>&#160;            <span class="keywordtype">float</span> force;</div>
+<div class="line"><a name="l02188"></a><span class="lineno"> 2188</span>&#160;            <span class="keywordtype">float</span> lx;</div>
+<div class="line"><a name="l02189"></a><span class="lineno"> 2189</span>&#160;            <span class="keywordtype">float</span> ly;</div>
+<div class="line"><a name="l02190"></a><span class="lineno"> 2190</span>&#160;            <span class="keywordtype">float</span> rx;</div>
+<div class="line"><a name="l02191"></a><span class="lineno"> 2191</span>&#160;            <span class="keywordtype">float</span> ry;</div>
+<div class="line"><a name="l02192"></a><span class="lineno"> 2192</span>&#160;        };</div>
+<div class="line"><a name="l02194"></a><span class="lineno"> 2194</span>&#160;</div>
+<div class="line"><a name="l02196"></a><span class="lineno"> 2196</span>&#160;        <span class="keyword">class </span>OpenGLSingle</div>
+<div class="line"><a name="l02197"></a><span class="lineno"> 2197</span>&#160;        {</div>
+<div class="line"><a name="l02198"></a><span class="lineno"> 2198</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l02199"></a><span class="lineno"> 2199</span>&#160;            <span class="keywordtype">void</span> BindForm(OpenGLForm* form)</div>
+<div class="line"><a name="l02200"></a><span class="lineno"> 2200</span>&#160;            {</div>
+<div class="line"><a name="l02201"></a><span class="lineno"> 2201</span>&#160;                <span class="keywordflow">switch</span>(form-&gt;Type)</div>
+<div class="line"><a name="l02202"></a><span class="lineno"> 2202</span>&#160;                {</div>
+<div class="line"><a name="l02203"></a><span class="lineno"> 2203</span>&#160;                <span class="keywordflow">case</span> OpenGLForm::IMAGE:</div>
+<div class="line"><a name="l02204"></a><span class="lineno"> 2204</span>&#160;                    This-&gt;LastProgramType = Data::IMG;</div>
+<div class="line"><a name="l02205"></a><span class="lineno"> 2205</span>&#160;                    BxCore::Main::GLWidget::Me().BindTexture(((TextureMaterial*) form)-&gt;TextureID);</div>
+<div class="line"><a name="l02206"></a><span class="lineno"> 2206</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02207"></a><span class="lineno"> 2207</span>&#160;                <span class="keywordflow">case</span> OpenGLForm::COLOR:</div>
+<div class="line"><a name="l02208"></a><span class="lineno"> 2208</span>&#160;                    This-&gt;LastProgramType = Data::COL;</div>
+<div class="line"><a name="l02209"></a><span class="lineno"> 2209</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02210"></a><span class="lineno"> 2210</span>&#160;                }</div>
+<div class="line"><a name="l02211"></a><span class="lineno"> 2211</span>&#160;            }</div>
+<div class="line"><a name="l02212"></a><span class="lineno"> 2212</span>&#160;            <span class="keywordtype">void</span> DrawOutline(OpenGLOutline* outline, <span class="keyword">const</span> <a class="code" href="structpoint.html">point</a>&amp; uvrate, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keyword">const</span> byte opacity, <span class="keyword">const</span> color_x888 color)</div>
+<div class="line"><a name="l02213"></a><span class="lineno"> 2213</span>&#160;            {</div>
+<div class="line"><a name="l02214"></a><span class="lineno"> 2214</span>&#160;                global_data <span class="keywordtype">int</span> EdgeCount = 4;</div>
+<div class="line"><a name="l02215"></a><span class="lineno"> 2215</span>&#160;                global_data QVector3D* Vertex = <span class="keyword">new</span> QVector3D[EdgeCount];</div>
+<div class="line"><a name="l02216"></a><span class="lineno"> 2216</span>&#160;                global_data QVector2D* UV = <span class="keyword">new</span> QVector2D[EdgeCount];</div>
+<div class="line"><a name="l02217"></a><span class="lineno"> 2217</span>&#160;</div>
+<div class="line"><a name="l02218"></a><span class="lineno"> 2218</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> WidthHW = BxCore::Surface::SurfaceSingle().GetWidthHW();</div>
+<div class="line"><a name="l02219"></a><span class="lineno"> 2219</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> HeightHW = BxCore::Surface::SurfaceSingle().GetHeightHW();</div>
+<div class="line"><a name="l02220"></a><span class="lineno"> 2220</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> HalfWidth = WidthHW / 2.0f;</div>
+<div class="line"><a name="l02221"></a><span class="lineno"> 2221</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> HalfHeight = HeightHW / 2.0f;</div>
+<div class="line"><a name="l02222"></a><span class="lineno"> 2222</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeWidth = 1.0f / WidthHW;</div>
+<div class="line"><a name="l02223"></a><span class="lineno"> 2223</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeHeight = 1.0f / HeightHW;</div>
+<div class="line"><a name="l02224"></a><span class="lineno"> 2224</span>&#160;</div>
+<div class="line"><a name="l02225"></a><span class="lineno"> 2225</span>&#160;                BxCore::Surface::SurfaceSingle().SetRenderMode(rendermode_2d);</div>
+<div class="line"><a name="l02226"></a><span class="lineno"> 2226</span>&#160;                QGLShaderProgram* LastProgram = This-&gt;Program[This-&gt;LastProgramType]-&gt;SetFocus();</div>
+<div class="line"><a name="l02227"></a><span class="lineno"> 2227</span>&#160;                <span class="keywordflow">switch</span>(outline-&gt;Type)</div>
+<div class="line"><a name="l02228"></a><span class="lineno"> 2228</span>&#160;                {</div>
+<div class="line"><a name="l02229"></a><span class="lineno"> 2229</span>&#160;                <span class="keywordflow">case</span> OpenGLOutline::RECT:</div>
+<div class="line"><a name="l02230"></a><span class="lineno"> 2230</span>&#160;                    {</div>
+<div class="line"><a name="l02231"></a><span class="lineno"> 2231</span>&#160;                        VertexUV* VUV = (VertexUV*) outline;</div>
+<div class="line"><a name="l02232"></a><span class="lineno"> 2232</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> Count = 4;</div>
+<div class="line"><a name="l02233"></a><span class="lineno"> 2233</span>&#160;                        <span class="comment">// Vertex</span></div>
+<div class="line"><a name="l02234"></a><span class="lineno"> 2234</span>&#160;                        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Count; ++i)</div>
+<div class="line"><a name="l02235"></a><span class="lineno"> 2235</span>&#160;                        {</div>
+<div class="line"><a name="l02236"></a><span class="lineno"> 2236</span>&#160;                            Vertex[i].setX((FtoR(VUV-&gt;Vertex[i].x) + x - HalfWidth) * DeWidth);</div>
+<div class="line"><a name="l02237"></a><span class="lineno"> 2237</span>&#160;                            Vertex[i].setY((FtoR(VUV-&gt;Vertex[i].y) + y - HalfHeight) * DeHeight);</div>
+<div class="line"><a name="l02238"></a><span class="lineno"> 2238</span>&#160;                            Vertex[i].setZ(0);</div>
+<div class="line"><a name="l02239"></a><span class="lineno"> 2239</span>&#160;                        }</div>
+<div class="line"><a name="l02240"></a><span class="lineno"> 2240</span>&#160;                        LastProgram-&gt;setAttributeArray(0, Vertex);</div>
+<div class="line"><a name="l02241"></a><span class="lineno"> 2241</span>&#160;                        <span class="comment">// UV</span></div>
+<div class="line"><a name="l02242"></a><span class="lineno"> 2242</span>&#160;                        <span class="keywordflow">if</span>(This-&gt;LastProgramType == Data::IMG)</div>
+<div class="line"><a name="l02243"></a><span class="lineno"> 2243</span>&#160;                        {</div>
+<div class="line"><a name="l02244"></a><span class="lineno"> 2244</span>&#160;                            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Count; ++i)</div>
+<div class="line"><a name="l02245"></a><span class="lineno"> 2245</span>&#160;                            {</div>
+<div class="line"><a name="l02246"></a><span class="lineno"> 2246</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> X = (VUV-&gt;UV[i].x - (1 &lt;&lt; 11)) * uvrate.x / BxIntegerX(1 &lt;&lt; 11) + (1 &lt;&lt; 11);</div>
+<div class="line"><a name="l02247"></a><span class="lineno"> 2247</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> Y = (VUV-&gt;UV[i].y - (1 &lt;&lt; 11)) * uvrate.y / BxIntegerX(1 &lt;&lt; 11) + (1 &lt;&lt; 11);</div>
+<div class="line"><a name="l02248"></a><span class="lineno"> 2248</span>&#160;                                UV[i].setX(X * (1.0f / (1 &lt;&lt; 12)));</div>
+<div class="line"><a name="l02249"></a><span class="lineno"> 2249</span>&#160;                                UV[i].setY(1.0f - Y * (1.0f / (1 &lt;&lt; 12)));</div>
+<div class="line"><a name="l02250"></a><span class="lineno"> 2250</span>&#160;                            }</div>
+<div class="line"><a name="l02251"></a><span class="lineno"> 2251</span>&#160;                            LastProgram-&gt;setAttributeArray(1, UV);</div>
+<div class="line"><a name="l02252"></a><span class="lineno"> 2252</span>&#160;                        }</div>
+<div class="line"><a name="l02253"></a><span class="lineno"> 2253</span>&#160;                        <span class="comment">// Color</span></div>
+<div class="line"><a name="l02254"></a><span class="lineno"> 2254</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> R = (color &gt;&gt; 16) &amp; 0xFF;</div>
+<div class="line"><a name="l02255"></a><span class="lineno"> 2255</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> G = (color &gt;&gt; 8) &amp; 0xFF;</div>
+<div class="line"><a name="l02256"></a><span class="lineno"> 2256</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> B = (color &gt;&gt; 0) &amp; 0xFF;</div>
+<div class="line"><a name="l02257"></a><span class="lineno"> 2257</span>&#160;                        QColor Color(R, G, B, opacity);</div>
+<div class="line"><a name="l02258"></a><span class="lineno"> 2258</span>&#160;                        LastProgram-&gt;setUniformValue(<span class="stringliteral">&quot;color&quot;</span>, Color);</div>
+<div class="line"><a name="l02259"></a><span class="lineno"> 2259</span>&#160;                        glDrawArrays(GL_TRIANGLE_FAN, 0, Count);</div>
+<div class="line"><a name="l02260"></a><span class="lineno"> 2260</span>&#160;                    }</div>
+<div class="line"><a name="l02261"></a><span class="lineno"> 2261</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02262"></a><span class="lineno"> 2262</span>&#160;                <span class="keywordflow">case</span> OpenGLOutline::POLYGON:</div>
+<div class="line"><a name="l02263"></a><span class="lineno"> 2263</span>&#160;                    {</div>
+<div class="line"><a name="l02264"></a><span class="lineno"> 2264</span>&#160;                        PolyVertexUV* PVUV = (PolyVertexUV*) outline;</div>
+<div class="line"><a name="l02265"></a><span class="lineno"> 2265</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> Count = PVUV-&gt;Count;</div>
+<div class="line"><a name="l02266"></a><span class="lineno"> 2266</span>&#160;                        <span class="keywordflow">if</span>(EdgeCount &lt; Count)</div>
+<div class="line"><a name="l02267"></a><span class="lineno"> 2267</span>&#160;                        {</div>
+<div class="line"><a name="l02268"></a><span class="lineno"> 2268</span>&#160;                            EdgeCount = Count;</div>
+<div class="line"><a name="l02269"></a><span class="lineno"> 2269</span>&#160;                            <span class="keyword">delete</span>[] Vertex;</div>
+<div class="line"><a name="l02270"></a><span class="lineno"> 2270</span>&#160;                            <span class="keyword">delete</span>[] UV;</div>
+<div class="line"><a name="l02271"></a><span class="lineno"> 2271</span>&#160;                            Vertex = <span class="keyword">new</span> QVector3D[EdgeCount];</div>
+<div class="line"><a name="l02272"></a><span class="lineno"> 2272</span>&#160;                            UV = <span class="keyword">new</span> QVector2D[EdgeCount];</div>
+<div class="line"><a name="l02273"></a><span class="lineno"> 2273</span>&#160;                        }</div>
+<div class="line"><a name="l02274"></a><span class="lineno"> 2274</span>&#160;                        <span class="comment">// Vertex</span></div>
+<div class="line"><a name="l02275"></a><span class="lineno"> 2275</span>&#160;                        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Count; ++i)</div>
+<div class="line"><a name="l02276"></a><span class="lineno"> 2276</span>&#160;                        {</div>
+<div class="line"><a name="l02277"></a><span class="lineno"> 2277</span>&#160;                            Vertex[i].setX((FtoR(PVUV-&gt;Vertex[i].x) + x - HalfWidth) * DeWidth);</div>
+<div class="line"><a name="l02278"></a><span class="lineno"> 2278</span>&#160;                            Vertex[i].setY((FtoR(PVUV-&gt;Vertex[i].y) + y - HalfHeight) * DeHeight);</div>
+<div class="line"><a name="l02279"></a><span class="lineno"> 2279</span>&#160;                            Vertex[i].setZ(0);</div>
+<div class="line"><a name="l02280"></a><span class="lineno"> 2280</span>&#160;                        }</div>
+<div class="line"><a name="l02281"></a><span class="lineno"> 2281</span>&#160;                        LastProgram-&gt;setAttributeArray(0, Vertex);</div>
+<div class="line"><a name="l02282"></a><span class="lineno"> 2282</span>&#160;                        <span class="comment">// UV</span></div>
+<div class="line"><a name="l02283"></a><span class="lineno"> 2283</span>&#160;                        <span class="keywordflow">if</span>(This-&gt;LastProgramType == Data::IMG)</div>
+<div class="line"><a name="l02284"></a><span class="lineno"> 2284</span>&#160;                        {</div>
+<div class="line"><a name="l02285"></a><span class="lineno"> 2285</span>&#160;                            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Count; ++i)</div>
+<div class="line"><a name="l02286"></a><span class="lineno"> 2286</span>&#160;                            {</div>
+<div class="line"><a name="l02287"></a><span class="lineno"> 2287</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> X = (PVUV-&gt;UV[i].x - (1 &lt;&lt; 11)) * uvrate.x / BxIntegerX(1 &lt;&lt; 11) + (1 &lt;&lt; 11);</div>
+<div class="line"><a name="l02288"></a><span class="lineno"> 2288</span>&#160;                                <span class="keyword">const</span> <span class="keywordtype">int</span> Y = (PVUV-&gt;UV[i].y - (1 &lt;&lt; 11)) * uvrate.y / BxIntegerX(1 &lt;&lt; 11) + (1 &lt;&lt; 11);</div>
+<div class="line"><a name="l02289"></a><span class="lineno"> 2289</span>&#160;                                UV[i].setX(X * (1.0f / (1 &lt;&lt; 12)));</div>
+<div class="line"><a name="l02290"></a><span class="lineno"> 2290</span>&#160;                                UV[i].setY(1.0f - Y * (1.0f / (1 &lt;&lt; 12)));</div>
+<div class="line"><a name="l02291"></a><span class="lineno"> 2291</span>&#160;                            }</div>
+<div class="line"><a name="l02292"></a><span class="lineno"> 2292</span>&#160;                            LastProgram-&gt;setAttributeArray(1, UV);</div>
+<div class="line"><a name="l02293"></a><span class="lineno"> 2293</span>&#160;                        }</div>
+<div class="line"><a name="l02294"></a><span class="lineno"> 2294</span>&#160;                        <span class="comment">// Color</span></div>
+<div class="line"><a name="l02295"></a><span class="lineno"> 2295</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> R = (color &gt;&gt; 16) &amp; 0xFF;</div>
+<div class="line"><a name="l02296"></a><span class="lineno"> 2296</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> G = (color &gt;&gt; 8) &amp; 0xFF;</div>
+<div class="line"><a name="l02297"></a><span class="lineno"> 2297</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> B = (color &gt;&gt; 0) &amp; 0xFF;</div>
+<div class="line"><a name="l02298"></a><span class="lineno"> 2298</span>&#160;                        QColor Color(R, G, B, opacity);</div>
+<div class="line"><a name="l02299"></a><span class="lineno"> 2299</span>&#160;                        LastProgram-&gt;setUniformValue(<span class="stringliteral">&quot;color&quot;</span>, Color);</div>
+<div class="line"><a name="l02300"></a><span class="lineno"> 2300</span>&#160;                        glDrawArrays(GL_TRIANGLE_FAN, 0, Count);</div>
+<div class="line"><a name="l02301"></a><span class="lineno"> 2301</span>&#160;                    }</div>
+<div class="line"><a name="l02302"></a><span class="lineno"> 2302</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02303"></a><span class="lineno"> 2303</span>&#160;                <span class="keywordflow">case</span> OpenGLOutline::POLYGON3D:</div>
+<div class="line"><a name="l02304"></a><span class="lineno"> 2304</span>&#160;                    <span class="comment">//Program-&gt;setAttributeArray(0, ((PolyVertexUV3D*) outline)-&gt;Vertex);</span></div>
+<div class="line"><a name="l02305"></a><span class="lineno"> 2305</span>&#160;                    <span class="comment">//Program-&gt;setAttributeArray(0, ((PolyVertexUV3D*) outline)-&gt;UV);</span></div>
+<div class="line"><a name="l02306"></a><span class="lineno"> 2306</span>&#160;                    <span class="comment">//RefFunctions-&gt;glDrawArrays(GL_TRIANGLE_FAN, 0, ((PolyVertexUV3D*) outline)-&gt;Count);</span></div>
+<div class="line"><a name="l02307"></a><span class="lineno"> 2307</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02308"></a><span class="lineno"> 2308</span>&#160;                <span class="keywordflow">case</span> OpenGLOutline::SPLINE:</div>
+<div class="line"><a name="l02309"></a><span class="lineno"> 2309</span>&#160;                    {</div>
+<div class="line"><a name="l02310"></a><span class="lineno"> 2310</span>&#160;                        SplineVertex* SV = (SplineVertex*) outline;</div>
+<div class="line"><a name="l02311"></a><span class="lineno"> 2311</span>&#160;                        <a class="code" href="structpointf.html">pointf</a> LB, LE;</div>
+<div class="line"><a name="l02312"></a><span class="lineno"> 2312</span>&#160;                        <span class="keyword">const</span> fint LVecX = SV-&gt;VertexL[2].x - SV-&gt;VertexL[1].x;</div>
+<div class="line"><a name="l02313"></a><span class="lineno"> 2313</span>&#160;                        <span class="keyword">const</span> fint LVecY = SV-&gt;VertexL[2].y - SV-&gt;VertexL[1].y;</div>
+<div class="line"><a name="l02314"></a><span class="lineno"> 2314</span>&#160;                        <span class="keyword">const</span> fint LVecXB = SV-&gt;VertexL[1].x - SV-&gt;VertexL[0].x;</div>
+<div class="line"><a name="l02315"></a><span class="lineno"> 2315</span>&#160;                        <span class="keyword">const</span> fint LVecYB = SV-&gt;VertexL[1].y - SV-&gt;VertexL[0].y;</div>
+<div class="line"><a name="l02316"></a><span class="lineno"> 2316</span>&#160;                        <span class="keyword">const</span> fint LVecXE = SV-&gt;VertexL[3].x - SV-&gt;VertexL[2].x;</div>
+<div class="line"><a name="l02317"></a><span class="lineno"> 2317</span>&#160;                        <span class="keyword">const</span> fint LVecYE = SV-&gt;VertexL[3].y - SV-&gt;VertexL[2].y;</div>
+<div class="line"><a name="l02318"></a><span class="lineno"> 2318</span>&#160;                        <a class="code" href="class_bx_util.html#ade477ecc188f51521a0d9c309872cca4">BxUtil::GetCubicSpline</a>(LVecX, LVecY, LVecXB, LVecYB, LB, LVecXE, LVecYE, LE);</div>
+<div class="line"><a name="l02319"></a><span class="lineno"> 2319</span>&#160;                        <a class="code" href="structpointf.html">pointf</a> RB, RE;</div>
+<div class="line"><a name="l02320"></a><span class="lineno"> 2320</span>&#160;                        <span class="keyword">const</span> fint RVecX = SV-&gt;VertexR[2].x - SV-&gt;VertexR[1].x;</div>
+<div class="line"><a name="l02321"></a><span class="lineno"> 2321</span>&#160;                        <span class="keyword">const</span> fint RVecY = SV-&gt;VertexR[2].y - SV-&gt;VertexR[1].y;</div>
+<div class="line"><a name="l02322"></a><span class="lineno"> 2322</span>&#160;                        <span class="keyword">const</span> fint RVecXB = SV-&gt;VertexR[1].x - SV-&gt;VertexR[0].x;</div>
+<div class="line"><a name="l02323"></a><span class="lineno"> 2323</span>&#160;                        <span class="keyword">const</span> fint RVecYB = SV-&gt;VertexR[1].y - SV-&gt;VertexR[0].y;</div>
+<div class="line"><a name="l02324"></a><span class="lineno"> 2324</span>&#160;                        <span class="keyword">const</span> fint RVecXE = SV-&gt;VertexR[3].x - SV-&gt;VertexR[2].x;</div>
+<div class="line"><a name="l02325"></a><span class="lineno"> 2325</span>&#160;                        <span class="keyword">const</span> fint RVecYE = SV-&gt;VertexR[3].y - SV-&gt;VertexR[2].y;</div>
+<div class="line"><a name="l02326"></a><span class="lineno"> 2326</span>&#160;                        <a class="code" href="class_bx_util.html#ade477ecc188f51521a0d9c309872cca4">BxUtil::GetCubicSpline</a>(RVecX, RVecY, RVecXB, RVecYB, RB, RVecXE, RVecYE, RE);</div>
+<div class="line"><a name="l02327"></a><span class="lineno"> 2327</span>&#160;</div>
+<div class="line"><a name="l02328"></a><span class="lineno"> 2328</span>&#160;                        <span class="keyword">const</span> fint LMax = <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(<a class="code" href="namespace_bx_util_global.html#a488ff490d994d4173653ee396893d5b9">BxUtilGlobal::Abs</a>(LVecX), <a class="code" href="namespace_bx_util_global.html#a488ff490d994d4173653ee396893d5b9">BxUtilGlobal::Abs</a>(LVecY));</div>
+<div class="line"><a name="l02329"></a><span class="lineno"> 2329</span>&#160;                        <span class="keyword">const</span> fint RMax = <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(<a class="code" href="namespace_bx_util_global.html#a488ff490d994d4173653ee396893d5b9">BxUtilGlobal::Abs</a>(RVecX), <a class="code" href="namespace_bx_util_global.html#a488ff490d994d4173653ee396893d5b9">BxUtilGlobal::Abs</a>(RVecY));</div>
+<div class="line"><a name="l02330"></a><span class="lineno"> 2330</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> CountSolo = <a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(1, FtoI(<a class="code" href="namespace_bx_util_global.html#a52580a7f5dbd7722b56eab2e3167292f">BxUtilGlobal::Max</a>(LMax, RMax)) / 2);</div>
+<div class="line"><a name="l02331"></a><span class="lineno"> 2331</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> Count = (CountSolo + 1) * 2;</div>
+<div class="line"><a name="l02332"></a><span class="lineno"> 2332</span>&#160;                        <span class="keywordflow">if</span>(EdgeCount &lt; Count)</div>
+<div class="line"><a name="l02333"></a><span class="lineno"> 2333</span>&#160;                        {</div>
+<div class="line"><a name="l02334"></a><span class="lineno"> 2334</span>&#160;                            EdgeCount = Count;</div>
+<div class="line"><a name="l02335"></a><span class="lineno"> 2335</span>&#160;                            <span class="keyword">delete</span>[] Vertex;</div>
+<div class="line"><a name="l02336"></a><span class="lineno"> 2336</span>&#160;                            <span class="keyword">delete</span>[] UV;</div>
+<div class="line"><a name="l02337"></a><span class="lineno"> 2337</span>&#160;                            Vertex = <span class="keyword">new</span> QVector3D[EdgeCount];</div>
+<div class="line"><a name="l02338"></a><span class="lineno"> 2338</span>&#160;                            UV = <span class="keyword">new</span> QVector2D[EdgeCount];</div>
+<div class="line"><a name="l02339"></a><span class="lineno"> 2339</span>&#160;                        }</div>
+<div class="line"><a name="l02340"></a><span class="lineno"> 2340</span>&#160;</div>
+<div class="line"><a name="l02341"></a><span class="lineno"> 2341</span>&#160;                        <span class="comment">// Vertex</span></div>
+<div class="line"><a name="l02342"></a><span class="lineno"> 2342</span>&#160;                        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt;= CountSolo; ++i)</div>
+<div class="line"><a name="l02343"></a><span class="lineno"> 2343</span>&#160;                        {</div>
+<div class="line"><a name="l02344"></a><span class="lineno"> 2344</span>&#160;                            <span class="keyword">const</span> fint t = ItoF(i) / CountSolo;</div>
+<div class="line"><a name="l02345"></a><span class="lineno"> 2345</span>&#160;                            <span class="keyword">const</span> fint tt = F_Multiply_F(t, t);</div>
+<div class="line"><a name="l02346"></a><span class="lineno"> 2346</span>&#160;                            <span class="keyword">const</span> fint r = t - ItoF(1);</div>
+<div class="line"><a name="l02347"></a><span class="lineno"> 2347</span>&#160;                            <span class="keyword">const</span> fint av = F_Multiply_F(tt, ItoF(3) - 2 * t);</div>
+<div class="line"><a name="l02348"></a><span class="lineno"> 2348</span>&#160;                            <span class="keyword">const</span> fint bv = F_Multiply_F(t, F_Multiply_F(r, r));</div>
+<div class="line"><a name="l02349"></a><span class="lineno"> 2349</span>&#160;                            <span class="keyword">const</span> fint cv = F_Multiply_F(tt, r);</div>
+<div class="line"><a name="l02350"></a><span class="lineno"> 2350</span>&#160;                            <span class="keyword">const</span> fint lvx = SV-&gt;VertexL[1].x + F_Multiply_F(LVecX, av) + F_Multiply_F(LB.x, bv) + F_Multiply_F(LE.x, cv);</div>
+<div class="line"><a name="l02351"></a><span class="lineno"> 2351</span>&#160;                            <span class="keyword">const</span> fint lvy = SV-&gt;VertexL[1].y + F_Multiply_F(LVecY, av) + F_Multiply_F(LB.y, bv) + F_Multiply_F(LE.y, cv);</div>
+<div class="line"><a name="l02352"></a><span class="lineno"> 2352</span>&#160;                            <span class="keyword">const</span> fint rvx = SV-&gt;VertexR[1].x + F_Multiply_F(RVecX, av) + F_Multiply_F(RB.x, bv) + F_Multiply_F(RE.x, cv);</div>
+<div class="line"><a name="l02353"></a><span class="lineno"> 2353</span>&#160;                            <span class="keyword">const</span> fint rvy = SV-&gt;VertexR[1].y + F_Multiply_F(RVecY, av) + F_Multiply_F(RB.y, bv) + F_Multiply_F(RE.y, cv);</div>
+<div class="line"><a name="l02354"></a><span class="lineno"> 2354</span>&#160;                            Vertex[i * 2 + 0].setX((FtoD(lvx) + x - HalfWidth) * DeWidth);</div>
+<div class="line"><a name="l02355"></a><span class="lineno"> 2355</span>&#160;                            Vertex[i * 2 + 0].setY((FtoD(lvy) + y - HalfHeight) * DeHeight);</div>
+<div class="line"><a name="l02356"></a><span class="lineno"> 2356</span>&#160;                            Vertex[i * 2 + 0].setZ(0);</div>
+<div class="line"><a name="l02357"></a><span class="lineno"> 2357</span>&#160;                            Vertex[i * 2 + 1].setX((FtoD(rvx) + x - HalfWidth) * DeWidth);</div>
+<div class="line"><a name="l02358"></a><span class="lineno"> 2358</span>&#160;                            Vertex[i * 2 + 1].setY((FtoD(rvy) + y - HalfHeight) * DeHeight);</div>
+<div class="line"><a name="l02359"></a><span class="lineno"> 2359</span>&#160;                            Vertex[i * 2 + 1].setZ(0);</div>
+<div class="line"><a name="l02360"></a><span class="lineno"> 2360</span>&#160;                        }</div>
+<div class="line"><a name="l02361"></a><span class="lineno"> 2361</span>&#160;                        LastProgram-&gt;setAttributeArray(0, Vertex);</div>
+<div class="line"><a name="l02362"></a><span class="lineno"> 2362</span>&#160;</div>
+<div class="line"><a name="l02363"></a><span class="lineno"> 2363</span>&#160;                        <span class="comment">// Color</span></div>
+<div class="line"><a name="l02364"></a><span class="lineno"> 2364</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> R = (color &gt;&gt; 16) &amp; 0xFF;</div>
+<div class="line"><a name="l02365"></a><span class="lineno"> 2365</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> G = (color &gt;&gt; 8) &amp; 0xFF;</div>
+<div class="line"><a name="l02366"></a><span class="lineno"> 2366</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span> B = (color &gt;&gt; 0) &amp; 0xFF;</div>
+<div class="line"><a name="l02367"></a><span class="lineno"> 2367</span>&#160;                        QColor Color(R, G, B, opacity);</div>
+<div class="line"><a name="l02368"></a><span class="lineno"> 2368</span>&#160;                        LastProgram-&gt;setUniformValue(<span class="stringliteral">&quot;color&quot;</span>, Color);</div>
+<div class="line"><a name="l02369"></a><span class="lineno"> 2369</span>&#160;</div>
+<div class="line"><a name="l02370"></a><span class="lineno"> 2370</span>&#160;<span class="preprocessor">                        #ifdef GL_QUAD_STRIP</span></div>
+<div class="line"><a name="l02371"></a><span class="lineno"> 2371</span>&#160;                            glDrawArrays(GL_QUAD_STRIP, 0, Count);</div>
+<div class="line"><a name="l02372"></a><span class="lineno"> 2372</span>&#160;<span class="preprocessor">                        #else</span></div>
+<div class="line"><a name="l02373"></a><span class="lineno"> 2373</span>&#160;                            glDrawArrays(GL_TRIANGLE_STRIP, 0, Count);</div>
+<div class="line"><a name="l02374"></a><span class="lineno"> 2374</span>&#160;<span class="preprocessor">                        #endif</span></div>
+<div class="line"><a name="l02375"></a><span class="lineno"> 2375</span>&#160;                    }</div>
+<div class="line"><a name="l02376"></a><span class="lineno"> 2376</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02377"></a><span class="lineno"> 2377</span>&#160;                }</div>
+<div class="line"><a name="l02378"></a><span class="lineno"> 2378</span>&#160;            }</div>
+<div class="line"><a name="l02379"></a><span class="lineno"> 2379</span>&#160;            <span class="keywordtype">void</span> DrawLines(<span class="keywordtype">int</span> Count, <span class="keyword">const</span> LinesData* Data, <span class="keyword">const</span> <span class="keywordtype">float</span> x, <span class="keyword">const</span> <span class="keywordtype">float</span> y, <span class="keyword">const</span> <span class="keywordtype">float</span> scale, <span class="keyword">const</span> byte opacity, <span class="keyword">const</span> color_x888 color, <span class="keyword">const</span> <span class="keywordtype">bool</span> loop)</div>
+<div class="line"><a name="l02380"></a><span class="lineno"> 2380</span>&#160;            {</div>
+<div class="line"><a name="l02381"></a><span class="lineno"> 2381</span>&#160;                global_data <span class="keywordtype">int</span> CountMax = 256;</div>
+<div class="line"><a name="l02382"></a><span class="lineno"> 2382</span>&#160;                global_data QVector2D* Vertex = <span class="keyword">new</span> QVector2D[CountMax];</div>
+<div class="line"><a name="l02383"></a><span class="lineno"> 2383</span>&#160;                <span class="keywordflow">if</span>(Count &lt; 2) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02384"></a><span class="lineno"> 2384</span>&#160;</div>
+<div class="line"><a name="l02385"></a><span class="lineno"> 2385</span>&#160;                <span class="keywordflow">if</span>(CountMax &lt; Count)</div>
+<div class="line"><a name="l02386"></a><span class="lineno"> 2386</span>&#160;                {</div>
+<div class="line"><a name="l02387"></a><span class="lineno"> 2387</span>&#160;                    <span class="keyword">delete</span>[] Vertex;</div>
+<div class="line"><a name="l02388"></a><span class="lineno"> 2388</span>&#160;                    Vertex = <span class="keyword">new</span> QVector2D[CountMax = Count];</div>
+<div class="line"><a name="l02389"></a><span class="lineno"> 2389</span>&#160;                }</div>
+<div class="line"><a name="l02390"></a><span class="lineno"> 2390</span>&#160;</div>
+<div class="line"><a name="l02391"></a><span class="lineno"> 2391</span>&#160;                BxCore::Surface::SurfaceSingle().SetRenderMode(rendermode_2d);</div>
+<div class="line"><a name="l02392"></a><span class="lineno"> 2392</span>&#160;                QGLShaderProgram* LastProgram = This-&gt;Program[Data::COL]-&gt;SetFocus();</div>
+<div class="line"><a name="l02393"></a><span class="lineno"> 2393</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeWidth = scale / <a class="code" href="namespace_bx_core_1_1_surface.html#add1206ac58b30b117600c186daca0973">BxCore::Surface::GetWidthHW</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l02394"></a><span class="lineno"> 2394</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeHeight = scale / <a class="code" href="namespace_bx_core_1_1_surface.html#aa396df855a2d8c80089340c5542e0a52">BxCore::Surface::GetHeightHW</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l02395"></a><span class="lineno"> 2395</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeX = x + BxCore::Main::GetGUIMarginL() / 2 / scale;</div>
+<div class="line"><a name="l02396"></a><span class="lineno"> 2396</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeY = y + BxCore::Main::GetGUIMarginT() / 2 / scale;</div>
+<div class="line"><a name="l02397"></a><span class="lineno"> 2397</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> R = (color &gt;&gt; 16) &amp; 0xFF;</div>
+<div class="line"><a name="l02398"></a><span class="lineno"> 2398</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> G = (color &gt;&gt; 8) &amp; 0xFF;</div>
+<div class="line"><a name="l02399"></a><span class="lineno"> 2399</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> B = (color &gt;&gt; 0) &amp; 0xFF;</div>
+<div class="line"><a name="l02400"></a><span class="lineno"> 2400</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> A = opacity &amp; 0xFF;</div>
+<div class="line"><a name="l02401"></a><span class="lineno"> 2401</span>&#160;</div>
+<div class="line"><a name="l02402"></a><span class="lineno"> 2402</span>&#160;                <span class="comment">// Vertex</span></div>
+<div class="line"><a name="l02403"></a><span class="lineno"> 2403</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Count; ++i)</div>
+<div class="line"><a name="l02404"></a><span class="lineno"> 2404</span>&#160;                {</div>
+<div class="line"><a name="l02405"></a><span class="lineno"> 2405</span>&#160;                    Vertex[i].setX((Data[i].x + DeX) * DeWidth);</div>
+<div class="line"><a name="l02406"></a><span class="lineno"> 2406</span>&#160;                    Vertex[i].setY((Data[i].y + DeY) * DeHeight);</div>
+<div class="line"><a name="l02407"></a><span class="lineno"> 2407</span>&#160;                }</div>
+<div class="line"><a name="l02408"></a><span class="lineno"> 2408</span>&#160;                LastProgram-&gt;setAttributeArray(0, Vertex);</div>
+<div class="line"><a name="l02409"></a><span class="lineno"> 2409</span>&#160;                <span class="comment">// Color</span></div>
+<div class="line"><a name="l02410"></a><span class="lineno"> 2410</span>&#160;                QColor Color(R, G, B, A);</div>
+<div class="line"><a name="l02411"></a><span class="lineno"> 2411</span>&#160;                LastProgram-&gt;setUniformValue(<span class="stringliteral">&quot;color&quot;</span>, Color);</div>
+<div class="line"><a name="l02412"></a><span class="lineno"> 2412</span>&#160;                <span class="comment">// Draw</span></div>
+<div class="line"><a name="l02413"></a><span class="lineno"> 2413</span>&#160;                glDrawArrays((loop)? GL_LINE_LOOP : GL_LINE_STRIP, 0, Count);</div>
+<div class="line"><a name="l02414"></a><span class="lineno"> 2414</span>&#160;            }</div>
+<div class="line"><a name="l02415"></a><span class="lineno"> 2415</span>&#160;            <span class="keyword">template</span>&lt;<span class="keywordtype">bool</span> useStripOpacity, <span class="keywordtype">bool</span> useMatrix&gt;</div>
+<div class="line"><a name="l02416"></a><span class="lineno"> 2416</span>&#160;            <span class="keywordtype">void</span> DrawStrip(<span class="keywordtype">int</span> Count, <span class="keyword">const</span> StripData* Data, <span class="keyword">const</span> byte opacity,</div>
+<div class="line"><a name="l02417"></a><span class="lineno"> 2417</span>&#160;                <span class="keyword">const</span> uint aqua, <span class="keyword">const</span> color_x888 color, <span class="keyword">const</span> <span class="keywordtype">float</span> x, <span class="keyword">const</span> <span class="keywordtype">float</span> y, <span class="keyword">const</span> <span class="keywordtype">float</span> scale,</div>
+<div class="line"><a name="l02418"></a><span class="lineno"> 2418</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> m11, <span class="keyword">const</span> <span class="keywordtype">float</span> m12, <span class="keyword">const</span> <span class="keywordtype">float</span> m21, <span class="keyword">const</span> <span class="keywordtype">float</span> m22, <span class="keyword">const</span> <span class="keywordtype">float</span> dx, <span class="keyword">const</span> <span class="keywordtype">float</span> dy)</div>
+<div class="line"><a name="l02419"></a><span class="lineno"> 2419</span>&#160;            {</div>
+<div class="line"><a name="l02420"></a><span class="lineno"> 2420</span>&#160;                global_data <span class="keyword">const</span> <span class="keywordtype">int</span> CountMax = 256;</div>
+<div class="line"><a name="l02421"></a><span class="lineno"> 2421</span>&#160;                global_data QVector2D Vertex[2 * CountMax];</div>
+<div class="line"><a name="l02422"></a><span class="lineno"> 2422</span>&#160;                <span class="keywordflow">if</span>(Count &lt; 2) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l02423"></a><span class="lineno"> 2423</span>&#160;</div>
+<div class="line"><a name="l02424"></a><span class="lineno"> 2424</span>&#160;                BxCore::Surface::SurfaceSingle().SetRenderMode(rendermode_2d);</div>
+<div class="line"><a name="l02425"></a><span class="lineno"> 2425</span>&#160;                QGLShaderProgram* LastProgram = This-&gt;Program[Data::COL]-&gt;SetFocus();</div>
+<div class="line"><a name="l02426"></a><span class="lineno"> 2426</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeWidth = scale / <a class="code" href="namespace_bx_core_1_1_surface.html#add1206ac58b30b117600c186daca0973">BxCore::Surface::GetWidthHW</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l02427"></a><span class="lineno"> 2427</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeHeight = scale / <a class="code" href="namespace_bx_core_1_1_surface.html#aa396df855a2d8c80089340c5542e0a52">BxCore::Surface::GetHeightHW</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l02428"></a><span class="lineno"> 2428</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> De11 = m11 * DeWidth;</div>
+<div class="line"><a name="l02429"></a><span class="lineno"> 2429</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> De12 = m12 * DeHeight;</div>
+<div class="line"><a name="l02430"></a><span class="lineno"> 2430</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> De21 = m21 * DeWidth;</div>
+<div class="line"><a name="l02431"></a><span class="lineno"> 2431</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> De22 = m22 * DeHeight;</div>
+<div class="line"><a name="l02432"></a><span class="lineno"> 2432</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeX = (dx + x + BxCore::Main::GetGUIMarginL() / 2 / scale) * DeWidth;</div>
+<div class="line"><a name="l02433"></a><span class="lineno"> 2433</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> DeY = (dy + y + BxCore::Main::GetGUIMarginT() / 2 / scale) * DeHeight;</div>
+<div class="line"><a name="l02434"></a><span class="lineno"> 2434</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> R = (color &gt;&gt; 16) &amp; 0xFF;</div>
+<div class="line"><a name="l02435"></a><span class="lineno"> 2435</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> G = (color &gt;&gt; 8) &amp; 0xFF;</div>
+<div class="line"><a name="l02436"></a><span class="lineno"> 2436</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> B = (color &gt;&gt; 0) &amp; 0xFF;</div>
+<div class="line"><a name="l02437"></a><span class="lineno"> 2437</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> A = opacity &amp; 0xFF;</div>
+<div class="line"><a name="l02438"></a><span class="lineno"> 2438</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> AquaForce = aqua / 255.0f;</div>
+<div class="line"><a name="l02439"></a><span class="lineno"> 2439</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">float</span> AquaValue = (0 &lt; AquaForce)? A / AquaForce : 0;</div>
+<div class="line"><a name="l02440"></a><span class="lineno"> 2440</span>&#160;</div>
+<div class="line"><a name="l02441"></a><span class="lineno"> 2441</span>&#160;                <span class="keywordtype">int</span> FocusBegin = 1;</div>
+<div class="line"><a name="l02442"></a><span class="lineno"> 2442</span>&#160;                <span class="keywordflow">while</span>(FocusBegin &lt; Count)</div>
+<div class="line"><a name="l02443"></a><span class="lineno"> 2443</span>&#160;                {</div>
+<div class="line"><a name="l02444"></a><span class="lineno"> 2444</span>&#160;                    <span class="comment">// Vertex</span></div>
+<div class="line"><a name="l02445"></a><span class="lineno"> 2445</span>&#160;                    <span class="keywordtype">int</span> Focus = FocusBegin -= 1;</div>
+<div class="line"><a name="l02446"></a><span class="lineno"> 2446</span>&#160;                    <span class="keyword">const</span> <span class="keywordtype">int</span> Opacity = (useStripOpacity &amp;&amp; Data[Focus].force &lt; AquaForce)?</div>
+<div class="line"><a name="l02447"></a><span class="lineno"> 2447</span>&#160;                        (<span class="keywordtype">int</span>) (AquaValue * Data[Focus].force) : A;</div>
+<div class="line"><a name="l02448"></a><span class="lineno"> 2448</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 2 * CountMax &amp;&amp; Focus &lt; Count; i += 2)</div>
+<div class="line"><a name="l02449"></a><span class="lineno"> 2449</span>&#160;                    {</div>
+<div class="line"><a name="l02450"></a><span class="lineno"> 2450</span>&#160;                        <span class="keyword">const</span> StripData&amp; CurData = Data[Focus];</div>
+<div class="line"><a name="l02451"></a><span class="lineno"> 2451</span>&#160;                        <span class="keywordflow">if</span>(useMatrix)</div>
+<div class="line"><a name="l02452"></a><span class="lineno"> 2452</span>&#160;                        {</div>
+<div class="line"><a name="l02453"></a><span class="lineno"> 2453</span>&#160;                            Vertex[i + 0].setX(CurData.lx * De11 + CurData.ly * De21 + DeX);</div>
+<div class="line"><a name="l02454"></a><span class="lineno"> 2454</span>&#160;                            Vertex[i + 0].setY(CurData.lx * De12 + CurData.ly * De22 + DeY);</div>
+<div class="line"><a name="l02455"></a><span class="lineno"> 2455</span>&#160;                            Vertex[i + 1].setX(CurData.rx * De11 + CurData.ry * De21 + DeX);</div>
+<div class="line"><a name="l02456"></a><span class="lineno"> 2456</span>&#160;                            Vertex[i + 1].setY(CurData.rx * De12 + CurData.ry * De22 + DeY);</div>
+<div class="line"><a name="l02457"></a><span class="lineno"> 2457</span>&#160;                        }</div>
+<div class="line"><a name="l02458"></a><span class="lineno"> 2458</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l02459"></a><span class="lineno"> 2459</span>&#160;                        {</div>
+<div class="line"><a name="l02460"></a><span class="lineno"> 2460</span>&#160;                            Vertex[i + 0].setX(CurData.lx * De11 + DeX);</div>
+<div class="line"><a name="l02461"></a><span class="lineno"> 2461</span>&#160;                            Vertex[i + 0].setY(CurData.ly * De22 + DeY);</div>
+<div class="line"><a name="l02462"></a><span class="lineno"> 2462</span>&#160;                            Vertex[i + 1].setX(CurData.rx * De11 + DeX);</div>
+<div class="line"><a name="l02463"></a><span class="lineno"> 2463</span>&#160;                            Vertex[i + 1].setY(CurData.ry * De22 + DeY);</div>
+<div class="line"><a name="l02464"></a><span class="lineno"> 2464</span>&#160;                        }</div>
+<div class="line"><a name="l02465"></a><span class="lineno"> 2465</span>&#160;                        Focus++;</div>
+<div class="line"><a name="l02466"></a><span class="lineno"> 2466</span>&#160;                        <span class="keywordflow">if</span>(useStripOpacity)</div>
+<div class="line"><a name="l02467"></a><span class="lineno"> 2467</span>&#160;                        {</div>
+<div class="line"><a name="l02468"></a><span class="lineno"> 2468</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">int</span> CurOpacity = (Data[Focus - 1].force &lt; AquaForce)?</div>
+<div class="line"><a name="l02469"></a><span class="lineno"> 2469</span>&#160;                                (<span class="keywordtype">int</span>) (AquaValue * Data[Focus - 1].force) : A;</div>
+<div class="line"><a name="l02470"></a><span class="lineno"> 2470</span>&#160;                            <span class="keywordflow">if</span>(Opacity != CurOpacity) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l02471"></a><span class="lineno"> 2471</span>&#160;                        }</div>
+<div class="line"><a name="l02472"></a><span class="lineno"> 2472</span>&#160;                    }</div>
+<div class="line"><a name="l02473"></a><span class="lineno"> 2473</span>&#160;                    LastProgram-&gt;setAttributeArray(0, Vertex);</div>
+<div class="line"><a name="l02474"></a><span class="lineno"> 2474</span>&#160;                    <span class="comment">// Color</span></div>
+<div class="line"><a name="l02475"></a><span class="lineno"> 2475</span>&#160;                    QColor Color(R, G, B, Opacity);</div>
+<div class="line"><a name="l02476"></a><span class="lineno"> 2476</span>&#160;                    LastProgram-&gt;setUniformValue(<span class="stringliteral">&quot;color&quot;</span>, Color);</div>
+<div class="line"><a name="l02477"></a><span class="lineno"> 2477</span>&#160;                    <span class="comment">// Draw</span></div>
+<div class="line"><a name="l02478"></a><span class="lineno"> 2478</span>&#160;<span class="preprocessor">                    #ifdef GL_QUAD_STRIP</span></div>
+<div class="line"><a name="l02479"></a><span class="lineno"> 2479</span>&#160;                        glDrawArrays(GL_QUAD_STRIP, 0, 2 * (Focus - FocusBegin));</div>
+<div class="line"><a name="l02480"></a><span class="lineno"> 2480</span>&#160;<span class="preprocessor">                    #else</span></div>
+<div class="line"><a name="l02481"></a><span class="lineno"> 2481</span>&#160;                        glDrawArrays(GL_TRIANGLE_STRIP, 0, 2 * (Focus - FocusBegin));</div>
+<div class="line"><a name="l02482"></a><span class="lineno"> 2482</span>&#160;<span class="preprocessor">                    #endif</span></div>
+<div class="line"><a name="l02483"></a><span class="lineno"> 2483</span>&#160;                    FocusBegin = Focus;</div>
+<div class="line"><a name="l02484"></a><span class="lineno"> 2484</span>&#160;                }</div>
+<div class="line"><a name="l02485"></a><span class="lineno"> 2485</span>&#160;            }</div>
+<div class="line"><a name="l02486"></a><span class="lineno"> 2486</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="namespace_bx_core_1_1_surface.html#abfe9836c517ee028a1e4a858b26b82ff">Flush</a>()</div>
+<div class="line"><a name="l02487"></a><span class="lineno"> 2487</span>&#160;            {</div>
+<div class="line"><a name="l02488"></a><span class="lineno"> 2488</span>&#160;                glFlush();</div>
+<div class="line"><a name="l02489"></a><span class="lineno"> 2489</span>&#160;            }</div>
+<div class="line"><a name="l02490"></a><span class="lineno"> 2490</span>&#160;            <span class="keywordtype">void</span> SwapBuffer()</div>
+<div class="line"><a name="l02491"></a><span class="lineno"> 2491</span>&#160;            {</div>
+<div class="line"><a name="l02492"></a><span class="lineno"> 2492</span>&#160;                BxCore::Main::GLWidget&amp; Widget = BxCore::Main::GLWidget::Me();</div>
+<div class="line"><a name="l02493"></a><span class="lineno"> 2493</span>&#160;                Widget.makeCurrent();</div>
+<div class="line"><a name="l02494"></a><span class="lineno"> 2494</span>&#160;                Widget.swapBuffers();</div>
+<div class="line"><a name="l02495"></a><span class="lineno"> 2495</span>&#160;            }</div>
+<div class="line"><a name="l02496"></a><span class="lineno"> 2496</span>&#160;            <span class="keywordtype">void</span> SetScissor(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h)</div>
+<div class="line"><a name="l02497"></a><span class="lineno"> 2497</span>&#160;            {</div>
+<div class="line"><a name="l02498"></a><span class="lineno"> 2498</span>&#160;                global_data <span class="keyword">const</span> <span class="keywordtype">int</span> PixelRatio = BxCore::Main::GLWidget::Me().devicePixelRatio();</div>
+<div class="line"><a name="l02499"></a><span class="lineno"> 2499</span>&#160;                y = BxCore::Surface::SurfaceSingle().GetHeightHW() - (y + h);</div>
+<div class="line"><a name="l02500"></a><span class="lineno"> 2500</span>&#160;                glScissor(x * PixelRatio / GLSCALE, y * PixelRatio / GLSCALE,</div>
+<div class="line"><a name="l02501"></a><span class="lineno"> 2501</span>&#160;                    w * PixelRatio / GLSCALE, h * PixelRatio / GLSCALE);</div>
+<div class="line"><a name="l02502"></a><span class="lineno"> 2502</span>&#160;            }</div>
+<div class="line"><a name="l02503"></a><span class="lineno"> 2503</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l02504"></a><span class="lineno"> 2504</span>&#160;            OpenGLSingle() {global_data Data* Ref = BxNew(Data); This = Ref;}</div>
+<div class="line"><a name="l02505"></a><span class="lineno"> 2505</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l02506"></a><span class="lineno"> 2506</span>&#160;            <span class="keyword">class </span>Data</div>
+<div class="line"><a name="l02507"></a><span class="lineno"> 2507</span>&#160;            {</div>
+<div class="line"><a name="l02508"></a><span class="lineno"> 2508</span>&#160;            <span class="keyword">public</span>:</div>
+<div class="line"><a name="l02509"></a><span class="lineno"> 2509</span>&#160;                <span class="keyword">enum</span> {IMG, COL, FNT, MAX} LastProgramType;</div>
+<div class="line"><a name="l02510"></a><span class="lineno"> 2510</span>&#160;                BxCore::Main::ProgramClass* Program[MAX];</div>
+<div class="line"><a name="l02511"></a><span class="lineno"> 2511</span>&#160;                Data()</div>
+<div class="line"><a name="l02512"></a><span class="lineno"> 2512</span>&#160;                {</div>
+<div class="line"><a name="l02513"></a><span class="lineno"> 2513</span>&#160;                    BxCore::Main::GLWidget&amp; Widget = BxCore::Main::GLWidget::Me();</div>
+<div class="line"><a name="l02514"></a><span class="lineno"> 2514</span>&#160;                    LastProgramType = COL;</div>
+<div class="line"><a name="l02515"></a><span class="lineno"> 2515</span>&#160;                    Program[IMG] = BxNew_Param(ImageProgram, Widget.context());</div>
+<div class="line"><a name="l02516"></a><span class="lineno"> 2516</span>&#160;                    Program[IMG]-&gt;Initialize();</div>
+<div class="line"><a name="l02517"></a><span class="lineno"> 2517</span>&#160;                    Program[COL] = BxNew_Param(ColorProgram, Widget.context());</div>
+<div class="line"><a name="l02518"></a><span class="lineno"> 2518</span>&#160;                    Program[COL]-&gt;Initialize();</div>
+<div class="line"><a name="l02519"></a><span class="lineno"> 2519</span>&#160;                    Program[FNT] = BxNew_Param(FontProgram, Widget.context());</div>
+<div class="line"><a name="l02520"></a><span class="lineno"> 2520</span>&#160;                    Program[FNT]-&gt;Initialize();</div>
+<div class="line"><a name="l02521"></a><span class="lineno"> 2521</span>&#160;                    BxCore::Font::FontSingle().SetProgram(Program[FNT], Program[COL]);</div>
+<div class="line"><a name="l02522"></a><span class="lineno"> 2522</span>&#160;                }</div>
+<div class="line"><a name="l02523"></a><span class="lineno"> 2523</span>&#160;                ~Data()</div>
+<div class="line"><a name="l02524"></a><span class="lineno"> 2524</span>&#160;                {</div>
+<div class="line"><a name="l02525"></a><span class="lineno"> 2525</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; MAX; ++i)</div>
+<div class="line"><a name="l02526"></a><span class="lineno"> 2526</span>&#160;                        BxDelete(Program[i]);</div>
+<div class="line"><a name="l02527"></a><span class="lineno"> 2527</span>&#160;                }</div>
+<div class="line"><a name="l02528"></a><span class="lineno"> 2528</span>&#160;            } *This;</div>
+<div class="line"><a name="l02529"></a><span class="lineno"> 2529</span>&#160;        };</div>
+<div class="line"><a name="l02531"></a><span class="lineno"> 2531</span>&#160;    }</div>
+<div class="line"><a name="l02532"></a><span class="lineno"> 2532</span>&#160;}</div>
 <div class="ttc" id="namespace_bx_core_1_1_add_on_html_a07921c4fd6c8780240782afc4e34bae4"><div class="ttname"><a href="namespace_bx_core_1_1_add_on.html#a07921c4fd6c8780240782afc4e34bae4">BxCore::AddOn::GetBMPBits</a></div><div class="ttdeci">bitmappixel * GetBMPBits(const byte *bmp)</div><div class="ttdoc">BMP의 픽셀정보(bitmappixel) </div><div class="ttdef"><b>Definition:</b> BxCoreImpl.cpp:1065</div></div>
 <div class="ttc" id="namespace_bx_core_1_1_font_html_a9a581fddb1fc4e67b149cefbcc4b24dd"><div class="ttname"><a href="namespace_bx_core_1_1_font.html#a9a581fddb1fc4e67b149cefbcc4b24dd">BxCore::Font::RequestFlush</a></div><div class="ttdeci">void RequestFlush(id_font font)</div><div class="ttdoc">폰트기준 출력요청된 텍스트들을 텍스쳐소팅하여 일괄출력 </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:1101</div></div>
 <div class="ttc" id="namespace_bx_core_1_1_sound_html_afdb4f5ce1bf8fd5d6fe945ccef3d5309"><div class="ttname"><a href="namespace_bx_core_1_1_sound.html#afdb4f5ce1bf8fd5d6fe945ccef3d5309">BxCore::Sound::Create</a></div><div class="ttdeci">id_sound Create(string filename, bool autoload=true)</div><div class="ttdoc">사운드ID 할당(icf상의 [game]SoundCacheSize내에서 할당) </div><div class="ttdef"><b>Definition:</b> BxCoreForQT5.cpp:440</div></div>
@@ -2644,7 +2642,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 7 2015 09:55:58 for API by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 24 2015 01:36:37 for API by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

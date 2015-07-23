@@ -2178,14 +2178,12 @@ namespace BxCore
 		};
 		struct LinesData
 		{
-		public:
 			float x;
 			float y;
 			float reserved;
 		};
 		struct StripData
 		{
-		public:
 			float force;
 			float lx;
 			float ly;

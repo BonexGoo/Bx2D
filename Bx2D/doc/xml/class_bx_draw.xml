@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1293" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1293" bodyend="1293"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1293" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1293" bodyend="1293"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1299" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1299" bodyend="1318"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1299" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1299" bodyend="1318"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a76b4a684ffb3790d3f48795a5f6fb556" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1323" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1323" bodyend="1331"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1323" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1323" bodyend="1331"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1ac72526273fdbee147697b0cad71af9af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const int</type>
@@ -57,7 +57,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1337" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1337" bodyend="1340"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1337" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1337" bodyend="1340"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a2a66685703eec3b6a3ab6e45c70ec093" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const int</type>
@@ -71,7 +71,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1346" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1346" bodyend="1349"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1346" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1346" bodyend="1349"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a39a8030d98b2d8581fd6a34a87d97ba6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structrect" kindref="compound">rect</ref></type>
@@ -85,7 +85,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1355" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1355" bodyend="1361"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1355" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1355" bodyend="1361"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1ad3ef8d16fd625afad7f5a576f074b3b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
@@ -99,7 +99,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1367" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1367" bodyend="1373"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1367" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1367" bodyend="1373"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a938f6c87427471644b6ade7aab1b3e0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const int</type>
@@ -126,7 +126,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1380" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1380" bodyend="1384"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1380" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1380" bodyend="1384"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1ab49bed8f8e7369094fb4d6fd1b55c4e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const int</type>
@@ -153,7 +153,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1391" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1391" bodyend="1395"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1391" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1391" bodyend="1395"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1ad082728129e5106507963d63f4a622e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>pixel_dst *</type>
@@ -167,7 +167,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1401" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1401" bodyend="1401"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1401" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1401" bodyend="1401"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a0caa56d5fcda446e944fa1ffd397bd10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -181,7 +181,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1407" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1407" bodyend="1407"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1407" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1407" bodyend="1407"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a58dd427c33d344d7c302338fbbdc9491" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -229,7 +229,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1415" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1415" bodyend="1439"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1415" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1415" bodyend="1439"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a9714a17e6dbafd6b247028cc71fc4e20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -277,7 +277,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1447" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1447" bodyend="1559"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1447" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1447" bodyend="1559"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a25127949d9e25546bd3d2db6942ee194" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -325,7 +325,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1567" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1567" bodyend="1590"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1567" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1567" bodyend="1590"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a3b98a4c824089117f6d94a405c83d8f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -373,7 +373,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1676" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1676" bodyend="1826"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1676" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1676" bodyend="1826"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1ab8b8696dd54b31dd17decf2690cc467c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -421,7 +421,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1984" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1984" bodyend="2004"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1984" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1984" bodyend="2004"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1aa40a085332d546d3b36fd8906888cf6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -469,7 +469,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="2012" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2012" bodyend="2033"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="2012" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2012" bodyend="2033"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1ab6d0756f192948c869fa8d2c16f8d770" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
@@ -541,7 +541,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="2044" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2044" bodyend="2050"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="2044" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2044" bodyend="2050"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a731be652e413b3e1ddc240828ececa64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
@@ -613,7 +613,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="2061" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2061" bodyend="2067"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="2061" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2061" bodyend="2067"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a5f2cb4a68f9c44dcbad5214f2ca491b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
@@ -685,7 +685,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="2078" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2078" bodyend="2097"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="2078" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2078" bodyend="2097"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1af210bee29c666b55ed03c45ad302a01f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const <ref refid="structpoint" kindref="compound">point</ref></type>
@@ -757,7 +757,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="2108" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2108" bodyend="2134"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="2108" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2108" bodyend="2134"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a52abea75c29b2a54bdf024e19d92be7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -783,7 +783,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="2140" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2140" bodyend="2166"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="2140" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2140" bodyend="2166"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1a24ca52e897cddbcbb44c8f4f1fc3cdac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -808,7 +808,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="2172" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2172" bodyend="2177"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="2172" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2172" bodyend="2177"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1abaeae537c3db18c065fa50ab0ae81164" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -846,7 +846,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="2185" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2185" bodyend="2205"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="2185" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2185" bodyend="2205"/>
       </memberdef>
       <memberdef kind="function" id="class_bx_draw_1aa42dd1d1c126a92ff578c3963a024dd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -873,14 +873,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="2212" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2212" bodyend="2218"/>
+        <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="2212" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="2212" bodyend="2218"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>OpenGL/SW랜더링기반 그리기도구 </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" line="1292" column="1" bodyfile="C:/BonexData/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1291" bodyend="2290"/>
+    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" line="1292" column="1" bodyfile="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxDraw.hpp" bodystart="1291" bodyend="2290"/>
     <listofallmembers>
       <member refid="class_bx_draw_1a24ca52e897cddbcbb44c8f4f1fc3cdac" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>AddStyle</name></member>
       <member refid="class_bx_draw_1abaeae537c3db18c065fa50ab0ae81164" prot="public" virt="non-virtual"><scope>BxDraw</scope><name>AddStyleByIf</name></member>

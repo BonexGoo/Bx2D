@@ -12,10 +12,10 @@
         <childnode refid="511" relation="include">
         </childnode>
       </node>
-      <node id="513">
-        <label>BxPool.hpp</label>
-        <link refid="_bx_pool_8hpp_source"/>
-        <childnode refid="514" relation="include">
+      <node id="511">
+        <label>BxCore.hpp</label>
+        <link refid="_bx_core_8hpp_source"/>
+        <childnode refid="512" relation="include">
         </childnode>
       </node>
       <node id="512">
@@ -28,10 +28,10 @@
         <label>BxType.hpp</label>
         <link refid="_bx_type_8hpp_source"/>
       </node>
-      <node id="511">
-        <label>BxCore.hpp</label>
-        <link refid="_bx_core_8hpp_source"/>
-        <childnode refid="512" relation="include">
+      <node id="513">
+        <label>BxPool.hpp</label>
+        <link refid="_bx_pool_8hpp_source"/>
+        <childnode refid="514" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -44,13 +44,13 @@
         <childnode refid="517" relation="include">
         </childnode>
       </node>
-      <node id="517">
-        <label>BxCoreImpl.hpp</label>
-        <link refid="_bx_core_impl_8hpp_source"/>
-      </node>
       <node id="516">
         <label>BxCoreForQT5.hpp</label>
         <link refid="_bx_core_for_q_t5_8hpp_source"/>
+      </node>
+      <node id="517">
+        <label>BxCoreImpl.hpp</label>
+        <link refid="_bx_core_impl_8hpp_source"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_bx_var_queue" prot="public">BxVarQueue</innerclass>
@@ -152,6 +152,6 @@
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="92"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/BonexData/BxProject/Bx2D/lib/BxVarQueue.hpp"/>
+    <location file="Z:/Users/bonex/Bonexpecial/Team_Onezay/Project/BxProject/Bx2D/lib/BxVarQueue.hpp"/>
   </compounddef>
 </doxygen>
