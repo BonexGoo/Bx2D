@@ -57,8 +57,14 @@ typedef unsigned int uint;
 typedef int fint; // Float-Int : 고정소수점(16/16)
 #if defined(__x86_64__) || defined(__amd64__) || defined(__LP64__)
 	typedef unsigned long long mint; // Memory-Int : 메모리주소
+	typedef long long          smint;
+	typedef unsigned __int64   sizeint;
+    typedef __int64            ssizeint;
 #else
-	typedef unsigned int mint; // Memory-Int : 메모리주소
+	typedef unsigned int       mint; // Memory-Int : 메모리주소
+	typedef int                smint;
+	typedef unsigned int       sizeint;
+    typedef int                ssizeint;
 #endif
 typedef long long huge;
 typedef unsigned long long uhuge;
@@ -421,15 +427,10 @@ typedef void (*callback_delete)(void* data);
 // NEW/DELETE관련
 #ifndef _BX_OPERATOR_NEW_
 #define _BX_OPERATOR_NEW_
-	#ifdef __BX_USED_LONG_SIZET
-		#define NEW_SIZE_T unsigned long
-	#else
-		#define NEW_SIZE_T unsigned int
-	#endif
-	inline void* operator new(NEW_SIZE_T, mint ptr) {return (void*) ptr;}
-	inline void* operator new[](NEW_SIZE_T, mint ptr) {return (void*) ptr;}
-	inline void operator delete(void*, mint) {}
-	inline void operator delete[](void*, mint) {}
+	inline void* operator new(sizeint, smint ptr) {return (void*) ptr;}
+	inline void* operator new[](sizeint, smint ptr) {return (void*) ptr;}
+	inline void operator delete(void*, smint) {}
+	inline void operator delete[](void*, smint) {}
 #endif
 
 // 타입분석관련

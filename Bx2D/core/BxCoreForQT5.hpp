@@ -24,11 +24,11 @@
 #include <QStandardPaths>
 #include <QLibrary>
 #if defined(WIN32)
-    #include <QBluetoothDeviceDiscoveryAgent>
+    //#include <QBluetoothDeviceDiscoveryAgent>
 #endif
 #include <QDesktopWidget>
 #include <QWindow>
-#include <5.4.0/QtGui/qpa/qplatformnativeinterface.h>
+#include <5.7.0/QtGui/qpa/qplatformnativeinterface.h>
 #include <QAbstractNativeEventFilter>
 
 #ifdef OpenMutex
@@ -1202,7 +1202,7 @@ namespace BxCore
 	{
 		/// @cond SECTION_NAME
         #if defined(WIN32)
-            class _DeviceAgent : public QBluetoothDeviceDiscoveryAgent
+            /*class _DeviceAgent : public QBluetoothDeviceDiscoveryAgent
             {
                 Q_OBJECT
             public:
@@ -1247,7 +1247,7 @@ namespace BxCore
                     BxASSERT("##-deviceScanFinished", false);
                 }
             };
-            SINGLETON_CLASS(_DeviceAgent, DeviceAgent);
+            SINGLETON_CLASS(_DeviceAgent, DeviceAgent);*/
         #endif
 		/// @endcond
 	}

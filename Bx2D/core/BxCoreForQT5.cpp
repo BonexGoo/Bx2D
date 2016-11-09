@@ -908,14 +908,14 @@ namespace BxCore
 			void Begin()
 			{
                 #if defined(WIN32)
-                    DeviceAgent()->start();
+                    //DeviceAgent()->start();
                 #endif
 			}
 
 			void End()
 			{
                 #if defined(WIN32)
-                    DeviceAgent()->stop();
+                    //DeviceAgent()->stop();
                 #endif
 			}
 
